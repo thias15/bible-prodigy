@@ -18,7 +18,7 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
   Wisdom Wave), streak bonuses, and special bosses — the Walls of Jericho fall after 7 laps
   (7 right answers).
 - **Mixed questions:** math (grade 2 to algebra), Bible knowledge (about 140 questions with
-  references), memory verses (KJV), words (vocabulary and spelling) and puzzles (patterns,
+  references), memory verses, words (vocabulary and spelling) and puzzles (patterns,
   odd-one-out, books of the Bible).
 - **Adapts to the player.** Set an age at the start; the game nudges difficulty up or down
   per subject based on recent answers.
@@ -26,8 +26,28 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
   alongside you, robe dyes, a shop, practice mode and a verse library.
 - **For grown-ups (⚙ Settings):** challenge level, subject mix sliders, read-aloud,
   per-subject scores, and a save code to move progress between devices.
+- **English and German.** Switch on the title screen or in Settings. Everything is translated:
+  story, quests, all Bible questions, menus and math word problems.
+- **Original soundtrack** in a modern worship style, generated live in the browser: a theme
+  for each world, a battle anthem and a boss theme, plus the public-domain melodies
+  *Stille Nacht / Silent Night* (Bethlehem) and *Ode to Joy* ("Joyful, Joyful", the finale).
+- **Read-aloud** for questions and dialogue, using the most natural voice on the device,
+  with a voice picker and test button in Settings.
+- **Variety:** seven hairstyles (including braids, afro and headscarf), three enemy types per
+  world (quick, tough, healer), and over 20 animal friends with different abilities.
 - Works with keyboard (arrows/WASD + Space), mouse (click to walk) and touch (tap or D-pad).
-  Progress saves automatically in the browser.
+
+## How saving works
+
+- Progress saves automatically in the browser's local storage, which survives closing
+  the tab or restarting the device. It is **not** synced between devices or browsers.
+- Up to **4 players** per device, each with their own progress.
+- The game asks the browser to keep its storage permanently.
+- Settings → **Download backup file** saves a small `.json` file; **Restore from backup file**
+  loads it on any device. A copyable save code works too. The game reminds players to
+  back up after finishing a gate.
+- Saves can be lost if someone clears browsing data or plays in a private window, so backups
+  matter. (True cloud saves would need a server and accounts, which this free static version avoids.)
 
 ## Hosting on GitHub Pages (free)
 
@@ -44,13 +64,22 @@ No build step, server or accounts needed. Netlify, Cloudflare Pages or itch.io (
 
 | File | What it holds |
 |---|---|
-| `src/data.js` | All content: chapters, dialogue, quests, Bible questions, verses, vocabulary, items |
+| `src/data.js` | English content: chapters, dialogue, quests, Bible questions, verses, vocabulary, items |
+| `src/i18n.js` | Interface text in both languages, plus the German content (merged over the English) |
 | `src/game.js` | The engine: map generation, drawing, movement, battles, question generators, menus |
 | `src/shell.html` | Page layout and styles |
 | `src/build.py` | Combines the three into `index.html` |
 
 To add Bible questions, append rows to `BQ` in `src/data.js`:
 `[chapter (0 = any), difficulty 1–3, question, correct answer, wrong, wrong, wrong, reference]`.
+Add the German version at the same position in `BQ_DE` in `src/i18n.js`.
 Then run `python3 src/build.py` and copy `src/dist/index.html` to the repo root.
 
-Scripture quotations are from the King James Version (public domain).
+## Bible text
+
+- **English:** World English Bible (public domain), with "Yahweh" shown as "the LORD".
+- **German:** short, kid-friendly retellings written for this game and labeled "nach …"
+  (e.g. "nach Johannes 3,16"). They are not an official translation. Translations such as
+  *Hoffnung für alle* are copyrighted and can't be republished here, so families can look up
+  each reference in their own Bible.
+- Music contains no copyrighted songs.

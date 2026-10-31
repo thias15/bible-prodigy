@@ -1,7 +1,7 @@
 import pathlib
 d = pathlib.Path(__file__).parent
 shell = (d / 'shell.html').read_text()
-out = shell.replace('/*__DATA__*/', (d / 'data.js').read_text()).replace('/*__GAME__*/', (d / 'game.js').read_text())
+out = shell.replace('/*__DATA__*/', (d / 'data.js').read_text()).replace('/*__I18N__*/', (d / 'i18n.js').read_text()).replace('/*__GAME__*/', (d / 'game.js').read_text())
 (d / 'dist').mkdir(exist_ok=True)
 # artifact version (no doctype; skeleton added at publish)
 (d / 'dist' / 'scrolls-of-light.html').write_text(out)
