@@ -120,6 +120,7 @@ input[type=range]{width:100%;accent-color:var(--gold)}
 .unit .uname{font-weight:900;font-size:.82rem;background:rgba(14,21,52,.85);padding:2px 8px;border-radius:999px;margin-top:2px;white-space:nowrap}
 .foe{cursor:pointer}
 .foe .fh{width:132px;background:rgba(14,21,52,.88);border-radius:10px;padding:4px 6px;border:2px solid transparent}
+.bossu .fh{width:min(230px,58vw)}
 .foe.target .fh{border-color:var(--gold)}
 .foe .fh div{font-size:.72rem;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .foe .bar{height:8px;margin-top:3px}
@@ -151,6 +152,7 @@ input[type=range]{width:100%;accent-color:var(--gold)}
 .qin{width:min(640px,100%);max-height:100%;overflow:auto;background:var(--vellum);color:#24190c;border-radius:18px;border:4px solid var(--gold);box-shadow:0 0 0 6px var(--lapis),0 20px 60px rgba(0,0,0,.6);padding:18px}
 .qtop{display:flex;align-items:center;justify-content:space-between;gap:10px}
 .qcat{font-weight:900;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--lapis);color:var(--gold-soft)}
+.qbtns{display:flex;gap:6px}
 .say{background:#efe2bf;border:2px solid #c9a95c;border-radius:999px;padding:.3em .8em;font-weight:900;font-size:.8rem;color:#5a4214}
 #qText{font-size:clamp(1.15rem,3.6vw,1.5rem);font-weight:800;line-height:1.35;margin:14px 0 16px;text-wrap:balance}
 #qText .blank{display:inline-block;min-width:3.5em;border-bottom:3px solid #a77818;color:#a77818}
@@ -179,13 +181,13 @@ input[type=range]{width:100%;accent-color:var(--gold)}
 #tWho{margin:0 0 4px}
 .ftag{display:inline-block;font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;background:#26336f;color:var(--gold-soft);border-radius:999px;padding:0 5px;vertical-align:1px}
 /* ---- toasts ---- */
-#toasts{position:absolute;left:50%;transform:translateX(-50%);top:110px;z-index:50;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none;width:90%}
+#toasts{position:absolute;left:50%;transform:translateX(-50%);top:max(170px,26%);z-index:50;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none;width:90%}
 .toast{background:var(--lapis-deep);border:2px solid var(--gold);border-radius:12px;padding:8px 16px;font-weight:800;box-shadow:0 6px 20px rgba(0,0,0,.5);animation:tin .3s;text-align:center;max-width:420px}
 .toast.big{font-family:var(--f-display);font-weight:400;font-size:1.3rem;color:var(--gold-soft)}
 @keyframes tin{from{opacity:0;transform:translateY(-10px)}}
 .flash{position:absolute;inset:0;background:#fff;z-index:60;pointer-events:none;animation:flash .5s forwards}
 @keyframes flash{from{opacity:.9}to{opacity:0}}
-.fragrow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:6px 0 12px}
+.fragrow{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:6px 0 12px}
 .frag{aspect-ratio:3/4;border-radius:8px;border:2px dashed #3a4ea8;display:grid;place-items:center;font-family:var(--f-display);color:#3a4ea8;font-size:1.1rem;max-width:100%}
 .frag.got{border:2px solid var(--gold);background:linear-gradient(#f6e6b5,#d9bb72);color:#5a3d08;box-shadow:0 0 14px rgba(232,185,74,.5)}
 @media (max-width:600px){.hbtns .btn{font-size:.74rem;padding:.4em .55em}.hcard{min-width:150px;padding:6px 10px}#track{top:104px;font-size:.78rem}}
@@ -241,7 +243,7 @@ input[type=range]{width:100%;accent-color:var(--gold)}
 
   <div id="qcard" hidden>
     <div class="qin">
-      <div class="qtop"><span class="qcat" id="qCat">Math</span><button class="say" id="qSay" data-t="q.read">🔊 Read aloud</button></div>
+      <div class="qtop"><span class="qcat" id="qCat">Math</span><span class="qbtns"><button class="say" id="qSay" data-t="q.read">🔊 Read aloud</button><button class="say" id="qExit" data-t="q.exit" hidden>✕ Stop</button></span></div>
       <div id="qText"></div>
       <div id="qChoices"></div>
       <div id="qFb"></div>
@@ -285,6 +287,9 @@ input[type=range]{width:100%;accent-color:var(--gold)}
 </script>
 <script>
 /*__I18N__*/
+</script>
+<script>
+/*__W2__*/
 </script>
 <script>
 /*__GAME__*/

@@ -126,6 +126,7 @@ input[type=range]{width:100%;accent-color:var(--gold)}
 .unit .uname{font-weight:900;font-size:.82rem;background:rgba(14,21,52,.85);padding:2px 8px;border-radius:999px;margin-top:2px;white-space:nowrap}
 .foe{cursor:pointer}
 .foe .fh{width:132px;background:rgba(14,21,52,.88);border-radius:10px;padding:4px 6px;border:2px solid transparent}
+.bossu .fh{width:min(230px,58vw)}
 .foe.target .fh{border-color:var(--gold)}
 .foe .fh div{font-size:.72rem;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .foe .bar{height:8px;margin-top:3px}
@@ -157,6 +158,7 @@ input[type=range]{width:100%;accent-color:var(--gold)}
 .qin{width:min(640px,100%);max-height:100%;overflow:auto;background:var(--vellum);color:#24190c;border-radius:18px;border:4px solid var(--gold);box-shadow:0 0 0 6px var(--lapis),0 20px 60px rgba(0,0,0,.6);padding:18px}
 .qtop{display:flex;align-items:center;justify-content:space-between;gap:10px}
 .qcat{font-weight:900;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--lapis);color:var(--gold-soft)}
+.qbtns{display:flex;gap:6px}
 .say{background:#efe2bf;border:2px solid #c9a95c;border-radius:999px;padding:.3em .8em;font-weight:900;font-size:.8rem;color:#5a4214}
 #qText{font-size:clamp(1.15rem,3.6vw,1.5rem);font-weight:800;line-height:1.35;margin:14px 0 16px;text-wrap:balance}
 #qText .blank{display:inline-block;min-width:3.5em;border-bottom:3px solid #a77818;color:#a77818}
@@ -185,13 +187,13 @@ input[type=range]{width:100%;accent-color:var(--gold)}
 #tWho{margin:0 0 4px}
 .ftag{display:inline-block;font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;background:#26336f;color:var(--gold-soft);border-radius:999px;padding:0 5px;vertical-align:1px}
 /* ---- toasts ---- */
-#toasts{position:absolute;left:50%;transform:translateX(-50%);top:110px;z-index:50;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none;width:90%}
+#toasts{position:absolute;left:50%;transform:translateX(-50%);top:max(170px,26%);z-index:50;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none;width:90%}
 .toast{background:var(--lapis-deep);border:2px solid var(--gold);border-radius:12px;padding:8px 16px;font-weight:800;box-shadow:0 6px 20px rgba(0,0,0,.5);animation:tin .3s;text-align:center;max-width:420px}
 .toast.big{font-family:var(--f-display);font-weight:400;font-size:1.3rem;color:var(--gold-soft)}
 @keyframes tin{from{opacity:0;transform:translateY(-10px)}}
 .flash{position:absolute;inset:0;background:#fff;z-index:60;pointer-events:none;animation:flash .5s forwards}
 @keyframes flash{from{opacity:.9}to{opacity:0}}
-.fragrow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:6px 0 12px}
+.fragrow{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:6px 0 12px}
 .frag{aspect-ratio:3/4;border-radius:8px;border:2px dashed #3a4ea8;display:grid;place-items:center;font-family:var(--f-display);color:#3a4ea8;font-size:1.1rem;max-width:100%}
 .frag.got{border:2px solid var(--gold);background:linear-gradient(#f6e6b5,#d9bb72);color:#5a3d08;box-shadow:0 0 14px rgba(232,185,74,.5)}
 @media (max-width:600px){.hbtns .btn{font-size:.74rem;padding:.4em .55em}.hcard{min-width:150px;padding:6px 10px}#track{top:104px;font-size:.78rem}}
@@ -249,7 +251,7 @@ input[type=range]{width:100%;accent-color:var(--gold)}
 
   <div id="qcard" hidden>
     <div class="qin">
-      <div class="qtop"><span class="qcat" id="qCat">Math</span><button class="say" id="qSay" data-t="q.read">🔊 Read aloud</button></div>
+      <div class="qtop"><span class="qcat" id="qCat">Math</span><span class="qbtns"><button class="say" id="qSay" data-t="q.read">🔊 Read aloud</button><button class="say" id="qExit" data-t="q.exit" hidden>✕ Stop</button></span></div>
       <div id="qText"></div>
       <div id="qChoices"></div>
       <div id="qFb"></div>
@@ -347,7 +349,7 @@ const SPELLS = [
 
 /* ---------- HUB ---------- */
 const HUB = {
-  name:"Pilgrim's Rest", sub:'Gates of Remembrance', w:34, h:24, seed:7,
+  name:"Pilgrim's Rest", sub:'Gates of Remembrance', w:58, h:24, seed:7,
   th:{g:'#7bb35a',g2:'#6ea54f',p:'#d8c08a',obs:['tree','olive','bush'],w:'#3f8fd0',deco:'flower',sky:'#a6d6f5'}
 };
 
@@ -805,7 +807,7 @@ const BOOKS = ['Genesis','Exodus','Leviticus','Numbers','Deuteronomy','Joshua','
 
 const STORY_INTRO = [
  "Long ago, the great Scroll of Light told the whole story of God's love — from the very first sunrise to the brightest morning of all.",
- "But the Shadow of Doubt crept in. It tore the Scroll into ten pieces and hid them across the ages of the Bible.",
+ "But the Shadow of Doubt crept in. It tore the Scroll into eighteen pieces and hid them across the ages of the Bible.",
  "Without the Scroll, Gloomlings spread everywhere: whispers of lies, worry, pride and fear.",
  "Now a young pilgrim is needed. Someone brave. Someone curious. Someone like you."
 ];
@@ -827,10 +829,10 @@ const HUBNPC = {
 const STR = {
 en:{
  'title.kicker':'A Bible adventure','title.h1':'Scrolls<br>of Light','title.sub':'Journey through the great stories of the Bible, answer questions to power your faith, and restore the shattered Scroll.',
- 'title.cont':'Continue Journey','title.new':'New Pilgrim','title.who':'Who is playing?','title.lv':'Level {0} · {1} of 10 pieces',
+ 'title.cont':'Continue Journey','title.new':'New Pilgrim','title.who':'Who is playing?','title.lv':'Level {0} · {1} of {2} pieces',
  'create.h':'Create your pilgrim','create.name':'Your name','create.namePh':'Pilgrim','create.skin':'Skin','create.hair':'Hair','create.hs':'Hair style','create.robe':'Robe','create.age':'Your age (sets question difficulty)','create.go':'Begin the Journey','create.back':'Back',
  'hs':['Short','Long','Curly','Braids','Bun','Afro','Headscarf'],
- 'hud.level':'Level','hud.shekels':'shekels','btn.quests':'Quests','btn.bag':'Bag','btn.world':'World','btn.friends':'Friends','track.quest':'Quest','dlg.tap':'tap ▸','q.read':'🔊 Read aloud','q.cont':'Continue','btn.continue':'Continue',
+ 'hud.level':'Level','hud.shekels':'shekels','btn.quests':'Quests','btn.bag':'Bag','btn.world':'World','btn.friends':'Friends','track.quest':'Quest','dlg.tap':'tap ▸','q.read':'🔊 Read aloud','q.exit':'✕ Stop','q.cont':'Continue','btn.continue':'Continue',
  'cat.math':'Math','cat.bible':'Bible','cat.verse':'Memory Verse','cat.words':'Words','cat.logic':'Puzzle',
  'gloomlings':'Gloomlings',
  'found':'Found {0}  ({1}/{2})','returnTo':'Return to {0}!',
@@ -848,10 +850,10 @@ en:{
  'scribe.hi':"Practice makes wise! Answer my questions to earn shekels, or read the verses you have collected.",
  'guide.progress':"{0} are {1}. You've stopped {2} of {3}. Keep going!",'toast.quest':'Quest: defeat {0} {1}','side.toastFind':'Find {0} {1}. Look for the glowing spots!','side.reward':'+{0} shekels and {1} {2}',
  'side.still':"Still looking for my {0}? You've found {1} of {2}. Look for little glowing spots!",'side.thanksAgain':'Thank you again, friend! God bless your journey.',
- 'elder.intro':["Ah, a pilgrim at last! I am Simeon. I have waited many years to see God's promises come true.","The Scroll of Light tells the great story of God's love — from creation all the way to the empty tomb.","But the Shadow of Doubt tore it into ten pieces and hid them in the stories of the Bible.","These Gates of Remembrance lead into those stories. Answer wisely, be brave, and bring the pieces home.","Gate 1, the Garden of Eden, is open. And look — Jesse's little lamb has decided to follow you. God be with you!"],
- 'toast.lamb':'🐑 The Lamb joined you!','elder.whole':'The Scroll is whole! Keep visiting the gates — every story still has more to teach.','elder.progress':'You have restored {0} of 10 Scroll pieces.','elder.next':' Gate {0}, {1}, is waiting for you.',
+ 'elder.intro':["Ah, a pilgrim at last! I am Simeon. I have waited many years to see God's promises come true.","The Scroll of Light tells the great story of God's love — from creation all the way to the empty tomb.","But the Shadow of Doubt tore it into eighteen pieces and hid them in the stories of the Bible.","These Gates of Remembrance lead into those stories. Answer wisely, be brave, and bring the pieces home.","Gate 1, the Garden of Eden, is open. And look — Jesse's little lamb has decided to follow you. God be with you!"],
+ 'toast.lamb':'🐑 The Lamb joined you!','elder.whole':'The Scroll is whole! Keep visiting the gates — every story still has more to teach.','elder.progress':'You have restored {0} of {1} Scroll pieces.','elder.next':' Gate {0}, {1}, is waiting for you.',
  'toast.piece':'Scroll piece {0} restored!','toast.received':'Received: {0}','toast.verse':'Verse unlocked: {0}','toast.backup':'Great progress! Ask a grown-up to save a backup in Settings.',
- 'ending':["The tenth piece! Let me see... yes. The Scroll of Light is whole again!","From the garden to the empty tomb, every piece points to one great truth: God loves you, and Jesus came to rescue the world.","'For God so loved the world, that he gave his one and only Son.' That's the heart of the whole Scroll.","You were brave and wise, pilgrim. Here is a crown — a reminder of the crown of life promised to those who love God (James 1:12).","The gates will stay open. Keep exploring, keep learning, and keep shining!"],
+ 'ending':["The last piece! Let me see... yes. The Scroll of Light is whole again!","From the garden to the empty tomb, every piece points to one great truth: God loves you, and Jesus came to rescue the world.","'For God so loved the world, that he gave his one and only Son.' That's the heart of the whole Scroll.","You were brave and wise, pilgrim. Here is a crown — a reminder of the crown of life promised to those who love God (James 1:12).","The gates will stay open. Keep exploring, keep learning, and keep shining!"],
  'ending.title':'The Scroll is Restored','ending.stats':'You answered <b>{0}</b> questions correctly and reached level <b>{1}</b>. Well done, good and faithful pilgrim!','ending.grown':'Grown-ups can raise the difficulty in Settings for an extra challenge.',
  'narr':'The Scroll','narr.welcome':"Welcome, {0}. Your journey begins in Pilgrim's Rest. Find Simeon by the fountain.",
  'fb.ok':['Correct!','Well done!',"That's right!",'Excellent!','Yes!'],'fb.no':'Not quite. The answer is "{0}".',
@@ -871,7 +873,7 @@ en:{
  'stable.title':'Animal Friends','stable.yours':'Your animal friends','stable.with':'With you','stable.bring':'Bring along','stable.need':'Animals needing a home','stable.adopt':'Adopt','stable.more':'More friends join you as you complete gates and helper quests.','toast.joined':'{0} {1} joined you!',
  'ct.heal':'Healer','ct.attack':'Fighter','ct.all':'Hits all','ct.shield':'Guard','ct.stun':'Freezes foes','ct.coins':'Finds shekels',
  'scribe.title':"Ezra's Scrolls",'scribe.practice':'Practice Scroll','scribe.pdesc':'Answer 10 questions. Earn 3 shekels for every right answer.','scribe.mixed':'Mixed','scribe.mixedDesc':'A bit of everything','scribe.only':'Only {0} questions','scribe.lib':'Verse library','lib.empty':'Complete a gate to unlock its memory verse.',
- 'prac.title':'Practice complete','prac.score':'{0} out of 10 correct!','prac.earned':'You earned {0} shekels.','prac.verse':'Give diligence to present yourself approved by God.','prac.ref':'2 Timothy 2:15','prac.again':'Practice again',
+ 'prac.title':'Practice complete','prac.score':'{0} out of {1} correct!','prac.earned':'You earned {0} shekels.','prac.verse':'Give diligence to present yourself approved by God.','prac.ref':'2 Timothy 2:15','prac.again':'Practice again',
  'bag.title':'Your Bag','bag.food':'Food','bag.eat':'Eat','bag.empty':"Your bag is empty. Lydia sells food in Pilgrim's Rest.",'bag.armor':'Armor of God','bag.armorNote':'"Put on the whole armor of God" — Ephesians 6:11. Earn each piece by finishing gates.','bag.robes':'Robes','bag.worn':'Worn','bag.traveler':'Traveler','bag.crown':'Crown of Life','bag.wear':'Wear','bag.off':'Take off',
  'st.def':'+{0} defense','st.hp':'+{0} health','st.atk':'+{0} attack',
  'quest.title':'Quest Scroll','quest.main':'Main','quest.helper':'Helper quest','quest.done':'Done','quest.complete':'Complete','quest.verses':'Memory verses',
@@ -885,15 +887,15 @@ en:{
  'toast.copied':'Save code copied','toast.copyManual':'Select the code and copy it','toast.loaded':'Journey restored!','toast.welcome':'Welcome back, {0}!','toast.readNA':'Read aloud is not available here.','toast.saved':'Backup downloaded','toast.full':'4 players is the limit on one device.',
  'grade':'{0} (grade {1})','ages':{2:'Ages 7–8',3:'Ages 8–9',4:'Ages 9–10',5:'Ages 10–11',6:'Ages 11–12',7:'Ages 12–13',8:'Ages 13–14',9:'Ages 14–15',10:'Ages 15+'},
  'ageBtns':['8–9','10–11','12–13','14–15'],
- 'say.times':' times ','say.div':' divided by ','say.minus':' minus ','say.sqrt':'square root of ','say.sq':' squared','say.cube':' cubed','say.blank':'blank','say.choice':'{0}: {1}',
+ 'say.times':' times ','say.div':' divided by ','say.minus':' minus ','say.sqrt':'square root of ','say.sq':' squared','say.cube':' cubed','say.blank':'blank','say.choice':'{0}: {1}','say.answer':'Answer {0}.','say.nums':['one','two','three','four'],'say.then':'and then what?','say.eqWhat':'equals what?',
  'boss.intro':'{0}! {1}'
 },
 de:{
  'title.kicker':'Ein Bibel-Abenteuer','title.h1':'Schriftrollen<br>des Lichts','title.sub':'Reise durch die großen Geschichten der Bibel, beantworte Fragen, um deinen Glauben zu stärken, und setze die zerrissene Schriftrolle wieder zusammen.',
- 'title.cont':'Weiterspielen','title.new':'Neuer Pilger','title.who':'Wer spielt?','title.lv':'Stufe {0} · {1} von 10 Teilen',
+ 'title.cont':'Weiterspielen','title.new':'Neuer Pilger','title.who':'Wer spielt?','title.lv':'Stufe {0} · {1} von {2} Teilen',
  'create.h':'Erstelle deinen Pilger','create.name':'Dein Name','create.namePh':'Pilger','create.skin':'Haut','create.hair':'Haare','create.hs':'Frisur','create.robe':'Gewand','create.age':'Dein Alter (bestimmt, wie schwer die Fragen sind)','create.go':'Die Reise beginnt','create.back':'Zurück',
  'hs':['Kurz','Lang','Lockig','Zöpfe','Dutt','Afro','Kopftuch'],
- 'hud.level':'Stufe','hud.shekels':'Schekel','btn.quests':'Aufgaben','btn.bag':'Tasche','btn.world':'Welt','btn.friends':'Freunde','track.quest':'Aufgabe','dlg.tap':'tippen ▸','q.read':'🔊 Vorlesen','q.cont':'Weiter','btn.continue':'Weiter',
+ 'hud.level':'Stufe','hud.shekels':'Schekel','btn.quests':'Aufgaben','btn.bag':'Tasche','btn.world':'Welt','btn.friends':'Freunde','track.quest':'Aufgabe','dlg.tap':'tippen ▸','q.read':'🔊 Vorlesen','q.exit':'✕ Beenden','q.cont':'Weiter','btn.continue':'Weiter',
  'cat.math':'Mathe','cat.bible':'Bibel','cat.verse':'Bibelvers','cat.words':'Wörter','cat.logic':'Rätsel',
  'gloomlings':'Düsterlinge',
  'found':'Gefunden: {0}  ({1}/{2})','returnTo':'Geh zurück zu {0}!',
@@ -911,10 +913,10 @@ de:{
  'scribe.hi':'Übung macht weise! Beantworte meine Fragen und verdiene Schekel – oder lies die Verse, die du gesammelt hast.',
  'guide.progress':'{0} sind {1}. Du hast schon {2} von {3} besiegt. Weiter so!','toast.quest':'Aufgabe: Besiege {0} {1}','side.toastFind':'Finde {0}: {1}. Achte auf die leuchtenden Stellen!','side.reward':'+{0} Schekel und {1} {2}',
  'side.still':'Suchst du noch nach meinen Sachen ({0})? Du hast {1} von {2} gefunden. Achte auf die leuchtenden Stellen!','side.thanksAgain':'Nochmals danke, mein Freund! Gott segne deine Reise.',
- 'elder.intro':['Ah, endlich ein Pilger! Ich bin Simeon. Viele Jahre habe ich darauf gewartet, dass Gottes Versprechen wahr werden.','Die Schriftrolle des Lichts erzählt die große Geschichte von Gottes Liebe – von der Schöpfung bis zum leeren Grab.','Aber der Schatten des Zweifels hat sie in zehn Teile zerrissen und in den Geschichten der Bibel versteckt.','Diese Tore der Erinnerung führen in diese Geschichten. Antworte weise, sei mutig und bring die Teile nach Hause.','Tor 1, der Garten Eden, ist offen. Und schau – das kleine Lamm von Jesse möchte mit dir gehen. Gott sei mit dir!'],
- 'toast.lamb':'🐑 Das Lamm geht mit dir!','elder.whole':'Die Schriftrolle ist ganz! Besuche die Tore weiter – jede Geschichte hat noch mehr zu erzählen.','elder.progress':'Du hast {0} von 10 Teilen der Schriftrolle zurückgebracht.','elder.next':' Tor {0}, {1}, wartet auf dich.',
+ 'elder.intro':['Ah, endlich ein Pilger! Ich bin Simeon. Viele Jahre habe ich darauf gewartet, dass Gottes Versprechen wahr werden.','Die Schriftrolle des Lichts erzählt die große Geschichte von Gottes Liebe – von der Schöpfung bis zum leeren Grab.','Aber der Schatten des Zweifels hat sie in achtzehn Teile zerrissen und in den Geschichten der Bibel versteckt.','Diese Tore der Erinnerung führen in diese Geschichten. Antworte weise, sei mutig und bring die Teile nach Hause.','Tor 1, der Garten Eden, ist offen. Und schau – das kleine Lamm von Jesse möchte mit dir gehen. Gott sei mit dir!'],
+ 'toast.lamb':'🐑 Das Lamm geht mit dir!','elder.whole':'Die Schriftrolle ist ganz! Besuche die Tore weiter – jede Geschichte hat noch mehr zu erzählen.','elder.progress':'Du hast {0} von {1} Teilen der Schriftrolle zurückgebracht.','elder.next':' Tor {0}, {1}, wartet auf dich.',
  'toast.piece':'Teil {0} der Schriftrolle ist zurück!','toast.received':'Erhalten: {0}','toast.verse':'Neuer Bibelvers: {0}','toast.backup':'Toll gemacht! Bitte einen Erwachsenen, in den Einstellungen eine Sicherung zu speichern.',
- 'ending':['Das zehnte Teil! Lass sehen ... ja! Die Schriftrolle des Lichts ist wieder ganz!','Vom Garten bis zum leeren Grab zeigt jedes Teil auf eine große Wahrheit: Gott liebt dich, und Jesus ist gekommen, um die Welt zu retten.','„So sehr hat Gott die Welt geliebt, dass er seinen einzigen Sohn gab.“ Das ist das Herz der ganzen Schriftrolle.','Du warst mutig und klug, Pilger. Hier ist eine Krone – sie erinnert an die Krone des Lebens, die Gott allen verspricht, die ihn lieben (Jakobus 1,12).','Die Tore bleiben offen. Entdecke weiter, lerne weiter und leuchte weiter!'],
+ 'ending':['Das letzte Teil! Lass sehen ... ja! Die Schriftrolle des Lichts ist wieder ganz!','Vom Garten bis zum leeren Grab zeigt jedes Teil auf eine große Wahrheit: Gott liebt dich, und Jesus ist gekommen, um die Welt zu retten.','„So sehr hat Gott die Welt geliebt, dass er seinen einzigen Sohn gab.“ Das ist das Herz der ganzen Schriftrolle.','Du warst mutig und klug, Pilger. Hier ist eine Krone – sie erinnert an die Krone des Lebens, die Gott allen verspricht, die ihn lieben (Jakobus 1,12).','Die Tore bleiben offen. Entdecke weiter, lerne weiter und leuchte weiter!'],
  'ending.title':'Die Schriftrolle ist ganz','ending.stats':'Du hast <b>{0}</b> Fragen richtig beantwortet und Stufe <b>{1}</b> erreicht. Gut gemacht, du treuer Pilger!','ending.grown':'Erwachsene können in den Einstellungen die Schwierigkeit erhöhen.',
  'narr':'Die Schriftrolle','narr.welcome':'Willkommen, {0}! Deine Reise beginnt in der Pilgerrast. Such Simeon am Brunnen.',
  'fb.ok':['Richtig!','Gut gemacht!','Genau!','Super!','Ja!'],'fb.no':'Nicht ganz. Die Antwort ist „{0}“.',
@@ -934,7 +936,7 @@ de:{
  'stable.title':'Tierfreunde','stable.yours':'Deine Tierfreunde','stable.with':'Ist dabei','stable.bring':'Mitnehmen','stable.need':'Tiere suchen ein Zuhause','stable.adopt':'Aufnehmen','stable.more':'Weitere Freunde kommen dazu, wenn du Tore und Hilfsaufgaben schaffst.','toast.joined':'{0} {1} geht jetzt mit dir!',
  'ct.heal':'Heiler','ct.attack':'Kämpfer','ct.all':'Trifft alle','ct.shield':'Beschützer','ct.stun':'Lässt erstarren','ct.coins':'Findet Schekel',
  'scribe.title':'Esras Schriftrollen','scribe.practice':'Übungsrolle','scribe.pdesc':'Beantworte 10 Fragen. Für jede richtige Antwort bekommst du 3 Schekel.','scribe.mixed':'Gemischt','scribe.mixedDesc':'Von allem etwas','scribe.only':'Nur {0}-Fragen','scribe.lib':'Vers-Sammlung','lib.empty':'Schaffe ein Tor, um seinen Bibelvers freizuschalten.',
- 'prac.title':'Übung geschafft','prac.score':'{0} von 10 richtig!','prac.earned':'Du hast {0} Schekel verdient.','prac.verse':'Gib dir Mühe, dass Gott Freude an dir hat.','prac.ref':'nach 2. Timotheus 2,15','prac.again':'Noch einmal üben',
+ 'prac.title':'Übung geschafft','prac.score':'{0} von {1} richtig!','prac.earned':'Du hast {0} Schekel verdient.','prac.verse':'Gib dir Mühe, dass Gott Freude an dir hat.','prac.ref':'nach 2. Timotheus 2,15','prac.again':'Noch einmal üben',
  'bag.title':'Deine Tasche','bag.food':'Essen','bag.eat':'Essen','bag.empty':'Deine Tasche ist leer. Lydia verkauft Essen in der Pilgerrast.','bag.armor':'Die Waffenrüstung Gottes','bag.armorNote':'„Zieht die ganze Rüstung Gottes an“ – nach Epheser 6,11. Jedes Teil bekommst du, wenn du ein Tor schaffst.','bag.robes':'Gewänder','bag.worn':'Angelegt','bag.traveler':'Reisegewand','bag.crown':'Krone des Lebens','bag.wear':'Aufsetzen','bag.off':'Absetzen',
  'st.def':'+{0} Abwehr','st.hp':'+{0} Leben','st.atk':'+{0} Angriff',
  'quest.title':'Aufgabenrolle','quest.main':'Hauptaufgabe','quest.helper':'Hilfsaufgabe','quest.done':'Erledigt','quest.complete':'Geschafft','quest.verses':'Bibelverse',
@@ -948,7 +950,7 @@ de:{
  'toast.copied':'Code kopiert','toast.copyManual':'Markiere den Code und kopiere ihn','toast.loaded':'Reise wiederhergestellt!','toast.welcome':'Willkommen zurück, {0}!','toast.readNA':'Vorlesen ist hier nicht verfügbar.','toast.saved':'Sicherung heruntergeladen','toast.full':'Auf einem Gerät gehen höchstens 4 Spieler.',
  'grade':'{0} ({1}. Klasse)','ages':{2:'7–8 Jahre',3:'8–9 Jahre',4:'9–10 Jahre',5:'10–11 Jahre',6:'11–12 Jahre',7:'12–13 Jahre',8:'13–14 Jahre',9:'14–15 Jahre',10:'15+ Jahre'},
  'ageBtns':['8–9','10–11','12–13','14–15'],
- 'say.times':' mal ','say.div':' geteilt durch ','say.minus':' minus ','say.sqrt':'Wurzel aus ','say.sq':' hoch zwei','say.cube':' hoch drei','say.blank':'Lücke','say.choice':'{0}: {1}',
+ 'say.times':' mal ','say.div':' geteilt durch ','say.minus':' minus ','say.sqrt':'Wurzel aus ','say.sq':' hoch zwei','say.cube':' hoch drei','say.blank':'Lücke','say.choice':'{0}: {1}','say.answer':'Antwort {0}.','say.nums':['eins','zwei','drei','vier'],'say.then':'und dann?','say.eqWhat':'ist gleich wie viel?',
  'boss.intro':'{0}! {1}'
 }};
 
@@ -1020,9 +1022,10 @@ de:{
 }};
 
 /* ---------- German Bible reference names ---------- */
-const BOOK_DE = {'Genesis':'1. Mose','Exodus':'2. Mose','Leviticus':'3. Mose','Numbers':'4. Mose','Deuteronomy':'5. Mose','Joshua':'Josua','Judges':'Richter','Ruth':'Rut','1 Samuel':'1. Samuel','2 Samuel':'2. Samuel','1 Kings':'1. Könige','2 Kings':'2. Könige','Esther':'Ester','Psalm':'Psalm','Psalms':'Psalmen','Proverbs':'Sprüche','Isaiah':'Jesaja','Lamentations':'Klagelieder','Daniel':'Daniel','Jonah':'Jona',
+const BOOK_DE = {'Genesis':'1. Mose','Exodus':'2. Mose','Leviticus':'3. Mose','Numbers':'4. Mose','Deuteronomy':'5. Mose','Joshua':'Josua','Judges':'Richter','1 Kings':'1. Könige','2 Kings':'2. Könige','Acts':'Apostelgeschichte','Romans':'Römer','Ruth':'Rut','1 Samuel':'1. Samuel','2 Samuel':'2. Samuel','1 Kings':'1. Könige','2 Kings':'2. Könige','Esther':'Ester','Psalm':'Psalm','Psalms':'Psalmen','Proverbs':'Sprüche','Isaiah':'Jesaja','Lamentations':'Klagelieder','Daniel':'Daniel','Jonah':'Jona',
  'Matthew':'Matthäus','Mark':'Markus','Luke':'Lukas','John':'Johannes','Acts':'Apostelgeschichte','Romans':'Römer','1 Corinthians':'1. Korinther','Galatians':'Galater','Ephesians':'Epheser','Philippians':'Philipper','Hebrews':'Hebräer','James':'Jakobus','1 Peter':'1. Petrus','1 John':'1. Johannes','2 Timothy':'2. Timotheus','Revelation':'Offenbarung'};
-function refDE(r){ if(!r) return r; return r.replace(/\b(1 Samuel|2 Samuel|1 Kings|2 Kings|1 Corinthians|1 Peter|1 John|2 Timothy|Genesis|Exodus|Leviticus|Numbers|Deuteronomy|Joshua|Judges|Ruth|Esther|Psalms|Psalm|Proverbs|Isaiah|Lamentations|Daniel|Jonah|Matthew|Mark|Luke|John|Acts|Romans|Galatians|Ephesians|Philippians|Hebrews|James|Revelation)\b/g,m=>BOOK_DE[m]||m).replace(/(\d):(\d)/g,'$1,$2').replace('The New Testament','Neues Testament').replace('Old Testament (39) + New Testament (27)','Altes Testament (39) + Neues Testament (27)'); }
+const REF_FIX={'Jonah 1:17':'Jona 2,1','Jonah 2:1':'Jona 2,2','Jonah 2:9':'Jona 2,10','Daniel 6:22':'Daniel 6,23','Daniel 6:16':'Daniel 6,17','Daniel 6:10':'Daniel 6,11','Daniel 6:9,16':'Daniel 6,10.17','Isaiah 9:6':'Jesaja 9,5','Psalm 56:3':'Psalm 56,4','Psalm 46:1':'Psalm 46,2','1 Kings 4:30':'1. Könige 5,10','Exodus 8:2':'2. Mose 7,27'};
+function refDE(r){ if(!r) return r; if(REF_FIX[r]) return REF_FIX[r]; return r.replace(/\b(1 Samuel|2 Samuel|1 Kings|2 Kings|1 Corinthians|1 Peter|1 John|2 Timothy|Ruth|Esther|Genesis|Exodus|Leviticus|Numbers|Deuteronomy|Joshua|Judges|Ruth|Esther|Psalms|Psalm|Proverbs|Isaiah|Lamentations|Daniel|Jonah|Matthew|Mark|Luke|John|Acts|Romans|Galatians|Ephesians|Philippians|Hebrews|James|Revelation)\b/g,m=>BOOK_DE[m]||m).replace(/(\d):(\d)/g,'$1,$2').replace('The New Testament','Neues Testament').replace('Old Testament (39) + New Testament (27)','Altes Testament (39) + Neues Testament (27)'); }
 
 /* ---------- German content overlay (merged over the English data) ---------- */
 const DE = {
@@ -1121,7 +1124,7 @@ const DE = {
   boss:{name:'Der Schatten des Zweifels',where:'beim Gartengrab'},guide:{name:'Maria Magdalena'},
   intro:['Pilger, du hast einen weiten Weg hinter dir. Das hier ist Jerusalem.','Jesus ist auf einem Esel hereingeritten, und die Leute haben Palmzweige geschwenkt. Dann wurde er gefangen genommen und ist für uns alle am Kreuz gestorben.','Sie haben ihn in ein Grab gelegt und einen großen Stein davorgerollt. Alles fühlte sich dunkel an.','Der Schatten des Zweifels selbst ist hier und flüstert, dass alles aus ist. Besiege 7 Düsterlinge, dann stell dich dem Schatten beim Gartengrab!'],
   hint:'Der Schatten des Zweifels wartet beim Gartengrab. Denk daran, was Jesus versprochen hat!',
-  outro:['Pilger! Der Stein ist weggerollt! Das Grab ist LEER!','Der Engel hat gesagt: „Er ist nicht hier. Er ist auferstanden, genau wie er es gesagt hat!“ Jesus lebt!','Tod und Dunkelheit konnten ihn nicht festhalten. Das ist die beste Nachricht der ganzen Geschichte.','Hier ist das letzte Teil der Schriftrolle des Lichts. Bring es zu Simeon in die Pilgerrast!'],
+  outro:['Pilger! Der Stein ist weggerollt! Das Grab ist LEER!','Der Engel hat gesagt: „Er ist nicht hier. Er ist auferstanden, genau wie er es gesagt hat!“ Jesus lebt!','Tod und Dunkelheit konnten ihn nicht festhalten. Das ist die beste Nachricht der ganzen Geschichte.','Hier ist dieses Teil der Schriftrolle.'],
   post:'Er ist auferstanden! Geh und erzähl allen die gute Nachricht.',
   side:{name:'Kind mit Palmzweigen',what:'Palmzweige',ask:'Als Jesus auf dem Esel kam, haben wir Palmzweige geschwenkt und „Hosianna!“ gerufen. Drei von meinen habe ich verloren. Hilfst du mir?',thanks:'Hosianna! Gelobt sei, der da kommt im Namen des Herrn! Danke! Und dieser Hahn kräht so laut, er soll dich begleiten.'},
   flav:[{name:'Thomas',lines:['Das glaube ich erst, wenn ich es mit eigenen Augen sehe ...','(Später sah Thomas Jesus und sagte: „Mein Herr und mein Gott!“ – Johannes 20,28)']},{name:'Johannes',lines:['Tipp: Der Mutstoß kommt ab Stufe 5, die Welle der Weisheit ab Stufe 8. Hier wirst du sie brauchen!']}],
@@ -1132,7 +1135,7 @@ DE.CH[1].side.thanks=DE.CH[1].side.thanks; // (rabbit mentioned in text)
 
 const STORY_DE = [
  'Vor langer Zeit erzählte die große Schriftrolle des Lichts die ganze Geschichte von Gottes Liebe – vom allerersten Sonnenaufgang bis zum hellsten Morgen von allen.',
- 'Doch der Schatten des Zweifels schlich sich heran. Er zerriss die Schriftrolle in zehn Teile und versteckte sie in den Zeiten der Bibel.',
+ 'Doch der Schatten des Zweifels schlich sich heran. Er zerriss die Schriftrolle in achtzehn Teile und versteckte sie in den Zeiten der Bibel.',
  'Ohne die Schriftrolle breiteten sich Düsterlinge überall aus: Flüstern von Lügen, Sorgen, Hochmut und Angst.',
  'Jetzt wird ein junger Pilger gebraucht. Jemand Mutiges. Jemand Neugieriges. Jemand wie du.'
 ];
@@ -1354,6 +1357,471 @@ const BOOKS_DE = ['1. Mose','2. Mose','3. Mose','4. Mose','5. Mose','Josua','Ric
 
 </script>
 <script>
+/* ===================== SCROLLS OF LIGHT — EXPANSION WORLDS (11–18) ===================== */
+/* Play order follows the Bible. CH keys are stable ids; ORDER sets the gate sequence. */
+const ORDER = [1,2,11,12,3,4,5,13,6,14,15,7,16,8,9,10,17,18];
+
+Object.assign(COMPS,{
+  stars:{name:'Shooting Star',e:'🌠',type:'all',p:8,desc:'Rains sparkles on every foe. "Count the stars" (Genesis 15:5).'},
+  cow:{name:'Cow',e:'🐄',type:'heal',p:11,desc:'Steady healing. Remember Pharaoh\'s dream of seven fat cows!'},
+  mouse:{name:'Field Mouse',e:'🐭',type:'coins',p:6,desc:'Gleans extra shekels after every win, like Ruth in the fields.'},
+  horse:{name:'Fiery Horse',e:'🐎',type:'attack',p:17,desc:'Gallops in hard. Elijah went up with horses of fire (2 Kings 2:11).'},
+  worm:{name:'Little Worm',e:'🐛',type:'stun',p:32,desc:'Small but surprising. It can freeze a foe for a turn (Jonah 4:7).'},
+  flame:{name:'Spirit Flame',e:'🔥',type:'all',p:10,desc:'Warm light that reaches every foe at once (Acts 2:3).'},
+  boat:{name:'Sailboat',e:'⛵',type:'shield',p:48,desc:'Shelters you from big hits, like a boat in a storm.'}
+});
+DYES.esther={name:'Queen Esther Blue',c:'#2b5fb0',note:'A royal robe from the palace of Susa (Esther 8:15).'};
+
+Object.assign(CH,{
+11:{name:'Plains of Canaan',book:'Genesis 11–22',seed:1111,w:48,h:34,
+ th:{g:'#b9c27a',g2:'#adb56e',p:'#d6c08c',obs:['olive','rock','bush','olive'],w:'#3e86c2',deco:'grass',sky:'#e7e3b5'},
+ ponds:2,dense:30,river:null,lm:{k:'camp',x:.66,y:.16,w:7,h:3},
+ foe:{name:'Fidgetling',c:'#9a7a3a',what:'shadows of impatience'},
+ foes:[{name:'Fidgetling',c:'#9a7a3a',shape:'blob'},{name:'Hurry Imp',c:'#b0603a',shape:'horned',trait:'quick'},{name:'Dust Grump',c:'#8a7a5a',shape:'wisp',trait:'tough'}],kills:4,foeMax:2,
+ boss:{name:'Tower of Babel Gloom',kind:'tower',c:'#8a6a4a',where:'tents of Abraham'},
+ guide:{name:'Abraham',look:{skin:SK[3],hair:'#cfcfcf',robe:'#8a5a3a',sash:'#e3b64a',beard:'#e0e0e0',wrap:'#e8dcc0'},staff:1},
+ intro:["Welcome, traveler! I am Abraham. Not long ago, people built a tall tower at Babel to make themselves famous instead of trusting God.",
+  "God scattered them. Then He called me to leave my home and go to a land He would show me. So I went!",
+  "God promised me a family as many as the stars. Sarah and I have waited a long, long time.",
+  "Fidgetlings whisper, 'Give up! It's taking too long!' Defeat 4 of them, then face the Tower of Babel Gloom by my tents."],
+ hint:"The Tower of Babel Gloom looms by my tents. Trusting God is better than building our own tower!",
+ outro:["The tower is down! God's way is always better than our own proud plans.",
+  "And look — Sarah and I have a son, Isaac! Is anything too hard for the LORD?",
+  "Take this piece of the Scroll. And this shooting star wants to come with you — count the stars with it!"],
+ post:"Look up at the stars. God keeps every promise, even when we have to wait.",
+ side:{name:'Sarah',look:{skin:SK[3],hair:'#cfcfcf',robe:'#c0302b',sash:'#e9d8a6',hs:1,wrap:'#e8dcc0'},items:['🐐','🐐','🐐'],what:'lost goats',
+  ask:"Three of our goats wandered off while I was laughing at the good news! Can you find them for me?",
+  thanks:"You found them all! God made me laugh with joy. Here, take this.",reward:{coins:45,item:'bread'}},
+ flav:[{name:'Lot',look:{skin:SK[3],hair:'#3a2414',robe:'#5c6b8f',sash:'#c8a46a',beard:'#3a2414'},lines:["I'm Abraham's nephew. He let me pick the best land first. That's what a generous heart looks like!"]},
+  {name:'Isaac',look:{skin:SK[3],hair:'#3a2414',robe:'#e9d8a6',sash:'#c8a46a',hs:2},lines:["My name means 'he laughs'! Mom laughed when God said she'd have a baby at ninety."]}],
+ reward:{comp:'stars'},
+ verse:{t:'Is anything too hard for the LORD?',r:'Genesis 18:14'}},
+
+12:{name:"Joseph's Journey",book:'Genesis 37–50',seed:1212,w:48,h:34,
+ th:{g:'#d6bf7c',g2:'#ccb46f',p:'#c9a35d',obs:['palm','rock','cactus','palm'],w:'#3a80b8',deco:'reed',sky:'#f5e2b0'},
+ ponds:1,dense:26,river:{d:'v',at:.55},lm:{k:'granary',x:.7,y:.16,w:6,h:4},
+ foe:{name:'Jealousling',c:'#4f8a3a',what:'shadows of jealousy'},
+ foes:[{name:'Jealousling',c:'#4f8a3a',shape:'blob'},{name:'Grudge Drip',c:'#5a6a3a',shape:'drip',trait:'mender'},{name:'Pit Watcher',c:'#6a5a3a',shape:'eye',trait:'tough'}],kills:5,foeMax:2,
+ boss:{name:'Green-Eyed Gloom',kind:'jealous',c:'#3f7a3a',where:'granaries'},
+ guide:{name:'Joseph',look:{skin:SK[2],hair:'#2b1a10',robe:'rainbow',sash:'#e3b64a'}},
+ intro:["Hello! I'm Joseph. My father gave me a beautiful coat of many colors.",
+  "My brothers were so jealous that they sold me to traders, and I ended up a slave in Egypt — then even in prison!",
+  "But God was with me. He helped me explain Pharaoh's dreams, and now I store grain for seven hungry years.",
+  "Jealouslings are stirring up trouble. Defeat 5 of them, then face the Green-Eyed Gloom by the granaries."],
+ hint:"The Green-Eyed Gloom guards the granaries. Jealousy only hurts — forgiveness heals!",
+ outro:["The jealousy is gone. My brothers came to Egypt for food... and I forgave them.",
+  "They meant to harm me, but God meant it for good — to save many people's lives.",
+  "Here's a piece of the Scroll. And this cow comes from Pharaoh's very own herd!"],
+ post:"The LORD was with Joseph — and He's with you too, even in hard places.",
+ side:{name:'Benjamin',look:{skin:SK[2],hair:'#2b1a10',robe:'#2f8f8a',sash:'#e9d8a6',hs:2},items:['🪙','🪙','🪙'],what:'silver coins',
+  ask:"Our silver coins ended up back in our grain sacks, and then they spilled everywhere! Can you help me find 3 of them?",
+  thanks:"Thank you! My brother Joseph is so kind to us. Take some for yourself.",reward:{coins:55,item:'fish'}},
+ flav:[{name:'Reuben',look:{skin:SK[2],hair:'#3a2414',robe:'#8a3a3a',sash:'#c8a46a',beard:'#3a2414'},lines:["I'm the oldest brother. I wish I had stood up for Joseph sooner."]},
+  {name:"Pharaoh's Baker",look:{skin:SK[3],hair:'#1a1a1a',robe:'#f1efe8',sash:'#e3b64a'},lines:["I dreamed about three baskets of bread... Joseph knew what it meant."]}],
+ reward:{comp:'cow'},
+ verse:{t:"As for you, you meant evil against me, but God meant it for good.",r:'Genesis 50:20'}},
+
+13:{name:'Fields of Ruth',book:'Ruth 1–4',seed:1313,w:46,h:32,
+ th:{g:'#c9c26a',g2:'#bdb65e',p:'#e0cf94',obs:['olive','bush','tree','rock'],w:'#3e86c2',deco:'wheat',sky:'#f6e7b0'},
+ ponds:2,dense:26,river:null,lm:{k:'haystacks',x:.66,y:.18,w:6,h:3},
+ foe:{name:'Lonely Gloom',c:'#6a6a8a',what:'shadows of loneliness'},
+ foes:[{name:'Lonely Gloom',c:'#6a6a8a',shape:'blob'},{name:'Famine Wisp',c:'#a06a3a',shape:'wisp',trait:'quick'},{name:'Thistle Brute',c:'#6a7a4a',shape:'spiky',trait:'tough'}],kills:5,foeMax:2,
+ boss:{name:'Gloom of Loneliness',kind:'famine',c:'#5a5a7a',where:'barley fields'},
+ guide:{name:'Ruth',look:{skin:SK[3],hair:'#2b1a10',robe:'#b0533a',sash:'#e9d8a6',hs:3}},
+ intro:["Hello, friend. I'm Ruth. I'm from Moab, far from here.",
+  "When my husband died, I could have gone home. But I told Naomi, 'Where you go, I will go. Your God will be my God.'",
+  "Now I gather leftover barley in the fields of a kind man named Boaz, so Naomi and I have food.",
+  "Lonely Glooms are making people feel forgotten. Defeat 5 of them, then face the Gloom of Loneliness by the barley fields."],
+ hint:"The Gloom of Loneliness is near the barley fields. God never forgets anyone!",
+ outro:["You chased away the loneliness! Boaz has been so kind — and now he and I are married.",
+  "We have a little boy named Obed. One day his grandson will be King David!",
+  "Take this piece of the Scroll. And this field mouse wants to help you gather shekels."],
+ post:"Loyal love is a gift from God. Stick with the people He gives you!",
+ side:{name:'Naomi',look:{skin:SK[3],hair:'#9a9a9a',robe:'#5a4a8a',sash:'#e9d8a6',hs:1,wrap:'#e8dcc0'},items:['🌾','🌾','🌾','🌾'],what:'barley bundles',
+  ask:"Ruth works so hard in the fields. Could you gather 4 bundles of barley for us?",
+  thanks:"Bless you, child! God has not forgotten us after all.",reward:{coins:60,item:'fish'}},
+ flav:[{name:'Boaz',look:{skin:SK[3],hair:'#3a2414',robe:'#2f6f8a',sash:'#e3b64a',beard:'#5a3418'},lines:["I told my workers to leave extra barley for Ruth. Kindness costs little and means a lot."]},
+  {name:'Harvester',look:{skin:SK[4],hair:'#1a1a1a',robe:'#c8a46a',sash:'#8a6a3a',hs:2},lines:["Tip: Food heals you in battle. Barley loaves are cheap at Lydia's shop!"]}],
+ reward:{comp:'mouse'},
+ verse:{t:"Where you go, I will go; and where you stay, I will stay. Your people will be my people, and your God my God.",r:'Ruth 1:16'}},
+
+14:{name:'Mount Carmel',book:'1 Kings 17–19',seed:1414,w:48,h:34,
+ th:{g:'#8fae63',g2:'#83a258',p:'#c7b383',obs:['olive','rock','pine','rock'],w:'#4583b5',deco:'pebble',sky:'#cfe0f0'},
+ ponds:1,dense:38,river:null,lm:{k:'altar',x:.66,y:.16,w:5,h:3},
+ foe:{name:'Fakeflame',c:'#c0602a',what:'shadows of false gods'},
+ foes:[{name:'Fakeflame',c:'#c0602a',shape:'wisp'},{name:'Drought Drip',c:'#8a6a4a',shape:'drip',trait:'mender'},{name:'Baal Imp',c:'#a0402a',shape:'horned',trait:'quick'}],kills:5,foeMax:3,
+ boss:{name:'The False Fire',kind:'altar',c:'#c04a2a',where:'altar on Mount Carmel'},
+ guide:{name:'Elijah',look:{skin:SK[3],hair:'#5a3418',robe:'#6b5a3a',sash:'#8a6a3a',beard:'#5a3418'},staff:1},
+ intro:["I am Elijah, a prophet of the LORD. There has been no rain in the land for a long time.",
+  "God sent ravens to feed me, and He kept a widow's flour and oil from running out.",
+  "Now the prophets of Baal say their false god is stronger. We will see whose God answers with fire!",
+  "Fakeflames are everywhere. Defeat 5 of them, then face the False Fire at the altar on Mount Carmel."],
+ hint:"The False Fire burns at the altar. Only the LORD is God!",
+ outro:["Fire fell from heaven and burned up the whole soaked altar! The people shouted, 'The LORD, He is God!'",
+  "Later I was tired and scared. God didn't speak in the wind or the earthquake or the fire — but in a gentle whisper.",
+  "Here's a piece of the Scroll. And this fiery horse would love to gallop beside you!"],
+ post:"When you feel tired or afraid, listen. God speaks gently.",
+ side:{name:'Widow of Zarephath',look:{skin:SK[3],hair:'#2b1a10',robe:'#7a5a6a',sash:'#e9d8a6',hs:1,wrap:'#d8c8a8'},items:['🫒','🫒','🫒'],what:'olives for oil',
+  ask:"God has kept my jar of oil from running out! But I'd like to share with my neighbors. Could you find 3 olive clusters?",
+  thanks:"God provides more than enough. Please take this!",reward:{coins:70,item:'honey'}},
+ flav:[{name:'Elisha',look:{skin:SK[2],hair:'#3a2414',robe:'#5c7a4a',sash:'#c8a46a'},lines:["One day I'll carry on Elijah's work. For now, I'm learning to listen to God."]},
+  {name:'Obadiah',look:{skin:SK[3],hair:'#2b1a10',robe:'#3c4fa8',sash:'#e3b64a',beard:'#2b1a10'},lines:["I hid a hundred prophets in caves and fed them bread and water. Brave kindness!"]}],
+ reward:{comp:'horse'},
+ verse:{t:'After the fire, there was a still small voice.',r:'1 Kings 19:12'}},
+
+15:{name:'Road to Nineveh',book:'Jonah 1–4',seed:1515,w:48,h:34,
+ th:{g:'#c8b07a',g2:'#bca46e',p:'#d8c08c',obs:['palm','rock','brick','palm'],w:'#2f78b8',deco:'pebble',sky:'#f0dcae'},
+ ponds:0,dense:26,river:null,sea:1,lm:{k:'gatehouse',x:.66,y:.12,w:7,h:5},
+ foe:{name:'Runaway',c:'#5a6a8a',what:'shadows of running away'},
+ foes:[{name:'Runaway',c:'#5a6a8a',shape:'blob'},{name:'Sulk Spike',c:'#7a4a6a',shape:'spiky',trait:'quick'},{name:'Deep Watcher',c:'#2a4a6a',shape:'eye',trait:'tough'}],kills:5,foeMax:3,
+ boss:{name:'Gloom of Running Away',kind:'whirl',c:'#2a5a8a',where:'gate of Nineveh'},
+ guide:{name:'Jonah',look:{skin:SK[2],hair:'#3a2414',robe:'#3c6a8a',sash:'#c8a46a',beard:'#3a2414'}},
+ intro:["Hi... I'm Jonah. God told me to go to Nineveh and warn them. I didn't want to, so I got on a ship going the other way.",
+  "A huge storm came, the sailors threw me overboard, and a great fish swallowed me!",
+  "I prayed inside that fish for three days. Then it spat me out on the beach. Okay, God — I'm going!",
+  "Runaways keep telling people to hide from God. Defeat 5 of them, then face the Gloom of Running Away at the gate of Nineveh."],
+ hint:"The Gloom of Running Away swirls at the city gate. You can't outrun God's love!",
+ outro:["The whole city of Nineveh turned from their wrong ways, and God forgave them!",
+  "I was grumpy about it at first. But God showed me He cares about every single person.",
+  "Here's a piece of the Scroll. And this little worm... well, it ate my shade plant. It's sorry now and wants to be friends!"],
+ post:"God's mercy is bigger than we think — for them, and for us.",
+ side:{name:'Sailor',look:{skin:SK[4],hair:'#1a1a1a',robe:'#2f6f8a',sash:'#f1efe8',hs:5},items:['🐚','🐚','🐚','🐚'],what:'seashells',
+  ask:"After the storm, our ship's lucky shells washed up all over the beach. Will you find 4 of them?",
+  thanks:"Ha! Thanks, friend. We sailors learned that only the LORD can calm the sea.",reward:{coins:75,item:'fish'}},
+ flav:[{name:'King of Nineveh',look:{skin:SK[2],hair:'#1a1a1a',robe:'#7b3fa0',sash:'#e3b64a',beard:'#1a1a1a'},lines:["When I heard Jonah's warning, I took off my royal robe and asked everyone to pray. God was merciful!"]},
+  {name:'Ship Captain',look:{skin:SK[1],hair:'#5a5a5a',robe:'#5a4a3a',sash:'#c8a46a',beard:'#7a7a7a'},lines:["Tip: Animal friends with 'Freezes foes' can stop an enemy's attack for a whole turn."]}],
+ reward:{comp:'worm'},
+ verse:{t:'Salvation belongs to the LORD.',r:'Jonah 2:9'}},
+
+16:{name:'Palace of Susa',book:'Esther 1–10',seed:1616,w:48,h:34,
+ th:{g:'#9ab86a',g2:'#8ead5e',p:'#e2cf9a',obs:['palm','bush','tree','brick'],w:'#3a8fcf',deco:'flower',sky:'#d8e6f5'},
+ ponds:3,dense:28,river:null,lm:{k:'palace',x:.66,y:.12,w:8,h:5},
+ foe:{name:'Intrigling',c:'#6a3a6a',what:'shadows of wicked schemes'},
+ foes:[{name:'Intrigling',c:'#6a3a6a',shape:'blob'},{name:'Plot Imp',c:'#8a2a4a',shape:'horned',trait:'quick'},{name:'Shadow Courtier',c:'#4a3a5a',shape:'wisp',trait:'mender'}],kills:6,foeMax:3,
+ boss:{name:'The Wicked Decree',kind:'scroll',c:'#5a2a4a',where:"king's palace"},
+ guide:{name:'Esther',look:{skin:SK[2],hair:'#1a1a1a',robe:'#2b5fb0',sash:'#e3b64a',hs:1}},
+ intro:["Welcome to the palace of Susa. I'm Esther — an orphan girl who became queen of Persia!",
+  "But wicked Haman tricked the king into sealing a decree to destroy my people.",
+  "My cousin Mordecai said, 'Who knows if you have come to the kingdom for such a time as this?' So I will go to the king, even though it's dangerous.",
+  "Intriglings are spreading the evil plan. Defeat 6 of them, then tear up the Wicked Decree at the king's palace."],
+ hint:"The Wicked Decree waits at the palace. Be brave — God put you here for such a time as this!",
+ outro:["The king held out his golden scepter, listened to me, and my people were saved!",
+  "We celebrate it every year with the feast of Purim. God's name isn't even written in my story — but He was there the whole time.",
+  "Take this piece of the Scroll — and this royal robe, so you remember to be brave."],
+ post:"You are where you are for a reason. Be brave and kind!",
+ side:{name:'Mordecai',look:{skin:SK[2],hair:'#5a5a5a',robe:'#5a4a3a',sash:'#e9d8a6',beard:'#7a7a7a',wrap:'#d8c8a8'},items:['📜','📜','📜'],what:'royal messages',
+  ask:"The king's new decree lets our people defend themselves! Three message scrolls fell off the rider's horse. Can you find them?",
+  thanks:"Now the good news can go to every province! Thank you.",reward:{coins:85,item:'honey'}},
+ flav:[{name:'King Xerxes',look:{skin:SK[2],hair:'#1a1a1a',robe:'#7b3fa0',sash:'#e3b64a',beard:'#1a1a1a'},lines:["One sleepless night, I read the palace records and learned that Mordecai once saved my life!"]},
+  {name:'Palace Maid',look:{skin:SK[4],hair:'#1a1a1a',robe:'#e09ab0',sash:'#f1efe8',hs:4},lines:["Queen Esther asked all of us to fast and pray for three days. She's so brave!"]}],
+ reward:{dye:'esther'},
+ verse:{t:"Who knows if you haven't come to the kingdom for such a time as this?",r:'Esther 4:14'}},
+
+17:{name:'Pentecost',book:'Acts 1–4',seed:1717,w:48,h:34,
+ th:{g:'#cbb88e',g2:'#c0ad83',p:'#e6d8b2',obs:['house','olive','house','rock'],w:'#3d84bd',deco:'pebble',sky:'#e9dcc0'},
+ ponds:1,dense:32,river:null,lm:{k:'upperRoom',x:.66,y:.16,w:5,h:4},
+ foe:{name:'Shyling',c:'#5a6a7a',what:'shadows of fear and silence'},
+ foes:[{name:'Shyling',c:'#5a6a7a',shape:'blob'},{name:'Hush Wisp',c:'#6a5a8a',shape:'wisp',trait:'quick'},{name:'Muffle Drip',c:'#4a4a5a',shape:'drip',trait:'tough'}],kills:6,foeMax:3,
+ boss:{name:'Gloom of Silence',kind:'mute',c:'#3a3a5a',where:'upper room'},
+ guide:{name:'Mary, mother of Jesus',look:{skin:SK[2],hair:'#3a2414',robe:'#3c6aa8',sash:'#f1efe8',hs:1,wrap:'#f1efe8'}},
+ intro:["Peace to you. I'm Mary, the mother of Jesus. After Jesus rose, He went back to heaven from the Mount of Olives.",
+  "He told us to wait in Jerusalem for the Holy Spirit. So we've been praying together in the upper room.",
+  "But Shylings keep whispering, 'Stay quiet. Don't tell anyone about Jesus.'",
+  "Defeat 6 of them, then face the Gloom of Silence at the upper room."],
+ hint:"The Gloom of Silence hangs over the upper room. God gives us courage to speak!",
+ outro:["A sound like a mighty wind filled the house, and flames like fire rested on each of us. The Holy Spirit came!",
+  "Peter stood up and told the crowd about Jesus, and about three thousand people believed that very day!",
+  "Here's a piece of the Scroll — and a little Spirit Flame to keep you warm and brave."],
+ post:"The same Holy Spirit gives courage to everyone who follows Jesus.",
+ side:{name:'Visitor from Egypt',look:{skin:SK[4],hair:'#1a1a1a',robe:'#e0a030',sash:'#f1efe8',hs:5},items:['🕯️','🕯️','🕯️'],what:'lamps',
+  ask:"I came for the feast and heard the disciples speak in my own language! We're meeting tonight — could you find 3 lamps?",
+  thanks:"Now everyone can see! People from every nation are hearing the good news.",reward:{coins:95,item:'honey'}},
+ flav:[{name:'Peter',look:{skin:SK[2],hair:'#5a5a5a',robe:'#3c6a8a',sash:'#c8a46a',beard:'#6a6a6a'},lines:["I once said three times that I didn't know Jesus. Now I'm not afraid to tell thousands!"]},
+  {name:'Stephen',look:{skin:SK[3],hair:'#2b1a10',robe:'#f1efe8',sash:'#2f8f8a'},lines:["I help hand out food to widows so no one is left out. Serving is part of following Jesus."]}],
+ reward:{comp:'flame'},
+ verse:{t:'But you will receive power when the Holy Spirit has come upon you.',r:'Acts 1:8'}},
+
+18:{name:"Paul's Voyage",book:'Acts 9–28',seed:1818,w:50,h:36,
+ th:{g:'#9fc06a',g2:'#93b45e',p:'#dccb94',obs:['palm','rock','olive','bush'],w:'#2a7fc0',deco:'flower',sky:'#bfe2ff'},
+ ponds:0,dense:28,river:null,sea:1,lm:{k:'wreck',x:.66,y:.16,w:6,h:3},
+ foe:{name:'Chainling',c:'#5a5a6a',what:'shadows that try to stop the good news'},
+ foes:[{name:'Chainling',c:'#5a5a6a',shape:'blob'},{name:'Shipwreck Spike',c:'#2a6a8a',shape:'spiky',trait:'quick'},{name:'Viper Gloom',c:'#4a6a2a',shape:'drip',trait:'mender'}],kills:7,foeMax:3,
+ boss:{name:'Chains of Fear',kind:'chains',c:'#3a3a4a',where:'shipwreck'},
+ guide:{name:'Paul',look:{skin:SK[2],hair:'#3a2414',robe:'#8a5a3a',sash:'#c8a46a',beard:'#3a2414'}},
+ intro:["Grace and peace to you! I'm Paul. I used to fight against Jesus' followers — until Jesus met me on the road to Damascus.",
+  "Since then I've traveled across the sea telling everyone the good news. I've been in prison and in shipwrecks!",
+  "Our ship just broke apart off the island of Malta, but God kept every single person safe.",
+  "Chainlings want to stop the good news. Defeat 7 of them, then face the Chains of Fear by the shipwreck."],
+ hint:"The Chains of Fear rattle by the shipwreck. Nothing can separate us from God's love!",
+ outro:["The chains are broken! In Philippi, Silas and I sang in prison at midnight — and God shook the prison doors open.",
+  "Now I'm going to Rome. Even if I'm in chains, the good news can't be chained!",
+  "This is the very last piece of the Scroll of Light. Take it to Simeon in Pilgrim's Rest. And take this sailboat — your journey goes on!"],
+ post:"I have fought the good fight. I have finished the course. I have kept the faith. Keep going, friend!",
+ side:{name:'Luke',look:{skin:SK[1],hair:'#a8642a',robe:'#2f8f8a',sash:'#e9d8a6',beard:'#a8642a'},items:['✉️','✉️','✉️','✉️'],what:"Paul's letters",
+  ask:"I'm Luke, a doctor and Paul's friend. Paul's letters to the churches blew across the beach! Can you find all 4?",
+  thanks:"Wonderful! These letters will encourage churches for thousands of years.",reward:{coins:120,item:'honey'}},
+ flav:[{name:'Silas',look:{skin:SK[3],hair:'#1a1a1a',robe:'#5a4a8a',sash:'#e3b64a',beard:'#1a1a1a'},lines:["Paul and I sang hymns in prison at midnight. Then — an earthquake! Praise can shake things up."]},
+  {name:'Timothy',look:{skin:SK[1],hair:'#a8642a',robe:'#6f8f3e',sash:'#e9d8a6',hs:2},lines:["Paul told me, 'Don't let anyone look down on you because you are young.' That's for you too!"]}],
+ reward:{comp:'boat'},
+ verse:{t:'I have fought the good fight. I have finished the course. I have kept the faith.',r:'2 Timothy 4:7'}}
+});
+
+/* Bible questions for the new worlds (appended; BQ_DE below follows the same order) */
+BQ.push(
+[11,1,'God promised Abraham his family would be as many as the...','Stars in the sky','Fish in the sea','Trees in the forest','Birds in the air','Genesis 15:5'],
+[11,1,"What was the name of Abraham's wife?",'Sarah','Rebekah','Rachel','Leah','Genesis 17:15'],
+[11,2,'Why did God scatter the people building the tower of Babel?','They built it out of pride, to make a name for themselves','They ran out of bricks','A storm knocked it down','The king wanted a palace','Genesis 11:4-8'],
+[11,2,'How old was Abraham when Isaac was born?','100','40','65','900','Genesis 21:5'],
+[11,2,'What did Sarah do when she heard she would have a baby in her old age?','She laughed','She cried','She ran away','She sang a song','Genesis 18:12'],
+[11,2,"Who was Abraham's nephew?",'Lot','Laban','Esau','Isaac','Genesis 12:5'],
+[11,3,"What was Abraham's name before God changed it?",'Abram','Abner','Aaron','Amos','Genesis 17:5'],
+[11,3,'What did God provide on the mountain instead of Isaac?','A ram caught in a thicket','A lamb from the village','A dove','A calf','Genesis 22:13'],
+[12,1,'Who gave Joseph a coat of many colors?','His father Jacob','His mother Rachel','Pharaoh','His brother Reuben','Genesis 37:3'],
+[12,1,"What did Joseph's brothers do to him?",'Sold him to traders','Made him king','Sent him to school','Gave him a farm','Genesis 37:28'],
+[12,1,'What did God help Joseph understand?','Dreams','The stars only','Animal languages','Secret codes','Genesis 40:8'],
+[12,2,"In Pharaoh's dream, what came up out of the river?",'Seven fat cows and seven thin cows','Seven fish','Twelve frogs','A golden calf','Genesis 41:2-4'],
+[12,2,'How many brothers did Joseph have?','11','7','12','3','Genesis 35:22-26'],
+[12,2,"Who was Joseph's youngest brother?",'Benjamin','Reuben','Judah','Levi','Genesis 35:18'],
+[12,2,"What did Joseph hide in Benjamin's sack?",'His silver cup','A golden crown','A scroll','A sword','Genesis 44:2'],
+[12,3,'How many years of plenty came before the famine?','Seven','Three','Twelve','Forty','Genesis 41:29-30'],
+[12,3,'Joseph told his brothers, "You meant evil against me, but God meant it for..."','good','nothing','Egypt','later','Genesis 50:20'],
+[13,1,"Who was Ruth's mother-in-law?",'Naomi','Sarah','Miriam','Hannah','Ruth 1:3-4'],
+[13,1,'What did Ruth gather in the fields?','Grain left behind by the harvesters','Flowers','Stones','Firewood','Ruth 2:2-3'],
+[13,1,'In whose fields did Ruth gather grain?','Boaz','Saul','Jesse','Laban','Ruth 2:3'],
+[13,2,'Where was Ruth from?','Moab','Egypt','Nineveh','Rome','Ruth 1:4'],
+[13,2,"Which famous king was Ruth's great-grandson?",'King David','King Saul','King Solomon','King Herod','Ruth 4:17'],
+[13,2,'Where did Naomi and Ruth go after leaving Moab?','Bethlehem','Jericho','Babylon','Nazareth','Ruth 1:19'],
+[13,3,"What was the name of Ruth and Boaz's son?",'Obed','Jesse','Samuel','Isaac','Ruth 4:17'],
+[13,3,'What did Naomi ask people to call her because she was sad?','Mara','Miriam','Martha','Mercy','Ruth 1:20'],
+[14,1,'On which mountain did Elijah challenge the prophets of Baal?','Mount Carmel','Mount Sinai','Mount Ararat','Mount of Olives','1 Kings 18:19-20'],
+[14,1,"What fell from heaven on Elijah's altar?",'Fire','Snow','Manna','Gold','1 Kings 18:38'],
+[14,2,'What did Elijah pour on the altar before he prayed?','Water','Oil','Wine','Milk','1 Kings 18:33-35'],
+[14,2,'What never ran out for the widow who helped Elijah?','Flour and oil','Gold and silver','Water and wine','Bread and fish','1 Kings 17:14-16'],
+[14,2,'How did God speak to Elijah on the mountain?','In a still, small voice','In a loud earthquake','In a strong wind','In a great fire','1 Kings 19:12'],
+[14,3,'Who took over from Elijah as prophet?','Elisha','Jonah','Isaiah','Samuel','2 Kings 2:13-15'],
+[14,3,"What did Elijah's servant see over the sea after Elijah prayed for rain?","A small cloud like a man's hand",'A rainbow','A ship','A great fish','1 Kings 18:44'],
+[14,3,'Which wicked queen was angry with Elijah?','Jezebel','Esther','Vashti','Sheba','1 Kings 19:1-2'],
+[15,1,'Which city did God tell Jonah to go to?','Nineveh','Tarshish','Jerusalem','Bethlehem','Jonah 1:2'],
+[15,1,'Where did Jonah try to run away to?','Tarshish','Nineveh','Egypt','Babylon','Jonah 1:3'],
+[15,1,'How long was Jonah inside the great fish?','Three days and three nights','One hour','Seven days','Forty days','Jonah 1:17'],
+[15,2,'What did the sailors do to stop the storm?','Threw Jonah into the sea','Turned the ship around','Threw away the sails','Rowed faster','Jonah 1:15'],
+[15,2,'What did Jonah do inside the fish?','He prayed','He slept','He sang to the fish','He wrote a letter','Jonah 2:1'],
+[15,2,'What did the people of Nineveh do after hearing Jonah?','They turned from their evil ways','They laughed at him','They threw him out','They built a tower','Jonah 3:10'],
+[15,3,'What did God make grow to give Jonah shade?','A vine','An oak tree','A palm tree','A fig tree','Jonah 4:6'],
+[15,3,"What attacked Jonah's shade plant?",'A worm','A goat','A locust','A bird','Jonah 4:7'],
+[16,1,'Esther became queen of which empire?','Persia','Egypt','Rome','Greece','Esther 1:1; 2:17'],
+[16,1,"Who was Esther's cousin who raised her?",'Mordecai','Haman','Boaz','Daniel','Esther 2:7'],
+[16,1,'Who plotted to destroy the Jewish people?','Haman','Mordecai','Nehemiah','Joseph','Esther 3:6'],
+[16,2,'What did Esther ask her people to do before she went to the king?','Fast for three days','Bring gifts','Build walls','Hide in caves','Esther 4:16'],
+[16,2,'What did the king hold out to show Esther was welcome?','His golden scepter','His crown','A silver cup','A scroll','Esther 5:2'],
+[16,2,'Mordecai said Esther may have become queen "for such a time as..."','this','tomorrow','a party','war','Esther 4:14'],
+[16,3,"Which festival celebrates how God saved the Jews in Esther's time?",'Purim','Passover','Pentecost','Tabernacles','Esther 9:26'],
+[16,3,"What was Esther's Hebrew name?",'Hadassah','Hannah','Deborah','Naomi','Esther 2:7'],
+[17,1,'What sound filled the house at Pentecost?','A rushing mighty wind','A trumpet','Thunder','Singing birds','Acts 2:2'],
+[17,1,"What appeared over the disciples' heads?",'Tongues like fire','Crowns','Golden halos','Doves','Acts 2:3'],
+[17,1,'Who came to the disciples at Pentecost, just as Jesus promised?','The Holy Spirit','Moses','An army','King Herod','Acts 2:4'],
+[17,2,'What could the disciples suddenly do?','Speak in other languages','Fly','Walk through walls','See in the dark','Acts 2:4'],
+[17,2,'Who preached to the crowd at Pentecost?','Peter','Paul','Thomas','Judas','Acts 2:14'],
+[17,2,'About how many people were baptized that day?','About 3,000','About 12','About 100','About 1 million','Acts 2:41'],
+[17,3,'From where did Jesus go up into heaven?','The Mount of Olives','Mount Sinai','The temple roof','A boat','Acts 1:9-12'],
+[17,3,'Who was chosen to replace Judas as an apostle?','Matthias','Barnabas','Stephen','Silas','Acts 1:26'],
+[18,1,"What was Paul's name before he was called Paul?",'Saul','Simon','Silas','Samuel','Acts 13:9'],
+[18,1,'What did Paul and Silas do in prison at midnight?','Prayed and sang hymns','Slept','Dug a tunnel','Cried','Acts 16:25'],
+[18,2,'What shook the prison open for Paul and Silas?','An earthquake','A storm','An angel with a key','A battering ram','Acts 16:26'],
+[18,2,'On which island was Paul shipwrecked?','Malta','Cyprus','Crete','Sicily','Acts 28:1'],
+[18,2,'What bit Paul on Malta without hurting him?','A viper','A shark','A dog','A spider','Acts 28:3-5'],
+[18,2,'Who traveled with Paul on his first journey?','Barnabas','Judas','Pilate','Nicodemus','Acts 13:2'],
+[18,3,'Who helped Saul see again in Damascus?','Ananias','Peter','Lydia','Timothy','Acts 9:17-18'],
+[18,3,'Which city was Paul taken to as a prisoner at the end of Acts?','Rome','Athens','Jerusalem','Corinth','Acts 28:16'],
+[18,3,'What did Paul make for a living?','Tents','Boats','Pottery','Shoes','Acts 18:3']
+);
+VQ.push(
+[11,'Is anything too ___ for the LORD?','hard','big','far','old','Genesis 18:14'],
+[11,'He ___ in the LORD, who credited it to him for righteousness.','believed','sang','walked','built','Genesis 15:6'],
+[12,'As for you, you meant evil against me, but God meant it for ___.','good','nothing','Egypt','later','Genesis 50:20'],
+[12,'The LORD was with ___, and he was a prosperous man.','Joseph','Pharaoh','Reuben','Jacob','Genesis 39:2'],
+[13,'Where you go, I will ___; and where you stay, I will stay.','go','sing','eat','rest','Ruth 1:16'],
+[13,'Your people will be my people, and your ___ my God.','God','king','land','house','Ruth 1:16'],
+[14,'After the fire, there was a still small ___.','voice','cloud','light','wind','1 Kings 19:12'],
+[14,'The LORD, he is ___! The LORD, he is God!','God','king','here','strong','1 Kings 18:39'],
+[15,'___ belongs to the LORD.','Salvation','Gold','Nineveh','Wisdom','Jonah 2:9'],
+[15,'You are a gracious God, and ___, slow to anger.','merciful','angry','quiet','tired','Jonah 4:2'],
+[16,"Who knows if you haven't come to the kingdom for such a ___ as this?",'time','party','crown','palace','Esther 4:14'],
+[17,'But you will receive ___ when the Holy Spirit has come upon you.','power','gold','bread','crowns','Acts 1:8'],
+[17,'Whoever will call on the name of the Lord will be ___.','saved','famous','rich','tired','Acts 2:21'],
+[18,'I have fought the good fight. I have finished the course. I have kept the ___.','faith','map','money','ship','2 Timothy 4:7'],
+[18,'For I am not ___ of the Good News of Christ.','ashamed','tired','sure','afraid','Romans 1:16'],
+[18,'We know that all things work together for ___ for those who love God.','good','fun','money','peace','Romans 8:28']
+);
+
+/* ---------- German ---------- */
+Object.assign(DE.COMPS,{stars:{name:'Sternschnuppe',desc:'Lässt Funken auf alle Gegner regnen. „Zähl die Sterne“ (nach 1. Mose 15,5).'},cow:{name:'Kuh',desc:'Gleichmäßige Heilung. Denk an den Traum des Pharao von sieben fetten Kühen!'},mouse:{name:'Feldmaus',desc:'Sammelt nach jedem Sieg Extra-Schekel – wie Rut auf dem Feld.'},horse:{name:'Feuerpferd',desc:'Galoppiert mit voller Kraft heran. Elia fuhr mit Feuerpferden in den Himmel (2. Könige 2,11).'},worm:{name:'Kleiner Wurm',desc:'Klein, aber überraschend. Kann einen Gegner eine Runde erstarren lassen (Jona 4,7).'},flame:{name:'Geistflamme',desc:'Warmes Licht, das alle Gegner auf einmal erreicht (Apostelgeschichte 2,3).'},boat:{name:'Segelboot',desc:'Schützt dich vor großen Treffern – wie ein Boot im Sturm.'}});
+DE.DYES.esther={name:'Königin-Ester-Blau',note:'Ein königliches Gewand aus dem Palast von Susa (Ester 8,15).'};
+Object.assign(DE.CH,{
+11:{name:'Ebene von Kanaan',book:'1. Mose 11–22',foe:{name:'Zappelling',pl:'Zappellinge',what:'Schatten der Ungeduld'},foes:[{name:'Zappelling'},{name:'Eilwicht'},{name:'Staubgroll'}],
+ boss:{name:'Turm-von-Babel-Dunkel',where:'bei Abrahams Zelten'},guide:{name:'Abraham'},
+ intro:['Willkommen, Reisender! Ich bin Abraham. Vor Kurzem haben Menschen in Babel einen hohen Turm gebaut, um selbst berühmt zu werden, statt Gott zu vertrauen.','Gott hat sie zerstreut. Dann hat er mich gerufen: Verlass deine Heimat und geh in ein Land, das ich dir zeigen werde. Also bin ich gegangen!','Gott hat mir so viele Nachkommen versprochen wie Sterne am Himmel. Sara und ich warten schon sehr, sehr lange.','Zappellinge flüstern: „Gib auf! Das dauert viel zu lange!“ Besiege 4 Düsterlinge, dann stell dich dem Turm-von-Babel-Dunkel bei meinen Zelten.'],
+ hint:'Das Turm-von-Babel-Dunkel ragt bei meinen Zelten auf. Gott zu vertrauen ist besser, als einen eigenen Turm zu bauen!',
+ outro:['Der Turm ist gefallen! Gottes Weg ist immer besser als unsere eigenen stolzen Pläne.','Und schau – Sara und ich haben einen Sohn, Isaak! Ist für den Herrn irgendetwas zu schwer?','Nimm dieses Teil der Schriftrolle. Und diese Sternschnuppe möchte mit dir gehen – zählt zusammen die Sterne!'],
+ post:'Schau hinauf zu den Sternen. Gott hält jedes Versprechen, auch wenn wir warten müssen.',
+ side:{name:'Sara',what:'verlaufene Ziegen',ask:'Drei unserer Ziegen sind weggelaufen, während ich über die gute Nachricht gelacht habe! Findest du sie für mich?',thanks:'Du hast alle gefunden! Gott hat mich vor Freude lachen lassen. Hier, nimm das.'},
+ flav:[{name:'Lot',lines:['Ich bin Abrahams Neffe. Er hat mich zuerst das beste Land aussuchen lassen. So sieht ein großzügiges Herz aus!']},{name:'Isaak',lines:['Mein Name bedeutet „er lacht“! Mama hat gelacht, als Gott sagte, dass sie mit neunzig ein Baby bekommt.']}],
+ verse:{t:'Ist für den Herrn irgendetwas zu schwer?',r:'1. Mose 18,14'}},
+12:{name:'Josefs Weg',book:'1. Mose 37–50',foe:{name:'Neidling',pl:'Neidlinge',what:'Schatten des Neides'},foes:[{name:'Neidling'},{name:'Grolltropfen'},{name:'Grubenglotzer'}],
+ boss:{name:'Neid-Dunkel',where:'bei den Kornspeichern'},guide:{name:'Josef'},
+ intro:['Hallo! Ich bin Josef. Mein Vater hat mir einen wunderschönen bunten Mantel geschenkt.','Meine Brüder waren so neidisch, dass sie mich an Händler verkauft haben. So wurde ich Sklave in Ägypten – und kam sogar ins Gefängnis!','Aber Gott war bei mir. Er hat mir geholfen, die Träume des Pharao zu deuten, und jetzt sammle ich Getreide für sieben hungrige Jahre.','Neidlinge stiften Unruhe. Besiege 5 Düsterlinge, dann stell dich dem Neid-Dunkel bei den Kornspeichern.'],
+ hint:'Das Neid-Dunkel bewacht die Kornspeicher. Neid tut nur weh – Vergebung heilt!',
+ outro:['Der Neid ist weg. Meine Brüder sind nach Ägypten gekommen, um Essen zu holen ... und ich habe ihnen vergeben.','Sie wollten mir Böses tun, aber Gott hat Gutes daraus gemacht – um viele Menschen am Leben zu erhalten.','Hier ist ein Teil der Schriftrolle. Und diese Kuh stammt aus der Herde des Pharao!'],
+ post:'Der Herr war mit Josef – und er ist auch mit dir, sogar an schweren Orten.',
+ side:{name:'Benjamin',what:'Silbermünzen',ask:'Unsere Silbermünzen lagen plötzlich wieder in unseren Getreidesäcken, und dann sind sie überall herausgefallen! Hilfst du mir, 3 davon zu finden?',thanks:'Danke! Mein Bruder Josef ist so gut zu uns. Nimm dir auch etwas.'},
+ flav:[{name:'Ruben',lines:['Ich bin der älteste Bruder. Ich wünschte, ich hätte mich früher für Josef eingesetzt.']},{name:'Bäcker des Pharao',lines:['Ich habe von drei Brotkörben geträumt ... Josef wusste, was das bedeutet.']}],
+ verse:{t:'Ihr wolltet mir Böses tun, aber Gott hat Gutes daraus gemacht.',r:'1. Mose 50,20'}},
+13:{name:'Ruts Felder',book:'Rut 1–4',foe:{name:'Einsamling',pl:'Einsamlinge',what:'Schatten der Einsamkeit'},foes:[{name:'Einsamling'},{name:'Hungerflämmchen'},{name:'Distelgroll'}],
+ boss:{name:'Dunkel der Einsamkeit',where:'bei den Gerstenfeldern'},guide:{name:'Rut'},
+ intro:['Hallo, mein Freund. Ich bin Rut. Ich komme aus Moab, weit weg von hier.','Als mein Mann starb, hätte ich nach Hause gehen können. Aber ich habe zu Noomi gesagt: „Wo du hingehst, da gehe ich auch hin. Dein Gott ist mein Gott.“','Jetzt sammle ich übrig gebliebene Gerste auf den Feldern eines freundlichen Mannes namens Boas, damit Noomi und ich zu essen haben.','Einsamlinge lassen Menschen sich vergessen fühlen. Besiege 5 Düsterlinge, dann stell dich dem Dunkel der Einsamkeit bei den Gerstenfeldern.'],
+ hint:'Das Dunkel der Einsamkeit ist bei den Gerstenfeldern. Gott vergisst niemanden!',
+ outro:['Du hast die Einsamkeit vertrieben! Boas war so freundlich – und jetzt sind wir verheiratet.','Wir haben einen kleinen Jungen namens Obed. Eines Tages wird sein Enkel König David sein!','Nimm dieses Teil der Schriftrolle. Und diese Feldmaus möchte dir helfen, Schekel zu sammeln.'],
+ post:'Treue Liebe ist ein Geschenk von Gott. Halte zu den Menschen, die er dir schenkt!',
+ side:{name:'Noomi',what:'Gerstenbündel',ask:'Rut arbeitet so hart auf dem Feld. Könntest du 4 Gerstenbündel für uns sammeln?',thanks:'Gott segne dich, Kind! Gott hat uns doch nicht vergessen.'},
+ flav:[{name:'Boas',lines:['Ich habe meinen Arbeitern gesagt, sie sollen extra Gerste für Rut liegen lassen. Freundlichkeit kostet wenig und bedeutet viel.']},{name:'Erntehelfer',lines:['Tipp: Essen heilt dich im Kampf. Gerstenbrot ist bei Lydia ganz billig!']}],
+ verse:{t:'Wo du hingehst, da gehe ich auch hin. Dein Volk ist mein Volk, und dein Gott ist mein Gott.',r:'Rut 1,16'}},
+14:{name:'Berg Karmel',book:'1. Könige 17–19',foe:{name:'Trugflamme',pl:'Trugflammen',what:'Schatten falscher Götter'},foes:[{name:'Trugflamme'},{name:'Dürretropfen'},{name:'Baalswicht'}],
+ boss:{name:'Das falsche Feuer',where:'am Altar auf dem Karmel'},guide:{name:'Elia'},
+ intro:['Ich bin Elia, ein Prophet des Herrn. Schon lange hat es im Land nicht mehr geregnet.','Gott hat Raben geschickt, die mir Essen brachten, und er hat das Mehl und Öl einer Witwe nicht ausgehen lassen.','Jetzt sagen die Propheten Baals, ihr falscher Gott sei stärker. Wir werden sehen, welcher Gott mit Feuer antwortet!','Überall sind Trugflammen. Besiege 5 Düsterlinge, dann stell dich dem falschen Feuer am Altar auf dem Karmel.'],
+ hint:'Das falsche Feuer brennt am Altar. Nur der Herr ist Gott!',
+ outro:['Feuer fiel vom Himmel und verbrannte den ganzen nassen Altar! Das Volk rief: „Der Herr ist Gott!“','Später war ich müde und hatte Angst. Gott sprach nicht im Sturm, nicht im Erdbeben und nicht im Feuer – sondern in einem leisen, sanften Säuseln.','Hier ist ein Teil der Schriftrolle. Und dieses Feuerpferd würde gern neben dir galoppieren!'],
+ post:'Wenn du müde bist oder Angst hast: Hör hin. Gott spricht sanft.',
+ side:{name:'Witwe von Sarepta',what:'Oliven für Öl',ask:'Gott hat meinen Ölkrug nie leer werden lassen! Aber ich möchte mit meinen Nachbarn teilen. Findest du 3 Olivenzweige?',thanks:'Gott gibt mehr als genug. Bitte nimm das!'},
+ flav:[{name:'Elisa',lines:['Eines Tages werde ich Elias Arbeit weiterführen. Im Moment lerne ich, auf Gott zu hören.']},{name:'Obadja',lines:['Ich habe hundert Propheten in Höhlen versteckt und ihnen Brot und Wasser gebracht. Mutige Freundlichkeit!']}],
+ verse:{t:'Nach dem Feuer kam ein leises, sanftes Säuseln.',r:'1. Könige 19,12'}},
+15:{name:'Weg nach Ninive',book:'Jona 1–4',foe:{name:'Ausreißer',pl:'Ausreißer',what:'Schatten des Weglaufens'},foes:[{name:'Ausreißer'},{name:'Schmollstachel'},{name:'Tiefseeglotzer'}],
+ boss:{name:'Weglauf-Dunkel',where:'am Stadttor von Ninive'},guide:{name:'Jona'},
+ intro:['Hallo ... ich bin Jona. Gott hat gesagt, ich soll nach Ninive gehen und die Stadt warnen. Ich wollte nicht, also bin ich auf ein Schiff in die andere Richtung gestiegen.','Ein riesiger Sturm kam, die Seeleute warfen mich über Bord, und ein großer Fisch hat mich verschluckt!','Drei Tage lang habe ich in dem Fisch gebetet. Dann hat er mich an den Strand gespuckt. Okay, Gott – ich gehe!','Ausreißer sagen den Leuten, sie sollen sich vor Gott verstecken. Besiege 5 Düsterlinge, dann stell dich dem Weglauf-Dunkel am Stadttor von Ninive.'],
+ hint:'Das Weglauf-Dunkel wirbelt am Stadttor. Vor Gottes Liebe kann man nicht davonlaufen!',
+ outro:['Die ganze Stadt Ninive ist von ihren falschen Wegen umgekehrt, und Gott hat ihnen vergeben!','Zuerst war ich deswegen schlecht gelaunt. Aber Gott hat mir gezeigt, dass ihm jeder einzelne Mensch wichtig ist.','Hier ist ein Teil der Schriftrolle. Und dieser kleine Wurm ... na ja, er hat meine Schattenpflanze gefressen. Jetzt tut es ihm leid, und er will dein Freund sein!'],
+ post:'Gottes Erbarmen ist größer, als wir denken – für sie und für uns.',
+ side:{name:'Seemann',what:'Muscheln',ask:'Nach dem Sturm sind die Glücksmuscheln unseres Schiffes über den ganzen Strand verteilt. Findest du 4 davon?',thanks:'Ha! Danke, Freund. Wir Seeleute haben gelernt: Nur der Herr kann das Meer beruhigen.'},
+ flav:[{name:'König von Ninive',lines:['Als ich Jonas Warnung hörte, habe ich mein Königsgewand ausgezogen und alle gebeten zu beten. Gott war barmherzig!']},{name:'Kapitän',lines:['Tipp: Tierfreunde mit „Lässt erstarren“ können den Angriff eines Gegners für eine ganze Runde stoppen.']}],
+ verse:{t:'Rettung kommt allein vom Herrn.',r:'Jona 2,10'}},
+16:{name:'Palast von Susa',book:'Ester 1–10',foe:{name:'Ränkling',pl:'Ränklinge',what:'Schatten böser Pläne'},foes:[{name:'Ränkling'},{name:'Planwicht'},{name:'Schattenhöfling'}],
+ boss:{name:'Der böse Erlass',where:'beim Palast des Königs'},guide:{name:'Ester'},
+ intro:['Willkommen im Palast von Susa. Ich bin Ester – ein Waisenmädchen, das Königin von Persien wurde!','Aber der böse Haman hat den König dazu gebracht, einen Erlass zu besiegeln, der mein Volk vernichten soll.','Mein Cousin Mordechai sagte: „Wer weiß, ob du nicht gerade für so eine Zeit wie diese Königin geworden bist?“ Also gehe ich zum König, auch wenn es gefährlich ist.','Ränklinge verbreiten den bösen Plan. Besiege 6 Düsterlinge, dann zerreiß den bösen Erlass beim Palast des Königs.'],
+ hint:'Der böse Erlass wartet beim Palast. Sei mutig – Gott hat dich für so eine Zeit wie diese hierhergestellt!',
+ outro:['Der König hat mir sein goldenes Zepter entgegengestreckt, mir zugehört – und mein Volk wurde gerettet!','Wir feiern das jedes Jahr mit dem Purimfest. Gottes Name steht in meiner Geschichte nicht einmal – aber er war die ganze Zeit dabei.','Nimm dieses Teil der Schriftrolle – und dieses königliche Gewand, damit du immer daran denkst, mutig zu sein.'],
+ post:'Du bist nicht zufällig da, wo du bist. Sei mutig und freundlich!',
+ side:{name:'Mordechai',what:'königliche Botschaften',ask:'Der neue Erlass des Königs erlaubt unserem Volk, sich zu verteidigen! Drei Botschaftsrollen sind vom Pferd des Boten gefallen. Findest du sie?',thanks:'Jetzt kann die gute Nachricht in jede Provinz gehen! Danke.'},
+ flav:[{name:'König Xerxes',lines:['In einer schlaflosen Nacht habe ich in den Palastbüchern gelesen, dass Mordechai mir einmal das Leben gerettet hat!']},{name:'Palastdienerin',lines:['Königin Ester hat uns alle gebeten, drei Tage zu fasten und zu beten. Sie ist so mutig!']}],
+ verse:{t:'Wer weiß, ob du nicht gerade für so eine Zeit wie diese Königin geworden bist?',r:'Ester 4,14'}},
+17:{name:'Pfingsten',book:'Apostelgeschichte 1–4',foe:{name:'Schüchterling',pl:'Schüchterlinge',what:'Schatten von Angst und Schweigen'},foes:[{name:'Schüchterling'},{name:'Pssst-Flämmchen'},{name:'Dämpftropfen'}],
+ boss:{name:'Dunkel des Schweigens',where:'beim Obergemach'},guide:{name:'Maria, die Mutter von Jesus'},
+ intro:['Friede sei mit dir. Ich bin Maria, die Mutter von Jesus. Nach seiner Auferstehung ist Jesus vom Ölberg aus in den Himmel zurückgekehrt.','Er hat uns gesagt, wir sollen in Jerusalem auf den Heiligen Geist warten. Darum beten wir gemeinsam im Obergemach.','Aber Schüchterlinge flüstern ständig: „Sei still. Erzähl niemandem von Jesus.“','Besiege 6 Düsterlinge, dann stell dich dem Dunkel des Schweigens beim Obergemach.'],
+ hint:'Das Dunkel des Schweigens hängt über dem Obergemach. Gott schenkt uns Mut zum Reden!',
+ outro:['Ein Brausen wie ein gewaltiger Sturm erfüllte das Haus, und Flammen wie Feuer ließen sich auf jedem von uns nieder. Der Heilige Geist ist gekommen!','Petrus stand auf und erzählte der Menge von Jesus – und an diesem einen Tag kamen etwa dreitausend Menschen zum Glauben!','Hier ist ein Teil der Schriftrolle – und eine kleine Geistflamme, die dich warm und mutig hält.'],
+ post:'Derselbe Heilige Geist schenkt allen Mut, die Jesus folgen.',
+ side:{name:'Besucher aus Ägypten',what:'Lampen',ask:'Ich bin zum Fest gekommen und habe die Jünger in meiner eigenen Sprache reden hören! Heute Abend treffen wir uns – findest du 3 Lampen?',thanks:'Jetzt können alle sehen! Menschen aus allen Völkern hören die gute Nachricht.'},
+ flav:[{name:'Petrus',lines:['Früher habe ich dreimal gesagt, dass ich Jesus nicht kenne. Jetzt habe ich keine Angst mehr, es Tausenden zu erzählen!']},{name:'Stephanus',lines:['Ich helfe, Essen an Witwen zu verteilen, damit niemand vergessen wird. Dienen gehört dazu, wenn man Jesus folgt.']}],
+ verse:{t:'Ihr werdet Kraft bekommen, wenn der Heilige Geist auf euch kommt.',r:'Apostelgeschichte 1,8'}},
+18:{name:'Paulus auf Reisen',book:'Apostelgeschichte 9–28',foe:{name:'Kettling',pl:'Kettlinge',what:'Schatten, die die gute Nachricht aufhalten wollen'},foes:[{name:'Kettling'},{name:'Wrackstachel'},{name:'Viperndunkel'}],
+ boss:{name:'Ketten der Angst',where:'beim Schiffswrack'},guide:{name:'Paulus'},
+ intro:['Gnade und Friede sei mit dir! Ich bin Paulus. Früher habe ich die Freunde von Jesus verfolgt – bis Jesus mir auf dem Weg nach Damaskus begegnet ist.','Seitdem reise ich übers Meer und erzähle allen die gute Nachricht. Ich war im Gefängnis und habe Schiffbruch erlebt!','Unser Schiff ist gerade vor der Insel Malta zerbrochen, aber Gott hat jeden einzelnen Menschen bewahrt.','Kettlinge wollen die gute Nachricht aufhalten. Besiege 7 Düsterlinge, dann stell dich den Ketten der Angst beim Schiffswrack.'],
+ hint:'Die Ketten der Angst rasseln beim Schiffswrack. Nichts kann uns von Gottes Liebe trennen!',
+ outro:['Die Ketten sind zerbrochen! In Philippi haben Silas und ich um Mitternacht im Gefängnis gesungen – und Gott hat die Gefängnistüren aufspringen lassen.','Jetzt reise ich nach Rom. Auch wenn ich in Ketten bin – die gute Nachricht lässt sich nicht anketten!','Das ist das allerletzte Teil der Schriftrolle des Lichts. Bring es zu Simeon in die Pilgerrast. Und nimm dieses Segelboot mit – deine Reise geht weiter!'],
+ post:'Ich habe den guten Kampf gekämpft, den Lauf vollendet und den Glauben bewahrt. Mach weiter, Freund!',
+ side:{name:'Lukas',what:'Briefe von Paulus',ask:'Ich bin Lukas, Arzt und Freund von Paulus. Paulus’ Briefe an die Gemeinden sind über den Strand geweht! Findest du alle 4?',thanks:'Wunderbar! Diese Briefe werden Gemeinden noch Tausende Jahre ermutigen.'},
+ flav:[{name:'Silas',lines:['Paulus und ich haben um Mitternacht im Gefängnis Loblieder gesungen. Dann – ein Erdbeben! Lob kann einiges in Bewegung bringen.']},{name:'Timotheus',lines:['Paulus hat mir gesagt: „Lass dich von niemandem geringschätzen, nur weil du jung bist.“ Das gilt auch für dich!']}],
+ verse:{t:'Ich habe den guten Kampf gekämpft, den Lauf vollendet und den Glauben bewahrt.',r:'2. Timotheus 4,7'}}
+});
+BQ_DE.push(
+['Gott versprach Abraham so viele Nachkommen wie ...','Sterne am Himmel','Fische im Meer','Bäume im Wald','Vögel in der Luft'],
+['Wie hieß Abrahams Frau?','Sara','Rebekka','Rahel','Lea'],
+['Warum zerstreute Gott die Menschen, die den Turm von Babel bauten?','Sie bauten ihn aus Stolz, um selbst berühmt zu werden','Ihnen gingen die Ziegel aus','Ein Sturm riss ihn um','Der König wollte einen Palast'],
+['Wie alt war Abraham, als Isaak geboren wurde?','100','40','65','900'],
+['Was tat Sara, als sie hörte, dass sie im Alter noch ein Baby bekommen würde?','Sie lachte','Sie weinte','Sie lief weg','Sie sang ein Lied'],
+['Wer war Abrahams Neffe?','Lot','Laban','Esau','Isaak'],
+['Wie hieß Abraham, bevor Gott seinen Namen änderte?','Abram','Abner','Aaron','Amos'],
+['Was gab Gott auf dem Berg anstelle von Isaak?','Einen Widder, der sich im Gebüsch verfangen hatte','Ein Lamm aus dem Dorf','Eine Taube','Ein Kalb'],
+['Wer schenkte Josef einen bunten Mantel?','Sein Vater Jakob','Seine Mutter Rahel','Der Pharao','Sein Bruder Ruben'],
+['Was taten Josefs Brüder mit ihm?','Sie verkauften ihn an Händler','Sie machten ihn zum König','Sie schickten ihn zur Schule','Sie schenkten ihm einen Hof'],
+['Wobei half Gott Josef?','Träume zu verstehen','Nur die Sterne zu lesen','Tiersprachen zu verstehen','Geheimcodes zu knacken'],
+['Was stieg im Traum des Pharao aus dem Fluss?','Sieben fette und sieben magere Kühe','Sieben Fische','Zwölf Frösche','Ein goldenes Kalb'],
+['Wie viele Brüder hatte Josef?','11','7','12','3'],
+['Wer war Josefs jüngster Bruder?','Benjamin','Ruben','Juda','Levi'],
+['Was versteckte Josef in Benjamins Sack?','Seinen silbernen Becher','Eine goldene Krone','Eine Schriftrolle','Ein Schwert'],
+['Wie viele Jahre Überfluss kamen vor der Hungersnot?','Sieben','Drei','Zwölf','Vierzig'],
+['Josef sagte zu seinen Brüdern: „Ihr wolltet mir Böses tun, aber Gott hat ... daraus gemacht.“','Gutes','nichts','Ägypten','später'],
+['Wer war Ruts Schwiegermutter?','Noomi','Sara','Mirjam','Hanna'],
+['Was sammelte Rut auf den Feldern?','Getreide, das die Erntearbeiter liegen ließen','Blumen','Steine','Brennholz'],
+['Auf wessen Feldern sammelte Rut Getreide?','Boas','Saul','Isai','Laban'],
+['Woher kam Rut?','Aus Moab','Aus Ägypten','Aus Ninive','Aus Rom'],
+['Welcher berühmte König war Ruts Urenkel?','König David','König Saul','König Salomo','König Herodes'],
+['Wohin gingen Noomi und Rut, nachdem sie Moab verlassen hatten?','Nach Betlehem','Nach Jericho','Nach Babylon','Nach Nazaret'],
+['Wie hieß der Sohn von Rut und Boas?','Obed','Isai','Samuel','Isaak'],
+['Wie sollten die Leute Noomi nennen, weil sie so traurig war?','Mara','Mirjam','Marta','Gnade'],
+['Auf welchem Berg forderte Elia die Propheten Baals heraus?','Auf dem Karmel','Auf dem Sinai','Auf dem Ararat','Auf dem Ölberg'],
+['Was fiel vom Himmel auf Elias Altar?','Feuer','Schnee','Manna','Gold'],
+['Was goss Elia auf den Altar, bevor er betete?','Wasser','Öl','Wein','Milch'],
+['Was ging der Witwe, die Elia half, nie aus?','Mehl und Öl','Gold und Silber','Wasser und Wein','Brot und Fisch'],
+['Wie sprach Gott auf dem Berg zu Elia?','In einem leisen, sanften Säuseln','In einem lauten Erdbeben','In einem starken Sturm','In einem großen Feuer'],
+['Wer wurde nach Elia Prophet?','Elisa','Jona','Jesaja','Samuel'],
+['Was sah Elias Diener über dem Meer, nachdem Elia um Regen gebetet hatte?','Eine kleine Wolke, so groß wie eine Hand','Einen Regenbogen','Ein Schiff','Einen großen Fisch'],
+['Welche böse Königin war wütend auf Elia?','Isebel','Ester','Waschti','Die Königin von Saba'],
+['In welche Stadt sollte Jona nach Gottes Willen gehen?','Ninive','Tarschisch','Jerusalem','Betlehem'],
+['Wohin wollte Jona weglaufen?','Nach Tarschisch','Nach Ninive','Nach Ägypten','Nach Babylon'],
+['Wie lange war Jona im Bauch des großen Fisches?','Drei Tage und drei Nächte','Eine Stunde','Sieben Tage','Vierzig Tage'],
+['Was taten die Seeleute, damit der Sturm aufhörte?','Sie warfen Jona ins Meer','Sie drehten das Schiff um','Sie warfen die Segel weg','Sie ruderten schneller'],
+['Was tat Jona im Bauch des Fisches?','Er betete','Er schlief','Er sang dem Fisch etwas vor','Er schrieb einen Brief'],
+['Was taten die Menschen in Ninive, nachdem sie Jona gehört hatten?','Sie kehrten von ihren bösen Wegen um','Sie lachten ihn aus','Sie warfen ihn hinaus','Sie bauten einen Turm'],
+['Was ließ Gott wachsen, damit Jona Schatten hatte?','Eine Rankenpflanze','Eine Eiche','Eine Palme','Einen Feigenbaum'],
+['Was machte Jonas Schattenpflanze kaputt?','Ein Wurm','Eine Ziege','Eine Heuschrecke','Ein Vogel'],
+['Von welchem Reich wurde Ester Königin?','Persien','Ägypten','Rom','Griechenland'],
+['Welcher Cousin zog Ester groß?','Mordechai','Haman','Boas','Daniel'],
+['Wer plante, das jüdische Volk zu vernichten?','Haman','Mordechai','Nehemia','Josef'],
+['Worum bat Ester ihr Volk, bevor sie zum König ging?','Drei Tage zu fasten','Geschenke zu bringen','Mauern zu bauen','Sich in Höhlen zu verstecken'],
+['Was streckte der König aus, um zu zeigen, dass Ester willkommen war?','Sein goldenes Zepter','Seine Krone','Einen silbernen Becher','Eine Schriftrolle'],
+['Mordechai sagte, Ester sei vielleicht Königin geworden „für so eine Zeit wie ...“','diese','morgen','ein Fest','den Krieg'],
+['Welches Fest erinnert daran, wie Gott die Juden zur Zeit Esters gerettet hat?','Purim','Passa','Pfingsten','Laubhüttenfest'],
+['Wie lautete Esters hebräischer Name?','Hadassa','Hanna','Debora','Noomi'],
+['Welches Geräusch erfüllte an Pfingsten das Haus?','Ein Brausen wie ein gewaltiger Sturm','Eine Posaune','Donner','Vogelgesang'],
+['Was erschien über den Köpfen der Jünger?','Zungen wie von Feuer','Kronen','Goldene Heiligenscheine','Tauben'],
+['Wer kam an Pfingsten zu den Jüngern, so wie Jesus es versprochen hatte?','Der Heilige Geist','Mose','Ein Heer','König Herodes'],
+['Was konnten die Jünger plötzlich?','In anderen Sprachen reden','Fliegen','Durch Wände gehen','Im Dunkeln sehen'],
+['Wer predigte an Pfingsten vor der Menge?','Petrus','Paulus','Thomas','Judas'],
+['Wie viele Menschen ließen sich an diesem Tag ungefähr taufen?','Etwa 3000','Etwa 12','Etwa 100','Etwa eine Million'],
+['Von wo aus ging Jesus in den Himmel?','Vom Ölberg','Vom Sinai','Vom Tempeldach','Von einem Boot'],
+['Wer wurde als Ersatz für Judas zum Apostel gewählt?','Matthias','Barnabas','Stephanus','Silas'],
+['Wie hieß Paulus, bevor er Paulus genannt wurde?','Saulus','Simon','Silas','Samuel'],
+['Was taten Paulus und Silas um Mitternacht im Gefängnis?','Sie beteten und sangen Loblieder','Sie schliefen','Sie gruben einen Tunnel','Sie weinten'],
+['Was öffnete das Gefängnis für Paulus und Silas?','Ein Erdbeben','Ein Sturm','Ein Engel mit Schlüssel','Ein Rammbock'],
+['Auf welcher Insel erlitt Paulus Schiffbruch?','Malta','Zypern','Kreta','Sizilien'],
+['Was biss Paulus auf Malta, ohne ihm zu schaden?','Eine Giftschlange','Ein Hai','Ein Hund','Eine Spinne'],
+['Wer reiste mit Paulus auf seiner ersten Reise?','Barnabas','Judas','Pilatus','Nikodemus'],
+['Wer half Saulus in Damaskus, wieder sehen zu können?','Hananias','Petrus','Lydia','Timotheus'],
+['In welche Stadt wurde Paulus am Ende der Apostelgeschichte als Gefangener gebracht?','Rom','Athen','Jerusalem','Korinth'],
+['Womit verdiente Paulus sein Geld?','Er machte Zelte','Er baute Boote','Er töpferte','Er machte Schuhe']
+);
+VQ_DE.push(
+[11,'Ist für den Herrn irgendetwas zu ___?','schwer','groß','weit','alt','1. Mose 18,14'],
+[11,'Abraham ___ dem Herrn, und Gott sah ihn deshalb als gerecht an.','glaubte','sang','folgte nicht','baute','1. Mose 15,6'],
+[12,'Ihr wolltet mir Böses tun, aber Gott hat ___ daraus gemacht.','Gutes','nichts','Ägypten','Streit','1. Mose 50,20'],
+[12,'Der Herr war mit ___, und alles gelang ihm.','Josef','Pharao','Ruben','Jakob','1. Mose 39,2'],
+[13,'Wo du hingehst, da ___ ich auch hin.','gehe','singe','esse','ruhe','Rut 1,16'],
+[13,'Dein Volk ist mein Volk, und dein ___ ist mein Gott.','Gott','König','Land','Haus','Rut 1,16'],
+[14,'Nach dem Feuer kam ein leises, sanftes ___.','Säuseln','Donnern','Leuchten','Brausen','1. Könige 19,12'],
+[14,'Der Herr ist ___! Der Herr ist Gott!','Gott','König','hier','stark','1. Könige 18,39'],
+[15,'___ kommt allein vom Herrn.','Rettung','Gold','Ninive','Regen','Jona 2,10'],
+[15,'Du bist ein gnädiger und ___ Gott, du wirst nicht schnell zornig.','barmherziger','strenger','stiller','müder','Jona 4,2'],
+[16,'Wer weiß, ob du nicht gerade für so eine ___ wie diese Königin geworden bist?','Zeit','Feier','Krone','Stadt','Ester 4,14'],
+[17,'Ihr werdet ___ bekommen, wenn der Heilige Geist auf euch kommt.','Kraft','Gold','Brot','Kronen','Apostelgeschichte 1,8'],
+[17,'Jeder, der den Namen des Herrn anruft, wird ___.','gerettet','berühmt','reich','müde','Apostelgeschichte 2,21'],
+[18,'Ich habe den guten Kampf gekämpft, den Lauf vollendet und den ___ bewahrt.','Glauben','Plan','Schatz','Mut','2. Timotheus 4,7'],
+[18,'Ich schäme mich nicht für die gute ___ von Christus.','Nachricht','Reise','Arbeit','Stadt','Römer 1,16'],
+[18,'Wir wissen: Für die, die Gott lieben, muss alles zum ___ mitwirken.','Guten','Spaß','Geld','Schluss','Römer 8,28']
+);
+DE.CH[10].outro=DE.CH[10].outro.slice(0,3).concat(['Hier ist dieses Teil der Schriftrolle. Aber die Geschichte ist noch nicht zu Ende – bald wird sich die gute Nachricht über die ganze Welt ausbreiten!']);
+CH[10].outro=CH[10].outro.slice(0,3).concat(["Here is this piece of the Scroll. But the story isn't over — soon the good news will spread to the whole world!"]);
+
+</script>
+<script>
 /* ===================== SCROLLS OF LIGHT — ENGINE ===================== */
 (() => {
 'use strict';
@@ -1413,6 +1881,10 @@ function applyLang(l){
   if(S) S.lang=LANG;
 }
 const pl=f=>f.pl||(LANG==='en'?f.name+'s':f.name);
+const NCH=ORDER.length, POS=id=>ORDER.indexOf(+id)+1, tierOf=id=>1+(Math.max(1,POS(id))-1)*9/(NCH-1);
+function isOpen(id){ id=+id; const p=POS(id); if(p<=1) return true; const c=S.chs[id]; if(c&&c.stage>0) return true; const prev=S.chs[ORDER[p-2]]; return !!prev&&prev.stage>=4; }
+const allDone=()=>ORDER.every(i=>S.chs[i]&&S.chs[i].stage>=4);
+const doneCount=o=>ORDER.filter(i=>(o||S).chs[i]&&(o||S).chs[i].stage>=4).length;
 
 /* ===================== STATE ===================== */
 let S=null, M=null;
@@ -1426,10 +1898,10 @@ let now=0, cw=0, ch=0, dpr=1, zoom=1;
 const cv=$('#world'), ctx=cv.getContext('2d');
 
 function newState(name,look,grade){
-  const chs={}; for(let i=1;i<=10;i++) chs[i]={stage:0,kills:0,side:0,got:[]};
+  const chs={}; ORDER.forEach(i=>chs[i]={stage:0,kills:0,side:0,got:[]});
   return {v:1,id:'p'+Date.now(),lang:LANG,name,look,grade,mix:{math:4,bible:4,verse:2,words:2,logic:2},shift:{math:0,bible:0,verse:0,words:0,logic:0},
     level:1,xp:0,hp:75,coins:20,items:{bread:2},armor:[],comps:{lamb:{lvl:1,xp:0}},comp:'lamb',dyes:[],cos:[],
-    chs,unlocked:1,map:'hub',px:17,py:14,stats:{},recent:[],sound:true,music:true,musVol:.6,autoRead:false,voice:'',flags:{},answered:0,correct:0,lastBackup:0,created:Date.now()};
+    chs,map:'hub',px:29,py:14,stats:{},recent:[],sound:true,music:true,musVol:.6,autoRead:false,voice:'',flags:{},answered:0,correct:0,lastBackup:0,created:Date.now()};
 }
 function save(){ if(!S) return; S.map=M?M.id:S.map; S.px=P.x; S.py=P.y; S.lang=LANG; lsSet(SKEY(S.id),JSON.stringify(S));
   const p=getProfiles(); const i=p.list.findIndex(x=>x.id===S.id); const sm=summary(S); if(i>=0) p.list[i]=sm; else p.list.push(sm); p.last=S.id; setProfiles(p); }
@@ -1483,6 +1955,14 @@ const TRACKS={
   c8:SILENT_NIGHT,
   c9:{bpm:84,spb:12,root:50,scale:'maj',prog:[0,3,0,4],arp:'68',bass:'68',drums:'shaker68',lead:{seed:98,dens:.45,type:'sine',vol:.07,echo:1}},
   c10:{bpm:102,root:52,scale:'maj',prog:[0,4,5,3],arp:'16',bass:'pulse',drums:'pop',lead:{seed:109,dens:.5,type:'triangle',vol:.065,echo:1}},
+  c11:{bpm:90,root:50,scale:'maj',prog:[0,3,4,0],arp:'8',bass:'half',drums:'soft',lead:{seed:111,dens:.45,type:'triangle',vol:.06,echo:1}},
+  c12:{bpm:94,root:52,scale:'hijaz',prog:[0,6,5,0],arp:'8',bass:'pulse',drums:'tabla',lead:{seed:121,dens:.5,type:'square',vol:.035,cut:1800,echo:1}},
+  c13:{bpm:80,spb:12,root:55,scale:'maj',prog:[0,3,4,0],arp:'68',bass:'68',drums:'shaker68',lead:{seed:131,dens:.45,type:'sine',vol:.07,echo:1}},
+  c14:{bpm:100,root:52,scale:'min',prog:[0,5,6,4],arp:'16',bass:'march',drums:'march',lead:{seed:141,dens:.5,type:'triangle',vol:.065,echo:1}},
+  c15:{bpm:86,spb:12,root:50,scale:'min',prog:[0,5,6,0],arp:'68',bass:'68',drums:'shaker68',lead:{seed:151,dens:.45,type:'sine',vol:.07,echo:1}},
+  c16:{bpm:92,root:57,scale:'hijaz',prog:[0,1,6,0],arp:'8',bass:'pulse',drums:'tabla',lead:{seed:161,dens:.5,type:'square',vol:.035,cut:1700,echo:1}},
+  c17:{bpm:108,root:52,scale:'maj',prog:[0,4,5,3],arp:'16',bass:'pulse',drums:'pop',lead:{seed:171,dens:.55,type:'triangle',vol:.065,echo:1}},
+  c18:{bpm:104,root:48,scale:'maj',prog:[0,5,3,4],arp:'16',bass:'pulse',drums:'pop',lead:{seed:181,dens:.55,type:'triangle',vol:.065,echo:1}},
   battle:{bpm:138,root:52,scale:'min',prog:[0,5,2,6],arp:'16',bass:'drive',drums:'rock',lead:{seed:7,dens:.62,type:'square',vol:.04,cut:2400,echo:1},stab:1},
   boss:{bpm:146,root:50,scale:'min',prog:[0,5,6,4,0,5,3,4],arp:'16',bass:'drive',drums:'epic',lead:{seed:17,dens:.65,type:'sawtooth',vol:.035,cut:2000,echo:1},stab:1},
   ending:ODE_TO_JOY
@@ -1567,10 +2047,17 @@ function voiceScore(v){ const n=v.name; let s=0; if(/natural|neural/i.test(n)) s
   if(/samantha|ava|allison|zoe|aria|jenny|emma|sonia|libby|katja|amala|seraphina|anna|petra|helena|marlene|vicki/i.test(n)) s+=12; if(/compact|espeak|robot/i.test(n)) s-=40;
   const lg=(v.lang||'').toLowerCase(); if(LANG==='en'&&/en-(us|gb)/.test(lg)) s+=4; if(LANG==='de'&&/de-de/.test(lg)) s+=4; return s; }
 function bestVoice(){ const vs=langVoices(); if(S&&S.voice){ const v=vs.find(v=>v.name===S.voice); if(v) return v; } return vs.slice().sort((a,b)=>voiceScore(b)-voiceScore(a))[0]||null; }
-function speakText(txt){ try{ if(!('speechSynthesis' in window)) throw 0; speechSynthesis.cancel(); const v=bestVoice();
-  txt.split(/(?<=[.!?“”"])\s+/).filter(Boolean).forEach(part=>{ const u=new SpeechSynthesisUtterance(part); if(v) u.voice=v; u.lang=v?v.lang:(LANG==='de'?'de-DE':'en-US'); u.rate=.94; u.pitch=1.04; speechSynthesis.speak(u); });
-  }catch(e){ toast(t('toast.readNA')); } }
-function stopSpeak(){ try{ speechSynthesis.cancel(); }catch(e){} }
+let speakTok=0;
+function chime(){ const a=ac(); if(!a) return; try{ [[880,0],[1320,.09]].forEach(([f,d])=>{ const o=a.createOscillator(), g=a.createGain(); o.type='sine'; o.frequency.value=f; const t0=a.currentTime+d; g.gain.setValueAtTime(.0001,t0); g.gain.exponentialRampToValueAtTime(.09,t0+.02); g.gain.exponentialRampToValueAtTime(.0001,t0+.45); o.connect(g); g.connect(a.destination); o.start(t0); o.stop(t0+.5); }); }catch(e){} }
+function speakSeq(parts){ try{ if(!('speechSynthesis' in window)) throw 0; speechSynthesis.cancel(); const tok=++speakTok, v=bestVoice(); let i=0;
+  const next=()=>{ if(tok!==speakTok||i>=parts.length) return; const p=parts[i++];
+    if(typeof p==='object'){ if(p.chime) chime(); setTimeout(next,p.ms||400); return; }
+    if(!String(p).trim()) return next();
+    const u=new SpeechSynthesisUtterance(p); if(v) u.voice=v; u.lang=v?v.lang:(LANG==='de'?'de-DE':'en-US'); u.rate=.94; u.pitch=1.04;
+    let done=false; const go=()=>{ if(done) return; done=true; next(); }; u.onend=go; u.onerror=go; speechSynthesis.speak(u); };
+  next(); }catch(e){ toast(t('toast.readNA')); } }
+function speakText(txt){ speakSeq(String(txt).split(/(?<=[.!?“”"])\s+/).filter(Boolean)); }
+function stopSpeak(){ speakTok++; try{ speechSynthesis.cancel(); }catch(e){} }
 
 /* ===================== DRAWING: CHARACTERS ===================== */
 function circ(c,x,y,r,col){c.fillStyle=col;c.beginPath();c.arc(x,y,r,0,Math.PI*2);c.fill();}
@@ -1709,6 +2196,39 @@ function drawBoss(c,cx,cy,r,b,t,extra){
     const g='#5a6478'; [[-.6,.1,.55],[0,-.25,.7],[.6,.1,.55],[-.25,.3,.5],[.3,.3,.5]].forEach(([x,y,s])=>circ(c,cx+x*r,cy+y*r,s*r,shade(g,(y+.3)*.3)));
     if(Math.sin(t*6)>.3){ c.fillStyle='#ffe26a'; c.beginPath(); c.moveTo(cx+r*.1,cy+r*.55); c.lineTo(cx-r*.2,cy+r*1.1); c.lineTo(cx+r*.02,cy+r*1.05); c.lineTo(cx-r*.15,cy+r*1.5); c.lineTo(cx+r*.3,cy+r*.9); c.lineTo(cx+r*.08,cy+r*.95); c.closePath(); c.fill(); }
     gloomEyes(c,cx,cy,r*.8,t,2,'#e6f0ff');
+  } else if(k==='tower'){
+    for(let i=0;i<5;i++){ const w=r*(2-i*.32), h=r*.42, y=cy+r*1.05-(i+1)*h; c.fillStyle=shade('#a07a52',i*.06-.1); c.fillRect(cx-w/2,y,w,h); c.strokeStyle='rgba(60,35,15,.45)'; c.lineWidth=1.2; c.strokeRect(cx-w/2,y,w,h); for(let j=1;j<4;j++){ c.beginPath(); c.moveTo(cx-w/2+j*w/4,y); c.lineTo(cx-w/2+j*w/4,y+h); c.stroke(); } }
+    c.fillStyle='#2a1a0a'; c.beginPath(); c.arc(cx,cy+r*1.05,r*.28,Math.PI,0); c.fill();
+    gloomEyes(c,cx,cy-r*.1,r*.6,t,2,'#ffcf6a');
+  } else if(k==='jealous'){
+    gloomBody(c,cx,cy,r,col,t);
+    for(const sd of [-1,1]){ ell(c,cx+sd*r*.36,cy-r*.08,r*.27,r*.3,0,'#eaffd8'); circ(c,cx+sd*r*.36-r*.05,cy-r*.04,r*.15,'#3fbf3a'); circ(c,cx+sd*r*.36-r*.05,cy-r*.04,r*.07,'#0a1a08'); }
+    c.strokeStyle='#0a1a08'; c.lineWidth=r*.07; c.beginPath(); c.moveTo(cx-r*.62,cy-r*.5); c.lineTo(cx-r*.15,cy-r*.32); c.moveTo(cx+r*.62,cy-r*.5); c.lineTo(cx+r*.15,cy-r*.32); c.stroke();
+    c.beginPath(); c.arc(cx,cy+r*.55,r*.25,Math.PI*1.15,Math.PI*1.85); c.stroke();
+  } else if(k==='famine'){
+    for(let i=0;i<5;i++){ const x=cx-r*1.1+i*r*.55; c.strokeStyle='#9a8a5a'; c.lineWidth=r*.05; c.beginPath(); c.moveTo(x,cy+r*1.1); c.quadraticCurveTo(x+r*.1,cy+r*.5,x+r*.3,cy+r*.45); c.stroke(); ell(c,x+r*.32,cy+r*.48,r*.08,r*.04,.5,'#8a7a4a'); }
+    gloomBody(c,cx,cy,r,col,t); gloomEyes(c,cx,cy,r,t,2,'#cfd8ff');
+    for(const sd of [-1,1]) ell(c,cx+sd*r*.36,cy+r*.25+((t*40)%20)/20*r*.3,r*.05,r*.08,0,'#7cc4ff');
+  } else if(k==='altar'){
+    c.fillStyle='#8a8070'; for(let i=0;i<3;i++) for(let j=0;j<4-i%2;j++) c.fillRect(cx-r*.9+j*r*.46+(i%2)*r*.23,cy+r*.55+i*r*.18,r*.42,r*.16);
+    const fy=cy-r*.2; c.fillStyle=`rgba(255,140,40,${.25+Math.sin(t*8)*.08})`; circ(c,cx,fy,r*1.2,c.fillStyle);
+    c.fillStyle=gloomGrad(c,cx,fy,r,col); c.beginPath(); c.moveTo(cx,fy-r*1.3+Math.sin(t*9)*r*.1); c.quadraticCurveTo(cx+r*1.05,fy-r*.1,cx+r*.8,fy+r*.75); c.lineTo(cx-r*.8,fy+r*.75); c.quadraticCurveTo(cx-r*1.05,fy-r*.1,cx,fy-r*1.3+Math.sin(t*9)*r*.1); c.fill();
+    gloomEyes(c,cx,fy+r*.15,r*.8,t,2,'#ffe26a');
+  } else if(k==='whirl'){
+    for(let i=0;i<5;i++){ c.strokeStyle=`rgba(${70+i*25},${140+i*15},${200+i*10},.8)`; c.lineWidth=r*.12; c.beginPath(); c.arc(cx,cy,r*(1.2-i*.2),t*(1.5+i*.4)+i,t*(1.5+i*.4)+i+Math.PI*1.4); c.stroke(); }
+    circ(c,cx,cy,r*.45,col); gloomEyes(c,cx,cy,r*.6,t,2,'#e6f0ff');
+  } else if(k==='scroll'){
+    const w=r*1.7,h=r*2; c.fillStyle='#e9d8a6'; c.fillRect(cx-w/2,cy-h/2,w,h); c.fillStyle='#b8a070'; ell(c,cx,cy-h/2,w/2+r*.12,r*.15,0,'#b8a070'); ell(c,cx,cy+h/2,w/2+r*.12,r*.15,0,'#b8a070');
+    c.fillStyle='rgba(60,30,30,.55)'; for(let i=0;i<6;i++) c.fillRect(cx-w*.38,cy-h*.3+i*h*.1,w*(.76-(i%3)*.12),r*.05);
+    circ(c,cx+w*.25,cy+h*.32,r*.2,'#a0201a'); gloomEyes(c,cx,cy-h*.12,r*.6,t,2,'#ff6a5a');
+  } else if(k==='mute'){
+    gloomBody(c,cx,cy,r,col,t); gloomEyes(c,cx,cy,r,t,2,'#dfe6f0');
+    c.strokeStyle='#dfe6f0'; c.lineWidth=r*.06; c.beginPath(); c.moveTo(cx-r*.45,cy+r*.38); c.lineTo(cx+r*.45,cy+r*.38); c.stroke();
+    for(let i=0;i<5;i++){ const x=cx-r*.36+i*r*.18; c.beginPath(); c.moveTo(x,cy+r*.28); c.lineTo(x,cy+r*.48); c.stroke(); }
+  } else if(k==='chains'){
+    gloomBody(c,cx,cy,r,col,t); gloomEyes(c,cx,cy,r,t,2,'#ffd27a');
+    c.strokeStyle='#b8bcc8'; c.lineWidth=r*.07; for(let i=0;i<8;i++){ const x=cx-r*1.0+i*r*.28, y=cy-r*.6+i*r*.2; c.beginPath(); c.ellipse(x,y,r*.16,r*.1,.6,0,Math.PI*2); c.stroke(); }
+    for(let i=0;i<8;i++){ const x=cx+r*1.0-i*r*.28, y=cy-r*.1+i*r*.13; c.beginPath(); c.ellipse(x,y,r*.16,r*.1,-.5,0,Math.PI*2); c.stroke(); }
   } else {
     for(let i=0;i<3;i++){ c.strokeStyle=`rgba(150,110,220,${.35-i*.1})`; c.lineWidth=r*.08; c.beginPath(); c.ellipse(cx,cy,r*(1.25+i*.18+Math.sin(t*2+i)*.05),r*(1.05+i*.15),t*.3*(i%2?-1:1),0,Math.PI*1.6); c.stroke(); }
     gloomBody(c,cx,cy,r,col,t); gloomEyes(c,cx,cy,r,t,3,'#e9d6ff');
@@ -1754,6 +2274,7 @@ function drawDeco(c,kind,x,y,s,h){
   if(kind==='flower'){ const cols=['#f5d04a','#f07aa8','#ffffff','#b48af0']; for(let i=0;i<3;i++){ const fx=x+s*(.2+((h*7+i*.37)%1)*.6), fy=y+s*(.25+((h*13+i*.53)%1)*.55); circ(c,fx,fy,s*.06,cols[(i+Math.floor(h*4))%4]); circ(c,fx,fy,s*.025,'#f0a020'); } }
   else if(kind==='grass'){ c.strokeStyle='rgba(30,70,20,.45)'; c.lineWidth=1.5; for(let i=0;i<3;i++){ const gx=x+s*(.2+i*.28), gy=y+s*(.4+((h*9+i*.3)%1)*.4); c.beginPath(); c.moveTo(gx,gy); c.lineTo(gx-3,gy-7); c.moveTo(gx,gy); c.lineTo(gx+3,gy-7); c.stroke(); } }
   else if(kind==='pebble'){ for(let i=0;i<3;i++) ell(c,x+s*(.2+((h*5+i*.31)%1)*.6),y+s*(.3+((h*11+i*.47)%1)*.5),s*.06,s*.04,0,'rgba(90,70,50,.35)'); }
+  else if(kind==='wheat'){ c.strokeStyle='#c9a24a'; c.lineWidth=1.6; for(let i=0;i<4;i++){ const gx=x+s*(.2+i*.2), gy=y+s*(.85-((h*7+i*.3)%1)*.1); c.beginPath(); c.moveTo(gx,gy); c.lineTo(gx+2,gy-s*.45); c.stroke(); ell(c,gx+2,gy-s*.5,s*.04,s*.09,.2,'#d9b25b'); } }
   else if(kind==='reed'){ c.strokeStyle='#6f8a3a'; c.lineWidth=2; for(let i=0;i<4;i++){ const gx=x+s*(.25+i*.17); c.beginPath(); c.moveTo(gx,y+s*.85); c.lineTo(gx+(i%2?2:-2),y+s*.35); c.stroke(); } ell(c,x+s*.42,y+s*.35,s*.04,s*.1,0,'#7a5a2a'); }
 }
 
@@ -1818,6 +2339,40 @@ function drawLandmark(c,lm,s,tm){
     if(open) circ(c,cx,by-s*.4,s*2.2,'rgba(255,240,180,.18)');
     const sx=open?X+W+s*.3:cx; circ(c,sx,by-s*.85,s*1.0,'#b0a690'); circ(c,sx,by-s*.85,s*.7,'#a0967f');
     for(let i=0;i<6;i++) ell(c,X+i*W/5,by-s*.05,s*.3,s*.12,0,'#5f8a3a');
+  } else if(k==='granary'){
+    for(let i=0;i<3;i++){ const gx=X+s*.4+i*(W-s*.8)/3, gw=(W-s*.8)/3-s*.15; c.fillStyle=shade('#d9b878',i*.05); c.fillRect(gx,Y+H*.35,gw,H*.65); circ(c,gx+gw/2,Y+H*.35,gw/2,shade('#c9a35d',i*.05)); c.fillStyle='#5a3a1e'; c.fillRect(gx+gw*.35,by-s*.7,gw*.3,s*.7); }
+    for(let i=0;i<4;i++) ell(c,X+s*.6+i*s*1.3,by+s*.1,s*.3,s*.18,0,'#c9a35d');
+  } else if(k==='haystacks'){
+    for(let i=0;i<4;i++){ const hx=X+s*.5+i*(W-s)/4+s*.4; c.fillStyle=shade('#e0bf5a',(i%2)*.08); c.beginPath(); c.moveTo(hx-s*.75,by); c.quadraticCurveTo(hx-s*.6,Y+H*.15,hx,Y+H*.05); c.quadraticCurveTo(hx+s*.6,Y+H*.15,hx+s*.75,by); c.closePath(); c.fill(); c.strokeStyle='rgba(150,110,30,.5)'; c.lineWidth=1.5; for(let j=0;j<4;j++){ c.beginPath(); c.moveTo(hx-s*.5+j*s*.33,by); c.lineTo(hx-s*.2+j*s*.13,Y+H*.3); c.stroke(); } }
+  } else if(k==='altar'){
+    const lit=S&&S.chs[14]&&S.chs[14].stage>=3;
+    c.fillStyle='#7a6a55'; c.beginPath(); c.moveTo(X-s*.5,by); c.lineTo(X+W*.2,Y-H*.2); c.lineTo(X+W*.8,Y-H*.35); c.lineTo(X+W+s*.5,by); c.closePath(); c.fill();
+    for(let i=0;i<12;i++){ const sx=cx-s*1.3+(i%4)*s*.68, sy=by-s*.4-Math.floor(i/4)*s*.38; c.fillStyle=shade('#9a9080',((i*37)%10)/40-.1); c.fillRect(sx,sy,s*.62,s*.34); }
+    c.fillStyle='#6b4a2a'; for(let i=0;i<4;i++) c.fillRect(cx-s*1.1+i*s*.2,by-s*1.45-i*s*.04,s*1.6,s*.1);
+    if(lit){ for(let i=0;i<5;i++){ const f=Math.sin(tm*8+i)*s*.12; c.fillStyle=i%2?'#ffb03a':'#ffe26a'; c.beginPath(); c.moveTo(cx-s*1+i*s*.5,by-s*1.4); c.quadraticCurveTo(cx-s*.8+i*s*.5,by-s*2.4+f,cx-s*.6+i*s*.5,by-s*1.4); c.fill(); } }
+  } else if(k==='gatehouse'){
+    c.fillStyle='#b89a6a'; c.fillRect(X,Y+H*.25,W,H*.75); c.fillStyle='#a88a5a'; c.fillRect(X-s*.2,Y,s*1.5,H); c.fillRect(X+W-s*1.3,Y,s*1.5,H);
+    for(let i=0;i<W/s;i++){ c.fillStyle='#c4aa7a'; c.fillRect(X+i*s,Y+H*.15,s*.5,H*.12); }
+    c.fillStyle='#2f5fa8'; c.fillRect(X+s*1.5,Y+H*.4,W-s*3,s*.35); c.fillStyle='#e8b94a'; for(let i=0;i<5;i++) circ(c,X+s*2+i*(W-s*4)/4,Y+H*.4+s*.17,s*.1,'#e8b94a');
+    c.fillStyle='#3a2a1a'; c.beginPath(); c.moveTo(cx-s*1.1,by); c.lineTo(cx-s*1.1,by-H*.4); c.arc(cx,by-H*.4,s*1.1,Math.PI,0); c.lineTo(cx+s*1.1,by); c.fill();
+  } else if(k==='palace'){
+    c.fillStyle='#efe6d0'; c.fillRect(X+s*.2,Y+H*.35,W-s*.4,H*.65); c.fillStyle='#2b5fb0'; c.beginPath(); c.moveTo(X,Y+H*.38); c.lineTo(cx,Y); c.lineTo(X+W,Y+H*.38); c.closePath(); c.fill();
+    c.fillStyle='#e8b94a'; c.fillRect(X,Y+H*.35,W,s*.14);
+    for(let i=0;i<7;i++){ const px=X+s*.5+i*(W-s)/6; c.fillStyle='#d8ccb0'; c.fillRect(px-s*.14,Y+H*.42,s*.28,H*.58); c.fillStyle='#e8b94a'; c.fillRect(px-s*.2,Y+H*.42,s*.4,s*.1); }
+    c.fillStyle='#5a3a1e'; c.fillRect(cx-s*.5,by-H*.38,s*1,H*.38); circ(c,cx,Y+H*.18,s*.3,'#e8b94a');
+  } else if(k==='upperRoom'){
+    const lit=S&&S.chs[17]&&S.chs[17].stage>=3;
+    c.fillStyle='#e9dcc0'; c.fillRect(X+s*.2,Y+H*.15,W-s*.4,H*.85); c.fillStyle='#cbb894'; c.fillRect(X,Y+H*.1,W,s*.18); c.fillRect(X+s*.2,Y+H*.55,W-s*.4,s*.1);
+    c.fillStyle=lit?'#ffe9a0':'#3a2a1a'; for(let i=0;i<3;i++) c.fillRect(X+s*.7+i*(W-s*1.4)/3,Y+H*.25,s*.5,s*.5);
+    c.fillStyle='#5a3a1e'; c.fillRect(cx-s*.35,by-H*.35,s*.7,H*.35);
+    c.fillStyle='#b8a47a'; for(let i=0;i<5;i++) c.fillRect(X+W-s*.2+i*s*.12,Y+H*.55+i*s*.4,s*.5,s*.12);
+    if(lit){ for(let i=0;i<4;i++){ const fx=X+s*.9+i*(W-s*1.8)/3, f=Math.sin(tm*7+i)*s*.08; c.fillStyle='#ff9a3a'; c.beginPath(); c.moveTo(fx-s*.18,Y-s*.1); c.quadraticCurveTo(fx,Y-s*.9+f,fx+s*.18,Y-s*.1); c.fill(); c.fillStyle='#ffe26a'; c.beginPath(); c.moveTo(fx-s*.09,Y-s*.1); c.quadraticCurveTo(fx,Y-s*.55+f,fx+s*.09,Y-s*.1); c.fill(); } }
+  } else if(k==='wreck'){
+    c.save(); c.translate(cx,by-s*.4); c.rotate(-.12); c.fillStyle='#7a4f28'; c.beginPath(); c.moveTo(-W*.5,-H*.2); c.lineTo(W*.42,-H*.35); c.lineTo(W*.3,s*.35); c.lineTo(-W*.38,s*.35); c.closePath(); c.fill();
+    c.strokeStyle='rgba(40,20,5,.5)'; c.lineWidth=2; for(let i=1;i<4;i++){ c.beginPath(); c.moveTo(-W*.45+i*s*.1,-H*.2+i*s*.22); c.lineTo(W*.38,-H*.33+i*s*.22); c.stroke(); }
+    c.fillStyle='#1a120a'; c.beginPath(); c.moveTo(W*.05,-H*.25); c.lineTo(W*.2,-H*.28); c.lineTo(W*.12,s*.1); c.closePath(); c.fill();
+    c.strokeStyle='#5a3a1a'; c.lineWidth=4; c.beginPath(); c.moveTo(-W*.1,-H*.25); c.lineTo(-W*.18,-H*1.1); c.stroke(); c.fillStyle='rgba(239,230,207,.85)'; c.beginPath(); c.moveTo(-W*.18,-H*1.05); c.lineTo(W*.12,-H*.75); c.lineTo(-W*.13,-H*.45); c.closePath(); c.fill(); c.restore();
+    for(let i=0;i<5;i++) c.fillRect(X+i*W/5,by+s*.15,s*.6,s*.12);
   } else if(k==='fountain'){
     const y=lmCy(lm,s); circ(c,cx,y,W*.48,'#b9ab8a'); circ(c,cx,y,W*.4,'#4f9ad8'); circ(c,cx,y,s*.35,'#c9bb9a');
     for(let i=0;i<6;i++){ const a=i*Math.PI/3+tm; circ(c,cx+Math.cos(a)*s*.6,y+Math.sin(a)*s*.5-s*.2,s*.08,'rgba(220,240,255,.8)'); }
@@ -1832,7 +2387,7 @@ function drawLandmark(c,lm,s,tm){
   }
 }
 function drawGate(c,g,s,tm){
-  const X=g.x*s, Y=g.y*s, W=2*s, H=2*s, open=g.ch<=S.unlocked, done=S.chs[g.ch].stage>=4;
+  const X=g.x*s, Y=g.y*s, W=2*s, H=2*s, open=isOpen(g.ch), done=S.chs[g.ch].stage>=4;
   c.fillStyle='#a8a090'; c.fillRect(X,Y+s*.2,s*.45,H-s*.2); c.fillRect(X+W-s*.45,Y+s*.2,s*.45,H-s*.2);
   c.beginPath(); c.arc(X+W/2,Y+s*.75,W/2,Math.PI,0); c.lineTo(X+W-s*.45,Y+s*.75); c.arc(X+W/2,Y+s*.75,W/2-s*.45,0,Math.PI,true); c.closePath(); c.fill();
   const th=CH[g.ch].th;
@@ -1841,7 +2396,7 @@ function drawGate(c,g,s,tm){
   c.beginPath(); c.arc(X+W/2,Y+s*.75,W/2-s*.45,Math.PI,0); c.lineTo(X+W-s*.45,Y+H); c.lineTo(X+s*.45,Y+H); c.closePath(); c.fill();
   if(open){ for(let i=0;i<3;i++){ const a=tm*2+i*2.1; circ(c,X+W/2+Math.cos(a)*s*.3,Y+s*1.2+Math.sin(a)*s*.4,s*.05,'rgba(255,255,255,.8)'); } }
   else { c.fillStyle='#8a8070'; c.fillRect(X+W/2-s*.18,Y+s*1.1,s*.36,s*.3); c.strokeStyle='#8a8070'; c.lineWidth=s*.07; c.beginPath(); c.arc(X+W/2,Y+s*1.1,s*.13,Math.PI,0); c.stroke(); }
-  c.font=`900 ${s*.4}px Nunito, sans-serif`; c.textAlign='center'; circ(c,X+W/2,Y+s*.05,s*.28,done?'#7a5a12':'#e9dcc0'); c.fillStyle=done?'#f6de98':'#2a2016'; c.fillText(g.ch,X+W/2,Y+s*.19);
+  c.font=`900 ${s*.4}px Nunito, sans-serif`; c.textAlign='center'; circ(c,X+W/2,Y+s*.05,s*.28,done?'#7a5a12':'#e9dcc0'); c.fillStyle=done?'#f6de98':'#2a2016'; c.fillText(POS(g.ch),X+W/2,Y+s*.19);
 }
 
 /* ===================== MAP GENERATION ===================== */
@@ -1857,22 +2412,23 @@ function buildMap(id){
   if(id==='hub'){
     for(let i=0;i<W*H;i++) tt[i]=T.G;
     for(let i=0;i<W*H;i++){ const x=i%W,y=(i/W)|0; if(rnd()<.12) tt[i]=T.D; if(x<2||y<2||x>=W-2||y>=H-2) tt[i]=T.B; }
-    rect(3,8,W-6,1,T.P); rect(3,17,W-6,1,T.P); rect(16,8,2,10,T.P); rect(13,10,8,6,T.P);
-    [[6,13],[9,11],[25,12],[28,14],[11,15],[23,15]].forEach(([x,y])=>set(x,y,T.B));
+    const O=12; rect(3,8,W-6,1,T.P); rect(3,17,W-6,1,T.P); rect(16+O,8,2,10,T.P); rect(13+O,10,8,6,T.P);
+    [[6,13],[9,11],[25,12],[28,14],[11,15],[23,15],[3,11],[45,11],[50,14],[54,10],[47,15]].forEach(([x,y])=>set(x+(x<40?O:0),y,T.B));
     const lm=(k,x,y,w,h,o)=>{ const L=Object.assign({k,x,y,w,h},o||{}); m.lms.push(L); rect(x,y,w,h,T.L); return L; };
-    lm('house',3,3,6,4,{sign:'sign.shop',awn:'#7b3fa0'}); lm('tent',12,3,5,4,{sign:'sign.scribe'}); lm('barn',24,3,6,4,{sign:'sign.stable'}); lm('fountain',16,11,2,2);
-    for(let i=0;i<10;i++){ const gx=2+i*3, gy=18; rect(gx,gy,2,2,T.L); m.ents.push({kind:'gate',x:gx,y:gy,w:2,h:2,ch:i+1}); }
+    lm('house',3+O,3,6,4,{sign:'sign.shop',awn:'#7b3fa0'}); lm('tent',12+O,3,5,4,{sign:'sign.scribe'}); lm('barn',24+O,3,6,4,{sign:'sign.stable'}); lm('fountain',16+O,11,2,2);
+    ORDER.forEach((cid,i)=>{ const gx=2+i*3, gy=18; rect(gx,gy,2,2,T.L); m.ents.push({kind:'gate',x:gx,y:gy,w:2,h:2,ch:cid}); });
     rect(2,20,W-4,1,T.G);
-    const npc=(role,x,y,def,extra)=>m.ents.push(Object.assign({kind:'npc',role,x,y,name:def.name,look:def.look},extra||{}));
+    const npc=(role,x,y,def,extra)=>m.ents.push(Object.assign({kind:'npc',role,x:x+O,y,name:def.name,look:def.look},extra||{}));
     npc('elder',15,14,SIMEON); npc('shop',6,7,HUBNPC.lydia); npc('scribe',14,7,HUBNPC.ezra); npc('stable',27,7,HUBNPC.jesse);
     npc('flavor',22,12,HUBNPC.timothy,{lk:'hub.timothy'}); npc('flavor',9,14,HUBNPC.lois,{lk:'hub.lois'});
     npc('flavor',20,10,HUBNPC.priscilla,{lk:'hub.priscilla'}); npc('flavor',29,12,HUBNPC.philip,{lk:'hub.philip'}); npc('flavor',4,12,HUBNPC.tabitha,{lk:'hub.tabitha'});
-    m.spawn={x:17,y:14};
+    m.spawn={x:17+O,y:14};
   } else {
     for(let i=0;i<W*H;i++) tt[i]=T.G;
     if(R.river){ if(R.river.d==='v'){ let x=Math.floor(W*R.river.at); for(let y=0;y<H;y++){ for(let k=0;k<3;k++) set(x+k,y,T.W); if(rnd()<.3) x=clamp(x+(rnd()<.5?-1:1),6,W-8);} }
       else { let y=Math.floor(H*R.river.at); for(let x=0;x<W;x++){ for(let k=0;k<3;k++) set(x,y+k,T.W); if(rnd()<.3) y=clamp(y+(rnd()<.5?-1:1),5,H-7);} } }
     if(R.lake){ const lx=W*.52, ly=H*.42; for(let y=0;y<H;y++) for(let x=0;x<W;x++){ const d=((x-lx)/(W*.2))**2+((y-ly)/(H*.24))**2; if(d<1+(hash(x,y)-.5)*.25) set(x,y,T.W);} }
+    if(R.sea){ for(let x=0;x<W;x++){ const y0=Math.round(H*.74+Math.sin(x*.27)*1.6+(hash(x,R.seed)-.5)*1.2); for(let y=y0;y<H;y++) set(x,y,T.W); } }
     for(let i=0;i<R.ponds;i++) blob(4+rnd()*(W-8),4+rnd()*(H-8),1.5+rnd()*2,T.W);
     for(let i=0;i<R.dense;i++) blob(3+rnd()*(W-6),3+rnd()*(H-6),.8+rnd()*2.3,T.B);
     for(let i=0;i<W*H;i++){ if(tt[i]===T.G){ const r=rnd(); if(r<.05) tt[i]=T.B; else if(r<.15) tt[i]=T.D; } }
@@ -1881,12 +2437,12 @@ function buildMap(id){
     for(let y=sp.y-3;y<=sp.y+3;y++) for(let x=2;x<=8;x++) set(x,y,T.G);
     const L=R.lm, lw=L.w, lh=L.h, lx=Math.floor(W*L.x-lw/2), ly=Math.floor(H*L.y);
     if(L.k!=='boat'){ for(let y=ly-1;y<=ly+lh+2;y++) for(let x=lx-2;x<=lx+lw+1;x++) if(get(x,y)!==T.W||y>=ly) set(x,y,T.G); }
-    rect(lx,ly,lw,lh,T.L); m.lms.push({k:L.k,x:lx,y:ly,w:lw,h:lh,dyn:['walls','stable','tomb'].includes(L.k)});
+    rect(lx,ly,lw,lh,T.L); m.lms.push({k:L.k,x:lx,y:ly,w:lw,h:lh,dyn:['walls','stable','tomb','upperRoom','altar'].includes(L.k)});
     const front={x:lx+Math.floor(lw/2),y:ly+lh};
     const bossPos={x:front.x,y:front.y+(L.k==='boat'?1:0)}; m.bossPos=bossPos;
     m.ents.push({kind:'exit',x:2,y:sp.y});
-    const guidePos={x:7,y:sp.y-2}, sidePos={x:Math.round(W*.3),y:Math.round(H*.8)};
-    const flavPos=[{x:Math.round(W*.42),y:Math.round(H*.2)},{x:Math.round(W*.8),y:Math.round(H*.72)}];
+    const guidePos={x:7,y:sp.y-2}, sidePos={x:Math.round(W*.3),y:Math.round(H*(R.sea?.6:.8))};
+    const flavPos=[{x:Math.round(W*.42),y:Math.round(H*.2)},{x:Math.round(W*.8),y:Math.round(H*(R.sea?.6:.72))}];
     const carve=(ax,ay,bx,by)=>{ let x=ax,y=ay,g=0;
       const paint=(px,py)=>{ if(px<2||py<2||px>=W-2||py>=H-2) return; const v=get(px,py); if(v===T.L) return; set(px,py,v===T.W||v===T.BR?T.BR:T.P); };
       paint(x,y);
@@ -1944,7 +2500,7 @@ function enterMap(id,spawn){
   M=buildMap(id); buildCache(M);
   const sp=spawn||M.spawn; P.x=P.tx=sp.x; P.y=P.ty=sp.y; P.fx=P.x; P.fy=P.y; P.mv=false; P.path=[]; P.pend=null; P.inv=1.2;
   CP.fx=P.x-1; CP.fy=P.y; trail=[];
-  if(id!=='hub'){ const c=S.chs[id]; for(let i=0;i<9+Math.floor(id/2);i++) spawnFoe(true); if(c.stage===2) addBoss(); }
+  if(id!=='hub'){ const c=S.chs[id]; for(let i=0;i<9+Math.floor(tierOf(id)/2);i++) spawnFoe(true); if(c.stage===2) addBoss(); }
   M.respawn=0;
   const R=M.R; banner(R.name, id==='hub'?R.sub:R.book);
   S.map=id; save(); updHUD(); sceneMusic();
@@ -1966,7 +2522,7 @@ addEventListener('keydown',e=>{
   if(e.target&&(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA'||e.target.tagName==='SELECT')) return;
   if(KEYMAP[e.code]){ keys[KEYMAP[e.code]]=true; P.path=[]; P.pend=null; e.preventDefault(); }
   if(e.code==='Space'||e.code==='Enter'){ e.preventDefault(); if(qOpen){ const g=$('#qGo'); if(!g.hidden) g.click(); return; } if(dialogOpen){ advDialog(); return; } if(mode==='world'&&!modalOpen) doAct(); }
-  if(e.code==='Escape'&&modalOpen) closeModal();
+  if(e.code==='Escape'){ if(qOpen&&!$('#qExit').hidden){ finishQ('exit'); return; } if(modalOpen) closeModal(); }
   if(qOpen&&/^Digit[1-4]$/.test(e.code)){ const b=$('#qChoices').children[+e.code.slice(5)-1]; if(b&&!b.disabled) b.click(); }
 });
 addEventListener('keyup',e=>{ if(KEYMAP[e.code]) keys[KEYMAP[e.code]]=false; });
@@ -2021,7 +2577,7 @@ function update(dt){
       else { f.prog+=dt*2.6; if(f.prog>=1){ f.x=f.tx; f.y=f.ty; f.mv=false; } f.fx=f.x+(f.tx-f.x)*(f.mv?f.prog:0); f.fy=f.y+(f.ty-f.y)*(f.mv?f.prog:0); }
       if(P.inv<=0&&mode==='world'&&Math.hypot(f.fx-P.fx,f.fy-P.fy)<.8){ startBattle(f,false); break; }
     }
-    M.respawn+=dt; if(M.respawn>25){ M.respawn=0; if(M.foes.length<6+Math.floor(M.id/2)) spawnFoe(false); }
+    M.respawn+=dt; if(M.respawn>25){ M.respawn=0; if(M.foes.length<6+Math.floor(tierOf(M.id)/2)) spawnFoe(false); }
   }
   updAct();
 }
@@ -2035,7 +2591,7 @@ function updAct(force){
   let best=null; if(!P.mv) for(const e of M.ents){ if(nearEnt(e)){ best=e; break; } }
   if(best!==actEnt||force){ actEnt=best; const b=$('#act');
     if(!best) b.hidden=true;
-    else { b.hidden=false; b.textContent= best.kind==='gate'?(best.ch<=S.unlocked?t('act.enter',best.ch,CH[best.ch].name):t('act.locked',best.ch))
+    else { b.hidden=false; b.textContent= best.kind==='gate'?(isOpen(best.ch)?t('act.enter',POS(best.ch),CH[best.ch].name):t('act.locked',POS(best.ch)))
       : best.kind==='exit'?t('act.home') : best.kind==='boss'?t('act.boss',bn(CH[M.id].boss.name)) : t('act.talk',best.name); } }
 }
 $('#act').addEventListener('click',()=>{ ac(); doAct(); });
@@ -2095,7 +2651,7 @@ function drawNPC(e,tm){
 function drawNPCLabel(e){ const d=Math.abs(e.x-P.x)+Math.abs(e.y-P.y); if(d>=6||(P.x===e.x&&P.y===e.y+1)) return;
   const X=e.x*TS+TS/2, Y=e.y*TS+TS*.95; ctx.font=`800 ${TS*.27}px Nunito, sans-serif`; ctx.textAlign='center'; const w=ctx.measureText(e.name).width+10; ctx.fillStyle='rgba(14,21,52,.8)'; ctx.fillRect(X-w/2,Y+2,w,TS*.34); ctx.fillStyle='#f6de98'; ctx.fillText(e.name,X,Y+TS*.27); }
 function npcMark(e){
-  if(e.role==='elder'){ if(!S.flags.met) return '!'; if(S.chs[10].stage>=4&&!S.flags.ending) return '!'; return null; }
+  if(e.role==='elder'){ if(!S.flags.met) return '!'; if(allDone()&&!S.flags.ending) return '!'; return null; }
   if(M.id==='hub') return null;
   const c=S.chs[M.id];
   if(e.role==='guide'){ if(c.stage===0||c.stage===3) return '!'; return null; }
@@ -2108,7 +2664,7 @@ let last=performance.now();
 function loop(ts){ const dt=Math.min(.05,(ts-last)/1000); last=ts; now=ts/1000; try{ update(dt); render(now); }catch(err){ console.error(err); } requestAnimationFrame(loop); }
 
 /* ===================== UI HELPERS ===================== */
-function toast(msg,big){ const d=document.createElement('div'); d.className='toast'+(big?' big':''); d.textContent=msg; $('#toasts').appendChild(d); setTimeout(()=>{ d.style.transition='opacity .4s'; d.style.opacity='0'; setTimeout(()=>d.remove(),400); },big?3200:2400); }
+function toast(msg,big){ const box=$('#toasts'); while(box.children.length>=3) box.firstChild.remove(); const d=document.createElement('div'); d.className='toast'+(big?' big':''); d.textContent=msg; box.appendChild(d); setTimeout(()=>{ d.style.transition='opacity .4s'; d.style.opacity='0'; setTimeout(()=>d.remove(),400); },big?3200:2400); }
 let bannerT=0;
 function banner(a,b){ $('#bnT').textContent=a; $('#bnS').textContent=b||''; const el=$('#banner'); el.classList.add('show'); clearTimeout(bannerT); bannerT=setTimeout(()=>el.classList.remove('show'),2600); }
 function updHUD(){ if(!S) return; const mh=maxHP(); S.hp=clamp(S.hp,0,mh);
@@ -2116,14 +2672,14 @@ function updHUD(){ if(!S) return; const mh=maxHP(); S.hp=clamp(S.hp,0,mh);
   $('#hXp').style.width=(S.xp/xpNeed()*100)+'%'; $('#hCoins').textContent=S.coins; updTrack(); }
 function updTrack(){ const el=$('#track'); if(!S||mode!=='world'||!M){ el.hidden=true; return; } el.hidden=false; el.innerHTML='<b>'+esc(t('track.quest'))+'</b>'+esc(questText()); }
 function questText(){
-  if(M.id==='hub'){ if(!S.flags.met) return t('q.simeon'); if(S.chs[10].stage>=4&&!S.flags.ending) return t('q.lastPiece');
-    const n=nextOpen(); return n?t('q.enterGate',n,CH[n].name):t('q.allDone'); }
+  if(M.id==='hub'){ if(!S.flags.met) return t('q.simeon'); if(allDone()&&!S.flags.ending) return t('q.lastPiece');
+    const n=nextOpen(); return n?t('q.enterGate',POS(n),CH[n].name):t('q.allDone'); }
   const c=S.chs[M.id], R=CH[M.id];
   let s = c.stage===0?t('q.talk',R.guide.name) : c.stage===1?t('q.defeat',t('gloomlings'),R.name,c.kills,R.kills) : c.stage===2?t('q.face',bn(R.boss.name),R.boss.where) : c.stage===3?t('q.return',R.guide.name):t('q.complete');
   if(c.side===1) s+=' · '+t('q.side',R.side.what,c.got.length,R.side.items.length);
   return s;
 }
-function nextOpen(){ for(let i=1;i<=10;i++) if(S.chs[i].stage<4&&i<=S.unlocked) return i; return null; }
+function nextOpen(){ for(const i of ORDER) if(S.chs[i].stage<4&&isOpen(i)) return i; return null; }
 
 /* ---- dialog ---- */
 let dQ=[], dDone=null, dTyping=false, dFull='', dIdx=0, dTimer=0;
@@ -2151,8 +2707,8 @@ $('#modal').addEventListener('click',e=>{ if(e.target.id==='modal') closeModal()
 /* ===================== INTERACTIONS ===================== */
 function interact(e){
   ac(); P.path=[]; P.pend=null; keys.up=keys.down=keys.left=keys.right=false;
-  if(e.kind==='gate'){ if(e.ch>S.unlocked){ toast(t('gate.locked',e.ch-1)); return; } flash(); enterMap(e.ch); return; }
-  if(e.kind==='exit'){ flash(); enterMap('hub',{x:2+(M.id-1)*3,y:17}); return; }
+  if(e.kind==='gate'){ if(!isOpen(e.ch)){ toast(t('gate.locked',POS(e.ch)-1)); return; } flash(); enterMap(e.ch); return; }
+  if(e.kind==='exit'){ flash(); enterMap('hub',{x:2+(POS(M.id)-1)*3,y:17}); return; }
   if(e.kind==='boss'){ const b=CH[M.id].boss; talk([L(CH[M.id].guide,t('boss.intro',b.name,CH[M.id].hint))],()=>startBattle(null,true)); return; }
   if(e.kind!=='npc') return;
   const who={name:e.name,look:e.look,angel:e.angel,opts:{staff:e.staff}};
@@ -2181,18 +2737,19 @@ function interact(e){
 }
 function elderTalk(who){
   if(!S.flags.met){ talk(t('elder.intro').map(x=>L(who,x)),()=>{ S.flags.met=1; save(); updTrack(); toast(t('toast.lamb')); }); return; }
-  if(S.chs[10].stage>=4&&!S.flags.ending){ return ending(who); }
-  const n=Object.values(S.chs).filter(c=>c.stage>=4).length, nx=nextOpen();
-  talk([L(who, n>=10?t('elder.whole'):t('elder.progress',n)+(nx?t('elder.next',nx,CH[nx].name):''))]);
+  if(allDone()&&!S.flags.ending){ return ending(who); }
+  const n=doneCount(), nx=nextOpen();
+  talk([L(who, n>=NCH?t('elder.whole'):t('elder.progress',n,NCH)+(nx?t('elder.next',POS(nx),CH[nx].name):''))]);
 }
 function completeChapter(id){
-  const c=S.chs[id], R=CH[id]; c.stage=4; S.unlocked=Math.max(S.unlocked,Math.min(10,id+1));
+  const c=S.chs[id], R=CH[id]; c.stage=4;
   const rw=R.reward; const got=[];
   if(rw.armor&&!S.armor.includes(rw.armor)){ S.armor.push(rw.armor); got.push(ARMOR[rw.armor].name); }
   if(rw.comp&&!S.comps[rw.comp]){ S.comps[rw.comp]={lvl:Math.max(1,S.level-2),xp:0}; got.push(COMPS[rw.comp].e+' '+COMPS[rw.comp].name); }
   if(rw.cosmetic==='crown'&&!S.cos.includes('crown')) S.cos.push('crown');
-  S.coins+=50+id*10; SFX.win(); S.hp=maxHP();
-  toast(t('toast.piece',id),true); got.forEach(g=>setTimeout(()=>toast(t('toast.received',g)),600));
+  if(rw.dye&&!S.dyes.includes(rw.dye)){ S.dyes.push(rw.dye); S.look.robe=DYES[rw.dye].c; got.push(DYES[rw.dye].name); }
+  S.coins+=Math.round(50+tierOf(id)*10); SFX.win(); S.hp=maxHP();
+  toast(t('toast.piece',POS(id)),true); got.forEach(g=>setTimeout(()=>toast(t('toast.received',g)),600));
   setTimeout(()=>toast(t('toast.verse',REF(R.verse.r))),1200);
   if(Date.now()-(S.lastBackup||0)>3*86400000) setTimeout(()=>toast(t('toast.backup')),2600);
   save(); updHUD();
@@ -2201,7 +2758,7 @@ function ending(who){
   talk(t('ending').map(x=>L(who,x)),()=>{
       S.flags.ending=1; if(!S.cos.includes('crown')) S.cos.push('crown'); save(); SFX.win(); playMusic('ending');
       const v=LANG==='de'?{t:'So sehr hat Gott die Welt geliebt, dass er seinen einzigen Sohn gab. Jeder, der an ihn glaubt, wird ewig leben.',r:'nach Johannes 3,16'}:{t:'For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.',r:'John 3:16 (WEB)'};
-      openModal(t('ending.title'),`<div class="fragrow">${Array.from({length:10},(_,i)=>`<div class="frag got">${i+1}</div>`).join('')}</div>
+      openModal(t('ending.title'),`<div class="fragrow">${Array.from({length:NCH},(_,i)=>`<div class="frag got">${i+1}</div>`).join('')}</div>
         <p class="verse">${esc(v.t)}<cite>${esc(v.r)}</cite></p><p>${t('ending.stats',S.correct,S.level)}</p><p style="color:var(--muted)">${esc(t('ending.grown'))}</p>`,null,sceneMusic); });
 }
 function flash(){ const f=document.createElement('div'); f.className='flash'; $('#game').appendChild(f); setTimeout(()=>f.remove(),500); }
@@ -2267,7 +2824,7 @@ function genBible(chId){
   if(Math.random()<.18) return genBooks();
   const [lo,hi]=bibleDiff(); let pool=LQ.BQ.filter(q=>q[1]>=lo&&q[1]<=hi);
   const local=pool.filter(q=>q[0]===chId);
-  if(chId&&local.length&&Math.random()<.65) pool=local; else { const opened=pool.filter(q=>q[0]===0||q[0]<=S.unlocked); if(opened.length) pool=opened; }
+  if(chId&&local.length&&Math.random()<.65) pool=local; else { const opened=pool.filter(q=>q[0]===0||isOpen(q[0])); if(opened.length) pool=opened; }
   const fresh=pool.filter(q=>!S.recent.includes('bible:'+q[2])); const q=pick(fresh.length?fresh:pool);
   return mk('bible',q[2],q[3],[q[4],q[5],q[6]],`${q[3]} — ${q[7]}`,{ref:q[7]});
 }
@@ -2279,14 +2836,14 @@ function genBooks(){
   return mk('bible',t('b.first'),BK[first],idx.filter(i=>i!==first).map(i=>BK[i]),t('b.firstEx',BK[first],first+1));
 }
 function genVerse(chId){
-  let pool=LQ.VQ.filter(v=>v[0]===0||v[0]<=S.unlocked); const local=pool.filter(v=>v[0]===chId); if(chId&&local.length&&Math.random()<.6) pool=local;
+  let pool=LQ.VQ.filter(v=>v[0]===0||isOpen(v[0])); const local=pool.filter(v=>v[0]===chId); if(chId&&local.length&&Math.random()<.6) pool=local;
   const fresh=pool.filter(v=>!S.recent.includes('verse:'+v[1])); const v=pick(fresh.length?fresh:pool);
   const refTxt=(t('v.ref',v[6])+' '+t('v.src')).trim();
   if(effGrade('verse')>=7&&Math.random()<.3){ const full=v[1].replace('___',v[2]); const book=v[6].replace(/\s[\d:,\-–\s]+.*$/,'');
     const opts=LANG==='de'?['1. Mose','2. Mose','Psalm','Sprüche','Jesaja','Matthäus','Lukas','Johannes','Römer','Josua','Daniel']:['Genesis','Exodus','Psalm','Proverbs','Isaiah','Matthew','Luke','John','Romans','Joshua','Daniel'];
     const others=shuffle(opts.filter(b=>!book.includes(b)&&!b.includes(book))).slice(0,3);
-    return mk('verse',`${esc(t('v.whichBook'))}<span class="vref" style="font-style:italic">"${esc(full)}"</span>`,book,others,refTxt,{html:1,verseq:1,say:`${t('v.whichBook')} ${full}`}); }
-  return mk('verse',esc(v[1]).replace('___','<span class="blank">?</span>')+`<span class="vref">— ${esc(refTxt)}</span>`,v[2],[v[3],v[4],v[5]],`"${v[1].replace('___',v[2])}" — ${refTxt}`,{html:1,verseq:1,say:v[1].replace('___',t('say.blank'))});
+    return mk('verse',`${esc(t('v.whichBook'))}<span class="vref" style="font-style:italic">"${esc(full)}"</span>`,book,others,refTxt,{html:1,verseq:1,say:[t('v.whichBook'),{ms:300},full]}); }
+  return mk('verse',esc(v[1]).replace('___','<span class="blank">?</span>')+`<span class="vref">— ${esc(refTxt)}</span>`,v[2],[v[3],v[4],v[5]],`"${v[1].replace('___',v[2])}" — ${refTxt}`,{html:1,verseq:1,say:(()=>{ const [a,b]=v[1].split('___'); return [a,{chime:1,ms:700},b]; })()});
 }
 function misspell(w){
   const out=new Set(), vow=LANG==='de'?'aeiouäöü':'aeiou'; let tries=0;
@@ -2330,10 +2887,11 @@ function record(cat,ok){
   const st=S.stats[cat]=S.stats[cat]||{r:0,t:0,h:[]}; st.t++; if(ok) st.r++; st.h.push(ok?1:0); S.answered++; if(ok) S.correct++;
   if(st.h.length>=6){ const acc=st.h.reduce((a,b)=>a+b,0)/st.h.length; if(acc>=.85){ S.shift[cat]=Math.min(2,(S.shift[cat]||0)+1); st.h=[]; } else if(acc<.5){ S.shift[cat]=Math.max(-2,(S.shift[cat]||0)-1); st.h=[]; } else st.h.shift(); }
 }
-let qResolve=null;
-function ask(q){
+let qResolve=null, curQ=null;
+function ask(q,opt){ opt=opt||{};
   return new Promise(res=>{
-    qOpen=true; qResolve=res; $('#qcard').hidden=false; $('#qCat').textContent=catName(q.cat);
+    qOpen=true; qResolve=res; curQ=q; $('#qcard').hidden=false; $('#qCat').textContent=catName(q.cat)+(opt.n?` · ${opt.n}/${opt.of}`:'');
+    const qx=$('#qExit'); qx.hidden=!opt.exit; qx.onclick=()=>finishQ('exit');
     const qt=$('#qText'); qt.className=q.verseq?'verseq':''; if(q.html) qt.innerHTML=q.text; else qt.textContent=q.text;
     const fb=$('#qFb'); fb.className=''; fb.innerHTML=''; $('#qGo').hidden=true;
     const box=$('#qChoices'); box.innerHTML='';
@@ -2348,16 +2906,22 @@ function ask(q){
   });
 }
 function finishQ(ok){ if(!qOpen) return; qOpen=false; $('#qcard').hidden=true; stopSpeak(); const r=qResolve; qResolve=null; save(); if(r) r(ok); }
-function speakQ(q){ let txt=(q.say||q.text.replace(/<[^>]+>/g,' '));
-  if(q.cat==='math'||q.cat==='logic') txt=txt.replace(/[×·]/g,t('say.times')).replace(/[÷]/g,t('say.div')).replace(/ : /g,t('say.div')).replace(/−/g,t('say.minus')).replace(/√/g,t('say.sqrt')).replace(/²/g,t('say.sq')).replace(/³/g,t('say.cube')).replace(/= \?/g,'= ?');
-  speakText(txt+'. '+q.choices.map((c,i)=>t('say.choice',i+1,c)).join('. ')+'.'); }
+const FR_DE={2:'Halbe',3:'Drittel',4:'Viertel',5:'Fünftel',6:'Sechstel',7:'Siebtel',8:'Achtel',9:'Neuntel',10:'Zehntel',11:'Elftel',12:'Zwölftel',14:'Vierzehntel',16:'Sechzehntel',18:'Achtzehntel',22:'Zweiundzwanzigstel',24:'Vierundzwanzigstel'};
+function sayMath(x){ return String(x).replace(/(\d+)\/(\d+)/g,(m,a,b)=>LANG==='de'?(a==='1'&&b==='2'?'ein halb':`${a==='1'?'ein':a} ${FR_DE[b]||'durch '+b}`):`${a} over ${b}`)
+  .replace(/[×·]/g,t('say.times')).replace(/÷/g,t('say.div')).replace(/ : /g,t('say.div')).replace(/−/g,t('say.minus')).replace(/√/g,t('say.sqrt')).replace(/²/g,t('say.sq')).replace(/³/g,t('say.cube'))
+  .replace(/,\s*\?\s*$/,' '+t('say.then')).replace(/=\s*\?/g,t('say.eqWhat')); }
+function speakQ(q){ const num=q.cat==='math'||q.cat==='logic';
+  let head=q.say!=null?q.say:q.text.replace(/<[^>]+>/g,' '); if(!Array.isArray(head)) head=[num?sayMath(head):head];
+  const parts=[...head,{ms:500}];
+  q.choices.forEach((c,i)=>{ parts.push(t('say.answer',t('say.nums')[i])); parts.push({ms:150}); parts.push(num?sayMath(c):c); parts.push({ms:350}); });
+  speakSeq(parts); }
 
 /* ===================== BATTLE ===================== */
 let B=null;
 function makeFoe(chId,boss,typeIdx){
-  const R=CH[chId]; const base=18+chId*10;
-  if(boss){ const hp=Math.round(base*3.2+chId*12); return {name:R.boss.name,boss:R.boss,c:R.boss.c,hp,max:hp,atk:4+chId*2.6,marches:R.boss.marches?0:null}; }
-  const ty=R.foes[typeIdx!=null?typeIdx:rand(0,R.foes.length-1)]; let hp=base+rand(0,chId*3), atk=3+chId*2.2;
+  const R=CH[chId], tr=tierOf(chId); const base=Math.round(18+tr*10);
+  if(boss){ const hp=Math.round(base*3.2+tr*12); return {name:R.boss.name,boss:R.boss,c:R.boss.c,hp,max:hp,atk:4+tr*2.6,marches:R.boss.marches?0:null}; }
+  const ty=R.foes[typeIdx!=null?typeIdx:rand(0,R.foes.length-1)]; let hp=base+rand(0,Math.round(tr*3)), atk=4+tr*2.4;
   if(ty.trait==='tough'){ hp=Math.round(hp*1.5); atk*=.85; } if(ty.trait==='mender') hp=Math.round(hp*.9);
   return {name:ty.name,c:ty.c,shape:ty.shape,trait:ty.trait,hp,max:hp,atk};
 }
@@ -2373,7 +2937,7 @@ function startBattle(foeEnt,boss){
   const pc=$('#bPC'), sz=battleSize(); pc.width=sz.pw*dpr; pc.height=sz.ph*dpr; pc.style.width=sz.pw+'px'; pc.style.height=sz.ph+'px';
   $('#bPName').textContent=S.name; const comp=COMPS[S.comp]; $('#bCompE').textContent=comp?comp.e:''; $('#bCompE').style.fontSize=(sz.pw*.36)+'px';
   const fz=$('#bFoes'); fz.innerHTML='';
-  foes.forEach((f,i)=>{ const u=document.createElement('div'); u.className='unit foe'+(i===0?' target':''); u.dataset.i=i;
+  foes.forEach((f,i)=>{ const u=document.createElement('div'); u.className='unit foe'+(i===0?' target':'')+(boss?' bossu':''); u.dataset.i=i;
     const fs=boss?sz.bs:sz.fs; const tag=f.trait?` <span class="ftag">${esc(t('trait.'+f.trait))}</span>`:'';
     u.innerHTML=`<div class="fh"><div>${esc(f.name)}${tag}</div><div class="bar hp"><i style="width:100%"></i></div></div><canvas width="${fs*dpr}" height="${fs*dpr}" style="width:${fs}px;height:${fs}px"></canvas>`;
     u.addEventListener('click',()=>{ if(f.hp>0){ B.target=i; [...fz.children].forEach(c=>c.classList.toggle('target',c===u)); } }); fz.appendChild(u); f.el=u; f.cv=u.querySelector('canvas'); f.fs=fs; });
@@ -2447,7 +3011,7 @@ async function battleLoop(){
       const tgt=()=>B.foes[B.target].hp>0?B.foes[B.target]:B.foes.find(f=>f.hp>0);
       if(comp.type==='attack'||comp.type==='all'||comp.type==='coins'){ const ts=comp.type==='all'?B.foes.filter(f=>f.hp>0):[tgt()]; const dmg=comp.type==='coins'?Math.round(pw*.8):pw;
         anim(ce,'lunge-r'); for(const f of ts){ if(f.marches!=null){ floatText(f.el,t('b.wallsStrong'),'info'); continue; } f.hp=Math.max(0,f.hp-dmg); floatText(f.el,'−'+dmg,'dmg'); anim(f.el,'shake'); } SFX.hit(); updBattle(); await sleep(450); }
-      else if(comp.type==='heal'&&S.hp<maxHP()){ const h=Math.min(maxHP()-S.hp,pw); S.hp+=h; floatText(pl_,'+'+h,'heal'); updBattle(); await sleep(400); }
+      else if(comp.type==='heal'&&S.hp<maxHP()*.7){ const h=Math.min(maxHP()-S.hp,Math.round(pw*.7)); S.hp+=h; floatText(pl_,'+'+h,'heal'); updBattle(); await sleep(400); }
       else if(comp.type==='shield'){ B.compShield=Math.min(70,comp.p+cs.lvl*2); floatText(ce,t('b.guard'),'info'); await sleep(350); }
       else if(comp.type==='stun'){ const f=tgt(); anim(ce,'lunge-r'); if(f&&f.marches==null&&Math.random()*100<comp.p+cs.lvl*2){ f.stun=1; floatText(f.el,t('b.stunned'),'info'); } else if(f){ const d=Math.round(pw*.25); f.hp=Math.max(0,f.hp-d); floatText(f.el,'−'+d,'dmg'); } updBattle(); await sleep(400); } }
     if(B.foes.every(f=>f.hp<=0)){ await sleep(400); return victory(); }
@@ -2463,7 +3027,7 @@ async function battleLoop(){
 }
 function victory(){
   const chId=B.ch, R=CH[chId], n=B.foes.length; let xp=0, coins=0;
-  if(B.boss){ xp=(14+chId*7)*5; coins=(6+chId*4)*5; } else { xp=n*(10+chId*6); coins=n*(5+chId*3); }
+  const tr=tierOf(chId); if(B.boss){ xp=Math.round((14+tr*7)*5); coins=Math.round((6+tr*4)*5); } else { xp=Math.round(n*(10+tr*6)); coins=Math.round(n*(5+tr*3)); }
   const comp=COMPS[S.comp], cs=S.comps[S.comp]; let bonus=0;
   if(comp&&cs&&comp.type==='coins'){ bonus=comp.p+cs.lvl*2; coins+=bonus; }
   S.coins+=coins; const lv=gainXP(xp); let compLv=false;
@@ -2497,7 +3061,7 @@ function coinHTML(n){ return `<span class="price"><span class="coin"></span>${n}
 const dyeBg=c=>c==='rainbow'?'conic-gradient(#d9443a,#ef9a2d,#ecd23b,#4fae4f,#3f7fd1,#7e4fb3,#d9443a)':c;
 function openShop(){
   const render=b=>{ b.innerHTML=`<div class="sect">${esc(t('shop.food'))}</div>`+Object.entries(ITEMS).map(([k,it])=>`<div class="row"><div class="big">${it.e}</div><div class="grow"><h4>${esc(it.name)} <span class="tag">${esc(t('shop.have',S.items[k]||0))}</span></h4><p>${esc(it.desc)}</p></div>${coinHTML(it.price)}<button class="btn sm" data-buy="${k}" ${S.coins<it.price?'disabled':''}>${esc(t('shop.buy'))}</button></div>`).join('')
-    +`<div class="sect">${esc(t('shop.dyes'))}</div>`+Object.entries(DYES).map(([k,d])=>{ const own=S.dyes.includes(k); return `<div class="row"><div class="big"><span style="display:inline-block;width:30px;height:30px;border-radius:50%;background:${dyeBg(d.c)};border:2px solid var(--gold)"></span></div><div class="grow"><h4>${esc(d.name)}</h4><p>${esc(d.note)}</p></div>${own?`<span class="tag ok">${esc(t('shop.owned'))}</span>`:coinHTML(d.price)+`<button class="btn sm" data-dye="${k}" ${S.coins<d.price?'disabled':''}>${esc(t('shop.buy'))}</button>`}</div>`; }).join('')
+    +`<div class="sect">${esc(t('shop.dyes'))}</div>`+Object.entries(DYES).filter(([k,d])=>d.price||S.dyes.includes(k)).map(([k,d])=>{ const own=S.dyes.includes(k); return `<div class="row"><div class="big"><span style="display:inline-block;width:30px;height:30px;border-radius:50%;background:${dyeBg(d.c)};border:2px solid var(--gold)"></span></div><div class="grow"><h4>${esc(d.name)}</h4><p>${esc(d.note)}</p></div>${own?`<span class="tag ok">${esc(t('shop.owned'))}</span>`:coinHTML(d.price)+`<button class="btn sm" data-dye="${k}" ${S.coins<d.price?'disabled':''}>${esc(t('shop.buy'))}</button>`}</div>`; }).join('')
     +`<p style="color:var(--muted);font-size:.85rem">${esc(t('shop.youHave',S.coins))}</p>`;
     b.querySelectorAll('[data-buy]').forEach(x=>x.onclick=()=>{ const it=ITEMS[x.dataset.buy]; if(S.coins>=it.price){ S.coins-=it.price; addItem(x.dataset.buy,1); SFX.coin(); save(); updHUD(); render(b);} });
     b.querySelectorAll('[data-dye]').forEach(x=>x.onclick=()=>{ const d=DYES[x.dataset.dye]; if(S.coins>=d.price){ S.coins-=d.price; S.dyes.push(x.dataset.dye); S.look.robe=d.c; SFX.coin(); toast(t('toast.wearing',d.name)); save(); updHUD(); render(b);} }); };
@@ -2518,13 +3082,14 @@ function openScribe(){
     <div class="grid2">${['mixed',...CATK].map(k=>`<button class="chip" data-pc="${k}"><h4>${esc(k==='mixed'?t('scribe.mixed'):catName(k))}</h4><p>${esc(k==='mixed'?t('scribe.mixedDesc'):t('scribe.only',catName(k)))}</p></button>`).join('')}</div>
     <div class="sect">${esc(t('scribe.lib'))}</div>${verseLib()}`,b=>{ b.querySelectorAll('[data-pc]').forEach(x=>x.onclick=()=>practice(x.dataset.pc)); });
 }
-function verseLib(){ const vs=Object.keys(CH).filter(i=>S.chs[i].stage>=4).map(i=>CH[i].verse); if(!vs.length) return `<p style="color:var(--muted)">${esc(t('lib.empty'))}</p>`;
+function verseLib(){ const vs=ORDER.filter(i=>S.chs[i].stage>=4).map(i=>CH[i].verse); if(!vs.length) return `<p style="color:var(--muted)">${esc(t('lib.empty'))}</p>`;
   return vs.map(v=>`<p class="verse">${esc(v.t)}<cite>${esc((t('v.ref',REF(v.r))+' '+t('v.src')).trim())}</cite></p>`).join(''); }
 async function practice(cat){
-  closeModal(); let right=0;
-  for(let i=0;i<10;i++){ const q=makeQuestion(0,cat==='mixed'?null:cat); const ok=await ask(q); if(ok){ right++; S.coins+=3; } }
+  closeModal(); let right=0, n=0;
+  for(let i=0;i<10;i++){ const q=makeQuestion(0,cat==='mixed'?null:cat); const ok=await ask(q,{exit:1,n:i+1,of:10}); if(ok==='exit') break; n++; if(ok){ right++; S.coins+=3; } }
   updHUD(); save();
-  openModal(t('prac.title'),`<p style="font-size:1.2rem;font-weight:800">${esc(t('prac.score',right))}</p><p>${t('prac.earned',coinHTML(right*3))}</p><p class="verse">${esc(t('prac.verse'))}<cite>${esc(t('prac.ref'))}</cite></p><button class="btn gold" id="pAgain">${esc(t('prac.again'))}</button>`,b=>{ b.querySelector('#pAgain').onclick=()=>practice(cat); });
+  if(!n) return;
+  openModal(t('prac.title'),`<p style="font-size:1.2rem;font-weight:800">${esc(t('prac.score',right,n))}</p><p>${t('prac.earned',coinHTML(right*3))}</p><p class="verse">${esc(t('prac.verse'))}<cite>${esc(t('prac.ref'))}</cite></p><button class="btn gold" id="pAgain">${esc(t('prac.again'))}</button>`,b=>{ b.querySelector('#pAgain').onclick=()=>practice(cat); });
 }
 $('#bBag').onclick=()=>{ ac(); if(modalOpen||dialogOpen) return;
   const render=b=>{ const inv=Object.entries(S.items).filter(([k,n])=>n>0);
@@ -2538,15 +3103,15 @@ $('#bBag').onclick=()=>{ ac(); if(modalOpen||dialogOpen) return;
     const cr=b.querySelector('#wCrown'); if(cr) cr.onclick=()=>{ S.flags.wearCrown=S.flags.wearCrown===false; save(); render(b); }; };
   openModal(t('bag.title'),'',render); };
 $('#bQuest').onclick=()=>{ ac(); if(modalOpen||dialogOpen) return;
-  let h=''; for(let i=1;i<=Math.min(10,S.unlocked);i++){ const c=S.chs[i], R=CH[i];
+  let h=''; for(const i of ORDER.filter(isOpen)){ const c=S.chs[i], R=CH[i];
     const main=c.stage>=4?`<span class="tag ok">${esc(t('quest.complete'))}</span>`:esc(c.stage===0?t('q.talk',R.guide.name):c.stage===1?t('q.defeat',t('gloomlings'),R.name,c.kills,R.kills):c.stage===2?t('q.face',bn(R.boss.name),R.boss.where):t('q.return',R.guide.name));
     const side=c.side===2?`<span class="tag ok">${esc(t('quest.done'))}</span>`:esc(c.side===1?t('q.side',R.side.what,c.got.length,R.side.items.length):t('q.talk',R.side.name));
-    h+=`<div class="row"><div class="big" style="font-family:var(--f-display);color:var(--gold)">${i}</div><div class="grow"><h4>${esc(R.name)} <span class="tag">${esc(R.book)}</span></h4><p>${esc(t('quest.main'))}: ${main}</p><p>${esc(t('quest.helper'))}: ${side}</p></div></div>`; }
+    h+=`<div class="row"><div class="big" style="font-family:var(--f-display);color:var(--gold)">${POS(i)}</div><div class="grow"><h4>${esc(R.name)} <span class="tag">${esc(R.book)}</span></h4><p>${esc(t('quest.main'))}: ${main}</p><p>${esc(t('quest.helper'))}: ${side}</p></div></div>`; }
   openModal(t('quest.title'),h+`<div class="sect">${esc(t('quest.verses'))}</div>${verseLib()}`); };
 $('#bMap').onclick=()=>{ ac(); if(modalOpen||dialogOpen) return;
-  const frags=Array.from({length:10},(_,i)=>`<div class="frag ${S.chs[i+1].stage>=4?'got':''}">${i+1}</div>`).join('');
+  const frags=ORDER.map((id,i)=>`<div class="frag ${S.chs[id].stage>=4?'got':''}">${i+1}</div>`).join('');
   let h=`<p style="margin-top:0">${esc(t('world.pieces'))}</p><div class="fragrow">${frags}</div><div class="sect">${esc(t('world.travel'))}</div><div class="row"><div class="big">🏛️</div><div class="grow"><h4>${esc(HUB.name)}</h4><p>${esc(t('world.hub'))}</p></div><button class="btn sm" data-go="hub">${esc(t('world.go'))}</button></div>`;
-  for(let i=1;i<=10;i++){ const open=i<=S.unlocked; h+=`<div class="row" style="opacity:${open?1:.45}"><div class="big" style="font-family:var(--f-display);color:var(--gold)">${i}</div><div class="grow"><h4>${esc(CH[i].name)}</h4><p>${esc(CH[i].book)}</p></div>${open?`<button class="btn sm" data-go="${i}">${esc(t('world.go'))}</button>`:`<span class="tag">${esc(t('world.locked'))}</span>`}</div>`; }
+  for(const i of ORDER){ const open=isOpen(i); h+=`<div class="row" style="opacity:${open?1:.45}"><div class="big" style="font-family:var(--f-display);color:var(--gold)">${POS(i)}</div><div class="grow"><h4>${esc(CH[i].name)}</h4><p>${esc(CH[i].book)}</p></div>${open?`<button class="btn sm" data-go="${i}">${esc(t('world.go'))}</button>`:`<span class="tag">${esc(t('world.locked'))}</span>`}</div>`; }
   openModal(t('world.title'),h,b=>b.querySelectorAll('[data-go]').forEach(x=>x.onclick=()=>{ const g=x.dataset.go; closeModal(); flash(); if(g==='hub') enterMap('hub'); else enterMap(+g); })); };
 
 /* ---- backups ---- */
@@ -2618,14 +3183,14 @@ function renderCreate(){ swatches('#cSkin',SK,'skin'); swatches('#cHair',HAIRS,'
   txtSw('#cAge',[3,5,7,9].map((g,i)=>[g,t('ageBtns')[i]]),()=>draft.grade,v=>draft.grade=v); drawPrev(); }
 function renderProfiles(){ const box=$('#tProfiles'); if(!box) return; const p=getProfiles(); box.innerHTML='';
   $('#tWho').hidden=!p.list.length;
-  p.list.forEach(pr=>{ const b=document.createElement('button'); b.className='prof'; b.innerHTML=`<canvas width="120" height="140"></canvas><span><b>${esc(pr.name)}</b><small>${esc(t('title.lv',pr.level||1,pr.frags||0))}</small></span>`;
+  p.list.forEach(pr=>{ const b=document.createElement('button'); b.className='prof'; b.innerHTML=`<canvas width="120" height="140"></canvas><span><b>${esc(pr.name)}</b><small>${esc(t('title.lv',pr.level||1,pr.frags||0,NCH))}</small></span>`;
     const c=b.querySelector('canvas').getContext('2d'); if(pr.look) drawPerson(c,60,135,120,pr.look,{dir:'down'});
     b.onclick=()=>{ ac(); const s=loadProfile(pr.id); if(!s){ toast(t('set.loadBad')); return; } S=s; S.id=pr.id; if(S.lang) applyLang(S.lang); else S.lang=LANG; startProfile(); toast(t('toast.welcome',S.name)); };
     box.appendChild(b); });
   $('#tNew').hidden=p.list.length>=4;
   if($('#create')&&!$('#create').hidden) renderCreate();
 }
-function startProfile(){ S.hp=Math.max(1,S.hp); S.musVol=S.musVol??.6; if(S.music===undefined) S.music=true; S.lastBackup=S.lastBackup||0;
+function startProfile(){ ORDER.forEach(i=>{ if(!S.chs[i]) S.chs[i]={stage:0,kills:0,side:0,got:[]}; }); delete S.unlocked; S.hp=Math.max(1,S.hp); S.musVol=S.musVol??.6; if(S.music===undefined) S.music=true; S.lastBackup=S.lastBackup||0;
   for(const k in S.comps) if(!COMPS[k]) delete S.comps[k]; if(!COMPS[S.comp]) S.comp='lamb';
   $('#title').hidden=true; mode='world'; const id=S.map==='hub'?'hub':+S.map; enterMap(id,{x:S.px,y:S.py}); if(!walkable(P.x,P.y)) enterMap(id); showWorldUI(); save(); }
 function toTitle(){ mode='title'; M=null; S=null; $('#hud').hidden=true; $('#track').hidden=true; $('#act').hidden=true; $('#dpad').hidden=true; $('#title').hidden=false; $('#create').hidden=true; $('#tMain').hidden=false; renderProfiles(); playMusic('title'); }
@@ -2645,7 +3210,11 @@ resize();
 renderProfiles();
 askPersist();
 requestAnimationFrame(loop);
-window.__sol={get S(){return S;},get M(){return M;},get P(){return P;},enterMap,startBattle,makeQuestion,genMath,genBible,genVerse,genWords,genLogic,setLanguage,playMusic,get mode(){return mode;},get MUS(){return MUS;}};
+function reachCheck(id){ const m=buildMap(id); const W=m.W; const seen=bfsAll(m,m.spawn.x,m.spawn.y); const ok=(x,y)=>seen.has(y*W+x); const bad=[];
+  m.ents.forEach(e=>{ const w=e.w||1,h=e.h||1; let r=false; for(let y=e.y-1;y<=e.y+h;y++) for(let x=e.x-1;x<=e.x+w;x++) if(adjTo(x,y,e)&&ok(x,y)) r=true; if(!r) bad.push(e.kind+':'+(e.name||e.ch||'')); });
+  if(m.bossPos){ const b=m.bossPos; if(![[1,0],[-1,0],[0,1],[0,-1]].some(([dx,dy])=>ok(b.x+dx,b.y+dy))) bad.push('boss'); }
+  m.items.forEach(it=>{ if(!ok(it.x,it.y)) bad.push('item'+it.idx); }); if(id!=='hub'&&m.reach.length<60) bad.push('small:'+m.reach.length); return bad; }
+window.__sol={ORDER,isOpen,POS,reachCheck,speakQ,get curQ(){return curQ;},get qOpen(){return qOpen;},interact,onStep,completeChapter,openSettings,practice,ask,get S(){return S;},get M(){return M;},get P(){return P;},enterMap,startBattle,makeQuestion,genMath,genBible,genVerse,genWords,genLogic,setLanguage,playMusic,get mode(){return mode;},get MUS(){return MUS;}};
 })();
 
 </script>

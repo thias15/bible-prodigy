@@ -2,10 +2,10 @@
 const STR = {
 en:{
  'title.kicker':'A Bible adventure','title.h1':'Scrolls<br>of Light','title.sub':'Journey through the great stories of the Bible, answer questions to power your faith, and restore the shattered Scroll.',
- 'title.cont':'Continue Journey','title.new':'New Pilgrim','title.who':'Who is playing?','title.lv':'Level {0} · {1} of 10 pieces',
+ 'title.cont':'Continue Journey','title.new':'New Pilgrim','title.who':'Who is playing?','title.lv':'Level {0} · {1} of {2} pieces',
  'create.h':'Create your pilgrim','create.name':'Your name','create.namePh':'Pilgrim','create.skin':'Skin','create.hair':'Hair','create.hs':'Hair style','create.robe':'Robe','create.age':'Your age (sets question difficulty)','create.go':'Begin the Journey','create.back':'Back',
  'hs':['Short','Long','Curly','Braids','Bun','Afro','Headscarf'],
- 'hud.level':'Level','hud.shekels':'shekels','btn.quests':'Quests','btn.bag':'Bag','btn.world':'World','btn.friends':'Friends','track.quest':'Quest','dlg.tap':'tap ▸','q.read':'🔊 Read aloud','q.cont':'Continue','btn.continue':'Continue',
+ 'hud.level':'Level','hud.shekels':'shekels','btn.quests':'Quests','btn.bag':'Bag','btn.world':'World','btn.friends':'Friends','track.quest':'Quest','dlg.tap':'tap ▸','q.read':'🔊 Read aloud','q.exit':'✕ Stop','q.cont':'Continue','btn.continue':'Continue',
  'cat.math':'Math','cat.bible':'Bible','cat.verse':'Memory Verse','cat.words':'Words','cat.logic':'Puzzle',
  'gloomlings':'Gloomlings',
  'found':'Found {0}  ({1}/{2})','returnTo':'Return to {0}!',
@@ -23,10 +23,10 @@ en:{
  'scribe.hi':"Practice makes wise! Answer my questions to earn shekels, or read the verses you have collected.",
  'guide.progress':"{0} are {1}. You've stopped {2} of {3}. Keep going!",'toast.quest':'Quest: defeat {0} {1}','side.toastFind':'Find {0} {1}. Look for the glowing spots!','side.reward':'+{0} shekels and {1} {2}',
  'side.still':"Still looking for my {0}? You've found {1} of {2}. Look for little glowing spots!",'side.thanksAgain':'Thank you again, friend! God bless your journey.',
- 'elder.intro':["Ah, a pilgrim at last! I am Simeon. I have waited many years to see God's promises come true.","The Scroll of Light tells the great story of God's love — from creation all the way to the empty tomb.","But the Shadow of Doubt tore it into ten pieces and hid them in the stories of the Bible.","These Gates of Remembrance lead into those stories. Answer wisely, be brave, and bring the pieces home.","Gate 1, the Garden of Eden, is open. And look — Jesse's little lamb has decided to follow you. God be with you!"],
- 'toast.lamb':'🐑 The Lamb joined you!','elder.whole':'The Scroll is whole! Keep visiting the gates — every story still has more to teach.','elder.progress':'You have restored {0} of 10 Scroll pieces.','elder.next':' Gate {0}, {1}, is waiting for you.',
+ 'elder.intro':["Ah, a pilgrim at last! I am Simeon. I have waited many years to see God's promises come true.","The Scroll of Light tells the great story of God's love — from creation all the way to the empty tomb.","But the Shadow of Doubt tore it into eighteen pieces and hid them in the stories of the Bible.","These Gates of Remembrance lead into those stories. Answer wisely, be brave, and bring the pieces home.","Gate 1, the Garden of Eden, is open. And look — Jesse's little lamb has decided to follow you. God be with you!"],
+ 'toast.lamb':'🐑 The Lamb joined you!','elder.whole':'The Scroll is whole! Keep visiting the gates — every story still has more to teach.','elder.progress':'You have restored {0} of {1} Scroll pieces.','elder.next':' Gate {0}, {1}, is waiting for you.',
  'toast.piece':'Scroll piece {0} restored!','toast.received':'Received: {0}','toast.verse':'Verse unlocked: {0}','toast.backup':'Great progress! Ask a grown-up to save a backup in Settings.',
- 'ending':["The tenth piece! Let me see... yes. The Scroll of Light is whole again!","From the garden to the empty tomb, every piece points to one great truth: God loves you, and Jesus came to rescue the world.","'For God so loved the world, that he gave his one and only Son.' That's the heart of the whole Scroll.","You were brave and wise, pilgrim. Here is a crown — a reminder of the crown of life promised to those who love God (James 1:12).","The gates will stay open. Keep exploring, keep learning, and keep shining!"],
+ 'ending':["The last piece! Let me see... yes. The Scroll of Light is whole again!","From the garden to the empty tomb, every piece points to one great truth: God loves you, and Jesus came to rescue the world.","'For God so loved the world, that he gave his one and only Son.' That's the heart of the whole Scroll.","You were brave and wise, pilgrim. Here is a crown — a reminder of the crown of life promised to those who love God (James 1:12).","The gates will stay open. Keep exploring, keep learning, and keep shining!"],
  'ending.title':'The Scroll is Restored','ending.stats':'You answered <b>{0}</b> questions correctly and reached level <b>{1}</b>. Well done, good and faithful pilgrim!','ending.grown':'Grown-ups can raise the difficulty in Settings for an extra challenge.',
  'narr':'The Scroll','narr.welcome':"Welcome, {0}. Your journey begins in Pilgrim's Rest. Find Simeon by the fountain.",
  'fb.ok':['Correct!','Well done!',"That's right!",'Excellent!','Yes!'],'fb.no':'Not quite. The answer is "{0}".',
@@ -46,7 +46,7 @@ en:{
  'stable.title':'Animal Friends','stable.yours':'Your animal friends','stable.with':'With you','stable.bring':'Bring along','stable.need':'Animals needing a home','stable.adopt':'Adopt','stable.more':'More friends join you as you complete gates and helper quests.','toast.joined':'{0} {1} joined you!',
  'ct.heal':'Healer','ct.attack':'Fighter','ct.all':'Hits all','ct.shield':'Guard','ct.stun':'Freezes foes','ct.coins':'Finds shekels',
  'scribe.title':"Ezra's Scrolls",'scribe.practice':'Practice Scroll','scribe.pdesc':'Answer 10 questions. Earn 3 shekels for every right answer.','scribe.mixed':'Mixed','scribe.mixedDesc':'A bit of everything','scribe.only':'Only {0} questions','scribe.lib':'Verse library','lib.empty':'Complete a gate to unlock its memory verse.',
- 'prac.title':'Practice complete','prac.score':'{0} out of 10 correct!','prac.earned':'You earned {0} shekels.','prac.verse':'Give diligence to present yourself approved by God.','prac.ref':'2 Timothy 2:15','prac.again':'Practice again',
+ 'prac.title':'Practice complete','prac.score':'{0} out of {1} correct!','prac.earned':'You earned {0} shekels.','prac.verse':'Give diligence to present yourself approved by God.','prac.ref':'2 Timothy 2:15','prac.again':'Practice again',
  'bag.title':'Your Bag','bag.food':'Food','bag.eat':'Eat','bag.empty':"Your bag is empty. Lydia sells food in Pilgrim's Rest.",'bag.armor':'Armor of God','bag.armorNote':'"Put on the whole armor of God" — Ephesians 6:11. Earn each piece by finishing gates.','bag.robes':'Robes','bag.worn':'Worn','bag.traveler':'Traveler','bag.crown':'Crown of Life','bag.wear':'Wear','bag.off':'Take off',
  'st.def':'+{0} defense','st.hp':'+{0} health','st.atk':'+{0} attack',
  'quest.title':'Quest Scroll','quest.main':'Main','quest.helper':'Helper quest','quest.done':'Done','quest.complete':'Complete','quest.verses':'Memory verses',
@@ -60,15 +60,15 @@ en:{
  'toast.copied':'Save code copied','toast.copyManual':'Select the code and copy it','toast.loaded':'Journey restored!','toast.welcome':'Welcome back, {0}!','toast.readNA':'Read aloud is not available here.','toast.saved':'Backup downloaded','toast.full':'4 players is the limit on one device.',
  'grade':'{0} (grade {1})','ages':{2:'Ages 7–8',3:'Ages 8–9',4:'Ages 9–10',5:'Ages 10–11',6:'Ages 11–12',7:'Ages 12–13',8:'Ages 13–14',9:'Ages 14–15',10:'Ages 15+'},
  'ageBtns':['8–9','10–11','12–13','14–15'],
- 'say.times':' times ','say.div':' divided by ','say.minus':' minus ','say.sqrt':'square root of ','say.sq':' squared','say.cube':' cubed','say.blank':'blank','say.choice':'{0}: {1}',
+ 'say.times':' times ','say.div':' divided by ','say.minus':' minus ','say.sqrt':'square root of ','say.sq':' squared','say.cube':' cubed','say.blank':'blank','say.choice':'{0}: {1}','say.answer':'Answer {0}.','say.nums':['one','two','three','four'],'say.then':'and then what?','say.eqWhat':'equals what?',
  'boss.intro':'{0}! {1}'
 },
 de:{
  'title.kicker':'Ein Bibel-Abenteuer','title.h1':'Schriftrollen<br>des Lichts','title.sub':'Reise durch die großen Geschichten der Bibel, beantworte Fragen, um deinen Glauben zu stärken, und setze die zerrissene Schriftrolle wieder zusammen.',
- 'title.cont':'Weiterspielen','title.new':'Neuer Pilger','title.who':'Wer spielt?','title.lv':'Stufe {0} · {1} von 10 Teilen',
+ 'title.cont':'Weiterspielen','title.new':'Neuer Pilger','title.who':'Wer spielt?','title.lv':'Stufe {0} · {1} von {2} Teilen',
  'create.h':'Erstelle deinen Pilger','create.name':'Dein Name','create.namePh':'Pilger','create.skin':'Haut','create.hair':'Haare','create.hs':'Frisur','create.robe':'Gewand','create.age':'Dein Alter (bestimmt, wie schwer die Fragen sind)','create.go':'Die Reise beginnt','create.back':'Zurück',
  'hs':['Kurz','Lang','Lockig','Zöpfe','Dutt','Afro','Kopftuch'],
- 'hud.level':'Stufe','hud.shekels':'Schekel','btn.quests':'Aufgaben','btn.bag':'Tasche','btn.world':'Welt','btn.friends':'Freunde','track.quest':'Aufgabe','dlg.tap':'tippen ▸','q.read':'🔊 Vorlesen','q.cont':'Weiter','btn.continue':'Weiter',
+ 'hud.level':'Stufe','hud.shekels':'Schekel','btn.quests':'Aufgaben','btn.bag':'Tasche','btn.world':'Welt','btn.friends':'Freunde','track.quest':'Aufgabe','dlg.tap':'tippen ▸','q.read':'🔊 Vorlesen','q.exit':'✕ Beenden','q.cont':'Weiter','btn.continue':'Weiter',
  'cat.math':'Mathe','cat.bible':'Bibel','cat.verse':'Bibelvers','cat.words':'Wörter','cat.logic':'Rätsel',
  'gloomlings':'Düsterlinge',
  'found':'Gefunden: {0}  ({1}/{2})','returnTo':'Geh zurück zu {0}!',
@@ -86,10 +86,10 @@ de:{
  'scribe.hi':'Übung macht weise! Beantworte meine Fragen und verdiene Schekel – oder lies die Verse, die du gesammelt hast.',
  'guide.progress':'{0} sind {1}. Du hast schon {2} von {3} besiegt. Weiter so!','toast.quest':'Aufgabe: Besiege {0} {1}','side.toastFind':'Finde {0}: {1}. Achte auf die leuchtenden Stellen!','side.reward':'+{0} Schekel und {1} {2}',
  'side.still':'Suchst du noch nach meinen Sachen ({0})? Du hast {1} von {2} gefunden. Achte auf die leuchtenden Stellen!','side.thanksAgain':'Nochmals danke, mein Freund! Gott segne deine Reise.',
- 'elder.intro':['Ah, endlich ein Pilger! Ich bin Simeon. Viele Jahre habe ich darauf gewartet, dass Gottes Versprechen wahr werden.','Die Schriftrolle des Lichts erzählt die große Geschichte von Gottes Liebe – von der Schöpfung bis zum leeren Grab.','Aber der Schatten des Zweifels hat sie in zehn Teile zerrissen und in den Geschichten der Bibel versteckt.','Diese Tore der Erinnerung führen in diese Geschichten. Antworte weise, sei mutig und bring die Teile nach Hause.','Tor 1, der Garten Eden, ist offen. Und schau – das kleine Lamm von Jesse möchte mit dir gehen. Gott sei mit dir!'],
- 'toast.lamb':'🐑 Das Lamm geht mit dir!','elder.whole':'Die Schriftrolle ist ganz! Besuche die Tore weiter – jede Geschichte hat noch mehr zu erzählen.','elder.progress':'Du hast {0} von 10 Teilen der Schriftrolle zurückgebracht.','elder.next':' Tor {0}, {1}, wartet auf dich.',
+ 'elder.intro':['Ah, endlich ein Pilger! Ich bin Simeon. Viele Jahre habe ich darauf gewartet, dass Gottes Versprechen wahr werden.','Die Schriftrolle des Lichts erzählt die große Geschichte von Gottes Liebe – von der Schöpfung bis zum leeren Grab.','Aber der Schatten des Zweifels hat sie in achtzehn Teile zerrissen und in den Geschichten der Bibel versteckt.','Diese Tore der Erinnerung führen in diese Geschichten. Antworte weise, sei mutig und bring die Teile nach Hause.','Tor 1, der Garten Eden, ist offen. Und schau – das kleine Lamm von Jesse möchte mit dir gehen. Gott sei mit dir!'],
+ 'toast.lamb':'🐑 Das Lamm geht mit dir!','elder.whole':'Die Schriftrolle ist ganz! Besuche die Tore weiter – jede Geschichte hat noch mehr zu erzählen.','elder.progress':'Du hast {0} von {1} Teilen der Schriftrolle zurückgebracht.','elder.next':' Tor {0}, {1}, wartet auf dich.',
  'toast.piece':'Teil {0} der Schriftrolle ist zurück!','toast.received':'Erhalten: {0}','toast.verse':'Neuer Bibelvers: {0}','toast.backup':'Toll gemacht! Bitte einen Erwachsenen, in den Einstellungen eine Sicherung zu speichern.',
- 'ending':['Das zehnte Teil! Lass sehen ... ja! Die Schriftrolle des Lichts ist wieder ganz!','Vom Garten bis zum leeren Grab zeigt jedes Teil auf eine große Wahrheit: Gott liebt dich, und Jesus ist gekommen, um die Welt zu retten.','„So sehr hat Gott die Welt geliebt, dass er seinen einzigen Sohn gab.“ Das ist das Herz der ganzen Schriftrolle.','Du warst mutig und klug, Pilger. Hier ist eine Krone – sie erinnert an die Krone des Lebens, die Gott allen verspricht, die ihn lieben (Jakobus 1,12).','Die Tore bleiben offen. Entdecke weiter, lerne weiter und leuchte weiter!'],
+ 'ending':['Das letzte Teil! Lass sehen ... ja! Die Schriftrolle des Lichts ist wieder ganz!','Vom Garten bis zum leeren Grab zeigt jedes Teil auf eine große Wahrheit: Gott liebt dich, und Jesus ist gekommen, um die Welt zu retten.','„So sehr hat Gott die Welt geliebt, dass er seinen einzigen Sohn gab.“ Das ist das Herz der ganzen Schriftrolle.','Du warst mutig und klug, Pilger. Hier ist eine Krone – sie erinnert an die Krone des Lebens, die Gott allen verspricht, die ihn lieben (Jakobus 1,12).','Die Tore bleiben offen. Entdecke weiter, lerne weiter und leuchte weiter!'],
  'ending.title':'Die Schriftrolle ist ganz','ending.stats':'Du hast <b>{0}</b> Fragen richtig beantwortet und Stufe <b>{1}</b> erreicht. Gut gemacht, du treuer Pilger!','ending.grown':'Erwachsene können in den Einstellungen die Schwierigkeit erhöhen.',
  'narr':'Die Schriftrolle','narr.welcome':'Willkommen, {0}! Deine Reise beginnt in der Pilgerrast. Such Simeon am Brunnen.',
  'fb.ok':['Richtig!','Gut gemacht!','Genau!','Super!','Ja!'],'fb.no':'Nicht ganz. Die Antwort ist „{0}“.',
@@ -109,7 +109,7 @@ de:{
  'stable.title':'Tierfreunde','stable.yours':'Deine Tierfreunde','stable.with':'Ist dabei','stable.bring':'Mitnehmen','stable.need':'Tiere suchen ein Zuhause','stable.adopt':'Aufnehmen','stable.more':'Weitere Freunde kommen dazu, wenn du Tore und Hilfsaufgaben schaffst.','toast.joined':'{0} {1} geht jetzt mit dir!',
  'ct.heal':'Heiler','ct.attack':'Kämpfer','ct.all':'Trifft alle','ct.shield':'Beschützer','ct.stun':'Lässt erstarren','ct.coins':'Findet Schekel',
  'scribe.title':'Esras Schriftrollen','scribe.practice':'Übungsrolle','scribe.pdesc':'Beantworte 10 Fragen. Für jede richtige Antwort bekommst du 3 Schekel.','scribe.mixed':'Gemischt','scribe.mixedDesc':'Von allem etwas','scribe.only':'Nur {0}-Fragen','scribe.lib':'Vers-Sammlung','lib.empty':'Schaffe ein Tor, um seinen Bibelvers freizuschalten.',
- 'prac.title':'Übung geschafft','prac.score':'{0} von 10 richtig!','prac.earned':'Du hast {0} Schekel verdient.','prac.verse':'Gib dir Mühe, dass Gott Freude an dir hat.','prac.ref':'nach 2. Timotheus 2,15','prac.again':'Noch einmal üben',
+ 'prac.title':'Übung geschafft','prac.score':'{0} von {1} richtig!','prac.earned':'Du hast {0} Schekel verdient.','prac.verse':'Gib dir Mühe, dass Gott Freude an dir hat.','prac.ref':'nach 2. Timotheus 2,15','prac.again':'Noch einmal üben',
  'bag.title':'Deine Tasche','bag.food':'Essen','bag.eat':'Essen','bag.empty':'Deine Tasche ist leer. Lydia verkauft Essen in der Pilgerrast.','bag.armor':'Die Waffenrüstung Gottes','bag.armorNote':'„Zieht die ganze Rüstung Gottes an“ – nach Epheser 6,11. Jedes Teil bekommst du, wenn du ein Tor schaffst.','bag.robes':'Gewänder','bag.worn':'Angelegt','bag.traveler':'Reisegewand','bag.crown':'Krone des Lebens','bag.wear':'Aufsetzen','bag.off':'Absetzen',
  'st.def':'+{0} Abwehr','st.hp':'+{0} Leben','st.atk':'+{0} Angriff',
  'quest.title':'Aufgabenrolle','quest.main':'Hauptaufgabe','quest.helper':'Hilfsaufgabe','quest.done':'Erledigt','quest.complete':'Geschafft','quest.verses':'Bibelverse',
@@ -123,7 +123,7 @@ de:{
  'toast.copied':'Code kopiert','toast.copyManual':'Markiere den Code und kopiere ihn','toast.loaded':'Reise wiederhergestellt!','toast.welcome':'Willkommen zurück, {0}!','toast.readNA':'Vorlesen ist hier nicht verfügbar.','toast.saved':'Sicherung heruntergeladen','toast.full':'Auf einem Gerät gehen höchstens 4 Spieler.',
  'grade':'{0} ({1}. Klasse)','ages':{2:'7–8 Jahre',3:'8–9 Jahre',4:'9–10 Jahre',5:'10–11 Jahre',6:'11–12 Jahre',7:'12–13 Jahre',8:'13–14 Jahre',9:'14–15 Jahre',10:'15+ Jahre'},
  'ageBtns':['8–9','10–11','12–13','14–15'],
- 'say.times':' mal ','say.div':' geteilt durch ','say.minus':' minus ','say.sqrt':'Wurzel aus ','say.sq':' hoch zwei','say.cube':' hoch drei','say.blank':'Lücke','say.choice':'{0}: {1}',
+ 'say.times':' mal ','say.div':' geteilt durch ','say.minus':' minus ','say.sqrt':'Wurzel aus ','say.sq':' hoch zwei','say.cube':' hoch drei','say.blank':'Lücke','say.choice':'{0}: {1}','say.answer':'Antwort {0}.','say.nums':['eins','zwei','drei','vier'],'say.then':'und dann?','say.eqWhat':'ist gleich wie viel?',
  'boss.intro':'{0}! {1}'
 }};
 
@@ -195,9 +195,10 @@ de:{
 }};
 
 /* ---------- German Bible reference names ---------- */
-const BOOK_DE = {'Genesis':'1. Mose','Exodus':'2. Mose','Leviticus':'3. Mose','Numbers':'4. Mose','Deuteronomy':'5. Mose','Joshua':'Josua','Judges':'Richter','Ruth':'Rut','1 Samuel':'1. Samuel','2 Samuel':'2. Samuel','1 Kings':'1. Könige','2 Kings':'2. Könige','Esther':'Ester','Psalm':'Psalm','Psalms':'Psalmen','Proverbs':'Sprüche','Isaiah':'Jesaja','Lamentations':'Klagelieder','Daniel':'Daniel','Jonah':'Jona',
+const BOOK_DE = {'Genesis':'1. Mose','Exodus':'2. Mose','Leviticus':'3. Mose','Numbers':'4. Mose','Deuteronomy':'5. Mose','Joshua':'Josua','Judges':'Richter','1 Kings':'1. Könige','2 Kings':'2. Könige','Acts':'Apostelgeschichte','Romans':'Römer','Ruth':'Rut','1 Samuel':'1. Samuel','2 Samuel':'2. Samuel','1 Kings':'1. Könige','2 Kings':'2. Könige','Esther':'Ester','Psalm':'Psalm','Psalms':'Psalmen','Proverbs':'Sprüche','Isaiah':'Jesaja','Lamentations':'Klagelieder','Daniel':'Daniel','Jonah':'Jona',
  'Matthew':'Matthäus','Mark':'Markus','Luke':'Lukas','John':'Johannes','Acts':'Apostelgeschichte','Romans':'Römer','1 Corinthians':'1. Korinther','Galatians':'Galater','Ephesians':'Epheser','Philippians':'Philipper','Hebrews':'Hebräer','James':'Jakobus','1 Peter':'1. Petrus','1 John':'1. Johannes','2 Timothy':'2. Timotheus','Revelation':'Offenbarung'};
-function refDE(r){ if(!r) return r; return r.replace(/\b(1 Samuel|2 Samuel|1 Kings|2 Kings|1 Corinthians|1 Peter|1 John|2 Timothy|Genesis|Exodus|Leviticus|Numbers|Deuteronomy|Joshua|Judges|Ruth|Esther|Psalms|Psalm|Proverbs|Isaiah|Lamentations|Daniel|Jonah|Matthew|Mark|Luke|John|Acts|Romans|Galatians|Ephesians|Philippians|Hebrews|James|Revelation)\b/g,m=>BOOK_DE[m]||m).replace(/(\d):(\d)/g,'$1,$2').replace('The New Testament','Neues Testament').replace('Old Testament (39) + New Testament (27)','Altes Testament (39) + Neues Testament (27)'); }
+const REF_FIX={'Jonah 1:17':'Jona 2,1','Jonah 2:1':'Jona 2,2','Jonah 2:9':'Jona 2,10','Daniel 6:22':'Daniel 6,23','Daniel 6:16':'Daniel 6,17','Daniel 6:10':'Daniel 6,11','Daniel 6:9,16':'Daniel 6,10.17','Isaiah 9:6':'Jesaja 9,5','Psalm 56:3':'Psalm 56,4','Psalm 46:1':'Psalm 46,2','1 Kings 4:30':'1. Könige 5,10','Exodus 8:2':'2. Mose 7,27'};
+function refDE(r){ if(!r) return r; if(REF_FIX[r]) return REF_FIX[r]; return r.replace(/\b(1 Samuel|2 Samuel|1 Kings|2 Kings|1 Corinthians|1 Peter|1 John|2 Timothy|Ruth|Esther|Genesis|Exodus|Leviticus|Numbers|Deuteronomy|Joshua|Judges|Ruth|Esther|Psalms|Psalm|Proverbs|Isaiah|Lamentations|Daniel|Jonah|Matthew|Mark|Luke|John|Acts|Romans|Galatians|Ephesians|Philippians|Hebrews|James|Revelation)\b/g,m=>BOOK_DE[m]||m).replace(/(\d):(\d)/g,'$1,$2').replace('The New Testament','Neues Testament').replace('Old Testament (39) + New Testament (27)','Altes Testament (39) + Neues Testament (27)'); }
 
 /* ---------- German content overlay (merged over the English data) ---------- */
 const DE = {
@@ -296,7 +297,7 @@ const DE = {
   boss:{name:'Der Schatten des Zweifels',where:'beim Gartengrab'},guide:{name:'Maria Magdalena'},
   intro:['Pilger, du hast einen weiten Weg hinter dir. Das hier ist Jerusalem.','Jesus ist auf einem Esel hereingeritten, und die Leute haben Palmzweige geschwenkt. Dann wurde er gefangen genommen und ist für uns alle am Kreuz gestorben.','Sie haben ihn in ein Grab gelegt und einen großen Stein davorgerollt. Alles fühlte sich dunkel an.','Der Schatten des Zweifels selbst ist hier und flüstert, dass alles aus ist. Besiege 7 Düsterlinge, dann stell dich dem Schatten beim Gartengrab!'],
   hint:'Der Schatten des Zweifels wartet beim Gartengrab. Denk daran, was Jesus versprochen hat!',
-  outro:['Pilger! Der Stein ist weggerollt! Das Grab ist LEER!','Der Engel hat gesagt: „Er ist nicht hier. Er ist auferstanden, genau wie er es gesagt hat!“ Jesus lebt!','Tod und Dunkelheit konnten ihn nicht festhalten. Das ist die beste Nachricht der ganzen Geschichte.','Hier ist das letzte Teil der Schriftrolle des Lichts. Bring es zu Simeon in die Pilgerrast!'],
+  outro:['Pilger! Der Stein ist weggerollt! Das Grab ist LEER!','Der Engel hat gesagt: „Er ist nicht hier. Er ist auferstanden, genau wie er es gesagt hat!“ Jesus lebt!','Tod und Dunkelheit konnten ihn nicht festhalten. Das ist die beste Nachricht der ganzen Geschichte.','Hier ist dieses Teil der Schriftrolle.'],
   post:'Er ist auferstanden! Geh und erzähl allen die gute Nachricht.',
   side:{name:'Kind mit Palmzweigen',what:'Palmzweige',ask:'Als Jesus auf dem Esel kam, haben wir Palmzweige geschwenkt und „Hosianna!“ gerufen. Drei von meinen habe ich verloren. Hilfst du mir?',thanks:'Hosianna! Gelobt sei, der da kommt im Namen des Herrn! Danke! Und dieser Hahn kräht so laut, er soll dich begleiten.'},
   flav:[{name:'Thomas',lines:['Das glaube ich erst, wenn ich es mit eigenen Augen sehe ...','(Später sah Thomas Jesus und sagte: „Mein Herr und mein Gott!“ – Johannes 20,28)']},{name:'Johannes',lines:['Tipp: Der Mutstoß kommt ab Stufe 5, die Welle der Weisheit ab Stufe 8. Hier wirst du sie brauchen!']}],
@@ -307,7 +308,7 @@ DE.CH[1].side.thanks=DE.CH[1].side.thanks; // (rabbit mentioned in text)
 
 const STORY_DE = [
  'Vor langer Zeit erzählte die große Schriftrolle des Lichts die ganze Geschichte von Gottes Liebe – vom allerersten Sonnenaufgang bis zum hellsten Morgen von allen.',
- 'Doch der Schatten des Zweifels schlich sich heran. Er zerriss die Schriftrolle in zehn Teile und versteckte sie in den Zeiten der Bibel.',
+ 'Doch der Schatten des Zweifels schlich sich heran. Er zerriss die Schriftrolle in achtzehn Teile und versteckte sie in den Zeiten der Bibel.',
  'Ohne die Schriftrolle breiteten sich Düsterlinge überall aus: Flüstern von Lügen, Sorgen, Hochmut und Angst.',
  'Jetzt wird ein junger Pilger gebraucht. Jemand Mutiges. Jemand Neugieriges. Jemand wie du.'
 ];

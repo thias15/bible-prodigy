@@ -8,16 +8,18 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
 
 ## What's in the game
 
-- **Ten chapters plus a hub town.** Garden of Eden, Mountains of Ararat, Egypt, Sinai,
-  Jericho, Valley of Elah, Babylon, Bethlehem (at night), Sea of Galilee and Jerusalem,
-  connected by the Gates of Remembrance in Pilgrim's Rest.
-- **A story to finish.** The Shadow of Doubt tore the Scroll of Light into ten pieces.
-  Each chapter has a guide (Eve, Noah, Moses, Joshua, David, Daniel, Peter...), a main quest,
-  a boss, a helper side quest and a memory verse. It ends with the empty tomb.
+- **18 Bible worlds plus a hub town**, in Bible order: Garden of Eden, Mountains of Ararat,
+  Plains of Canaan (Abraham), Joseph's Journey, Land of Egypt, Wilderness of Sinai, Jericho,
+  Fields of Ruth, Valley of Elah, Mount Carmel (Elijah), Road to Nineveh (Jonah), Babylon,
+  Palace of Susa (Esther), Bethlehem (at night), Sea of Galilee, Jerusalem, Pentecost and
+  Paul's Voyage — connected by the Gates of Remembrance in Pilgrim's Rest.
+- **A story to finish.** The Shadow of Doubt tore the Scroll of Light into eighteen pieces.
+  Each world has a guide (Eve, Noah, Abraham, Joseph, Moses, Ruth, David, Elijah, Jonah,
+  Esther, Peter, Paul...), a main quest, a boss, a helper quest and a memory verse.
 - **Prodigy-style battles.** Five powers (Faith Strike, Prayer, Hope Shield, Courage Blast,
   Wisdom Wave), streak bonuses, and special bosses — the Walls of Jericho fall after 7 laps
   (7 right answers).
-- **Mixed questions:** math (grade 2 to algebra), Bible knowledge (about 140 questions with
+- **Mixed questions:** math (grade 2 to algebra), Bible knowledge (about 200 questions with
   references), memory verses, words (vocabulary and spelling) and puzzles (patterns,
   odd-one-out, books of the Bible).
 - **Adapts to the player.** Set an age at the start; the game nudges difficulty up or down
@@ -66,9 +68,13 @@ No build step, server or accounts needed. Netlify, Cloudflare Pages or itch.io (
 |---|---|
 | `src/data.js` | English content: chapters, dialogue, quests, Bible questions, verses, vocabulary, items |
 | `src/i18n.js` | Interface text in both languages, plus the German content (merged over the English) |
+| `src/worlds2.js` | Worlds 11–18 in both languages, and `ORDER`, the gate sequence |
 | `src/game.js` | The engine: map generation, drawing, movement, battles, question generators, menus |
 | `src/shell.html` | Page layout and styles |
-| `src/build.py` | Combines the three into `index.html` |
+| `src/build.py` | Combines everything into `index.html` |
+
+To add a world, add it to `CH` (and `DE.CH`) in `src/worlds2.js` and put its id into `ORDER`
+where it belongs in the story. Existing saves pick up new worlds automatically.
 
 To add Bible questions, append rows to `BQ` in `src/data.js`:
 `[chapter (0 = any), difficulty 1–3, question, correct answer, wrong, wrong, wrong, reference]`.

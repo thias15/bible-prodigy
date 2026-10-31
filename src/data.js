@@ -56,7 +56,7 @@ const SPELLS = [
 
 /* ---------- HUB ---------- */
 const HUB = {
-  name:"Pilgrim's Rest", sub:'Gates of Remembrance', w:34, h:24, seed:7,
+  name:"Pilgrim's Rest", sub:'Gates of Remembrance', w:58, h:24, seed:7,
   th:{g:'#7bb35a',g2:'#6ea54f',p:'#d8c08a',obs:['tree','olive','bush'],w:'#3f8fd0',deco:'flower',sky:'#a6d6f5'}
 };
 
@@ -514,7 +514,7 @@ const BOOKS = ['Genesis','Exodus','Leviticus','Numbers','Deuteronomy','Joshua','
 
 const STORY_INTRO = [
  "Long ago, the great Scroll of Light told the whole story of God's love — from the very first sunrise to the brightest morning of all.",
- "But the Shadow of Doubt crept in. It tore the Scroll into ten pieces and hid them across the ages of the Bible.",
+ "But the Shadow of Doubt crept in. It tore the Scroll into eighteen pieces and hid them across the ages of the Bible.",
  "Without the Scroll, Gloomlings spread everywhere: whispers of lies, worry, pride and fear.",
  "Now a young pilgrim is needed. Someone brave. Someone curious. Someone like you."
 ];
