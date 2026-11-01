@@ -17,13 +17,25 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
   Each world has a guide (Eve, Noah, Abraham, Joseph, Moses, Ruth, David, Elijah, Jonah,
   Esther, Peter, Paul...), a main quest, a boss, a helper quest and a memory verse.
 - **Prodigy-style battles.** Five powers (Faith Strike, Prayer, Hope Shield, Courage Blast,
-  Wisdom Wave), streak bonuses, and special bosses — the Walls of Jericho fall after 7 laps
-  (7 right answers).
+  Wisdom Wave) and streak bonuses. Gloomlings show what they will do next (⚡ charging means
+  a big hit is coming, so raise the Hope Shield). Every boss has its own mechanic from its
+  story: build the ark plank by plank, bring the plagues, break the golden calf, march around
+  Jericho seven times, sling a stone at Goliath with a streak, call down fire on Mount Carmel,
+  calm the storm, pray until Paul's chains fall off, and more.
+- **Keeps going after the story:** daily and weekly challenges, champion rematches of every
+  boss with rare rewards, animal friends that grow stronger (★ at level 4, ★★ at level 8,
+  with special moves), and a Book of Discoveries to fill.
 - **Mixed questions:** math (grade 2 to algebra), Bible knowledge (about 200 questions with
   references), memory verses, words (vocabulary and spelling) and puzzles (patterns,
   odd-one-out, books of the Bible).
-- **Adapts to the player.** Set an age at the start; the game nudges difficulty up or down
-  per subject based on recent answers.
+- **Real learning, not just random questions.** Missed questions come back later (spaced
+  repetition: a few minutes, then 1, 3, 7 and 21 days). Memory verses are learned in steps:
+  fill one word, name the book, finish the verse, then name the reference. The game nudges
+  difficulty per subject, and grown-ups get a weekly report in Settings.
+- **Junior (8–10) or Explorer (11–15) play style:** three answer choices and gentler foes,
+  or four choices, tougher bosses and a bonus for quick answers.
+- **Accessibility:** large text, an easy-read font (Lexend), ✓/✗ marks on answers so color
+  isn't needed, read-aloud, and reduced motion.
 - **Progression:** levels, the Armor of God (Ephesians 6), animal companions that fight
   alongside you, robe dyes, a shop, practice mode and a verse library.
 - **For grown-ups (⚙ Settings):** challenge level, subject mix sliders, read-aloud,
@@ -41,7 +53,9 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
   and battles in 3D) and the 2D map view for a quick overview. Switch any time with the
   View button in the top bar or in Settings (battles can be 3D or 2D separately, and there is
   a "Low detail" option for older devices). Animal friends show as their familiar icons in
-  both views; 3D animal models can be turned on in Settings. Without WebGL the game simply uses the 2D map.
+  both views; 3D animal models can be turned on in Settings. Each world has its own little
+  scene (animals walking to the ark, shepherds and an angel at Bethlehem, fishing boats on
+  Galilee, a crowd with palm branches in Jerusalem), and beating a boss plays a short scene. Without WebGL the game simply uses the 2D map.
 - **Your own house** in Pilgrim's Rest: buy furniture from the house menu and place, turn or
   move it. Every finished world adds a treasure (Noah's ark model, David's harp, the manger...).
 - **Wardrobe:** hair, skin and robe colors plus props to buy (headband, flower crown, olive
@@ -69,7 +83,7 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
 3. Under **Build and deployment**, choose **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
 4. After a minute the game is live at `https://thias15.github.io/bible-prodigy/`.
 
-No build step, server or accounts needed. `three.min.js` (three.js r128, MIT license) sits next to `index.html` so the 3D view works without any outside server. Netlify, Cloudflare Pages or itch.io (upload `index.html`) also work.
+No build step, server or accounts needed. On GitHub Pages the game can be installed like an app (Add to Home Screen) and keeps working offline. `three.min.js` (three.js r128, MIT license) sits next to `index.html` so the 3D view works without any outside server. Netlify, Cloudflare Pages or itch.io (upload `index.html`) also work.
 
 ## Editing the game
 
@@ -92,7 +106,7 @@ where it belongs in the story. Existing saves pick up new worlds automatically.
 To add Bible questions, append rows to `BQ` in `src/data.js`:
 `[chapter (0 = any), difficulty 1–3, question, correct answer, wrong, wrong, wrong, reference]`.
 Add the German version at the same position in `BQ_DE` in `src/i18n.js`.
-Then run `python3 src/build.py` and copy `src/dist/index.html` to the repo root.
+Then run `python3 src/build.py` and copy `src/dist/index.html` and `src/dist/sw.js` to the repo root (the icons, `manifest.json`, `three.min.js` and `models/` only change rarely).
 
 ## Bible text
 
@@ -102,3 +116,8 @@ Then run `python3 src/build.py` and copy `src/dist/index.html` to the repo root.
   *Hoffnung für alle* are copyrighted and can't be republished here, so families can look up
   each reference in their own Bible.
 - Music contains no copyrighted songs.
+
+## Credits
+
+- 3D animals (cow, ox, deer, horse, fox, frog, donkey, snake, boat): [Quaternius](https://quaternius.com), CC0.
+- [three.js](https://threejs.org) r128, MIT license.

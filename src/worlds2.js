@@ -460,3 +460,7 @@ VQ_DE.push(
 );
 DE.CH[10].outro=DE.CH[10].outro.slice(0,3).concat(['Hier ist dieses Teil der Schriftrolle. Aber die Geschichte ist noch nicht zu Ende – bald wird sich die gute Nachricht über die ganze Welt ausbreiten!']);
 CH[10].outro=CH[10].outro.slice(0,3).concat(["Here is this piece of the Scroll. But the story isn't over — soon the good news will spread to the whole world!"]);
+
+/* Champion dyes (earned, not sold) */
+Object.assign(DYES,{champgold:{name:'Royal Gold',c:'#d4a72c',price:0,note:'Earned for 3 champion wins.'},champsea:{name:'Sea Glass',c:'#3fa9a0',price:0,note:'Earned for 6 champion wins.'},champsun:{name:'Sunrise',c:'#e8774a',price:0,note:'Earned for 12 champion wins.'}});
+Object.assign(DE.DYES,{champgold:{name:'Königsgold',note:'Für 3 Champion-Siege.'},champsea:{name:'Meerglas',note:'Für 6 Champion-Siege.'},champsun:{name:'Morgenrot',note:'Für 12 Champion-Siege.'}});

@@ -37,7 +37,7 @@ W.lantern=new TH.PointLight(0xffc878,0,9,1.6); W.scene.add(W.lantern);
 function setAtmos(R,chId){ const a=atmos(R,chId); const key=JSON.stringify(a); if(key===W.atKey) return; W.atKey=key; W.night=a.night;
   if(W.sky) W.sky.dispose(); W.sky=skyTex(a.top,a.mid,a.bot); W.scene.background=W.sky; W.scene.fog=new TH.Fog(c3(a.fog).getHex(),30,78);
   W.hemi.color.copy(c3(a.hs)); W.hemi.groundColor.copy(c3(a.hg)); W.hemi.intensity=a.hi; W.sun.color.copy(c3(a.sc)); W.sun.intensity=a.si; W.lantern.intensity=a.night?1.3:0; }
-function clearWorld(){ if(W.root){ W.scene.remove(W.root); disposeTree(W.root); } W.root=null; W.ents.clear(); W.foes.clear(); W.items=[]; W.dyn=[]; W.anim=[]; W.lmRoots=[]; W.player=null; W.psig=''; W.pet=null; W.petId=''; W.ground=null; W.m=null; W.byTile=null; W.fade=null; }
+function clearWorld(){ if(W.root){ W.scene.remove(W.root); disposeTree(W.root); } W.root=null; W.ents.clear(); W.foes.clear(); W.items=[]; W.dyn=[]; W.anim=[]; W.lmRoots=[]; W.player=null; W.psig=''; W.pet=null; W.petId=''; W.ground=null; W.m=null; W.byTile=null; W.fade=null; W.life=null; CUT=null; }
 const isWet=v=>v===T.W||v===T.BR;
 function paintGround(m,th,P){
   const Wt=m.W, Ht=m.H, R=rng(m.R.seed*7+3);
@@ -114,6 +114,7 @@ function buildWorld(m){
   setAtmos(R,m.id); buildTerrain(m,th,root); buildScenery(m,th,root);
   m.lms.forEach(lm=>{ const o=buildLandmark(lm,lmCtx()); root.add(o.root); W.lmRoots.push(o.root); const d={lm,o,key:chStage(m.id)}; if(lm.dyn||lm.k==='ark') W.dyn.push(d); if(o.update) W.anim.push(d); });
   (m.items||[]).forEach(it=>{ const g=new TH.Group(); g.position.set(X3(it.x),0,Z3(it.y)); const glow=sprite(tx('glow'),1.3); glow.material.opacity=.75; glow.position.y=.55; g.add(glow); const s=sprite(emo(it.e),.62); s.position.y=.6; g.add(s); const ring=msh(geo('itring',()=>new TH.RingGeometry(.28,.36,28)),basic('#fff2b0',{transparent:true,opacity:.6,depthWrite:false}),g,0,.03,0,false); ring.rotation.x=-PI/2; root.add(g); W.items.push({it,g,s}); });
+  W.life=buildLife(m);
   W.snap=true;
 }
 function rebuildDyn(d){ W.root.remove(d.o.root); W.lmRoots=W.lmRoots.filter(r=>r!==d.o.root); disposeTree(d.o.root); d.o=buildLandmark(d.lm,lmCtx()); W.root.add(d.o.root); W.lmRoots.push(d.o.root); d.key=chStage(W.m.id); }
@@ -161,7 +162,7 @@ function petIcon(id){ const g=new TH.Group(); const c=COMPS[id]; const glow=spri
   const sh=msh(geo('pshadow',()=>new TH.CircleGeometry(.34,24)),basic('#000000',{transparent:true,opacity:.22,depthWrite:false}),g,0,.02,0,false); sh.rotation.x=-PI/2;
   const ring=msh(geo('pring',()=>new TH.RingGeometry(.36,.42,32)),basic('#f6de98',{transparent:true,opacity:.75,depthWrite:false}),g,0,.03,0,false); ring.rotation.x=-PI/2;
   const o={root:g,kind:'icon',height:1.15,ph:0}; o.update=(dt,speed,t)=>{ o.ph+=dt*(speed>.3?12:3); sp.position.y=.6+Math.abs(Math.sin(o.ph))*(speed>.3?.12:.05); sp.material.rotation=speed>.3?Math.sin(o.ph)*.08:0; }; return o; }
-const petModel=id=>(S&&S.petStyle==='3d')?buildPet(id):petIcon(id);
+const petModel=id=>(S&&S.petStyle==='3d')?petModel3(id):petIcon(id);
 function playerSig(){ return JSON.stringify([S.look,S.props,S.armor]); }
 function personOpts(extra){ return Object.assign({props:Object.assign({},S.props||{}),armor:S.armor},extra||{}); }
 const DIRANG={down:0,up:PI,left:-PI/2,right:PI/2};
@@ -177,24 +178,24 @@ function renderWorld(tm){
   const px3=X3(P.fx), pz3=Z3(P.fy); const ox=W.ppos.x, oz=W.ppos.z;
   if(W.snap){ W.ppos.set(px3,0,pz3); W.pface=DIRANG[P.dir]||0; } else { W.ppos.x=dmp(W.ppos.x,px3,15,dt); W.ppos.z=dmp(W.ppos.z,pz3,15,dt); }
   const spd=dt>0?Math.hypot(W.ppos.x-ox,W.ppos.z-oz)/dt:0;
-  W.pface+=angTo(W.pface,DIRANG[P.dir]||0)*Math.min(1,dt*13);
-  const pl=W.player; pl.root.position.copy(W.ppos); pl.root.rotation.y=W.pface; pl.update(dt,W.snap?0:Math.min(spd,6)*.62,tm); pl.root.visible=!(P.inv>0&&Math.floor(tm*12)%2&&mode==='world');
+  W.pface+=angTo(W.pface,P.ang!=null?P.ang:(DIRANG[P.dir]||0))*Math.min(1,dt*13);
+  const pl=W.player; pl.root.position.copy(W.ppos); pl.root.rotation.y=W.pface; pl.update(dt,W.snap?0:Math.min(spd,6)*.62,tm); pl.root.visible=!(P.blink&&P.inv>0&&Math.floor(tm*12)%2&&mode==='world');
   if(W.night){ W.lantern.position.set(W.ppos.x,1.6,W.ppos.z+.3); }
   // pet
-  const pkey=S.comp+'|'+(S.petStyle||'icon'); if(pkey!==W.petId){ const old=W.pet; W.pet=petModel(S.comp); W.petId=pkey; W.root.add(W.pet.root); if(old){ W.petPos.copy(old.root.position); W.root.remove(old.root); disposeTree(old.root); } else W.petPos.set(X3(CP.fx),0,Z3(CP.fy)); }
+  const pkey=petKey(S.comp); if(pkey!==W.petId){ const old=W.pet; W.pet=petModel(S.comp); W.petId=pkey; W.root.add(W.pet.root); if(old){ W.petPos.copy(old.root.position); W.root.remove(old.root); disposeTree(old.root); } else W.petPos.set(X3(CP.fx),0,Z3(CP.fy)); }
   if(W.pet){ const ptx=X3(CP.fx), ptz=Z3(CP.fy); const px0=W.petPos.x, pz0=W.petPos.z;
     if(W.snap) W.petPos.set(ptx,0,ptz); else { W.petPos.x=dmp(W.petPos.x,ptx,7,dt); W.petPos.z=dmp(W.petPos.z,ptz,7,dt); }
     const dx=W.petPos.x-W.ppos.x, dz=W.petPos.z-W.ppos.z, dd=Math.hypot(dx,dz); if(dd<.75&&dd>1e-4){ W.petPos.x=W.ppos.x+dx/dd*.75; W.petPos.z=W.ppos.z+dz/dd*.75; }
     const mvx=W.petPos.x-px0, mvz=W.petPos.z-pz0, ps=dt>0?Math.hypot(mvx,mvz)/dt:0;
     const want=ps>.3?Math.atan2(mvx,mvz):Math.atan2(W.ppos.x-W.petPos.x,W.ppos.z-W.petPos.z); W.petFace+=angTo(W.petFace,want)*Math.min(1,dt*7);
-    W.pet.root.position.copy(W.petPos); W.pet.root.rotation.y=W.petFace; W.pet.update(dt,ps,tm); }
-  syncEnts(dt,tm); syncFoes(dt,tm); updFade(dt);
+    { const cs=S.comps[S.comp]; const tier=cs?(cs.lvl>=8?2:cs.lvl>=4?1:0):0; W.pet.root.scale.setScalar(1+tier*.12); } W.pet.root.position.copy(W.petPos); W.pet.root.rotation.y=W.petFace; W.pet.update(dt,ps,tm); }
+  syncEnts(dt,tm); syncFoes(dt,tm); updFade(dt); updLife(dt,tm);
   const c=M.id!=='hub'&&S.chs[M.id];
   W.items.forEach(o=>{ const vis=!!c&&c.side===1&&!c.got.includes(o.it.idx); o.g.visible=vis; if(vis){ o.s.position.y=.62+Math.sin(tm*3+o.it.idx)*.08; } });
   // camera
   const a=gw/gh, k=(a<1?Math.min(1.75,1.08/a):1)*zoomW;
   const look=V.set(W.ppos.x,.9,W.ppos.z); const cpos=V2.set(look.x,look.y+6.4*k+.4,look.z+8.2*k);
-  if(W.snap){ W.camLook.copy(look); W.camPos.copy(cpos); W.snap=false; } else { W.camLook.lerp(look,1-Math.exp(-dt*7)); W.camPos.lerp(cpos,1-Math.exp(-dt*5)); }
+  if(CUT&&cutCam(dt)){} else if(W.snap){ W.camLook.copy(look); W.camPos.copy(cpos); W.snap=false; } else { W.camLook.lerp(look,1-Math.exp(-dt*7)); W.camPos.lerp(cpos,1-Math.exp(-dt*5)); }
   cam.clearViewOffset(); cam.position.copy(W.camPos); cam.lookAt(W.camLook);
   const sh=Math.max(15,13*k); const sc=W.sun.shadow.camera; if(sc.right!==sh){ sc.left=-sh; sc.right=sh; sc.top=sh; sc.bottom=-sh; sc.updateProjectionMatrix(); }
   W.sun.position.set(W.camLook.x+7,15,W.camLook.z+4); W.sun.target.position.set(W.camLook.x,0,W.camLook.z-2); W.sun.target.updateMatrixWorld();
@@ -253,10 +254,11 @@ function battleStart(){
   for(let i=0;i<10;i++){ const ang=PI+i/9*PI; const hh=msh(Gi(1,1),mat(hexMul(th.g2,.8),{flatShading:true,roughness:1}),sc,Math.cos(ang)*34,-1,Math.sin(ang)*30-6,false); hh.scale.set(10,4+R2()*4,8); }
   if(a.night) for(let i=0;i<60;i++){ const s=msh(Gs(.08,6,4),basic('#ffffff'),sc,(R2()-.5)*80,8+R2()*18,-30-R2()*10,false); }
   // units
-  const add=(el,obj,kind,x,z,ry,extra)=>{ obj.root.position.set(x,.15,z); obj.root.rotation.y=ry; sc.add(obj.root); obj.root.updateMatrixWorld(true); const bb=new TH.Box3().setFromObject(obj.root);
+  fit(); const port=gw<gh*1.05, XK=port?.62:1;
+  const add=(el,obj,kind,x,z,ry,extra)=>{ x*=XK; obj.root.position.set(x,.15,z); obj.root.rotation.y=ry; sc.add(obj.root); obj.root.updateMatrixWorld(true); const bb=new TH.Box3().setFromObject(obj.root);
     const u=Object.assign({el,obj,kind,home:new TH.Vector3(x,.15,z),off:new TH.Vector3(),h:Math.max(.6,bb.max.y-.15),shake:0,flash:0,scale:obj.root.scale.x},extra||{}); BT.units.set(el,u); return u; };
   const pl=buildPerson(S.look,personOpts()); BT.player=add($('#bPlayer'),pl,'player',-2.1,0,PI/2-.55,{dir:1});
-  const pet=petModel(S.comp); if(pet.kind==='icon') pet.root.scale.setScalar(1.35); BT.pet=add($('#bComp'),pet,'pet',-2.95,1.15,PI/2-.4,{dir:1});
+  const pet=petModel(S.comp); if(pet.kind==='icon') pet.root.scale.setScalar(port?1.0:1.35); BT.pet=add($('#bComp'),pet,'pet',port?-2.6:-2.95,port?1.7:1.15,PI/2-.4,{dir:1});
   const n=B.foes.length; const POSN=B.boss?[[2.5,-.1]]:n===1?[[2.2,0]]:n===2?[[1.9,-.9],[2.7,1.0]]:[[1.8,1.25],[2.35,-.8],[3.4,.45]];
   B.foes.forEach((f,i)=>{ let G; if(f.boss){ G=buildBoss3(f.boss.kind,f.boss.c); G.root.scale.setScalar(BOSS_SCALE[f.boss.kind]||1.55); } else { G=buildFoe(f.shape,f.c); G.root.scale.setScalar(.95); }
     const [x,z]=POSN[i]||[2+i,0]; const u=add(f.el,G,'foe',x,z,-PI/2+.55,{dir:-1,f}); f.r3=u; });
@@ -284,7 +286,7 @@ function renderBattle(tm){
   const dt=frameDt(tm); applyQuality(); fit(); if(!BT||!B) return;
   for(let i=BT.tw.length-1;i>=0;i--){ const w=BT.tw[i]; w.t+=dt; const k=Math.min(1,w.t/w.dur); w.fn(k); if(k>=1){ BT.tw.splice(i,1); w.res(); } }
   const panel=$('#bpanel').offsetHeight||0; const ah=Math.max(120,gh-panel); const a=gw/ah;
-  const d=Math.max(7.6,3.4*gh/(.728*ah),5.6*gh/(.728*gw)); BT.shake=Math.max(0,BT.shake-dt); const sx=BT.shake>0?(Math.random()-.5)*BT.shake:0;
+  const d=Math.max(7.6,3.4*gh/(.728*ah),5.0*gh/(.728*gw)); BT.shake=Math.max(0,BT.shake-dt); const sx=BT.shake>0?(Math.random()-.5)*BT.shake:0;
   cam.setViewOffset(gw,gh,0,panel/2,gw,gh); cam.position.set(Math.sin(tm*.25)*.5+sx,2.4+(d-7.6)*.24,d); cam.lookAt(0,1.0+(d-7.6)*.05,0);
   const gr=$('#game').getBoundingClientRect(), cr=glc.getBoundingClientRect(); const ox=cr.left-gr.left, oy=cr.top-gr.top;
   BT.units.forEach(u=>{ const r=u.obj.root; let sh=0; if(u.shake>0){ u.shake=Math.max(0,u.shake-dt); sh=Math.sin(tm*60)*.12*u.shake/.4; }
@@ -342,18 +344,19 @@ function placeItem(id,x,z,rot,init){ if(!canPlace(id,x,z,rot)) return null; cons
 function posItem(it){ const [w,d]=hdims(it.id,it.rot); it.g.position.set(it.x+w/2-HN/2,0,it.z+d/2-HN/2); it.g.rotation.y=-it.rot*PI/2; }
 function furnName(id){ return t('furn.'+id); }
 function renderInv(){ const el=$('#inv'); if(!el||!HS) return; el.innerHTML=''; const hd=houseData();
-  const ids=Object.keys(FURN).filter(id=>!FURN[id].ch||hd.got.includes(id)||(hd.inv[id]||0)>0||HS.items.some(i=>i.id===id));
+  const ids=Object.keys(FURN).filter(id=>(!FURN[id].ch&&!FURN[id].earned)||hd.got.includes(id)||(hd.inv[id]||0)>0||HS.items.some(i=>i.id===id));
   const locked=Object.keys(FURN).filter(id=>FURN[id].ch&&!ids.includes(id));
   [...ids,...locked].forEach(id=>{ const f=FURN[id], n=hd.inv[id]||0; const b=document.createElement('button'); b.className='card'+(HS.placing&&HS.placing.id===id?' on':'');
     const lockedT=f.ch&&!ids.includes(id);
-    b.innerHTML=`<img alt="" data-th="f:${id}" src="${THUMB['f'+id]||''}">${esc(furnName(id))}${lockedT?`<span class="tag">${esc(t('house.locked',CH[f.ch].name))}</span>`:f.ch?`<span class="tag ok">${esc(t('house.found',n))}</span>`:n?`<span class="tag ok">${esc(t('house.have',n))}</span>`:`<span class="pr"><span class="coin"></span>${f.price}</span>`}`;
-    if(lockedT||(f.ch&&!n)) b.disabled=true;
-    b.onclick=()=>{ if(!n){ if(f.ch) return; if(S.coins<f.price){ toast(t('ward.need',f.price-S.coins)); return; } S.coins-=f.price; hd.inv[id]=1; SFX.coin(); updHUD(); save(); toast(t('house.bought',furnName(id))); } startPlace(id,0); };
+    b.innerHTML=`<img alt="" data-th="f:${id}" src="${THUMB['f'+id]||''}">${esc(furnName(id))}${lockedT?`<span class="tag">${esc(t('house.locked',CH[f.ch].name))}</span>`:(f.ch||f.earned)?`<span class="tag ok">${esc(t('house.found',n))}</span>`:n?`<span class="tag ok">${esc(t('house.have',n))}</span>`:`<span class="pr"><span class="coin"></span>${f.price}</span>`}`;
+    if(lockedT||((f.ch||f.earned)&&!n)) b.disabled=true;
+    b.onclick=()=>{ if(!n){ if(f.ch||f.earned) return; if(S.coins<f.price){ toast(t('ward.need',f.price-S.coins)); return; } S.coins-=f.price; hd.inv[id]=1; SFX.coin(); updHUD(); save(); toast(t('house.bought',furnName(id))); } startPlace(id,0); };
     el.appendChild(b); });
   lazyThumbs(el); tools(); }
 function tools(){ const tb=$('#htools'); if(!tb||!HS) return;
   if(HS.placing){ tb.innerHTML=`<span class="htip">${esc(t('house.tipPlace'))}</span><button class="tb" id="tRot">${esc(t('house.rotate'))}</button><button class="tb warn" id="tCan">${esc(t('house.cancel'))}</button>`; $('#tRot').onclick=()=>{ HS.placing.rot=(HS.placing.rot+1)%4; HS.ghost.rotation.y=-HS.placing.rot*PI/2; houseMove(HS.lastX,HS.lastY); }; $('#tCan').onclick=()=>cancelPlace(); }
-  else if(HS.sel){ tb.innerHTML=`<b class="hsel">${esc(furnName(HS.sel.id))}</b><button class="tb" id="tRot">${esc(t('house.rotate'))}</button><button class="tb" id="tMove">${esc(t('house.move'))}</button><button class="tb warn" id="tStore">${esc(t('house.store'))}</button>`;
+  else if(HS.sel){ const pr=FURN[HS.sel.id].price; tb.innerHTML=`<b class="hsel">${esc(furnName(HS.sel.id))}</b><button class="tb" id="tRot">${esc(t('house.rotate'))}</button><button class="tb" id="tMove">${esc(t('house.move'))}</button><button class="tb warn" id="tStore">${esc(t('house.store'))}</button>${pr?`<button class="tb warn" id="tSell">${esc(t('house.sell',Math.floor(pr/2)))}</button>`:''}`;
+    const sb=$('#tSell'); if(sb) sb.onclick=()=>{ const it=HS.sel; selectItem(null); removeItem(it); const hd=houseData(); hd.inv[it.id]=Math.max(0,(hd.inv[it.id]||1)-1); if(!hd.inv[it.id]) delete hd.inv[it.id]; S.coins+=Math.floor(pr/2); SFX.coin(); updHUD(); renderInv(); houseSave(); toast(t('house.sold',furnName(it.id),Math.floor(pr/2))); };
     $('#tRot').onclick=rotateSel; $('#tMove').onclick=()=>{ const it=HS.sel; selectItem(null); removeItem(it); startPlace(it.id,it.rot); };
     $('#tStore').onclick=()=>{ const it=HS.sel; selectItem(null); removeItem(it); renderInv(); toast(t('house.stored',furnName(it.id))); houseSave(); }; }
   else tb.innerHTML=`<span class="htip">${esc(t('house.tipIdle'))}</span>`; }
@@ -385,4 +388,4 @@ function lazyThumbs(root){ const imgs=[...root.querySelectorAll('img[data-th]')]
 return {ok:true, canvas:glc, renderWorld, renderBattle, renderHouse, pick, battleStart, battleEnd, battleAnim, battleBolt, battleSpark,
   houseOpen, houseClose, houseMove, houseTap, get houseOn(){ return !!HS; }, get placing(){ return !!(HS&&HS.placing); }, cancelPlace, thumbPet, thumbFurn, thumbProp, avatar, lazyThumbs,
   zoom(f,which){ if(which==='house') zoomH=cl(zoomH*f,.6,1.5); else zoomW=cl(zoomW*f,.55,1.6); }, get zoomW(){ return zoomW; }, snap(){ W.snap=true; },
-  FURN, PROP_LIST, PROP_PRICE, PETB };
+  FURN, PROP_LIST, PROP_PRICE, PETB, cutscene, portrait, get cutting(){ return !!CUT; }, loadGLB };
