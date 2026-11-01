@@ -37,7 +37,18 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
   with a voice picker and test button in Settings.
 - **Variety:** seven hairstyles (including braids, afro and headscarf), three enemy types per
   world (quick, tough, healer), and over 20 animal friends with different abilities.
-- Works with keyboard (arrows/WASD + Space), mouse (click to walk) and touch (tap or D-pad).
+- **Two ways to see the world.** A 3D view for exploring up close (characters, animals, landmarks
+  and battles in 3D) and the 2D map view for a quick overview. Switch any time with the
+  View button in the top bar or in Settings (battles can be 3D or 2D separately, and there is
+  a "Low detail" option for older devices). Animal friends show as their familiar icons in
+  both views; 3D animal models can be turned on in Settings. Without WebGL the game simply uses the 2D map.
+- **Your own house** in Pilgrim's Rest: buy furniture from the house menu and place, turn or
+  move it. Every finished world adds a treasure (Noah's ark model, David's harp, the manger...).
+- **Wardrobe:** hair, skin and robe colors plus props to buy (headband, flower crown, olive
+  wreath, shepherd staff, lantern, scroll, satchel, cape, bedroll). The Crown of Life is earned
+  at the end of the journey.
+- Works with keyboard (arrows/WASD + Space), mouse (click to walk, wheel to zoom) and touch
+  (drag anywhere for a joystick, tap to walk or talk, pinch to zoom).
 
 ## How saving works
 
@@ -58,7 +69,7 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
 3. Under **Build and deployment**, choose **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
 4. After a minute the game is live at `https://thias15.github.io/bible-prodigy/`.
 
-No build step, server or accounts needed. Netlify, Cloudflare Pages or itch.io (upload `index.html`) also work.
+No build step, server or accounts needed. `three.min.js` (three.js r128, MIT license) sits next to `index.html` so the 3D view works without any outside server. Netlify, Cloudflare Pages or itch.io (upload `index.html`) also work.
 
 ## Editing the game
 
@@ -69,7 +80,9 @@ No build step, server or accounts needed. Netlify, Cloudflare Pages or itch.io (
 | `src/data.js` | English content: chapters, dialogue, quests, Bible questions, verses, vocabulary, items |
 | `src/i18n.js` | Interface text in both languages, plus the German content (merged over the English) |
 | `src/worlds2.js` | Worlds 11–18 in both languages, and `ORDER`, the gate sequence |
-| `src/game.js` | The engine: map generation, drawing, movement, battles, question generators, menus |
+| `src/game.js` | The engine: map generation, 2D drawing, movement, battles, question generators, menus |
+| `src/r3d_lib.js` | 3D models (three.js): people and props, 29 animal friends, Gloomlings and bosses, landmarks, furniture |
+| `src/r3d.js` | 3D view: world scenes, 3D battles, the house editor, thumbnails |
 | `src/shell.html` | Page layout and styles |
 | `src/build.py` | Combines everything into `index.html` |
 
