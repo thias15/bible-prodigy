@@ -1,9 +1,11 @@
 /* ===================== CC0 ANIMATED MODELS (Quaternius) ===================== */
-const MODEL_BASE='models/';
+const MODEL_BASE='models/', MODEL_FMT='glb';
 const GLB={}, GLBMAP={cow:'Cow',ox:'Bull',deer:'Deer',horse:'Horse',fox:'Fox',frog:'Frog'};
 const GLBH={Cow:1.05,Bull:1.12,Deer:1.15,Horse:1.4,Fox:.56,Frog:.4,Donkey:1.08,Snake:.5,Boat:.9};
 function loadGLB(name){ if(GLB[name]) return GLB[name].p; const e={}; GLB[name]=e;
-  e.p=new Promise(res=>{ if(!TH.GLTFLoader){ e.fail=1; res(null); return; } try{ new TH.GLTFLoader().load(MODEL_BASE+name+'.glb',g=>{ e.g=g; res(g); },undefined,()=>{ e.fail=1; res(null); }); }catch(err){ e.fail=1; res(null); } }); return e.p; }
+  e.p=new Promise(res=>{ if(!TH.GLTFLoader){ e.fail=1; res(null); return; } const ok=g=>{ e.g=g; res(g); }, bad=()=>{ e.fail=1; res(null); };
+    try{ if(MODEL_FMT==='b64') fetch(MODEL_BASE+name+'.json').then(r=>r.json()).then(j=>{ const bin=Uint8Array.from(atob(j.d),c=>c.charCodeAt(0)); new TH.GLTFLoader().parse(bin.buffer,'',ok,bad); }).catch(bad);
+      else new TH.GLTFLoader().load(MODEL_BASE+name+'.glb',ok,undefined,bad); }catch(err){ bad(); } }); return e.p; }
 const glbReady=n=>!!(GLB[n]&&GLB[n].g);
 function glbActor(name){ const e=GLB[name]; if(!e||!e.g) return null; const g=e.g; const root=new TH.Group();
   const o=TH.SkeletonUtils?TH.SkeletonUtils.clone(g.scene):g.scene.clone(true); o.updateMatrixWorld(true);

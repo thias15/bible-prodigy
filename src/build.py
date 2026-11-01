@@ -8,7 +8,11 @@ game = rd('game.js').replace('/*__R3D__*/', r3)
 out = shell.replace('/*__DATA__*/', rd('data.js')).replace('/*__I18N__*/', rd('i18n.js')).replace('/*__W2__*/', rd('worlds2.js')).replace('/*__GAME__*/', game)
 (d / 'dist').mkdir(exist_ok=True)
 # artifact version (no doctype; skeleton added at publish); three.js from cdnjs
-(d / 'dist' / 'scrolls-of-light.html').write_text(out)
+(d / 'dist' / 'scrolls-of-light.html').write_text(out.replace("MODEL_FMT='glb'","MODEL_FMT='b64'"))
+import base64, json
+(d / 'dist' / 'models_b64').mkdir(exist_ok=True)
+for f in (d / 'dist' / 'models').glob('*.glb'):
+    (d / 'dist' / 'models_b64' / (f.stem + '.json')).write_text(json.dumps({'d': base64.b64encode(f.read_bytes()).decode()}))
 # standalone version for GitHub Pages; three.js served from the repo next to index.html
 head = '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n<meta name="description" content="Scrolls of Light: a Bible adventure game for kids 8-15.">\n'
 split = out.index('<div id="game">')
