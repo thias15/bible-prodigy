@@ -5,7 +5,7 @@ shell = rd('shell.html')
 r3 = ('const R3=(()=>{ try{ return (function(){\nif(window.THREE&&!THREE.GLTFLoader){\n' + rd('vendor/GLTFLoader.js') + '\n' + rd('vendor/SkeletonUtils.js') + '\n}\n' + rd('r3d_lib.js') + '\n' + rd('r3d_scenes.js') + '\n' + rd('r3d.js') +
       '\n})(); }catch(err){ console.error(err); return {ok:false}; } })();\n')
 game = rd('game.js').replace('/*__R3D__*/', r3)
-out = shell.replace('/*__DATA__*/', rd('data.js')).replace('/*__I18N__*/', rd('i18n.js')).replace('/*__W2__*/', rd('worlds2.js')).replace('/*__GAME__*/', game)
+out = shell.replace('/*__DATA__*/', rd('data.js')).replace('/*__I18N__*/', rd('i18n.js')).replace('/*__W2__*/', '\n'.join(rd(f) for f in ['worlds2.js','worlds3.js','companions.js','quiz_extra.js','minigames.js','worlds_order.js'] if (d / f).exists())).replace('/*__GAME__*/', game)
 (d / 'dist').mkdir(exist_ok=True)
 # artifact version (no doctype; skeleton added at publish); three.js from cdnjs
 (d / 'dist' / 'scrolls-of-light.html').write_text(out.replace("MODEL_FMT='glb'","MODEL_FMT='b64'"))

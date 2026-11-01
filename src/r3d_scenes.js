@@ -1,7 +1,7 @@
 /* ===================== CC0 ANIMATED MODELS (Quaternius) ===================== */
 const MODEL_BASE='models/', MODEL_FMT='glb';
-const GLB={}, GLBMAP={cow:'Cow',ox:'Bull',deer:'Deer',horse:'Horse',fox:'Fox',frog:'Frog'};
-const GLBH={Cow:1.05,Bull:1.12,Deer:1.15,Horse:1.4,Fox:.56,Frog:.4,Donkey:1.08,Snake:.5,Boat:.9};
+const GLB={}, GLBMAP={cow:'Cow',ox:'Bull',deer:'Deer',horse:'Horse',fox:'Fox',frog:'Frog',donkey:'Donkey',wolf:'Wolf',puppy:'ShibaInu'};
+const GLBH={Wolf:.78,ShibaInu:.55,Cow:1.05,Bull:1.12,Deer:1.15,Horse:1.4,Fox:.56,Frog:.4,Donkey:1.08,Snake:.5,Boat:.9};
 function loadGLB(name){ if(GLB[name]) return GLB[name].p; const e={}; GLB[name]=e;
   e.p=new Promise(res=>{ if(!TH.GLTFLoader){ e.fail=1; res(null); return; } const ok=g=>{ e.g=g; res(g); }, bad=()=>{ e.fail=1; res(null); };
     try{ if(MODEL_FMT==='b64') fetch(MODEL_BASE+name+'.json').then(r=>r.json()).then(j=>{ const bin=Uint8Array.from(atob(j.d),c=>c.charCodeAt(0)); new TH.GLTFLoader().parse(bin.buffer,'',ok,bad); }).catch(bad);
@@ -46,6 +46,10 @@ function sceneFor(id,lm){ const w=lm?lm.w:4, h=lm?lm.h:4, L=-(w/2+1.3), Rr=w/2+1
     case 10: return [G('Donkey',[L-3,2.2],{path:[[L-5,2.6],[L,2.6]],sp:.45,pingpong:1}),...[0,1,2,3].map(i=>P([L-2+i*.9,3.6+(i%2)*.5],{anim:'wave',opt:{props:{hand:'scroll'}}})),F('palms',[Rr,1.2]),F('palms',[Rr+.8,1.8])];
     case 17: return Array.from({length:8},(_,i)=>P([L+(i%4)*.9-1,2.6+Math.floor(i/4)*.9],{anim:i%3===0?'wave':'',ry:PI*.9}));
     case 18: return [X('campfire',[L,2]),G('Snake',[L+.8,2.4],{ry:-2}),P([L-.9,2.6],{look:{skin:SK[2],hair:'#3a2414',robe:'#7a3a2a',beard:'#3a2414'},ry:.8}),P([Rr,1.6],{anim:'work'}),P([Rr+1,2.4],{anim:'work'})];
+    case 19: return Array.from({length:5},(_,i)=>P([L-1.5+i*.8,2.4+(i%2)*.5],{opt:{props:{hand:'lantern'}},look:{skin:SK[i%SK.length],hair:'#3a2414',robe:['#8a5a3a','#5a6a3a','#6a4a2a'][i%3],beard:i%2?'#3a2414':null},ry:PI*.85})).concat([F('jars',[Rr,1.4]),X('fleece',[Rr+1.2,2.6])]);
+    case 20: return [A('lion',[L-1,2.2],{ry:.8}),X('beehive',[L,1.2]),P([Rr,1.6],{look:{skin:SK[2],hair:'#2a1a12',robe:'#7a5a3a',hs:1,beard:'#2a1a12'},ry:-.5}),A('fox',[Rr+1.2,3],{path:[[Rr+1.2,3],[Rr+3,4]],sp:.6,pingpong:1})];
+    case 21: return [P([L,1.6],{anim:'work',opt:{props:{hand:'staff'}}}),P([L-1,2.3],{anim:'work'}),P([Rr,1.6],{anim:'work'}),P([Rr+1,2.4],{look:{skin:SK[2],hair:'#3a2414',robe:'#2b5fb0',beard:'#3a2414'},opt:{props:{hand:'scroll'}},ry:-.6}),G('Donkey',[Rr+2.4,1.2],{ry:-1.2,eat:1})];
+    case 22: return [A('lamb',[Rr+2,3],{path:[[Rr+2,3],[Rr+4,4.5],[Rr+3,6]],sp:.35,pingpong:1}),P([-0.6,1.4],{look:{skin:SK[2],hair:'#d8d0c4',robe:'#8a5a3a',beard:'#d8d0c4'},ry:0}),P([0.4,2.0],{look:{skin:SK[2],hair:'#3a2414',robe:'#a89a7a'},ry:PI}),X('sycamore',[L-1.5,2.4]),G('Donkey',[L-2.5,4],{path:[[L-2.5,4],[L-5,5]],sp:.35,pingpong:1})];
     case 'hub': return [];
   } return []; }
 function hubLife(m){ const out=[]; const R=rng(42); const O=12;
@@ -68,6 +72,9 @@ function buildX(id,R){ const g=new TH.Group(); let upd=null;
   else if(id==='raincloud'){ const cm=mat('#8a94a8',{roughness:1,transparent:true,opacity:.95}); [[0,0,0,.9],[-.8,-.1,.2,.7],[.8,-.1,-.1,.75],[.3,.3,.2,.6]].forEach(([x,y,z,r])=>msh(Gs(r,12,10),cm,g,x,y,z,false)); g.position.y=5.2; const drops=[]; for(let i=0;i<24;i++) drops.push(msh(Gb(.02,.25,.02),mat('#bfe0ff',{transparent:true,opacity:.7}),g,(R()-.5)*2,0,(R()-.5)*1.2,false));
     upd=t=>drops.forEach((d,i)=>{ d.position.y=-((t*3+i*.37)%4.8); }); }
   else if(id==='gourd'){ msh(Gc(.04,.06,1.6,6),mat('#6b4a2a'),g,0,.8,0); for(let i=0;i<7;i++){ const l=msh(Gs(.32,10,8),mat('#4f9a3a',{roughness:.7}),g,Math.cos(i*.9)*.45,1.4+Math.sin(i*1.7)*.2,Math.sin(i*.9)*.35); l.scale.set(1,.25,.8); l.rotation.y=i; } msh(Gs(.12,10,8),mat('#d8b04a'),g,.2,1.1,.2).scale.set(1,1.4,1); }
+  else if(id==='fleece'){ const f=msh(Gs(.5,14,8),mat('#f2ece0',{roughness:1}),g,0,.06,0); f.scale.set(1.2,.12,.9); }
+  else if(id==='beehive'){ msh(lathe('hive',[[0,0],[.28,0],[.3,.15],[.26,.35],[.16,.5],[0,.55]],14),mat('#c9a05a',{roughness:.9}),g,0,0,0); const bees=[]; for(let i=0;i<4;i++) bees.push(msh(Gs(.04,6,4),mat('#f2c230'),g,0,.4,0,false)); upd=t=>bees.forEach((b,i)=>b.position.set(Math.cos(t*3+i*1.6)*.45,.4+Math.sin(t*5+i)*.15,Math.sin(t*3+i*1.6)*.45)); }
+  else if(id==='sycamore'){ msh(Gc(.18,.28,2.2,8),mat('#7a6a4a',{flatShading:true}),g,0,1.1,0); [[0,2.6,0,1],[-.6,2.2,.3,.7],[.6,2.3,-.2,.75]].forEach(([x,y,z,r])=>msh(Gi(r,1),mat('#6f9a4a',{flatShading:true}),g,x,y,z)); const P3=buildPerson({skin:SK[2],hair:'#2a1a12',robe:'#c06a2a',sash:'#e9d8a6',hs:0,beard:'#2a1a12'},{}); P3.root.scale.setScalar(.7); P3.root.position.set(.3,1.85,.35); P3.root.rotation.y=.4; g.add(P3.root); upd=t=>P3.update(1/60,0,t); }
   else if(id==='basketRiver'){ const b=buildFurn('mosesbasket'); b.scale.setScalar(.8); g.add(b); upd=t=>{ b.position.y=-.12+Math.sin(t*1.5)*.03; b.rotation.y=Math.sin(t*.5)*.3; }; }
   else if(id==='boat'){ if(glbReady('Boat')){ const a=glbActor('Boat'); g.add(a.root); } else { const b=buildBoatPet(); b.root.children[0].children.forEach(c=>{}); g.add(b.root); b.root.position.y=-.45; } g.position.y=-.15; upd=t=>{ g.rotation.z=Math.sin(t*1.2)*.05; }; }
   g.traverse(x=>{ if(x.isMesh&&x.castShadow!==false) x.castShadow=true; });

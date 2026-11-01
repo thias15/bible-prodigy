@@ -129,6 +129,9 @@ function makeEnt(e){
     const L=labelTex(e.name); o.label=topSprite(L.tex,.3,L.aspect); o.label.position.y=e.angel?1.95:1.78; o.label.visible=false; r.add(o.label); }
   else if(e.kind==='gate'){ const st=gateState(e); const sky=CH[e.ch].th.sky; const gt=buildGate(POS(e.ch),st,sky+'33'); o.upd=gt.update; r.add(gt.root); r.position.set((e.x+1)*TL,0,(e.y+.6)*TL);
     const L=labelTex(`${POS(e.ch)} · ${CH[e.ch].name}`,{fg:st==='locked'?'#aab4da':'#f6de98'}); o.label=topSprite(L.tex,.27,L.aspect); o.label.position.y=3.85; o.label.visible=false; r.add(o.label); }
+  else if(e.kind==='game'){ const g=new TH.Group(); r.add(g); msh(Gc(.05,.06,1.1,6),mat('#6b4a22'),g,0,.55,0); const bd=msh(Gb(.9,.6,.08),texMat('wood'),g,0,1.25,0); msh(Gb(.98,.68,.05),mat('#e8b94a',{metalness:.6,roughness:.4}),g,0,1.25,-.03);
+    const EM={manna:'🍞',ark:'🚢',wall:'🧱',fish:'🐟'}; const sp=sprite(emo(EM[e.g]||'⭐'),.55); sp.position.set(0,1.27,.1); g.add(sp); const gl=sprite(tx('glow'),1.4); gl.position.set(0,1.25,.05); gl.material.opacity=.6; g.add(gl); o.upd=t=>{ gl.material.opacity=.45+Math.sin(t*3)*.2; sp.position.y=1.27+Math.sin(t*2)*.03; };
+    r.position.set(X3(e.x),0,Z3(e.y)); const L=labelTex(t('mg.'+e.g)); o.label=topSprite(L.tex,.28,L.aspect); o.label.position.y=1.85; o.label.visible=false; r.add(o.label); }
   else if(e.kind==='exit'){ const ex=buildExit(); o.upd=ex.update; r.add(ex.root); r.rotation.y=PI/2.7; r.position.set(X3(e.x)-.1,0,Z3(e.y)); }
   else if(e.kind==='boss'){ const b=CH[M.id].boss; o.G=buildBoss3(b.kind,b.c); o.G.root.scale.setScalar(1.15); r.add(o.G.root); r.position.set(X3(e.x),0,Z3(e.y)); if(o.G.setMarches) o.G.setMarches(0);
     const L=labelTex(b.name,{fg:'#ffb8a8'}); o.label=topSprite(L.tex,.34,L.aspect); o.label.position.y=2.6; r.add(o.label); }
@@ -147,6 +150,7 @@ function syncEnts(dt,tm){
       o.label.visible=d<6&&!(P.x===e.x&&P.y===e.y+1); }
     else if(e.kind==='gate'){ if(o.upd) o.upd(tm); o.label.visible=d<5; }
     else if(e.kind==='exit'){ if(o.upd) o.upd(tm); }
+    else if(e.kind==='game'){ if(o.upd) o.upd(tm); o.label.visible=d<5; }
     else if(e.kind==='boss'){ o.G.update(dt,tm); const a=Math.atan2(X3(px)-X3(e.x),Z3(py)-Z3(e.y)); o.G.root.rotation.y+=angTo(o.G.root.rotation.y,a)*Math.min(1,dt*3); o.label.visible=d<7; }
   }
   for(const [e,o] of W.ents) if(!seen.has(e)){ if(o){ W.root.remove(o.root); disposeTree(o.root); } W.ents.delete(e); }
@@ -236,7 +240,7 @@ function avatar(look,opts,size){ if(!TR) thumbSetup(); const p=buildPerson(look,
 /* ===================== BATTLE ===================== */
 let BT=null;
 function tween(dur,fn){ return new Promise(res=>{ if(!BT){ fn(1); res(); return; } BT.tw.push({t:0,dur,fn,res}); }); }
-const BOSS_SCALE={walls:1,tower:1,idol:1.1,calf:1.1,scroll:1.05,altar:1.1,storm:1.15,whirl:1.05};
+const BOSS_SCALE={walls:1,tower:1,idol:1.1,calf:1.1,scroll:1.05,altar:1.1,storm:1.15,whirl:1.05,horde:1.15,rubble:1.15,pride:1.4,lost:1.45};
 function battleStart(){
   if(!B) return; const R=CH[B.ch], th=R.th, sc=new TH.Scene(); const a=atmos(R,B.ch);
   BT={scene:sc,units:new Map(),tw:[],shake:0,orbs:[],sky:skyTex(a.top,a.mid,a.bot)};

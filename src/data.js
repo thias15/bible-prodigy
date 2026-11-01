@@ -514,7 +514,7 @@ const BOOKS = ['Genesis','Exodus','Leviticus','Numbers','Deuteronomy','Joshua','
 
 const STORY_INTRO = [
  "Long ago, the great Scroll of Light told the whole story of God's love — from the very first sunrise to the brightest morning of all.",
- "But the Shadow of Doubt crept in. It tore the Scroll into eighteen pieces and hid them across the ages of the Bible.",
+ "But the Shadow of Doubt crept in. It tore the Scroll into twenty-two pieces and hid them across the ages of the Bible.",
  "Without the Scroll, Gloomlings spread everywhere: whispers of lies, worry, pride and fear.",
  "Now a young pilgrim is needed. Someone brave. Someone curious. Someone like you."
 ];

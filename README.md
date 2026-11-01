@@ -1,33 +1,40 @@
 # Scrolls of Light
 
 A browser game for kids ages 8–15, inspired by Prodigy, set in the stories of the Bible.
-Explore ten Bible worlds, meet the people of the story, and battle Gloomlings (little shadows
+Explore 22 Bible worlds, meet the people of the story, and battle Gloomlings (little shadows
 of lies, worry, pride and fear) by answering questions. Every right answer powers your attack.
 
 **Play:** once GitHub Pages is on, the game lives at `https://thias15.github.io/bible-prodigy/`.
 
 ## What's in the game
 
-- **18 Bible worlds plus a hub town**, in Bible order: Garden of Eden, Mountains of Ararat,
+- **22 Bible worlds plus a hub town**, in Bible order: Garden of Eden, Mountains of Ararat,
   Plains of Canaan (Abraham), Joseph's Journey, Land of Egypt, Wilderness of Sinai, Jericho,
-  Fields of Ruth, Valley of Elah, Mount Carmel (Elijah), Road to Nineveh (Jonah), Babylon,
-  Palace of Susa (Esther), Bethlehem (at night), Sea of Galilee, Jerusalem, Pentecost and
-  Paul's Voyage — connected by the Gates of Remembrance in Pilgrim's Rest.
-- **A story to finish.** The Shadow of Doubt tore the Scroll of Light into eighteen pieces.
-  Each world has a guide (Eve, Noah, Abraham, Joseph, Moses, Ruth, David, Elijah, Jonah,
-  Esther, Peter, Paul...), a main quest, a boss, a helper quest and a memory verse.
+  Oak of Ophrah (Gideon), Hills of Zorah (Samson), Fields of Ruth, Valley of Elah,
+  Mount Carmel (Elijah), Road to Nineveh (Jonah), Babylon, Palace of Susa (Esther),
+  Walls of Jerusalem (Nehemiah), Bethlehem (at night), Sea of Galilee, Road of Parables,
+  Jerusalem, Pentecost and Paul's Voyage — connected by the Gates of Remembrance in Pilgrim's Rest.
+- **A story to finish.** The Shadow of Doubt tore the Scroll of Light into twenty-two pieces.
+  Each world has a guide (Eve, Noah, Abraham, Joseph, Moses, Gideon, Ruth, David, Elijah,
+  Jonah, Esther, Nehemiah, Peter, Paul...), a main quest, a boss, a helper quest and a memory verse.
+  Every guide asks you a story choice ("Stay with Naomi or go home?") and tells you what
+  really happened.
 - **Prodigy-style battles.** Five powers (Faith Strike, Prayer, Hope Shield, Courage Blast,
   Wisdom Wave) and streak bonuses. Gloomlings show what they will do next (⚡ charging means
   a big hit is coming, so raise the Hope Shield). Every boss has its own mechanic from its
   story: build the ark plank by plank, bring the plagues, break the golden calf, march around
   Jericho seven times, sling a stone at Goliath with a streak, call down fire on Mount Carmel,
-  calm the storm, pray until Paul's chains fall off, and more.
+  calm the storm, rebuild Jerusalem's wall, find the lost sheep, coin and son, pray until
+  Paul's chains fall off, and more.
 - **Keeps going after the story:** daily and weekly challenges, champion rematches of every
   boss with rare rewards, animal friends that grow stronger (★ at level 4, ★★ at level 8,
   with special moves), and a Book of Discoveries to fill.
-- **Mixed questions:** math (grade 2 to algebra), Bible knowledge (about 200 questions with
-  references), memory verses, words (vocabulary and spelling) and puzzles (patterns,
-  odd-one-out, books of the Bible).
+- **Mixed questions, no typing needed:** math (grade 2 to algebra) and Bible story math
+  puzzles, Bible knowledge (about 250 questions with references), "Who said it?", "Where did
+  this happen?" on a map of Bible lands, putting story events in order, memory verses, words
+  (vocabulary and spelling) and puzzles (patterns, odd-one-out, books of the Bible).
+- **Mini-games** at signposts in four worlds (also in the Scribe's list): gather manna,
+  lead the animals into the ark, rebuild Nehemiah's wall, and fish on the Sea of Galilee.
 - **Real learning, not just random questions.** Missed questions come back later (spaced
   repetition: a few minutes, then 1, 3, 7 and 21 days). Memory verses are learned in steps:
   fill one word, name the book, finish the verse, then name the reference. The game nudges
@@ -48,7 +55,9 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
 - **Read-aloud** for questions and dialogue, using the most natural voice on the device,
   with a voice picker and test button in Settings.
 - **Variety:** seven hairstyles (including braids, afro and headscarf), three enemy types per
-  world (quick, tough, healer), and over 20 animal friends with different abilities.
+  world (quick, tough, healer), and about 40 animal friends with different abilities.
+  The animal shop opens up as you go: cheap friends at the start, rarer ones after more
+  finished worlds, and some (owl, bee, turtle...) only as world rewards.
 - **Two ways to see the world.** A 3D view for exploring up close (characters, animals, landmarks
   and battles in 3D) and the 2D map view for a quick overview. Switch any time with the
   View button in the top bar or in Settings (battles can be 3D or 2D separately, and there is
@@ -93,14 +102,19 @@ No build step, server or accounts needed. On GitHub Pages the game can be instal
 |---|---|
 | `src/data.js` | English content: chapters, dialogue, quests, Bible questions, verses, vocabulary, items |
 | `src/i18n.js` | Interface text in both languages, plus the German content (merged over the English) |
-| `src/worlds2.js` | Worlds 11–18 in both languages, and `ORDER`, the gate sequence |
+| `src/worlds2.js` | Worlds 11–18 in both languages |
+| `src/worlds3.js` | Worlds 19–22 (Gideon, Samson, Nehemiah, Parables) in both languages |
+| `src/worlds_order.js` | `ORDER`, the gate sequence |
+| `src/quiz_extra.js` | Order, who-said-it, map and story-math questions; story choices; map places |
+| `src/companions.js` | Extra animal friends and the shop prices and unlock levels |
+| `src/minigames.js` | The four mini-games |
 | `src/game.js` | The engine: map generation, 2D drawing, movement, battles, question generators, menus |
 | `src/r3d_lib.js` | 3D models (three.js): people and props, 29 animal friends, Gloomlings and bosses, landmarks, furniture |
 | `src/r3d.js` | 3D view: world scenes, 3D battles, the house editor, thumbnails |
 | `src/shell.html` | Page layout and styles |
 | `src/build.py` | Combines everything into `index.html` |
 
-To add a world, add it to `CH` (and `DE.CH`) in `src/worlds2.js` and put its id into `ORDER`
+To add a world, add it to `CH` (and `DE.CH`) in `src/worlds3.js` and put its id into `ORDER` in `src/worlds_order.js`
 where it belongs in the story. Existing saves pick up new worlds automatically.
 
 To add Bible questions, append rows to `BQ` in `src/data.js`:
@@ -119,5 +133,5 @@ Then run `python3 src/build.py` and copy `src/dist/index.html` and `src/dist/sw.
 
 ## Credits
 
-- 3D animals (cow, ox, deer, horse, fox, frog, donkey, snake, boat): [Quaternius](https://quaternius.com), CC0.
+- 3D animals (cow, ox, deer, horse, fox, frog, donkey, wolf, dog, snake, boat): [Quaternius](https://quaternius.com), CC0.
 - [three.js](https://threejs.org) r128, MIT license.

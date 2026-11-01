@@ -80,6 +80,16 @@ body.big #qText{font-size:clamp(1.35rem,4.4vw,1.85rem)}body.big #qChoices button
 body.easyfont #qText,body.easyfont #qChoices button,body.easyfont #dText,body.easyfont #qFb,body.easyfont .row p,body.easyfont #track{font-family:'Lexend','Nunito',sans-serif;letter-spacing:.01em}
 body.easyfont #qText.verseq{font-family:'Lexend',Georgia,serif;font-style:normal}
 
+/* ---- dialog choices, order and map questions ---- */
+.dchoices{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 2px}.dchoices .btn{font-size:1rem;padding:.55em 1em}
+#dialog:has(.dchoices:not([hidden])) .dnext{visibility:hidden}
+.oslots{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px;font-family:var(--f-body);font-style:normal}
+.oslot{display:block;min-height:2.2em;border:2px dashed #c9a95c;border-radius:10px;padding:.35em .6em;font-size:.95rem;font-weight:800;color:#7a6236;background:#fbf3df}
+.oslot.on{border-style:solid;color:#24190c;background:#fffaf0}.oslot.right{background:#d8f5c8;border-color:#3f9a3a}.oslot.wrong{background:#ffd9d0;border-color:#c8432f}
+#qChoices.order button.picked{opacity:.55;border-color:#a77818}
+.qmap{display:block;width:100%;margin-top:10px;border-radius:12px;border:2px solid #d9c493}
+@media (max-width:520px){.oslots{grid-template-columns:1fr}}
+
 /* ---- house ---- */
 #hbar{position:absolute;left:0;right:0;bottom:0;z-index:6;padding:8px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));background:linear-gradient(rgba(14,21,52,0),rgba(14,21,52,.95) 28%);display:flex;flex-direction:column;gap:6px}
 .hhead{display:flex;align-items:center;justify-content:space-between;gap:10px}
@@ -296,7 +306,7 @@ input[type=range]{width:100%;accent-color:var(--gold)}
 
   <div id="dialog" hidden>
     <canvas id="dPort" width="168" height="192"></canvas>
-    <div class="dt"><div id="dName"></div><div id="dText"></div><div class="dnext" data-t="dlg.tap">tap ▸</div></div>
+    <div class="dt"><div id="dName"></div><div id="dText"></div><div id="dChoices" class="dchoices" hidden></div><div class="dnext" data-t="dlg.tap">tap ▸</div></div>
   </div>
 
   <div id="battle" hidden>
