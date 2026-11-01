@@ -48,6 +48,8 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 .hb:active{transform:translateY(1px)}
 .hb.view{border-color:var(--gold);background:linear-gradient(#2b3d8f,#1d2b66)}
 .hb.view b{font-size:.95rem;color:var(--gold-soft)}
+.hb.view,.hbtns .hb.view{padding:0 14px;gap:7px;white-space:nowrap}
+@media (max-width:480px){.hbtns .hb.view{padding:0 12px}.hb.view svg{display:none}}
 #bMenu{display:none}
 @media (max-width:1180px){.hb span{display:none}.hb{padding:0}}
 @media (max-width:720px){.hb.more{display:none}#bMenu{display:flex}.hb{height:44px;min-width:44px}.hcard{padding:6px 10px}.bar.xp{display:none}}
