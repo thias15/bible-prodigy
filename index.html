@@ -3477,7 +3477,9 @@ function leaveHouse(silent){ if(mode!=='house') return; R3.houseClose(); mode='w
 $('#bHome').onclick=()=>{ ac(); if(dialogOpen) return; if(mode==='house'){ leaveHouse(); return; } openHouse(); };
 $('#hLeave').onclick=()=>{ ac(); leaveHouse(); };
 function setView(v){ if(!S) return; S.view=v; save(); updViewBtn(); toast(t(v==='3d'?'toast.view3d':'toast.view2d')); }
-function updViewBtn(){ const b=$('#bView'); if(!R3.ok||!S){ b.hidden=true; return; } b.hidden=false; const to=S.view==='3d'?'2d':'3d'; $('#bViewT').textContent=t(to==='3d'?'btn.view3d':'btn.view2d'); b.title=t(to==='3d'?'tip.view3d':'tip.view2d'); b.setAttribute('aria-label',b.title); }
+const VIEW_ICON={'3d':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 22V12M21 7l-9 5-9-5"/></svg>',
+  '2d':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg>'};
+function updViewBtn(){ const b=$('#bView'); if(!R3.ok||!S){ b.hidden=true; return; } b.hidden=false; const to=S.view==='3d'?'2d':'3d'; const old=b.querySelector('svg'); if(old&&b.dataset.ic!==to){ old.outerHTML=VIEW_ICON[to]; b.dataset.ic=to; } $('#bViewT').textContent=t(to==='3d'?'btn.view3d':'btn.view2d'); b.title=t(to==='3d'?'tip.view3d':'tip.view2d'); b.setAttribute('aria-label',b.title); }
 $('#bView').onclick=()=>{ ac(); if(!S||mode==='battle') return; setView(S.view==='3d'?'2d':'3d'); };
 function labelButtons(){ [['#bQuest','btn.quests'],['#bMap','btn.world'],['#bBag','btn.bag'],['#bWard','btn.wardrobe'],['#bFriends','btn.friends'],['#bHome','btn.house'],['#bBook','btn.book'],['#bSet','btn.settings'],['#bMenu','btn.menu']].forEach(([id,k])=>{ const b=$(id); b.title=t(k); b.setAttribute('aria-label',t(k)); }); updViewBtn(); }
 $('#bMenu').onclick=()=>{ ac(); if(modalOpen||dialogOpen) return;
