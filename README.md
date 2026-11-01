@@ -47,8 +47,9 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
   alongside you, robe dyes, a shop, practice mode and a verse library.
 - **For grown-ups (⚙ Settings):** challenge level, subject mix sliders, read-aloud,
   per-subject scores, and a save code to move progress between devices.
-- **English and German.** Switch on the title screen or in Settings. Everything is translated:
-  story, quests, all Bible questions, menus and math word problems.
+- **English, German, Spanish and Greek.** Switch on the title screen or in Settings. Everything
+  is translated: story, quests, all Bible questions, menus, mini-games and math word problems.
+  Spelling questions use real spelling traps of each language (b/v and h in Spanish, η/ι/υ in Greek).
 - **Original soundtrack** in a modern worship style, generated live in the browser: a theme
   for each world, a battle anthem and a boss theme, plus the public-domain melodies
   *Stille Nacht / Silent Night* (Bethlehem) and *Ode to Joy* ("Joyful, Joyful", the finale).
@@ -112,7 +113,8 @@ No build step, server or accounts needed. On GitHub Pages the game can be instal
 | `src/r3d_lib.js` | 3D models (three.js): people and props, 29 animal friends, Gloomlings and bosses, landmarks, furniture |
 | `src/r3d.js` | 3D view: world scenes, 3D battles, the house editor, thumbnails |
 | `src/shell.html` | Page layout and styles |
-| `src/build.py` | Combines everything into `index.html` |
+| `src/lang/` | Spanish (`es/`) and Greek (`el/`) translations as JSON, plus `GLOSSARY.md` (names and terms) and the tools that check and pack them |
+| `src/build.py` | Combines everything into `index.html` (needs Python 3 and Node.js) |
 
 To add a world, add it to `CH` (and `DE.CH`) in `src/worlds3.js` and put its id into `ORDER` in `src/worlds_order.js`
 where it belongs in the story. Existing saves pick up new worlds automatically.
@@ -120,6 +122,8 @@ where it belongs in the story. Existing saves pick up new worlds automatically.
 To add Bible questions, append rows to `BQ` in `src/data.js`:
 `[chapter (0 = any), difficulty 1–3, question, correct answer, wrong, wrong, wrong, reference]`.
 Add the German version at the same position in `BQ_DE` in `src/i18n.js`.
+For Spanish and Greek, edit the JSON files in `src/lang/es/` and `src/lang/el/`; after changing English or German content, run
+`node src/lang/make_src.js` and `node src/lang/check.js es A` (chunks A–D, languages es/el) to find what needs translating.
 Then run `python3 src/build.py` and copy `src/dist/index.html` and `src/dist/sw.js` to the repo root (the icons, `manifest.json`, `three.min.js` and `models/` only change rarely).
 
 ## Bible text
@@ -129,6 +133,9 @@ Then run `python3 src/build.py` and copy `src/dist/index.html` and `src/dist/sw.
   (e.g. "nach Johannes 3,16"). They are not an official translation. Translations such as
   *Hoffnung für alle* are copyrighted and can't be republished here, so families can look up
   each reference in their own Bible.
+- **Spanish and Greek:** kid-friendly retellings written for this game, shown as "según Juan 3:16"
+  and "Ιωάννης 3:16 (απόδοση)". Modern translations such as RVR1960, NVI or the Greek Bible Society's
+  version are copyrighted, so families can look up each reference in their own Bible.
 - Music contains no copyrighted songs.
 
 ## Credits

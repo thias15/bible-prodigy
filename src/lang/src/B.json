@@ -1,0 +1,3202 @@
+{
+ "HUB.name": {
+  "en": "Pilgrim's Rest",
+  "de": "Pilgerrast"
+ },
+ "HUB.sub": {
+  "en": "Gates of Remembrance",
+  "de": "Tore der Erinnerung"
+ },
+ "SIMEON.name": {
+  "en": "Simeon",
+  "de": "Simeon"
+ },
+ "HUBNPC.lydia.name": {
+  "en": "Lydia",
+  "de": "Lydia"
+ },
+ "HUBNPC.jesse.name": {
+  "en": "Jesse the Shepherd",
+  "de": "Hirte Jesse"
+ },
+ "HUBNPC.ezra.name": {
+  "en": "Ezra the Scribe",
+  "de": "Esra, der Schreiber"
+ },
+ "HUBNPC.timothy.name": {
+  "en": "Timothy",
+  "de": "Timotheus"
+ },
+ "HUBNPC.lois.name": {
+  "en": "Grandma Lois",
+  "de": "Oma Lois"
+ },
+ "HUBNPC.priscilla.name": {
+  "en": "Priscilla",
+  "de": "Priszilla"
+ },
+ "HUBNPC.philip.name": {
+  "en": "Philip",
+  "de": "Philippus"
+ },
+ "HUBNPC.tabitha.name": {
+  "en": "Tabitha",
+  "de": "Tabita"
+ },
+ "ITEMS.bread.name": {
+  "en": "Barley Loaf",
+  "de": "Gerstenbrot"
+ },
+ "ITEMS.bread.desc": {
+  "en": "Restores 40 health.",
+  "de": "Gibt 40 Leben zurück."
+ },
+ "ITEMS.fish.name": {
+  "en": "Grilled Fish",
+  "de": "Gegrillter Fisch"
+ },
+ "ITEMS.fish.desc": {
+  "en": "Restores 90 health.",
+  "de": "Gibt 90 Leben zurück."
+ },
+ "ITEMS.honey.name": {
+  "en": "Wild Honey",
+  "de": "Wilder Honig"
+ },
+ "ITEMS.honey.desc": {
+  "en": "Restores all health. John the Baptist ate it!",
+  "de": "Macht dich ganz gesund. Johannes der Täufer aß ihn!"
+ },
+ "ARMOR.belt.name": {
+  "en": "Belt of Truth",
+  "de": "Gürtel der Wahrheit"
+ },
+ "ARMOR.belt.ref": {
+  "en": "Ephesians 6:14",
+  "de": "Epheser 6,14"
+ },
+ "ARMOR.shoes.name": {
+  "en": "Shoes of Peace",
+  "de": "Schuhe des Friedens"
+ },
+ "ARMOR.shoes.ref": {
+  "en": "Ephesians 6:15",
+  "de": "Epheser 6,15"
+ },
+ "ARMOR.breast.name": {
+  "en": "Breastplate of Righteousness",
+  "de": "Brustpanzer der Gerechtigkeit"
+ },
+ "ARMOR.breast.ref": {
+  "en": "Ephesians 6:14",
+  "de": "Epheser 6,14"
+ },
+ "ARMOR.shield.name": {
+  "en": "Shield of Faith",
+  "de": "Schild des Glaubens"
+ },
+ "ARMOR.shield.ref": {
+  "en": "Ephesians 6:16",
+  "de": "Epheser 6,16"
+ },
+ "ARMOR.helmet.name": {
+  "en": "Helmet of Salvation",
+  "de": "Helm der Rettung"
+ },
+ "ARMOR.helmet.ref": {
+  "en": "Ephesians 6:17",
+  "de": "Epheser 6,17"
+ },
+ "ARMOR.sword.name": {
+  "en": "Sword of the Spirit",
+  "de": "Schwert des Geistes"
+ },
+ "ARMOR.sword.ref": {
+  "en": "Ephesians 6:17",
+  "de": "Epheser 6,17"
+ },
+ "SPELLS.0.name": {
+  "en": "Faith Strike",
+  "de": "Glaubensschlag"
+ },
+ "SPELLS.0.desc": {
+  "en": "Strike one foe with light.",
+  "de": "Triff einen Gegner mit Licht."
+ },
+ "SPELLS.1.name": {
+  "en": "Prayer",
+  "de": "Gebet"
+ },
+ "SPELLS.1.desc": {
+  "en": "Heal 35% of your health.",
+  "de": "Heilt 35 % deines Lebens."
+ },
+ "SPELLS.2.name": {
+  "en": "Hope Shield",
+  "de": "Hoffnungsschild"
+ },
+ "SPELLS.2.desc": {
+  "en": "Block most damage for 2 turns.",
+  "de": "Blockt 2 Runden lang fast allen Schaden."
+ },
+ "SPELLS.3.name": {
+  "en": "Courage Blast",
+  "de": "Mutstoß"
+ },
+ "SPELLS.3.desc": {
+  "en": "A huge hit on one foe.",
+  "de": "Ein riesiger Treffer gegen einen Gegner."
+ },
+ "SPELLS.4.name": {
+  "en": "Wisdom Wave",
+  "de": "Welle der Weisheit"
+ },
+ "SPELLS.4.desc": {
+  "en": "Hit every foe at once.",
+  "de": "Trifft alle Gegner auf einmal."
+ },
+ "DYES.purple.name": {
+  "en": "Royal Purple",
+  "de": "Königspurpur"
+ },
+ "DYES.purple.note": {
+  "en": "Lydia was a seller of purple cloth (Acts 16:14).",
+  "de": "Lydia handelte mit Purpurstoff (Apostelgeschichte 16,14)."
+ },
+ "DYES.scarlet.name": {
+  "en": "Scarlet",
+  "de": "Scharlachrot"
+ },
+ "DYES.scarlet.note": {
+  "en": "Like Rahab's scarlet cord (Joshua 2:18).",
+  "de": "Wie Rahabs rote Schnur (Josua 2,18)."
+ },
+ "DYES.sky.name": {
+  "en": "Sky Blue",
+  "de": "Himmelblau"
+ },
+ "DYES.sky.note": {
+  "en": "Blue as the Sea of Galilee.",
+  "de": "Blau wie der See Genezareth."
+ },
+ "DYES.white.name": {
+  "en": "Shining White",
+  "de": "Leuchtend Weiß"
+ },
+ "DYES.white.note": {
+  "en": "The angel at the tomb wore white (Matthew 28:3).",
+  "de": "Der Engel am Grab trug Weiß (Matthäus 28,3)."
+ },
+ "DYES.rainbow.name": {
+  "en": "Coat of Many Colors",
+  "de": "Bunter Mantel"
+ },
+ "DYES.rainbow.note": {
+  "en": "Like Joseph's coat (Genesis 37:3).",
+  "de": "Wie der Mantel von Josef (1. Mose 37,3)."
+ },
+ "DYES.esther.name": {
+  "en": "Queen Esther Blue",
+  "de": "Königin-Ester-Blau"
+ },
+ "DYES.esther.note": {
+  "en": "A royal robe from the palace of Susa (Esther 8:15).",
+  "de": "Ein königliches Gewand aus dem Palast von Susa (Ester 8,15)."
+ },
+ "DYES.champgold.name": {
+  "en": "Royal Gold",
+  "de": "Königsgold"
+ },
+ "DYES.champgold.note": {
+  "en": "Earned for 3 champion wins.",
+  "de": "Für 3 Champion-Siege."
+ },
+ "DYES.champsea.name": {
+  "en": "Sea Glass",
+  "de": "Meerglas"
+ },
+ "DYES.champsea.note": {
+  "en": "Earned for 6 champion wins.",
+  "de": "Für 6 Champion-Siege."
+ },
+ "DYES.champsun.name": {
+  "en": "Sunrise",
+  "de": "Morgenrot"
+ },
+ "DYES.champsun.note": {
+  "en": "Earned for 12 champion wins.",
+  "de": "Für 12 Champion-Siege."
+ },
+ "COMPS.lamb.name": {
+  "en": "Lamb",
+  "de": "Lamm"
+ },
+ "COMPS.lamb.desc": {
+  "en": "Heals you a little each turn.",
+  "de": "Heilt dich jede Runde ein bisschen."
+ },
+ "COMPS.dove.name": {
+  "en": "Dove",
+  "de": "Taube"
+ },
+ "COMPS.dove.desc": {
+  "en": "Heals you each turn. A sign of peace.",
+  "de": "Heilt dich jede Runde. Ein Zeichen des Friedens."
+ },
+ "COMPS.frog.name": {
+  "en": "Frog",
+  "de": "Frosch"
+ },
+ "COMPS.frog.desc": {
+  "en": "Hops in for a quick attack.",
+  "de": "Hüpft heran und greift schnell an."
+ },
+ "COMPS.camel.name": {
+  "en": "Camel",
+  "de": "Kamel"
+ },
+ "COMPS.camel.desc": {
+  "en": "Shields you, cutting the next hit.",
+  "de": "Beschützt dich und schwächt den nächsten Treffer."
+ },
+ "COMPS.ram.name": {
+  "en": "Ram",
+  "de": "Widder"
+ },
+ "COMPS.ram.desc": {
+  "en": "Charges with mighty horns.",
+  "de": "Stürmt mit mächtigen Hörnern los."
+ },
+ "COMPS.bear.name": {
+  "en": "Bear Cub",
+  "de": "Bärenjunges"
+ },
+ "COMPS.bear.desc": {
+  "en": "A strong swipe every turn.",
+  "de": "Ein kräftiger Tatzenhieb in jeder Runde."
+ },
+ "COMPS.lion.name": {
+  "en": "Lion",
+  "de": "Löwe"
+ },
+ "COMPS.lion.desc": {
+  "en": "A mighty roar that strikes hard.",
+  "de": "Ein mächtiges Brüllen, das hart trifft."
+ },
+ "COMPS.star.name": {
+  "en": "Little Star",
+  "de": "Kleiner Stern"
+ },
+ "COMPS.star.desc": {
+  "en": "Shines on every foe at once.",
+  "de": "Leuchtet auf alle Gegner auf einmal."
+ },
+ "COMPS.fish.name": {
+  "en": "Fish",
+  "de": "Fisch"
+ },
+ "COMPS.fish.desc": {
+  "en": "Big healing splash each turn.",
+  "de": "Ein großer heilender Spritzer jede Runde."
+ },
+ "COMPS.goat.name": {
+  "en": "Goat",
+  "de": "Ziege"
+ },
+ "COMPS.goat.desc": {
+  "en": "Headbutts with gusto.",
+  "de": "Stößt kräftig mit dem Kopf."
+ },
+ "COMPS.peacock.name": {
+  "en": "Peacock",
+  "de": "Pfau"
+ },
+ "COMPS.peacock.desc": {
+  "en": "Dazzling feathers hit every foe.",
+  "de": "Schillernde Federn treffen alle Gegner."
+ },
+ "COMPS.eagle.name": {
+  "en": "Eagle",
+  "de": "Adler"
+ },
+ "COMPS.eagle.desc": {
+  "en": "\"They will mount up with wings like eagles.\" (Isaiah 40:31)",
+  "de": "„Sie fliegen hoch wie Adler.“ (nach Jesaja 40,31)"
+ },
+ "COMPS.rabbit.name": {
+  "en": "Rabbit",
+  "de": "Hase"
+ },
+ "COMPS.rabbit.desc": {
+  "en": "Quick little hops that sting.",
+  "de": "Schnelle kleine Sprünge, die zwicken."
+ },
+ "COMPS.ox.name": {
+  "en": "Ox",
+  "de": "Ochse"
+ },
+ "COMPS.ox.desc": {
+  "en": "Stands strong in front of you. Was there at the manger!",
+  "de": "Steht stark vor dir. Er war an der Krippe dabei!"
+ },
+ "COMPS.rooster.name": {
+  "en": "Rooster",
+  "de": "Hahn"
+ },
+ "COMPS.rooster.desc": {
+  "en": "A loud crow can freeze a foe for a turn.",
+  "de": "Ein lautes Krähen kann einen Gegner eine Runde erstarren lassen."
+ },
+ "COMPS.sparrow.name": {
+  "en": "Sparrow",
+  "de": "Spatz"
+ },
+ "COMPS.sparrow.desc": {
+  "en": "Finds extra shekels after battles. God cares for sparrows (Matthew 10:29).",
+  "de": "Findet nach Kämpfen Extra-Schekel. Gott sorgt für die Spatzen (Matthäus 10,29)."
+ },
+ "COMPS.owl.name": {
+  "en": "Owl",
+  "de": "Eule"
+ },
+ "COMPS.owl.desc": {
+  "en": "A wise stare that can stop a foe for a turn.",
+  "de": "Ein weiser Blick, der einen Gegner eine Runde stoppt."
+ },
+ "COMPS.bee.name": {
+  "en": "Bee",
+  "de": "Biene"
+ },
+ "COMPS.bee.desc": {
+  "en": "Buzzes every foe at once. Samson found honey in a lion (Judges 14:8)!",
+  "de": "Summt alle Gegner auf einmal an. Simson fand Honig in einem Löwen (Richter 14,8)!"
+ },
+ "COMPS.deer.name": {
+  "en": "Deer",
+  "de": "Hirsch"
+ },
+ "COMPS.deer.desc": {
+  "en": "Gentle healing. \"As the deer pants for the water brooks...\" (Psalm 42:1)",
+  "de": "Sanfte Heilung. „Wie der Hirsch nach frischem Wasser lechzt ...“ (nach Psalm 42,2)"
+ },
+ "COMPS.turtle.name": {
+  "en": "Turtle",
+  "de": "Schildkröte"
+ },
+ "COMPS.turtle.desc": {
+  "en": "A tough shell that blocks big hits.",
+  "de": "Ein harter Panzer, der große Treffer abhält."
+ },
+ "COMPS.fox.name": {
+  "en": "Fox",
+  "de": "Fuchs"
+ },
+ "COMPS.fox.desc": {
+  "en": "Sniffs out hidden shekels after every win.",
+  "de": "Erschnüffelt nach jedem Sieg versteckte Schekel."
+ },
+ "COMPS.whale.name": {
+  "en": "Great Fish",
+  "de": "Großer Fisch"
+ },
+ "COMPS.whale.desc": {
+  "en": "A mighty splash. Remember Jonah (Jonah 1:17)!",
+  "de": "Ein gewaltiger Platscher. Denk an Jona (Jona 2,1)!"
+ },
+ "COMPS.stars.name": {
+  "en": "Shooting Star",
+  "de": "Sternschnuppe"
+ },
+ "COMPS.stars.desc": {
+  "en": "Rains sparkles on every foe. \"Count the stars\" (Genesis 15:5).",
+  "de": "Lässt Funken auf alle Gegner regnen. „Zähl die Sterne“ (nach 1. Mose 15,5)."
+ },
+ "COMPS.cow.name": {
+  "en": "Cow",
+  "de": "Kuh"
+ },
+ "COMPS.cow.desc": {
+  "en": "Steady healing. Remember Pharaoh's dream of seven fat cows!",
+  "de": "Gleichmäßige Heilung. Denk an den Traum des Pharao von sieben fetten Kühen!"
+ },
+ "COMPS.mouse.name": {
+  "en": "Field Mouse",
+  "de": "Feldmaus"
+ },
+ "COMPS.mouse.desc": {
+  "en": "Gleans extra shekels after every win, like Ruth in the fields.",
+  "de": "Sammelt nach jedem Sieg Extra-Schekel – wie Rut auf dem Feld."
+ },
+ "COMPS.horse.name": {
+  "en": "Fiery Horse",
+  "de": "Feuerpferd"
+ },
+ "COMPS.horse.desc": {
+  "en": "Gallops in hard. Elijah went up with horses of fire (2 Kings 2:11).",
+  "de": "Galoppiert mit voller Kraft heran. Elia fuhr mit Feuerpferden in den Himmel (2. Könige 2,11)."
+ },
+ "COMPS.worm.name": {
+  "en": "Little Worm",
+  "de": "Kleiner Wurm"
+ },
+ "COMPS.worm.desc": {
+  "en": "Small but surprising. It can freeze a foe for a turn (Jonah 4:7).",
+  "de": "Klein, aber überraschend. Kann einen Gegner eine Runde erstarren lassen (Jona 4,7)."
+ },
+ "COMPS.flame.name": {
+  "en": "Spirit Flame",
+  "de": "Geistflamme"
+ },
+ "COMPS.flame.desc": {
+  "en": "Warm light that reaches every foe at once (Acts 2:3).",
+  "de": "Warmes Licht, das alle Gegner auf einmal erreicht (Apostelgeschichte 2,3)."
+ },
+ "COMPS.boat.name": {
+  "en": "Sailboat",
+  "de": "Segelboot"
+ },
+ "COMPS.boat.desc": {
+  "en": "Shelters you from big hits, like a boat in a storm.",
+  "de": "Schützt dich vor großen Treffern – wie ein Boot im Sturm."
+ },
+ "COMPS.chick.name": {
+  "en": "Chick",
+  "de": "Küken"
+ },
+ "COMPS.chick.desc": {
+  "en": "A fluffy little helper that cheers you back to health.",
+  "de": "Ein flauschiger kleiner Helfer, der dich wieder fit macht."
+ },
+ "COMPS.hen.name": {
+  "en": "Mother Hen",
+  "de": "Glucke"
+ },
+ "COMPS.hen.desc": {
+  "en": "Gathers you under her wings and softens the next hit (Matthew 23:37).",
+  "de": "Nimmt dich unter ihre Flügel und mildert den nächsten Treffer (nach Matthäus 23,37)."
+ },
+ "COMPS.puppy.name": {
+  "en": "Puppy",
+  "de": "Welpe"
+ },
+ "COMPS.puppy.desc": {
+  "en": "Loyal and brave. Bounds in to help every turn.",
+  "de": "Treu und mutig. Springt jede Runde zu Hilfe."
+ },
+ "COMPS.ant.name": {
+  "en": "Ant",
+  "de": "Ameise"
+ },
+ "COMPS.ant.desc": {
+  "en": "Hard-working: gathers extra shekels after each win (Proverbs 6:6).",
+  "de": "Fleißig: sammelt nach jedem Sieg Extra-Schekel (nach Sprüche 6,6)."
+ },
+ "COMPS.donkey.name": {
+  "en": "Donkey",
+  "de": "Esel"
+ },
+ "COMPS.donkey.desc": {
+  "en": "Humble and strong. Jesus rode a donkey into Jerusalem (Matthew 21:7).",
+  "de": "Demütig und stark. Jesus ritt auf einem Esel nach Jerusalem (nach Matthäus 21,7)."
+ },
+ "COMPS.raven.name": {
+  "en": "Raven",
+  "de": "Rabe"
+ },
+ "COMPS.raven.desc": {
+  "en": "Clever bird that can freeze a foe. Ravens brought Elijah food (1 Kings 17:6).",
+  "de": "Ein kluger Vogel, der einen Gegner erstarren lassen kann. Raben brachten Elia Essen (nach 1. Könige 17,6)."
+ },
+ "COMPS.locust.name": {
+  "en": "Locust",
+  "de": "Heuschrecke"
+ },
+ "COMPS.locust.desc": {
+  "en": "Hops across the battlefield and hits every foe. John ate locusts and honey (Mark 1:6).",
+  "de": "Hüpft übers Kampffeld und trifft alle Gegner. Johannes aß Heuschrecken und Honig (nach Markus 1,6)."
+ },
+ "COMPS.leopard.name": {
+  "en": "Leopard",
+  "de": "Leopard"
+ },
+ "COMPS.leopard.desc": {
+  "en": "Fast and fierce, yet gentle with friends: \"the leopard will lie down with the young goat\" (Isaiah 11:6).",
+  "de": "Schnell und stark, aber sanft zu Freunden: „Der Leopard liegt beim Böckchen“ (nach Jesaja 11,6)."
+ },
+ "COMPS.wolf.name": {
+  "en": "Peaceful Wolf",
+  "de": "Friedlicher Wolf"
+ },
+ "COMPS.wolf.desc": {
+  "en": "\"The wolf will live with the lamb\" (Isaiah 11:6). Strong, and on your side.",
+  "de": "„Der Wolf wohnt beim Lamm“ (nach Jesaja 11,6). Stark und auf deiner Seite."
+ },
+ "COMPS.butterfly.name": {
+  "en": "Butterfly",
+  "de": "Schmetterling"
+ },
+ "COMPS.butterfly.desc": {
+  "en": "A sign of new life. Gentle healing every turn.",
+  "de": "Ein Zeichen für neues Leben. Sanfte Heilung jede Runde."
+ },
+ "COMPS.hippo.name": {
+  "en": "Behemoth",
+  "de": "Behemot"
+ },
+ "COMPS.hippo.desc": {
+  "en": "Mighty river giant that blocks big hits (Job 40:15).",
+  "de": "Ein mächtiger Flussriese, der große Treffer abhält (nach Hiob 40,15)."
+ },
+ "CH.1.name": {
+  "en": "Garden of Eden",
+  "de": "Garten Eden"
+ },
+ "CH.1.book": {
+  "en": "Genesis 1–3",
+  "de": "1. Mose 1–3"
+ },
+ "CH.1.foe.name": {
+  "en": "Whisperling",
+  "de": "Flüsterling"
+ },
+ "CH.1.foe.pl": {
+  "en": null,
+  "de": "Flüsterlinge"
+ },
+ "CH.1.foe.what": {
+  "en": "little shadows of lies",
+  "de": "kleine Schatten der Lüge"
+ },
+ "CH.1.foes.0.name": {
+  "en": "Whisperling",
+  "de": "Flüsterling"
+ },
+ "CH.1.foes.1.name": {
+  "en": "Fibber Imp",
+  "de": "Schwindelwicht"
+ },
+ "CH.1.foes.2.name": {
+  "en": "Tangleweed",
+  "de": "Rankenwirrer"
+ },
+ "CH.1.boss.name": {
+  "en": "Deceiver's Shadow",
+  "de": "Schatten des Verführers"
+ },
+ "CH.1.boss.where": {
+  "en": "Tree of Life",
+  "de": "beim Baum des Lebens"
+ },
+ "CH.1.guide.name": {
+  "en": "Eve",
+  "de": "Eva"
+ },
+ "CH.1.intro.0": {
+  "en": "Welcome, pilgrim! This is the Garden of Eden, where God made everything — and it was very good.",
+  "de": "Willkommen, Pilger! Das ist der Garten Eden. Hier hat Gott alles gemacht – und es war sehr gut."
+ },
+ "CH.1.intro.1": {
+  "en": "Light on the first day. Sky, seas, plants, sun, moon and stars. Fish and birds, animals — and on the sixth day, people!",
+  "de": "Licht am ersten Tag. Himmel, Meere, Pflanzen, Sonne, Mond und Sterne. Fische und Vögel, Tiere – und am sechsten Tag die Menschen!"
+ },
+ "CH.1.intro.2": {
+  "en": "But a lying whisper crept into the garden, and now Whisperlings are spoiling everything.",
+  "de": "Aber ein lügnerisches Flüstern hat sich in den Garten geschlichen. Jetzt verderben Düsterlinge alles."
+ },
+ "CH.1.intro.3": {
+  "en": "Answer with truth and they melt away! Clear out 4 Whisperlings, and the Deceiver's Shadow will show itself by the Tree of Life.",
+  "de": "Antworte mit der Wahrheit, dann lösen sie sich auf! Besiege 4 von ihnen, dann zeigt sich der Schatten des Verführers beim Baum des Lebens."
+ },
+ "CH.1.hint": {
+  "en": "The Deceiver's Shadow waits by the Tree of Life. God's truth is stronger than any lie!",
+  "de": "Der Schatten des Verführers wartet beim Baum des Lebens. Gottes Wahrheit ist stärker als jede Lüge!"
+ },
+ "CH.1.outro.0": {
+  "en": "You did it! The lie has no power over the truth.",
+  "de": "Du hast es geschafft! Die Lüge hat keine Macht über die Wahrheit."
+ },
+ "CH.1.outro.1": {
+  "en": "When Adam and I disobeyed, sadness came into the world. But God made a promise right away: one day a Rescuer would crush the serpent's head (Genesis 3:15).",
+  "de": "Als Adam und ich ungehorsam waren, kam Traurigkeit in die Welt. Aber Gott gab sofort ein Versprechen: Eines Tages kommt ein Retter, der der Schlange den Kopf zertritt (1. Mose 3,15)."
+ },
+ "CH.1.outro.2": {
+  "en": "Take this first piece of the Scroll of Light — and the Belt of Truth to wear.",
+  "de": "Nimm dieses erste Teil der Schriftrolle des Lichts – und den Gürtel der Wahrheit."
+ },
+ "CH.1.post": {
+  "en": "God saw everything He made, and it was very good. That includes you!",
+  "de": "Gott hat alles angesehen, was er gemacht hat, und es war sehr gut. Du auch!"
+ },
+ "CH.1.side.name": {
+  "en": "Adam",
+  "de": "Adam"
+ },
+ "CH.1.side.what": {
+  "en": "animals I haven't named yet",
+  "de": "Tiere ohne Namen"
+ },
+ "CH.1.side.ask": {
+  "en": "God brought me the animals to name. I've named almost all of them, but three wandered off! Can you find them? Look for a giraffe, a hedgehog and a tortoise.",
+  "de": "Gott hat mir die Tiere gebracht, damit ich ihnen Namen gebe. Fast alle haben schon einen – aber drei sind weggelaufen! Findest du sie? Eine Giraffe, einen Igel und eine Schildkröte."
+ },
+ "CH.1.side.thanks": {
+  "en": "Wonderful! I'll call this one... giraffe. Yes! Thank you, friend.",
+  "de": "Wunderbar! Dieses hier nenne ich ... Giraffe. Ja! Danke, mein Freund. Und dieser kleine Hase möchte mit dir gehen."
+ },
+ "CH.1.flav.0.name": {
+  "en": "Gabriel",
+  "de": "Gabriel"
+ },
+ "CH.1.flav.0.lines.0": {
+  "en": "Tip: Tap a Whisperling or walk into it to start a battle.",
+  "de": "Tipp: Tippe einen Düsterling an oder lauf in ihn hinein, um einen Kampf zu beginnen."
+ },
+ "CH.1.flav.0.lines.1": {
+  "en": "Every right answer powers your attack. Get 3 in a row for a Spirit Streak!",
+  "de": "Jede richtige Antwort macht deinen Angriff stark. Drei richtige hintereinander geben eine Geist-Serie!"
+ },
+ "CH.1.flav.1.name": {
+  "en": "Little Abel",
+  "de": "Der kleine Abel"
+ },
+ "CH.1.flav.1.lines.0": {
+  "en": "One day I'm going to be a shepherd! I like lambs best.",
+  "de": "Wenn ich groß bin, werde ich Hirte! Lämmer mag ich am liebsten."
+ },
+ "CH.1.verse.t": {
+  "en": "God saw everything that he had made, and, behold, it was very good.",
+  "de": "Gott sah alles an, was er gemacht hatte – und es war sehr gut!"
+ },
+ "CH.1.verse.r": {
+  "en": "Genesis 1:31",
+  "de": "1. Mose 1,31"
+ },
+ "CH.2.name": {
+  "en": "Mountains of Ararat",
+  "de": "Berge von Ararat"
+ },
+ "CH.2.book": {
+  "en": "Genesis 6–9",
+  "de": "1. Mose 6–9"
+ },
+ "CH.2.foe.name": {
+  "en": "Scoffer",
+  "de": "Spötter"
+ },
+ "CH.2.foe.pl": {
+  "en": null,
+  "de": "Spötter"
+ },
+ "CH.2.foe.what": {
+  "en": "gloomy shadows of mocking",
+  "de": "düstere Schatten des Spotts"
+ },
+ "CH.2.foes.0.name": {
+  "en": "Scoffer",
+  "de": "Spötter"
+ },
+ "CH.2.foes.1.name": {
+  "en": "Puddle Gloom",
+  "de": "Pfützendunkel"
+ },
+ "CH.2.foes.2.name": {
+  "en": "Thunder Puff",
+  "de": "Donnerpuff"
+ },
+ "CH.2.boss.name": {
+  "en": "The Mocking Gloom",
+  "de": "Das Spott-Dunkel"
+ },
+ "CH.2.boss.where": {
+  "en": "ark",
+  "de": "bei der Arche"
+ },
+ "CH.2.guide.name": {
+  "en": "Noah",
+  "de": "Noah"
+ },
+ "CH.2.intro.0": {
+  "en": "Ahoy, pilgrim! The flood waters are going down at last, and our ark is resting on the mountains of Ararat.",
+  "de": "Ahoi, Pilger! Das Wasser geht endlich zurück, und unsere Arche ist auf den Bergen von Ararat gelandet."
+ },
+ "CH.2.intro.1": {
+  "en": "For years people laughed while I built it. But God told me to build, so I built!",
+  "de": "Jahrelang haben die Leute gelacht, während ich gebaut habe. Aber Gott hat gesagt: Bau! Also habe ich gebaut."
+ },
+ "CH.2.intro.2": {
+  "en": "Now Scoffers roam these hills, telling everyone God's promises aren't true.",
+  "de": "Jetzt ziehen Spötter durch die Hügel und erzählen allen, Gottes Versprechen seien nicht wahr."
+ },
+ "CH.2.intro.3": {
+  "en": "Silence 5 Scoffers with right answers, and the Mocking Gloom will come down to the ark.",
+  "de": "Bring 5 Düsterlinge mit richtigen Antworten zum Schweigen, dann kommt das Spott-Dunkel zur Arche herunter."
+ },
+ "CH.2.hint": {
+  "en": "The Mocking Gloom is by the ark. Laughing at God's promises doesn't make them less true!",
+  "de": "Das Spott-Dunkel ist bei der Arche. Wer über Gottes Versprechen lacht, macht sie nicht weniger wahr!"
+ },
+ "CH.2.outro.0": {
+  "en": "The clouds are breaking — look, a rainbow!",
+  "de": "Die Wolken reißen auf – schau, ein Regenbogen!"
+ },
+ "CH.2.outro.1": {
+  "en": "God set His bow in the cloud as a promise that He will never again flood the whole earth. God always keeps His promises.",
+  "de": "Gott hat seinen Bogen in die Wolken gesetzt. Er verspricht: Nie wieder wird eine Flut die ganze Erde zerstören. Gott hält immer, was er verspricht."
+ },
+ "CH.2.outro.2": {
+  "en": "Take this piece of the Scroll and the Shoes of Peace. And this little dove wants to fly with you!",
+  "de": "Nimm dieses Teil der Schriftrolle und die Schuhe des Friedens. Und diese kleine Taube möchte mit dir fliegen!"
+ },
+ "CH.2.post": {
+  "en": "Every rainbow reminds us: God keeps His promises.",
+  "de": "Jeder Regenbogen erinnert uns daran: Gott hält seine Versprechen."
+ },
+ "CH.2.side.name": {
+  "en": "Shem",
+  "de": "Sem"
+ },
+ "CH.2.side.what": {
+  "en": "olive branches",
+  "de": "Olivenzweige"
+ },
+ "CH.2.side.ask": {
+  "en": "The dove brought back an olive leaf, so we knew the land was drying! Could you find 3 olive branches? We want to plant new trees.",
+  "de": "Die Taube hat ein Olivenblatt gebracht, da wussten wir: Das Land wird trocken! Findest du 3 Olivenzweige? Wir wollen neue Bäume pflanzen."
+ },
+ "CH.2.side.thanks": {
+  "en": "Thank you! New life after the flood. Here, take these.",
+  "de": "Danke! Neues Leben nach der Flut. Hier, nimm das."
+ },
+ "CH.2.flav.0.name": {
+  "en": "Noah's wife",
+  "de": "Noahs Frau"
+ },
+ "CH.2.flav.0.lines.0": {
+  "en": "Months on a boat with every kind of animal. I have never seen so much hay!",
+  "de": "Monatelang auf einem Boot mit allen möglichen Tieren. So viel Heu habe ich noch nie gesehen!"
+ },
+ "CH.2.flav.1.name": {
+  "en": "Japheth",
+  "de": "Jafet"
+ },
+ "CH.2.flav.1.lines.0": {
+  "en": "Tip: Visit Lydia in Pilgrim's Rest to buy bread and fish for healing.",
+  "de": "Tipp: Bei Lydia in der Pilgerrast kannst du Brot und Fisch zum Heilen kaufen."
+ },
+ "CH.2.verse.t": {
+  "en": "I set my rainbow in the cloud, and it will be a sign of a covenant between me and the earth.",
+  "de": "Ich setze meinen Regenbogen in die Wolken. Er ist das Zeichen für mein Versprechen an die Erde."
+ },
+ "CH.2.verse.r": {
+  "en": "Genesis 9:13",
+  "de": "1. Mose 9,13"
+ },
+ "CH.3.name": {
+  "en": "Land of Egypt",
+  "de": "Land Ägypten"
+ },
+ "CH.3.book": {
+  "en": "Exodus 1–15",
+  "de": "2. Mose 1–15"
+ },
+ "CH.3.foe.name": {
+  "en": "Proud Puff",
+  "de": "Aufgeblasling"
+ },
+ "CH.3.foe.pl": {
+  "en": null,
+  "de": "Aufgeblaslinge"
+ },
+ "CH.3.foe.what": {
+  "en": "shadows of pride",
+  "de": "Schatten des Hochmuts"
+ },
+ "CH.3.foes.0.name": {
+  "en": "Proud Puff",
+  "de": "Aufgeblasling"
+ },
+ "CH.3.foes.1.name": {
+  "en": "Frogloom",
+  "de": "Froschdunkel"
+ },
+ "CH.3.foes.2.name": {
+  "en": "Sandshade",
+  "de": "Sandschatten"
+ },
+ "CH.3.boss.name": {
+  "en": "Gloom of the Hard Heart",
+  "de": "Dunkel des harten Herzens"
+ },
+ "CH.3.boss.where": {
+  "en": "pyramid",
+  "de": "bei der Pyramide"
+ },
+ "CH.3.guide.name": {
+  "en": "Moses",
+  "de": "Mose"
+ },
+ "CH.3.intro.0": {
+  "en": "I am Moses. God spoke to me from a bush that burned but did not burn up!",
+  "de": "Ich bin Mose. Gott hat aus einem Dornbusch zu mir gesprochen, der brannte, aber nicht verbrannte!"
+ },
+ "CH.3.intro.1": {
+  "en": "He sent me to Pharaoh with a message: 'Let my people go.' But Pharaoh's heart was hard and proud.",
+  "de": "Er hat mich mit einer Botschaft zum Pharao geschickt: „Lass mein Volk gehen!“ Aber das Herz des Pharao war hart und stolz."
+ },
+ "CH.3.intro.2": {
+  "en": "Proud Puffs float all along the Nile. They puff up big, but they pop when the truth hits them.",
+  "de": "Aufgeblaslinge schweben am ganzen Nil entlang. Sie blähen sich groß auf – aber die Wahrheit lässt sie platzen."
+ },
+ "CH.3.intro.3": {
+  "en": "Defeat 5 of them. Then we will face the Gloom of the Hard Heart at the pyramid.",
+  "de": "Besiege 5 Düsterlinge. Dann stellen wir uns dem Dunkel des harten Herzens bei der Pyramide."
+ },
+ "CH.3.hint": {
+  "en": "The Gloom of the Hard Heart waits by the pyramid. Pride always comes before a fall!",
+  "de": "Das Dunkel des harten Herzens wartet bei der Pyramide. Hochmut kommt vor dem Fall!"
+ },
+ "CH.3.outro.0": {
+  "en": "The sea opened! God made a dry path right through the middle of the water!",
+  "de": "Das Meer hat sich geteilt! Gott hat einen trockenen Weg mitten durchs Wasser gemacht!"
+ },
+ "CH.3.outro.1": {
+  "en": "'The LORD will fight for you, and you shall be still.' God did what we never could.",
+  "de": "„Der Herr kämpft für euch. Ihr dürft ganz ruhig bleiben.“ Gott hat getan, was wir niemals gekonnt hätten."
+ },
+ "CH.3.outro.2": {
+  "en": "Here is the next Scroll piece, and the Breastplate of Righteousness. Oh — and one of the frogs from the plagues has decided he likes you.",
+  "de": "Hier ist das nächste Teil der Schriftrolle und der Brustpanzer der Gerechtigkeit. Ach – und einer der Frösche aus den Plagen mag dich."
+ },
+ "CH.3.post": {
+  "en": "God heard His people crying, and He came to rescue them.",
+  "de": "Gott hat gehört, wie sein Volk zu ihm schrie – und er ist gekommen, um es zu retten."
+ },
+ "CH.3.side.name": {
+  "en": "Miriam",
+  "de": "Mirjam"
+ },
+ "CH.3.side.what": {
+  "en": "reed baskets",
+  "de": "Schilfkörbe"
+ },
+ "CH.3.side.ask": {
+  "en": "When my brother Moses was a baby, I watched over his little basket on the river. Now the wind has blown three of my baskets away! Will you find them?",
+  "de": "Als mein Bruder Mose ein Baby war, habe ich auf seinen kleinen Korb im Fluss aufgepasst. Jetzt hat der Wind drei meiner Körbe weggeweht! Findest du sie?"
+ },
+ "CH.3.side.thanks": {
+  "en": "You found them! Let's sing to the LORD! Here's something for your journey.",
+  "de": "Du hast sie gefunden! Lasst uns dem Herrn singen! Hier ist etwas für deine Reise."
+ },
+ "CH.3.flav.0.name": {
+  "en": "Aaron",
+  "de": "Aaron"
+ },
+ "CH.3.flav.0.lines.0": {
+  "en": "I'm Moses' brother. I helped speak for him when he was nervous. God gives us helpers!",
+  "de": "Ich bin der Bruder von Mose. Ich habe für ihn gesprochen, wenn er nervös war. Gott schenkt uns Helfer!"
+ },
+ "CH.3.flav.1.name": {
+  "en": "Brick-maker",
+  "de": "Ziegelmacher"
+ },
+ "CH.3.flav.1.lines.0": {
+  "en": "Bricks, bricks, bricks... and now no straw! We need God's help.",
+  "de": "Ziegel, Ziegel, Ziegel ... und jetzt nicht mal mehr Stroh! Wir brauchen Gottes Hilfe."
+ },
+ "CH.3.verse.t": {
+  "en": "The LORD will fight for you, and you shall be still.",
+  "de": "Der Herr kämpft für euch. Ihr dürft ganz ruhig bleiben."
+ },
+ "CH.3.verse.r": {
+  "en": "Exodus 14:14",
+  "de": "2. Mose 14,14"
+ },
+ "CH.4.name": {
+  "en": "Wilderness of Sinai",
+  "de": "Wüste Sinai"
+ },
+ "CH.4.book": {
+  "en": "Exodus 16–32",
+  "de": "2. Mose 16–32"
+ },
+ "CH.4.foe.name": {
+  "en": "Grumbler",
+  "de": "Murrling"
+ },
+ "CH.4.foe.pl": {
+  "en": null,
+  "de": "Murrlinge"
+ },
+ "CH.4.foe.what": {
+  "en": "shadows of complaining",
+  "de": "Schatten des Meckerns"
+ },
+ "CH.4.foes.0.name": {
+  "en": "Grumbler",
+  "de": "Murrling"
+ },
+ "CH.4.foes.1.name": {
+  "en": "Thirst Wisp",
+  "de": "Durstflämmchen"
+ },
+ "CH.4.foes.2.name": {
+  "en": "Golden Grudge",
+  "de": "Goldgroll"
+ },
+ "CH.4.boss.name": {
+  "en": "Golden Calf Gloom",
+  "de": "Goldenes-Kalb-Dunkel"
+ },
+ "CH.4.boss.where": {
+  "en": "foot of Mount Sinai",
+  "de": "am Fuß des Berges Sinai"
+ },
+ "CH.4.guide.name": {
+  "en": "Aaron",
+  "de": "Aaron"
+ },
+ "CH.4.intro.0": {
+  "en": "Welcome to the wilderness, pilgrim. Every morning God sends manna — bread from heaven!",
+  "de": "Willkommen in der Wüste, Pilger. Jeden Morgen schickt Gott Manna – Brot vom Himmel!"
+ },
+ "CH.4.intro.1": {
+  "en": "My brother Moses is up on Mount Sinai, receiving God's commandments.",
+  "de": "Mein Bruder Mose ist oben auf dem Berg Sinai und empfängt Gottes Gebote."
+ },
+ "CH.4.intro.2": {
+  "en": "But Grumblers are spreading complaints through the camp: 'We're thirsty! We're bored! Things were better in Egypt!'",
+  "de": "Aber Murrlinge verbreiten im Lager Beschwerden: „Wir haben Durst! Uns ist langweilig! In Ägypten war alles besser!“"
+ },
+ "CH.4.intro.3": {
+  "en": "Quiet 5 Grumblers, then face the Golden Calf Gloom. I'm ashamed to say I helped make that calf.",
+  "de": "Bring 5 Düsterlinge zum Schweigen, dann stell dich dem Goldenes-Kalb-Dunkel. Ich schäme mich, dass ich beim Bau des Kalbs geholfen habe."
+ },
+ "CH.4.hint": {
+  "en": "The Golden Calf Gloom is at the foot of Mount Sinai. Only God deserves our worship!",
+  "de": "Das Goldenes-Kalb-Dunkel ist am Fuß des Berges Sinai. Nur Gott verdient unsere Anbetung!"
+ },
+ "CH.4.outro.0": {
+  "en": "The calf is gone. Moses came down with the Ten Commandments — God's good way to live.",
+  "de": "Das Kalb ist weg. Mose ist mit den Zehn Geboten heruntergekommen – Gottes guter Weg zum Leben."
+ },
+ "CH.4.outro.1": {
+  "en": "God forgave His people and stayed with them, in a pillar of cloud by day and fire by night.",
+  "de": "Gott hat seinem Volk vergeben und ist bei ihm geblieben: tagsüber in einer Wolkensäule und nachts in einer Feuersäule."
+ },
+ "CH.4.outro.2": {
+  "en": "Here is the next piece of the Scroll. And this camel loves long walks in the desert!",
+  "de": "Hier ist das nächste Teil der Schriftrolle. Und dieses Kamel liebt lange Wüstenwanderungen!"
+ },
+ "CH.4.post": {
+  "en": "You shall have no other gods before me. God comes first!",
+  "de": "Du sollst keine anderen Götter haben neben mir. Gott kommt zuerst!"
+ },
+ "CH.4.side.name": {
+  "en": "Caleb",
+  "de": "Kaleb"
+ },
+ "CH.4.side.what": {
+  "en": "jars of manna",
+  "de": "Mannakrüge"
+ },
+ "CH.4.side.ask": {
+  "en": "God told us to keep a jar of manna to remember how He fed us. Three jars rolled off the cart! Can you help?",
+  "de": "Gott hat gesagt, wir sollen einen Krug Manna aufheben, damit wir nie vergessen, wie er uns versorgt hat. Drei Krüge sind vom Karren gerollt! Hilfst du mir?"
+ },
+ "CH.4.side.thanks": {
+  "en": "All three! God provides every single day. Take these!",
+  "de": "Alle drei! Gott versorgt uns jeden einzelnen Tag. Nimm das hier!"
+ },
+ "CH.4.flav.0.name": {
+  "en": "Bezalel",
+  "de": "Bezalel"
+ },
+ "CH.4.flav.0.lines.0": {
+  "en": "God filled me with skill to build the tabernacle. Your talents are gifts from Him too!",
+  "de": "Gott hat mir Geschick gegeben, um die Stiftshütte zu bauen. Deine Talente sind auch Geschenke von ihm!"
+ },
+ "CH.4.flav.1.name": {
+  "en": "Joshua",
+  "de": "Josua"
+ },
+ "CH.4.flav.1.lines.0": {
+  "en": "Tip: At level 3 you learn Hope Shield. Use it when foes hit hard!",
+  "de": "Tipp: Ab Stufe 3 lernst du den Hoffnungsschild. Setz ihn ein, wenn Gegner hart zuschlagen!"
+ },
+ "CH.4.verse.t": {
+  "en": "You shall have no other gods before me.",
+  "de": "Du sollst keine anderen Götter haben neben mir."
+ },
+ "CH.4.verse.r": {
+  "en": "Exodus 20:3",
+  "de": "2. Mose 20,3"
+ },
+ "CH.5.name": {
+  "en": "Jericho",
+  "de": "Jericho"
+ },
+ "CH.5.book": {
+  "en": "Joshua 1–6",
+  "de": "Josua 1–6"
+ },
+ "CH.5.foe.name": {
+  "en": "Fretling",
+  "de": "Sorgling"
+ },
+ "CH.5.foe.pl": {
+  "en": null,
+  "de": "Sorglinge"
+ },
+ "CH.5.foe.what": {
+  "en": "worry shadows",
+  "de": "Schatten der Sorge"
+ },
+ "CH.5.foes.0.name": {
+  "en": "Fretling",
+  "de": "Sorgling"
+ },
+ "CH.5.foes.1.name": {
+  "en": "Wall Watcher",
+  "de": "Mauerglotzer"
+ },
+ "CH.5.foes.2.name": {
+  "en": "Worry Wisp",
+  "de": "Bangwisch"
+ },
+ "CH.5.boss.name": {
+  "en": "Walls of Fear",
+  "de": "Mauern der Angst"
+ },
+ "CH.5.boss.where": {
+  "en": "walls of Jericho",
+  "de": "an den Mauern von Jericho"
+ },
+ "CH.5.guide.name": {
+  "en": "Joshua",
+  "de": "Josua"
+ },
+ "CH.5.intro.0": {
+  "en": "Be strong and courageous! That's what God told me, and now I'm telling you.",
+  "de": "Sei stark und mutig! Das hat Gott zu mir gesagt, und jetzt sage ich es dir."
+ },
+ "CH.5.intro.1": {
+  "en": "We crossed the Jordan River on dry ground. Now the great walls of Jericho stand in our way.",
+  "de": "Wir sind trockenen Fußes durch den Jordan gegangen. Jetzt stehen die großen Mauern von Jericho vor uns."
+ },
+ "CH.5.intro.2": {
+  "en": "Fretlings are everywhere, whispering, 'Those walls are too big!'",
+  "de": "Überall flüstern Sorglinge: „Diese Mauern sind viel zu groß!“"
+ },
+ "CH.5.intro.3": {
+  "en": "Defeat 5 Fretlings. Then we march! The Walls of Fear will fall after 7 marches — that means 7 right answers!",
+  "de": "Besiege 5 Düsterlinge. Dann marschieren wir! Die Mauern der Angst fallen nach 7 Runden – das heißt: 7 richtige Antworten!"
+ },
+ "CH.5.hint": {
+  "en": "March on the Walls of Fear! Each right answer is one lap around the city. Seven laps and they fall!",
+  "de": "Zieh um die Mauern der Angst! Jede richtige Antwort ist eine Runde um die Stadt. Nach sieben Runden fallen sie!"
+ },
+ "CH.5.outro.0": {
+  "en": "The trumpets blew, the people shouted, and the walls fell down flat!",
+  "de": "Die Posaunen haben geblasen, das Volk hat gejubelt – und die Mauern sind eingestürzt!"
+ },
+ "CH.5.outro.1": {
+  "en": "God won the battle, just as He promised. And Rahab and her family were kept safe because she trusted God.",
+  "de": "Gott hat den Kampf gewonnen, genau wie er es versprochen hat. Und Rahab und ihre Familie wurden gerettet, weil sie Gott vertraut hat."
+ },
+ "CH.5.outro.2": {
+  "en": "Here's the next Scroll piece — and the Shield of Faith! This ram wants to come too. His horns make excellent trumpets.",
+  "de": "Hier ist das nächste Teil der Schriftrolle – und der Schild des Glaubens! Dieser Widder will auch mit. Aus seinen Hörnern werden tolle Posaunen."
+ },
+ "CH.5.post": {
+  "en": "Be strong and courageous. The LORD your God is with you wherever you go!",
+  "de": "Sei stark und mutig. Der Herr, dein Gott, ist bei dir, wohin du auch gehst!"
+ },
+ "CH.5.side.name": {
+  "en": "Rahab",
+  "de": "Rahab"
+ },
+ "CH.5.side.what": {
+  "en": "scarlet cords",
+  "de": "rote Schnüre"
+ },
+ "CH.5.side.ask": {
+  "en": "I hung a scarlet cord from my window so my family would be safe. I'd like spares for my sisters! Can you find 3 scarlet cords?",
+  "de": "Ich habe eine rote Schnur aus meinem Fenster gehängt, damit meine Familie gerettet wird. Ich möchte welche für meine Schwestern! Findest du 3 rote Schnüre?"
+ },
+ "CH.5.side.thanks": {
+  "en": "Thank you! The God of Israel is the true God. Take this with my thanks.",
+  "de": "Danke! Der Gott Israels ist der wahre Gott. Nimm das als Dank."
+ },
+ "CH.5.flav.0.name": {
+  "en": "Priest",
+  "de": "Priester"
+ },
+ "CH.5.flav.0.lines.0": {
+  "en": "We'll carry the Ark of the Covenant and blow trumpets of rams' horns!",
+  "de": "Wir tragen die Bundeslade und blasen auf Posaunen aus Widderhörnern!"
+ },
+ "CH.5.flav.1.name": {
+  "en": "Caleb",
+  "de": "Kaleb"
+ },
+ "CH.5.flav.1.lines.0": {
+  "en": "I'm 85 and still strong! Trusting God never gets old.",
+  "de": "Ich bin 85 und immer noch stark! Wer Gott vertraut, wird nie zu alt."
+ },
+ "CH.5.verse.t": {
+  "en": "Be strong and courageous. Don't be afraid. Don't be dismayed, for the LORD your God is with you wherever you go.",
+  "de": "Sei mutig und stark! Hab keine Angst, denn der Herr, dein Gott, ist bei dir, wohin du auch gehst."
+ },
+ "CH.5.verse.r": {
+  "en": "Joshua 1:9",
+  "de": "Josua 1,9"
+ },
+ "CH.6.name": {
+  "en": "Valley of Elah",
+  "de": "Tal Ela"
+ },
+ "CH.6.book": {
+  "en": "1 Samuel 16–17",
+  "de": "1. Samuel 16–17"
+ },
+ "CH.6.foe.name": {
+  "en": "Trembler",
+  "de": "Zitterling"
+ },
+ "CH.6.foe.pl": {
+  "en": null,
+  "de": "Zitterlinge"
+ },
+ "CH.6.foe.what": {
+  "en": "shaky shadows of fear",
+  "de": "zittrige Schatten der Angst"
+ },
+ "CH.6.foes.0.name": {
+  "en": "Trembler",
+  "de": "Zitterling"
+ },
+ "CH.6.foes.1.name": {
+  "en": "Shaky Shade",
+  "de": "Bibberschatten"
+ },
+ "CH.6.foes.2.name": {
+  "en": "Boaster Brute",
+  "de": "Großmaul"
+ },
+ "CH.6.boss.name": {
+  "en": "Giant of Fear",
+  "de": "Riese der Angst"
+ },
+ "CH.6.boss.where": {
+  "en": "Philistine camp",
+  "de": "beim Lager der Philister"
+ },
+ "CH.6.guide.name": {
+  "en": "David",
+  "de": "David"
+ },
+ "CH.6.intro.0": {
+  "en": "Hi! I'm David. I take care of my father's sheep.",
+  "de": "Hallo! Ich bin David. Ich hüte die Schafe meines Vaters."
+ },
+ "CH.6.intro.1": {
+  "en": "Every day a giant named Goliath shouts at our army, and everyone is too scared to fight him.",
+  "de": "Jeden Tag brüllt ein Riese namens Goliat unser Heer an, und alle haben zu viel Angst, gegen ihn zu kämpfen."
+ },
+ "CH.6.intro.2": {
+  "en": "His fear has spread into Tremblers — shaky shadows that make people feel small.",
+  "de": "Seine Angst hat sich in Zitterlinge verwandelt – wackelige Schatten, die Menschen klein fühlen lassen."
+ },
+ "CH.6.intro.3": {
+  "en": "Beat 6 Tremblers. Then we'll face the Giant of Fear. Goliath has a sword and a spear, but I come in the name of the LORD!",
+  "de": "Besiege 6 Düsterlinge. Dann stellen wir uns dem Riesen der Angst. Goliat hat Schwert und Speer, aber ich komme im Namen des Herrn!"
+ },
+ "CH.6.hint": {
+  "en": "The Giant of Fear is by the Philistine camp. The battle is the LORD's!",
+  "de": "Der Riese der Angst ist beim Lager der Philister. Der Kampf gehört dem Herrn!"
+ },
+ "CH.6.outro.0": {
+  "en": "One stone, and the giant fell! The battle belongs to the LORD.",
+  "de": "Ein Stein, und der Riese ist gefallen! Der Kampf gehört dem Herrn."
+ },
+ "CH.6.outro.1": {
+  "en": "God doesn't look at how big or strong someone is. He looks at the heart.",
+  "de": "Gott schaut nicht darauf, wie groß oder stark jemand ist. Er schaut ins Herz."
+ },
+ "CH.6.outro.2": {
+  "en": "Take the next Scroll piece. And this bear cub followed me home from the hills — he's gentle now, I promise!",
+  "de": "Nimm das nächste Teil der Schriftrolle. Und dieses Bärenjunge ist mir aus den Hügeln gefolgt – es ist jetzt ganz lieb, versprochen!"
+ },
+ "CH.6.post": {
+  "en": "The LORD is my shepherd: I shall lack nothing.",
+  "de": "Der Herr ist mein Hirte. Mir wird nichts fehlen."
+ },
+ "CH.6.side.name": {
+  "en": "Jonathan",
+  "de": "Jonatan"
+ },
+ "CH.6.side.what": {
+  "en": "smooth stones",
+  "de": "glatte Steine"
+ },
+ "CH.6.side.ask": {
+  "en": "I'm Jonathan, King Saul's son. David will need smooth stones from the brook. Can you find 5 of them?",
+  "de": "Ich bin Jonatan, der Sohn von König Saul. David braucht glatte Steine aus dem Bach. Findest du 5 davon?"
+ },
+ "CH.6.side.thanks": {
+  "en": "Five smooth stones! David is my best friend. Here — take this.",
+  "de": "Fünf glatte Steine! David ist mein bester Freund. Hier – nimm das."
+ },
+ "CH.6.flav.0.name": {
+  "en": "Soldier",
+  "de": "Soldat"
+ },
+ "CH.6.flav.0.lines.0": {
+  "en": "That giant is nearly ten feet tall! I'm not going out there...",
+  "de": "Dieser Riese ist fast drei Meter groß! Ich gehe da nicht raus ..."
+ },
+ "CH.6.flav.1.name": {
+  "en": "Eliab",
+  "de": "Eliab"
+ },
+ "CH.6.flav.1.lines.0": {
+  "en": "My little brother David thinks he can beat Goliath? Hmph.",
+  "de": "Mein kleiner Bruder David glaubt, er kann Goliat besiegen? Pff."
+ },
+ "CH.6.verse.t": {
+  "en": "For man looks at the outward appearance, but the LORD looks at the heart.",
+  "de": "Menschen sehen nur, was vor Augen ist. Aber Gott sieht ins Herz."
+ },
+ "CH.6.verse.r": {
+  "en": "1 Samuel 16:7",
+  "de": "1. Samuel 16,7"
+ },
+ "CH.7.name": {
+  "en": "Babylon",
+  "de": "Babylon"
+ },
+ "CH.7.book": {
+  "en": "Daniel 1–6",
+  "de": "Daniel 1–6"
+ },
+ "CH.7.foe.name": {
+  "en": "Braggart",
+  "de": "Angeber"
+ },
+ "CH.7.foe.pl": {
+  "en": null,
+  "de": "Angeber"
+ },
+ "CH.7.foe.what": {
+  "en": "shadows of boasting",
+  "de": "Schatten der Prahlerei"
+ },
+ "CH.7.foes.0.name": {
+  "en": "Braggart",
+  "de": "Angeber"
+ },
+ "CH.7.foes.1.name": {
+  "en": "Idol Imp",
+  "de": "Götzenwicht"
+ },
+ "CH.7.foes.2.name": {
+  "en": "Smoke Wisp",
+  "de": "Rauchwisch"
+ },
+ "CH.7.boss.name": {
+  "en": "The Golden Idol",
+  "de": "Das goldene Standbild"
+ },
+ "CH.7.boss.where": {
+  "en": "great ziggurat",
+  "de": "beim großen Tempelturm"
+ },
+ "CH.7.guide.name": {
+  "en": "Daniel",
+  "de": "Daniel"
+ },
+ "CH.7.intro.0": {
+  "en": "Peace to you. I am Daniel, far from my home in Jerusalem.",
+  "de": "Friede sei mit dir. Ich bin Daniel, weit weg von meiner Heimat Jerusalem."
+ },
+ "CH.7.intro.1": {
+  "en": "The king built a giant golden statue and commanded everyone to bow down to it.",
+  "de": "Der König hat ein riesiges goldenes Standbild gebaut und befohlen, dass sich alle davor verbeugen."
+ },
+ "CH.7.intro.2": {
+  "en": "My friends Shadrach, Meshach and Abednego would not bow — and God was with them even in the fiery furnace!",
+  "de": "Meine Freunde Schadrach, Meschach und Abed-Nego haben sich nicht verbeugt – und Gott war bei ihnen, sogar im glühenden Ofen!"
+ },
+ "CH.7.intro.3": {
+  "en": "Braggarts fill the streets. Defeat 6 of them, then topple the Golden Idol.",
+  "de": "Angeber füllen die Straßen. Besiege 6 Düsterlinge, dann stürz das goldene Standbild."
+ },
+ "CH.7.hint": {
+  "en": "The Golden Idol stands at the great ziggurat. There is no god like our God!",
+  "de": "Das goldene Standbild steht beim großen Tempelturm. Es gibt keinen Gott wie unseren Gott!"
+ },
+ "CH.7.outro.0": {
+  "en": "The idol crashed down! There is no other god who can save like this.",
+  "de": "Das Standbild ist umgestürzt! Es gibt keinen anderen Gott, der so retten kann."
+ },
+ "CH.7.outro.1": {
+  "en": "Later, I was thrown into the lions' den for praying. But God sent His angel to shut the lions' mouths.",
+  "de": "Später wurde ich in die Löwengrube geworfen, weil ich gebetet habe. Aber Gott hat seinen Engel geschickt und den Löwen das Maul verschlossen."
+ },
+ "CH.7.outro.2": {
+  "en": "Here's the next Scroll piece and the Helmet of Salvation. And this lion would like to be your friend. He's very gentle!",
+  "de": "Hier ist das nächste Teil der Schriftrolle und der Helm der Rettung. Und dieser Löwe wäre gern dein Freund. Er ist ganz sanft!"
+ },
+ "CH.7.post": {
+  "en": "Keep praying, every day — just like I do.",
+  "de": "Bete weiter, jeden Tag – so wie ich."
+ },
+ "CH.7.side.name": {
+  "en": "Meshach",
+  "de": "Meschach"
+ },
+ "CH.7.side.what": {
+  "en": "vegetable baskets",
+  "de": "Gemüsekörbe"
+ },
+ "CH.7.side.ask": {
+  "en": "We asked to eat vegetables and water instead of the king's food — and God made us healthy and strong! But three of our carrot baskets are lost.",
+  "de": "Wir haben darum gebeten, Gemüse und Wasser statt des Essens vom König zu bekommen – und Gott hat uns gesund und stark gemacht! Aber drei Karottenkörbe sind verschwunden."
+ },
+ "CH.7.side.thanks": {
+  "en": "Thank you! Want a carrot? No? Well, take these instead.",
+  "de": "Danke! Möchtest du eine Karotte? Nein? Dann nimm lieber das hier."
+ },
+ "CH.7.flav.0.name": {
+  "en": "Shadrach",
+  "de": "Schadrach"
+ },
+ "CH.7.flav.0.lines.0": {
+  "en": "The king saw a fourth man walking with us in the fire! God never left us.",
+  "de": "Der König hat einen vierten Mann mit uns im Feuer gesehen! Gott hat uns nie allein gelassen."
+ },
+ "CH.7.flav.1.name": {
+  "en": "Abednego",
+  "de": "Abed-Nego"
+ },
+ "CH.7.flav.1.lines.0": {
+  "en": "We came out of the furnace without even smelling like smoke!",
+  "de": "Wir kamen aus dem Ofen und haben nicht mal nach Rauch gerochen!"
+ },
+ "CH.7.verse.t": {
+  "en": "My God has sent his angel, and has shut the lions' mouths, and they have not hurt me.",
+  "de": "Mein Gott hat seinen Engel geschickt und den Löwen das Maul verschlossen. Sie haben mir nichts getan."
+ },
+ "CH.7.verse.r": {
+  "en": "Daniel 6:22",
+  "de": "Daniel 6,23"
+ },
+ "CH.8.name": {
+  "en": "Bethlehem",
+  "de": "Betlehem"
+ },
+ "CH.8.book": {
+  "en": "Luke 2 · Matthew 2",
+  "de": "Lukas 2 · Matthäus 2"
+ },
+ "CH.8.foe.name": {
+  "en": "Gloomlet",
+  "de": "Finsterling"
+ },
+ "CH.8.foe.pl": {
+  "en": null,
+  "de": "Finsterlinge"
+ },
+ "CH.8.foe.what": {
+  "en": "shadows of darkness",
+  "de": "Schatten der Dunkelheit"
+ },
+ "CH.8.foes.0.name": {
+  "en": "Gloomlet",
+  "de": "Finsterling"
+ },
+ "CH.8.foes.1.name": {
+  "en": "Night Watcher",
+  "de": "Nachtglotzer"
+ },
+ "CH.8.foes.2.name": {
+  "en": "Shadow Drip",
+  "de": "Schattentropfen"
+ },
+ "CH.8.boss.name": {
+  "en": "Night Gloom",
+  "de": "Nacht-Dunkel"
+ },
+ "CH.8.boss.where": {
+  "en": "stable",
+  "de": "über dem Stall"
+ },
+ "CH.8.guide.name": {
+  "en": "Joseph",
+  "de": "Josef"
+ },
+ "CH.8.intro.0": {
+  "en": "Shalom, traveler. I am Joseph. Mary and I came to Bethlehem to be counted in the census.",
+  "de": "Schalom, Reisender. Ich bin Josef. Maria und ich sind nach Betlehem gekommen, um uns zählen zu lassen."
+ },
+ "CH.8.intro.1": {
+  "en": "There was no room at the inn, so baby Jesus was born in a stable and laid in a manger.",
+  "de": "In der Herberge war kein Platz, darum wurde das Kind Jesus in einem Stall geboren und in eine Futterkrippe gelegt."
+ },
+ "CH.8.intro.2": {
+  "en": "Angels told the shepherds the good news! But Gloomlets are hiding the path for others who are coming.",
+  "de": "Engel haben den Hirten die gute Nachricht erzählt! Aber Finsterlinge verdecken den Weg für alle, die noch kommen wollen."
+ },
+ "CH.8.intro.3": {
+  "en": "Chase away 6 Gloomlets, then face the Night Gloom so the star can shine.",
+  "de": "Vertreib 6 Düsterlinge, dann stell dich dem Nacht-Dunkel, damit der Stern leuchten kann."
+ },
+ "CH.8.hint": {
+  "en": "The Night Gloom hovers over the stable. The light shines in the darkness!",
+  "de": "Das Nacht-Dunkel schwebt über dem Stall. Das Licht scheint in der Dunkelheit!"
+ },
+ "CH.8.outro.0": {
+  "en": "Look how the star shines! Wise men from the east are following it here.",
+  "de": "Schau, wie der Stern leuchtet! Sterndeuter aus dem Osten folgen ihm bis hierher."
+ },
+ "CH.8.outro.1": {
+  "en": "'For there is born to you today, in David's city, a Savior, who is Christ the Lord.'",
+  "de": "„Heute ist euch in der Stadt Davids der Retter geboren: Christus, der Herr!“"
+ },
+ "CH.8.outro.2": {
+  "en": "This is the next Scroll piece. And this little star seems to want to follow you everywhere!",
+  "de": "Das ist das nächste Teil der Schriftrolle. Und dieser kleine Stern will dir anscheinend überallhin folgen!"
+ },
+ "CH.8.post": {
+  "en": "Emmanuel — God with us!",
+  "de": "Immanuel – Gott ist mit uns!"
+ },
+ "CH.8.side.name": {
+  "en": "Shepherd Boy",
+  "de": "Hirtenjunge"
+ },
+ "CH.8.side.what": {
+  "en": "lost sheep",
+  "de": "verlorene Schafe"
+ },
+ "CH.8.side.ask": {
+  "en": "We ran to see the baby when the angels sang — and three of my sheep wandered off in the dark! Help me find them?",
+  "de": "Als die Engel gesungen haben, sind wir losgerannt, um das Kind zu sehen – und drei meiner Schafe sind im Dunkeln weggelaufen! Hilfst du mir suchen?"
+ },
+ "CH.8.side.thanks": {
+  "en": "You found every one! A good shepherd never gives up on a lost sheep.",
+  "de": "Du hast jedes einzelne gefunden! Ein guter Hirte gibt ein verlorenes Schaf nie auf. Und dieser Ochse aus dem Stall möchte mit dir gehen."
+ },
+ "CH.8.flav.0.name": {
+  "en": "Angel",
+  "de": "Engel"
+ },
+ "CH.8.flav.0.lines.0": {
+  "en": "Glory to God in the highest, and on earth peace, good will toward men!",
+  "de": "Ehre sei Gott im Himmel, und Frieden auf der Erde für die Menschen, die er liebt!"
+ },
+ "CH.8.flav.1.name": {
+  "en": "Innkeeper",
+  "de": "Wirt"
+ },
+ "CH.8.flav.1.lines.0": {
+  "en": "No room! I'm so sorry — the stable was all I had. Who knew a King would be born there?",
+  "de": "Kein Platz mehr! Es tut mir so leid – der Stall war alles, was ich hatte. Wer hätte gedacht, dass dort ein König geboren wird?"
+ },
+ "CH.8.verse.t": {
+  "en": "For there is born to you today, in David's city, a Savior, who is Christ the Lord.",
+  "de": "Heute ist euch in der Stadt Davids der Retter geboren: Christus, der Herr!"
+ },
+ "CH.8.verse.r": {
+  "en": "Luke 2:11",
+  "de": "Lukas 2,11"
+ },
+ "CH.9.name": {
+  "en": "Sea of Galilee",
+  "de": "See Genezareth"
+ },
+ "CH.9.book": {
+  "en": "The Gospels",
+  "de": "Die Evangelien"
+ },
+ "CH.9.foe.name": {
+  "en": "Worrywave",
+  "de": "Sorgenwelle"
+ },
+ "CH.9.foe.pl": {
+  "en": null,
+  "de": "Sorgenwellen"
+ },
+ "CH.9.foe.what": {
+  "en": "shadows of worry",
+  "de": "Schatten der Sorge"
+ },
+ "CH.9.foes.0.name": {
+  "en": "Worrywave",
+  "de": "Sorgenwelle"
+ },
+ "CH.9.foes.1.name": {
+  "en": "Squall Sprite",
+  "de": "Böengeist"
+ },
+ "CH.9.foes.2.name": {
+  "en": "Deep Gloom",
+  "de": "Tiefendunkel"
+ },
+ "CH.9.boss.name": {
+  "en": "Storm of Fear",
+  "de": "Sturm der Angst"
+ },
+ "CH.9.boss.where": {
+  "en": "boat on the sea",
+  "de": "beim Boot auf dem See"
+ },
+ "CH.9.guide.name": {
+  "en": "Peter",
+  "de": "Petrus"
+ },
+ "CH.9.intro.0": {
+  "en": "Hey there! I'm Peter. I used to catch fish — now Jesus says I'll fish for people!",
+  "de": "Hallo! Ich bin Petrus. Früher habe ich Fische gefangen – jetzt sagt Jesus, ich soll Menschen für Gott gewinnen!"
+ },
+ "CH.9.intro.1": {
+  "en": "Jesus has done amazing things here: fed 5,000 people with 5 loaves and 2 fish, healed the sick, even walked on the water!",
+  "de": "Jesus hat hier unglaubliche Dinge getan: 5000 Menschen mit 5 Broten und 2 Fischen satt gemacht, Kranke geheilt und ist sogar über das Wasser gegangen!"
+ },
+ "CH.9.intro.2": {
+  "en": "But Worrywaves are stirring up the sea.",
+  "de": "Aber Sorgenwellen wühlen den See auf."
+ },
+ "CH.9.intro.3": {
+  "en": "Calm 6 Worrywaves, then face the Storm of Fear out by the boat. Don't worry — Jesus is in the boat!",
+  "de": "Beruhige 6 Düsterlinge, dann stell dich dem Sturm der Angst draußen beim Boot. Keine Sorge – Jesus ist mit im Boot!"
+ },
+ "CH.9.hint": {
+  "en": "The Storm of Fear swirls by the boat. Walk out on the pier to face it!",
+  "de": "Der Sturm der Angst tobt beim Boot. Geh über den Steg hinaus und stell dich ihm!"
+ },
+ "CH.9.outro.0": {
+  "en": "Jesus stood up and said, 'Peace, be still.' And the wind and the waves obeyed Him!",
+  "de": "Jesus ist aufgestanden und hat gesagt: „Schweig! Sei still!“ Und Wind und Wellen haben ihm gehorcht!"
+ },
+ "CH.9.outro.1": {
+  "en": "When I walked on the water and got scared, I started to sink. But Jesus caught my hand. He'll catch yours too.",
+  "de": "Als ich über das Wasser ging und Angst bekam, fing ich an zu sinken. Aber Jesus hat meine Hand gepackt. Er hält auch deine."
+ },
+ "CH.9.outro.2": {
+  "en": "Take the next Scroll piece — and the Sword of the Spirit, which is the Word of God. And a fish friend, of course!",
+  "de": "Nimm das nächste Teil der Schriftrolle – und das Schwert des Geistes, das ist Gottes Wort. Und natürlich einen Fisch als Freund!"
+ },
+ "CH.9.post": {
+  "en": "Follow Jesus — that's the best adventure there is.",
+  "de": "Folge Jesus – das ist das beste Abenteuer überhaupt."
+ },
+ "CH.9.side.name": {
+  "en": "Andrew",
+  "de": "Andreas"
+ },
+ "CH.9.side.what": {
+  "en": "loaves and fish",
+  "de": "Brote und Fische"
+ },
+ "CH.9.side.ask": {
+  "en": "A boy shared his lunch with Jesus — 5 loaves and 2 fish — but he dropped it on the hillside! Can you find all 7 pieces?",
+  "de": "Ein Junge hat Jesus sein Essen geschenkt – 5 Brote und 2 Fische –, aber er hat alles am Hang fallen lassen! Findest du alle 7 Stücke?"
+ },
+ "CH.9.side.thanks": {
+  "en": "All five loaves and both fish! Jesus can do so much with a little gift.",
+  "de": "Alle fünf Brote und beide Fische! Jesus kann mit einem kleinen Geschenk so viel machen."
+ },
+ "CH.9.flav.0.name": {
+  "en": "Matthew",
+  "de": "Matthäus"
+ },
+ "CH.9.flav.0.lines.0": {
+  "en": "I was a tax collector. Jesus said 'Follow me,' and I left everything. Best choice I ever made.",
+  "de": "Ich war Zolleinnehmer. Jesus sagte „Folge mir!“, und ich habe alles stehen lassen. Die beste Entscheidung meines Lebens."
+ },
+ "CH.9.flav.1.name": {
+  "en": "Little Girl",
+  "de": "Kleines Mädchen"
+ },
+ "CH.9.flav.1.lines.0": {
+  "en": "Jesus said 'Let the little children come to me!' He has time for everyone.",
+  "de": "Jesus hat gesagt: „Lasst die Kinder zu mir kommen!“ Er hat für alle Zeit."
+ },
+ "CH.9.verse.t": {
+  "en": "Come after me, and I will make you fishers for men.",
+  "de": "Folgt mir nach! Ich will euch zeigen, wie ihr Menschen für Gott gewinnt."
+ },
+ "CH.9.verse.r": {
+  "en": "Matthew 4:19",
+  "de": "Matthäus 4,19"
+ },
+ "CH.10.name": {
+  "en": "Jerusalem",
+  "de": "Jerusalem"
+ },
+ "CH.10.book": {
+  "en": "The Gospels · Easter",
+  "de": "Die Evangelien · Ostern"
+ },
+ "CH.10.foe.name": {
+  "en": "Doubtling",
+  "de": "Zweifling"
+ },
+ "CH.10.foe.pl": {
+  "en": null,
+  "de": "Zweiflinge"
+ },
+ "CH.10.foe.what": {
+  "en": "shadows of doubt",
+  "de": "Schatten des Zweifels"
+ },
+ "CH.10.foes.0.name": {
+  "en": "Doubtling",
+  "de": "Zweifling"
+ },
+ "CH.10.foes.1.name": {
+  "en": "Fear Spike",
+  "de": "Angststachel"
+ },
+ "CH.10.foes.2.name": {
+  "en": "Despair Drip",
+  "de": "Trübsaltropfen"
+ },
+ "CH.10.boss.name": {
+  "en": "The Shadow of Doubt",
+  "de": "Der Schatten des Zweifels"
+ },
+ "CH.10.boss.where": {
+  "en": "garden tomb",
+  "de": "beim Gartengrab"
+ },
+ "CH.10.guide.name": {
+  "en": "Mary Magdalene",
+  "de": "Maria Magdalena"
+ },
+ "CH.10.intro.0": {
+  "en": "Pilgrim, you've come so far. This is Jerusalem.",
+  "de": "Pilger, du hast einen weiten Weg hinter dir. Das hier ist Jerusalem."
+ },
+ "CH.10.intro.1": {
+  "en": "Jesus rode in on a donkey while people waved palm branches. Then He was arrested, and He died on a cross for all of us.",
+  "de": "Jesus ist auf einem Esel hereingeritten, und die Leute haben Palmzweige geschwenkt. Dann wurde er gefangen genommen und ist für uns alle am Kreuz gestorben."
+ },
+ "CH.10.intro.2": {
+  "en": "They laid Him in a tomb and rolled a great stone across it. Everything felt dark.",
+  "de": "Sie haben ihn in ein Grab gelegt und einen großen Stein davorgerollt. Alles fühlte sich dunkel an."
+ },
+ "CH.10.intro.3": {
+  "en": "The Shadow of Doubt itself is here, whispering that it's all over. Defeat 7 Doubtlings, then face the Shadow at the garden tomb!",
+  "de": "Der Schatten des Zweifels selbst ist hier und flüstert, dass alles aus ist. Besiege 7 Düsterlinge, dann stell dich dem Schatten beim Gartengrab!"
+ },
+ "CH.10.hint": {
+  "en": "The Shadow of Doubt waits at the garden tomb. Remember what Jesus promised!",
+  "de": "Der Schatten des Zweifels wartet beim Gartengrab. Denk daran, was Jesus versprochen hat!"
+ },
+ "CH.10.outro.0": {
+  "en": "Pilgrim! The stone is rolled away! The tomb is EMPTY!",
+  "de": "Pilger! Der Stein ist weggerollt! Das Grab ist LEER!"
+ },
+ "CH.10.outro.1": {
+  "en": "The angel said, 'He is not here, for he has risen, just like he said.' Jesus is alive!",
+  "de": "Der Engel hat gesagt: „Er ist nicht hier. Er ist auferstanden, genau wie er es gesagt hat!“ Jesus lebt!"
+ },
+ "CH.10.outro.2": {
+  "en": "Death and darkness could not hold Him. This is the best news in the whole story.",
+  "de": "Tod und Dunkelheit konnten ihn nicht festhalten. Das ist die beste Nachricht der ganzen Geschichte."
+ },
+ "CH.10.outro.3": {
+  "en": "Here is this piece of the Scroll. But the story isn't over — soon the good news will spread to the whole world!",
+  "de": "Hier ist dieses Teil der Schriftrolle. Aber die Geschichte ist noch nicht zu Ende – bald wird sich die gute Nachricht über die ganze Welt ausbreiten!"
+ },
+ "CH.10.post": {
+  "en": "He is risen! Go and tell everyone the good news.",
+  "de": "Er ist auferstanden! Geh und erzähl allen die gute Nachricht."
+ },
+ "CH.10.side.name": {
+  "en": "Child with palms",
+  "de": "Kind mit Palmzweigen"
+ },
+ "CH.10.side.what": {
+  "en": "palm branches",
+  "de": "Palmzweige"
+ },
+ "CH.10.side.ask": {
+  "en": "When Jesus rode in on the donkey, we waved palm branches and shouted 'Hosanna!' I lost three of mine. Can you help?",
+  "de": "Als Jesus auf dem Esel kam, haben wir Palmzweige geschwenkt und „Hosianna!“ gerufen. Drei von meinen habe ich verloren. Hilfst du mir?"
+ },
+ "CH.10.side.thanks": {
+  "en": "Hosanna! Blessed is He who comes in the name of the Lord! Thank you!",
+  "de": "Hosianna! Gelobt sei, der da kommt im Namen des Herrn! Danke! Und dieser Hahn kräht so laut, er soll dich begleiten."
+ },
+ "CH.10.flav.0.name": {
+  "en": "Thomas",
+  "de": "Thomas"
+ },
+ "CH.10.flav.0.lines.0": {
+  "en": "I'll believe it when I see it with my own eyes...",
+  "de": "Das glaube ich erst, wenn ich es mit eigenen Augen sehe ..."
+ },
+ "CH.10.flav.0.lines.1": {
+  "en": "(Later, Thomas saw Jesus and said: 'My Lord and my God!' — John 20:28)",
+  "de": "(Später sah Thomas Jesus und sagte: „Mein Herr und mein Gott!“ – Johannes 20,28)"
+ },
+ "CH.10.flav.1.name": {
+  "en": "John",
+  "de": "Johannes"
+ },
+ "CH.10.flav.1.lines.0": {
+  "en": "Tip: Courage Blast unlocks at level 5 and Wisdom Wave at level 8. You'll need them here!",
+  "de": "Tipp: Der Mutstoß kommt ab Stufe 5, die Welle der Weisheit ab Stufe 8. Hier wirst du sie brauchen!"
+ },
+ "CH.10.verse.t": {
+  "en": "He is not here, for he has risen, just like he said.",
+  "de": "Er ist nicht hier. Er ist auferstanden, genau wie er es gesagt hat!"
+ },
+ "CH.10.verse.r": {
+  "en": "Matthew 28:6",
+  "de": "Matthäus 28,6"
+ },
+ "CH.11.name": {
+  "en": "Plains of Canaan",
+  "de": "Ebene von Kanaan"
+ },
+ "CH.11.book": {
+  "en": "Genesis 11–22",
+  "de": "1. Mose 11–22"
+ },
+ "CH.11.foe.name": {
+  "en": "Fidgetling",
+  "de": "Zappelling"
+ },
+ "CH.11.foe.pl": {
+  "en": null,
+  "de": "Zappellinge"
+ },
+ "CH.11.foe.what": {
+  "en": "shadows of impatience",
+  "de": "Schatten der Ungeduld"
+ },
+ "CH.11.foes.0.name": {
+  "en": "Fidgetling",
+  "de": "Zappelling"
+ },
+ "CH.11.foes.1.name": {
+  "en": "Hurry Imp",
+  "de": "Eilwicht"
+ },
+ "CH.11.foes.2.name": {
+  "en": "Dust Grump",
+  "de": "Staubgroll"
+ },
+ "CH.11.boss.name": {
+  "en": "Tower of Babel Gloom",
+  "de": "Turm-von-Babel-Dunkel"
+ },
+ "CH.11.boss.where": {
+  "en": "tents of Abraham",
+  "de": "bei Abrahams Zelten"
+ },
+ "CH.11.guide.name": {
+  "en": "Abraham",
+  "de": "Abraham"
+ },
+ "CH.11.intro.0": {
+  "en": "Welcome, traveler! I am Abraham. Not long ago, people built a tall tower at Babel to make themselves famous instead of trusting God.",
+  "de": "Willkommen, Reisender! Ich bin Abraham. Vor Kurzem haben Menschen in Babel einen hohen Turm gebaut, um selbst berühmt zu werden, statt Gott zu vertrauen."
+ },
+ "CH.11.intro.1": {
+  "en": "God scattered them. Then He called me to leave my home and go to a land He would show me. So I went!",
+  "de": "Gott hat sie zerstreut. Dann hat er mich gerufen: Verlass deine Heimat und geh in ein Land, das ich dir zeigen werde. Also bin ich gegangen!"
+ },
+ "CH.11.intro.2": {
+  "en": "God promised me a family as many as the stars. Sarah and I have waited a long, long time.",
+  "de": "Gott hat mir so viele Nachkommen versprochen wie Sterne am Himmel. Sara und ich warten schon sehr, sehr lange."
+ },
+ "CH.11.intro.3": {
+  "en": "Fidgetlings whisper, 'Give up! It's taking too long!' Defeat 4 of them, then face the Tower of Babel Gloom by my tents.",
+  "de": "Zappellinge flüstern: „Gib auf! Das dauert viel zu lange!“ Besiege 4 Düsterlinge, dann stell dich dem Turm-von-Babel-Dunkel bei meinen Zelten."
+ },
+ "CH.11.hint": {
+  "en": "The Tower of Babel Gloom looms by my tents. Trusting God is better than building our own tower!",
+  "de": "Das Turm-von-Babel-Dunkel ragt bei meinen Zelten auf. Gott zu vertrauen ist besser, als einen eigenen Turm zu bauen!"
+ },
+ "CH.11.outro.0": {
+  "en": "The tower is down! God's way is always better than our own proud plans.",
+  "de": "Der Turm ist gefallen! Gottes Weg ist immer besser als unsere eigenen stolzen Pläne."
+ },
+ "CH.11.outro.1": {
+  "en": "And look — Sarah and I have a son, Isaac! Is anything too hard for the LORD?",
+  "de": "Und schau – Sara und ich haben einen Sohn, Isaak! Ist für den Herrn irgendetwas zu schwer?"
+ },
+ "CH.11.outro.2": {
+  "en": "Take this piece of the Scroll. And this shooting star wants to come with you — count the stars with it!",
+  "de": "Nimm dieses Teil der Schriftrolle. Und diese Sternschnuppe möchte mit dir gehen – zählt zusammen die Sterne!"
+ },
+ "CH.11.post": {
+  "en": "Look up at the stars. God keeps every promise, even when we have to wait.",
+  "de": "Schau hinauf zu den Sternen. Gott hält jedes Versprechen, auch wenn wir warten müssen."
+ },
+ "CH.11.side.name": {
+  "en": "Sarah",
+  "de": "Sara"
+ },
+ "CH.11.side.what": {
+  "en": "lost goats",
+  "de": "verlaufene Ziegen"
+ },
+ "CH.11.side.ask": {
+  "en": "Three of our goats wandered off while I was laughing at the good news! Can you find them for me?",
+  "de": "Drei unserer Ziegen sind weggelaufen, während ich über die gute Nachricht gelacht habe! Findest du sie für mich?"
+ },
+ "CH.11.side.thanks": {
+  "en": "You found them all! God made me laugh with joy. Here, take this.",
+  "de": "Du hast alle gefunden! Gott hat mich vor Freude lachen lassen. Hier, nimm das."
+ },
+ "CH.11.flav.0.name": {
+  "en": "Lot",
+  "de": "Lot"
+ },
+ "CH.11.flav.0.lines.0": {
+  "en": "I'm Abraham's nephew. He let me pick the best land first. That's what a generous heart looks like!",
+  "de": "Ich bin Abrahams Neffe. Er hat mich zuerst das beste Land aussuchen lassen. So sieht ein großzügiges Herz aus!"
+ },
+ "CH.11.flav.1.name": {
+  "en": "Isaac",
+  "de": "Isaak"
+ },
+ "CH.11.flav.1.lines.0": {
+  "en": "My name means 'he laughs'! Mom laughed when God said she'd have a baby at ninety.",
+  "de": "Mein Name bedeutet „er lacht“! Mama hat gelacht, als Gott sagte, dass sie mit neunzig ein Baby bekommt."
+ },
+ "CH.11.verse.t": {
+  "en": "Is anything too hard for the LORD?",
+  "de": "Ist für den Herrn irgendetwas zu schwer?"
+ },
+ "CH.11.verse.r": {
+  "en": "Genesis 18:14",
+  "de": "1. Mose 18,14"
+ },
+ "CH.12.name": {
+  "en": "Joseph's Journey",
+  "de": "Josefs Weg"
+ },
+ "CH.12.book": {
+  "en": "Genesis 37–50",
+  "de": "1. Mose 37–50"
+ },
+ "CH.12.foe.name": {
+  "en": "Jealousling",
+  "de": "Neidling"
+ },
+ "CH.12.foe.pl": {
+  "en": null,
+  "de": "Neidlinge"
+ },
+ "CH.12.foe.what": {
+  "en": "shadows of jealousy",
+  "de": "Schatten des Neides"
+ },
+ "CH.12.foes.0.name": {
+  "en": "Jealousling",
+  "de": "Neidling"
+ },
+ "CH.12.foes.1.name": {
+  "en": "Grudge Drip",
+  "de": "Grolltropfen"
+ },
+ "CH.12.foes.2.name": {
+  "en": "Pit Watcher",
+  "de": "Grubenglotzer"
+ },
+ "CH.12.boss.name": {
+  "en": "Green-Eyed Gloom",
+  "de": "Neid-Dunkel"
+ },
+ "CH.12.boss.where": {
+  "en": "granaries",
+  "de": "bei den Kornspeichern"
+ },
+ "CH.12.guide.name": {
+  "en": "Joseph",
+  "de": "Josef"
+ },
+ "CH.12.intro.0": {
+  "en": "Hello! I'm Joseph. My father gave me a beautiful coat of many colors.",
+  "de": "Hallo! Ich bin Josef. Mein Vater hat mir einen wunderschönen bunten Mantel geschenkt."
+ },
+ "CH.12.intro.1": {
+  "en": "My brothers were so jealous that they sold me to traders, and I ended up a slave in Egypt — then even in prison!",
+  "de": "Meine Brüder waren so neidisch, dass sie mich an Händler verkauft haben. So wurde ich Sklave in Ägypten – und kam sogar ins Gefängnis!"
+ },
+ "CH.12.intro.2": {
+  "en": "But God was with me. He helped me explain Pharaoh's dreams, and now I store grain for seven hungry years.",
+  "de": "Aber Gott war bei mir. Er hat mir geholfen, die Träume des Pharao zu deuten, und jetzt sammle ich Getreide für sieben hungrige Jahre."
+ },
+ "CH.12.intro.3": {
+  "en": "Jealouslings are stirring up trouble. Defeat 5 of them, then face the Green-Eyed Gloom by the granaries.",
+  "de": "Neidlinge stiften Unruhe. Besiege 5 Düsterlinge, dann stell dich dem Neid-Dunkel bei den Kornspeichern."
+ },
+ "CH.12.hint": {
+  "en": "The Green-Eyed Gloom guards the granaries. Jealousy only hurts — forgiveness heals!",
+  "de": "Das Neid-Dunkel bewacht die Kornspeicher. Neid tut nur weh – Vergebung heilt!"
+ },
+ "CH.12.outro.0": {
+  "en": "The jealousy is gone. My brothers came to Egypt for food... and I forgave them.",
+  "de": "Der Neid ist weg. Meine Brüder sind nach Ägypten gekommen, um Essen zu holen ... und ich habe ihnen vergeben."
+ },
+ "CH.12.outro.1": {
+  "en": "They meant to harm me, but God meant it for good — to save many people's lives.",
+  "de": "Sie wollten mir Böses tun, aber Gott hat Gutes daraus gemacht – um viele Menschen am Leben zu erhalten."
+ },
+ "CH.12.outro.2": {
+  "en": "Here's a piece of the Scroll. And this cow comes from Pharaoh's very own herd!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und diese Kuh stammt aus der Herde des Pharao!"
+ },
+ "CH.12.post": {
+  "en": "The LORD was with Joseph — and He's with you too, even in hard places.",
+  "de": "Der Herr war mit Josef – und er ist auch mit dir, sogar an schweren Orten."
+ },
+ "CH.12.side.name": {
+  "en": "Benjamin",
+  "de": "Benjamin"
+ },
+ "CH.12.side.what": {
+  "en": "silver coins",
+  "de": "Silbermünzen"
+ },
+ "CH.12.side.ask": {
+  "en": "Our silver coins ended up back in our grain sacks, and then they spilled everywhere! Can you help me find 3 of them?",
+  "de": "Unsere Silbermünzen lagen plötzlich wieder in unseren Getreidesäcken, und dann sind sie überall herausgefallen! Hilfst du mir, 3 davon zu finden?"
+ },
+ "CH.12.side.thanks": {
+  "en": "Thank you! My brother Joseph is so kind to us. Take some for yourself.",
+  "de": "Danke! Mein Bruder Josef ist so gut zu uns. Nimm dir auch etwas."
+ },
+ "CH.12.flav.0.name": {
+  "en": "Reuben",
+  "de": "Ruben"
+ },
+ "CH.12.flav.0.lines.0": {
+  "en": "I'm the oldest brother. I wish I had stood up for Joseph sooner.",
+  "de": "Ich bin der älteste Bruder. Ich wünschte, ich hätte mich früher für Josef eingesetzt."
+ },
+ "CH.12.flav.1.name": {
+  "en": "Pharaoh's Baker",
+  "de": "Bäcker des Pharao"
+ },
+ "CH.12.flav.1.lines.0": {
+  "en": "I dreamed about three baskets of bread... Joseph knew what it meant.",
+  "de": "Ich habe von drei Brotkörben geträumt ... Josef wusste, was das bedeutet."
+ },
+ "CH.12.verse.t": {
+  "en": "As for you, you meant evil against me, but God meant it for good.",
+  "de": "Ihr wolltet mir Böses tun, aber Gott hat Gutes daraus gemacht."
+ },
+ "CH.12.verse.r": {
+  "en": "Genesis 50:20",
+  "de": "1. Mose 50,20"
+ },
+ "CH.13.name": {
+  "en": "Fields of Ruth",
+  "de": "Ruts Felder"
+ },
+ "CH.13.book": {
+  "en": "Ruth 1–4",
+  "de": "Rut 1–4"
+ },
+ "CH.13.foe.name": {
+  "en": "Lonely Gloom",
+  "de": "Einsamling"
+ },
+ "CH.13.foe.pl": {
+  "en": null,
+  "de": "Einsamlinge"
+ },
+ "CH.13.foe.what": {
+  "en": "shadows of loneliness",
+  "de": "Schatten der Einsamkeit"
+ },
+ "CH.13.foes.0.name": {
+  "en": "Lonely Gloom",
+  "de": "Einsamling"
+ },
+ "CH.13.foes.1.name": {
+  "en": "Famine Wisp",
+  "de": "Hungerflämmchen"
+ },
+ "CH.13.foes.2.name": {
+  "en": "Thistle Brute",
+  "de": "Distelgroll"
+ },
+ "CH.13.boss.name": {
+  "en": "Gloom of Loneliness",
+  "de": "Dunkel der Einsamkeit"
+ },
+ "CH.13.boss.where": {
+  "en": "barley fields",
+  "de": "bei den Gerstenfeldern"
+ },
+ "CH.13.guide.name": {
+  "en": "Ruth",
+  "de": "Rut"
+ },
+ "CH.13.intro.0": {
+  "en": "Hello, friend. I'm Ruth. I'm from Moab, far from here.",
+  "de": "Hallo, mein Freund. Ich bin Rut. Ich komme aus Moab, weit weg von hier."
+ },
+ "CH.13.intro.1": {
+  "en": "When my husband died, I could have gone home. But I told Naomi, 'Where you go, I will go. Your God will be my God.'",
+  "de": "Als mein Mann starb, hätte ich nach Hause gehen können. Aber ich habe zu Noomi gesagt: „Wo du hingehst, da gehe ich auch hin. Dein Gott ist mein Gott.“"
+ },
+ "CH.13.intro.2": {
+  "en": "Now I gather leftover barley in the fields of a kind man named Boaz, so Naomi and I have food.",
+  "de": "Jetzt sammle ich übrig gebliebene Gerste auf den Feldern eines freundlichen Mannes namens Boas, damit Noomi und ich zu essen haben."
+ },
+ "CH.13.intro.3": {
+  "en": "Lonely Glooms are making people feel forgotten. Defeat 5 of them, then face the Gloom of Loneliness by the barley fields.",
+  "de": "Einsamlinge lassen Menschen sich vergessen fühlen. Besiege 5 Düsterlinge, dann stell dich dem Dunkel der Einsamkeit bei den Gerstenfeldern."
+ },
+ "CH.13.hint": {
+  "en": "The Gloom of Loneliness is near the barley fields. God never forgets anyone!",
+  "de": "Das Dunkel der Einsamkeit ist bei den Gerstenfeldern. Gott vergisst niemanden!"
+ },
+ "CH.13.outro.0": {
+  "en": "You chased away the loneliness! Boaz has been so kind — and now he and I are married.",
+  "de": "Du hast die Einsamkeit vertrieben! Boas war so freundlich – und jetzt sind wir verheiratet."
+ },
+ "CH.13.outro.1": {
+  "en": "We have a little boy named Obed. One day his grandson will be King David!",
+  "de": "Wir haben einen kleinen Jungen namens Obed. Eines Tages wird sein Enkel König David sein!"
+ },
+ "CH.13.outro.2": {
+  "en": "Take this piece of the Scroll. And this field mouse wants to help you gather shekels.",
+  "de": "Nimm dieses Teil der Schriftrolle. Und diese Feldmaus möchte dir helfen, Schekel zu sammeln."
+ },
+ "CH.13.post": {
+  "en": "Loyal love is a gift from God. Stick with the people He gives you!",
+  "de": "Treue Liebe ist ein Geschenk von Gott. Halte zu den Menschen, die er dir schenkt!"
+ },
+ "CH.13.side.name": {
+  "en": "Naomi",
+  "de": "Noomi"
+ },
+ "CH.13.side.what": {
+  "en": "barley bundles",
+  "de": "Gerstenbündel"
+ },
+ "CH.13.side.ask": {
+  "en": "Ruth works so hard in the fields. Could you gather 4 bundles of barley for us?",
+  "de": "Rut arbeitet so hart auf dem Feld. Könntest du 4 Gerstenbündel für uns sammeln?"
+ },
+ "CH.13.side.thanks": {
+  "en": "Bless you, child! God has not forgotten us after all.",
+  "de": "Gott segne dich, Kind! Gott hat uns doch nicht vergessen."
+ },
+ "CH.13.flav.0.name": {
+  "en": "Boaz",
+  "de": "Boas"
+ },
+ "CH.13.flav.0.lines.0": {
+  "en": "I told my workers to leave extra barley for Ruth. Kindness costs little and means a lot.",
+  "de": "Ich habe meinen Arbeitern gesagt, sie sollen extra Gerste für Rut liegen lassen. Freundlichkeit kostet wenig und bedeutet viel."
+ },
+ "CH.13.flav.1.name": {
+  "en": "Harvester",
+  "de": "Erntehelfer"
+ },
+ "CH.13.flav.1.lines.0": {
+  "en": "Tip: Food heals you in battle. Barley loaves are cheap at Lydia's shop!",
+  "de": "Tipp: Essen heilt dich im Kampf. Gerstenbrot ist bei Lydia ganz billig!"
+ },
+ "CH.13.verse.t": {
+  "en": "Where you go, I will go; and where you stay, I will stay. Your people will be my people, and your God my God.",
+  "de": "Wo du hingehst, da gehe ich auch hin. Dein Volk ist mein Volk, und dein Gott ist mein Gott."
+ },
+ "CH.13.verse.r": {
+  "en": "Ruth 1:16",
+  "de": "Rut 1,16"
+ },
+ "CH.14.name": {
+  "en": "Mount Carmel",
+  "de": "Berg Karmel"
+ },
+ "CH.14.book": {
+  "en": "1 Kings 17–19",
+  "de": "1. Könige 17–19"
+ },
+ "CH.14.foe.name": {
+  "en": "Fakeflame",
+  "de": "Trugflamme"
+ },
+ "CH.14.foe.pl": {
+  "en": null,
+  "de": "Trugflammen"
+ },
+ "CH.14.foe.what": {
+  "en": "shadows of false gods",
+  "de": "Schatten falscher Götter"
+ },
+ "CH.14.foes.0.name": {
+  "en": "Fakeflame",
+  "de": "Trugflamme"
+ },
+ "CH.14.foes.1.name": {
+  "en": "Drought Drip",
+  "de": "Dürretropfen"
+ },
+ "CH.14.foes.2.name": {
+  "en": "Baal Imp",
+  "de": "Baalswicht"
+ },
+ "CH.14.boss.name": {
+  "en": "The False Fire",
+  "de": "Das falsche Feuer"
+ },
+ "CH.14.boss.where": {
+  "en": "altar on Mount Carmel",
+  "de": "am Altar auf dem Karmel"
+ },
+ "CH.14.guide.name": {
+  "en": "Elijah",
+  "de": "Elia"
+ },
+ "CH.14.intro.0": {
+  "en": "I am Elijah, a prophet of the LORD. There has been no rain in the land for a long time.",
+  "de": "Ich bin Elia, ein Prophet des Herrn. Schon lange hat es im Land nicht mehr geregnet."
+ },
+ "CH.14.intro.1": {
+  "en": "God sent ravens to feed me, and He kept a widow's flour and oil from running out.",
+  "de": "Gott hat Raben geschickt, die mir Essen brachten, und er hat das Mehl und Öl einer Witwe nicht ausgehen lassen."
+ },
+ "CH.14.intro.2": {
+  "en": "Now the prophets of Baal say their false god is stronger. We will see whose God answers with fire!",
+  "de": "Jetzt sagen die Propheten Baals, ihr falscher Gott sei stärker. Wir werden sehen, welcher Gott mit Feuer antwortet!"
+ },
+ "CH.14.intro.3": {
+  "en": "Fakeflames are everywhere. Defeat 5 of them, then face the False Fire at the altar on Mount Carmel.",
+  "de": "Überall sind Trugflammen. Besiege 5 Düsterlinge, dann stell dich dem falschen Feuer am Altar auf dem Karmel."
+ },
+ "CH.14.hint": {
+  "en": "The False Fire burns at the altar. Only the LORD is God!",
+  "de": "Das falsche Feuer brennt am Altar. Nur der Herr ist Gott!"
+ },
+ "CH.14.outro.0": {
+  "en": "Fire fell from heaven and burned up the whole soaked altar! The people shouted, 'The LORD, He is God!'",
+  "de": "Feuer fiel vom Himmel und verbrannte den ganzen nassen Altar! Das Volk rief: „Der Herr ist Gott!“"
+ },
+ "CH.14.outro.1": {
+  "en": "Later I was tired and scared. God didn't speak in the wind or the earthquake or the fire — but in a gentle whisper.",
+  "de": "Später war ich müde und hatte Angst. Gott sprach nicht im Sturm, nicht im Erdbeben und nicht im Feuer – sondern in einem leisen, sanften Säuseln."
+ },
+ "CH.14.outro.2": {
+  "en": "Here's a piece of the Scroll. And this fiery horse would love to gallop beside you!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und dieses Feuerpferd würde gern neben dir galoppieren!"
+ },
+ "CH.14.post": {
+  "en": "When you feel tired or afraid, listen. God speaks gently.",
+  "de": "Wenn du müde bist oder Angst hast: Hör hin. Gott spricht sanft."
+ },
+ "CH.14.side.name": {
+  "en": "Widow of Zarephath",
+  "de": "Witwe von Sarepta"
+ },
+ "CH.14.side.what": {
+  "en": "olives for oil",
+  "de": "Oliven für Öl"
+ },
+ "CH.14.side.ask": {
+  "en": "God has kept my jar of oil from running out! But I'd like to share with my neighbors. Could you find 3 olive clusters?",
+  "de": "Gott hat meinen Ölkrug nie leer werden lassen! Aber ich möchte mit meinen Nachbarn teilen. Findest du 3 Olivenzweige?"
+ },
+ "CH.14.side.thanks": {
+  "en": "God provides more than enough. Please take this!",
+  "de": "Gott gibt mehr als genug. Bitte nimm das!"
+ },
+ "CH.14.flav.0.name": {
+  "en": "Elisha",
+  "de": "Elisa"
+ },
+ "CH.14.flav.0.lines.0": {
+  "en": "One day I'll carry on Elijah's work. For now, I'm learning to listen to God.",
+  "de": "Eines Tages werde ich Elias Arbeit weiterführen. Im Moment lerne ich, auf Gott zu hören."
+ },
+ "CH.14.flav.1.name": {
+  "en": "Obadiah",
+  "de": "Obadja"
+ },
+ "CH.14.flav.1.lines.0": {
+  "en": "I hid a hundred prophets in caves and fed them bread and water. Brave kindness!",
+  "de": "Ich habe hundert Propheten in Höhlen versteckt und ihnen Brot und Wasser gebracht. Mutige Freundlichkeit!"
+ },
+ "CH.14.verse.t": {
+  "en": "After the fire, there was a still small voice.",
+  "de": "Nach dem Feuer kam ein leises, sanftes Säuseln."
+ },
+ "CH.14.verse.r": {
+  "en": "1 Kings 19:12",
+  "de": "1. Könige 19,12"
+ },
+ "CH.15.name": {
+  "en": "Road to Nineveh",
+  "de": "Weg nach Ninive"
+ },
+ "CH.15.book": {
+  "en": "Jonah 1–4",
+  "de": "Jona 1–4"
+ },
+ "CH.15.foe.name": {
+  "en": "Runaway",
+  "de": "Ausreißer"
+ },
+ "CH.15.foe.pl": {
+  "en": null,
+  "de": "Ausreißer"
+ },
+ "CH.15.foe.what": {
+  "en": "shadows of running away",
+  "de": "Schatten des Weglaufens"
+ },
+ "CH.15.foes.0.name": {
+  "en": "Runaway",
+  "de": "Ausreißer"
+ },
+ "CH.15.foes.1.name": {
+  "en": "Sulk Spike",
+  "de": "Schmollstachel"
+ },
+ "CH.15.foes.2.name": {
+  "en": "Deep Watcher",
+  "de": "Tiefseeglotzer"
+ },
+ "CH.15.boss.name": {
+  "en": "Gloom of Running Away",
+  "de": "Weglauf-Dunkel"
+ },
+ "CH.15.boss.where": {
+  "en": "gate of Nineveh",
+  "de": "am Stadttor von Ninive"
+ },
+ "CH.15.guide.name": {
+  "en": "Jonah",
+  "de": "Jona"
+ },
+ "CH.15.intro.0": {
+  "en": "Hi... I'm Jonah. God told me to go to Nineveh and warn them. I didn't want to, so I got on a ship going the other way.",
+  "de": "Hallo ... ich bin Jona. Gott hat gesagt, ich soll nach Ninive gehen und die Stadt warnen. Ich wollte nicht, also bin ich auf ein Schiff in die andere Richtung gestiegen."
+ },
+ "CH.15.intro.1": {
+  "en": "A huge storm came, the sailors threw me overboard, and a great fish swallowed me!",
+  "de": "Ein riesiger Sturm kam, die Seeleute warfen mich über Bord, und ein großer Fisch hat mich verschluckt!"
+ },
+ "CH.15.intro.2": {
+  "en": "I prayed inside that fish for three days. Then it spat me out on the beach. Okay, God — I'm going!",
+  "de": "Drei Tage lang habe ich in dem Fisch gebetet. Dann hat er mich an den Strand gespuckt. Okay, Gott – ich gehe!"
+ },
+ "CH.15.intro.3": {
+  "en": "Runaways keep telling people to hide from God. Defeat 5 of them, then face the Gloom of Running Away at the gate of Nineveh.",
+  "de": "Ausreißer sagen den Leuten, sie sollen sich vor Gott verstecken. Besiege 5 Düsterlinge, dann stell dich dem Weglauf-Dunkel am Stadttor von Ninive."
+ },
+ "CH.15.hint": {
+  "en": "The Gloom of Running Away swirls at the city gate. You can't outrun God's love!",
+  "de": "Das Weglauf-Dunkel wirbelt am Stadttor. Vor Gottes Liebe kann man nicht davonlaufen!"
+ },
+ "CH.15.outro.0": {
+  "en": "The whole city of Nineveh turned from their wrong ways, and God forgave them!",
+  "de": "Die ganze Stadt Ninive ist von ihren falschen Wegen umgekehrt, und Gott hat ihnen vergeben!"
+ },
+ "CH.15.outro.1": {
+  "en": "I was grumpy about it at first. But God showed me He cares about every single person.",
+  "de": "Zuerst war ich deswegen schlecht gelaunt. Aber Gott hat mir gezeigt, dass ihm jeder einzelne Mensch wichtig ist."
+ },
+ "CH.15.outro.2": {
+  "en": "Here's a piece of the Scroll. And this little worm... well, it ate my shade plant. It's sorry now and wants to be friends!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und dieser kleine Wurm ... na ja, er hat meine Schattenpflanze gefressen. Jetzt tut es ihm leid, und er will dein Freund sein!"
+ },
+ "CH.15.post": {
+  "en": "God's mercy is bigger than we think — for them, and for us.",
+  "de": "Gottes Erbarmen ist größer, als wir denken – für sie und für uns."
+ },
+ "CH.15.side.name": {
+  "en": "Sailor",
+  "de": "Seemann"
+ },
+ "CH.15.side.what": {
+  "en": "seashells",
+  "de": "Muscheln"
+ },
+ "CH.15.side.ask": {
+  "en": "After the storm, our ship's lucky shells washed up all over the beach. Will you find 4 of them?",
+  "de": "Nach dem Sturm sind die Glücksmuscheln unseres Schiffes über den ganzen Strand verteilt. Findest du 4 davon?"
+ },
+ "CH.15.side.thanks": {
+  "en": "Ha! Thanks, friend. We sailors learned that only the LORD can calm the sea.",
+  "de": "Ha! Danke, Freund. Wir Seeleute haben gelernt: Nur der Herr kann das Meer beruhigen."
+ },
+ "CH.15.flav.0.name": {
+  "en": "King of Nineveh",
+  "de": "König von Ninive"
+ },
+ "CH.15.flav.0.lines.0": {
+  "en": "When I heard Jonah's warning, I took off my royal robe and asked everyone to pray. God was merciful!",
+  "de": "Als ich Jonas Warnung hörte, habe ich mein Königsgewand ausgezogen und alle gebeten zu beten. Gott war barmherzig!"
+ },
+ "CH.15.flav.1.name": {
+  "en": "Ship Captain",
+  "de": "Kapitän"
+ },
+ "CH.15.flav.1.lines.0": {
+  "en": "Tip: Animal friends with 'Freezes foes' can stop an enemy's attack for a whole turn.",
+  "de": "Tipp: Tierfreunde mit „Lässt erstarren“ können den Angriff eines Gegners für eine ganze Runde stoppen."
+ },
+ "CH.15.verse.t": {
+  "en": "Salvation belongs to the LORD.",
+  "de": "Rettung kommt allein vom Herrn."
+ },
+ "CH.15.verse.r": {
+  "en": "Jonah 2:9",
+  "de": "Jona 2,10"
+ },
+ "CH.16.name": {
+  "en": "Palace of Susa",
+  "de": "Palast von Susa"
+ },
+ "CH.16.book": {
+  "en": "Esther 1–10",
+  "de": "Ester 1–10"
+ },
+ "CH.16.foe.name": {
+  "en": "Intrigling",
+  "de": "Ränkling"
+ },
+ "CH.16.foe.pl": {
+  "en": null,
+  "de": "Ränklinge"
+ },
+ "CH.16.foe.what": {
+  "en": "shadows of wicked schemes",
+  "de": "Schatten böser Pläne"
+ },
+ "CH.16.foes.0.name": {
+  "en": "Intrigling",
+  "de": "Ränkling"
+ },
+ "CH.16.foes.1.name": {
+  "en": "Plot Imp",
+  "de": "Planwicht"
+ },
+ "CH.16.foes.2.name": {
+  "en": "Shadow Courtier",
+  "de": "Schattenhöfling"
+ },
+ "CH.16.boss.name": {
+  "en": "The Wicked Decree",
+  "de": "Der böse Erlass"
+ },
+ "CH.16.boss.where": {
+  "en": "king's palace",
+  "de": "beim Palast des Königs"
+ },
+ "CH.16.guide.name": {
+  "en": "Esther",
+  "de": "Ester"
+ },
+ "CH.16.intro.0": {
+  "en": "Welcome to the palace of Susa. I'm Esther — an orphan girl who became queen of Persia!",
+  "de": "Willkommen im Palast von Susa. Ich bin Ester – ein Waisenmädchen, das Königin von Persien wurde!"
+ },
+ "CH.16.intro.1": {
+  "en": "But wicked Haman tricked the king into sealing a decree to destroy my people.",
+  "de": "Aber der böse Haman hat den König dazu gebracht, einen Erlass zu besiegeln, der mein Volk vernichten soll."
+ },
+ "CH.16.intro.2": {
+  "en": "My cousin Mordecai said, 'Who knows if you have come to the kingdom for such a time as this?' So I will go to the king, even though it's dangerous.",
+  "de": "Mein Cousin Mordechai sagte: „Wer weiß, ob du nicht gerade für so eine Zeit wie diese Königin geworden bist?“ Also gehe ich zum König, auch wenn es gefährlich ist."
+ },
+ "CH.16.intro.3": {
+  "en": "Intriglings are spreading the evil plan. Defeat 6 of them, then tear up the Wicked Decree at the king's palace.",
+  "de": "Ränklinge verbreiten den bösen Plan. Besiege 6 Düsterlinge, dann zerreiß den bösen Erlass beim Palast des Königs."
+ },
+ "CH.16.hint": {
+  "en": "The Wicked Decree waits at the palace. Be brave — God put you here for such a time as this!",
+  "de": "Der böse Erlass wartet beim Palast. Sei mutig – Gott hat dich für so eine Zeit wie diese hierhergestellt!"
+ },
+ "CH.16.outro.0": {
+  "en": "The king held out his golden scepter, listened to me, and my people were saved!",
+  "de": "Der König hat mir sein goldenes Zepter entgegengestreckt, mir zugehört – und mein Volk wurde gerettet!"
+ },
+ "CH.16.outro.1": {
+  "en": "We celebrate it every year with the feast of Purim. God's name isn't even written in my story — but He was there the whole time.",
+  "de": "Wir feiern das jedes Jahr mit dem Purimfest. Gottes Name steht in meiner Geschichte nicht einmal – aber er war die ganze Zeit dabei."
+ },
+ "CH.16.outro.2": {
+  "en": "Take this piece of the Scroll — and this royal robe, so you remember to be brave.",
+  "de": "Nimm dieses Teil der Schriftrolle – und dieses königliche Gewand, damit du immer daran denkst, mutig zu sein."
+ },
+ "CH.16.post": {
+  "en": "You are where you are for a reason. Be brave and kind!",
+  "de": "Du bist nicht zufällig da, wo du bist. Sei mutig und freundlich!"
+ },
+ "CH.16.side.name": {
+  "en": "Mordecai",
+  "de": "Mordechai"
+ },
+ "CH.16.side.what": {
+  "en": "royal messages",
+  "de": "königliche Botschaften"
+ },
+ "CH.16.side.ask": {
+  "en": "The king's new decree lets our people defend themselves! Three message scrolls fell off the rider's horse. Can you find them?",
+  "de": "Der neue Erlass des Königs erlaubt unserem Volk, sich zu verteidigen! Drei Botschaftsrollen sind vom Pferd des Boten gefallen. Findest du sie?"
+ },
+ "CH.16.side.thanks": {
+  "en": "Now the good news can go to every province! Thank you.",
+  "de": "Jetzt kann die gute Nachricht in jede Provinz gehen! Danke."
+ },
+ "CH.16.flav.0.name": {
+  "en": "King Xerxes",
+  "de": "König Xerxes"
+ },
+ "CH.16.flav.0.lines.0": {
+  "en": "One sleepless night, I read the palace records and learned that Mordecai once saved my life!",
+  "de": "In einer schlaflosen Nacht habe ich in den Palastbüchern gelesen, dass Mordechai mir einmal das Leben gerettet hat!"
+ },
+ "CH.16.flav.1.name": {
+  "en": "Palace Maid",
+  "de": "Palastdienerin"
+ },
+ "CH.16.flav.1.lines.0": {
+  "en": "Queen Esther asked all of us to fast and pray for three days. She's so brave!",
+  "de": "Königin Ester hat uns alle gebeten, drei Tage zu fasten und zu beten. Sie ist so mutig!"
+ },
+ "CH.16.verse.t": {
+  "en": "Who knows if you haven't come to the kingdom for such a time as this?",
+  "de": "Wer weiß, ob du nicht gerade für so eine Zeit wie diese Königin geworden bist?"
+ },
+ "CH.16.verse.r": {
+  "en": "Esther 4:14",
+  "de": "Ester 4,14"
+ },
+ "CH.17.name": {
+  "en": "Pentecost",
+  "de": "Pfingsten"
+ },
+ "CH.17.book": {
+  "en": "Acts 1–4",
+  "de": "Apostelgeschichte 1–4"
+ },
+ "CH.17.foe.name": {
+  "en": "Shyling",
+  "de": "Schüchterling"
+ },
+ "CH.17.foe.pl": {
+  "en": null,
+  "de": "Schüchterlinge"
+ },
+ "CH.17.foe.what": {
+  "en": "shadows of fear and silence",
+  "de": "Schatten von Angst und Schweigen"
+ },
+ "CH.17.foes.0.name": {
+  "en": "Shyling",
+  "de": "Schüchterling"
+ },
+ "CH.17.foes.1.name": {
+  "en": "Hush Wisp",
+  "de": "Pssst-Flämmchen"
+ },
+ "CH.17.foes.2.name": {
+  "en": "Muffle Drip",
+  "de": "Dämpftropfen"
+ },
+ "CH.17.boss.name": {
+  "en": "Gloom of Silence",
+  "de": "Dunkel des Schweigens"
+ },
+ "CH.17.boss.where": {
+  "en": "upper room",
+  "de": "beim Obergemach"
+ },
+ "CH.17.guide.name": {
+  "en": "Mary, mother of Jesus",
+  "de": "Maria, die Mutter von Jesus"
+ },
+ "CH.17.intro.0": {
+  "en": "Peace to you. I'm Mary, the mother of Jesus. After Jesus rose, He went back to heaven from the Mount of Olives.",
+  "de": "Friede sei mit dir. Ich bin Maria, die Mutter von Jesus. Nach seiner Auferstehung ist Jesus vom Ölberg aus in den Himmel zurückgekehrt."
+ },
+ "CH.17.intro.1": {
+  "en": "He told us to wait in Jerusalem for the Holy Spirit. So we've been praying together in the upper room.",
+  "de": "Er hat uns gesagt, wir sollen in Jerusalem auf den Heiligen Geist warten. Darum beten wir gemeinsam im Obergemach."
+ },
+ "CH.17.intro.2": {
+  "en": "But Shylings keep whispering, 'Stay quiet. Don't tell anyone about Jesus.'",
+  "de": "Aber Schüchterlinge flüstern ständig: „Sei still. Erzähl niemandem von Jesus.“"
+ },
+ "CH.17.intro.3": {
+  "en": "Defeat 6 of them, then face the Gloom of Silence at the upper room.",
+  "de": "Besiege 6 Düsterlinge, dann stell dich dem Dunkel des Schweigens beim Obergemach."
+ },
+ "CH.17.hint": {
+  "en": "The Gloom of Silence hangs over the upper room. God gives us courage to speak!",
+  "de": "Das Dunkel des Schweigens hängt über dem Obergemach. Gott schenkt uns Mut zum Reden!"
+ },
+ "CH.17.outro.0": {
+  "en": "A sound like a mighty wind filled the house, and flames like fire rested on each of us. The Holy Spirit came!",
+  "de": "Ein Brausen wie ein gewaltiger Sturm erfüllte das Haus, und Flammen wie Feuer ließen sich auf jedem von uns nieder. Der Heilige Geist ist gekommen!"
+ },
+ "CH.17.outro.1": {
+  "en": "Peter stood up and told the crowd about Jesus, and about three thousand people believed that very day!",
+  "de": "Petrus stand auf und erzählte der Menge von Jesus – und an diesem einen Tag kamen etwa dreitausend Menschen zum Glauben!"
+ },
+ "CH.17.outro.2": {
+  "en": "Here's a piece of the Scroll — and a little Spirit Flame to keep you warm and brave.",
+  "de": "Hier ist ein Teil der Schriftrolle – und eine kleine Geistflamme, die dich warm und mutig hält."
+ },
+ "CH.17.post": {
+  "en": "The same Holy Spirit gives courage to everyone who follows Jesus.",
+  "de": "Derselbe Heilige Geist schenkt allen Mut, die Jesus folgen."
+ },
+ "CH.17.side.name": {
+  "en": "Visitor from Egypt",
+  "de": "Besucher aus Ägypten"
+ },
+ "CH.17.side.what": {
+  "en": "lamps",
+  "de": "Lampen"
+ },
+ "CH.17.side.ask": {
+  "en": "I came for the feast and heard the disciples speak in my own language! We're meeting tonight — could you find 3 lamps?",
+  "de": "Ich bin zum Fest gekommen und habe die Jünger in meiner eigenen Sprache reden hören! Heute Abend treffen wir uns – findest du 3 Lampen?"
+ },
+ "CH.17.side.thanks": {
+  "en": "Now everyone can see! People from every nation are hearing the good news.",
+  "de": "Jetzt können alle sehen! Menschen aus allen Völkern hören die gute Nachricht."
+ },
+ "CH.17.flav.0.name": {
+  "en": "Peter",
+  "de": "Petrus"
+ },
+ "CH.17.flav.0.lines.0": {
+  "en": "I once said three times that I didn't know Jesus. Now I'm not afraid to tell thousands!",
+  "de": "Früher habe ich dreimal gesagt, dass ich Jesus nicht kenne. Jetzt habe ich keine Angst mehr, es Tausenden zu erzählen!"
+ },
+ "CH.17.flav.1.name": {
+  "en": "Stephen",
+  "de": "Stephanus"
+ },
+ "CH.17.flav.1.lines.0": {
+  "en": "I help hand out food to widows so no one is left out. Serving is part of following Jesus.",
+  "de": "Ich helfe, Essen an Witwen zu verteilen, damit niemand vergessen wird. Dienen gehört dazu, wenn man Jesus folgt."
+ },
+ "CH.17.verse.t": {
+  "en": "But you will receive power when the Holy Spirit has come upon you.",
+  "de": "Ihr werdet Kraft bekommen, wenn der Heilige Geist auf euch kommt."
+ },
+ "CH.17.verse.r": {
+  "en": "Acts 1:8",
+  "de": "Apostelgeschichte 1,8"
+ },
+ "CH.18.name": {
+  "en": "Paul's Voyage",
+  "de": "Paulus auf Reisen"
+ },
+ "CH.18.book": {
+  "en": "Acts 9–28",
+  "de": "Apostelgeschichte 9–28"
+ },
+ "CH.18.foe.name": {
+  "en": "Chainling",
+  "de": "Kettling"
+ },
+ "CH.18.foe.pl": {
+  "en": null,
+  "de": "Kettlinge"
+ },
+ "CH.18.foe.what": {
+  "en": "shadows that try to stop the good news",
+  "de": "Schatten, die die gute Nachricht aufhalten wollen"
+ },
+ "CH.18.foes.0.name": {
+  "en": "Chainling",
+  "de": "Kettling"
+ },
+ "CH.18.foes.1.name": {
+  "en": "Shipwreck Spike",
+  "de": "Wrackstachel"
+ },
+ "CH.18.foes.2.name": {
+  "en": "Viper Gloom",
+  "de": "Viperndunkel"
+ },
+ "CH.18.boss.name": {
+  "en": "Chains of Fear",
+  "de": "Ketten der Angst"
+ },
+ "CH.18.boss.where": {
+  "en": "shipwreck",
+  "de": "beim Schiffswrack"
+ },
+ "CH.18.guide.name": {
+  "en": "Paul",
+  "de": "Paulus"
+ },
+ "CH.18.intro.0": {
+  "en": "Grace and peace to you! I'm Paul. I used to fight against Jesus' followers — until Jesus met me on the road to Damascus.",
+  "de": "Gnade und Friede sei mit dir! Ich bin Paulus. Früher habe ich die Freunde von Jesus verfolgt – bis Jesus mir auf dem Weg nach Damaskus begegnet ist."
+ },
+ "CH.18.intro.1": {
+  "en": "Since then I've traveled across the sea telling everyone the good news. I've been in prison and in shipwrecks!",
+  "de": "Seitdem reise ich übers Meer und erzähle allen die gute Nachricht. Ich war im Gefängnis und habe Schiffbruch erlebt!"
+ },
+ "CH.18.intro.2": {
+  "en": "Our ship just broke apart off the island of Malta, but God kept every single person safe.",
+  "de": "Unser Schiff ist gerade vor der Insel Malta zerbrochen, aber Gott hat jeden einzelnen Menschen bewahrt."
+ },
+ "CH.18.intro.3": {
+  "en": "Chainlings want to stop the good news. Defeat 7 of them, then face the Chains of Fear by the shipwreck.",
+  "de": "Kettlinge wollen die gute Nachricht aufhalten. Besiege 7 Düsterlinge, dann stell dich den Ketten der Angst beim Schiffswrack."
+ },
+ "CH.18.hint": {
+  "en": "The Chains of Fear rattle by the shipwreck. Nothing can separate us from God's love!",
+  "de": "Die Ketten der Angst rasseln beim Schiffswrack. Nichts kann uns von Gottes Liebe trennen!"
+ },
+ "CH.18.outro.0": {
+  "en": "The chains are broken! In Philippi, Silas and I sang in prison at midnight — and God shook the prison doors open.",
+  "de": "Die Ketten sind zerbrochen! In Philippi haben Silas und ich um Mitternacht im Gefängnis gesungen – und Gott hat die Gefängnistüren aufspringen lassen."
+ },
+ "CH.18.outro.1": {
+  "en": "Now I'm going to Rome. Even if I'm in chains, the good news can't be chained!",
+  "de": "Jetzt reise ich nach Rom. Auch wenn ich in Ketten bin – die gute Nachricht lässt sich nicht anketten!"
+ },
+ "CH.18.outro.2": {
+  "en": "This is the very last piece of the Scroll of Light. Take it to Simeon in Pilgrim's Rest. And take this sailboat — your journey goes on!",
+  "de": "Das ist das allerletzte Teil der Schriftrolle des Lichts. Bring es zu Simeon in die Pilgerrast. Und nimm dieses Segelboot mit – deine Reise geht weiter!"
+ },
+ "CH.18.post": {
+  "en": "I have fought the good fight. I have finished the course. I have kept the faith. Keep going, friend!",
+  "de": "Ich habe den guten Kampf gekämpft, den Lauf vollendet und den Glauben bewahrt. Mach weiter, Freund!"
+ },
+ "CH.18.side.name": {
+  "en": "Luke",
+  "de": "Lukas"
+ },
+ "CH.18.side.what": {
+  "en": "Paul's letters",
+  "de": "Briefe von Paulus"
+ },
+ "CH.18.side.ask": {
+  "en": "I'm Luke, a doctor and Paul's friend. Paul's letters to the churches blew across the beach! Can you find all 4?",
+  "de": "Ich bin Lukas, Arzt und Freund von Paulus. Paulus’ Briefe an die Gemeinden sind über den Strand geweht! Findest du alle 4?"
+ },
+ "CH.18.side.thanks": {
+  "en": "Wonderful! These letters will encourage churches for thousands of years.",
+  "de": "Wunderbar! Diese Briefe werden Gemeinden noch Tausende Jahre ermutigen."
+ },
+ "CH.18.flav.0.name": {
+  "en": "Silas",
+  "de": "Silas"
+ },
+ "CH.18.flav.0.lines.0": {
+  "en": "Paul and I sang hymns in prison at midnight. Then — an earthquake! Praise can shake things up.",
+  "de": "Paulus und ich haben um Mitternacht im Gefängnis Loblieder gesungen. Dann – ein Erdbeben! Lob kann einiges in Bewegung bringen."
+ },
+ "CH.18.flav.1.name": {
+  "en": "Timothy",
+  "de": "Timotheus"
+ },
+ "CH.18.flav.1.lines.0": {
+  "en": "Paul told me, 'Don't let anyone look down on you because you are young.' That's for you too!",
+  "de": "Paulus hat mir gesagt: „Lass dich von niemandem geringschätzen, nur weil du jung bist.“ Das gilt auch für dich!"
+ },
+ "CH.18.verse.t": {
+  "en": "I have fought the good fight. I have finished the course. I have kept the faith.",
+  "de": "Ich habe den guten Kampf gekämpft, den Lauf vollendet und den Glauben bewahrt."
+ },
+ "CH.18.verse.r": {
+  "en": "2 Timothy 4:7",
+  "de": "2. Timotheus 4,7"
+ },
+ "CH.19.name": {
+  "en": "Oak of Ophrah",
+  "de": "Eiche von Ofra"
+ },
+ "CH.19.book": {
+  "en": "Judges 6–7",
+  "de": "Richter 6–7"
+ },
+ "CH.19.foe.name": {
+  "en": "Cowerling",
+  "de": "Zitterling"
+ },
+ "CH.19.foe.pl": {
+  "en": null,
+  "de": "Zitterlinge"
+ },
+ "CH.19.foe.what": {
+  "en": "shadows of fear",
+  "de": "Schatten der Angst"
+ },
+ "CH.19.foes.0.name": {
+  "en": "Cowerling",
+  "de": "Zitterling"
+ },
+ "CH.19.foes.1.name": {
+  "en": "Panic Imp",
+  "de": "Panikwicht"
+ },
+ "CH.19.foes.2.name": {
+  "en": "Doubt Drip",
+  "de": "Zweifeltropfen"
+ },
+ "CH.19.boss.name": {
+  "en": "The Midian Horde Gloom",
+  "de": "Midianiter-Horden-Dunkel"
+ },
+ "CH.19.boss.where": {
+  "en": "oak of Ophrah",
+  "de": "bei der Eiche von Ofra"
+ },
+ "CH.19.guide.name": {
+  "en": "Gideon",
+  "de": "Gideon"
+ },
+ "CH.19.intro.0": {
+  "en": "Shh! Over here, behind the winepress. I'm Gideon. I'm threshing wheat down here so the Midianites won't see it and steal it.",
+  "de": "Psst! Hier drüben, hinter der Weinpresse. Ich bin Gideon. Ich dresche den Weizen hier unten, damit die Midianiter ihn nicht sehen und stehlen."
+ },
+ "CH.19.intro.1": {
+  "en": "Every harvest, their huge army sweeps in like a swarm of locusts. Everyone is afraid — me too!",
+  "de": "Bei jeder Ernte fällt ihr riesiges Heer über uns her wie ein Heuschreckenschwarm. Alle haben Angst – ich auch!"
+ },
+ "CH.19.intro.2": {
+  "en": "Then the angel of the LORD sat under this oak and said, 'The LORD is with you, you mighty man of valor!' Me? I'm the least in my whole family!",
+  "de": "Dann hat sich der Engel des Herrn unter diese Eiche gesetzt und gesagt: „Der Herr ist mit dir, du starker Held!“ Ich? Ich bin doch der Kleinste in meiner ganzen Familie!"
+ },
+ "CH.19.intro.3": {
+  "en": "Cowerlings keep whispering, 'You're too small. Hide!' Defeat 5 of them, then face the Midian Horde Gloom by the oak of Ophrah.",
+  "de": "Zitterlinge flüstern ständig: „Du bist zu klein. Versteck dich!“ Besiege 5 Düsterlinge, dann stell dich dem Midianiter-Horden-Dunkel bei der Eiche von Ofra."
+ },
+ "CH.19.hint": {
+  "en": "The Midian Horde Gloom looms by the oak. It looks huge — but God is bigger!",
+  "de": "Das Midianiter-Horden-Dunkel ragt bei der Eiche auf. Es sieht riesig aus – aber Gott ist größer!"
+ },
+ "CH.19.outro.0": {
+  "en": "God made our army smaller — just 300 of us — so everyone would know the victory was His.",
+  "de": "Gott hat unser Heer kleiner gemacht – nur noch 300 Mann –, damit alle wissen: Der Sieg kommt von ihm."
+ },
+ "CH.19.outro.1": {
+  "en": "At night we blew our trumpets, broke our jars, held up our torches and shouted, 'The sword of the LORD and of Gideon!' The whole huge army ran away!",
+  "de": "In der Nacht haben wir in die Posaunen geblasen, die Krüge zerschlagen, die Fackeln hochgehalten und gerufen: „Das Schwert des Herrn und Gideons!“ Das ganze riesige Heer ist davongelaufen!"
+ },
+ "CH.19.outro.2": {
+  "en": "Here's a piece of the Scroll. And this owl watched the whole night from the oak tree — it wants to come with you!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und diese Eule hat die ganze Nacht von der Eiche aus zugeschaut – sie möchte mit dir kommen!"
+ },
+ "CH.19.post": {
+  "en": "You don't have to feel strong. When God is with you, you are braver than you think.",
+  "de": "Du musst dich nicht stark fühlen. Wenn Gott mit dir ist, bist du mutiger, als du denkst."
+ },
+ "CH.19.side.name": {
+  "en": "Purah",
+  "de": "Pura"
+ },
+ "CH.19.side.what": {
+  "en": "clay jars",
+  "de": "Tonkrüge"
+ },
+ "CH.19.side.ask": {
+  "en": "I'm Purah, Gideon's helper. We need clay jars to hide the torches for tonight, but 3 of them rolled down the hill! Can you find them?",
+  "de": "Ich bin Pura, Gideons Helfer. Wir brauchen Tonkrüge, um heute Nacht die Fackeln zu verstecken, aber 3 davon sind den Hügel hinuntergerollt! Findest du sie?"
+ },
+ "CH.19.side.thanks": {
+  "en": "Perfect! Tonight these jars will break — and the light will shine out! Take this.",
+  "de": "Perfekt! Heute Nacht werden diese Krüge zerbrechen – und das Licht wird herausstrahlen! Nimm das."
+ },
+ "CH.19.flav.0.name": {
+  "en": "Joash",
+  "de": "Joasch"
+ },
+ "CH.19.flav.0.lines.0": {
+  "en": "I'm Gideon's father. When people were angry that he tore down Baal's altar, I said, 'If Baal is a god, let him stand up for himself!'",
+  "de": "Ich bin Gideons Vater. Als die Leute wütend waren, weil er Baals Altar umgerissen hatte, habe ich gesagt: „Wenn Baal ein Gott ist, soll er sich doch selbst verteidigen!“"
+ },
+ "CH.19.flav.1.name": {
+  "en": "One of the 300",
+  "de": "Einer der 300"
+ },
+ "CH.19.flav.1.lines.0": {
+  "en": "God chose us by how we drank at the spring. I scooped the water up in my hand and lapped it. Only 300 of us did that!",
+  "de": "Gott hat uns danach ausgesucht, wie wir an der Quelle getrunken haben. Ich habe das Wasser mit der Hand geschöpft und aufgeleckt. Nur 300 von uns haben das so gemacht!"
+ },
+ "CH.19.verse.t": {
+  "en": "The LORD is with you, you mighty man of valor!",
+  "de": "Der Herr ist mit dir, du starker Held!"
+ },
+ "CH.19.verse.r": {
+  "en": "Judges 6:12",
+  "de": "Richter 6,12"
+ },
+ "CH.20.name": {
+  "en": "Hills of Zorah",
+  "de": "Hügel von Zora"
+ },
+ "CH.20.book": {
+  "en": "Judges 13–16",
+  "de": "Richter 13–16"
+ },
+ "CH.20.foe.name": {
+  "en": "Braggling",
+  "de": "Prahlling"
+ },
+ "CH.20.foe.pl": {
+  "en": null,
+  "de": "Prahllinge"
+ },
+ "CH.20.foe.what": {
+  "en": "shadows of pride",
+  "de": "Schatten des Stolzes"
+ },
+ "CH.20.foes.0.name": {
+  "en": "Braggling",
+  "de": "Prahlling"
+ },
+ "CH.20.foes.1.name": {
+  "en": "Boast Imp",
+  "de": "Angeberwicht"
+ },
+ "CH.20.foes.2.name": {
+  "en": "Broken-Vow Drip",
+  "de": "Wortbruchtropfen"
+ },
+ "CH.20.boss.name": {
+  "en": "Gloom of Pride",
+  "de": "Dunkel des Stolzes"
+ },
+ "CH.20.boss.where": {
+  "en": "temple of Dagon",
+  "de": "beim Tempel Dagons"
+ },
+ "CH.20.guide.name": {
+  "en": "Samson's Mother",
+  "de": "Simsons Mutter"
+ },
+ "CH.20.intro.0": {
+  "en": "Welcome to Zorah. I'm Samson's mother. One day the angel of the LORD told my husband Manoah and me that we would have a son.",
+  "de": "Willkommen in Zora. Ich bin Simsons Mutter. Eines Tages hat der Engel des Herrn meinem Mann Manoach und mir gesagt, dass wir einen Sohn bekommen."
+ },
+ "CH.20.intro.1": {
+  "en": "Samson would be a Nazirite, set apart for God, and his hair would never be cut. God's Spirit made him amazingly strong — he even stopped a lion with his bare hands!",
+  "de": "Simson sollte ein Nasiräer sein, ganz für Gott bestimmt, und seine Haare sollten nie geschnitten werden. Gottes Geist machte ihn unglaublich stark – er hat sogar einen Löwen mit bloßen Händen besiegt!"
+ },
+ "CH.20.intro.2": {
+  "en": "But Samson grew proud. He broke his promises and told Delilah the secret of his strength. Now the Philistines have captured him and are celebrating in the temple of their false god, Dagon.",
+  "de": "Aber Simson wurde stolz. Er hat seine Versprechen gebrochen und Delila das Geheimnis seiner Kraft verraten. Jetzt haben die Philister ihn gefangen und feiern im Tempel ihres falschen Gottes Dagon."
+ },
+ "CH.20.intro.3": {
+  "en": "Bragglings are puffing everyone up with pride. Defeat 5 of them, then face the Gloom of Pride at the temple of Dagon.",
+  "de": "Prahllinge blasen alle mit Stolz auf. Besiege 5 Düsterlinge, dann stell dich dem Dunkel des Stolzes beim Tempel Dagons."
+ },
+ "CH.20.hint": {
+  "en": "The Gloom of Pride waits at the temple. Real strength comes from God, not from ourselves!",
+  "de": "Das Dunkel des Stolzes wartet beim Tempel. Echte Stärke kommt von Gott, nicht von uns selbst!"
+ },
+ "CH.20.outro.0": {
+  "en": "While Samson was a prisoner, his hair began to grow again — and his heart turned back to God.",
+  "de": "Während Simson gefangen war, wuchsen seine Haare wieder – und sein Herz kehrte zu Gott zurück."
+ },
+ "CH.20.outro.1": {
+  "en": "He prayed, 'Lord GOD, remember me, please, and strengthen me only this once!' God heard him, and the two great pillars of Dagon's temple came crashing down.",
+  "de": "Er betete: „Herr, mein Gott, denk an mich und gib mir noch dieses eine Mal Kraft!“ Gott hat ihn gehört, und die zwei großen Säulen von Dagons Tempel stürzten ein."
+ },
+ "CH.20.outro.2": {
+  "en": "Here's a piece of the Scroll. And this bee wants to buzz along with you — Samson once found honey in a very surprising place!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und diese Biene möchte mit dir summen – Simson hat einmal Honig an einem sehr überraschenden Ort gefunden!"
+ },
+ "CH.20.post": {
+  "en": "Even when we break our promises, God hears us when we turn back to Him.",
+  "de": "Auch wenn wir unsere Versprechen brechen: Gott hört uns, wenn wir zu ihm umkehren."
+ },
+ "CH.20.side.name": {
+  "en": "Manoah",
+  "de": "Manoach"
+ },
+ "CH.20.side.what": {
+  "en": "honeycombs",
+  "de": "Honigwaben"
+ },
+ "CH.20.side.ask": {
+  "en": "I'm Manoah, Samson's father. Samson once brought honey home and shared it with us. Wild bees have left honeycombs all over the hills! Can you find 3?",
+  "de": "Ich bin Manoach, Simsons Vater. Simson hat einmal Honig mit nach Hause gebracht und mit uns geteilt. Wilde Bienen haben überall in den Hügeln Honigwaben gelassen! Findest du 3?"
+ },
+ "CH.20.side.thanks": {
+  "en": "How sweet! Every good gift comes from God. Here, take this.",
+  "de": "Wie süß! Jede gute Gabe kommt von Gott. Hier, nimm das."
+ },
+ "CH.20.flav.0.name": {
+  "en": "Boy from the Temple",
+  "de": "Junge aus dem Tempel"
+ },
+ "CH.20.flav.0.lines.0": {
+  "en": "I was the boy who held Samson's hand in the temple. He asked me to let him feel the two big pillars... and then he prayed.",
+  "de": "Ich war der Junge, der Simson im Tempel an der Hand geführt hat. Er bat mich, ihn die zwei großen Säulen fühlen zu lassen ... und dann hat er gebetet."
+ },
+ "CH.20.flav.1.name": {
+  "en": "Neighbor from Zorah",
+  "de": "Nachbar aus Zora"
+ },
+ "CH.20.flav.1.lines.0": {
+  "en": "Samson's long hair wasn't magic. It was a sign of his promise to God. His strength always came from God!",
+  "de": "Simsons lange Haare waren kein Zauber. Sie waren ein Zeichen für sein Versprechen an Gott. Seine Kraft kam immer von Gott!"
+ },
+ "CH.20.verse.t": {
+  "en": "Lord GOD, remember me, please, and strengthen me, please, only this once.",
+  "de": "Herr, mein Gott, denk an mich und gib mir noch dieses eine Mal Kraft!"
+ },
+ "CH.20.verse.r": {
+  "en": "Judges 16:28",
+  "de": "Richter 16,28"
+ },
+ "CH.21.name": {
+  "en": "Walls of Jerusalem",
+  "de": "Mauern von Jerusalem"
+ },
+ "CH.21.book": {
+  "en": "Nehemiah 1–6",
+  "de": "Nehemia 1–6"
+ },
+ "CH.21.foe.name": {
+  "en": "Mockling",
+  "de": "Spöttling"
+ },
+ "CH.21.foe.pl": {
+  "en": null,
+  "de": "Spöttlinge"
+ },
+ "CH.21.foe.what": {
+  "en": "shadows of discouragement",
+  "de": "Schatten der Entmutigung"
+ },
+ "CH.21.foes.0.name": {
+  "en": "Mockling",
+  "de": "Spöttling"
+ },
+ "CH.21.foes.1.name": {
+  "en": "Rubble Brute",
+  "de": "Schuttgroll"
+ },
+ "CH.21.foes.2.name": {
+  "en": "Sneer Wisp",
+  "de": "Hohnflämmchen"
+ },
+ "CH.21.boss.name": {
+  "en": "Gloom of Discouragement",
+  "de": "Dunkel der Entmutigung"
+ },
+ "CH.21.boss.where": {
+  "en": "Valley Gate",
+  "de": "beim Taltor"
+ },
+ "CH.21.guide.name": {
+  "en": "Nehemiah",
+  "de": "Nehemia"
+ },
+ "CH.21.intro.0": {
+  "en": "Welcome! I'm Nehemiah. I was the cupbearer for King Artaxerxes in the palace of Susa.",
+  "de": "Willkommen! Ich bin Nehemia. Ich war der Mundschenk von König Artaxerxes im Palast von Susa."
+ },
+ "CH.21.intro.1": {
+  "en": "When I heard that Jerusalem's walls were broken down and its gates burned, I sat down and cried. Then I prayed for days.",
+  "de": "Als ich hörte, dass die Mauern Jerusalems eingerissen und die Tore verbrannt waren, habe ich mich hingesetzt und geweint. Dann habe ich tagelang gebetet."
+ },
+ "CH.21.intro.2": {
+  "en": "The king let me come and rebuild! Everyone is working together, family by family. But Sanballat and Tobiah keep making fun of us.",
+  "de": "Der König hat mich gehen lassen, um alles wieder aufzubauen! Alle arbeiten zusammen, Familie für Familie. Aber Sanballat und Tobija machen sich ständig über uns lustig."
+ },
+ "CH.21.intro.3": {
+  "en": "Mocklings shout, 'You'll never finish!' Defeat 6 of them, then face the Gloom of Discouragement at the Valley Gate.",
+  "de": "Spöttlinge rufen: „Ihr werdet nie fertig!“ Besiege 6 Düsterlinge, dann stell dich dem Dunkel der Entmutigung beim Taltor."
+ },
+ "CH.21.hint": {
+  "en": "The Gloom of Discouragement lurks by the Valley Gate. Don't be afraid — remember the Lord!",
+  "de": "Das Dunkel der Entmutigung lauert beim Taltor. Hab keine Angst – denk an den Herrn!"
+ },
+ "CH.21.outro.0": {
+  "en": "The mocking is over! We built with one hand and kept watch with the other — and God helped us.",
+  "de": "Das Spotten ist vorbei! Wir haben mit einer Hand gebaut und mit der anderen Wache gehalten – und Gott hat uns geholfen."
+ },
+ "CH.21.outro.1": {
+  "en": "The wall was finished in just 52 days! Even our enemies knew this work was done with the help of our God.",
+  "de": "Die Mauer war in nur 52 Tagen fertig! Sogar unsere Feinde merkten, dass dieses Werk mit der Hilfe unseres Gottes geschafft wurde."
+ },
+ "CH.21.outro.2": {
+  "en": "Here's a piece of the Scroll. And this turtle is as steady as a strong wall — it will shield you!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und diese Schildkröte ist so standfest wie eine starke Mauer – sie wird dich beschützen!"
+ },
+ "CH.21.post": {
+  "en": "When people laugh at the good work you're doing, pray and keep building!",
+  "de": "Wenn andere über das Gute lachen, das du tust: Bete und bau weiter!"
+ },
+ "CH.21.side.name": {
+  "en": "Shallum's Daughter",
+  "de": "Schallums Tochter"
+ },
+ "CH.21.side.what": {
+  "en": "building stones",
+  "de": "Bausteine"
+ },
+ "CH.21.side.ask": {
+  "en": "My father Shallum, my sisters and I are repairing our part of the wall! We need 4 more building stones. Can you find them?",
+  "de": "Mein Vater Schallum, meine Schwestern und ich reparieren unser Stück der Mauer! Wir brauchen noch 4 Bausteine. Findest du sie?"
+ },
+ "CH.21.side.thanks": {
+  "en": "Thank you! Every pair of hands matters when God's people build together.",
+  "de": "Danke! Jede helfende Hand zählt, wenn Gottes Volk zusammen baut."
+ },
+ "CH.21.flav.0.name": {
+  "en": "King Artaxerxes",
+  "de": "König Artaxerxes"
+ },
+ "CH.21.flav.0.lines.0": {
+  "en": "Nehemiah looked so sad when he brought my wine. I asked him why — then I sent him off with letters and timber to rebuild!",
+  "de": "Nehemia sah so traurig aus, als er mir den Wein brachte. Ich fragte ihn, warum – und dann schickte ich ihn mit Briefen und Bauholz los, um alles wieder aufzubauen!"
+ },
+ "CH.21.flav.1.name": {
+  "en": "Watchman",
+  "de": "Wächter"
+ },
+ "CH.21.flav.1.lines.0": {
+  "en": "If you hear my trumpet, run to me! Nehemiah says, 'Our God will fight for us.'",
+  "de": "Wenn du meine Posaune hörst, komm schnell zu mir! Nehemia sagt: „Unser Gott wird für uns kämpfen.“"
+ },
+ "CH.21.verse.t": {
+  "en": "Don't be afraid of them! Remember the Lord, who is great and awesome.",
+  "de": "Habt keine Angst vor ihnen! Denkt an den Herrn, der groß und mächtig ist."
+ },
+ "CH.21.verse.r": {
+  "en": "Nehemiah 4:14",
+  "de": "Nehemia 4,8"
+ },
+ "CH.22.name": {
+  "en": "Road of Parables",
+  "de": "Weg der Gleichnisse"
+ },
+ "CH.22.book": {
+  "en": "Luke 10 · 15 · 19",
+  "de": "Lukas 10 · 15 · 19"
+ },
+ "CH.22.foe.name": {
+  "en": "Strayling",
+  "de": "Streunling"
+ },
+ "CH.22.foe.pl": {
+  "en": null,
+  "de": "Streunlinge"
+ },
+ "CH.22.foe.what": {
+  "en": "shadows that lead people away from God",
+  "de": "Schatten, die Menschen von Gott wegführen"
+ },
+ "CH.22.foes.0.name": {
+  "en": "Strayling",
+  "de": "Streunling"
+ },
+ "CH.22.foes.1.name": {
+  "en": "Wander Wisp",
+  "de": "Irrlicht"
+ },
+ "CH.22.foes.2.name": {
+  "en": "Mud Drip",
+  "de": "Matschtropfen"
+ },
+ "CH.22.boss.name": {
+  "en": "Gloom of Wandering Away",
+  "de": "Dunkel des Verirrens"
+ },
+ "CH.22.boss.where": {
+  "en": "father's house",
+  "de": "beim Haus des Vaters"
+ },
+ "CH.22.guide.name": {
+  "en": "John",
+  "de": "Johannes"
+ },
+ "CH.22.intro.0": {
+  "en": "Hi, I'm John, one of Jesus' disciples. Jesus loves to teach with stories called parables.",
+  "de": "Hallo, ich bin Johannes, einer der Jünger von Jesus. Jesus erzählt gern Geschichten, die man Gleichnisse nennt."
+ },
+ "CH.22.intro.1": {
+  "en": "A Samaritan stopped to help a hurt stranger on the road. A shepherd left 99 sheep to find one lost sheep. A woman swept her whole house for one lost coin.",
+  "de": "Ein Samariter hielt an, um einem verletzten Fremden am Weg zu helfen. Ein Hirte ließ 99 Schafe zurück, um ein verlorenes Schaf zu suchen. Eine Frau fegte ihr ganzes Haus nach einer verlorenen Münze ab."
+ },
+ "CH.22.intro.2": {
+  "en": "And a son ran away from home and wasted everything — but his father never stopped watching the road for him.",
+  "de": "Und ein Sohn lief von zu Hause weg und verschwendete alles – aber sein Vater hörte nie auf, nach ihm Ausschau zu halten."
+ },
+ "CH.22.intro.3": {
+  "en": "Straylings whisper, 'God doesn't want you back.' Defeat 6 of them, then face the Gloom of Wandering Away at the father's house.",
+  "de": "Streunlinge flüstern: „Gott will dich nicht zurückhaben.“ Besiege 6 Düsterlinge, dann stell dich dem Dunkel des Verirrens beim Haus des Vaters."
+ },
+ "CH.22.hint": {
+  "en": "The Gloom of Wandering Away hides by the father's house. Nobody is too lost for God to find!",
+  "de": "Das Dunkel des Verirrens versteckt sich beim Haus des Vaters. Niemand ist zu verloren, als dass Gott ihn nicht finden könnte!"
+ },
+ "CH.22.outro.0": {
+  "en": "Look! While the son was still far away, his father ran to him, hugged him, and threw a party! That's how God welcomes us home.",
+  "de": "Schau! Als der Sohn noch weit weg war, lief sein Vater ihm entgegen, umarmte ihn und feierte ein großes Fest! So heißt Gott uns zu Hause willkommen."
+ },
+ "CH.22.outro.1": {
+  "en": "And in Jericho, Jesus called Zacchaeus down from a tree and went to his house. Zacchaeus changed his whole life!",
+  "de": "Und in Jericho rief Jesus Zachäus vom Baum herunter und ging zu ihm nach Hause. Zachäus hat sein ganzes Leben verändert!"
+ },
+ "CH.22.outro.2": {
+  "en": "Here's a piece of the Scroll. And the father says you should have the best robe — wear it with joy!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und der Vater sagt, du sollst das beste Gewand bekommen – trag es mit Freude!"
+ },
+ "CH.22.post": {
+  "en": "Jesus came to seek and to save the lost. That's good news for everyone!",
+  "de": "Jesus ist gekommen, um die Verlorenen zu suchen und zu retten. Das ist eine gute Nachricht für alle!"
+ },
+ "CH.22.side.name": {
+  "en": "Zacchaeus",
+  "de": "Zachäus"
+ },
+ "CH.22.side.what": {
+  "en": "money bags",
+  "de": "Geldbeutel"
+ },
+ "CH.22.side.ask": {
+  "en": "I'm Zacchaeus! I used to cheat people. But Jesus came to my house, and now I want to pay back four times as much! Will you help me find 4 money bags?",
+  "de": "Ich bin Zachäus! Früher habe ich Leute betrogen. Aber Jesus ist zu mir nach Hause gekommen, und jetzt will ich alles vierfach zurückzahlen! Hilfst du mir, 4 Geldbeutel zu finden?"
+ },
+ "CH.22.side.thanks": {
+  "en": "Thank you! Salvation came to my house when Jesus did. Here's something for you, too!",
+  "de": "Danke! Mit Jesus ist Rettung in mein Haus gekommen. Hier ist auch etwas für dich!"
+ },
+ "CH.22.flav.0.name": {
+  "en": "Good Samaritan",
+  "de": "Barmherziger Samariter"
+ },
+ "CH.22.flav.0.lines.0": {
+  "en": "In Jesus' story, I bandaged a hurt stranger and paid for his room at an inn. Who is my neighbor? Anyone who needs help!",
+  "de": "In der Geschichte von Jesus habe ich einen verletzten Fremden verbunden und sein Zimmer in einem Gasthaus bezahlt. Wer ist mein Nächster? Jeder, der Hilfe braucht!"
+ },
+ "CH.22.flav.1.name": {
+  "en": "Woman with the Lost Coin",
+  "de": "Frau mit der verlorenen Münze"
+ },
+ "CH.22.flav.1.lines.0": {
+  "en": "In Jesus' story, I swept the whole house until I found my coin — then I called my friends to celebrate! Heaven is that happy when one person comes home to God.",
+  "de": "In der Geschichte von Jesus habe ich das ganze Haus gefegt, bis ich meine Münze gefunden hatte – dann habe ich meine Freundinnen zum Feiern eingeladen! So froh ist der Himmel, wenn ein Mensch zu Gott nach Hause kommt."
+ },
+ "CH.22.verse.t": {
+  "en": "For the Son of Man came to seek and to save that which was lost.",
+  "de": "Der Menschensohn ist gekommen, um zu suchen und zu retten, was verloren ist."
+ },
+ "CH.22.verse.r": {
+  "en": "Luke 19:10",
+  "de": "Lukas 19,10"
+ }
+}

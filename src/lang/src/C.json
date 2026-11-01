@@ -1,0 +1,5856 @@
+{
+ "BQ": [
+  {
+   "ch": 1,
+   "diff": 1,
+   "en": [
+    "On which day did God rest?",
+    "The seventh day",
+    "The first day",
+    "The third day",
+    "The sixth day"
+   ],
+   "ref": "Genesis 2:2",
+   "de": [
+    "An welchem Tag ruhte Gott?",
+    "Am siebten Tag",
+    "Am ersten Tag",
+    "Am dritten Tag",
+    "Am sechsten Tag"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 1,
+   "en": [
+    "What did God create on the first day?",
+    "Light",
+    "Animals",
+    "People",
+    "The sun and moon"
+   ],
+   "ref": "Genesis 1:3-5",
+   "de": [
+    "Was schuf Gott am ersten Tag?",
+    "Das Licht",
+    "Die Tiere",
+    "Die Menschen",
+    "Sonne und Mond"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 1,
+   "en": [
+    "Who was the first man?",
+    "Adam",
+    "Noah",
+    "Abraham",
+    "Seth"
+   ],
+   "ref": "Genesis 2:7",
+   "de": [
+    "Wer war der erste Mensch?",
+    "Adam",
+    "Noah",
+    "Abraham",
+    "Set"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 1,
+   "en": [
+    "What was the name of the garden God planted?",
+    "Eden",
+    "Gethsemane",
+    "Goshen",
+    "Babylon"
+   ],
+   "ref": "Genesis 2:8",
+   "de": [
+    "Wie hieß der Garten, den Gott anlegte?",
+    "Eden",
+    "Getsemani",
+    "Goschen",
+    "Babylon"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 1,
+   "en": [
+    "Which creature tricked Eve?",
+    "The serpent",
+    "A lion",
+    "A raven",
+    "A frog"
+   ],
+   "ref": "Genesis 3:1",
+   "de": [
+    "Welches Tier täuschte Eva?",
+    "Die Schlange",
+    "Ein Löwe",
+    "Ein Rabe",
+    "Ein Frosch"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 2,
+   "en": [
+    "On which day did God make people?",
+    "The sixth day",
+    "The fourth day",
+    "The second day",
+    "The seventh day"
+   ],
+   "ref": "Genesis 1:27,31",
+   "de": [
+    "An welchem Tag schuf Gott die Menschen?",
+    "Am sechsten Tag",
+    "Am vierten Tag",
+    "Am zweiten Tag",
+    "Am siebten Tag"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 2,
+   "en": [
+    "What did God make on the fourth day?",
+    "The sun, moon and stars",
+    "Fish and birds",
+    "Dry land and plants",
+    "Light"
+   ],
+   "ref": "Genesis 1:14-19",
+   "de": [
+    "Was schuf Gott am vierten Tag?",
+    "Sonne, Mond und Sterne",
+    "Fische und Vögel",
+    "Land und Pflanzen",
+    "Das Licht"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 2,
+   "en": [
+    "God made the first woman from Adam's...",
+    "Rib",
+    "Hand",
+    "Hair",
+    "Footprint"
+   ],
+   "ref": "Genesis 2:21-22",
+   "de": [
+    "Woraus machte Gott die erste Frau?",
+    "Aus einer Rippe von Adam",
+    "Aus einer Hand",
+    "Aus einem Haar",
+    "Aus einem Fußabdruck"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 2,
+   "en": [
+    "Which tree were Adam and Eve told not to eat from?",
+    "The tree of the knowledge of good and evil",
+    "The tree of life",
+    "The fig tree",
+    "The olive tree"
+   ],
+   "ref": "Genesis 2:17",
+   "de": [
+    "Von welchem Baum durften Adam und Eva nicht essen?",
+    "Vom Baum der Erkenntnis von Gut und Böse",
+    "Vom Baum des Lebens",
+    "Vom Feigenbaum",
+    "Vom Olivenbaum"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 2,
+   "en": [
+    "What did Adam and Eve sew together to cover themselves?",
+    "Fig leaves",
+    "Palm branches",
+    "Animal fur",
+    "Wool"
+   ],
+   "ref": "Genesis 3:7",
+   "de": [
+    "Was nähten Adam und Eva zusammen, um sich zu bedecken?",
+    "Feigenblätter",
+    "Palmzweige",
+    "Tierfelle",
+    "Wolle"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 2,
+   "en": [
+    "Who were Adam and Eve's first two sons?",
+    "Cain and Abel",
+    "Jacob and Esau",
+    "Shem and Ham",
+    "Moses and Aaron"
+   ],
+   "ref": "Genesis 4:1-2",
+   "de": [
+    "Wie hießen die ersten beiden Söhne von Adam und Eva?",
+    "Kain und Abel",
+    "Jakob und Esau",
+    "Sem und Ham",
+    "Mose und Aaron"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 2,
+   "en": [
+    "Who gave names to the animals?",
+    "Adam",
+    "Eve",
+    "Noah",
+    "Abel"
+   ],
+   "ref": "Genesis 2:19-20",
+   "de": [
+    "Wer gab den Tieren Namen?",
+    "Adam",
+    "Eva",
+    "Noah",
+    "Abel"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 3,
+   "en": [
+    "What guarded the way to the tree of life after Adam and Eve left Eden?",
+    "Cherubim and a flaming sword",
+    "A lion",
+    "A great wall",
+    "A wide river"
+   ],
+   "ref": "Genesis 3:24",
+   "de": [
+    "Wer bewachte den Weg zum Baum des Lebens, nachdem Adam und Eva Eden verlassen hatten?",
+    "Cherubim mit einem flammenden Schwert",
+    "Ein Löwe",
+    "Eine hohe Mauer",
+    "Ein breiter Fluss"
+   ]
+  },
+  {
+   "ch": 1,
+   "diff": 3,
+   "en": [
+    "Why did Adam name his wife Eve?",
+    "She was the mother of all living",
+    "She was made last",
+    "She loved the garden",
+    "She named the stars"
+   ],
+   "ref": "Genesis 3:20",
+   "de": [
+    "Warum nannte Adam seine Frau Eva?",
+    "Sie wurde die Mutter aller Lebenden",
+    "Sie wurde zuletzt erschaffen",
+    "Sie liebte den Garten",
+    "Sie gab den Sternen Namen"
+   ]
+  },
+  {
+   "ch": 2,
+   "diff": 1,
+   "en": [
+    "How did the animals come into the ark?",
+    "In pairs, two by two",
+    "In groups of ten",
+    "One at a time",
+    "In giant herds"
+   ],
+   "ref": "Genesis 7:9",
+   "de": [
+    "Wie kamen die Tiere in die Arche?",
+    "Paarweise, immer zwei",
+    "In Zehnergruppen",
+    "Eins nach dem anderen",
+    "In riesigen Herden"
+   ]
+  },
+  {
+   "ch": 2,
+   "diff": 1,
+   "en": [
+    "What sign did God give as a promise never to flood the earth again?",
+    "A rainbow",
+    "A star",
+    "A dove",
+    "A burning bush"
+   ],
+   "ref": "Genesis 9:13",
+   "de": [
+    "Welches Zeichen gab Gott als Versprechen, die Erde nie wieder zu überfluten?",
+    "Einen Regenbogen",
+    "Einen Stern",
+    "Eine Taube",
+    "Einen brennenden Dornbusch"
+   ]
+  },
+  {
+   "ch": 2,
+   "diff": 1,
+   "en": [
+    "How many days and nights did it rain?",
+    "40",
+    "7",
+    "12",
+    "100"
+   ],
+   "ref": "Genesis 7:12",
+   "de": [
+    "Wie viele Tage und Nächte regnete es?",
+    "40",
+    "7",
+    "12",
+    "100"
+   ]
+  },
+  {
+   "ch": 2,
+   "diff": 1,
+   "en": [
+    "What did the dove bring back to Noah?",
+    "An olive leaf",
+    "A fig",
+    "A fish",
+    "A stone"
+   ],
+   "ref": "Genesis 8:11",
+   "de": [
+    "Was brachte die Taube zu Noah zurück?",
+    "Ein Olivenblatt",
+    "Eine Feige",
+    "Einen Fisch",
+    "Einen Stein"
+   ]
+  },
+  {
+   "ch": 2,
+   "diff": 2,
+   "en": [
+    "Which bird did Noah send out first?",
+    "A raven",
+    "A dove",
+    "An eagle",
+    "A sparrow"
+   ],
+   "ref": "Genesis 8:7",
+   "de": [
+    "Welchen Vogel ließ Noah zuerst hinaus?",
+    "Einen Raben",
+    "Eine Taube",
+    "Einen Adler",
+    "Einen Spatz"
+   ]
+  },
+  {
+   "ch": 2,
+   "diff": 2,
+   "en": [
+    "Which of these was one of Noah's sons?",
+    "Shem",
+    "Isaac",
+    "Abel",
+    "Levi"
+   ],
+   "ref": "Genesis 6:10",
+   "de": [
+    "Wer war einer der Söhne von Noah?",
+    "Sem",
+    "Isaak",
+    "Abel",
+    "Levi"
+   ]
+  },
+  {
+   "ch": 2,
+   "diff": 2,
+   "en": [
+    "Where did the ark come to rest?",
+    "The mountains of Ararat",
+    "Mount Sinai",
+    "Mount Zion",
+    "The Nile River"
+   ],
+   "ref": "Genesis 8:4",
+   "de": [
+    "Wo setzte die Arche auf?",
+    "Auf den Bergen von Ararat",
+    "Auf dem Berg Sinai",
+    "Auf dem Berg Zion",
+    "Am Nil"
+   ]
+  },
+  {
+   "ch": 2,
+   "diff": 2,
+   "en": [
+    "How many people were saved on the ark?",
+    "8",
+    "2",
+    "12",
+    "40"
+   ],
+   "ref": "1 Peter 3:20",
+   "de": [
+    "Wie viele Menschen wurden in der Arche gerettet?",
+    "8",
+    "2",
+    "12",
+    "40"
+   ]
+  },
+  {
+   "ch": 2,
+   "diff": 2,
+   "en": [
+    "Why did God choose Noah to build the ark?",
+    "Noah found grace and walked with God",
+    "Noah was the strongest man",
+    "Noah was the richest man",
+    "Noah was a king"
+   ],
+   "ref": "Genesis 6:8-9",
+   "de": [
+    "Warum wählte Gott Noah aus, um die Arche zu bauen?",
+    "Noah lebte mit Gott, und Gott hatte Freude an ihm",
+    "Noah war der stärkste Mann",
+    "Noah war der reichste Mann",
+    "Noah war ein König"
+   ]
+  },
+  {
+   "ch": 2,
+   "diff": 3,
+   "en": [
+    "How wide was the ark?",
+    "50 cubits",
+    "300 cubits",
+    "10 cubits",
+    "100 cubits"
+   ],
+   "ref": "Genesis 6:15",
+   "de": [
+    "Wie breit war die Arche?",
+    "50 Ellen",
+    "300 Ellen",
+    "10 Ellen",
+    "100 Ellen"
+   ]
+  },
+  {
+   "ch": 2,
+   "diff": 3,
+   "en": [
+    "How long was the ark?",
+    "300 cubits",
+    "100 cubits",
+    "1,000 cubits",
+    "40 cubits"
+   ],
+   "ref": "Genesis 6:15",
+   "de": [
+    "Wie lang war die Arche?",
+    "300 Ellen",
+    "100 Ellen",
+    "1000 Ellen",
+    "40 Ellen"
+   ]
+  },
+  {
+   "ch": 2,
+   "diff": 3,
+   "en": [
+    "How old was Noah when the flood came?",
+    "600 years old",
+    "100 years old",
+    "40 years old",
+    "969 years old"
+   ],
+   "ref": "Genesis 7:6",
+   "de": [
+    "Wie alt war Noah, als die Flut kam?",
+    "600 Jahre",
+    "100 Jahre",
+    "40 Jahre",
+    "969 Jahre"
+   ]
+  },
+  {
+   "ch": 3,
+   "diff": 1,
+   "en": [
+    "Who found baby Moses in a basket by the river?",
+    "Pharaoh's daughter",
+    "Miriam",
+    "Moses' mother",
+    "A fisherman"
+   ],
+   "ref": "Exodus 2:5-6",
+   "de": [
+    "Wer fand das Baby Mose in einem Korb am Fluss?",
+    "Die Tochter des Pharao",
+    "Mirjam",
+    "Die Mutter von Mose",
+    "Ein Fischer"
+   ]
+  },
+  {
+   "ch": 3,
+   "diff": 1,
+   "en": [
+    "How did God first speak to Moses in the desert?",
+    "From a burning bush",
+    "From inside a whale",
+    "From a cloud of locusts",
+    "Through a talking camel"
+   ],
+   "ref": "Exodus 3:2",
+   "de": [
+    "Wie sprach Gott in der Wüste zum ersten Mal mit Mose?",
+    "Aus einem brennenden Dornbusch",
+    "Aus einem Wal",
+    "Aus einer Heuschreckenwolke",
+    "Durch ein sprechendes Kamel"
+   ]
+  },
+  {
+   "ch": 3,
+   "diff": 1,
+   "en": [
+    "How many plagues did God send on Egypt?",
+    "10",
+    "7",
+    "12",
+    "3"
+   ],
+   "ref": "Exodus 7–12",
+   "de": [
+    "Wie viele Plagen schickte Gott über Ägypten?",
+    "10",
+    "7",
+    "12",
+    "3"
+   ]
+  },
+  {
+   "ch": 3,
+   "diff": 1,
+   "en": [
+    "Who was Moses' brother who spoke for him?",
+    "Aaron",
+    "Joshua",
+    "Caleb",
+    "Joseph"
+   ],
+   "ref": "Exodus 4:14",
+   "de": [
+    "Wer war der Bruder von Mose, der für ihn sprach?",
+    "Aaron",
+    "Josua",
+    "Kaleb",
+    "Josef"
+   ]
+  },
+  {
+   "ch": 3,
+   "diff": 1,
+   "en": [
+    "How did the Israelites cross the Red Sea?",
+    "God parted the waters",
+    "They built boats",
+    "They swam across",
+    "They waited for the tide"
+   ],
+   "ref": "Exodus 14:21-22",
+   "de": [
+    "Wie kamen die Israeliten durch das Rote Meer?",
+    "Gott teilte das Wasser",
+    "Sie bauten Boote",
+    "Sie schwammen hinüber",
+    "Sie warteten auf Ebbe"
+   ]
+  },
+  {
+   "ch": 3,
+   "diff": 1,
+   "en": [
+    "What did God tell Moses to say to Pharaoh?",
+    "Let my people go",
+    "Give us your gold",
+    "Make me king",
+    "Build us a temple"
+   ],
+   "ref": "Exodus 5:1",
+   "de": [
+    "Was sollte Mose dem Pharao sagen?",
+    "Lass mein Volk gehen!",
+    "Gib uns dein Gold!",
+    "Mach mich zum König!",
+    "Bau uns einen Tempel!"
+   ]
+  },
+  {
+   "ch": 3,
+   "diff": 2,
+   "en": [
+    "Which plague came second?",
+    "Frogs",
+    "Locusts",
+    "Darkness",
+    "Hail"
+   ],
+   "ref": "Exodus 8:2",
+   "de": [
+    "Welche Plage kam als zweite?",
+    "Frösche",
+    "Heuschrecken",
+    "Finsternis",
+    "Hagel"
+   ]
+  },
+  {
+   "ch": 3,
+   "diff": 2,
+   "en": [
+    "What was the first plague?",
+    "Water turned to blood",
+    "Frogs",
+    "Gnats",
+    "Boils"
+   ],
+   "ref": "Exodus 7:20",
+   "de": [
+    "Was war die erste Plage?",
+    "Wasser wurde zu Blut",
+    "Frösche",
+    "Stechmücken",
+    "Geschwüre"
+   ]
+  },
+  {
+   "ch": 3,
+   "diff": 2,
+   "en": [
+    "What did the Israelites put on their doorposts at the first Passover?",
+    "A lamb's blood",
+    "Olive oil",
+    "Palm branches",
+    "Gold paint"
+   ],
+   "ref": "Exodus 12:7",
+   "de": [
+    "Was strichen die Israeliten beim ersten Passafest an ihre Türpfosten?",
+    "Das Blut eines Lammes",
+    "Olivenöl",
+    "Palmzweige",
+    "Goldfarbe"
+   ]
+  },
+  {
+   "ch": 3,
+   "diff": 2,
+   "en": [
+    "What did Moses' rod become in front of Pharaoh?",
+    "A serpent",
+    "A tree",
+    "A dove",
+    "Gold"
+   ],
+   "ref": "Exodus 7:10",
+   "de": [
+    "Was wurde aus dem Stab von Mose vor dem Pharao?",
+    "Eine Schlange",
+    "Ein Baum",
+    "Eine Taube",
+    "Gold"
+   ]
+  },
+  {
+   "ch": 3,
+   "diff": 2,
+   "en": [
+    "Who was Moses' sister?",
+    "Miriam",
+    "Rahab",
+    "Ruth",
+    "Esther"
+   ],
+   "ref": "Exodus 15:20",
+   "de": [
+    "Wie hieß die Schwester von Mose?",
+    "Mirjam",
+    "Rahab",
+    "Rut",
+    "Ester"
+   ]
+  },
+  {
+   "ch": 3,
+   "diff": 2,
+   "en": [
+    "What did Pharaoh force the Israelites to make?",
+    "Bricks",
+    "Gold crowns",
+    "Ships",
+    "Swords"
+   ],
+   "ref": "Exodus 1:14",
+   "de": [
+    "Was mussten die Israeliten für den Pharao herstellen?",
+    "Ziegel",
+    "Goldkronen",
+    "Schiffe",
+    "Schwerter"
+   ]
+  },
+  {
+   "ch": 4,
+   "diff": 1,
+   "en": [
+    "What food did God send from heaven in the wilderness?",
+    "Manna",
+    "Figs",
+    "Rice",
+    "Barley cakes"
+   ],
+   "ref": "Exodus 16:15",
+   "de": [
+    "Welches Essen schickte Gott in der Wüste vom Himmel?",
+    "Manna",
+    "Feigen",
+    "Reis",
+    "Gerstenkuchen"
+   ]
+  },
+  {
+   "ch": 4,
+   "diff": 1,
+   "en": [
+    "How many commandments did God write on the stone tablets?",
+    "10",
+    "12",
+    "7",
+    "3"
+   ],
+   "ref": "Exodus 34:28",
+   "de": [
+    "Wie viele Gebote schrieb Gott auf die Steintafeln?",
+    "10",
+    "12",
+    "7",
+    "3"
+   ]
+  },
+  {
+   "ch": 4,
+   "diff": 1,
+   "en": [
+    "On which mountain did Moses receive the commandments?",
+    "Mount Sinai",
+    "Mount Ararat",
+    "Mount Carmel",
+    "Mount of Olives"
+   ],
+   "ref": "Exodus 19:20",
+   "de": [
+    "Auf welchem Berg bekam Mose die Gebote?",
+    "Auf dem Berg Sinai",
+    "Auf dem Berg Ararat",
+    "Auf dem Karmel",
+    "Auf dem Ölberg"
+   ]
+  },
+  {
+   "ch": 4,
+   "diff": 1,
+   "en": [
+    "What did the people make while Moses was on the mountain?",
+    "A golden calf",
+    "A tall tower",
+    "A boat",
+    "A golden lamp"
+   ],
+   "ref": "Exodus 32:4",
+   "de": [
+    "Was machte das Volk, während Mose auf dem Berg war?",
+    "Ein goldenes Kalb",
+    "Einen hohen Turm",
+    "Ein Boot",
+    "Eine goldene Lampe"
+   ]
+  },
+  {
+   "ch": 4,
+   "diff": 2,
+   "en": [
+    "What birds did God send for meat in the wilderness?",
+    "Quail",
+    "Doves",
+    "Ravens",
+    "Eagles"
+   ],
+   "ref": "Exodus 16:13",
+   "de": [
+    "Welche Vögel schickte Gott in der Wüste als Fleisch?",
+    "Wachteln",
+    "Tauben",
+    "Raben",
+    "Adler"
+   ]
+  },
+  {
+   "ch": 4,
+   "diff": 2,
+   "en": [
+    "What came out of the rock when Moses struck it?",
+    "Water",
+    "Fire",
+    "Honey",
+    "Bread"
+   ],
+   "ref": "Exodus 17:6",
+   "de": [
+    "Was kam aus dem Felsen, als Mose ihn schlug?",
+    "Wasser",
+    "Feuer",
+    "Honig",
+    "Brot"
+   ]
+  },
+  {
+   "ch": 4,
+   "diff": 2,
+   "en": [
+    "How did God guide Israel by day and by night?",
+    "A pillar of cloud and a pillar of fire",
+    "A bright star",
+    "Angels with torches",
+    "A map from Moses"
+   ],
+   "ref": "Exodus 13:21",
+   "de": [
+    "Wie führte Gott Israel bei Tag und bei Nacht?",
+    "Mit einer Wolkensäule und einer Feuersäule",
+    "Mit einem hellen Stern",
+    "Mit Engeln mit Fackeln",
+    "Mit einer Karte von Mose"
+   ]
+  },
+  {
+   "ch": 4,
+   "diff": 2,
+   "en": [
+    "How many years did Israel wander in the wilderness?",
+    "40",
+    "7",
+    "12",
+    "400"
+   ],
+   "ref": "Numbers 14:33",
+   "de": [
+    "Wie viele Jahre zog Israel durch die Wüste?",
+    "40",
+    "7",
+    "12",
+    "400"
+   ]
+  },
+  {
+   "ch": 4,
+   "diff": 2,
+   "en": [
+    "What is the first of the Ten Commandments?",
+    "You shall have no other gods before me",
+    "Honor your father and mother",
+    "Do not steal",
+    "Remember the Sabbath"
+   ],
+   "ref": "Exodus 20:3",
+   "de": [
+    "Was ist das erste der Zehn Gebote?",
+    "Du sollst keine anderen Götter haben neben mir",
+    "Ehre deinen Vater und deine Mutter",
+    "Du sollst nicht stehlen",
+    "Denk an den Ruhetag"
+   ]
+  },
+  {
+   "ch": 4,
+   "diff": 3,
+   "en": [
+    "On which day of the week did the people gather twice as much manna?",
+    "The sixth day",
+    "The first day",
+    "The seventh day",
+    "Every day"
+   ],
+   "ref": "Exodus 16:22",
+   "de": [
+    "An welchem Tag der Woche sammelte das Volk doppelt so viel Manna?",
+    "Am sechsten Tag",
+    "Am ersten Tag",
+    "Am siebten Tag",
+    "Jeden Tag"
+   ]
+  },
+  {
+   "ch": 4,
+   "diff": 3,
+   "en": [
+    "What was kept inside the Ark of the Covenant?",
+    "The stone tablets of the law",
+    "A golden crown",
+    "The first harvest",
+    "Moses' sandals"
+   ],
+   "ref": "Deuteronomy 10:5",
+   "de": [
+    "Was lag in der Bundeslade?",
+    "Die Steintafeln mit den Geboten",
+    "Eine goldene Krone",
+    "Die erste Ernte",
+    "Die Sandalen von Mose"
+   ]
+  },
+  {
+   "ch": 4,
+   "diff": 3,
+   "en": [
+    "Which two spies brought back a good report about the Promised Land?",
+    "Joshua and Caleb",
+    "Moses and Aaron",
+    "Peter and John",
+    "Shem and Ham"
+   ],
+   "ref": "Numbers 14:6-8",
+   "de": [
+    "Welche zwei Kundschafter brachten einen guten Bericht über das versprochene Land?",
+    "Josua und Kaleb",
+    "Mose und Aaron",
+    "Petrus und Johannes",
+    "Sem und Ham"
+   ]
+  },
+  {
+   "ch": 5,
+   "diff": 1,
+   "en": [
+    "Who led Israel into the Promised Land after Moses?",
+    "Joshua",
+    "Aaron",
+    "David",
+    "Samuel"
+   ],
+   "ref": "Joshua 1:1-2",
+   "de": [
+    "Wer führte Israel nach Mose ins versprochene Land?",
+    "Josua",
+    "Aaron",
+    "David",
+    "Samuel"
+   ]
+  },
+  {
+   "ch": 5,
+   "diff": 1,
+   "en": [
+    "How many days did Israel march around Jericho?",
+    "7",
+    "3",
+    "40",
+    "12"
+   ],
+   "ref": "Joshua 6:3-4",
+   "de": [
+    "Wie viele Tage zog Israel um Jericho?",
+    "7",
+    "3",
+    "40",
+    "12"
+   ]
+  },
+  {
+   "ch": 5,
+   "diff": 1,
+   "en": [
+    "Who hid the Israelite spies in Jericho?",
+    "Rahab",
+    "Ruth",
+    "Deborah",
+    "Miriam"
+   ],
+   "ref": "Joshua 2:1-4",
+   "de": [
+    "Wer versteckte die israelitischen Kundschafter in Jericho?",
+    "Rahab",
+    "Rut",
+    "Debora",
+    "Mirjam"
+   ]
+  },
+  {
+   "ch": 5,
+   "diff": 1,
+   "en": [
+    "What happened when the people shouted at Jericho?",
+    "The walls fell down flat",
+    "The gates swung open",
+    "Fire came down",
+    "The city floated away"
+   ],
+   "ref": "Joshua 6:20",
+   "de": [
+    "Was passierte, als das Volk bei Jericho laut rief?",
+    "Die Mauern stürzten ein",
+    "Die Tore gingen auf",
+    "Feuer fiel vom Himmel",
+    "Die Stadt schwebte davon"
+   ]
+  },
+  {
+   "ch": 5,
+   "diff": 1,
+   "en": [
+    "What did God tell Joshua to be?",
+    "Strong and courageous",
+    "Quiet and still",
+    "Rich and famous",
+    "Fast and clever"
+   ],
+   "ref": "Joshua 1:9",
+   "de": [
+    "Was sollte Josua nach Gottes Worten sein?",
+    "Stark und mutig",
+    "Leise und still",
+    "Reich und berühmt",
+    "Schnell und schlau"
+   ]
+  },
+  {
+   "ch": 5,
+   "diff": 2,
+   "en": [
+    "How many times did they march around Jericho on the seventh day?",
+    "7",
+    "1",
+    "3",
+    "12"
+   ],
+   "ref": "Joshua 6:4",
+   "de": [
+    "Wie oft zogen sie am siebten Tag um Jericho?",
+    "7-mal",
+    "1-mal",
+    "3-mal",
+    "12-mal"
+   ]
+  },
+  {
+   "ch": 5,
+   "diff": 2,
+   "en": [
+    "What did the priests blow at Jericho?",
+    "Trumpets of rams' horns",
+    "Golden flutes",
+    "Silver whistles",
+    "Big drums"
+   ],
+   "ref": "Joshua 6:4",
+   "de": [
+    "Worauf bliesen die Priester bei Jericho?",
+    "Auf Posaunen aus Widderhörnern",
+    "Auf goldenen Flöten",
+    "Auf silbernen Pfeifen",
+    "Auf großen Trommeln"
+   ]
+  },
+  {
+   "ch": 5,
+   "diff": 2,
+   "en": [
+    "What did Rahab hang from her window?",
+    "A scarlet cord",
+    "A white flag",
+    "A lamp",
+    "A palm branch"
+   ],
+   "ref": "Joshua 2:18",
+   "de": [
+    "Was hängte Rahab aus ihrem Fenster?",
+    "Eine rote Schnur",
+    "Eine weiße Fahne",
+    "Eine Lampe",
+    "Einen Palmzweig"
+   ]
+  },
+  {
+   "ch": 5,
+   "diff": 2,
+   "en": [
+    "Which river did Israel cross to enter the Promised Land?",
+    "The Jordan",
+    "The Nile",
+    "The Euphrates",
+    "The Tigris"
+   ],
+   "ref": "Joshua 3:17",
+   "de": [
+    "Durch welchen Fluss zog Israel ins versprochene Land?",
+    "Durch den Jordan",
+    "Durch den Nil",
+    "Durch den Euphrat",
+    "Durch den Tigris"
+   ]
+  },
+  {
+   "ch": 5,
+   "diff": 3,
+   "en": [
+    "What happened to the Jordan River when the priests' feet touched it?",
+    "The water stopped and stood up in a heap",
+    "It froze solid",
+    "It turned to blood",
+    "It slowly dried up over 40 days"
+   ],
+   "ref": "Joshua 3:15-16",
+   "de": [
+    "Was geschah mit dem Jordan, als die Füße der Priester ihn berührten?",
+    "Das Wasser blieb stehen und staute sich auf",
+    "Er fror zu",
+    "Er wurde zu Blut",
+    "Er trocknete in 40 Tagen langsam aus"
+   ]
+  },
+  {
+   "ch": 5,
+   "diff": 3,
+   "en": [
+    "How many stones were taken from the Jordan as a memorial?",
+    "12",
+    "7",
+    "5",
+    "40"
+   ],
+   "ref": "Joshua 4:3",
+   "de": [
+    "Wie viele Steine wurden zur Erinnerung aus dem Jordan geholt?",
+    "12",
+    "7",
+    "5",
+    "40"
+   ]
+  },
+  {
+   "ch": 6,
+   "diff": 1,
+   "en": [
+    "What did David use to defeat Goliath?",
+    "A sling and a stone",
+    "A sword",
+    "A bow and arrow",
+    "A spear"
+   ],
+   "ref": "1 Samuel 17:49",
+   "de": [
+    "Womit besiegte David Goliat?",
+    "Mit einer Schleuder und einem Stein",
+    "Mit einem Schwert",
+    "Mit Pfeil und Bogen",
+    "Mit einem Speer"
+   ]
+  },
+  {
+   "ch": 6,
+   "diff": 1,
+   "en": [
+    "How many smooth stones did David choose?",
+    "5",
+    "1",
+    "3",
+    "7"
+   ],
+   "ref": "1 Samuel 17:40",
+   "de": [
+    "Wie viele glatte Steine suchte sich David aus?",
+    "5",
+    "1",
+    "3",
+    "7"
+   ]
+  },
+  {
+   "ch": 6,
+   "diff": 1,
+   "en": [
+    "What was David's job before he became king?",
+    "Shepherd",
+    "Fisherman",
+    "Carpenter",
+    "Tax collector"
+   ],
+   "ref": "1 Samuel 16:11",
+   "de": [
+    "Was war Davids Arbeit, bevor er König wurde?",
+    "Hirte",
+    "Fischer",
+    "Zimmermann",
+    "Zolleinnehmer"
+   ]
+  },
+  {
+   "ch": 6,
+   "diff": 1,
+   "en": [
+    "What instrument did David play?",
+    "The harp",
+    "The trumpet",
+    "The drum",
+    "The flute"
+   ],
+   "ref": "1 Samuel 16:23",
+   "de": [
+    "Welches Instrument spielte David?",
+    "Die Harfe",
+    "Die Posaune",
+    "Die Trommel",
+    "Die Flöte"
+   ]
+  },
+  {
+   "ch": 6,
+   "diff": 2,
+   "en": [
+    "Who anointed David as the future king?",
+    "Samuel",
+    "Moses",
+    "Elijah",
+    "Saul"
+   ],
+   "ref": "1 Samuel 16:13",
+   "de": [
+    "Wer salbte David zum zukünftigen König?",
+    "Samuel",
+    "Mose",
+    "Elia",
+    "Saul"
+   ]
+  },
+  {
+   "ch": 6,
+   "diff": 2,
+   "en": [
+    "Which king did David play music for?",
+    "King Saul",
+    "King Solomon",
+    "King Herod",
+    "King Ahab"
+   ],
+   "ref": "1 Samuel 16:23",
+   "de": [
+    "Für welchen König machte David Musik?",
+    "Für König Saul",
+    "Für König Salomo",
+    "Für König Herodes",
+    "Für König Ahab"
+   ]
+  },
+  {
+   "ch": 6,
+   "diff": 2,
+   "en": [
+    "Which army was Goliath from?",
+    "The Philistines",
+    "The Egyptians",
+    "The Romans",
+    "The Babylonians"
+   ],
+   "ref": "1 Samuel 17:4",
+   "de": [
+    "Zu welchem Heer gehörte Goliat?",
+    "Zu den Philistern",
+    "Zu den Ägyptern",
+    "Zu den Römern",
+    "Zu den Babyloniern"
+   ]
+  },
+  {
+   "ch": 6,
+   "diff": 2,
+   "en": [
+    "Who was David's best friend?",
+    "Jonathan",
+    "Absalom",
+    "Samuel",
+    "Eliab"
+   ],
+   "ref": "1 Samuel 18:1",
+   "de": [
+    "Wer war Davids bester Freund?",
+    "Jonatan",
+    "Abschalom",
+    "Samuel",
+    "Eliab"
+   ]
+  },
+  {
+   "ch": 6,
+   "diff": 2,
+   "en": [
+    "Which animals had David protected his sheep from?",
+    "A lion and a bear",
+    "Wolves and foxes",
+    "A snake and a scorpion",
+    "An eagle and a hawk"
+   ],
+   "ref": "1 Samuel 17:34-36",
+   "de": [
+    "Vor welchen Tieren hatte David seine Schafe beschützt?",
+    "Vor einem Löwen und einem Bären",
+    "Vor Wölfen und Füchsen",
+    "Vor einer Schlange und einem Skorpion",
+    "Vor einem Adler und einem Falken"
+   ]
+  },
+  {
+   "ch": 6,
+   "diff": 2,
+   "en": [
+    "When choosing David, God told Samuel that He looks at the...",
+    "Heart",
+    "Height",
+    "Face",
+    "Clothes"
+   ],
+   "ref": "1 Samuel 16:7",
+   "de": [
+    "Als Gott David auswählte, sagte er zu Samuel, dass er schaut auf ...",
+    "das Herz",
+    "die Größe",
+    "das Gesicht",
+    "die Kleidung"
+   ]
+  },
+  {
+   "ch": 6,
+   "diff": 2,
+   "en": [
+    "Who wrote many of the Psalms?",
+    "David",
+    "Moses",
+    "Daniel",
+    "Peter"
+   ],
+   "ref": "Psalms",
+   "de": [
+    "Wer schrieb viele der Psalmen?",
+    "David",
+    "Mose",
+    "Daniel",
+    "Petrus"
+   ]
+  },
+  {
+   "ch": 6,
+   "diff": 3,
+   "en": [
+    "What was the name of David's father?",
+    "Jesse",
+    "Obed",
+    "Boaz",
+    "Saul"
+   ],
+   "ref": "1 Samuel 16:1",
+   "de": [
+    "Wie hieß Davids Vater?",
+    "Isai",
+    "Obed",
+    "Boas",
+    "Saul"
+   ]
+  },
+  {
+   "ch": 7,
+   "diff": 1,
+   "en": [
+    "Where was Daniel thrown for praying to God?",
+    "The lions' den",
+    "A fiery furnace",
+    "A deep well",
+    "The sea"
+   ],
+   "ref": "Daniel 6:16",
+   "de": [
+    "Wohin wurde Daniel geworfen, weil er zu Gott betete?",
+    "In die Löwengrube",
+    "In einen glühenden Ofen",
+    "In einen tiefen Brunnen",
+    "Ins Meer"
+   ]
+  },
+  {
+   "ch": 7,
+   "diff": 1,
+   "en": [
+    "Who was thrown into the fiery furnace?",
+    "Shadrach, Meshach and Abednego",
+    "Peter, James and John",
+    "Moses, Aaron and Miriam",
+    "Cain, Abel and Seth"
+   ],
+   "ref": "Daniel 3:20",
+   "de": [
+    "Wer wurde in den glühenden Ofen geworfen?",
+    "Schadrach, Meschach und Abed-Nego",
+    "Petrus, Jakobus und Johannes",
+    "Mose, Aaron und Mirjam",
+    "Kain, Abel und Set"
+   ]
+  },
+  {
+   "ch": 7,
+   "diff": 1,
+   "en": [
+    "Who shut the lions' mouths?",
+    "God's angel",
+    "Daniel's friends",
+    "The king's guards",
+    "A shepherd"
+   ],
+   "ref": "Daniel 6:22",
+   "de": [
+    "Wer verschloss den Löwen das Maul?",
+    "Gottes Engel",
+    "Daniels Freunde",
+    "Die Wachen des Königs",
+    "Ein Hirte"
+   ]
+  },
+  {
+   "ch": 7,
+   "diff": 2,
+   "en": [
+    "How many times a day did Daniel pray?",
+    "Three",
+    "One",
+    "Seven",
+    "Ten"
+   ],
+   "ref": "Daniel 6:10",
+   "de": [
+    "Wie oft am Tag betete Daniel?",
+    "Dreimal",
+    "Einmal",
+    "Siebenmal",
+    "Zehnmal"
+   ]
+  },
+  {
+   "ch": 7,
+   "diff": 2,
+   "en": [
+    "How many men did the king see walking in the fire?",
+    "Four",
+    "Three",
+    "Two",
+    "Seven"
+   ],
+   "ref": "Daniel 3:25",
+   "de": [
+    "Wie viele Männer sah der König im Feuer umhergehen?",
+    "Vier",
+    "Drei",
+    "Zwei",
+    "Sieben"
+   ]
+  },
+  {
+   "ch": 7,
+   "diff": 2,
+   "en": [
+    "What did Daniel and his friends eat instead of the king's food?",
+    "Vegetables and water",
+    "Only bread",
+    "Honey and locusts",
+    "Fish and figs"
+   ],
+   "ref": "Daniel 1:12",
+   "de": [
+    "Was aßen Daniel und seine Freunde statt des Essens vom König?",
+    "Gemüse und Wasser",
+    "Nur Brot",
+    "Honig und Heuschrecken",
+    "Fisch und Feigen"
+   ]
+  },
+  {
+   "ch": 7,
+   "diff": 2,
+   "en": [
+    "Which king made a giant golden statue?",
+    "Nebuchadnezzar",
+    "Darius",
+    "Pharaoh",
+    "Herod"
+   ],
+   "ref": "Daniel 3:1",
+   "de": [
+    "Welcher König ließ ein riesiges goldenes Standbild bauen?",
+    "Nebukadnezar",
+    "Darius",
+    "Pharao",
+    "Herodes"
+   ]
+  },
+  {
+   "ch": 7,
+   "diff": 2,
+   "en": [
+    "What special gift did God give Daniel?",
+    "Understanding dreams and visions",
+    "Super strength",
+    "Great riches",
+    "A magic staff"
+   ],
+   "ref": "Daniel 1:17",
+   "de": [
+    "Welche besondere Gabe schenkte Gott Daniel?",
+    "Träume und Visionen zu verstehen",
+    "Riesige Kraft",
+    "Großen Reichtum",
+    "Einen Zauberstab"
+   ]
+  },
+  {
+   "ch": 7,
+   "diff": 3,
+   "en": [
+    "Which king put Daniel in the lions' den?",
+    "Darius",
+    "Nebuchadnezzar",
+    "Cyrus",
+    "Solomon"
+   ],
+   "ref": "Daniel 6:9,16",
+   "de": [
+    "Welcher König ließ Daniel in die Löwengrube werfen?",
+    "Darius",
+    "Nebukadnezar",
+    "Kyrus",
+    "Salomo"
+   ]
+  },
+  {
+   "ch": 7,
+   "diff": 3,
+   "en": [
+    "Who read the mysterious writing on the wall?",
+    "Daniel",
+    "Jonah",
+    "Ezra",
+    "Elijah"
+   ],
+   "ref": "Daniel 5:17",
+   "de": [
+    "Wer las die geheimnisvolle Schrift an der Wand?",
+    "Daniel",
+    "Jona",
+    "Esra",
+    "Elia"
+   ]
+  },
+  {
+   "ch": 8,
+   "diff": 1,
+   "en": [
+    "In which town was Jesus born?",
+    "Bethlehem",
+    "Nazareth",
+    "Jerusalem",
+    "Capernaum"
+   ],
+   "ref": "Luke 2:4-7",
+   "de": [
+    "In welcher Stadt wurde Jesus geboren?",
+    "Betlehem",
+    "Nazaret",
+    "Jerusalem",
+    "Kapernaum"
+   ]
+  },
+  {
+   "ch": 8,
+   "diff": 1,
+   "en": [
+    "Where was baby Jesus laid?",
+    "In a manger",
+    "In a palace bed",
+    "In a boat",
+    "In a basket on a river"
+   ],
+   "ref": "Luke 2:7",
+   "de": [
+    "Wohin wurde das Kind Jesus gelegt?",
+    "In eine Futterkrippe",
+    "In ein Palastbett",
+    "In ein Boot",
+    "In einen Korb auf dem Fluss"
+   ]
+  },
+  {
+   "ch": 8,
+   "diff": 1,
+   "en": [
+    "Who told the shepherds about Jesus' birth?",
+    "An angel",
+    "A king",
+    "The innkeeper",
+    "Mary"
+   ],
+   "ref": "Luke 2:9-10",
+   "de": [
+    "Wer erzählte den Hirten von der Geburt Jesu?",
+    "Ein Engel",
+    "Ein König",
+    "Der Wirt",
+    "Maria"
+   ]
+  },
+  {
+   "ch": 8,
+   "diff": 1,
+   "en": [
+    "What guided the wise men?",
+    "A star",
+    "A cloud",
+    "A river",
+    "A map"
+   ],
+   "ref": "Matthew 2:2",
+   "de": [
+    "Was führte die Sterndeuter?",
+    "Ein Stern",
+    "Eine Wolke",
+    "Ein Fluss",
+    "Eine Landkarte"
+   ]
+  },
+  {
+   "ch": 8,
+   "diff": 1,
+   "en": [
+    "What was the name of Mary's husband?",
+    "Joseph",
+    "Zechariah",
+    "John",
+    "Jacob"
+   ],
+   "ref": "Matthew 1:18",
+   "de": [
+    "Wie hieß der Mann von Maria?",
+    "Josef",
+    "Zacharias",
+    "Johannes",
+    "Jakob"
+   ]
+  },
+  {
+   "ch": 8,
+   "diff": 2,
+   "en": [
+    "Which gift was NOT brought by the wise men?",
+    "Silver",
+    "Gold",
+    "Frankincense",
+    "Myrrh"
+   ],
+   "ref": "Matthew 2:11",
+   "de": [
+    "Welches Geschenk brachten die Sterndeuter NICHT mit?",
+    "Silber",
+    "Gold",
+    "Weihrauch",
+    "Myrrhe"
+   ]
+  },
+  {
+   "ch": 8,
+   "diff": 2,
+   "en": [
+    "Why did Mary and Joseph travel to Bethlehem?",
+    "To be counted in a census",
+    "For a wedding",
+    "To visit the temple",
+    "To buy a donkey"
+   ],
+   "ref": "Luke 2:1-4",
+   "de": [
+    "Warum reisten Maria und Josef nach Betlehem?",
+    "Um sich zählen zu lassen",
+    "Für eine Hochzeit",
+    "Um den Tempel zu besuchen",
+    "Um einen Esel zu kaufen"
+   ]
+  },
+  {
+   "ch": 8,
+   "diff": 2,
+   "en": [
+    "Which angel visited Mary?",
+    "Gabriel",
+    "Michael",
+    "Raphael",
+    "Uriel"
+   ],
+   "ref": "Luke 1:26",
+   "de": [
+    "Welcher Engel besuchte Maria?",
+    "Gabriel",
+    "Michael",
+    "Rafael",
+    "Uriel"
+   ]
+  },
+  {
+   "ch": 8,
+   "diff": 2,
+   "en": [
+    "What does 'Emmanuel' mean?",
+    "God with us",
+    "Prince of peace",
+    "Son of David",
+    "Light of the world"
+   ],
+   "ref": "Matthew 1:23",
+   "de": [
+    "Was bedeutet „Immanuel“?",
+    "Gott ist mit uns",
+    "Fürst des Friedens",
+    "Sohn Davids",
+    "Licht der Welt"
+   ]
+  },
+  {
+   "ch": 8,
+   "diff": 2,
+   "en": [
+    "In which town did Jesus grow up?",
+    "Nazareth",
+    "Bethlehem",
+    "Rome",
+    "Jericho"
+   ],
+   "ref": "Luke 2:39-40",
+   "de": [
+    "In welcher Stadt wuchs Jesus auf?",
+    "Nazaret",
+    "Betlehem",
+    "Rom",
+    "Jericho"
+   ]
+  },
+  {
+   "ch": 8,
+   "diff": 3,
+   "en": [
+    "Which king tried to find baby Jesus to harm Him?",
+    "Herod",
+    "Saul",
+    "Pharaoh",
+    "Darius"
+   ],
+   "ref": "Matthew 2:13",
+   "de": [
+    "Welcher König wollte das Kind Jesus finden, um ihm zu schaden?",
+    "Herodes",
+    "Saul",
+    "Pharao",
+    "Darius"
+   ]
+  },
+  {
+   "ch": 8,
+   "diff": 3,
+   "en": [
+    "Where did Joseph take Mary and Jesus to keep them safe?",
+    "Egypt",
+    "Babylon",
+    "Rome",
+    "Greece"
+   ],
+   "ref": "Matthew 2:14",
+   "de": [
+    "Wohin brachte Josef Maria und Jesus in Sicherheit?",
+    "Nach Ägypten",
+    "Nach Babylon",
+    "Nach Rom",
+    "Nach Griechenland"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 1,
+   "en": [
+    "What did Jesus do when the storm hit the boat?",
+    "He calmed it with His words",
+    "He swam to shore",
+    "He made the storm bigger",
+    "He told everyone to row faster"
+   ],
+   "ref": "Mark 4:39",
+   "de": [
+    "Was tat Jesus, als der Sturm das Boot traf?",
+    "Er beruhigte ihn mit seinen Worten",
+    "Er schwamm ans Ufer",
+    "Er machte den Sturm stärker",
+    "Er ließ alle schneller rudern"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 1,
+   "en": [
+    "How many disciples did Jesus choose to be His apostles?",
+    "12",
+    "10",
+    "7",
+    "40"
+   ],
+   "ref": "Mark 3:14",
+   "de": [
+    "Wie viele Jünger wählte Jesus als Apostel aus?",
+    "12",
+    "10",
+    "7",
+    "40"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 1,
+   "en": [
+    "Which disciple walked on the water toward Jesus?",
+    "Peter",
+    "John",
+    "Judas",
+    "Thomas"
+   ],
+   "ref": "Matthew 14:29",
+   "de": [
+    "Welcher Jünger ging auf dem Wasser auf Jesus zu?",
+    "Petrus",
+    "Johannes",
+    "Judas",
+    "Thomas"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 1,
+   "en": [
+    "What was Peter's job before following Jesus?",
+    "Fisherman",
+    "Tax collector",
+    "Carpenter",
+    "Shepherd"
+   ],
+   "ref": "Matthew 4:18",
+   "de": [
+    "Was war Petrus von Beruf, bevor er Jesus folgte?",
+    "Fischer",
+    "Zolleinnehmer",
+    "Zimmermann",
+    "Hirte"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 1,
+   "en": [
+    "How much food fed the 5,000?",
+    "5 loaves and 2 fish",
+    "2 loaves and 5 fish",
+    "7 loaves and 3 fish",
+    "12 loaves and 12 fish"
+   ],
+   "ref": "Matthew 14:17",
+   "de": [
+    "Wie viel Essen machte die 5000 satt?",
+    "5 Brote und 2 Fische",
+    "2 Brote und 5 Fische",
+    "7 Brote und 3 Fische",
+    "12 Brote und 12 Fische"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 1,
+   "en": [
+    "In the parable, what did the Good Samaritan do?",
+    "Helped a hurt stranger",
+    "Built a house on a rock",
+    "Planted seeds",
+    "Found a lost coin"
+   ],
+   "ref": "Luke 10:33-34",
+   "de": [
+    "Was tat der barmherzige Samariter in Jesu Geschichte?",
+    "Er half einem verletzten Fremden",
+    "Er baute ein Haus auf Fels",
+    "Er säte Samen",
+    "Er fand eine verlorene Münze"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 1,
+   "en": [
+    "In Jesus' story, the wise man built his house on...",
+    "The rock",
+    "The sand",
+    "A hill of grass",
+    "A river"
+   ],
+   "ref": "Matthew 7:24",
+   "de": [
+    "Worauf baute der kluge Mann in Jesu Geschichte sein Haus?",
+    "Auf Fels",
+    "Auf Sand",
+    "Auf eine Wiese",
+    "In einen Fluss"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 2,
+   "en": [
+    "How many baskets of leftovers were gathered after feeding the 5,000?",
+    "12",
+    "7",
+    "5",
+    "3"
+   ],
+   "ref": "Matthew 14:20",
+   "de": [
+    "Wie viele Körbe mit Resten wurden nach der Speisung der 5000 eingesammelt?",
+    "12",
+    "7",
+    "5",
+    "3"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 2,
+   "en": [
+    "What was Jesus' first miracle?",
+    "Turning water into wine",
+    "Walking on water",
+    "Healing a blind man",
+    "Feeding the 5,000"
+   ],
+   "ref": "John 2:11",
+   "de": [
+    "Was war das erste Wunder von Jesus?",
+    "Er verwandelte Wasser in Wein",
+    "Er ging über das Wasser",
+    "Er heilte einen Blinden",
+    "Er machte 5000 Menschen satt"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 2,
+   "en": [
+    "Which disciple had been a tax collector?",
+    "Matthew",
+    "Peter",
+    "Andrew",
+    "James"
+   ],
+   "ref": "Matthew 9:9",
+   "de": [
+    "Welcher Jünger war vorher Zolleinnehmer?",
+    "Matthäus",
+    "Petrus",
+    "Andreas",
+    "Jakobus"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 2,
+   "en": [
+    "Who was Peter's brother?",
+    "Andrew",
+    "John",
+    "James",
+    "Philip"
+   ],
+   "ref": "Matthew 4:18",
+   "de": [
+    "Wer war der Bruder von Petrus?",
+    "Andreas",
+    "Johannes",
+    "Jakobus",
+    "Philippus"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 2,
+   "en": [
+    "In the parable, how many sheep did the shepherd have before one was lost?",
+    "100",
+    "99",
+    "12",
+    "40"
+   ],
+   "ref": "Luke 15:4",
+   "de": [
+    "Wie viele Schafe hatte der Hirte im Gleichnis, bevor eines verloren ging?",
+    "100",
+    "99",
+    "12",
+    "40"
+   ]
+  },
+  {
+   "ch": 9,
+   "diff": 3,
+   "en": [
+    "Who climbed a sycamore tree to see Jesus?",
+    "Zacchaeus",
+    "Nicodemus",
+    "Bartimaeus",
+    "Lazarus"
+   ],
+   "ref": "Luke 19:4",
+   "de": [
+    "Wer kletterte auf einen Maulbeerfeigenbaum, um Jesus zu sehen?",
+    "Zachäus",
+    "Nikodemus",
+    "Bartimäus",
+    "Lazarus"
+   ]
+  },
+  {
+   "ch": 10,
+   "diff": 1,
+   "en": [
+    "What animal did Jesus ride into Jerusalem?",
+    "A donkey",
+    "A horse",
+    "A camel",
+    "He rode in a chariot"
+   ],
+   "ref": "John 12:14",
+   "de": [
+    "Auf welchem Tier ritt Jesus in Jerusalem ein?",
+    "Auf einem Esel",
+    "Auf einem Pferd",
+    "Auf einem Kamel",
+    "In einem Streitwagen"
+   ]
+  },
+  {
+   "ch": 10,
+   "diff": 1,
+   "en": [
+    "What did people wave when Jesus entered Jerusalem?",
+    "Palm branches",
+    "Flags",
+    "Scarves",
+    "Olive branches only"
+   ],
+   "ref": "John 12:13",
+   "de": [
+    "Was schwenkten die Leute, als Jesus in Jerusalem einzog?",
+    "Palmzweige",
+    "Fahnen",
+    "Tücher",
+    "Nur Olivenzweige"
+   ]
+  },
+  {
+   "ch": 10,
+   "diff": 1,
+   "en": [
+    "On which day did Jesus rise from the dead?",
+    "The third day",
+    "The first day",
+    "The seventh day",
+    "The fortieth day"
+   ],
+   "ref": "1 Corinthians 15:4",
+   "de": [
+    "An welchem Tag ist Jesus von den Toten auferstanden?",
+    "Am dritten Tag",
+    "Am ersten Tag",
+    "Am siebten Tag",
+    "Am vierzigsten Tag"
+   ]
+  },
+  {
+   "ch": 10,
+   "diff": 1,
+   "en": [
+    "Which disciple doubted until he saw Jesus himself?",
+    "Thomas",
+    "Peter",
+    "John",
+    "Andrew"
+   ],
+   "ref": "John 20:25",
+   "de": [
+    "Welcher Jünger zweifelte, bis er Jesus selbst sah?",
+    "Thomas",
+    "Petrus",
+    "Johannes",
+    "Andreas"
+   ]
+  },
+  {
+   "ch": 10,
+   "diff": 1,
+   "en": [
+    "What was rolled away from Jesus' tomb?",
+    "A large stone",
+    "A wooden door",
+    "A curtain",
+    "A golden gate"
+   ],
+   "ref": "Mark 16:4",
+   "de": [
+    "Was wurde vom Grab Jesu weggerollt?",
+    "Ein großer Stein",
+    "Eine Holztür",
+    "Ein Vorhang",
+    "Ein goldenes Tor"
+   ]
+  },
+  {
+   "ch": 10,
+   "diff": 1,
+   "en": [
+    "What meal did Jesus share with His disciples before He died?",
+    "The Last Supper",
+    "A wedding feast",
+    "A birthday party",
+    "Breakfast by the sea"
+   ],
+   "ref": "Luke 22:15",
+   "de": [
+    "Welches Essen teilte Jesus mit seinen Jüngern, bevor er starb?",
+    "Das letzte Abendmahl",
+    "Ein Hochzeitsfest",
+    "Eine Geburtstagsfeier",
+    "Ein Frühstück am See"
+   ]
+  },
+  {
+   "ch": 10,
+   "diff": 2,
+   "en": [
+    "Who was the first person to see Jesus after He rose?",
+    "Mary Magdalene",
+    "Peter",
+    "Pilate",
+    "Thomas"
+   ],
+   "ref": "Mark 16:9",
+   "de": [
+    "Wer sah Jesus nach seiner Auferstehung als Erste?",
+    "Maria Magdalena",
+    "Petrus",
+    "Pilatus",
+    "Thomas"
+   ]
+  },
+  {
+   "ch": 10,
+   "diff": 2,
+   "en": [
+    "Which disciple betrayed Jesus?",
+    "Judas Iscariot",
+    "Thomas",
+    "Matthew",
+    "Peter"
+   ],
+   "ref": "Matthew 26:14-16",
+   "de": [
+    "Welcher Jünger verriet Jesus?",
+    "Judas Iskariot",
+    "Thomas",
+    "Matthäus",
+    "Petrus"
+   ]
+  },
+  {
+   "ch": 10,
+   "diff": 2,
+   "en": [
+    "How many times did Peter deny knowing Jesus?",
+    "Three",
+    "Once",
+    "Seven",
+    "Twelve"
+   ],
+   "ref": "Matthew 26:75",
+   "de": [
+    "Wie oft sagte Petrus, dass er Jesus nicht kennt?",
+    "Dreimal",
+    "Einmal",
+    "Siebenmal",
+    "Zwölfmal"
+   ]
+  },
+  {
+   "ch": 10,
+   "diff": 2,
+   "en": [
+    "Where did Jesus pray the night before He died?",
+    "The garden of Gethsemane",
+    "The temple roof",
+    "Mount Sinai",
+    "In a boat"
+   ],
+   "ref": "Matthew 26:36",
+   "de": [
+    "Wo betete Jesus in der Nacht, bevor er starb?",
+    "Im Garten Getsemani",
+    "Auf dem Tempeldach",
+    "Auf dem Berg Sinai",
+    "In einem Boot"
+   ]
+  },
+  {
+   "ch": 10,
+   "diff": 2,
+   "en": [
+    "What did Jesus wash for His disciples at the Last Supper?",
+    "Their feet",
+    "Their hands",
+    "Their robes",
+    "Their cups"
+   ],
+   "ref": "John 13:5",
+   "de": [
+    "Was wusch Jesus seinen Jüngern beim letzten Abendmahl?",
+    "Die Füße",
+    "Die Hände",
+    "Die Gewänder",
+    "Die Becher"
+   ]
+  },
+  {
+   "ch": 10,
+   "diff": 3,
+   "en": [
+    "For how many days did the risen Jesus appear to His followers before going up to heaven?",
+    "40",
+    "3",
+    "7",
+    "12"
+   ],
+   "ref": "Acts 1:3",
+   "de": [
+    "Wie viele Tage zeigte sich der auferstandene Jesus seinen Freunden, bevor er in den Himmel ging?",
+    "40",
+    "3",
+    "7",
+    "12"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 1,
+   "en": [
+    "What is the first book of the Bible?",
+    "Genesis",
+    "Exodus",
+    "Matthew",
+    "Revelation"
+   ],
+   "ref": "Genesis 1:1",
+   "de": [
+    "Welches ist das erste Buch der Bibel?",
+    "1. Mose (Genesis)",
+    "2. Mose",
+    "Matthäus",
+    "Offenbarung"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 1,
+   "en": [
+    "What is the last book of the Bible?",
+    "Revelation",
+    "Malachi",
+    "Jude",
+    "Acts"
+   ],
+   "ref": "Revelation 22:21",
+   "de": [
+    "Welches ist das letzte Buch der Bibel?",
+    "Offenbarung",
+    "Maleachi",
+    "Judas",
+    "Apostelgeschichte"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 1,
+   "en": [
+    "Who was swallowed by a great fish?",
+    "Jonah",
+    "Jacob",
+    "Elijah",
+    "Paul"
+   ],
+   "ref": "Jonah 1:17",
+   "de": [
+    "Wer wurde von einem großen Fisch verschluckt?",
+    "Jona",
+    "Jakob",
+    "Elia",
+    "Paulus"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 1,
+   "en": [
+    "Whose great strength was connected to his long hair?",
+    "Samson",
+    "Goliath",
+    "David",
+    "Gideon"
+   ],
+   "ref": "Judges 16:17",
+   "de": [
+    "Wessen große Kraft hing mit seinen langen Haaren zusammen?",
+    "Simson",
+    "Goliat",
+    "David",
+    "Gideon"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 1,
+   "en": [
+    "Which king asked God for wisdom?",
+    "Solomon",
+    "Saul",
+    "Ahab",
+    "Herod"
+   ],
+   "ref": "1 Kings 3:9",
+   "de": [
+    "Welcher König bat Gott um Weisheit?",
+    "Salomo",
+    "Saul",
+    "Ahab",
+    "Herodes"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 1,
+   "en": [
+    "Who was sold by his brothers and later became a ruler in Egypt?",
+    "Joseph",
+    "Benjamin",
+    "Jacob",
+    "Reuben"
+   ],
+   "ref": "Genesis 37; 41",
+   "de": [
+    "Wer wurde von seinen Brüdern verkauft und später ein Herrscher in Ägypten?",
+    "Josef",
+    "Benjamin",
+    "Jakob",
+    "Ruben"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 1,
+   "en": [
+    "What was special about Joseph's coat?",
+    "It had many colors",
+    "It was made of gold",
+    "It glowed in the dark",
+    "It was very tiny"
+   ],
+   "ref": "Genesis 37:3",
+   "de": [
+    "Was war das Besondere an Josefs Mantel?",
+    "Er war bunt",
+    "Er war aus Gold",
+    "Er leuchtete im Dunkeln",
+    "Er war winzig klein"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 1,
+   "en": [
+    "Who was Abraham's promised son?",
+    "Isaac",
+    "Ishmael",
+    "Jacob",
+    "Lot"
+   ],
+   "ref": "Genesis 21:3",
+   "de": [
+    "Wer war der versprochene Sohn von Abraham?",
+    "Isaak",
+    "Ismael",
+    "Jakob",
+    "Lot"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 2,
+   "en": [
+    "How many books are in the New Testament?",
+    "27",
+    "39",
+    "66",
+    "12"
+   ],
+   "ref": "The New Testament",
+   "de": [
+    "Wie viele Bücher hat das Neue Testament?",
+    "27",
+    "39",
+    "66",
+    "12"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 2,
+   "en": [
+    "Which queen bravely saved her people?",
+    "Esther",
+    "Jezebel",
+    "Sheba",
+    "Vashti"
+   ],
+   "ref": "Esther 4:16",
+   "de": [
+    "Welche Königin rettete mutig ihr Volk?",
+    "Ester",
+    "Isebel",
+    "Die Königin von Saba",
+    "Waschti"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 2,
+   "en": [
+    "Who promised Naomi, 'Where you go, I will go'?",
+    "Ruth",
+    "Esther",
+    "Hannah",
+    "Mary"
+   ],
+   "ref": "Ruth 1:16",
+   "de": [
+    "Wer versprach Noomi: „Wo du hingehst, da will ich auch hingehen“?",
+    "Rut",
+    "Ester",
+    "Hanna",
+    "Maria"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 2,
+   "en": [
+    "Who was blinded by a bright light on the road to Damascus?",
+    "Paul (Saul)",
+    "Peter",
+    "Luke",
+    "Timothy"
+   ],
+   "ref": "Acts 9:3-8",
+   "de": [
+    "Wer wurde auf dem Weg nach Damaskus von einem hellen Licht geblendet?",
+    "Paulus (Saulus)",
+    "Petrus",
+    "Lukas",
+    "Timotheus"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 2,
+   "en": [
+    "Which fruit of the Spirit is listed first?",
+    "Love",
+    "Joy",
+    "Peace",
+    "Patience"
+   ],
+   "ref": "Galatians 5:22",
+   "de": [
+    "Welche Frucht des Geistes wird zuerst genannt?",
+    "Liebe",
+    "Freude",
+    "Frieden",
+    "Geduld"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 2,
+   "en": [
+    "Jesus said the greatest commandments are about...",
+    "Loving God and loving your neighbor",
+    "Obeying kings and paying taxes",
+    "Fasting and feasting",
+    "Building temples"
+   ],
+   "ref": "Matthew 22:37-39",
+   "de": [
+    "Jesus sagt, die wichtigsten Gebote handeln davon, ...",
+    "Gott und den Nächsten zu lieben",
+    "Königen zu gehorchen und Steuern zu zahlen",
+    "zu fasten und zu feiern",
+    "Tempel zu bauen"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 2,
+   "en": [
+    "Who was taken up to heaven in a whirlwind?",
+    "Elijah",
+    "Elisha",
+    "Moses",
+    "Jonah"
+   ],
+   "ref": "2 Kings 2:11",
+   "de": [
+    "Wer wurde in einem Wirbelsturm in den Himmel aufgenommen?",
+    "Elia",
+    "Elisa",
+    "Mose",
+    "Jona"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 3,
+   "en": [
+    "Which judge defeated a great army with only 300 men?",
+    "Gideon",
+    "Joshua",
+    "Samson",
+    "Saul"
+   ],
+   "ref": "Judges 7:7",
+   "de": [
+    "Welcher Richter besiegte mit nur 300 Männern ein großes Heer?",
+    "Gideon",
+    "Josua",
+    "Simson",
+    "Saul"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 3,
+   "en": [
+    "Which prophet was fed by ravens?",
+    "Elijah",
+    "Jonah",
+    "Isaiah",
+    "Jeremiah"
+   ],
+   "ref": "1 Kings 17:6",
+   "de": [
+    "Welcher Prophet wurde von Raben versorgt?",
+    "Elia",
+    "Jona",
+    "Jesaja",
+    "Jeremia"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 3,
+   "en": [
+    "How many books are in most Protestant Bibles?",
+    "66",
+    "73",
+    "39",
+    "100"
+   ],
+   "ref": "Old Testament (39) + New Testament (27)",
+   "de": [
+    "Wie viele Bücher hat die Bibel in den meisten evangelischen Ausgaben?",
+    "66",
+    "73",
+    "39",
+    "100"
+   ]
+  },
+  {
+   "ch": 0,
+   "diff": 3,
+   "en": [
+    "Which prophet was called as a boy when God spoke to him at night?",
+    "Samuel",
+    "Isaiah",
+    "Elijah",
+    "Amos"
+   ],
+   "ref": "1 Samuel 3:10",
+   "de": [
+    "Welchen Propheten rief Gott als Jungen nachts beim Namen?",
+    "Samuel",
+    "Jesaja",
+    "Elia",
+    "Amos"
+   ]
+  },
+  {
+   "ch": 11,
+   "diff": 1,
+   "en": [
+    "God promised Abraham his family would be as many as the...",
+    "Stars in the sky",
+    "Fish in the sea",
+    "Trees in the forest",
+    "Birds in the air"
+   ],
+   "ref": "Genesis 15:5",
+   "de": [
+    "Gott versprach Abraham so viele Nachkommen wie ...",
+    "Sterne am Himmel",
+    "Fische im Meer",
+    "Bäume im Wald",
+    "Vögel in der Luft"
+   ]
+  },
+  {
+   "ch": 11,
+   "diff": 1,
+   "en": [
+    "What was the name of Abraham's wife?",
+    "Sarah",
+    "Rebekah",
+    "Rachel",
+    "Leah"
+   ],
+   "ref": "Genesis 17:15",
+   "de": [
+    "Wie hieß Abrahams Frau?",
+    "Sara",
+    "Rebekka",
+    "Rahel",
+    "Lea"
+   ]
+  },
+  {
+   "ch": 11,
+   "diff": 2,
+   "en": [
+    "Why did God scatter the people building the tower of Babel?",
+    "They built it out of pride, to make a name for themselves",
+    "They ran out of bricks",
+    "A storm knocked it down",
+    "The king wanted a palace"
+   ],
+   "ref": "Genesis 11:4-8",
+   "de": [
+    "Warum zerstreute Gott die Menschen, die den Turm von Babel bauten?",
+    "Sie bauten ihn aus Stolz, um selbst berühmt zu werden",
+    "Ihnen gingen die Ziegel aus",
+    "Ein Sturm riss ihn um",
+    "Der König wollte einen Palast"
+   ]
+  },
+  {
+   "ch": 11,
+   "diff": 2,
+   "en": [
+    "How old was Abraham when Isaac was born?",
+    "100",
+    "40",
+    "65",
+    "900"
+   ],
+   "ref": "Genesis 21:5",
+   "de": [
+    "Wie alt war Abraham, als Isaak geboren wurde?",
+    "100",
+    "40",
+    "65",
+    "900"
+   ]
+  },
+  {
+   "ch": 11,
+   "diff": 2,
+   "en": [
+    "What did Sarah do when she heard she would have a baby in her old age?",
+    "She laughed",
+    "She cried",
+    "She ran away",
+    "She sang a song"
+   ],
+   "ref": "Genesis 18:12",
+   "de": [
+    "Was tat Sara, als sie hörte, dass sie im Alter noch ein Baby bekommen würde?",
+    "Sie lachte",
+    "Sie weinte",
+    "Sie lief weg",
+    "Sie sang ein Lied"
+   ]
+  },
+  {
+   "ch": 11,
+   "diff": 2,
+   "en": [
+    "Who was Abraham's nephew?",
+    "Lot",
+    "Laban",
+    "Esau",
+    "Isaac"
+   ],
+   "ref": "Genesis 12:5",
+   "de": [
+    "Wer war Abrahams Neffe?",
+    "Lot",
+    "Laban",
+    "Esau",
+    "Isaak"
+   ]
+  },
+  {
+   "ch": 11,
+   "diff": 3,
+   "en": [
+    "What was Abraham's name before God changed it?",
+    "Abram",
+    "Abner",
+    "Aaron",
+    "Amos"
+   ],
+   "ref": "Genesis 17:5",
+   "de": [
+    "Wie hieß Abraham, bevor Gott seinen Namen änderte?",
+    "Abram",
+    "Abner",
+    "Aaron",
+    "Amos"
+   ]
+  },
+  {
+   "ch": 11,
+   "diff": 3,
+   "en": [
+    "What did God provide on the mountain instead of Isaac?",
+    "A ram caught in a thicket",
+    "A lamb from the village",
+    "A dove",
+    "A calf"
+   ],
+   "ref": "Genesis 22:13",
+   "de": [
+    "Was gab Gott auf dem Berg anstelle von Isaak?",
+    "Einen Widder, der sich im Gebüsch verfangen hatte",
+    "Ein Lamm aus dem Dorf",
+    "Eine Taube",
+    "Ein Kalb"
+   ]
+  },
+  {
+   "ch": 12,
+   "diff": 1,
+   "en": [
+    "Who gave Joseph a coat of many colors?",
+    "His father Jacob",
+    "His mother Rachel",
+    "Pharaoh",
+    "His brother Reuben"
+   ],
+   "ref": "Genesis 37:3",
+   "de": [
+    "Wer schenkte Josef einen bunten Mantel?",
+    "Sein Vater Jakob",
+    "Seine Mutter Rahel",
+    "Der Pharao",
+    "Sein Bruder Ruben"
+   ]
+  },
+  {
+   "ch": 12,
+   "diff": 1,
+   "en": [
+    "What did Joseph's brothers do to him?",
+    "Sold him to traders",
+    "Made him king",
+    "Sent him to school",
+    "Gave him a farm"
+   ],
+   "ref": "Genesis 37:28",
+   "de": [
+    "Was taten Josefs Brüder mit ihm?",
+    "Sie verkauften ihn an Händler",
+    "Sie machten ihn zum König",
+    "Sie schickten ihn zur Schule",
+    "Sie schenkten ihm einen Hof"
+   ]
+  },
+  {
+   "ch": 12,
+   "diff": 1,
+   "en": [
+    "What did God help Joseph understand?",
+    "Dreams",
+    "The stars only",
+    "Animal languages",
+    "Secret codes"
+   ],
+   "ref": "Genesis 40:8",
+   "de": [
+    "Wobei half Gott Josef?",
+    "Träume zu verstehen",
+    "Nur die Sterne zu lesen",
+    "Tiersprachen zu verstehen",
+    "Geheimcodes zu knacken"
+   ]
+  },
+  {
+   "ch": 12,
+   "diff": 2,
+   "en": [
+    "In Pharaoh's dream, what came up out of the river?",
+    "Seven fat cows and seven thin cows",
+    "Seven fish",
+    "Twelve frogs",
+    "A golden calf"
+   ],
+   "ref": "Genesis 41:2-4",
+   "de": [
+    "Was stieg im Traum des Pharao aus dem Fluss?",
+    "Sieben fette und sieben magere Kühe",
+    "Sieben Fische",
+    "Zwölf Frösche",
+    "Ein goldenes Kalb"
+   ]
+  },
+  {
+   "ch": 12,
+   "diff": 2,
+   "en": [
+    "How many brothers did Joseph have?",
+    "11",
+    "7",
+    "12",
+    "3"
+   ],
+   "ref": "Genesis 35:22-26",
+   "de": [
+    "Wie viele Brüder hatte Josef?",
+    "11",
+    "7",
+    "12",
+    "3"
+   ]
+  },
+  {
+   "ch": 12,
+   "diff": 2,
+   "en": [
+    "Who was Joseph's youngest brother?",
+    "Benjamin",
+    "Reuben",
+    "Judah",
+    "Levi"
+   ],
+   "ref": "Genesis 35:18",
+   "de": [
+    "Wer war Josefs jüngster Bruder?",
+    "Benjamin",
+    "Ruben",
+    "Juda",
+    "Levi"
+   ]
+  },
+  {
+   "ch": 12,
+   "diff": 2,
+   "en": [
+    "What did Joseph hide in Benjamin's sack?",
+    "His silver cup",
+    "A golden crown",
+    "A scroll",
+    "A sword"
+   ],
+   "ref": "Genesis 44:2",
+   "de": [
+    "Was versteckte Josef in Benjamins Sack?",
+    "Seinen silbernen Becher",
+    "Eine goldene Krone",
+    "Eine Schriftrolle",
+    "Ein Schwert"
+   ]
+  },
+  {
+   "ch": 12,
+   "diff": 3,
+   "en": [
+    "How many years of plenty came before the famine?",
+    "Seven",
+    "Three",
+    "Twelve",
+    "Forty"
+   ],
+   "ref": "Genesis 41:29-30",
+   "de": [
+    "Wie viele Jahre Überfluss kamen vor der Hungersnot?",
+    "Sieben",
+    "Drei",
+    "Zwölf",
+    "Vierzig"
+   ]
+  },
+  {
+   "ch": 12,
+   "diff": 3,
+   "en": [
+    "Joseph told his brothers, \"You meant evil against me, but God meant it for...\"",
+    "good",
+    "nothing",
+    "Egypt",
+    "later"
+   ],
+   "ref": "Genesis 50:20",
+   "de": [
+    "Josef sagte zu seinen Brüdern: „Ihr wolltet mir Böses tun, aber Gott hat ... daraus gemacht.“",
+    "Gutes",
+    "nichts",
+    "Ägypten",
+    "später"
+   ]
+  },
+  {
+   "ch": 13,
+   "diff": 1,
+   "en": [
+    "Who was Ruth's mother-in-law?",
+    "Naomi",
+    "Sarah",
+    "Miriam",
+    "Hannah"
+   ],
+   "ref": "Ruth 1:3-4",
+   "de": [
+    "Wer war Ruts Schwiegermutter?",
+    "Noomi",
+    "Sara",
+    "Mirjam",
+    "Hanna"
+   ]
+  },
+  {
+   "ch": 13,
+   "diff": 1,
+   "en": [
+    "What did Ruth gather in the fields?",
+    "Grain left behind by the harvesters",
+    "Flowers",
+    "Stones",
+    "Firewood"
+   ],
+   "ref": "Ruth 2:2-3",
+   "de": [
+    "Was sammelte Rut auf den Feldern?",
+    "Getreide, das die Erntearbeiter liegen ließen",
+    "Blumen",
+    "Steine",
+    "Brennholz"
+   ]
+  },
+  {
+   "ch": 13,
+   "diff": 1,
+   "en": [
+    "In whose fields did Ruth gather grain?",
+    "Boaz",
+    "Saul",
+    "Jesse",
+    "Laban"
+   ],
+   "ref": "Ruth 2:3",
+   "de": [
+    "Auf wessen Feldern sammelte Rut Getreide?",
+    "Boas",
+    "Saul",
+    "Isai",
+    "Laban"
+   ]
+  },
+  {
+   "ch": 13,
+   "diff": 2,
+   "en": [
+    "Where was Ruth from?",
+    "Moab",
+    "Egypt",
+    "Nineveh",
+    "Rome"
+   ],
+   "ref": "Ruth 1:4",
+   "de": [
+    "Woher kam Rut?",
+    "Aus Moab",
+    "Aus Ägypten",
+    "Aus Ninive",
+    "Aus Rom"
+   ]
+  },
+  {
+   "ch": 13,
+   "diff": 2,
+   "en": [
+    "Which famous king was Ruth's great-grandson?",
+    "King David",
+    "King Saul",
+    "King Solomon",
+    "King Herod"
+   ],
+   "ref": "Ruth 4:17",
+   "de": [
+    "Welcher berühmte König war Ruts Urenkel?",
+    "König David",
+    "König Saul",
+    "König Salomo",
+    "König Herodes"
+   ]
+  },
+  {
+   "ch": 13,
+   "diff": 2,
+   "en": [
+    "Where did Naomi and Ruth go after leaving Moab?",
+    "Bethlehem",
+    "Jericho",
+    "Babylon",
+    "Nazareth"
+   ],
+   "ref": "Ruth 1:19",
+   "de": [
+    "Wohin gingen Noomi und Rut, nachdem sie Moab verlassen hatten?",
+    "Nach Betlehem",
+    "Nach Jericho",
+    "Nach Babylon",
+    "Nach Nazaret"
+   ]
+  },
+  {
+   "ch": 13,
+   "diff": 3,
+   "en": [
+    "What was the name of Ruth and Boaz's son?",
+    "Obed",
+    "Jesse",
+    "Samuel",
+    "Isaac"
+   ],
+   "ref": "Ruth 4:17",
+   "de": [
+    "Wie hieß der Sohn von Rut und Boas?",
+    "Obed",
+    "Isai",
+    "Samuel",
+    "Isaak"
+   ]
+  },
+  {
+   "ch": 13,
+   "diff": 3,
+   "en": [
+    "What did Naomi ask people to call her because she was sad?",
+    "Mara",
+    "Miriam",
+    "Martha",
+    "Mercy"
+   ],
+   "ref": "Ruth 1:20",
+   "de": [
+    "Wie sollten die Leute Noomi nennen, weil sie so traurig war?",
+    "Mara",
+    "Mirjam",
+    "Marta",
+    "Gnade"
+   ]
+  },
+  {
+   "ch": 14,
+   "diff": 1,
+   "en": [
+    "On which mountain did Elijah challenge the prophets of Baal?",
+    "Mount Carmel",
+    "Mount Sinai",
+    "Mount Ararat",
+    "Mount of Olives"
+   ],
+   "ref": "1 Kings 18:19-20",
+   "de": [
+    "Auf welchem Berg forderte Elia die Propheten Baals heraus?",
+    "Auf dem Karmel",
+    "Auf dem Sinai",
+    "Auf dem Ararat",
+    "Auf dem Ölberg"
+   ]
+  },
+  {
+   "ch": 14,
+   "diff": 1,
+   "en": [
+    "What fell from heaven on Elijah's altar?",
+    "Fire",
+    "Snow",
+    "Manna",
+    "Gold"
+   ],
+   "ref": "1 Kings 18:38",
+   "de": [
+    "Was fiel vom Himmel auf Elias Altar?",
+    "Feuer",
+    "Schnee",
+    "Manna",
+    "Gold"
+   ]
+  },
+  {
+   "ch": 14,
+   "diff": 2,
+   "en": [
+    "What did Elijah pour on the altar before he prayed?",
+    "Water",
+    "Oil",
+    "Wine",
+    "Milk"
+   ],
+   "ref": "1 Kings 18:33-35",
+   "de": [
+    "Was goss Elia auf den Altar, bevor er betete?",
+    "Wasser",
+    "Öl",
+    "Wein",
+    "Milch"
+   ]
+  },
+  {
+   "ch": 14,
+   "diff": 2,
+   "en": [
+    "What never ran out for the widow who helped Elijah?",
+    "Flour and oil",
+    "Gold and silver",
+    "Water and wine",
+    "Bread and fish"
+   ],
+   "ref": "1 Kings 17:14-16",
+   "de": [
+    "Was ging der Witwe, die Elia half, nie aus?",
+    "Mehl und Öl",
+    "Gold und Silber",
+    "Wasser und Wein",
+    "Brot und Fisch"
+   ]
+  },
+  {
+   "ch": 14,
+   "diff": 2,
+   "en": [
+    "How did God speak to Elijah on the mountain?",
+    "In a still, small voice",
+    "In a loud earthquake",
+    "In a strong wind",
+    "In a great fire"
+   ],
+   "ref": "1 Kings 19:12",
+   "de": [
+    "Wie sprach Gott auf dem Berg zu Elia?",
+    "In einem leisen, sanften Säuseln",
+    "In einem lauten Erdbeben",
+    "In einem starken Sturm",
+    "In einem großen Feuer"
+   ]
+  },
+  {
+   "ch": 14,
+   "diff": 3,
+   "en": [
+    "Who took over from Elijah as prophet?",
+    "Elisha",
+    "Jonah",
+    "Isaiah",
+    "Samuel"
+   ],
+   "ref": "2 Kings 2:13-15",
+   "de": [
+    "Wer wurde nach Elia Prophet?",
+    "Elisa",
+    "Jona",
+    "Jesaja",
+    "Samuel"
+   ]
+  },
+  {
+   "ch": 14,
+   "diff": 3,
+   "en": [
+    "What did Elijah's servant see over the sea after Elijah prayed for rain?",
+    "A small cloud like a man's hand",
+    "A rainbow",
+    "A ship",
+    "A great fish"
+   ],
+   "ref": "1 Kings 18:44",
+   "de": [
+    "Was sah Elias Diener über dem Meer, nachdem Elia um Regen gebetet hatte?",
+    "Eine kleine Wolke, so groß wie eine Hand",
+    "Einen Regenbogen",
+    "Ein Schiff",
+    "Einen großen Fisch"
+   ]
+  },
+  {
+   "ch": 14,
+   "diff": 3,
+   "en": [
+    "Which wicked queen was angry with Elijah?",
+    "Jezebel",
+    "Esther",
+    "Vashti",
+    "Sheba"
+   ],
+   "ref": "1 Kings 19:1-2",
+   "de": [
+    "Welche böse Königin war wütend auf Elia?",
+    "Isebel",
+    "Ester",
+    "Waschti",
+    "Die Königin von Saba"
+   ]
+  },
+  {
+   "ch": 15,
+   "diff": 1,
+   "en": [
+    "Which city did God tell Jonah to go to?",
+    "Nineveh",
+    "Tarshish",
+    "Jerusalem",
+    "Bethlehem"
+   ],
+   "ref": "Jonah 1:2",
+   "de": [
+    "In welche Stadt sollte Jona nach Gottes Willen gehen?",
+    "Ninive",
+    "Tarschisch",
+    "Jerusalem",
+    "Betlehem"
+   ]
+  },
+  {
+   "ch": 15,
+   "diff": 1,
+   "en": [
+    "Where did Jonah try to run away to?",
+    "Tarshish",
+    "Nineveh",
+    "Egypt",
+    "Babylon"
+   ],
+   "ref": "Jonah 1:3",
+   "de": [
+    "Wohin wollte Jona weglaufen?",
+    "Nach Tarschisch",
+    "Nach Ninive",
+    "Nach Ägypten",
+    "Nach Babylon"
+   ]
+  },
+  {
+   "ch": 15,
+   "diff": 1,
+   "en": [
+    "How long was Jonah inside the great fish?",
+    "Three days and three nights",
+    "One hour",
+    "Seven days",
+    "Forty days"
+   ],
+   "ref": "Jonah 1:17",
+   "de": [
+    "Wie lange war Jona im Bauch des großen Fisches?",
+    "Drei Tage und drei Nächte",
+    "Eine Stunde",
+    "Sieben Tage",
+    "Vierzig Tage"
+   ]
+  },
+  {
+   "ch": 15,
+   "diff": 2,
+   "en": [
+    "What did the sailors do to stop the storm?",
+    "Threw Jonah into the sea",
+    "Turned the ship around",
+    "Threw away the sails",
+    "Rowed faster"
+   ],
+   "ref": "Jonah 1:15",
+   "de": [
+    "Was taten die Seeleute, damit der Sturm aufhörte?",
+    "Sie warfen Jona ins Meer",
+    "Sie drehten das Schiff um",
+    "Sie warfen die Segel weg",
+    "Sie ruderten schneller"
+   ]
+  },
+  {
+   "ch": 15,
+   "diff": 2,
+   "en": [
+    "What did Jonah do inside the fish?",
+    "He prayed",
+    "He slept",
+    "He sang to the fish",
+    "He wrote a letter"
+   ],
+   "ref": "Jonah 2:1",
+   "de": [
+    "Was tat Jona im Bauch des Fisches?",
+    "Er betete",
+    "Er schlief",
+    "Er sang dem Fisch etwas vor",
+    "Er schrieb einen Brief"
+   ]
+  },
+  {
+   "ch": 15,
+   "diff": 2,
+   "en": [
+    "What did the people of Nineveh do after hearing Jonah?",
+    "They turned from their evil ways",
+    "They laughed at him",
+    "They threw him out",
+    "They built a tower"
+   ],
+   "ref": "Jonah 3:10",
+   "de": [
+    "Was taten die Menschen in Ninive, nachdem sie Jona gehört hatten?",
+    "Sie kehrten von ihren bösen Wegen um",
+    "Sie lachten ihn aus",
+    "Sie warfen ihn hinaus",
+    "Sie bauten einen Turm"
+   ]
+  },
+  {
+   "ch": 15,
+   "diff": 3,
+   "en": [
+    "What did God make grow to give Jonah shade?",
+    "A vine",
+    "An oak tree",
+    "A palm tree",
+    "A fig tree"
+   ],
+   "ref": "Jonah 4:6",
+   "de": [
+    "Was ließ Gott wachsen, damit Jona Schatten hatte?",
+    "Eine Rankenpflanze",
+    "Eine Eiche",
+    "Eine Palme",
+    "Einen Feigenbaum"
+   ]
+  },
+  {
+   "ch": 15,
+   "diff": 3,
+   "en": [
+    "What attacked Jonah's shade plant?",
+    "A worm",
+    "A goat",
+    "A locust",
+    "A bird"
+   ],
+   "ref": "Jonah 4:7",
+   "de": [
+    "Was machte Jonas Schattenpflanze kaputt?",
+    "Ein Wurm",
+    "Eine Ziege",
+    "Eine Heuschrecke",
+    "Ein Vogel"
+   ]
+  },
+  {
+   "ch": 16,
+   "diff": 1,
+   "en": [
+    "Esther became queen of which empire?",
+    "Persia",
+    "Egypt",
+    "Rome",
+    "Greece"
+   ],
+   "ref": "Esther 1:1; 2:17",
+   "de": [
+    "Von welchem Reich wurde Ester Königin?",
+    "Persien",
+    "Ägypten",
+    "Rom",
+    "Griechenland"
+   ]
+  },
+  {
+   "ch": 16,
+   "diff": 1,
+   "en": [
+    "Who was Esther's cousin who raised her?",
+    "Mordecai",
+    "Haman",
+    "Boaz",
+    "Daniel"
+   ],
+   "ref": "Esther 2:7",
+   "de": [
+    "Welcher Cousin zog Ester groß?",
+    "Mordechai",
+    "Haman",
+    "Boas",
+    "Daniel"
+   ]
+  },
+  {
+   "ch": 16,
+   "diff": 1,
+   "en": [
+    "Who plotted to destroy the Jewish people?",
+    "Haman",
+    "Mordecai",
+    "Nehemiah",
+    "Joseph"
+   ],
+   "ref": "Esther 3:6",
+   "de": [
+    "Wer plante, das jüdische Volk zu vernichten?",
+    "Haman",
+    "Mordechai",
+    "Nehemia",
+    "Josef"
+   ]
+  },
+  {
+   "ch": 16,
+   "diff": 2,
+   "en": [
+    "What did Esther ask her people to do before she went to the king?",
+    "Fast for three days",
+    "Bring gifts",
+    "Build walls",
+    "Hide in caves"
+   ],
+   "ref": "Esther 4:16",
+   "de": [
+    "Worum bat Ester ihr Volk, bevor sie zum König ging?",
+    "Drei Tage zu fasten",
+    "Geschenke zu bringen",
+    "Mauern zu bauen",
+    "Sich in Höhlen zu verstecken"
+   ]
+  },
+  {
+   "ch": 16,
+   "diff": 2,
+   "en": [
+    "What did the king hold out to show Esther was welcome?",
+    "His golden scepter",
+    "His crown",
+    "A silver cup",
+    "A scroll"
+   ],
+   "ref": "Esther 5:2",
+   "de": [
+    "Was streckte der König aus, um zu zeigen, dass Ester willkommen war?",
+    "Sein goldenes Zepter",
+    "Seine Krone",
+    "Einen silbernen Becher",
+    "Eine Schriftrolle"
+   ]
+  },
+  {
+   "ch": 16,
+   "diff": 2,
+   "en": [
+    "Mordecai said Esther may have become queen \"for such a time as...\"",
+    "this",
+    "tomorrow",
+    "a party",
+    "war"
+   ],
+   "ref": "Esther 4:14",
+   "de": [
+    "Mordechai sagte, Ester sei vielleicht Königin geworden „für so eine Zeit wie ...“",
+    "diese",
+    "morgen",
+    "ein Fest",
+    "den Krieg"
+   ]
+  },
+  {
+   "ch": 16,
+   "diff": 3,
+   "en": [
+    "Which festival celebrates how God saved the Jews in Esther's time?",
+    "Purim",
+    "Passover",
+    "Pentecost",
+    "Tabernacles"
+   ],
+   "ref": "Esther 9:26",
+   "de": [
+    "Welches Fest erinnert daran, wie Gott die Juden zur Zeit Esters gerettet hat?",
+    "Purim",
+    "Passa",
+    "Pfingsten",
+    "Laubhüttenfest"
+   ]
+  },
+  {
+   "ch": 16,
+   "diff": 3,
+   "en": [
+    "What was Esther's Hebrew name?",
+    "Hadassah",
+    "Hannah",
+    "Deborah",
+    "Naomi"
+   ],
+   "ref": "Esther 2:7",
+   "de": [
+    "Wie lautete Esters hebräischer Name?",
+    "Hadassa",
+    "Hanna",
+    "Debora",
+    "Noomi"
+   ]
+  },
+  {
+   "ch": 17,
+   "diff": 1,
+   "en": [
+    "What sound filled the house at Pentecost?",
+    "A rushing mighty wind",
+    "A trumpet",
+    "Thunder",
+    "Singing birds"
+   ],
+   "ref": "Acts 2:2",
+   "de": [
+    "Welches Geräusch erfüllte an Pfingsten das Haus?",
+    "Ein Brausen wie ein gewaltiger Sturm",
+    "Eine Posaune",
+    "Donner",
+    "Vogelgesang"
+   ]
+  },
+  {
+   "ch": 17,
+   "diff": 1,
+   "en": [
+    "What appeared over the disciples' heads?",
+    "Tongues like fire",
+    "Crowns",
+    "Golden halos",
+    "Doves"
+   ],
+   "ref": "Acts 2:3",
+   "de": [
+    "Was erschien über den Köpfen der Jünger?",
+    "Zungen wie von Feuer",
+    "Kronen",
+    "Goldene Heiligenscheine",
+    "Tauben"
+   ]
+  },
+  {
+   "ch": 17,
+   "diff": 1,
+   "en": [
+    "Who came to the disciples at Pentecost, just as Jesus promised?",
+    "The Holy Spirit",
+    "Moses",
+    "An army",
+    "King Herod"
+   ],
+   "ref": "Acts 2:4",
+   "de": [
+    "Wer kam an Pfingsten zu den Jüngern, so wie Jesus es versprochen hatte?",
+    "Der Heilige Geist",
+    "Mose",
+    "Ein Heer",
+    "König Herodes"
+   ]
+  },
+  {
+   "ch": 17,
+   "diff": 2,
+   "en": [
+    "What could the disciples suddenly do?",
+    "Speak in other languages",
+    "Fly",
+    "Walk through walls",
+    "See in the dark"
+   ],
+   "ref": "Acts 2:4",
+   "de": [
+    "Was konnten die Jünger plötzlich?",
+    "In anderen Sprachen reden",
+    "Fliegen",
+    "Durch Wände gehen",
+    "Im Dunkeln sehen"
+   ]
+  },
+  {
+   "ch": 17,
+   "diff": 2,
+   "en": [
+    "Who preached to the crowd at Pentecost?",
+    "Peter",
+    "Paul",
+    "Thomas",
+    "Judas"
+   ],
+   "ref": "Acts 2:14",
+   "de": [
+    "Wer predigte an Pfingsten vor der Menge?",
+    "Petrus",
+    "Paulus",
+    "Thomas",
+    "Judas"
+   ]
+  },
+  {
+   "ch": 17,
+   "diff": 2,
+   "en": [
+    "About how many people were baptized that day?",
+    "About 3,000",
+    "About 12",
+    "About 100",
+    "About 1 million"
+   ],
+   "ref": "Acts 2:41",
+   "de": [
+    "Wie viele Menschen ließen sich an diesem Tag ungefähr taufen?",
+    "Etwa 3000",
+    "Etwa 12",
+    "Etwa 100",
+    "Etwa eine Million"
+   ]
+  },
+  {
+   "ch": 17,
+   "diff": 3,
+   "en": [
+    "From where did Jesus go up into heaven?",
+    "The Mount of Olives",
+    "Mount Sinai",
+    "The temple roof",
+    "A boat"
+   ],
+   "ref": "Acts 1:9-12",
+   "de": [
+    "Von wo aus ging Jesus in den Himmel?",
+    "Vom Ölberg",
+    "Vom Sinai",
+    "Vom Tempeldach",
+    "Von einem Boot"
+   ]
+  },
+  {
+   "ch": 17,
+   "diff": 3,
+   "en": [
+    "Who was chosen to replace Judas as an apostle?",
+    "Matthias",
+    "Barnabas",
+    "Stephen",
+    "Silas"
+   ],
+   "ref": "Acts 1:26",
+   "de": [
+    "Wer wurde als Ersatz für Judas zum Apostel gewählt?",
+    "Matthias",
+    "Barnabas",
+    "Stephanus",
+    "Silas"
+   ]
+  },
+  {
+   "ch": 18,
+   "diff": 1,
+   "en": [
+    "What was Paul's name before he was called Paul?",
+    "Saul",
+    "Simon",
+    "Silas",
+    "Samuel"
+   ],
+   "ref": "Acts 13:9",
+   "de": [
+    "Wie hieß Paulus, bevor er Paulus genannt wurde?",
+    "Saulus",
+    "Simon",
+    "Silas",
+    "Samuel"
+   ]
+  },
+  {
+   "ch": 18,
+   "diff": 1,
+   "en": [
+    "What did Paul and Silas do in prison at midnight?",
+    "Prayed and sang hymns",
+    "Slept",
+    "Dug a tunnel",
+    "Cried"
+   ],
+   "ref": "Acts 16:25",
+   "de": [
+    "Was taten Paulus und Silas um Mitternacht im Gefängnis?",
+    "Sie beteten und sangen Loblieder",
+    "Sie schliefen",
+    "Sie gruben einen Tunnel",
+    "Sie weinten"
+   ]
+  },
+  {
+   "ch": 18,
+   "diff": 2,
+   "en": [
+    "What shook the prison open for Paul and Silas?",
+    "An earthquake",
+    "A storm",
+    "An angel with a key",
+    "A battering ram"
+   ],
+   "ref": "Acts 16:26",
+   "de": [
+    "Was öffnete das Gefängnis für Paulus und Silas?",
+    "Ein Erdbeben",
+    "Ein Sturm",
+    "Ein Engel mit Schlüssel",
+    "Ein Rammbock"
+   ]
+  },
+  {
+   "ch": 18,
+   "diff": 2,
+   "en": [
+    "On which island was Paul shipwrecked?",
+    "Malta",
+    "Cyprus",
+    "Crete",
+    "Sicily"
+   ],
+   "ref": "Acts 28:1",
+   "de": [
+    "Auf welcher Insel erlitt Paulus Schiffbruch?",
+    "Malta",
+    "Zypern",
+    "Kreta",
+    "Sizilien"
+   ]
+  },
+  {
+   "ch": 18,
+   "diff": 2,
+   "en": [
+    "What bit Paul on Malta without hurting him?",
+    "A viper",
+    "A shark",
+    "A dog",
+    "A spider"
+   ],
+   "ref": "Acts 28:3-5",
+   "de": [
+    "Was biss Paulus auf Malta, ohne ihm zu schaden?",
+    "Eine Giftschlange",
+    "Ein Hai",
+    "Ein Hund",
+    "Eine Spinne"
+   ]
+  },
+  {
+   "ch": 18,
+   "diff": 2,
+   "en": [
+    "Who traveled with Paul on his first journey?",
+    "Barnabas",
+    "Judas",
+    "Pilate",
+    "Nicodemus"
+   ],
+   "ref": "Acts 13:2",
+   "de": [
+    "Wer reiste mit Paulus auf seiner ersten Reise?",
+    "Barnabas",
+    "Judas",
+    "Pilatus",
+    "Nikodemus"
+   ]
+  },
+  {
+   "ch": 18,
+   "diff": 3,
+   "en": [
+    "Who helped Saul see again in Damascus?",
+    "Ananias",
+    "Peter",
+    "Lydia",
+    "Timothy"
+   ],
+   "ref": "Acts 9:17-18",
+   "de": [
+    "Wer half Saulus in Damaskus, wieder sehen zu können?",
+    "Hananias",
+    "Petrus",
+    "Lydia",
+    "Timotheus"
+   ]
+  },
+  {
+   "ch": 18,
+   "diff": 3,
+   "en": [
+    "Which city was Paul taken to as a prisoner at the end of Acts?",
+    "Rome",
+    "Athens",
+    "Jerusalem",
+    "Corinth"
+   ],
+   "ref": "Acts 28:16",
+   "de": [
+    "In welche Stadt wurde Paulus am Ende der Apostelgeschichte als Gefangener gebracht?",
+    "Rom",
+    "Athen",
+    "Jerusalem",
+    "Korinth"
+   ]
+  },
+  {
+   "ch": 18,
+   "diff": 3,
+   "en": [
+    "What did Paul make for a living?",
+    "Tents",
+    "Boats",
+    "Pottery",
+    "Shoes"
+   ],
+   "ref": "Acts 18:3",
+   "de": [
+    "Womit verdiente Paulus sein Geld?",
+    "Er machte Zelte",
+    "Er baute Boote",
+    "Er töpferte",
+    "Er machte Schuhe"
+   ]
+  },
+  {
+   "ch": 19,
+   "diff": 1,
+   "en": [
+    "What was Gideon doing when the angel visited him?",
+    "Threshing wheat in a winepress",
+    "Fishing in a lake",
+    "Building an ark",
+    "Guarding sheep"
+   ],
+   "ref": "Judges 6:11",
+   "de": [
+    "Was tat Gideon, als der Engel ihn besuchte?",
+    "Er drosch Weizen in einer Weinpresse",
+    "Er fischte im See",
+    "Er baute eine Arche",
+    "Er hütete Schafe"
+   ]
+  },
+  {
+   "ch": 19,
+   "diff": 1,
+   "en": [
+    "How did the angel greet Gideon?",
+    "\"The LORD is with you, you mighty man of valor!\"",
+    "\"Run and hide!\"",
+    "\"You are too small.\"",
+    "\"Go back to sleep.\""
+   ],
+   "ref": "Judges 6:12",
+   "de": [
+    "Wie begrüßte der Engel Gideon?",
+    "„Der Herr ist mit dir, du starker Held!“",
+    "„Lauf und versteck dich!“",
+    "„Du bist zu klein.“",
+    "„Schlaf weiter.“"
+   ]
+  },
+  {
+   "ch": 19,
+   "diff": 1,
+   "en": [
+    "Which people were troubling Israel in Gideon's time?",
+    "The Midianites",
+    "The Egyptians",
+    "The Romans",
+    "The Babylonians"
+   ],
+   "ref": "Judges 6:1",
+   "de": [
+    "Welches Volk bedrängte Israel zur Zeit Gideons?",
+    "Die Midianiter",
+    "Die Ägypter",
+    "Die Römer",
+    "Die Babylonier"
+   ]
+  },
+  {
+   "ch": 19,
+   "diff": 2,
+   "en": [
+    "What did Gideon put on the ground when he asked God for a sign?",
+    "A wool fleece",
+    "A sword",
+    "A loaf of bread",
+    "A clay jar"
+   ],
+   "ref": "Judges 6:37",
+   "de": [
+    "Was legte Gideon auf den Boden, als er Gott um ein Zeichen bat?",
+    "Ein Wollfell",
+    "Ein Schwert",
+    "Ein Brot",
+    "Einen Tonkrug"
+   ]
+  },
+  {
+   "ch": 19,
+   "diff": 2,
+   "en": [
+    "With how many men did God give Gideon the victory?",
+    "300",
+    "32,000",
+    "10,000",
+    "12"
+   ],
+   "ref": "Judges 7:7",
+   "de": [
+    "Mit wie vielen Männern schenkte Gott Gideon den Sieg?",
+    "300",
+    "32.000",
+    "10.000",
+    "12"
+   ]
+  },
+  {
+   "ch": 19,
+   "diff": 2,
+   "en": [
+    "Why did God make Gideon's army smaller?",
+    "So Israel would know God saved them, not their own strength",
+    "Because there was not enough food",
+    "Because the men were sleepy",
+    "So they could hide better"
+   ],
+   "ref": "Judges 7:2",
+   "de": [
+    "Warum machte Gott Gideons Heer kleiner?",
+    "Damit Israel wusste: Gott hat uns gerettet, nicht unsere eigene Kraft",
+    "Weil es nicht genug zu essen gab",
+    "Weil die Männer müde waren",
+    "Damit sie sich besser verstecken konnten"
+   ]
+  },
+  {
+   "ch": 19,
+   "diff": 2,
+   "en": [
+    "What did Gideon's men hold during the night attack?",
+    "Trumpets, and jars with torches inside",
+    "Only swords and shields",
+    "Bows and arrows",
+    "Fishing nets"
+   ],
+   "ref": "Judges 7:16",
+   "de": [
+    "Was hielten Gideons Männer beim nächtlichen Angriff in den Händen?",
+    "Posaunen und Krüge mit Fackeln darin",
+    "Nur Schwerter und Schilde",
+    "Pfeil und Bogen",
+    "Fischernetze"
+   ]
+  },
+  {
+   "ch": 19,
+   "diff": 3,
+   "en": [
+    "What did Gideon's men shout?",
+    "\"The sword of the LORD and of Gideon!\"",
+    "\"Hosanna!\"",
+    "\"Let my people go!\"",
+    "\"Down with the walls!\""
+   ],
+   "ref": "Judges 7:20",
+   "de": [
+    "Was riefen Gideons Männer?",
+    "„Das Schwert des Herrn und Gideons!“",
+    "„Hosianna!“",
+    "„Lass mein Volk gehen!“",
+    "„Nieder mit den Mauern!“"
+   ]
+  },
+  {
+   "ch": 19,
+   "diff": 3,
+   "en": [
+    "How did God choose the 300 men at the water?",
+    "By how they drank the water",
+    "By how tall they were",
+    "By who could run fastest",
+    "By drawing names"
+   ],
+   "ref": "Judges 7:5-7",
+   "de": [
+    "Wie wählte Gott die 300 Männer am Wasser aus?",
+    "Danach, wie sie das Wasser tranken",
+    "Danach, wie groß sie waren",
+    "Danach, wer am schnellsten lief",
+    "Durch Auslosen"
+   ]
+  },
+  {
+   "ch": 19,
+   "diff": 3,
+   "en": [
+    "What did Gideon tear down at his father's place?",
+    "The altar of Baal",
+    "A watchtower",
+    "The city gate",
+    "A granary"
+   ],
+   "ref": "Judges 6:25-27",
+   "de": [
+    "Was riss Gideon beim Hof seines Vaters nieder?",
+    "Den Altar Baals",
+    "Einen Wachturm",
+    "Das Stadttor",
+    "Einen Kornspeicher"
+   ]
+  },
+  {
+   "ch": 19,
+   "diff": 3,
+   "en": [
+    "What did a Midianite soldier dream about?",
+    "A loaf of barley bread tumbling into the camp",
+    "Seven fat cows",
+    "A ladder to heaven",
+    "A giant statue"
+   ],
+   "ref": "Judges 7:13",
+   "de": [
+    "Wovon träumte ein Soldat der Midianiter?",
+    "Von einem Gerstenbrot, das ins Lager rollte",
+    "Von sieben fetten Kühen",
+    "Von einer Leiter zum Himmel",
+    "Von einer riesigen Statue"
+   ]
+  },
+  {
+   "ch": 20,
+   "diff": 1,
+   "en": [
+    "Who gave Samson his great strength?",
+    "God",
+    "His sword",
+    "A magic potion",
+    "The Philistines"
+   ],
+   "ref": "Judges 14:6",
+   "de": [
+    "Wer gab Simson seine große Kraft?",
+    "Gott",
+    "Sein Schwert",
+    "Ein Zaubertrank",
+    "Die Philister"
+   ]
+  },
+  {
+   "ch": 20,
+   "diff": 1,
+   "en": [
+    "Why was Samson never supposed to cut his hair?",
+    "He was a Nazirite, set apart for God",
+    "He wanted to look like a lion",
+    "The king made a law",
+    "He lost his scissors"
+   ],
+   "ref": "Judges 13:5",
+   "de": [
+    "Warum sollte Simson sich nie die Haare schneiden?",
+    "Er war ein Nasiräer, ganz für Gott bestimmt",
+    "Er wollte wie ein Löwe aussehen",
+    "Der König hatte es befohlen",
+    "Er hatte seine Schere verloren"
+   ]
+  },
+  {
+   "ch": 20,
+   "diff": 1,
+   "en": [
+    "What animal did Samson defeat with his bare hands?",
+    "A lion",
+    "A bear",
+    "A giant snake",
+    "A wild ox"
+   ],
+   "ref": "Judges 14:5-6",
+   "de": [
+    "Welches Tier besiegte Simson mit bloßen Händen?",
+    "Einen Löwen",
+    "Einen Bären",
+    "Eine riesige Schlange",
+    "Einen Wildstier"
+   ]
+  },
+  {
+   "ch": 20,
+   "diff": 2,
+   "en": [
+    "What did Samson later find inside the lion?",
+    "Bees and honey",
+    "A gold ring",
+    "A secret scroll",
+    "Baby birds"
+   ],
+   "ref": "Judges 14:8",
+   "de": [
+    "Was fand Simson später in dem Löwen?",
+    "Bienen und Honig",
+    "Einen goldenen Ring",
+    "Eine geheime Schriftrolle",
+    "Junge Vögel"
+   ]
+  },
+  {
+   "ch": 20,
+   "diff": 2,
+   "en": [
+    "Who told Samson's mother that she would have a son?",
+    "The angel of the LORD",
+    "The prophet Elijah",
+    "The king",
+    "A shepherd"
+   ],
+   "ref": "Judges 13:3",
+   "de": [
+    "Wer sagte Simsons Mutter, dass sie einen Sohn bekommen würde?",
+    "Der Engel des Herrn",
+    "Der Prophet Elia",
+    "Der König",
+    "Ein Hirte"
+   ]
+  },
+  {
+   "ch": 20,
+   "diff": 2,
+   "en": [
+    "Who tricked Samson into telling the secret of his strength?",
+    "Delilah",
+    "Deborah",
+    "Ruth",
+    "Jezebel"
+   ],
+   "ref": "Judges 16:4-17",
+   "de": [
+    "Wer brachte Simson mit einer List dazu, das Geheimnis seiner Kraft zu verraten?",
+    "Delila",
+    "Debora",
+    "Rut",
+    "Isebel"
+   ]
+  },
+  {
+   "ch": 20,
+   "diff": 2,
+   "en": [
+    "What happened when Samson's hair was cut?",
+    "His strength left him",
+    "He became invisible",
+    "He grew taller",
+    "Nothing at all"
+   ],
+   "ref": "Judges 16:19",
+   "de": [
+    "Was geschah, als Simsons Haare abgeschnitten wurden?",
+    "Seine Kraft verließ ihn",
+    "Er wurde unsichtbar",
+    "Er wurde größer",
+    "Gar nichts"
+   ]
+  },
+  {
+   "ch": 20,
+   "diff": 3,
+   "en": [
+    "What was the name of Samson's father?",
+    "Manoah",
+    "Gideon",
+    "Eli",
+    "Jesse"
+   ],
+   "ref": "Judges 13:2",
+   "de": [
+    "Wie hieß Simsons Vater?",
+    "Manoach",
+    "Gideon",
+    "Eli",
+    "Isai"
+   ]
+  },
+  {
+   "ch": 20,
+   "diff": 3,
+   "en": [
+    "What was the name of the Philistines' false god?",
+    "Dagon",
+    "Baal",
+    "Molech",
+    "Zeus"
+   ],
+   "ref": "Judges 16:23",
+   "de": [
+    "Wie hieß der falsche Gott der Philister?",
+    "Dagon",
+    "Baal",
+    "Moloch",
+    "Zeus"
+   ]
+  },
+  {
+   "ch": 20,
+   "diff": 3,
+   "en": [
+    "What did Samson pray at the end of his life?",
+    "\"Remember me, and strengthen me only this once\"",
+    "\"Make me king\"",
+    "\"Give me gold\"",
+    "\"Let me fly away\""
+   ],
+   "ref": "Judges 16:28",
+   "de": [
+    "Was betete Simson am Ende seines Lebens?",
+    "„Denk an mich und gib mir noch dieses eine Mal Kraft“",
+    "„Mach mich zum König“",
+    "„Gib mir Gold“",
+    "„Lass mich davonfliegen“"
+   ]
+  },
+  {
+   "ch": 20,
+   "diff": 3,
+   "en": [
+    "What did Samson push on to bring down the temple?",
+    "The two middle pillars",
+    "The front door",
+    "The roof beams",
+    "A giant statue"
+   ],
+   "ref": "Judges 16:29",
+   "de": [
+    "Wogegen stemmte sich Simson, um den Tempel einstürzen zu lassen?",
+    "Gegen die zwei mittleren Säulen",
+    "Gegen die Eingangstür",
+    "Gegen die Dachbalken",
+    "Gegen eine riesige Statue"
+   ]
+  },
+  {
+   "ch": 21,
+   "diff": 1,
+   "en": [
+    "What job did Nehemiah have for the king of Persia?",
+    "Cupbearer",
+    "Baker",
+    "Shepherd",
+    "Soldier"
+   ],
+   "ref": "Nehemiah 1:11",
+   "de": [
+    "Welche Aufgabe hatte Nehemia beim König von Persien?",
+    "Mundschenk",
+    "Bäcker",
+    "Hirte",
+    "Soldat"
+   ]
+  },
+  {
+   "ch": 21,
+   "diff": 1,
+   "en": [
+    "What did Nehemiah go to Jerusalem to rebuild?",
+    "The city wall",
+    "A palace",
+    "The ark",
+    "A tower to heaven"
+   ],
+   "ref": "Nehemiah 2:17",
+   "de": [
+    "Was wollte Nehemia in Jerusalem wieder aufbauen?",
+    "Die Stadtmauer",
+    "Einen Palast",
+    "Die Arche",
+    "Einen Turm bis zum Himmel"
+   ]
+  },
+  {
+   "ch": 21,
+   "diff": 1,
+   "en": [
+    "What did Nehemiah do when he heard the walls were broken down?",
+    "He wept and prayed",
+    "He laughed",
+    "He went fishing",
+    "He ran away"
+   ],
+   "ref": "Nehemiah 1:4",
+   "de": [
+    "Was tat Nehemia, als er hörte, dass die Mauern eingerissen waren?",
+    "Er weinte und betete",
+    "Er lachte",
+    "Er ging fischen",
+    "Er lief weg"
+   ]
+  },
+  {
+   "ch": 21,
+   "diff": 2,
+   "en": [
+    "Which king let Nehemiah go to Jerusalem?",
+    "King Artaxerxes",
+    "King David",
+    "King Nebuchadnezzar",
+    "King Herod"
+   ],
+   "ref": "Nehemiah 2:1-6",
+   "de": [
+    "Welcher König ließ Nehemia nach Jerusalem gehen?",
+    "König Artaxerxes",
+    "König David",
+    "König Nebukadnezar",
+    "König Herodes"
+   ]
+  },
+  {
+   "ch": 21,
+   "diff": 2,
+   "en": [
+    "Who mocked the builders and tried to stop them?",
+    "Sanballat and Tobiah",
+    "Boaz and Ruth",
+    "Peter and John",
+    "Aaron and Hur"
+   ],
+   "ref": "Nehemiah 4:1-3",
+   "de": [
+    "Wer verspottete die Bauleute und wollte sie aufhalten?",
+    "Sanballat und Tobija",
+    "Boas und Rut",
+    "Petrus und Johannes",
+    "Aaron und Hur"
+   ]
+  },
+  {
+   "ch": 21,
+   "diff": 2,
+   "en": [
+    "Tobiah joked that the wall would fall down if what animal climbed on it?",
+    "A fox",
+    "A camel",
+    "An elephant",
+    "A goat"
+   ],
+   "ref": "Nehemiah 4:3",
+   "de": [
+    "Tobija spottete, die Mauer würde einstürzen, wenn welches Tier hinaufklettert?",
+    "Ein Fuchs",
+    "Ein Kamel",
+    "Ein Elefant",
+    "Eine Ziege"
+   ]
+  },
+  {
+   "ch": 21,
+   "diff": 2,
+   "en": [
+    "How did the builders stay safe while they worked?",
+    "Some kept watch while others built",
+    "They built only at night",
+    "They hid in caves",
+    "They gave up"
+   ],
+   "ref": "Nehemiah 4:16-18",
+   "de": [
+    "Wie blieben die Bauleute bei der Arbeit sicher?",
+    "Einige hielten Wache, während die anderen bauten",
+    "Sie bauten nur nachts",
+    "Sie versteckten sich in Höhlen",
+    "Sie gaben auf"
+   ]
+  },
+  {
+   "ch": 21,
+   "diff": 3,
+   "en": [
+    "How many days did it take to finish the wall?",
+    "52",
+    "7",
+    "40",
+    "365"
+   ],
+   "ref": "Nehemiah 6:15",
+   "de": [
+    "In wie vielen Tagen war die Mauer fertig?",
+    "52",
+    "7",
+    "40",
+    "365"
+   ]
+  },
+  {
+   "ch": 21,
+   "diff": 3,
+   "en": [
+    "What did Nehemiah pray when enemies tried to scare him?",
+    "\"Strengthen my hands\"",
+    "\"Make them go away\"",
+    "\"Let me go home\"",
+    "\"Send an army\""
+   ],
+   "ref": "Nehemiah 6:9",
+   "de": [
+    "Was betete Nehemia, als Feinde ihm Angst machen wollten?",
+    "„Stärke meine Hände“",
+    "„Lass sie verschwinden“",
+    "„Lass mich nach Hause gehen“",
+    "„Schick ein Heer“"
+   ]
+  },
+  {
+   "ch": 21,
+   "diff": 3,
+   "en": [
+    "Where was Nehemiah when he heard the bad news about Jerusalem?",
+    "In Susa, the palace city",
+    "In Babylon",
+    "In Nineveh",
+    "In Bethlehem"
+   ],
+   "ref": "Nehemiah 1:1",
+   "de": [
+    "Wo war Nehemia, als er die schlechte Nachricht über Jerusalem hörte?",
+    "In der Palaststadt Susa",
+    "In Babylon",
+    "In Ninive",
+    "In Betlehem"
+   ]
+  },
+  {
+   "ch": 21,
+   "diff": 3,
+   "en": [
+    "What did Nehemiah do at night soon after he arrived?",
+    "Secretly inspected the broken walls",
+    "Threw a big party",
+    "Slept in the temple",
+    "Counted all the people"
+   ],
+   "ref": "Nehemiah 2:12-15",
+   "de": [
+    "Was tat Nehemia kurz nach seiner Ankunft in der Nacht?",
+    "Er sah sich heimlich die kaputten Mauern an",
+    "Er feierte ein großes Fest",
+    "Er schlief im Tempel",
+    "Er zählte alle Leute"
+   ]
+  },
+  {
+   "ch": 22,
+   "diff": 1,
+   "en": [
+    "In Jesus' story, who stopped to help the hurt man on the road?",
+    "A Samaritan",
+    "A priest",
+    "A Levite",
+    "A king"
+   ],
+   "ref": "Luke 10:33",
+   "de": [
+    "Wer half in der Geschichte von Jesus dem verletzten Mann am Weg?",
+    "Ein Samariter",
+    "Ein Priester",
+    "Ein Levit",
+    "Ein König"
+   ]
+  },
+  {
+   "ch": 22,
+   "diff": 1,
+   "en": [
+    "How many sheep were left when the shepherd went looking for the lost one?",
+    "99",
+    "9",
+    "50",
+    "1,000"
+   ],
+   "ref": "Luke 15:4",
+   "de": [
+    "Wie viele Schafe blieben zurück, als der Hirte das verlorene suchte?",
+    "99",
+    "9",
+    "50",
+    "1000"
+   ]
+  },
+  {
+   "ch": 22,
+   "diff": 1,
+   "en": [
+    "What did the woman in Jesus' story search her house for?",
+    "A lost silver coin",
+    "Her lamp",
+    "A ring",
+    "Her sandal"
+   ],
+   "ref": "Luke 15:8",
+   "de": [
+    "Was suchte die Frau in der Geschichte von Jesus in ihrem Haus?",
+    "Eine verlorene Silbermünze",
+    "Ihre Lampe",
+    "Einen Ring",
+    "Ihre Sandale"
+   ]
+  },
+  {
+   "ch": 22,
+   "diff": 1,
+   "en": [
+    "What did Zacchaeus climb to see Jesus?",
+    "A sycamore tree",
+    "A wall",
+    "A mountain",
+    "A roof"
+   ],
+   "ref": "Luke 19:4",
+   "de": [
+    "Worauf kletterte Zachäus, um Jesus zu sehen?",
+    "Auf einen Maulbeerfeigenbaum",
+    "Auf eine Mauer",
+    "Auf einen Berg",
+    "Auf ein Dach"
+   ]
+  },
+  {
+   "ch": 22,
+   "diff": 2,
+   "en": [
+    "Why did Zacchaeus have to climb up high?",
+    "He was short",
+    "He was hiding",
+    "He was picking figs",
+    "He was lost"
+   ],
+   "ref": "Luke 19:3",
+   "de": [
+    "Warum musste Zachäus nach oben klettern?",
+    "Er war klein",
+    "Er versteckte sich",
+    "Er pflückte Feigen",
+    "Er hatte sich verlaufen"
+   ]
+  },
+  {
+   "ch": 22,
+   "diff": 2,
+   "en": [
+    "What did the father do when he saw his lost son coming home?",
+    "He ran to him and hugged him",
+    "He locked the door",
+    "He sent him away",
+    "He pretended not to see him"
+   ],
+   "ref": "Luke 15:20",
+   "de": [
+    "Was tat der Vater, als er seinen verlorenen Sohn heimkommen sah?",
+    "Er lief ihm entgegen und umarmte ihn",
+    "Er schloss die Tür ab",
+    "Er schickte ihn weg",
+    "Er tat so, als sähe er ihn nicht"
+   ]
+  },
+  {
+   "ch": 22,
+   "diff": 2,
+   "en": [
+    "What job did the younger son get after he spent all his money?",
+    "Feeding pigs",
+    "Fishing",
+    "Building houses",
+    "Selling bread"
+   ],
+   "ref": "Luke 15:15",
+   "de": [
+    "Welche Arbeit bekam der jüngere Sohn, nachdem er sein ganzes Geld ausgegeben hatte?",
+    "Schweine hüten",
+    "Fischen",
+    "Häuser bauen",
+    "Brot verkaufen"
+   ]
+  },
+  {
+   "ch": 22,
+   "diff": 2,
+   "en": [
+    "What happens in heaven when one sinner turns back to God?",
+    "There is joy",
+    "Nothing changes",
+    "The angels fall asleep",
+    "The stars go out"
+   ],
+   "ref": "Luke 15:7",
+   "de": [
+    "Was geschieht im Himmel, wenn ein Sünder zu Gott umkehrt?",
+    "Es gibt große Freude",
+    "Nichts ändert sich",
+    "Die Engel schlafen ein",
+    "Die Sterne gehen aus"
+   ]
+  },
+  {
+   "ch": 22,
+   "diff": 3,
+   "en": [
+    "Where was the man in the Good Samaritan story traveling?",
+    "From Jerusalem to Jericho",
+    "From Egypt to Canaan",
+    "From Rome to Athens",
+    "From Nineveh to Tarshish"
+   ],
+   "ref": "Luke 10:30",
+   "de": [
+    "Wohin war der Mann in der Geschichte vom barmherzigen Samariter unterwegs?",
+    "Von Jerusalem nach Jericho",
+    "Von Ägypten nach Kanaan",
+    "Von Rom nach Athen",
+    "Von Ninive nach Tarschisch"
+   ]
+  },
+  {
+   "ch": 22,
+   "diff": 3,
+   "en": [
+    "What did Zacchaeus promise to anyone he had cheated?",
+    "To pay them back four times as much",
+    "To say sorry once",
+    "To give them a goat",
+    "Nothing at all"
+   ],
+   "ref": "Luke 19:8",
+   "de": [
+    "Was versprach Zachäus allen, die er betrogen hatte?",
+    "Es ihnen vierfach zurückzuzahlen",
+    "Sich einmal zu entschuldigen",
+    "Ihnen eine Ziege zu schenken",
+    "Gar nichts"
+   ]
+  },
+  {
+   "ch": 22,
+   "diff": 3,
+   "en": [
+    "What did the father give his son when he came home?",
+    "The best robe, a ring, and shoes",
+    "A broom and a bucket",
+    "A sword and a shield",
+    "A boat"
+   ],
+   "ref": "Luke 15:22",
+   "de": [
+    "Was schenkte der Vater seinem Sohn, als er heimkam?",
+    "Das beste Gewand, einen Ring und Schuhe",
+    "Einen Besen und einen Eimer",
+    "Ein Schwert und einen Schild",
+    "Ein Boot"
+   ]
+  },
+  {
+   "ch": 22,
+   "diff": 3,
+   "en": [
+    "Which question led Jesus to tell the Good Samaritan story?",
+    "\"Who is my neighbor?\"",
+    "\"Where is heaven?\"",
+    "\"What should we eat?\"",
+    "\"Who is the greatest?\""
+   ],
+   "ref": "Luke 10:29",
+   "de": [
+    "Welche Frage brachte Jesus dazu, die Geschichte vom barmherzigen Samariter zu erzählen?",
+    "„Wer ist mein Nächster?“",
+    "„Wo ist der Himmel?“",
+    "„Was sollen wir essen?“",
+    "„Wer ist der Größte?“"
+   ]
+  }
+ ],
+ "VQ": [
+  {
+   "en": [
+    1,
+    "In the beginning, God created the ___ and the earth.",
+    "heavens",
+    "garden",
+    "light",
+    "seas",
+    "Genesis 1:1"
+   ],
+   "de": [
+    1,
+    "Am Anfang schuf Gott den ___ und die Erde.",
+    "Himmel",
+    "Garten",
+    "Mond",
+    "Ozean",
+    "1. Mose 1,1"
+   ]
+  },
+  {
+   "en": [
+    1,
+    "God saw everything that he had made, and, behold, it was very ___.",
+    "good",
+    "big",
+    "bright",
+    "new",
+    "Genesis 1:31"
+   ],
+   "de": [
+    1,
+    "Gott sah alles an, was er gemacht hatte – und es war sehr ___!",
+    "gut",
+    "groß",
+    "hell",
+    "neu",
+    "1. Mose 1,31"
+   ]
+  },
+  {
+   "en": [
+    2,
+    "But Noah found ___ in the LORD's eyes.",
+    "favor",
+    "gold",
+    "water",
+    "rest",
+    "Genesis 6:8"
+   ],
+   "de": [
+    2,
+    "Gott hatte ___ an Noah.",
+    "Freude",
+    "Ärger",
+    "Angst",
+    "Hunger",
+    "1. Mose 6,8"
+   ]
+  },
+  {
+   "en": [
+    2,
+    "I set my ___ in the cloud, and it will be a sign of a covenant between me and the earth.",
+    "rainbow",
+    "star",
+    "dove",
+    "ark",
+    "Genesis 9:13"
+   ],
+   "de": [
+    2,
+    "Ich setze meinen ___ in die Wolken. Er ist das Zeichen für mein Versprechen an die Erde.",
+    "Regenbogen",
+    "Stern",
+    "Mond",
+    "Vogel",
+    "1. Mose 9,13"
+   ]
+  },
+  {
+   "en": [
+    3,
+    "The LORD will ___ for you, and you shall be still.",
+    "fight",
+    "wait",
+    "sing",
+    "build",
+    "Exodus 14:14"
+   ],
+   "de": [
+    3,
+    "Der Herr ___ für euch. Ihr dürft ganz ruhig bleiben.",
+    "kämpft",
+    "wartet",
+    "singt",
+    "baut",
+    "2. Mose 14,14"
+   ]
+  },
+  {
+   "en": [
+    3,
+    "The LORD is my strength and ___. He has become my salvation.",
+    "song",
+    "shield",
+    "rock",
+    "light",
+    "Exodus 15:2"
+   ],
+   "de": [
+    3,
+    "Der Herr ist meine Kraft und mein ___. Er hat mich gerettet.",
+    "Lied",
+    "Schild",
+    "Haus",
+    "Licht",
+    "2. Mose 15,2"
+   ]
+  },
+  {
+   "en": [
+    4,
+    "You shall have no other ___ before me.",
+    "gods",
+    "kings",
+    "friends",
+    "laws",
+    "Exodus 20:3"
+   ],
+   "de": [
+    4,
+    "Du sollst keine anderen ___ haben neben mir.",
+    "Götter",
+    "Könige",
+    "Freunde",
+    "Gesetze",
+    "2. Mose 20,3"
+   ]
+  },
+  {
+   "en": [
+    4,
+    "You shall love the LORD your God with all your ___, with all your soul, and with all your might.",
+    "heart",
+    "gold",
+    "words",
+    "house",
+    "Deuteronomy 6:5"
+   ],
+   "de": [
+    4,
+    "Liebe den Herrn, deinen Gott, von ganzem ___, mit ganzer Seele und mit all deiner Kraft.",
+    "Herzen",
+    "Geld",
+    "Mund",
+    "Haus",
+    "5. Mose 6,5"
+   ]
+  },
+  {
+   "en": [
+    5,
+    "Be strong and ___. Don't be afraid. Don't be dismayed, for the LORD your God is with you wherever you go.",
+    "courageous",
+    "quiet",
+    "clever",
+    "careful",
+    "Joshua 1:9"
+   ],
+   "de": [
+    5,
+    "Sei mutig und ___! Hab keine Angst, denn der Herr, dein Gott, ist bei dir, wohin du auch gehst.",
+    "stark",
+    "leise",
+    "schlau",
+    "schnell",
+    "Josua 1,9"
+   ]
+  },
+  {
+   "en": [
+    5,
+    "As for me and my ___, we will serve the LORD.",
+    "house",
+    "sheep",
+    "city",
+    "friends",
+    "Joshua 24:15"
+   ],
+   "de": [
+    5,
+    "Ich und meine ___ wollen dem Herrn dienen.",
+    "Familie",
+    "Schafe",
+    "Stadt",
+    "Freunde",
+    "Josua 24,15"
+   ]
+  },
+  {
+   "en": [
+    6,
+    "Man looks at the outward appearance, but the LORD looks at the ___.",
+    "heart",
+    "face",
+    "crown",
+    "sword",
+    "1 Samuel 16:7"
+   ],
+   "de": [
+    6,
+    "Menschen sehen nur, was vor Augen ist. Aber Gott sieht ins ___.",
+    "Herz",
+    "Gesicht",
+    "Gold",
+    "Haus",
+    "1. Samuel 16,7"
+   ]
+  },
+  {
+   "en": [
+    6,
+    "The LORD is my ___: I shall lack nothing.",
+    "shepherd",
+    "king",
+    "rock",
+    "friend",
+    "Psalm 23:1"
+   ],
+   "de": [
+    6,
+    "Der Herr ist mein ___. Mir wird nichts fehlen.",
+    "Hirte",
+    "König",
+    "Fels",
+    "Freund",
+    "Psalm 23,1"
+   ]
+  },
+  {
+   "en": [
+    7,
+    "My God has sent his ___, and has shut the lions' mouths, and they have not hurt me.",
+    "angel",
+    "army",
+    "servant",
+    "king",
+    "Daniel 6:22"
+   ],
+   "de": [
+    7,
+    "Mein Gott hat seinen ___ geschickt und den Löwen das Maul verschlossen.",
+    "Engel",
+    "Soldaten",
+    "Diener",
+    "König",
+    "Daniel 6,23"
+   ]
+  },
+  {
+   "en": [
+    7,
+    "When I am ___, I will put my trust in you.",
+    "afraid",
+    "hungry",
+    "tired",
+    "alone",
+    "Psalm 56:3"
+   ],
+   "de": [
+    7,
+    "Wenn ich ___ habe, vertraue ich auf dich.",
+    "Angst",
+    "Hunger",
+    "Durst",
+    "Zeit",
+    "Psalm 56,4"
+   ]
+  },
+  {
+   "en": [
+    8,
+    "For there is born to you today, in David's city, a ___, who is Christ the Lord.",
+    "Savior",
+    "shepherd",
+    "prophet",
+    "soldier",
+    "Luke 2:11"
+   ],
+   "de": [
+    8,
+    "Heute ist euch in der Stadt Davids der ___ geboren: Christus, der Herr!",
+    "Retter",
+    "Hirte",
+    "Prophet",
+    "Soldat",
+    "Lukas 2,11"
+   ]
+  },
+  {
+   "en": [
+    8,
+    "They shall call his name Immanuel, which is, being interpreted, \"God ___ us.\"",
+    "with",
+    "for",
+    "above",
+    "near",
+    "Matthew 1:23"
+   ],
+   "de": [
+    8,
+    "Man wird ihn Immanuel nennen. Das heißt: Gott ist ___ uns.",
+    "mit",
+    "gegen",
+    "über",
+    "vor",
+    "Matthäus 1,23"
+   ]
+  },
+  {
+   "en": [
+    8,
+    "His name will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of ___.",
+    "Peace",
+    "Light",
+    "Kings",
+    "Glory",
+    "Isaiah 9:6"
+   ],
+   "de": [
+    8,
+    "Er heißt: Wunderbarer Ratgeber, starker Gott, ewiger Vater, Fürst des ___.",
+    "Friedens",
+    "Lichts",
+    "Himmels",
+    "Goldes",
+    "Jesaja 9,5"
+   ]
+  },
+  {
+   "en": [
+    9,
+    "Come after me, and I will make you fishers for ___.",
+    "men",
+    "fish",
+    "boats",
+    "sheep",
+    "Matthew 4:19"
+   ],
+   "de": [
+    9,
+    "Folgt mir nach! Ich will euch zeigen, wie ihr ___ für Gott gewinnt.",
+    "Menschen",
+    "Fische",
+    "Boote",
+    "Schafe",
+    "Matthäus 4,19"
+   ]
+  },
+  {
+   "en": [
+    9,
+    "I am the ___ of the world. He who follows me will not walk in the darkness.",
+    "light",
+    "king",
+    "bread",
+    "door",
+    "John 8:12"
+   ],
+   "de": [
+    9,
+    "Ich bin das ___ der Welt. Wer mir folgt, muss nicht im Dunkeln leben.",
+    "Licht",
+    "Brot",
+    "Tor",
+    "Feuer",
+    "Johannes 8,12"
+   ]
+  },
+  {
+   "en": [
+    9,
+    "He said to the sea, \"Peace! Be ___!\" The wind ceased, and there was a great calm.",
+    "still",
+    "loud",
+    "wild",
+    "glad",
+    "Mark 4:39"
+   ],
+   "de": [
+    9,
+    "Jesus sagte zum See: „Schweig! Sei ___!“ Da legte sich der Wind.",
+    "still",
+    "laut",
+    "wild",
+    "froh",
+    "Markus 4,39"
+   ]
+  },
+  {
+   "en": [
+    10,
+    "He is not here, for he has ___, just like he said.",
+    "risen",
+    "slept",
+    "hidden",
+    "left",
+    "Matthew 28:6"
+   ],
+   "de": [
+    10,
+    "Er ist nicht hier. Er ist ___, genau wie er es gesagt hat!",
+    "auferstanden",
+    "eingeschlafen",
+    "weggegangen",
+    "versteckt",
+    "Matthäus 28,6"
+   ]
+  },
+  {
+   "en": [
+    10,
+    "Jesus said to her, \"I am the resurrection and the ___.\"",
+    "life",
+    "light",
+    "way",
+    "door",
+    "John 11:25"
+   ],
+   "de": [
+    10,
+    "Jesus sagte: „Ich bin die Auferstehung und das ___.“",
+    "Leben",
+    "Licht",
+    "Brot",
+    "Tor",
+    "Johannes 11,25"
+   ]
+  },
+  {
+   "en": [
+    10,
+    "For God so ___ the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.",
+    "loved",
+    "made",
+    "saw",
+    "called",
+    "John 3:16"
+   ],
+   "de": [
+    10,
+    "So sehr hat Gott die Welt ___, dass er seinen einzigen Sohn gab. Jeder, der an ihn glaubt, wird ewig leben.",
+    "geliebt",
+    "gemacht",
+    "gesehen",
+    "gerufen",
+    "Johannes 3,16"
+   ]
+  },
+  {
+   "en": [
+    0,
+    "Your word is a ___ to my feet, and a light for my path.",
+    "lamp",
+    "shoe",
+    "road",
+    "song",
+    "Psalm 119:105"
+   ],
+   "de": [
+    0,
+    "Dein Wort ist wie eine ___ für meine Füße und ein Licht auf meinem Weg.",
+    "Lampe",
+    "Schuh",
+    "Straße",
+    "Karte",
+    "Psalm 119,105"
+   ]
+  },
+  {
+   "en": [
+    0,
+    "___ in the LORD with all your heart, and don't lean on your own understanding.",
+    "Trust",
+    "Wait",
+    "Sing",
+    "Look",
+    "Proverbs 3:5"
+   ],
+   "de": [
+    0,
+    "___ dem Herrn von ganzem Herzen und verlass dich nicht nur auf deine eigene Klugheit.",
+    "Vertraue",
+    "Warte",
+    "Singe",
+    "Schaue",
+    "Sprüche 3,5"
+   ]
+  },
+  {
+   "en": [
+    0,
+    "I can do all ___ through Christ, who strengthens me.",
+    "things",
+    "days",
+    "battles",
+    "miles",
+    "Philippians 4:13"
+   ],
+   "de": [
+    0,
+    "Alles kann ich durch ___, der mir Kraft gibt.",
+    "Christus",
+    "Mose",
+    "Geld",
+    "Glück",
+    "Philipper 4,13"
+   ]
+  },
+  {
+   "en": [
+    0,
+    "Put on the whole ___ of God, that you may be able to stand.",
+    "armor",
+    "robe",
+    "word",
+    "love",
+    "Ephesians 6:11"
+   ],
+   "de": [
+    0,
+    "Zieht die ganze ___ Gottes an, damit ihr standhaft bleiben könnt.",
+    "Rüstung",
+    "Krone",
+    "Kleidung",
+    "Decke",
+    "Epheser 6,11"
+   ]
+  },
+  {
+   "en": [
+    0,
+    "We love him, because he first ___ us.",
+    "loved",
+    "saved",
+    "made",
+    "called",
+    "1 John 4:19"
+   ],
+   "de": [
+    0,
+    "Wir lieben, weil Gott uns zuerst ___ hat.",
+    "geliebt",
+    "gerettet",
+    "gemacht",
+    "gerufen",
+    "1. Johannes 4,19"
+   ]
+  },
+  {
+   "en": [
+    0,
+    "God is our ___ and strength, a very present help in trouble.",
+    "refuge",
+    "king",
+    "father",
+    "shepherd",
+    "Psalm 46:1"
+   ],
+   "de": [
+    0,
+    "Gott ist unsere ___ und Stärke, ein Helfer, wenn es schwer wird.",
+    "Zuflucht",
+    "Krone",
+    "Mauer",
+    "Lampe",
+    "Psalm 46,2"
+   ]
+  },
+  {
+   "en": [
+    0,
+    "They will mount up with wings like ___. They will run, and not be weary.",
+    "eagles",
+    "lions",
+    "doves",
+    "angels",
+    "Isaiah 40:31"
+   ],
+   "de": [
+    0,
+    "Sie bekommen neue Kraft und fliegen hoch wie ___. Sie laufen und werden nicht müde.",
+    "Adler",
+    "Löwen",
+    "Tauben",
+    "Engel",
+    "Jesaja 40,31"
+   ]
+  },
+  {
+   "en": [
+    0,
+    "You are the ___ of the world. A city located on a hill can't be hidden.",
+    "light",
+    "salt",
+    "kings",
+    "hope",
+    "Matthew 5:14"
+   ],
+   "de": [
+    0,
+    "Ihr seid das ___ der Welt. Eine Stadt auf einem Berg kann man nicht verstecken.",
+    "Licht",
+    "Salz",
+    "Brot",
+    "Gold",
+    "Matthäus 5,14"
+   ]
+  },
+  {
+   "en": [
+    0,
+    "Now ___ is assurance of things hoped for, proof of things not seen.",
+    "faith",
+    "hope",
+    "love",
+    "grace",
+    "Hebrews 11:1"
+   ],
+   "de": [
+    0,
+    "Glauben heißt: fest mit dem rechnen, was man ___, auch wenn man es noch nicht sieht.",
+    "hofft",
+    "kauft",
+    "isst",
+    "baut",
+    "Hebräer 11,1"
+   ]
+  },
+  {
+   "en": [
+    0,
+    "This is the ___ that the LORD has made. We will rejoice and be glad in it!",
+    "day",
+    "world",
+    "song",
+    "house",
+    "Psalm 118:24"
+   ],
+   "de": [
+    0,
+    "Dies ist der ___, den der Herr gemacht hat. Wir wollen uns freuen und fröhlich sein!",
+    "Tag",
+    "Berg",
+    "Garten",
+    "Weg",
+    "Psalm 118,24"
+   ]
+  },
+  {
+   "en": [
+    0,
+    "But the fruit of the Spirit is love, ___, peace, patience, kindness, goodness, faith.",
+    "joy",
+    "hope",
+    "strength",
+    "wisdom",
+    "Galatians 5:22"
+   ],
+   "de": [
+    0,
+    "Die Frucht des Geistes ist Liebe, ___, Frieden, Geduld, Freundlichkeit, Güte und Treue.",
+    "Freude",
+    "Hoffnung",
+    "Stärke",
+    "Weisheit",
+    "Galater 5,22"
+   ]
+  },
+  {
+   "en": [
+    0,
+    "But now faith, hope, and love remain—these three. The greatest of these is ___.",
+    "love",
+    "faith",
+    "hope",
+    "wisdom",
+    "1 Corinthians 13:13"
+   ],
+   "de": [
+    0,
+    "Glaube, Hoffnung und Liebe bleiben. Aber am größten von allen ist die ___.",
+    "Liebe",
+    "Hoffnung",
+    "Weisheit",
+    "Freude",
+    "1. Korinther 13,13"
+   ]
+  },
+  {
+   "en": [
+    11,
+    "Is anything too ___ for the LORD?",
+    "hard",
+    "big",
+    "far",
+    "old",
+    "Genesis 18:14"
+   ],
+   "de": [
+    11,
+    "Ist für den Herrn irgendetwas zu ___?",
+    "schwer",
+    "groß",
+    "weit",
+    "alt",
+    "1. Mose 18,14"
+   ]
+  },
+  {
+   "en": [
+    11,
+    "He ___ in the LORD, who credited it to him for righteousness.",
+    "believed",
+    "sang",
+    "walked",
+    "built",
+    "Genesis 15:6"
+   ],
+   "de": [
+    11,
+    "Abraham ___ dem Herrn, und Gott sah ihn deshalb als gerecht an.",
+    "glaubte",
+    "sang",
+    "folgte nicht",
+    "baute",
+    "1. Mose 15,6"
+   ]
+  },
+  {
+   "en": [
+    12,
+    "As for you, you meant evil against me, but God meant it for ___.",
+    "good",
+    "nothing",
+    "Egypt",
+    "later",
+    "Genesis 50:20"
+   ],
+   "de": [
+    12,
+    "Ihr wolltet mir Böses tun, aber Gott hat ___ daraus gemacht.",
+    "Gutes",
+    "nichts",
+    "Ägypten",
+    "Streit",
+    "1. Mose 50,20"
+   ]
+  },
+  {
+   "en": [
+    12,
+    "The LORD was with ___, and he was a prosperous man.",
+    "Joseph",
+    "Pharaoh",
+    "Reuben",
+    "Jacob",
+    "Genesis 39:2"
+   ],
+   "de": [
+    12,
+    "Der Herr war mit ___, und alles gelang ihm.",
+    "Josef",
+    "Pharao",
+    "Ruben",
+    "Jakob",
+    "1. Mose 39,2"
+   ]
+  },
+  {
+   "en": [
+    13,
+    "Where you go, I will ___; and where you stay, I will stay.",
+    "go",
+    "sing",
+    "eat",
+    "rest",
+    "Ruth 1:16"
+   ],
+   "de": [
+    13,
+    "Wo du hingehst, da ___ ich auch hin.",
+    "gehe",
+    "singe",
+    "esse",
+    "ruhe",
+    "Rut 1,16"
+   ]
+  },
+  {
+   "en": [
+    13,
+    "Your people will be my people, and your ___ my God.",
+    "God",
+    "king",
+    "land",
+    "house",
+    "Ruth 1:16"
+   ],
+   "de": [
+    13,
+    "Dein Volk ist mein Volk, und dein ___ ist mein Gott.",
+    "Gott",
+    "König",
+    "Land",
+    "Haus",
+    "Rut 1,16"
+   ]
+  },
+  {
+   "en": [
+    14,
+    "After the fire, there was a still small ___.",
+    "voice",
+    "cloud",
+    "light",
+    "wind",
+    "1 Kings 19:12"
+   ],
+   "de": [
+    14,
+    "Nach dem Feuer kam ein leises, sanftes ___.",
+    "Säuseln",
+    "Donnern",
+    "Leuchten",
+    "Brausen",
+    "1. Könige 19,12"
+   ]
+  },
+  {
+   "en": [
+    14,
+    "The LORD, he is ___! The LORD, he is God!",
+    "God",
+    "king",
+    "here",
+    "strong",
+    "1 Kings 18:39"
+   ],
+   "de": [
+    14,
+    "Der Herr ist ___! Der Herr ist Gott!",
+    "Gott",
+    "König",
+    "hier",
+    "stark",
+    "1. Könige 18,39"
+   ]
+  },
+  {
+   "en": [
+    15,
+    "___ belongs to the LORD.",
+    "Salvation",
+    "Gold",
+    "Nineveh",
+    "Wisdom",
+    "Jonah 2:9"
+   ],
+   "de": [
+    15,
+    "___ kommt allein vom Herrn.",
+    "Rettung",
+    "Gold",
+    "Ninive",
+    "Regen",
+    "Jona 2,10"
+   ]
+  },
+  {
+   "en": [
+    15,
+    "You are a gracious God, and ___, slow to anger.",
+    "merciful",
+    "angry",
+    "quiet",
+    "tired",
+    "Jonah 4:2"
+   ],
+   "de": [
+    15,
+    "Du bist ein gnädiger und ___ Gott, du wirst nicht schnell zornig.",
+    "barmherziger",
+    "strenger",
+    "stiller",
+    "müder",
+    "Jona 4,2"
+   ]
+  },
+  {
+   "en": [
+    16,
+    "Who knows if you haven't come to the kingdom for such a ___ as this?",
+    "time",
+    "party",
+    "crown",
+    "palace",
+    "Esther 4:14"
+   ],
+   "de": [
+    16,
+    "Wer weiß, ob du nicht gerade für so eine ___ wie diese Königin geworden bist?",
+    "Zeit",
+    "Feier",
+    "Krone",
+    "Stadt",
+    "Ester 4,14"
+   ]
+  },
+  {
+   "en": [
+    17,
+    "But you will receive ___ when the Holy Spirit has come upon you.",
+    "power",
+    "gold",
+    "bread",
+    "crowns",
+    "Acts 1:8"
+   ],
+   "de": [
+    17,
+    "Ihr werdet ___ bekommen, wenn der Heilige Geist auf euch kommt.",
+    "Kraft",
+    "Gold",
+    "Brot",
+    "Kronen",
+    "Apostelgeschichte 1,8"
+   ]
+  },
+  {
+   "en": [
+    17,
+    "Whoever will call on the name of the Lord will be ___.",
+    "saved",
+    "famous",
+    "rich",
+    "tired",
+    "Acts 2:21"
+   ],
+   "de": [
+    17,
+    "Jeder, der den Namen des Herrn anruft, wird ___.",
+    "gerettet",
+    "berühmt",
+    "reich",
+    "müde",
+    "Apostelgeschichte 2,21"
+   ]
+  },
+  {
+   "en": [
+    18,
+    "I have fought the good fight. I have finished the course. I have kept the ___.",
+    "faith",
+    "map",
+    "money",
+    "ship",
+    "2 Timothy 4:7"
+   ],
+   "de": [
+    18,
+    "Ich habe den guten Kampf gekämpft, den Lauf vollendet und den ___ bewahrt.",
+    "Glauben",
+    "Plan",
+    "Schatz",
+    "Mut",
+    "2. Timotheus 4,7"
+   ]
+  },
+  {
+   "en": [
+    18,
+    "For I am not ___ of the Good News of Christ.",
+    "ashamed",
+    "tired",
+    "sure",
+    "afraid",
+    "Romans 1:16"
+   ],
+   "de": [
+    18,
+    "Ich schäme mich nicht für die gute ___ von Christus.",
+    "Nachricht",
+    "Reise",
+    "Arbeit",
+    "Stadt",
+    "Römer 1,16"
+   ]
+  },
+  {
+   "en": [
+    18,
+    "We know that all things work together for ___ for those who love God.",
+    "good",
+    "fun",
+    "money",
+    "peace",
+    "Romans 8:28"
+   ],
+   "de": [
+    18,
+    "Wir wissen: Für die, die Gott lieben, muss alles zum ___ mitwirken.",
+    "Guten",
+    "Spaß",
+    "Geld",
+    "Schluss",
+    "Römer 8,28"
+   ]
+  },
+  {
+   "en": [
+    19,
+    "The LORD is with you, you mighty man of ___!",
+    "valor",
+    "wealth",
+    "music",
+    "words",
+    "Judges 6:12"
+   ],
+   "de": [
+    19,
+    "Der Herr ist mit dir, du starker ___!",
+    "Held",
+    "König",
+    "Hirte",
+    "Sänger",
+    "Richter 6,12"
+   ]
+  },
+  {
+   "en": [
+    20,
+    "Lord GOD, ___ me, please, and strengthen me, please, only this once.",
+    "remember",
+    "follow",
+    "teach",
+    "carry",
+    "Judges 16:28"
+   ],
+   "de": [
+    20,
+    "Herr, mein Gott, ___ an mich und gib mir noch dieses eine Mal Kraft!",
+    "denk",
+    "glaub",
+    "halt",
+    "hör",
+    "Richter 16,28"
+   ]
+  },
+  {
+   "en": [
+    21,
+    "Don't be ___ of them! Remember the Lord, who is great and awesome.",
+    "afraid",
+    "tired",
+    "proud",
+    "jealous",
+    "Nehemiah 4:14"
+   ],
+   "de": [
+    21,
+    "Habt keine ___ vor ihnen! Denkt an den Herrn, der groß und mächtig ist.",
+    "Angst",
+    "Zeit",
+    "Mauer",
+    "Ruhe",
+    "Nehemia 4,8"
+   ]
+  },
+  {
+   "en": [
+    22,
+    "For the Son of Man came to seek and to save that which was ___.",
+    "lost",
+    "rich",
+    "strong",
+    "proud",
+    "Luke 19:10"
+   ],
+   "de": [
+    22,
+    "Der Menschensohn ist gekommen, um zu suchen und zu retten, was ___ ist.",
+    "verloren",
+    "reich",
+    "stark",
+    "fertig",
+    "Lukas 19,10"
+   ]
+  }
+ ]
+}

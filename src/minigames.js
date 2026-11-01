@@ -191,7 +191,7 @@
     if (active) active(true);
     injectStyle();
     var host = opts.host || document.body;
-    var lang = opts.lang === 'de' ? 'de' : 'en';
+    var lang = opts.lang; if (!TXT[lang] && window.MGX && window.MGX[lang]) TXT[lang] = window.MGX[lang]; if (!TXT[lang]) lang = 'en';
     var reduced = false;
     try { reduced = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches); } catch (e) {}
 

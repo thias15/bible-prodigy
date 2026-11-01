@@ -1,0 +1,3571 @@
+{
+ "STR": {
+  "title.kicker": {
+   "en": "A Bible adventure",
+   "de": "Ein Bibel-Abenteuer"
+  },
+  "title.h1": {
+   "en": "Scrolls<br>of Light",
+   "de": "Schriftrollen<br>des Lichts"
+  },
+  "title.sub": {
+   "en": "Journey through the great stories of the Bible, answer questions to power your faith, and restore the shattered Scroll.",
+   "de": "Reise durch die großen Geschichten der Bibel, beantworte Fragen, um deinen Glauben zu stärken, und setze die zerrissene Schriftrolle wieder zusammen."
+  },
+  "title.cont": {
+   "en": "Continue Journey",
+   "de": "Weiterspielen"
+  },
+  "title.new": {
+   "en": "New Pilgrim",
+   "de": "Neuer Pilger"
+  },
+  "title.who": {
+   "en": "Who is playing?",
+   "de": "Wer spielt?"
+  },
+  "title.lv": {
+   "en": "Level {0} · {1} of {2} pieces",
+   "de": "Stufe {0} · {1} von {2} Teilen"
+  },
+  "create.h": {
+   "en": "Create your pilgrim",
+   "de": "Erstelle deinen Pilger"
+  },
+  "create.name": {
+   "en": "Your name",
+   "de": "Dein Name"
+  },
+  "create.namePh": {
+   "en": "Pilgrim",
+   "de": "Pilger"
+  },
+  "create.skin": {
+   "en": "Skin",
+   "de": "Haut"
+  },
+  "create.hair": {
+   "en": "Hair",
+   "de": "Haare"
+  },
+  "create.hs": {
+   "en": "Hair style",
+   "de": "Frisur"
+  },
+  "create.robe": {
+   "en": "Robe",
+   "de": "Gewand"
+  },
+  "create.age": {
+   "en": "Your age (sets question difficulty)",
+   "de": "Dein Alter (bestimmt, wie schwer die Fragen sind)"
+  },
+  "create.go": {
+   "en": "Begin the Journey",
+   "de": "Die Reise beginnt"
+  },
+  "create.back": {
+   "en": "Back",
+   "de": "Zurück"
+  },
+  "hs": {
+   "en": [
+    "Short",
+    "Long",
+    "Curly",
+    "Braids",
+    "Bun",
+    "Afro",
+    "Headscarf"
+   ],
+   "de": [
+    "Kurz",
+    "Lang",
+    "Lockig",
+    "Zöpfe",
+    "Dutt",
+    "Afro",
+    "Kopftuch"
+   ]
+  },
+  "hud.level": {
+   "en": "Level",
+   "de": "Stufe"
+  },
+  "hud.shekels": {
+   "en": "shekels",
+   "de": "Schekel"
+  },
+  "btn.quests": {
+   "en": "Quests",
+   "de": "Aufgaben"
+  },
+  "btn.bag": {
+   "en": "Bag",
+   "de": "Tasche"
+  },
+  "btn.world": {
+   "en": "World",
+   "de": "Welt"
+  },
+  "btn.friends": {
+   "en": "Friends",
+   "de": "Freunde"
+  },
+  "track.quest": {
+   "en": "Quest",
+   "de": "Aufgabe"
+  },
+  "dlg.tap": {
+   "en": "tap ▸",
+   "de": "tippen ▸"
+  },
+  "q.read": {
+   "en": "🔊 Read aloud",
+   "de": "🔊 Vorlesen"
+  },
+  "q.exit": {
+   "en": "✕ Stop",
+   "de": "✕ Beenden"
+  },
+  "q.cont": {
+   "en": "Continue",
+   "de": "Weiter"
+  },
+  "btn.continue": {
+   "en": "Continue",
+   "de": "Weiter"
+  },
+  "cat.math": {
+   "en": "Math",
+   "de": "Mathe"
+  },
+  "cat.bible": {
+   "en": "Bible",
+   "de": "Bibel"
+  },
+  "cat.verse": {
+   "en": "Memory Verse",
+   "de": "Bibelvers"
+  },
+  "cat.words": {
+   "en": "Words",
+   "de": "Wörter"
+  },
+  "cat.logic": {
+   "en": "Puzzle",
+   "de": "Rätsel"
+  },
+  "gloomlings": {
+   "en": "Gloomlings",
+   "de": "Düsterlinge"
+  },
+  "found": {
+   "en": "Found {0}  ({1}/{2})",
+   "de": "Gefunden: {0}  ({1}/{2})"
+  },
+  "returnTo": {
+   "en": "Return to {0}!",
+   "de": "Geh zurück zu {0}!"
+  },
+  "act.enter": {
+   "en": "Enter Gate {0}: {1}",
+   "de": "Tor {0}: {1}"
+  },
+  "act.locked": {
+   "en": "Gate {0} is locked",
+   "de": "Tor {0} ist verschlossen"
+  },
+  "act.home": {
+   "en": "Return to Pilgrim's Rest",
+   "de": "Zurück zur Pilgerrast"
+  },
+  "act.boss": {
+   "en": "Face the {0}!",
+   "de": "Stell dich: {0}!"
+  },
+  "act.talk": {
+   "en": "Talk to {0}",
+   "de": "Sprich mit {0}"
+  },
+  "sign.shop": {
+   "en": "Lydia's Goods",
+   "de": "Lydias Laden"
+  },
+  "sign.scribe": {
+   "en": "Scribe",
+   "de": "Schreiber"
+  },
+  "sign.stable": {
+   "en": "Stable",
+   "de": "Stall"
+  },
+  "hub.timothy": {
+   "en": [
+    "My grandma Lois taught me the Scriptures since I was little!",
+    "Tip: Use the arrow keys or WASD to walk — or just tap where you want to go."
+   ],
+   "de": [
+    "Meine Oma Lois hat mir schon als kleines Kind die Heilige Schrift beigebracht!",
+    "Tipp: Lauf mit den Pfeiltasten oder WASD – oder tipp einfach dorthin, wo du hinwillst."
+   ]
+  },
+  "hub.lois": {
+   "en": [
+    "Every gate holds a story. Walk in, listen well, and you'll learn something wonderful.",
+    "If you get tired, Ezra the Scribe lets you practice questions to earn shekels."
+   ],
+   "de": [
+    "Hinter jedem Tor wartet eine Geschichte. Geh hinein, hör gut zu, und du lernst etwas Wunderbares.",
+    "Wenn du müde bist: Bei Esra, dem Schreiber, kannst du Fragen üben und Schekel verdienen."
+   ]
+  },
+  "hub.priscilla": {
+   "en": [
+    "My husband Aquila and I make tents. Paul worked with us! (Acts 18:3)",
+    "Tip: Your animal friend fights beside you. Visit the stable to swap friends."
+   ],
+   "de": [
+    "Mein Mann Aquila und ich nähen Zelte. Paulus hat mit uns gearbeitet! (Apostelgeschichte 18,3)",
+    "Tipp: Dein Tierfreund kämpft an deiner Seite. Im Stall kannst du Freunde tauschen."
+   ]
+  },
+  "hub.philip": {
+   "en": [
+    "I told an official from Ethiopia the good news about Jesus, right there on the road! (Acts 8)",
+    "God's family includes people from every nation."
+   ],
+   "de": [
+    "Ich habe einem Beamten aus Äthiopien mitten auf der Straße von Jesus erzählt! (Apostelgeschichte 8)",
+    "Zu Gottes Familie gehören Menschen aus allen Völkern."
+   ]
+  },
+  "hub.tabitha": {
+   "en": [
+    "I love sewing clothes for people who need them. (Acts 9:36)",
+    "Tip: Ask a grown-up to download a backup of your journey from Settings."
+   ],
+   "de": [
+    "Ich nähe gern Kleider für Menschen, die keine haben. (Apostelgeschichte 9,36)",
+    "Tipp: Bitte einen Erwachsenen, in den Einstellungen eine Sicherung deiner Reise herunterzuladen."
+   ]
+  },
+  "gate.locked": {
+   "en": "Finish Gate {0} to open this gate.",
+   "de": "Schließe zuerst Tor {0} ab, um dieses Tor zu öffnen."
+  },
+  "q.simeon": {
+   "en": "Talk to Simeon by the fountain.",
+   "de": "Sprich mit Simeon am Brunnen."
+  },
+  "q.lastPiece": {
+   "en": "Bring the last Scroll piece to Simeon!",
+   "de": "Bring das letzte Teil der Schriftrolle zu Simeon!"
+  },
+  "q.enterGate": {
+   "en": "Enter Gate {0}: {1}",
+   "de": "Geh durch Tor {0}: {1}"
+  },
+  "q.allDone": {
+   "en": "The Scroll is whole! Explore any gate.",
+   "de": "Die Schriftrolle ist ganz! Besuche jedes Tor, so oft du willst."
+  },
+  "q.talk": {
+   "en": "Talk to {0}.",
+   "de": "Sprich mit {0}."
+  },
+  "q.defeat": {
+   "en": "Defeat {0} in {1}: {2}/{3}",
+   "de": "Besiege {0} ({1}): {2}/{3}"
+  },
+  "q.face": {
+   "en": "Face the {0} at the {1}!",
+   "de": "Stell dich: {0} – {1}!"
+  },
+  "q.return": {
+   "en": "Return to {0}.",
+   "de": "Geh zurück zu {0}."
+  },
+  "q.complete": {
+   "en": "Chapter complete!",
+   "de": "Kapitel geschafft!"
+  },
+  "q.side": {
+   "en": "{0}: {1}/{2}",
+   "de": "{0}: {1}/{2}"
+  },
+  "shop.hi": {
+   "en": "Welcome, pilgrim! I sell purple cloth and good food for the road.",
+   "de": "Willkommen, Pilger! Ich verkaufe Purpurstoff und gutes Essen für unterwegs."
+  },
+  "stable.first": {
+   "en": "Simeon by the fountain wants to see you first, young one.",
+   "de": "Simeon am Brunnen möchte dich zuerst sehen, junger Freund."
+  },
+  "stable.hi": {
+   "en": "Animal friends travel with you and help in every battle. Pick who comes along!",
+   "de": "Tierfreunde reisen mit dir und helfen in jedem Kampf. Such dir aus, wer mitkommt!"
+  },
+  "scribe.hi": {
+   "en": "Practice makes wise! Answer my questions to earn shekels, or read the verses you have collected.",
+   "de": "Übung macht weise! Beantworte meine Fragen und verdiene Schekel – oder lies die Verse, die du gesammelt hast."
+  },
+  "guide.progress": {
+   "en": "{0} are {1}. You've stopped {2} of {3}. Keep going!",
+   "de": "{0} sind {1}. Du hast schon {2} von {3} besiegt. Weiter so!"
+  },
+  "toast.quest": {
+   "en": "Quest: defeat {0} {1}",
+   "de": "Aufgabe: Besiege {0} {1}"
+  },
+  "side.toastFind": {
+   "en": "Find {0} {1}. Look for the glowing spots!",
+   "de": "Finde {0}: {1}. Achte auf die leuchtenden Stellen!"
+  },
+  "side.reward": {
+   "en": "+{0} shekels and {1} {2}",
+   "de": "+{0} Schekel und {1} {2}"
+  },
+  "side.still": {
+   "en": "Still looking for my {0}? You've found {1} of {2}. Look for little glowing spots!",
+   "de": "Suchst du noch nach meinen Sachen ({0})? Du hast {1} von {2} gefunden. Achte auf die leuchtenden Stellen!"
+  },
+  "side.thanksAgain": {
+   "en": "Thank you again, friend! God bless your journey.",
+   "de": "Nochmals danke, mein Freund! Gott segne deine Reise."
+  },
+  "elder.intro": {
+   "en": [
+    "Ah, a pilgrim at last! I am Simeon. I have waited many years to see God's promises come true.",
+    "The Scroll of Light tells the great story of God's love — from creation all the way to the empty tomb.",
+    "But the Shadow of Doubt tore it into twenty-two pieces and hid them in the stories of the Bible.",
+    "These Gates of Remembrance lead into those stories. Answer wisely, be brave, and bring the pieces home.",
+    "Gate 1, the Garden of Eden, is open. And look — Jesse's little lamb has decided to follow you. God be with you!"
+   ],
+   "de": [
+    "Ah, endlich ein Pilger! Ich bin Simeon. Viele Jahre habe ich darauf gewartet, dass Gottes Versprechen wahr werden.",
+    "Die Schriftrolle des Lichts erzählt die große Geschichte von Gottes Liebe – von der Schöpfung bis zum leeren Grab.",
+    "Aber der Schatten des Zweifels hat sie in zweiundzwanzig Teile zerrissen und in den Geschichten der Bibel versteckt.",
+    "Diese Tore der Erinnerung führen in diese Geschichten. Antworte weise, sei mutig und bring die Teile nach Hause.",
+    "Tor 1, der Garten Eden, ist offen. Und schau – das kleine Lamm von Jesse möchte mit dir gehen. Gott sei mit dir!"
+   ]
+  },
+  "toast.lamb": {
+   "en": "🐑 The Lamb joined you!",
+   "de": "🐑 Das Lamm geht mit dir!"
+  },
+  "elder.whole": {
+   "en": "The Scroll is whole! Keep visiting the gates — every story still has more to teach.",
+   "de": "Die Schriftrolle ist ganz! Besuche die Tore weiter – jede Geschichte hat noch mehr zu erzählen."
+  },
+  "elder.progress": {
+   "en": "You have restored {0} of {1} Scroll pieces.",
+   "de": "Du hast {0} von {1} Teilen der Schriftrolle zurückgebracht."
+  },
+  "elder.next": {
+   "en": " Gate {0}, {1}, is waiting for you.",
+   "de": " Tor {0}, {1}, wartet auf dich."
+  },
+  "toast.piece": {
+   "en": "Scroll piece {0} restored!",
+   "de": "Teil {0} der Schriftrolle ist zurück!"
+  },
+  "toast.received": {
+   "en": "Received: {0}",
+   "de": "Erhalten: {0}"
+  },
+  "toast.verse": {
+   "en": "Verse unlocked: {0}",
+   "de": "Neuer Bibelvers: {0}"
+  },
+  "toast.backup": {
+   "en": "Great progress! Ask a grown-up to save a backup in Settings.",
+   "de": "Toll gemacht! Bitte einen Erwachsenen, in den Einstellungen eine Sicherung zu speichern."
+  },
+  "ending": {
+   "en": [
+    "The last piece! Let me see... yes. The Scroll of Light is whole again!",
+    "From the garden to the empty tomb, every piece points to one great truth: God loves you, and Jesus came to rescue the world.",
+    "'For God so loved the world, that he gave his one and only Son.' That's the heart of the whole Scroll.",
+    "You were brave and wise, pilgrim. Here is a crown — a reminder of the crown of life promised to those who love God (James 1:12).",
+    "The gates will stay open. Keep exploring, keep learning, and keep shining!"
+   ],
+   "de": [
+    "Das letzte Teil! Lass sehen ... ja! Die Schriftrolle des Lichts ist wieder ganz!",
+    "Vom Garten bis zum leeren Grab zeigt jedes Teil auf eine große Wahrheit: Gott liebt dich, und Jesus ist gekommen, um die Welt zu retten.",
+    "„So sehr hat Gott die Welt geliebt, dass er seinen einzigen Sohn gab.“ Das ist das Herz der ganzen Schriftrolle.",
+    "Du warst mutig und klug, Pilger. Hier ist eine Krone – sie erinnert an die Krone des Lebens, die Gott allen verspricht, die ihn lieben (Jakobus 1,12).",
+    "Die Tore bleiben offen. Entdecke weiter, lerne weiter und leuchte weiter!"
+   ]
+  },
+  "ending.title": {
+   "en": "The Scroll is Restored",
+   "de": "Die Schriftrolle ist ganz"
+  },
+  "ending.stats": {
+   "en": "You answered <b>{0}</b> questions correctly and reached level <b>{1}</b>. Well done, good and faithful pilgrim!",
+   "de": "Du hast <b>{0}</b> Fragen richtig beantwortet und Stufe <b>{1}</b> erreicht. Gut gemacht, du treuer Pilger!"
+  },
+  "ending.grown": {
+   "en": "Grown-ups can raise the difficulty in Settings for an extra challenge.",
+   "de": "Erwachsene können in den Einstellungen die Schwierigkeit erhöhen."
+  },
+  "narr": {
+   "en": "The Scroll",
+   "de": "Die Schriftrolle"
+  },
+  "narr.welcome": {
+   "en": "Welcome, {0}. Your journey begins in Pilgrim's Rest. Find Simeon by the fountain.",
+   "de": "Willkommen, {0}! Deine Reise beginnt in der Pilgerrast. Such Simeon am Brunnen."
+  },
+  "fb.ok": {
+   "en": [
+    "Correct!",
+    "Well done!",
+    "That's right!",
+    "Excellent!",
+    "Yes!"
+   ],
+   "de": [
+    "Richtig!",
+    "Gut gemacht!",
+    "Genau!",
+    "Super!",
+    "Ja!"
+   ]
+  },
+  "fb.no": {
+   "en": "Not quite. The answer is \"{0}\".",
+   "de": "Nicht ganz. Die Antwort ist „{0}“."
+  },
+  "v.whichBook": {
+   "en": "Which book is this verse from?",
+   "de": "Aus welchem Buch stammt dieser Vers?"
+  },
+  "v.src": {
+   "en": "(WEB)",
+   "de": ""
+  },
+  "v.ref": {
+   "en": "{0}",
+   "de": "nach {0}"
+  },
+  "w.spell": {
+   "en": "Which word is spelled correctly?",
+   "de": "Welches Wort ist richtig geschrieben?"
+  },
+  "w.spellEx": {
+   "en": "The correct spelling is \"{0}\".",
+   "de": "Richtig geschrieben: „{0}“."
+  },
+  "w.mean": {
+   "en": "What does \"{0}\" mean?",
+   "de": "Was bedeutet „{0}“?"
+  },
+  "w.meanEx": {
+   "en": "\"{0}\" means {1}.",
+   "de": "„{0}“ bedeutet: {1}."
+  },
+  "w.which": {
+   "en": "Which word means \"{0}\"?",
+   "de": "Welches Wort bedeutet „{0}“?"
+  },
+  "l.odd": {
+   "en": "Which one does NOT belong with the others?",
+   "de": "Was passt NICHT zu den anderen?"
+  },
+  "l.oddEx": {
+   "en": "{0} are {1}. {2} belongs with {3}.",
+   "de": "{0} gehören zu: {1}. {2} gehört zu: {3}."
+  },
+  "l.next": {
+   "en": "What comes next?  {0},  ?",
+   "de": "Was kommt als Nächstes?  {0},  ?"
+  },
+  "l.add": {
+   "en": "Each number goes up by {0}.",
+   "de": "Jede Zahl wird um {0} größer."
+  },
+  "l.sub": {
+   "en": "Each number goes down by {0}.",
+   "de": "Jede Zahl wird um {0} kleiner."
+  },
+  "l.mul": {
+   "en": "Each number is multiplied by {0}.",
+   "de": "Jede Zahl wird mal {0} genommen."
+  },
+  "l.sq": {
+   "en": "These are square numbers: {0}², {1}², {2}²...",
+   "de": "Das sind Quadratzahlen: {0}², {1}², {2}² ..."
+  },
+  "l.alt": {
+   "en": "The pattern is +{0}, −{1}, +{0}, −{1}...",
+   "de": "Das Muster ist +{0}, −{1}, +{0}, −{1} ..."
+  },
+  "l.fib": {
+   "en": "Each number is the sum of the two before it.",
+   "de": "Jede Zahl ist die Summe der zwei Zahlen davor."
+  },
+  "b.otnt": {
+   "en": "Is the book of {0} in the Old Testament or the New Testament?",
+   "de": "Steht das Buch {0} im Alten oder im Neuen Testament?"
+  },
+  "b.ot": {
+   "en": "Old Testament",
+   "de": "Altes Testament"
+  },
+  "b.nt": {
+   "en": "New Testament",
+   "de": "Neues Testament"
+  },
+  "b.isIn": {
+   "en": "{0} is in the {1}.",
+   "de": "{0} steht im {1}."
+  },
+  "b.after": {
+   "en": "Which book comes right after {0}?",
+   "de": "Welches Buch kommt direkt nach {0}?"
+  },
+  "b.afterEx": {
+   "en": "{0} is followed by {1}.",
+   "de": "Nach {0} kommt {1}."
+  },
+  "b.first": {
+   "en": "Which of these books comes FIRST in the Bible?",
+   "de": "Welches dieser Bücher kommt ZUERST in der Bibel?"
+  },
+  "b.firstEx": {
+   "en": "{0} is book number {1} of 66.",
+   "de": "{0} ist Buch Nummer {1} von 66."
+  },
+  "b.appears1": {
+   "en": "A {0} appears!",
+   "de": "Ein Gegner erscheint: {0}!"
+  },
+  "b.appearsN": {
+   "en": "{0} foes appear!",
+   "de": "{0} Gegner erscheinen!"
+  },
+  "b.march": {
+   "en": "March around the walls! Each right answer is one lap. {0} laps to go.",
+   "de": "Zieh um die Mauern! Jede richtige Antwort ist eine Runde. Noch {0} Runden."
+  },
+  "b.chooseBoss": {
+   "en": "Choose a power. Answer correctly to make it work!",
+   "de": "Wähle eine Kraft. Beantworte die Frage richtig, damit sie wirkt!"
+  },
+  "b.choose": {
+   "en": "Choose a power, then answer the question!",
+   "de": "Wähle eine Kraft und beantworte dann die Frage!"
+  },
+  "b.answerUp": {
+   "en": "{0}: answer to power it up!",
+   "de": "{0}: Antworte, um die Kraft zu wecken!"
+  },
+  "b.hits": {
+   "en": "{0} hits!",
+   "de": "{0} trifft!"
+  },
+  "b.wave": {
+   "en": "Wisdom Wave washes over every foe!",
+   "de": "Die Welle der Weisheit trifft alle Gegner!"
+  },
+  "b.prayer": {
+   "en": "Your prayer brings fresh strength.",
+   "de": "Dein Gebet gibt dir neue Kraft."
+  },
+  "b.hope": {
+   "en": "Hope surrounds you like a shield.",
+   "de": "Hoffnung umgibt dich wie ein Schild."
+  },
+  "b.fizzle": {
+   "en": "{0} fizzled... but keep trying!",
+   "de": "{0} ist verpufft ... aber gib nicht auf!"
+  },
+  "b.turn": {
+   "en": "Your turn! Choose a power.",
+   "de": "Du bist dran! Wähle eine Kraft."
+  },
+  "b.fled": {
+   "en": "You slipped away safely.",
+   "de": "Du bist sicher entkommen."
+  },
+  "b.ate": {
+   "en": "You ate the {0}.",
+   "de": "Du hast gegessen: {0}."
+  },
+  "b.food": {
+   "en": "Food",
+   "de": "Essen"
+  },
+  "b.empty": {
+   "en": "Bag is empty",
+   "de": "Tasche ist leer"
+  },
+  "b.back": {
+   "en": "Back",
+   "de": "Zurück"
+  },
+  "b.backSub": {
+   "en": "Choose a power",
+   "de": "Kraft wählen"
+  },
+  "b.run": {
+   "en": "Run away",
+   "de": "Weglaufen"
+  },
+  "b.runSub": {
+   "en": "Leave this battle",
+   "de": "Kampf verlassen"
+  },
+  "b.unlock": {
+   "en": "Unlocks at level {0}",
+   "de": "Ab Stufe {0}"
+  },
+  "b.lap": {
+   "en": "Lap {0} of {1}!",
+   "de": "Runde {0} von {1}!"
+  },
+  "b.shielded": {
+   "en": "Shielded!",
+   "de": "Geschützt!"
+  },
+  "b.guard": {
+   "en": "Guarding!",
+   "de": "Ich beschütze dich!"
+  },
+  "b.stunned": {
+   "en": "Frozen!",
+   "de": "Erstarrt!"
+  },
+  "b.skips": {
+   "en": "{0} is frozen and skips a turn!",
+   "de": "{0} ist erstarrt und setzt aus!"
+  },
+  "b.wallsStrong": {
+   "en": "The walls are too strong!",
+   "de": "Die Mauern sind zu stark!"
+  },
+  "b.mends": {
+   "en": "{0} mends its friends!",
+   "de": "{0} heilt seine Freunde!"
+  },
+  "b.streakToast": {
+   "en": "✦ Spirit Streak! Attacks are stronger!",
+   "de": "✦ Geist-Serie! Deine Angriffe werden stärker!"
+  },
+  "b.streak": {
+   "en": "Streak {0}",
+   "de": "Serie {0}"
+  },
+  "b.streakx": {
+   "en": "✦ Spirit Streak ×{0}",
+   "de": "✦ Geist-Serie ×{0}"
+  },
+  "b.hopeTag": {
+   "en": "Hope Shield ({0})",
+   "de": "Hoffnungsschild ({0})"
+  },
+  "trait.quick": {
+   "en": "quick",
+   "de": "flink"
+  },
+  "trait.tough": {
+   "en": "tough",
+   "de": "zäh"
+  },
+  "trait.mender": {
+   "en": "mender",
+   "de": "Heiler"
+  },
+  "win.title": {
+   "en": "Victory!",
+   "de": "Sieg!"
+  },
+  "win.xp": {
+   "en": "+{0} XP",
+   "de": "+{0} EP"
+  },
+  "win.coins": {
+   "en": "+{0} shekels",
+   "de": "+{0} Schekel"
+  },
+  "win.bonus": {
+   "en": "{0} found +{1} extra shekels",
+   "de": "{0} hat +{1} Extra-Schekel gefunden"
+  },
+  "win.found": {
+   "en": "Found {0} {1}",
+   "de": "Gefunden: {0} {1}"
+  },
+  "win.lvl": {
+   "en": "Level up! You are now level {0}.",
+   "de": "Stufe hoch! Du bist jetzt Stufe {0}."
+  },
+  "win.comp": {
+   "en": "{0} grew to level {1}!",
+   "de": "{0} ist jetzt Stufe {1}!"
+  },
+  "win.spell": {
+   "en": "New power learned: {0}!",
+   "de": "Neue Kraft gelernt: {0}!"
+  },
+  "win.bossDown": {
+   "en": "The {0} is defeated! Return to {1}.",
+   "de": "{0} ist besiegt! Geh zurück zu {1}."
+  },
+  "win.bossUp": {
+   "en": "The {0} has appeared at the {1}!",
+   "de": "{0} ist erschienen – {1}!"
+  },
+  "lose.title": {
+   "en": "Knocked down...",
+   "de": "Umgehauen ..."
+  },
+  "lose.l1": {
+   "en": "You are carried back to safety and fully healed.",
+   "de": "Du wirst in Sicherheit gebracht und bist wieder ganz gesund."
+  },
+  "lose.l2": {
+   "en": "\"His compassion doesn't fail. They are new every morning.\" — Lamentations 3:22-23",
+   "de": "„Gottes Güte hört nie auf. Jeden Morgen ist sie neu!“ – nach Klagelieder 3,22-23"
+  },
+  "lose.note": {
+   "en": "Try again — every question you miss helps you learn!",
+   "de": "Versuch es noch einmal – aus jeder falschen Antwort lernst du etwas!"
+  },
+  "shop.title": {
+   "en": "Lydia's Goods",
+   "de": "Lydias Laden"
+  },
+  "shop.food": {
+   "en": "Food for the road",
+   "de": "Essen für unterwegs"
+  },
+  "shop.have": {
+   "en": "have {0}",
+   "de": "hast {0}"
+  },
+  "shop.buy": {
+   "en": "Buy",
+   "de": "Kaufen"
+  },
+  "shop.dyes": {
+   "en": "Robe dyes",
+   "de": "Gewandfarben"
+  },
+  "shop.owned": {
+   "en": "Owned",
+   "de": "Gehört dir"
+  },
+  "shop.youHave": {
+   "en": "You have {0} shekels. Wear dyes from your Bag.",
+   "de": "Du hast {0} Schekel. Farben ziehst du in deiner Tasche an."
+  },
+  "toast.wearing": {
+   "en": "You're wearing {0}!",
+   "de": "Du trägst jetzt: {0}!"
+  },
+  "stable.title": {
+   "en": "Animal Friends",
+   "de": "Tierfreunde"
+  },
+  "stable.yours": {
+   "en": "Your animal friends",
+   "de": "Deine Tierfreunde"
+  },
+  "stable.with": {
+   "en": "With you",
+   "de": "Ist dabei"
+  },
+  "stable.bring": {
+   "en": "Bring along",
+   "de": "Mitnehmen"
+  },
+  "stable.need": {
+   "en": "Animals needing a home",
+   "de": "Tiere suchen ein Zuhause"
+  },
+  "stable.adopt": {
+   "en": "Adopt",
+   "de": "Aufnehmen"
+  },
+  "stable.more": {
+   "en": "More friends join you as you complete gates and helper quests.",
+   "de": "Weitere Freunde kommen dazu, wenn du Tore und Hilfsaufgaben schaffst."
+  },
+  "toast.joined": {
+   "en": "{0} {1} joined you!",
+   "de": "{0} {1} geht jetzt mit dir!"
+  },
+  "ct.heal": {
+   "en": "Healer",
+   "de": "Heiler"
+  },
+  "ct.attack": {
+   "en": "Fighter",
+   "de": "Kämpfer"
+  },
+  "ct.all": {
+   "en": "Hits all",
+   "de": "Trifft alle"
+  },
+  "ct.shield": {
+   "en": "Guard",
+   "de": "Beschützer"
+  },
+  "ct.stun": {
+   "en": "Freezes foes",
+   "de": "Lässt erstarren"
+  },
+  "ct.coins": {
+   "en": "Finds shekels",
+   "de": "Findet Schekel"
+  },
+  "scribe.title": {
+   "en": "Ezra's Scrolls",
+   "de": "Esras Schriftrollen"
+  },
+  "scribe.practice": {
+   "en": "Practice Scroll",
+   "de": "Übungsrolle"
+  },
+  "scribe.pdesc": {
+   "en": "Answer 10 questions. Earn 3 shekels for every right answer.",
+   "de": "Beantworte 10 Fragen. Für jede richtige Antwort bekommst du 3 Schekel."
+  },
+  "scribe.mixed": {
+   "en": "Mixed",
+   "de": "Gemischt"
+  },
+  "scribe.mixedDesc": {
+   "en": "A bit of everything",
+   "de": "Von allem etwas"
+  },
+  "scribe.only": {
+   "en": "Only {0} questions",
+   "de": "Nur {0}-Fragen"
+  },
+  "scribe.lib": {
+   "en": "Verse library",
+   "de": "Vers-Sammlung"
+  },
+  "lib.empty": {
+   "en": "Complete a gate to unlock its memory verse.",
+   "de": "Schaffe ein Tor, um seinen Bibelvers freizuschalten."
+  },
+  "prac.title": {
+   "en": "Practice complete",
+   "de": "Übung geschafft"
+  },
+  "prac.score": {
+   "en": "{0} out of {1} correct!",
+   "de": "{0} von {1} richtig!"
+  },
+  "prac.earned": {
+   "en": "You earned {0} shekels.",
+   "de": "Du hast {0} Schekel verdient."
+  },
+  "prac.verse": {
+   "en": "Give diligence to present yourself approved by God.",
+   "de": "Gib dir Mühe, dass Gott Freude an dir hat."
+  },
+  "prac.ref": {
+   "en": "2 Timothy 2:15",
+   "de": "nach 2. Timotheus 2,15"
+  },
+  "prac.again": {
+   "en": "Practice again",
+   "de": "Noch einmal üben"
+  },
+  "bag.title": {
+   "en": "Your Bag",
+   "de": "Deine Tasche"
+  },
+  "bag.food": {
+   "en": "Food",
+   "de": "Essen"
+  },
+  "bag.eat": {
+   "en": "Eat",
+   "de": "Essen"
+  },
+  "bag.empty": {
+   "en": "Your bag is empty. Lydia sells food in Pilgrim's Rest.",
+   "de": "Deine Tasche ist leer. Lydia verkauft Essen in der Pilgerrast."
+  },
+  "bag.armor": {
+   "en": "Armor of God",
+   "de": "Die Waffenrüstung Gottes"
+  },
+  "bag.armorNote": {
+   "en": "\"Put on the whole armor of God\" — Ephesians 6:11. Earn each piece by finishing gates.",
+   "de": "„Zieht die ganze Rüstung Gottes an“ – nach Epheser 6,11. Jedes Teil bekommst du, wenn du ein Tor schaffst."
+  },
+  "bag.robes": {
+   "en": "Robes",
+   "de": "Gewänder"
+  },
+  "bag.worn": {
+   "en": "Worn",
+   "de": "Angelegt"
+  },
+  "bag.traveler": {
+   "en": "Traveler",
+   "de": "Reisegewand"
+  },
+  "bag.crown": {
+   "en": "Crown of Life",
+   "de": "Krone des Lebens"
+  },
+  "bag.wear": {
+   "en": "Wear",
+   "de": "Aufsetzen"
+  },
+  "bag.off": {
+   "en": "Take off",
+   "de": "Absetzen"
+  },
+  "st.def": {
+   "en": "+{0} defense",
+   "de": "+{0} Abwehr"
+  },
+  "st.hp": {
+   "en": "+{0} health",
+   "de": "+{0} Leben"
+  },
+  "st.atk": {
+   "en": "+{0} attack",
+   "de": "+{0} Angriff"
+  },
+  "quest.title": {
+   "en": "Quest Scroll",
+   "de": "Aufgabenrolle"
+  },
+  "quest.main": {
+   "en": "Main",
+   "de": "Hauptaufgabe"
+  },
+  "quest.helper": {
+   "en": "Helper quest",
+   "de": "Hilfsaufgabe"
+  },
+  "quest.done": {
+   "en": "Done",
+   "de": "Erledigt"
+  },
+  "quest.complete": {
+   "en": "Complete",
+   "de": "Geschafft"
+  },
+  "quest.verses": {
+   "en": "Memory verses",
+   "de": "Bibelverse"
+  },
+  "world.title": {
+   "en": "World Scroll",
+   "de": "Weltkarte"
+  },
+  "world.pieces": {
+   "en": "Scroll pieces restored:",
+   "de": "Zurückgebrachte Teile der Schriftrolle:"
+  },
+  "world.travel": {
+   "en": "Travel",
+   "de": "Reisen"
+  },
+  "world.hub": {
+   "en": "Shop, stable, scribe and the Gates",
+   "de": "Laden, Stall, Schreiber und die Tore"
+  },
+  "world.go": {
+   "en": "Go",
+   "de": "Los"
+  },
+  "world.locked": {
+   "en": "Locked",
+   "de": "Verschlossen"
+  },
+  "set.title": {
+   "en": "Settings",
+   "de": "Einstellungen"
+  },
+  "set.lang": {
+   "en": "Language",
+   "de": "Sprache"
+  },
+  "set.grown": {
+   "en": "For grown-ups",
+   "de": "Für Erwachsene"
+  },
+  "set.level": {
+   "en": "Challenge level",
+   "de": "Schwierigkeit"
+  },
+  "set.levelNote": {
+   "en": "The game also adjusts itself: a run of right answers makes questions a little harder, and a run of misses makes them easier.",
+   "de": "Das Spiel passt sich auch selbst an: Viele richtige Antworten machen die Fragen etwas schwerer, viele falsche machen sie leichter."
+  },
+  "set.mix": {
+   "en": "Question mix",
+   "de": "Fragen-Mischung"
+  },
+  "set.sound": {
+   "en": "Sound",
+   "de": "Ton"
+  },
+  "set.sfx": {
+   "en": "Sound effects",
+   "de": "Soundeffekte"
+  },
+  "set.music": {
+   "en": "Music",
+   "de": "Musik"
+  },
+  "set.musvol": {
+   "en": "Music volume",
+   "de": "Musik-Lautstärke"
+  },
+  "set.read": {
+   "en": "Read questions and stories aloud",
+   "de": "Fragen und Geschichten vorlesen"
+  },
+  "set.readDesc": {
+   "en": "Great for younger readers",
+   "de": "Super für jüngere Leser"
+  },
+  "set.voice": {
+   "en": "Voice",
+   "de": "Stimme"
+  },
+  "set.voiceAuto": {
+   "en": "Best available voice",
+   "de": "Beste verfügbare Stimme"
+  },
+  "set.test": {
+   "en": "Test voice",
+   "de": "Stimme testen"
+  },
+  "set.voiceNote": {
+   "en": "Voices come from your device. The most natural ones are usually named \"Natural\", \"Neural\", \"Enhanced\" or \"Premium\". On iPhone and iPad you can download better voices under Settings → Accessibility → Spoken Content → Voices.",
+   "de": "Die Stimmen kommen von deinem Gerät. Am natürlichsten klingen meist Stimmen mit „Natural“, „Neural“, „Erweitert“ oder „Premium“ im Namen. Auf iPhone und iPad kannst du bessere Stimmen laden: Einstellungen → Bedienungshilfen → Gesprochene Inhalte → Stimmen."
+  },
+  "set.voiceTest": {
+   "en": "Hello! Let's go on an adventure through the Bible together.",
+   "de": "Hallo! Lass uns zusammen ein Abenteuer durch die Bibel erleben."
+  },
+  "set.on": {
+   "en": "On",
+   "de": "An"
+  },
+  "set.off": {
+   "en": "Off",
+   "de": "Aus"
+  },
+  "set.progress": {
+   "en": "Progress",
+   "de": "Fortschritt"
+  },
+  "set.subject": {
+   "en": "Subject",
+   "de": "Fach"
+  },
+  "set.right": {
+   "en": "Right",
+   "de": "Richtig"
+  },
+  "set.score": {
+   "en": "Score",
+   "de": "Quote"
+  },
+  "set.save": {
+   "en": "Keep progress safe",
+   "de": "Fortschritt sichern"
+  },
+  "set.saveNote": {
+   "en": "Progress saves automatically in this browser and survives closing it. It can be lost if browsing data is cleared, in private windows, or on another device or browser. Download a backup now and then — especially after finishing a gate.",
+   "de": "Der Fortschritt wird automatisch in diesem Browser gespeichert und bleibt auch nach dem Schließen erhalten. Er kann verloren gehen, wenn Browserdaten gelöscht werden, im privaten Modus oder auf einem anderen Gerät oder Browser. Lade ab und zu eine Sicherung herunter – besonders nach jedem geschafften Tor."
+  },
+  "set.persistOk": {
+   "en": "This browser has agreed to keep the save permanently.",
+   "de": "Dieser Browser hat zugesagt, den Spielstand dauerhaft zu behalten."
+  },
+  "set.persistNo": {
+   "en": "This browser may clear the save if storage runs low. Backups are recommended.",
+   "de": "Dieser Browser könnte den Spielstand löschen, wenn der Speicher knapp wird. Sicherungen werden empfohlen."
+  },
+  "set.download": {
+   "en": "Download backup file",
+   "de": "Sicherung herunterladen"
+  },
+  "set.upload": {
+   "en": "Restore from backup file",
+   "de": "Aus Sicherungsdatei laden"
+  },
+  "set.code": {
+   "en": "Or copy a save code",
+   "de": "Oder einen Spielstand-Code kopieren"
+  },
+  "set.copy": {
+   "en": "Copy code",
+   "de": "Code kopieren"
+  },
+  "set.paste": {
+   "en": "Paste a save code here",
+   "de": "Spielstand-Code hier einfügen"
+  },
+  "set.load": {
+   "en": "Load code",
+   "de": "Code laden"
+  },
+  "set.loadBad": {
+   "en": "That backup did not work. Check that it is the whole file or code.",
+   "de": "Diese Sicherung hat nicht funktioniert. Prüfe, ob die ganze Datei oder der ganze Code verwendet wurde."
+  },
+  "set.lastBackup": {
+   "en": "Last backup: {0}",
+   "de": "Letzte Sicherung: {0}"
+  },
+  "set.never": {
+   "en": "never",
+   "de": "noch nie"
+  },
+  "set.profiles": {
+   "en": "Players on this device",
+   "de": "Spieler auf diesem Gerät"
+  },
+  "set.switch": {
+   "en": "Switch player",
+   "de": "Spieler wechseln"
+  },
+  "set.reset": {
+   "en": "Delete this player",
+   "de": "Diesen Spieler löschen"
+  },
+  "set.resetQ": {
+   "en": "This deletes {0} and all their progress in this browser. Are you sure?",
+   "de": "Damit werden {0} und der ganze Fortschritt in diesem Browser gelöscht. Bist du sicher?"
+  },
+  "set.yes": {
+   "en": "Yes, delete",
+   "de": "Ja, löschen"
+  },
+  "set.no": {
+   "en": "Keep",
+   "de": "Behalten"
+  },
+  "toast.copied": {
+   "en": "Save code copied",
+   "de": "Code kopiert"
+  },
+  "toast.copyManual": {
+   "en": "Select the code and copy it",
+   "de": "Markiere den Code und kopiere ihn"
+  },
+  "toast.loaded": {
+   "en": "Journey restored!",
+   "de": "Reise wiederhergestellt!"
+  },
+  "toast.welcome": {
+   "en": "Welcome back, {0}!",
+   "de": "Willkommen zurück, {0}!"
+  },
+  "toast.readNA": {
+   "en": "Read aloud is not available here.",
+   "de": "Vorlesen ist hier nicht verfügbar."
+  },
+  "toast.saved": {
+   "en": "Backup downloaded",
+   "de": "Sicherung heruntergeladen"
+  },
+  "toast.full": {
+   "en": "4 players is the limit on one device.",
+   "de": "Auf einem Gerät gehen höchstens 4 Spieler."
+  },
+  "grade": {
+   "en": "{0} (grade {1})",
+   "de": "{0} ({1}. Klasse)"
+  },
+  "ages": {
+   "en": {
+    "2": "Ages 7–8",
+    "3": "Ages 8–9",
+    "4": "Ages 9–10",
+    "5": "Ages 10–11",
+    "6": "Ages 11–12",
+    "7": "Ages 12–13",
+    "8": "Ages 13–14",
+    "9": "Ages 14–15",
+    "10": "Ages 15+"
+   },
+   "de": {
+    "2": "7–8 Jahre",
+    "3": "8–9 Jahre",
+    "4": "9–10 Jahre",
+    "5": "10–11 Jahre",
+    "6": "11–12 Jahre",
+    "7": "12–13 Jahre",
+    "8": "13–14 Jahre",
+    "9": "14–15 Jahre",
+    "10": "15+ Jahre"
+   }
+  },
+  "ageBtns": {
+   "en": [
+    "8–9",
+    "10–11",
+    "12–13",
+    "14–15"
+   ],
+   "de": [
+    "8–9",
+    "10–11",
+    "12–13",
+    "14–15"
+   ]
+  },
+  "say.times": {
+   "en": " times ",
+   "de": " mal "
+  },
+  "say.div": {
+   "en": " divided by ",
+   "de": " geteilt durch "
+  },
+  "say.minus": {
+   "en": " minus ",
+   "de": " minus "
+  },
+  "say.sqrt": {
+   "en": "square root of ",
+   "de": "Wurzel aus "
+  },
+  "say.sq": {
+   "en": " squared",
+   "de": " hoch zwei"
+  },
+  "say.cube": {
+   "en": " cubed",
+   "de": " hoch drei"
+  },
+  "say.blank": {
+   "en": "blank",
+   "de": "Lücke"
+  },
+  "say.choice": {
+   "en": "{0}: {1}",
+   "de": "{0}: {1}"
+  },
+  "say.answer": {
+   "en": "Answer {0}.",
+   "de": "Antwort {0}."
+  },
+  "say.nums": {
+   "en": [
+    "one",
+    "two",
+    "three",
+    "four"
+   ],
+   "de": [
+    "eins",
+    "zwei",
+    "drei",
+    "vier"
+   ]
+  },
+  "say.then": {
+   "en": "and then what?",
+   "de": "und dann?"
+  },
+  "say.eqWhat": {
+   "en": "equals what?",
+   "de": "ist gleich wie viel?"
+  },
+  "boss.intro": {
+   "en": "{0}! {1}",
+   "de": "{0}! {1}"
+  },
+  "btn.view": {
+   "en": "View",
+   "de": "Ansicht"
+  },
+  "btn.view3d": {
+   "en": "3D",
+   "de": "3D"
+  },
+  "btn.view2d": {
+   "en": "Map",
+   "de": "Karte"
+  },
+  "btn.wardrobe": {
+   "en": "Wardrobe",
+   "de": "Garderobe"
+  },
+  "btn.house": {
+   "en": "House",
+   "de": "Haus"
+  },
+  "btn.menu": {
+   "en": "Menu",
+   "de": "Menü"
+  },
+  "btn.settings": {
+   "en": "Settings",
+   "de": "Einstellungen"
+  },
+  "tip.view3d": {
+   "en": "Switch to the 3D view",
+   "de": "Zur 3D-Ansicht wechseln"
+  },
+  "tip.view2d": {
+   "en": "Switch to the 2D map view",
+   "de": "Zur 2D-Kartenansicht wechseln"
+  },
+  "toast.view3d": {
+   "en": "3D view: explore up close.",
+   "de": "3D-Ansicht: alles aus der Nähe."
+  },
+  "toast.view2d": {
+   "en": "Map view: see more at once.",
+   "de": "Kartenansicht: mehr auf einen Blick."
+  },
+  "hint.drag": {
+   "en": "Drag anywhere to walk · tap to talk",
+   "de": "Irgendwo ziehen zum Laufen · tippen zum Reden"
+  },
+  "menu.title": {
+   "en": "Menu",
+   "de": "Menü"
+  },
+  "menu.world": {
+   "en": "Travel to any open world",
+   "de": "In jede offene Welt reisen"
+  },
+  "menu.bag": {
+   "en": "Food and the Armor of God",
+   "de": "Essen und die Waffenrüstung Gottes"
+  },
+  "menu.ward": {
+   "en": "Clothes, hair and props",
+   "de": "Kleidung, Haare und Zubehör"
+  },
+  "menu.house": {
+   "en": "Decorate your own house",
+   "de": "Dein eigenes Haus einrichten"
+  },
+  "menu.set": {
+   "en": "Sound, saving, language",
+   "de": "Ton, Speichern, Sprache"
+  },
+  "sign.home": {
+   "en": "My House",
+   "de": "Mein Haus"
+  },
+  "act.house": {
+   "en": "Go inside: My house",
+   "de": "Hineingehen: Mein Haus"
+  },
+  "ward.title": {
+   "en": "Wardrobe",
+   "de": "Garderobe"
+  },
+  "ward.hs": {
+   "en": "Hair style",
+   "de": "Frisur"
+  },
+  "ward.hair": {
+   "en": "Hair color",
+   "de": "Haarfarbe"
+  },
+  "ward.skin": {
+   "en": "Skin",
+   "de": "Haut"
+  },
+  "ward.robe": {
+   "en": "Robe",
+   "de": "Gewand"
+  },
+  "ward.head": {
+   "en": "On your head",
+   "de": "Auf dem Kopf"
+  },
+  "ward.hand": {
+   "en": "In your hand",
+   "de": "In der Hand"
+  },
+  "ward.back": {
+   "en": "On your back",
+   "de": "Auf dem Rücken"
+  },
+  "ward.none": {
+   "en": "None",
+   "de": "Nichts"
+  },
+  "ward.wearing": {
+   "en": "Wearing",
+   "de": "Angelegt"
+  },
+  "ward.owned": {
+   "en": "Owned",
+   "de": "Gekauft"
+  },
+  "ward.need": {
+   "en": "You need {0} more shekels.",
+   "de": "Dir fehlen noch {0} Schekel."
+  },
+  "ward.bought": {
+   "en": "Bought: {0}!",
+   "de": "Gekauft: {0}!"
+  },
+  "ward.earned": {
+   "en": "Earned at the end of the journey",
+   "de": "Am Ende der Reise verdient"
+  },
+  "ward.open": {
+   "en": "Open wardrobe",
+   "de": "Garderobe öffnen"
+  },
+  "prop.headband": {
+   "en": "Headband",
+   "de": "Stirnband"
+  },
+  "prop.flowers": {
+   "en": "Flower crown",
+   "de": "Blumenkranz"
+  },
+  "prop.wreath": {
+   "en": "Olive wreath",
+   "de": "Olivenkranz"
+  },
+  "prop.crown": {
+   "en": "Crown of Life",
+   "de": "Krone des Lebens"
+  },
+  "prop.staff": {
+   "en": "Shepherd staff",
+   "de": "Hirtenstab"
+  },
+  "prop.lantern": {
+   "en": "Lantern",
+   "de": "Laterne"
+  },
+  "prop.scroll": {
+   "en": "Scroll",
+   "de": "Schriftrolle"
+  },
+  "prop.satchel": {
+   "en": "Satchel",
+   "de": "Umhängetasche"
+  },
+  "prop.cape": {
+   "en": "Red cape",
+   "de": "Roter Umhang"
+  },
+  "prop.bedroll": {
+   "en": "Bedroll",
+   "de": "Schlafrolle"
+  },
+  "house.title": {
+   "en": "My House",
+   "de": "Mein Haus"
+  },
+  "house.leave": {
+   "en": "Leave",
+   "de": "Verlassen"
+  },
+  "house.tipIdle": {
+   "en": "Tap furniture to move it, or pick something below",
+   "de": "Tippe auf Möbel zum Verschieben oder wähle unten etwas aus"
+  },
+  "house.tipPlace": {
+   "en": "Tap the floor to place it",
+   "de": "Tippe auf den Boden zum Hinstellen"
+  },
+  "house.rotate": {
+   "en": "Rotate",
+   "de": "Drehen"
+  },
+  "house.move": {
+   "en": "Move",
+   "de": "Verschieben"
+  },
+  "house.store": {
+   "en": "Put away",
+   "de": "Wegräumen"
+  },
+  "house.cancel": {
+   "en": "Cancel",
+   "de": "Abbrechen"
+  },
+  "house.taken": {
+   "en": "That spot is taken.",
+   "de": "Der Platz ist schon belegt."
+  },
+  "house.noturn": {
+   "en": "No room to turn it here.",
+   "de": "Hier ist kein Platz zum Drehen."
+  },
+  "house.placed": {
+   "en": "Placed!",
+   "de": "Hingestellt!"
+  },
+  "house.stored": {
+   "en": "{0} put away.",
+   "de": "{0} weggeräumt."
+  },
+  "house.found": {
+   "en": "Found ×{0}",
+   "de": "Gefunden ×{0}"
+  },
+  "house.have": {
+   "en": "Have ×{0}",
+   "de": "Vorrat ×{0}"
+  },
+  "house.locked": {
+   "en": "Finish {0}",
+   "de": "{0} schaffen"
+  },
+  "house.bought": {
+   "en": "Bought {0}! Tap the floor to place it.",
+   "de": "{0} gekauft! Tippe auf den Boden zum Hinstellen."
+  },
+  "house.need3d": {
+   "en": "Your house is shown in 3D. This device could not start 3D graphics, so here is the list of your treasures.",
+   "de": "Dein Haus wird in 3D gezeigt. Dieses Gerät kann keine 3D-Grafik starten, darum siehst du hier die Liste deiner Schätze."
+  },
+  "house.treasures": {
+   "en": "Treasures",
+   "de": "Schätze"
+  },
+  "house.furniture": {
+   "en": "Furniture",
+   "de": "Möbel"
+  },
+  "toast.treasure": {
+   "en": "New treasure for your house: {0}",
+   "de": "Neuer Schatz für dein Haus: {0}"
+  },
+  "furn.bed": {
+   "en": "Bed",
+   "de": "Bett"
+  },
+  "furn.table": {
+   "en": "Table",
+   "de": "Tisch"
+  },
+  "furn.stool": {
+   "en": "Stool",
+   "de": "Hocker"
+  },
+  "furn.bench": {
+   "en": "Bench",
+   "de": "Bank"
+  },
+  "furn.rug": {
+   "en": "Woven rug",
+   "de": "Webteppich"
+  },
+  "furn.lamp": {
+   "en": "Oil lamp",
+   "de": "Öllampe"
+  },
+  "furn.plant": {
+   "en": "Olive plant",
+   "de": "Olivenbäumchen"
+  },
+  "furn.shelf": {
+   "en": "Scroll shelf",
+   "de": "Schriftrollen-Regal"
+  },
+  "furn.jars": {
+   "en": "Clay jars",
+   "de": "Tonkrüge"
+  },
+  "furn.chest": {
+   "en": "Chest",
+   "de": "Truhe"
+  },
+  "furn.basket": {
+   "en": "Bread basket",
+   "de": "Brotkorb"
+  },
+  "furn.lifesap": {
+   "en": "Garden sapling",
+   "de": "Garten-Setzling"
+  },
+  "furn.ark": {
+   "en": "Model ark",
+   "de": "Arche-Modell"
+  },
+  "furn.starglobe": {
+   "en": "Abraham's star globe",
+   "de": "Abrahams Sternenkugel"
+  },
+  "furn.coat": {
+   "en": "Joseph's colorful coat",
+   "de": "Josefs bunter Mantel"
+  },
+  "furn.mosesbasket": {
+   "en": "Baby Moses' basket",
+   "de": "Körbchen von Baby Mose"
+  },
+  "furn.tablets": {
+   "en": "Stone tablets",
+   "de": "Steintafeln"
+  },
+  "furn.shofar": {
+   "en": "Ram's horn trumpet",
+   "de": "Widderhorn"
+  },
+  "furn.sheaf": {
+   "en": "Ruth's barley sheaf",
+   "de": "Ruts Gerstengarbe"
+  },
+  "furn.harp": {
+   "en": "David's harp",
+   "de": "Davids Harfe"
+  },
+  "furn.oiljar": {
+   "en": "The widow's oil jar",
+   "de": "Ölkrug der Witwe"
+  },
+  "furn.fishstatue": {
+   "en": "Jonah's big fish",
+   "de": "Jonas großer Fisch"
+  },
+  "furn.lionstatue": {
+   "en": "Daniel's lion",
+   "de": "Daniels Löwe"
+  },
+  "furn.scepter": {
+   "en": "Esther's golden scepter",
+   "de": "Esters goldenes Zepter"
+  },
+  "furn.manger": {
+   "en": "The manger",
+   "de": "Die Krippe"
+  },
+  "furn.net": {
+   "en": "Peter's fishing net",
+   "de": "Petrus’ Fischernetz"
+  },
+  "furn.palms": {
+   "en": "Palm branches",
+   "de": "Palmzweige"
+  },
+  "furn.flamelamp": {
+   "en": "Pentecost lamp",
+   "de": "Pfingstlampe"
+  },
+  "furn.anchor": {
+   "en": "Paul's anchor",
+   "de": "Paulus’ Anker"
+  },
+  "fr.title": {
+   "en": "Animal Friends",
+   "de": "Tierfreunde"
+  },
+  "fr.note": {
+   "en": "Your friend walks beside you and helps in every battle.",
+   "de": "Dein Freund läuft neben dir her und hilft in jedem Kampf."
+  },
+  "fr.lv": {
+   "en": "Lv {0}",
+   "de": "St. {0}"
+  },
+  "set.view": {
+   "en": "Graphics",
+   "de": "Grafik"
+  },
+  "set.world": {
+   "en": "World view",
+   "de": "Welt-Ansicht"
+  },
+  "set.battle": {
+   "en": "Battles",
+   "de": "Kämpfe"
+  },
+  "set.gfx": {
+   "en": "Detail",
+   "de": "Details"
+  },
+  "set.3d": {
+   "en": "3D",
+   "de": "3D"
+  },
+  "set.2d": {
+   "en": "2D map",
+   "de": "2D-Karte"
+  },
+  "set.b3d": {
+   "en": "3D",
+   "de": "3D"
+  },
+  "set.b2d": {
+   "en": "2D",
+   "de": "2D"
+  },
+  "set.high": {
+   "en": "High",
+   "de": "Hoch"
+  },
+  "set.low": {
+   "en": "Low (faster)",
+   "de": "Niedrig (schneller)"
+  },
+  "set.pets": {
+   "en": "Animal friends",
+   "de": "Tierfreunde"
+  },
+  "set.petIcon": {
+   "en": "Icons",
+   "de": "Symbole"
+  },
+  "set.pet3d": {
+   "en": "3D models",
+   "de": "3D-Modelle"
+  },
+  "set.no3d": {
+   "en": "3D graphics are not available on this device, so the game uses the 2D map.",
+   "de": "3D-Grafik ist auf diesem Gerät nicht verfügbar, darum nutzt das Spiel die 2D-Karte."
+  },
+  "q.review": {
+   "en": "Review",
+   "de": "Wiederholung"
+  },
+  "v.finish": {
+   "en": "How does this verse continue?",
+   "de": "Wie geht dieser Vers weiter?"
+  },
+  "v.whereFrom": {
+   "en": "Where is this verse from?",
+   "de": "Wo steht dieser Vers?"
+  },
+  "v.memorized": {
+   "en": "Verse memorized! ✓",
+   "de": "Vers auswendig gelernt! ✓"
+  },
+  "int.atk": {
+   "en": "Will attack",
+   "de": "Greift an"
+  },
+  "int.charge": {
+   "en": "Charging up a big attack",
+   "de": "Lädt einen großen Angriff auf"
+  },
+  "int.big": {
+   "en": "Big attack next! Use Hope Shield",
+   "de": "Großer Angriff! Nimm den Hoffnungsschild"
+  },
+  "int.heal": {
+   "en": "Will heal a friend",
+   "de": "Heilt einen Freund"
+  },
+  "int.stun": {
+   "en": "Frozen",
+   "de": "Erstarrt"
+  },
+  "b.charging": {
+   "en": "{0} is charging up a big attack!",
+   "de": "{0} lädt einen großen Angriff auf!"
+  },
+  "b.bigHit": {
+   "en": "{0} unleashes a big attack!",
+   "de": "{0} schlägt mit voller Kraft zu!"
+  },
+  "b.warnBig": {
+   "en": "{0} is about to strike hard. Hope Shield blocks most of it!",
+   "de": "{0} holt gleich zum großen Schlag aus. Der Hoffnungsschild hält das meiste ab!"
+  },
+  "b.quick": {
+   "en": "Quick! +20%",
+   "de": "Schnell! +20 %"
+  },
+  "b.silenced": {
+   "en": "Silenced this turn",
+   "de": "Diese Runde verstummt"
+  },
+  "evo.special": {
+   "en": "Special move!",
+   "de": "Spezialtrick!"
+  },
+  "evo.grew": {
+   "en": "{0} grew stronger! {1}",
+   "de": "{0} ist stärker geworden! {1}"
+  },
+  "bm.serpent": {
+   "en": "The serpent twists words. Answers from God's Word (Bible and verses) hit it extra hard!",
+   "de": "Die Schlange verdreht Worte. Antworten aus Gottes Wort (Bibel und Verse) treffen sie besonders hart!"
+  },
+  "bm.serpent.m": {
+   "en": "Truth hits hardest",
+   "de": "Wahrheit trifft am stärksten"
+  },
+  "bm.mocker": {
+   "en": "Build the ark! Every right answer adds a plank. With 4 planks, the flood washes over the Mocking Gloom.",
+   "de": "Bau die Arche! Jede richtige Antwort bringt ein Brett. Mit 4 Brettern überflutet die Sintflut das Spott-Dunkel."
+  },
+  "bm.mocker.m": {
+   "en": "Ark planks",
+   "de": "Arche-Bretter"
+  },
+  "bm.mocker.full": {
+   "en": "The ark is ready, and the flood rolls in!",
+   "de": "Die Arche ist fertig, und die Flut kommt!"
+  },
+  "bm.heart": {
+   "en": "Pharaoh's heart is hard. Your hits do half damage until 5 plagues have come.",
+   "de": "Das Herz des Pharao ist hart. Deine Treffer zählen nur halb, bis 5 Plagen gekommen sind."
+  },
+  "bm.heart.m": {
+   "en": "Plagues",
+   "de": "Plagen"
+  },
+  "bm.heart.full": {
+   "en": "The plagues have come. The hard heart cracks!",
+   "de": "Die Plagen sind da. Das harte Herz bekommt Risse!"
+  },
+  "bm.calf": {
+   "en": "The golden calf shines back to health each turn. Answer 3 right to break it!",
+   "de": "Das goldene Kalb glänzt sich jede Runde wieder gesund. Beantworte 3 Fragen richtig, um es zu zerbrechen!"
+  },
+  "bm.calf.m": {
+   "en": "Break the idol",
+   "de": "Zerbrich das Götzenbild"
+  },
+  "bm.calf.full": {
+   "en": "The golden calf is broken! It cannot heal anymore.",
+   "de": "Das goldene Kalb ist zerbrochen! Es kann nicht mehr heilen."
+  },
+  "bm.calf.regen": {
+   "en": "The golden calf shines and heals.",
+   "de": "Das goldene Kalb glänzt und heilt sich."
+  },
+  "bm.giant": {
+   "en": "David had five smooth stones. Get a streak of 3, then use Faith Strike or Courage Blast for a giant-sized hit!",
+   "de": "David hatte fünf glatte Steine. Schaffe 3 richtige in Folge, dann trifft Glaubensschlag oder Mutstoß riesig!"
+  },
+  "bm.giant.m": {
+   "en": "Streak",
+   "de": "Serie"
+  },
+  "bm.giant.full": {
+   "en": "Sling shot!",
+   "de": "Schleuderwurf!"
+  },
+  "bm.idol": {
+   "en": "The furnace grows hotter each turn. Hope Shield keeps you cool. Answer 3 right and help arrives in the fire!",
+   "de": "Der Ofen wird jede Runde heißer. Der Hoffnungsschild kühlt dich. Bei 3 richtigen Antworten kommt Hilfe ins Feuer!"
+  },
+  "bm.idol.m": {
+   "en": "Faith in the fire",
+   "de": "Glaube im Feuer"
+  },
+  "bm.idol.full": {
+   "en": "Someone is walking with you in the fire! You are healed and shielded.",
+   "de": "Jemand geht mit dir durchs Feuer! Du wirst geheilt und beschützt."
+  },
+  "bm.night": {
+   "en": "The night is dark. Every right answer makes the star shine brighter. At 3, its light strikes!",
+   "de": "Die Nacht ist dunkel. Jede richtige Antwort lässt den Stern heller strahlen. Bei 3 trifft sein Licht!"
+  },
+  "bm.night.m": {
+   "en": "Starlight",
+   "de": "Sternenlicht"
+  },
+  "bm.night.full": {
+   "en": "The star blazes, and the darkness flees!",
+   "de": "Der Stern strahlt, und die Dunkelheit flieht!"
+  },
+  "bm.storm": {
+   "en": "The storm rages! Answer 3 right in a row and hear \"Peace, be still!\"",
+   "de": "Der Sturm tobt! Beantworte 3 richtig, dann heißt es: „Schweig, sei still!“"
+  },
+  "bm.storm.m": {
+   "en": "Peace, be still",
+   "de": "Schweig, sei still"
+  },
+  "bm.storm.full": {
+   "en": "\"Peace, be still!\" The storm freezes.",
+   "de": "„Schweig, sei still!“ Der Sturm erstarrt."
+  },
+  "bm.doubt": {
+   "en": "Thomas wanted to see. Answer right in 3 different subjects to see clearly. Until then, doubt shrugs off your hits.",
+   "de": "Thomas wollte sehen. Antworte in 3 verschiedenen Fächern richtig, dann siehst du klar. Bis dahin schüttelt der Zweifel deine Treffer ab."
+  },
+  "bm.doubt.m": {
+   "en": "See and believe",
+   "de": "Sehen und glauben"
+  },
+  "bm.doubt.full": {
+   "en": "You see clearly now! Your hits are stronger.",
+   "de": "Jetzt siehst du klar! Deine Treffer sind stärker."
+  },
+  "bm.tower": {
+   "en": "The tower grows taller and stronger every turn. Each hit knocks a level down!",
+   "de": "Der Turm wird jede Runde höher und stärker. Jeder Treffer reißt ein Stockwerk ab!"
+  },
+  "bm.tower.m": {
+   "en": "levels",
+   "de": "Stockwerke"
+  },
+  "bm.jealous": {
+   "en": "Jealousy threw your friend into a pit! Answer 2 right to pull them out.",
+   "de": "Der Neid hat deinen Freund in eine Grube geworfen! Beantworte 2 richtig, um ihn herauszuziehen."
+  },
+  "bm.jealous.m": {
+   "en": "Rescue rope",
+   "de": "Rettungsseil"
+  },
+  "bm.jealous.pit": {
+   "en": "{0} is stuck in the pit!",
+   "de": "{0} steckt in der Grube fest!"
+  },
+  "bm.jealous.full": {
+   "en": "{0} is out of the pit and back by your side!",
+   "de": "{0} ist aus der Grube heraus und wieder bei dir!"
+  },
+  "bm.famine": {
+   "en": "Famine! Your food bag is empty, but every right answer gleans a little grain to heal you.",
+   "de": "Hungersnot! Deine Tasche ist leer, aber jede richtige Antwort bringt ein paar Ähren, die dich heilen."
+  },
+  "bm.famine.m": {
+   "en": "Gleaning",
+   "de": "Ähren lesen"
+  },
+  "bm.famine.nofood": {
+   "en": "No food during the famine",
+   "de": "Kein Essen in der Hungersnot"
+  },
+  "bm.altar": {
+   "en": "Call on the Lord! After 3 right answers, fire falls from heaven.",
+   "de": "Ruf zum Herrn! Nach 3 richtigen Antworten fällt Feuer vom Himmel."
+  },
+  "bm.altar.m": {
+   "en": "Prayers",
+   "de": "Gebete"
+  },
+  "bm.altar.full": {
+   "en": "Fire falls from heaven!",
+   "de": "Feuer fällt vom Himmel!"
+  },
+  "bm.whirl": {
+   "en": "The gloom keeps running away and dodges your hits. Answer 2 right in a row to stop it.",
+   "de": "Das Dunkel rennt ständig weg und weicht aus. Beantworte 2 hintereinander richtig, um es zu stoppen."
+  },
+  "bm.whirl.m": {
+   "en": "Stop running",
+   "de": "Nicht weglaufen"
+  },
+  "bm.whirl.dodge": {
+   "en": "Dodged!",
+   "de": "Ausgewichen!"
+  },
+  "bm.scroll": {
+   "en": "Every third turn you may approach the king. Then your next hit counts double!",
+   "de": "Jede dritte Runde darfst du zum König gehen. Dann zählt dein nächster Treffer doppelt!"
+  },
+  "bm.scroll.m": {
+   "en": "Approach the king",
+   "de": "Zum König gehen"
+  },
+  "bm.scroll.full": {
+   "en": "For such a time as this! ×2",
+   "de": "Für eine Zeit wie diese! ×2"
+  },
+  "bm.scroll.chance": {
+   "en": "The king holds out his scepter! Your next hit counts double.",
+   "de": "Der König streckt sein Zepter aus! Dein nächster Treffer zählt doppelt."
+  },
+  "bm.mute": {
+   "en": "The Gloom of Silence takes away a power each turn. Answer 2 right in a row to speak boldly!",
+   "de": "Das Schweige-Dunkel nimmt dir jede Runde eine Kraft weg. Beantworte 2 hintereinander richtig, dann redest du mutig!"
+  },
+  "bm.mute.m": {
+   "en": "Speak boldly",
+   "de": "Mutig reden"
+  },
+  "bm.mute.full": {
+   "en": "You speak boldly! No more silence.",
+   "de": "Du redest mutig! Keine Stille mehr."
+  },
+  "bm.chains": {
+   "en": "Chains hold your strongest powers. Paul and Silas prayed and sang. Pray with a right answer to break them!",
+   "de": "Ketten halten deine stärksten Kräfte fest. Paulus und Silas beteten und sangen. Bete mit einer richtigen Antwort, um sie zu sprengen!"
+  },
+  "bm.chains.m": {
+   "en": "Pray to break the chains",
+   "de": "Bete, um die Ketten zu sprengen"
+  },
+  "bm.chains.free": {
+   "en": "Chains broken!",
+   "de": "Ketten gesprengt!"
+  },
+  "bm.chains.full": {
+   "en": "You pray and sing, and the chains fall off!",
+   "de": "Du betest und singst, und die Ketten fallen ab!"
+  },
+  "champ.title": {
+   "en": "Champion: {0}",
+   "de": "Champion: {0}"
+  },
+  "champ.ask": {
+   "en": "You have finished this world. Want to face a champion version of the boss? It is stronger, and the reward is better.",
+   "de": "Du hast diese Welt geschafft. Willst du gegen eine Champion-Version des Bosses antreten? Sie ist stärker, und die Belohnung ist besser."
+  },
+  "champ.yes": {
+   "en": "Champion challenge!",
+   "de": "Champion-Kampf!"
+  },
+  "champ.no": {
+   "en": "Not now",
+   "de": "Jetzt nicht"
+  },
+  "champ.won": {
+   "en": "You beat the champion {0}!",
+   "de": "Du hast den Champion {0} besiegt!"
+  },
+  "champ.rare": {
+   "en": "Rare reward: {0}",
+   "de": "Seltene Belohnung: {0}"
+  },
+  "ch.title": {
+   "en": "Challenges",
+   "de": "Herausforderungen"
+  },
+  "ch.daily": {
+   "en": "Today",
+   "de": "Heute"
+  },
+  "ch.weekly": {
+   "en": "This week",
+   "de": "Diese Woche"
+  },
+  "ch.claim": {
+   "en": "Claim",
+   "de": "Abholen"
+  },
+  "ch.claimed": {
+   "en": "Done ✓",
+   "de": "Fertig ✓"
+  },
+  "ch.done": {
+   "en": "Challenge complete: {0}",
+   "de": "Herausforderung geschafft: {0}"
+  },
+  "ch.reward": {
+   "en": "+{0} shekels",
+   "de": "+{0} Schekel"
+  },
+  "ch.allBonus": {
+   "en": "All of today's challenges done! Bonus: bread and +20 shekels.",
+   "de": "Alle Herausforderungen für heute geschafft! Bonus: Brot und +20 Schekel."
+  },
+  "chk.ans_cat": {
+   "en": "Answer {0} {1} questions right",
+   "de": "Beantworte {0} Fragen aus {1} richtig"
+  },
+  "chk.ans_any": {
+   "en": "Answer {0} questions right",
+   "de": "Beantworte {0} Fragen richtig"
+  },
+  "chk.win": {
+   "en": "Win {0} battles",
+   "de": "Gewinne {0} Kämpfe"
+  },
+  "chk.perfect": {
+   "en": "Win a battle without getting hurt",
+   "de": "Gewinne einen Kampf, ohne getroffen zu werden"
+  },
+  "chk.streak": {
+   "en": "Get {0} right answers in a row",
+   "de": "Schaffe {0} richtige Antworten hintereinander"
+  },
+  "chk.practice": {
+   "en": "Answer {0} practice questions at the Scribe",
+   "de": "Beantworte {0} Übungsfragen beim Schreiber"
+  },
+  "chk.review": {
+   "en": "Get {0} review questions right",
+   "de": "Beantworte {0} Wiederholungsfragen richtig"
+  },
+  "chk.boss": {
+   "en": "Defeat a boss or champion",
+   "de": "Besiege einen Boss oder Champion"
+  },
+  "chk.verse": {
+   "en": "Learn {0} verse steps",
+   "de": "Schaffe {0} Vers-Lernschritte"
+  },
+  "btn.book": {
+   "en": "Book",
+   "de": "Buch"
+  },
+  "book.title": {
+   "en": "Book of Discoveries",
+   "de": "Buch der Entdeckungen"
+  },
+  "book.found": {
+   "en": "{0} of {1} discovered",
+   "de": "{0} von {1} entdeckt"
+  },
+  "book.gloom": {
+   "en": "Gloomlings",
+   "de": "Dunkelinge"
+  },
+  "book.boss": {
+   "en": "Bosses",
+   "de": "Bosse"
+  },
+  "book.verses": {
+   "en": "Memory verses",
+   "de": "Merkverse"
+  },
+  "book.friends": {
+   "en": "Animal friends",
+   "de": "Tierfreunde"
+  },
+  "book.treasures": {
+   "en": "Treasures",
+   "de": "Schätze"
+  },
+  "book.unknown": {
+   "en": "???",
+   "de": "???"
+  },
+  "book.beaten": {
+   "en": "Beaten ×{0}",
+   "de": "Besiegt ×{0}"
+  },
+  "book.champ": {
+   "en": "Champion ×{0}",
+   "de": "Champion ×{0}"
+  },
+  "rep.title": {
+   "en": "Weekly report",
+   "de": "Wochenbericht"
+  },
+  "rep.week": {
+   "en": "Last 7 days",
+   "de": "Letzte 7 Tage"
+  },
+  "rep.q": {
+   "en": "Questions",
+   "de": "Fragen"
+  },
+  "rep.acc": {
+   "en": "Right",
+   "de": "Richtig"
+  },
+  "rep.min": {
+   "en": "Minutes played",
+   "de": "Minuten gespielt"
+  },
+  "rep.days": {
+   "en": "Days played",
+   "de": "Spieltage"
+  },
+  "rep.strong": {
+   "en": "Strongest",
+   "de": "Am stärksten"
+  },
+  "rep.weak": {
+   "en": "Needs practice",
+   "de": "Braucht Übung"
+  },
+  "rep.reviews": {
+   "en": "Questions waiting for review",
+   "de": "Fragen zum Wiederholen"
+  },
+  "rep.verses": {
+   "en": "Verses memorized",
+   "de": "Verse auswendig"
+  },
+  "rep.mastered": {
+   "en": "Questions mastered after review",
+   "de": "Nach Wiederholung gemeistert"
+  },
+  "rep.none": {
+   "en": "Play a little and the report will fill in.",
+   "de": "Spiel ein bisschen, dann füllt sich der Bericht."
+  },
+  "set.style": {
+   "en": "Play style",
+   "de": "Spielstil"
+  },
+  "set.junior": {
+   "en": "Junior (8–10)",
+   "de": "Junior (8–10)"
+  },
+  "set.explorer": {
+   "en": "Explorer (11–15)",
+   "de": "Entdecker (11–15)"
+  },
+  "set.styleNote": {
+   "en": "Junior: 3 answer choices and gentler Gloomlings. Explorer: 4 choices, tougher bosses and a bonus for quick answers.",
+   "de": "Junior: 3 Antworten zur Wahl und sanftere Dunkelinge. Entdecker: 4 Antworten, stärkere Bosse und ein Bonus für schnelle Antworten."
+  },
+  "set.text": {
+   "en": "Text size",
+   "de": "Schriftgröße"
+  },
+  "set.textN": {
+   "en": "Normal",
+   "de": "Normal"
+  },
+  "set.textL": {
+   "en": "Large",
+   "de": "Groß"
+  },
+  "set.font": {
+   "en": "Easy-read font",
+   "de": "Leicht lesbare Schrift"
+  },
+  "set.on2": {
+   "en": "On",
+   "de": "An"
+  },
+  "set.off2": {
+   "en": "Off",
+   "de": "Aus"
+  },
+  "furn.trophy": {
+   "en": "Champion trophy",
+   "de": "Champion-Pokal"
+  },
+  "dye.gold": {
+   "en": "Royal gold",
+   "de": "Königsgold"
+  },
+  "dye.sea": {
+   "en": "Sea glass",
+   "de": "Meerglas"
+  },
+  "dye.sunrise": {
+   "en": "Sunrise",
+   "de": "Morgenrot"
+  },
+  "dyeN.gold": {
+   "en": "Earned for 3 champion wins",
+   "de": "Für 3 Champion-Siege"
+  },
+  "dyeN.sea": {
+   "en": "Earned for 6 champion wins",
+   "de": "Für 6 Champion-Siege"
+  },
+  "dyeN.sunrise": {
+   "en": "Earned for 12 champion wins",
+   "de": "Für 12 Champion-Siege"
+  },
+  "cut.1": {
+   "en": "Light returns to the garden!",
+   "de": "Das Licht kehrt in den Garten zurück!"
+  },
+  "cut.2": {
+   "en": "God sets his rainbow in the sky!",
+   "de": "Gott setzt seinen Regenbogen in den Himmel!"
+  },
+  "cut.11": {
+   "en": "As many as the stars!",
+   "de": "So viele wie die Sterne!"
+  },
+  "cut.12": {
+   "en": "God meant it for good!",
+   "de": "Gott hat es gut gemacht!"
+  },
+  "cut.3": {
+   "en": "Let my people go!",
+   "de": "Lass mein Volk ziehen!"
+  },
+  "cut.4": {
+   "en": "Only the one true God!",
+   "de": "Nur der eine wahre Gott!"
+  },
+  "cut.5": {
+   "en": "The walls came tumbling down!",
+   "de": "Die Mauern sind eingestürzt!"
+  },
+  "cut.13": {
+   "en": "Where you go, I will go!",
+   "de": "Wo du hingehst, da gehe ich hin!"
+  },
+  "cut.6": {
+   "en": "The battle belongs to the Lord!",
+   "de": "Der Kampf gehört dem Herrn!"
+  },
+  "cut.14": {
+   "en": "The Lord, he is God!",
+   "de": "Der Herr ist Gott!"
+  },
+  "cut.15": {
+   "en": "God gives second chances!",
+   "de": "Gott schenkt eine zweite Chance!"
+  },
+  "cut.7": {
+   "en": "Not even the lions could harm him!",
+   "de": "Nicht einmal die Löwen konnten ihm schaden!"
+  },
+  "cut.16": {
+   "en": "For such a time as this!",
+   "de": "Für eine Zeit wie diese!"
+  },
+  "cut.8": {
+   "en": "A Savior is born!",
+   "de": "Der Retter ist geboren!"
+  },
+  "cut.9": {
+   "en": "Even the wind and waves obey him!",
+   "de": "Sogar Wind und Wellen gehorchen ihm!"
+  },
+  "cut.10": {
+   "en": "He is risen!",
+   "de": "Er ist auferstanden!"
+  },
+  "cut.17": {
+   "en": "The Spirit has come!",
+   "de": "Der Heilige Geist ist gekommen!"
+  },
+  "cut.18": {
+   "en": "Safe through every storm!",
+   "de": "Sicher durch jeden Sturm!"
+  },
+  "house.sell": {
+   "en": "Sell +{0}",
+   "de": "Verkaufen +{0}"
+  },
+  "house.sold": {
+   "en": "Sold {0} for {1} shekels.",
+   "de": "{0} für {1} Schekel verkauft."
+  },
+  "bm.horde": {
+   "en": "Gideon's 300 had only trumpets, jars and torches. Answer 3 right to break the jars and let the light shine!",
+   "de": "Gideons 300 hatten nur Posaunen, Krüge und Fackeln. Beantworte 3 richtig, dann zerbrechen die Krüge und das Licht leuchtet!"
+  },
+  "bm.horde.m": {
+   "en": "Jars and torches",
+   "de": "Krüge und Fackeln"
+  },
+  "bm.horde.full": {
+   "en": "Jars break, torches blaze, trumpets sound! The horde scatters!",
+   "de": "Krüge zerbrechen, Fackeln leuchten, Posaunen schallen! Das Heer flieht!"
+  },
+  "bm.pride": {
+   "en": "Pride makes this gloom hard as stone. Your hits do half damage until you answer 4 right. Samson's strength came from God, not from himself.",
+   "de": "Stolz macht dieses Dunkel hart wie Stein. Deine Treffer zählen halb, bis du 4 richtig beantwortest. Simsons Kraft kam von Gott, nicht von ihm selbst."
+  },
+  "bm.pride.m": {
+   "en": "Strength from God",
+   "de": "Kraft von Gott"
+  },
+  "bm.pride.full": {
+   "en": "\"Remember me, Lord, and strengthen me!\" The proud gloom cracks.",
+   "de": "„Herr, denk an mich und gib mir Kraft!“ Das stolze Dunkel bekommt Risse."
+  },
+  "bm.rubble": {
+   "en": "\"You can't build that!\" the gloom mocks. Answer 3 right and the wall rises; the mocking stops for a turn.",
+   "de": "„Das schafft ihr nie!“, spottet das Dunkel. Bei 3 richtigen Antworten wächst die Mauer, und der Spott verstummt für eine Runde."
+  },
+  "bm.rubble.m": {
+   "en": "Build the wall",
+   "de": "Bau die Mauer"
+  },
+  "bm.rubble.full": {
+   "en": "\"The God of heaven will help us!\" The mocker falls silent.",
+   "de": "„Der Gott des Himmels wird uns helfen!“ Der Spötter verstummt."
+  },
+  "bm.lost": {
+   "en": "Three things are lost: a sheep, a coin and a son. Each right answer finds one. Once all are found, your hits are stronger!",
+   "de": "Drei Dinge sind verloren: ein Schaf, eine Münze und ein Sohn. Jede richtige Antwort findet eines. Wenn alles gefunden ist, treffen deine Schläge stärker!"
+  },
+  "bm.lost.m": {
+   "en": "Found",
+   "de": "Gefunden"
+  },
+  "bm.lost.one": {
+   "en": "Found!",
+   "de": "Gefunden!"
+  },
+  "bm.lost.full": {
+   "en": "All that was lost is found! Heaven rejoices!",
+   "de": "Alles Verlorene ist gefunden! Der Himmel freut sich!"
+  },
+  "furn.gideonjar": {
+   "en": "Gideon's jar and torch",
+   "de": "Gideons Krug und Fackel"
+  },
+  "furn.honeycomb": {
+   "en": "Samson's honeycomb",
+   "de": "Simsons Honigwabe"
+  },
+  "furn.trowel": {
+   "en": "Nehemiah's trowel",
+   "de": "Nehemias Kelle"
+  },
+  "furn.lostcoin": {
+   "en": "The lost coin",
+   "de": "Die verlorene Münze"
+  },
+  "cut.19": {
+   "en": "The battle is the Lord's!",
+   "de": "Der Kampf gehört dem Herrn!"
+  },
+  "cut.20": {
+   "en": "God gave strength one last time!",
+   "de": "Gott gab noch einmal Kraft!"
+  },
+  "cut.21": {
+   "en": "The wall is finished in 52 days!",
+   "de": "Die Mauer ist in 52 Tagen fertig!"
+  },
+  "cut.22": {
+   "en": "What was lost has been found!",
+   "de": "Was verloren war, ist gefunden!"
+  },
+  "qx.who": {
+   "en": "Who said it? “{0}”",
+   "de": "Wer hat das gesagt? „{0}“"
+  },
+  "qx.whoSay": {
+   "en": "Who said it?",
+   "de": "Wer hat das gesagt?"
+  },
+  "qx.where": {
+   "en": "Where did this happen? {0}",
+   "de": "Wo ist das passiert? {0}"
+  },
+  "qx.orderNo": {
+   "en": "Not quite the right order. Here it is:",
+   "de": "Nicht ganz die richtige Reihenfolge. So ist es richtig:"
+  },
+  "mg.title": {
+   "en": "Games",
+   "de": "Spiele"
+  },
+  "mg.play": {
+   "en": "Play",
+   "de": "Spielen"
+  },
+  "mg.manna": {
+   "en": "Gather the manna",
+   "de": "Manna sammeln"
+  },
+  "mg.ark": {
+   "en": "Animals into the ark",
+   "de": "Tiere in die Arche"
+  },
+  "mg.wall": {
+   "en": "Build the wall",
+   "de": "Die Mauer bauen"
+  },
+  "mg.fish": {
+   "en": "Cast the net",
+   "de": "Das Netz auswerfen"
+  },
+  "mg.reward": {
+   "en": "+{0} shekels from the game!",
+   "de": "+{0} Schekel aus dem Spiel!"
+  },
+  "mg.desc": {
+   "en": "Mini-games you have unlocked. Play them as often as you like.",
+   "de": "Minispiele, die du freigeschaltet hast. Spiel sie so oft du willst."
+  },
+  "sign.game": {
+   "en": "Play: {0}",
+   "de": "Spielen: {0}"
+  },
+  "fr.req": {
+   "en": "Unlocks after {0} finished worlds",
+   "de": "Ab {0} geschafften Welten"
+  }
+ },
+ "MG": {
+  "en": {
+   "_": {
+    "start": "Tap to start",
+    "cont": "Continue",
+    "exit": "Exit game",
+    "time": "Time",
+    "r3": "Wonderful!",
+    "r2": "Well done!",
+    "r1": "Good job!",
+    "r0": "Nice try!",
+    "left": "left",
+    "right": "right"
+   },
+   "manna": {
+    "title": "Manna from Heaven",
+    "ref": "Exodus 16",
+    "hud": "Manna",
+    "text": "Every morning God sent bread from heaven! Move the basket and catch the falling manna. Gather enough for today: {n} pieces. Golden manna counts double.",
+    "hint": "Drag, or use ← → keys. Extra manna just melts in the sun!",
+    "enough": "Enough for today!",
+    "melt": "melts",
+    "fact": "God gave manna every morning – enough for each day – for 40 years! (Exodus 16:35)"
+   },
+   "ark": {
+    "title": "Two by Two",
+    "ref": "Genesis 7",
+    "hud": "Points",
+    "text": "The animals came to Noah two by two. Turn over two cards to find matching pairs and lead them into the ark!",
+    "hint": "Tap two cards at a time.",
+    "pair": "Into the ark!",
+    "again": "Try again",
+    "bonus": "Memory bonus +{n}",
+    "all": "Everyone is safe!",
+    "fact": "After the flood God put a rainbow in the sky as a sign of his promise. (Genesis 9:13)"
+   },
+   "wall": {
+    "title": "Rebuild the Wall",
+    "ref": "Nehemiah 4",
+    "hud": "Rows",
+    "text": "Nehemiah and the people rebuilt the wall of Jerusalem. Drop each stone right on top of the wall. Build {n} rows!",
+    "hint": "Tap, click or press Space to drop.",
+    "perfect": "Perfect!",
+    "oops": "Oops! Try again",
+    "done": "The wall is finished!",
+    "mockWho": "Sanballat",
+    "mock": "You can’t build that!",
+    "replyWho": "Nehemiah",
+    "reply": "“The God of heaven will help us!” (Neh 2:20)",
+    "fact": "The wall of Jerusalem was finished in just 52 days! (Nehemiah 6:15)"
+   },
+   "fish": {
+    "title": "Cast the Net",
+    "ref": "John 21",
+    "hud": "Fish",
+    "text": "The disciples fished all night and caught nothing. Tap the water to drop your net and catch fish. Listen to Jesus on the shore!",
+    "hint": "Tap or click on the water.",
+    "nothing": "Nothing…",
+    "voice": "Cast the net on the right side of the boat!",
+    "who": "Jesus",
+    "fact": "In John 21 they caught 153 fish – and the net did not break!"
+   }
+  },
+  "de": {
+   "_": {
+    "start": "Tippen zum Starten",
+    "cont": "Weiter",
+    "exit": "Spiel beenden",
+    "time": "Zeit",
+    "r3": "Wunderbar!",
+    "r2": "Gut gemacht!",
+    "r1": "Guter Anfang!",
+    "r0": "Netter Versuch!",
+    "left": "links",
+    "right": "rechts"
+   },
+   "manna": {
+    "title": "Manna vom Himmel",
+    "ref": "2. Mose 16",
+    "hud": "Manna",
+    "text": "Jeden Morgen schickte Gott Brot vom Himmel! Bewege den Korb und fange das Manna. Sammle genug für heute: {n} Stück. Goldenes Manna zählt doppelt.",
+    "hint": "Ziehen oder ← → Tasten. Übriges Manna schmilzt einfach in der Sonne!",
+    "enough": "Genug für heute!",
+    "melt": "schmilzt",
+    "fact": "Gott gab jeden Morgen Manna – genug für jeden Tag – 40 Jahre lang! (2. Mose 16,35)"
+   },
+   "ark": {
+    "title": "Immer zu zweit",
+    "ref": "1. Mose 7",
+    "hud": "Punkte",
+    "text": "Die Tiere kamen paarweise zu Noah. Decke zwei Karten auf, finde die passenden Paare und führe sie in die Arche!",
+    "hint": "Tippe immer zwei Karten an.",
+    "pair": "Ab in die Arche!",
+    "again": "Nochmal",
+    "bonus": "Gedächtnis-Bonus +{n}",
+    "all": "Alle sind in Sicherheit!",
+    "fact": "Nach der Flut setzte Gott einen Regenbogen in die Wolken – als Zeichen seines Versprechens. (1. Mose 9,13)"
+   },
+   "wall": {
+    "title": "Baut die Mauer",
+    "ref": "Nehemia 4",
+    "hud": "Reihen",
+    "text": "Nehemia und das Volk bauten die Mauer Jerusalems wieder auf. Lass jeden Stein genau auf die Mauer fallen. Baue {n} Reihen!",
+    "hint": "Tippen, klicken oder Leertaste.",
+    "perfect": "Perfekt!",
+    "oops": "Hoppla! Nochmal",
+    "done": "Die Mauer ist fertig!",
+    "mockWho": "Sanballat",
+    "mock": "Das schafft ihr nie!",
+    "replyWho": "Nehemia",
+    "reply": "„Der Gott des Himmels wird es uns gelingen lassen!“ (Neh 2,20)",
+    "fact": "Die Mauer Jerusalems war in nur 52 Tagen fertig! (Nehemia 6,15)"
+   },
+   "fish": {
+    "title": "Werft das Netz aus",
+    "ref": "Johannes 21",
+    "hud": "Fische",
+    "text": "Die Jünger fischten die ganze Nacht und fingen nichts. Tippe aufs Wasser, um das Netz auszuwerfen. Hör auf Jesus am Ufer!",
+    "hint": "Tippe oder klicke aufs Wasser.",
+    "nothing": "Nichts…",
+    "voice": "Werft das Netz auf der rechten Seite des Bootes aus!",
+    "who": "Jesus",
+    "fact": "In Johannes 21 fingen sie 153 Fische – und das Netz zerriss nicht!"
+   }
+  }
+ },
+ "VOCAB": {
+  "en": [
+   [
+    "covenant",
+    "a solemn promise between two sides",
+    2
+   ],
+   [
+    "mercy",
+    "kindness shown to someone who doesn't deserve it",
+    2
+   ],
+   [
+    "grace",
+    "a gift of kindness and favor that we did not earn",
+    2
+   ],
+   [
+    "humble",
+    "not proud; putting others first",
+    1
+   ],
+   [
+    "faithful",
+    "loyal and keeping your promises",
+    1
+   ],
+   [
+    "courage",
+    "bravery when you feel afraid",
+    1
+   ],
+   [
+    "prophet",
+    "a person who speaks a message from God",
+    1
+   ],
+   [
+    "disciple",
+    "a follower who learns from a teacher",
+    1
+   ],
+   [
+    "parable",
+    "a short story that teaches a lesson",
+    2
+   ],
+   [
+    "repent",
+    "to turn away from wrong and change direction",
+    2
+   ],
+   [
+    "righteous",
+    "doing what is right and good",
+    2
+   ],
+   [
+    "persevere",
+    "to keep going even when it is hard",
+    2
+   ],
+   [
+    "generous",
+    "happy to give and share",
+    1
+   ],
+   [
+    "patience",
+    "waiting calmly without complaining",
+    1
+   ],
+   [
+    "rejoice",
+    "to feel or show great joy",
+    1
+   ],
+   [
+    "abundant",
+    "more than enough; plentiful",
+    2
+   ],
+   [
+    "compassion",
+    "caring about someone's pain and wanting to help",
+    2
+   ],
+   [
+    "integrity",
+    "being honest and having strong good character",
+    3
+   ],
+   [
+    "redeem",
+    "to buy back or rescue",
+    3
+   ],
+   [
+    "sanctuary",
+    "a holy or safe place",
+    2
+   ],
+   [
+    "multitude",
+    "a very large crowd",
+    2
+   ],
+   [
+    "steward",
+    "someone who takes care of what belongs to another",
+    3
+   ],
+   [
+    "reconcile",
+    "to become friends again after a conflict",
+    3
+   ],
+   [
+    "tabernacle",
+    "a holy tent where God's people worshiped",
+    2
+   ],
+   [
+    "exile",
+    "being forced to live away from your homeland",
+    3
+   ],
+   [
+    "resurrection",
+    "rising back to life after death",
+    2
+   ],
+   [
+    "genealogy",
+    "a record of a family's ancestors",
+    3
+   ],
+   [
+    "diligent",
+    "working hard and carefully",
+    2
+   ],
+   [
+    "proclaim",
+    "to announce publicly",
+    2
+   ],
+   [
+    "obedient",
+    "willing to do what you are told",
+    1
+   ],
+   [
+    "famine",
+    "a time when there is very little food",
+    2
+   ],
+   [
+    "fortress",
+    "a strong, protected place",
+    2
+   ]
+  ],
+  "de": [
+   [
+    "Bund",
+    "ein feierliches Versprechen zwischen zwei Seiten",
+    2
+   ],
+   [
+    "Barmherzigkeit",
+    "Freundlichkeit für jemanden, der sie nicht verdient hat",
+    2
+   ],
+   [
+    "Gnade",
+    "ein Geschenk von Gottes Güte, das man sich nicht verdienen kann",
+    2
+   ],
+   [
+    "demütig",
+    "nicht stolz; andere wichtig nehmen",
+    1
+   ],
+   [
+    "treu",
+    "zuverlässig und hält seine Versprechen",
+    1
+   ],
+   [
+    "Mut",
+    "tapfer sein, auch wenn man Angst hat",
+    1
+   ],
+   [
+    "Prophet",
+    "ein Mensch, der eine Botschaft von Gott weitergibt",
+    1
+   ],
+   [
+    "Jünger",
+    "jemand, der einem Lehrer folgt und von ihm lernt",
+    1
+   ],
+   [
+    "Gleichnis",
+    "eine kurze Geschichte, die etwas Wichtiges lehrt",
+    2
+   ],
+   [
+    "umkehren",
+    "vom Falschen weggehen und einen neuen Weg einschlagen",
+    2
+   ],
+   [
+    "gerecht",
+    "tun, was richtig und gut ist",
+    2
+   ],
+   [
+    "durchhalten",
+    "weitermachen, auch wenn es schwer ist",
+    2
+   ],
+   [
+    "großzügig",
+    "gern geben und teilen",
+    1
+   ],
+   [
+    "Geduld",
+    "ruhig warten können, ohne zu meckern",
+    1
+   ],
+   [
+    "jubeln",
+    "sich laut und sehr freuen",
+    1
+   ],
+   [
+    "reichlich",
+    "mehr als genug",
+    2
+   ],
+   [
+    "Mitgefühl",
+    "den Schmerz anderer spüren und helfen wollen",
+    2
+   ],
+   [
+    "Aufrichtigkeit",
+    "ehrlich und echt sein, auch wenn keiner zusieht",
+    3
+   ],
+   [
+    "erlösen",
+    "freikaufen oder retten",
+    3
+   ],
+   [
+    "Heiligtum",
+    "ein heiliger, geschützter Ort",
+    2
+   ],
+   [
+    "Menschenmenge",
+    "sehr viele Menschen auf einmal",
+    1
+   ],
+   [
+    "Verwalter",
+    "jemand, der sich um etwas kümmert, das einem anderen gehört",
+    3
+   ],
+   [
+    "versöhnen",
+    "nach einem Streit wieder Freunde werden",
+    3
+   ],
+   [
+    "Stiftshütte",
+    "ein heiliges Zelt, in dem Israel Gott anbetete",
+    2
+   ],
+   [
+    "Exil",
+    "weit weg von der Heimat leben müssen",
+    3
+   ],
+   [
+    "Auferstehung",
+    "vom Tod wieder lebendig werden",
+    2
+   ],
+   [
+    "Stammbaum",
+    "eine Liste der Vorfahren einer Familie",
+    3
+   ],
+   [
+    "fleißig",
+    "hart und sorgfältig arbeiten",
+    1
+   ],
+   [
+    "verkünden",
+    "etwas öffentlich bekannt machen",
+    2
+   ],
+   [
+    "gehorsam",
+    "bereit, zu tun, was man gesagt bekommt",
+    1
+   ],
+   [
+    "Hungersnot",
+    "eine Zeit, in der es kaum etwas zu essen gibt",
+    2
+   ],
+   [
+    "Festung",
+    "ein starker, geschützter Ort",
+    2
+   ]
+  ]
+ },
+ "SPELL": {
+  "en": [
+   [
+    "shepherd",
+    1
+   ],
+   [
+    "believe",
+    1
+   ],
+   [
+    "friend",
+    1
+   ],
+   [
+    "angel",
+    1
+   ],
+   [
+    "animal",
+    1
+   ],
+   [
+    "garden",
+    1
+   ],
+   [
+    "people",
+    1
+   ],
+   [
+    "prayer",
+    1
+   ],
+   [
+    "kingdom",
+    1
+   ],
+   [
+    "mountain",
+    1
+   ],
+   [
+    "heaven",
+    1
+   ],
+   [
+    "rainbow",
+    1
+   ],
+   [
+    "Bethlehem",
+    2
+   ],
+   [
+    "disciple",
+    2
+   ],
+   [
+    "miracle",
+    2
+   ],
+   [
+    "prophet",
+    2
+   ],
+   [
+    "receive",
+    2
+   ],
+   [
+    "beginning",
+    2
+   ],
+   [
+    "tabernacle",
+    2
+   ],
+   [
+    "Pharaoh",
+    2
+   ],
+   [
+    "Galilee",
+    2
+   ],
+   [
+    "beautiful",
+    2
+   ],
+   [
+    "wilderness",
+    2
+   ],
+   [
+    "treasure",
+    2
+   ],
+   [
+    "Jerusalem",
+    3
+   ],
+   [
+    "necessary",
+    3
+   ],
+   [
+    "Philistine",
+    3
+   ],
+   [
+    "Deuteronomy",
+    3
+   ],
+   [
+    "Leviticus",
+    3
+   ],
+   [
+    "Ecclesiastes",
+    3
+   ],
+   [
+    "righteousness",
+    3
+   ],
+   [
+    "Nebuchadnezzar",
+    3
+   ],
+   [
+    "separate",
+    3
+   ],
+   [
+    "commandment",
+    3
+   ],
+   [
+    "resurrection",
+    3
+   ]
+  ],
+  "de": [
+   [
+    "Hirte",
+    1
+   ],
+   [
+    "glauben",
+    1
+   ],
+   [
+    "Freund",
+    1
+   ],
+   [
+    "Engel",
+    1
+   ],
+   [
+    "Garten",
+    1
+   ],
+   [
+    "Menschen",
+    1
+   ],
+   [
+    "Gebet",
+    1
+   ],
+   [
+    "Himmel",
+    1
+   ],
+   [
+    "Regenbogen",
+    1
+   ],
+   [
+    "Schafe",
+    1
+   ],
+   [
+    "Fischer",
+    1
+   ],
+   [
+    "Wunder",
+    1
+   ],
+   [
+    "Betlehem",
+    2
+   ],
+   [
+    "Jünger",
+    2
+   ],
+   [
+    "Prophet",
+    2
+   ],
+   [
+    "Schriftrolle",
+    2
+   ],
+   [
+    "Anfang",
+    2
+   ],
+   [
+    "Pharao",
+    2
+   ],
+   [
+    "Wüste",
+    2
+   ],
+   [
+    "Schatz",
+    2
+   ],
+   [
+    "Gleichnis",
+    2
+   ],
+   [
+    "wunderschön",
+    2
+   ],
+   [
+    "Krippe",
+    2
+   ],
+   [
+    "Ägypten",
+    2
+   ],
+   [
+    "Jerusalem",
+    3
+   ],
+   [
+    "Philister",
+    3
+   ],
+   [
+    "Gerechtigkeit",
+    3
+   ],
+   [
+    "Nebukadnezar",
+    3
+   ],
+   [
+    "Auferstehung",
+    3
+   ],
+   [
+    "Barmherzigkeit",
+    3
+   ],
+   [
+    "Herrlichkeit",
+    3
+   ],
+   [
+    "Versöhnung",
+    3
+   ],
+   [
+    "Stiftshütte",
+    3
+   ],
+   [
+    "Psalmen",
+    3
+   ],
+   [
+    "Galiläa",
+    3
+   ]
+  ]
+ },
+ "GROUPS": {
+  "en": {
+   "disciples of Jesus": [
+    "Peter",
+    "Andrew",
+    "Philip",
+    "Thomas",
+    "Bartholomew",
+    "Thaddaeus"
+   ],
+   "books of the Old Testament": [
+    "Genesis",
+    "Exodus",
+    "Leviticus",
+    "Psalms",
+    "Proverbs",
+    "Isaiah",
+    "Jeremiah",
+    "Numbers"
+   ],
+   "books of the New Testament": [
+    "Romans",
+    "Acts",
+    "Galatians",
+    "Hebrews",
+    "Revelation",
+    "Ephesians",
+    "Philippians",
+    "Colossians"
+   ],
+   "fruit of the Spirit": [
+    "Love",
+    "Joy",
+    "Peace",
+    "Patience",
+    "Kindness",
+    "Goodness",
+    "Gentleness",
+    "Self-control"
+   ],
+   "plagues of Egypt": [
+    "Frogs",
+    "Locusts",
+    "Hail",
+    "Darkness",
+    "Boils",
+    "Flies",
+    "Gnats"
+   ],
+   "women of the Bible": [
+    "Miriam",
+    "Rahab",
+    "Deborah",
+    "Hannah",
+    "Sarah",
+    "Rebekah",
+    "Rachel"
+   ]
+  },
+  "de": {
+   "Jünger von Jesus": [
+    "Petrus",
+    "Andreas",
+    "Philippus",
+    "Thomas",
+    "Bartholomäus",
+    "Thaddäus"
+   ],
+   "Bücher des Alten Testaments": [
+    "1. Mose",
+    "2. Mose",
+    "3. Mose",
+    "4. Mose",
+    "Psalmen",
+    "Sprüche",
+    "Jesaja",
+    "Jeremia"
+   ],
+   "Bücher des Neuen Testaments": [
+    "Römer",
+    "Apostelgeschichte",
+    "Galater",
+    "Hebräer",
+    "Offenbarung",
+    "Epheser",
+    "Philipper",
+    "Kolosser"
+   ],
+   "Früchte des Geistes": [
+    "Liebe",
+    "Freude",
+    "Frieden",
+    "Geduld",
+    "Freundlichkeit",
+    "Güte",
+    "Sanftmut",
+    "Selbstbeherrschung"
+   ],
+   "Plagen in Ägypten": [
+    "Frösche",
+    "Heuschrecken",
+    "Hagel",
+    "Finsternis",
+    "Geschwüre",
+    "Fliegen",
+    "Stechmücken"
+   ],
+   "Frauen der Bibel": [
+    "Mirjam",
+    "Rahab",
+    "Debora",
+    "Hanna",
+    "Sara",
+    "Rebekka",
+    "Rahel"
+   ]
+  }
+ },
+ "BOOKS": {
+  "en": [
+   "Genesis",
+   "Exodus",
+   "Leviticus",
+   "Numbers",
+   "Deuteronomy",
+   "Joshua",
+   "Judges",
+   "Ruth",
+   "1 Samuel",
+   "2 Samuel",
+   "1 Kings",
+   "2 Kings",
+   "1 Chronicles",
+   "2 Chronicles",
+   "Ezra",
+   "Nehemiah",
+   "Esther",
+   "Job",
+   "Psalms",
+   "Proverbs",
+   "Ecclesiastes",
+   "Song of Solomon",
+   "Isaiah",
+   "Jeremiah",
+   "Lamentations",
+   "Ezekiel",
+   "Daniel",
+   "Hosea",
+   "Joel",
+   "Amos",
+   "Obadiah",
+   "Jonah",
+   "Micah",
+   "Nahum",
+   "Habakkuk",
+   "Zephaniah",
+   "Haggai",
+   "Zechariah",
+   "Malachi",
+   "Matthew",
+   "Mark",
+   "Luke",
+   "John",
+   "Acts",
+   "Romans",
+   "1 Corinthians",
+   "2 Corinthians",
+   "Galatians",
+   "Ephesians",
+   "Philippians",
+   "Colossians",
+   "1 Thessalonians",
+   "2 Thessalonians",
+   "1 Timothy",
+   "2 Timothy",
+   "Titus",
+   "Philemon",
+   "Hebrews",
+   "James",
+   "1 Peter",
+   "2 Peter",
+   "1 John",
+   "2 John",
+   "3 John",
+   "Jude",
+   "Revelation"
+  ],
+  "de": [
+   "1. Mose",
+   "2. Mose",
+   "3. Mose",
+   "4. Mose",
+   "5. Mose",
+   "Josua",
+   "Richter",
+   "Rut",
+   "1. Samuel",
+   "2. Samuel",
+   "1. Könige",
+   "2. Könige",
+   "1. Chronik",
+   "2. Chronik",
+   "Esra",
+   "Nehemia",
+   "Ester",
+   "Hiob",
+   "Psalmen",
+   "Sprüche",
+   "Prediger",
+   "Hoheslied",
+   "Jesaja",
+   "Jeremia",
+   "Klagelieder",
+   "Hesekiel",
+   "Daniel",
+   "Hosea",
+   "Joel",
+   "Amos",
+   "Obadja",
+   "Jona",
+   "Micha",
+   "Nahum",
+   "Habakuk",
+   "Zefanja",
+   "Haggai",
+   "Sacharja",
+   "Maleachi",
+   "Matthäus",
+   "Markus",
+   "Lukas",
+   "Johannes",
+   "Apostelgeschichte",
+   "Römer",
+   "1. Korinther",
+   "2. Korinther",
+   "Galater",
+   "Epheser",
+   "Philipper",
+   "Kolosser",
+   "1. Thessalonicher",
+   "2. Thessalonicher",
+   "1. Timotheus",
+   "2. Timotheus",
+   "Titus",
+   "Philemon",
+   "Hebräer",
+   "Jakobus",
+   "1. Petrus",
+   "2. Petrus",
+   "1. Johannes",
+   "2. Johannes",
+   "3. Johannes",
+   "Judas",
+   "Offenbarung"
+  ]
+ },
+ "BOOK": {
+  "de": {
+   "Genesis": "1. Mose",
+   "Exodus": "2. Mose",
+   "Leviticus": "3. Mose",
+   "Numbers": "4. Mose",
+   "Deuteronomy": "5. Mose",
+   "Joshua": "Josua",
+   "Judges": "Richter",
+   "1 Kings": "1. Könige",
+   "2 Kings": "2. Könige",
+   "Acts": "Apostelgeschichte",
+   "Romans": "Römer",
+   "Ruth": "Rut",
+   "1 Samuel": "1. Samuel",
+   "2 Samuel": "2. Samuel",
+   "Esther": "Ester",
+   "Psalm": "Psalm",
+   "Psalms": "Psalmen",
+   "Proverbs": "Sprüche",
+   "Isaiah": "Jesaja",
+   "Lamentations": "Klagelieder",
+   "Daniel": "Daniel",
+   "Jonah": "Jona",
+   "Matthew": "Matthäus",
+   "Mark": "Markus",
+   "Luke": "Lukas",
+   "John": "Johannes",
+   "1 Corinthians": "1. Korinther",
+   "Galatians": "Galater",
+   "Ephesians": "Epheser",
+   "Philippians": "Philipper",
+   "Hebrews": "Hebräer",
+   "James": "Jakobus",
+   "1 Peter": "1. Petrus",
+   "1 John": "1. Johannes",
+   "2 Timothy": "2. Timotheus",
+   "Revelation": "Offenbarung",
+   "Nehemiah": "Nehemia"
+  }
+ },
+ "STORY": {
+  "en": [
+   "Long ago, the great Scroll of Light told the whole story of God's love — from the very first sunrise to the brightest morning of all.",
+   "But the Shadow of Doubt crept in. It tore the Scroll into twenty-two pieces and hid them across the ages of the Bible.",
+   "Without the Scroll, Gloomlings spread everywhere: whispers of lies, worry, pride and fear.",
+   "Now a young pilgrim is needed. Someone brave. Someone curious. Someone like you."
+  ],
+  "de": [
+   "Vor langer Zeit erzählte die große Schriftrolle des Lichts die ganze Geschichte von Gottes Liebe – vom allerersten Sonnenaufgang bis zum hellsten Morgen von allen.",
+   "Doch der Schatten des Zweifels schlich sich heran. Er zerriss die Schriftrolle in zweiundzwanzig Teile und versteckte sie in den Zeiten der Bibel.",
+   "Ohne die Schriftrolle breiteten sich Düsterlinge überall aus: Flüstern von Lügen, Sorgen, Hochmut und Angst.",
+   "Jetzt wird ein junger Pilger gebraucht. Jemand Mutiges. Jemand Neugieriges. Jemand wie du."
+  ]
+ },
+ "MISC": {
+  "fallbackVerse": {
+   "en": {
+    "t": "For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.",
+    "r": "John 3:16"
+   },
+   "de": {
+    "t": "So sehr hat Gott die Welt geliebt, dass er seinen einzigen Sohn gab. Jeder, der an ihn glaubt, wird ewig leben.",
+    "r": "nach Johannes 3,16"
+   }
+  },
+  "bookOpts": {
+   "en": [
+    "Genesis",
+    "Exodus",
+    "Psalm",
+    "Proverbs",
+    "Isaiah",
+    "Matthew",
+    "Luke",
+    "John",
+    "Romans",
+    "Joshua",
+    "Daniel"
+   ],
+   "de": [
+    "1. Mose",
+    "2. Mose",
+    "Psalm",
+    "Sprüche",
+    "Jesaja",
+    "Matthäus",
+    "Lukas",
+    "Johannes",
+    "Römer",
+    "Josua",
+    "Daniel"
+   ]
+  }
+ }
+}

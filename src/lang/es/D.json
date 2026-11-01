@@ -1,0 +1,2035 @@
+{
+ "QX": {
+  "order": [
+   [
+    1,
+    "Ordena los días de la creación:",
+    [
+     "Luz y oscuridad",
+     "Cielo y aguas",
+     "Tierra y plantas",
+     "Sol, luna y estrellas"
+    ],
+    "Génesis 1:1-19"
+   ],
+   [
+    1,
+    "Ordena el resto de la creación:",
+    [
+     "Sol, luna y estrellas",
+     "Peces y aves",
+     "Animales terrestres y personas",
+     "Dios descansa"
+    ],
+    "Génesis 1:14-2:3"
+   ],
+   [
+    1,
+    "Ordena la historia del Edén:",
+    [
+     "Dios forma a Adán del polvo",
+     "Dios planta un jardín",
+     "Dios crea a Eva",
+     "La serpiente habla con Eva"
+    ],
+    "Génesis 2-3"
+   ],
+   [
+    2,
+    "Ordena la historia de Noé:",
+    [
+     "Dios le pide a Noé un arca",
+     "Los animales entran en el arca",
+     "Llueve durante 40 días",
+     "Noé suelta una paloma"
+    ],
+    "Génesis 6-8"
+   ],
+   [
+    2,
+    "¿Qué pasó después de la lluvia?",
+    [
+     "El arca se posa en Ararat",
+     "Noé suelta un cuervo",
+     "Una paloma trae una hoja de olivo",
+     "Dios pone un arcoíris en el cielo"
+    ],
+    "Génesis 8-9"
+   ],
+   [
+    11,
+    "Ordena la vida de Abraham:",
+    [
+     "Abram sale de Harán",
+     "Dios: ¡cuenta las estrellas!",
+     "Nace Isaac",
+     "Dios prueba a Abraham en el monte"
+    ],
+    "Génesis 12-22"
+   ],
+   [
+    11,
+    "Ordena estos sucesos:",
+    [
+     "Dios llama a Abram",
+     "Abram y Lot se separan",
+     "Tres visitantes en la tienda de Abraham",
+     "Nace Isaac"
+    ],
+    "Génesis 12-21"
+   ],
+   [
+    12,
+    "Ordena la vida de José:",
+    [
+     "José recibe una túnica de colores",
+     "Sus hermanos lo venden",
+     "José explica los sueños del faraón",
+     "Sus hermanos vienen a comprar grano"
+    ],
+    "Génesis 37-42"
+   ],
+   [
+    12,
+    "Ordena los años de José en Egipto:",
+    [
+     "José trabaja para Potifar",
+     "José va a la cárcel",
+     "José gobierna Egipto",
+     "Jacob se muda a Egipto"
+    ],
+    "Génesis 39-46"
+   ],
+   [
+    3,
+    "Ordena la historia de Moisés:",
+    [
+     "Moisés bebé en una cesta",
+     "Moisés ve la zarza ardiente",
+     "Las diez plagas",
+     "El cruce del mar Rojo"
+    ],
+    "Éxodo 2-14"
+   ],
+   [
+    3,
+    "Ordena estas plagas:",
+    [
+     "El agua se vuelve sangre",
+     "Ranas por todas partes",
+     "Cae granizo",
+     "Tres días de oscuridad"
+    ],
+    "Éxodo 7-10"
+   ],
+   [
+    4,
+    "Ordena el viaje por el desierto:",
+    [
+     "Maná del cielo",
+     "Agua de la roca",
+     "Dios da los Diez Mandamientos",
+     "El becerro de oro"
+    ],
+    "Éxodo 16-32"
+   ],
+   [
+    4,
+    "Ordena lo que pasó en el monte Sinaí:",
+    [
+     "Israel acampa ante el Sinaí",
+     "Dios da los Diez Mandamientos",
+     "El pueblo hace un becerro de oro",
+     "Moisés rompe las tablas"
+    ],
+    "Éxodo 19-32"
+   ],
+   [
+    5,
+    "Ordena la historia de Jericó:",
+    [
+     "Los espías se esconden con Rahab",
+     "Israel cruza el Jordán",
+     "7 días marchando alrededor de Jericó",
+     "Las murallas caen"
+    ],
+    "Josué 2-6"
+   ],
+   [
+    19,
+    "Ordena la historia de Gedeón:",
+    [
+     "Un ángel visita a Gedeón",
+     "La prueba del vellón y el rocío",
+     "El ejército queda en 300",
+     "Trompetas, cántaros y antorchas"
+    ],
+    "Jueces 6-7"
+   ],
+   [
+    20,
+    "Ordena la historia de Sansón:",
+    [
+     "Un ángel anuncia a Sansón",
+     "Sansón vence a un león",
+     "Dalila engaña a Sansón",
+     "Sansón empuja las columnas"
+    ],
+    "Jueces 13-16"
+   ],
+   [
+    13,
+    "Ordena la historia de Rut:",
+    [
+     "La familia de Noemí se va a Moab",
+     "Rut se queda con Noemí",
+     "Rut recoge espigas en el campo de Booz",
+     "Booz se casa con Rut"
+    ],
+    "Rut 1-4"
+   ],
+   [
+    6,
+    "Ordena la historia de David:",
+    [
+     "Samuel unge a David",
+     "David toca el arpa para Saúl",
+     "Goliat desafía a Israel",
+     "La piedra de David golpea a Goliat"
+    ],
+    "1 Samuel 16-17"
+   ],
+   [
+    14,
+    "Ordena la historia de Elías:",
+    [
+     "Elías anuncia que no lloverá",
+     "Los cuervos le llevan comida",
+     "El desafío en el monte Carmelo",
+     "Vuelve la lluvia"
+    ],
+    "1 Reyes 17-18"
+   ],
+   [
+    15,
+    "Ordena la historia de Jonás:",
+    [
+     "Dios envía a Jonás a Nínive",
+     "Jonás navega hacia Tarsis",
+     "Un gran pez se traga a Jonás",
+     "Nínive se vuelve a Dios"
+    ],
+    "Jonás 1-3"
+   ],
+   [
+    7,
+    "Ordena la historia de Daniel:",
+    [
+     "Daniel rechaza la comida del rey",
+     "Daniel explica el sueño de la estatua",
+     "La escritura en la pared",
+     "Daniel en el foso de los leones"
+    ],
+    "Daniel 1-6"
+   ],
+   [
+    7,
+    "Ordena la historia del horno de fuego:",
+    [
+     "Tres amigos no se inclinan",
+     "Los echan al horno",
+     "Se ve a un cuarto hombre en el fuego",
+     "Salen sin un rasguño"
+    ],
+    "Daniel 3"
+   ],
+   [
+    16,
+    "Ordena la historia de Ester:",
+    [
+     "Ester llega a ser reina",
+     "Mardoqueo salva al rey",
+     "Amán trama contra los judíos",
+     "Ester va a ver al rey"
+    ],
+    "Ester 2-5"
+   ],
+   [
+    21,
+    "Ordena la historia de Nehemías:",
+    [
+     "Nehemías oye que el muro está roto",
+     "Nehemías ora a Dios",
+     "El rey le deja ir",
+     "El muro se termina en 52 días"
+    ],
+    "Nehemías 1-6"
+   ],
+   [
+    8,
+    "Ordena la historia de Navidad:",
+    [
+     "El ángel Gabriel visita a María",
+     "El viaje a Belén",
+     "Nace Jesús",
+     "Los pastores visitan al bebé"
+    ],
+    "Lucas 1-2"
+   ],
+   [
+    8,
+    "Ordena el viaje de los sabios:",
+    [
+     "Los sabios ven la estrella",
+     "Visitan al rey Herodes",
+     "Entregan sus regalos",
+     "La familia huye a Egipto"
+    ],
+    "Mateo 2"
+   ],
+   [
+    9,
+    "Ordena estos sucesos:",
+    [
+     "Jesús es bautizado",
+     "Jesús llama a unos pescadores",
+     "Jesús calma la tormenta",
+     "Jesús camina sobre el agua"
+    ],
+    "Mateo 3-14"
+   ],
+   [
+    9,
+    "Ordena los primeros años de Jesús:",
+    [
+     "Nace Jesús",
+     "Jesús en el templo a los 12 años",
+     "Jesús es bautizado",
+     "Jesús alimenta a 5000 personas"
+    ],
+    "Lucas 2; Mateo 3; Mateo 14"
+   ],
+   [
+    22,
+    "Ordena la historia del hijo perdido:",
+    [
+     "El hijo pide su parte",
+     "Gasta todo su dinero",
+     "Cuida cerdos",
+     "Su padre corre a abrazarlo"
+    ],
+    "Lucas 15:11-24"
+   ],
+   [
+    22,
+    "Ordena la historia del buen samaritano:",
+    [
+     "Unos ladrones atacan a un viajero",
+     "Un sacerdote pasa de largo",
+     "Un levita pasa de largo",
+     "Un samaritano lo ayuda"
+    ],
+    "Lucas 10:30-35"
+   ],
+   [
+    22,
+    "Ordena la historia de Zaqueo:",
+    [
+     "Zaqueo se sube a un árbol",
+     "Jesús le dice que baje",
+     "Jesús va a su casa",
+     "Zaqueo promete devolver"
+    ],
+    "Lucas 19:1-10"
+   ],
+   [
+    10,
+    "Ordena la historia de Pascua:",
+    [
+     "Jesús entra en Jerusalén",
+     "La última cena",
+     "Jesús muere en la cruz",
+     "La tumba está vacía"
+    ],
+    "Lucas 19-24"
+   ],
+   [
+    10,
+    "¿Qué pasó después de la mañana de Pascua?",
+    [
+     "Las mujeres hallan la tumba vacía",
+     "Jesús camina con dos a Emaús",
+     "Jesús se aparece a Tomás",
+     "Jesús sube al cielo"
+    ],
+    "Lucas 24; Juan 20; Hechos 1"
+   ],
+   [
+    17,
+    "Ordena Pentecostés:",
+    [
+     "Jesús sube al cielo",
+     "Eligen a Matías",
+     "El Espíritu Santo llega como fuego",
+     "Bautizan a 3000 personas"
+    ],
+    "Hechos 1-2"
+   ],
+   [
+    17,
+    "Ordena estos sucesos:",
+    [
+     "Pedro sana a un cojo",
+     "Arrestan a Pedro y a Juan",
+     "Los dejan libres",
+     "Los creyentes lo comparten todo"
+    ],
+    "Hechos 3-4"
+   ],
+   [
+    18,
+    "Ordena el nuevo comienzo de Saulo:",
+    [
+     "Saulo ve una luz cerca de Damasco",
+     "Ananías ora por Saulo",
+     "Saulo escapa en una canasta",
+     "Saulo conoce a los apóstoles"
+    ],
+    "Hechos 9"
+   ],
+   [
+    18,
+    "Ordena el último viaje de Pablo:",
+    [
+     "Arrestan a Pablo en Jerusalén",
+     "Pablo, preso en Cesarea",
+     "Naufragio en Malta",
+     "Pablo predica en Roma"
+    ],
+    "Hechos 21-28"
+   ],
+   [
+    18,
+    "Ordena la historia de la cárcel de Filipos:",
+    [
+     "Meten a Pablo y Silas en la cárcel",
+     "Cantan a medianoche",
+     "Un terremoto abre las puertas",
+     "El carcelero cree"
+    ],
+    "Hechos 16:23-34"
+   ],
+   [
+    0,
+    "Ordena la historia del Antiguo Testamento:",
+    [
+     "La creación",
+     "El diluvio",
+     "El viaje de Abraham",
+     "Moisés guía el éxodo"
+    ],
+    "Génesis 1; Génesis 7; Génesis 12; Éxodo 14"
+   ],
+   [
+    0,
+    "Ordena a estas personas en el tiempo:",
+    [
+     "Moisés",
+     "Josué",
+     "David",
+     "Daniel"
+    ],
+    "Éxodo 3; Josué 1; 1 Samuel 16; Daniel 1"
+   ],
+   [
+    0,
+    "Ordena la familia, de la generación más antigua a la más joven:",
+    [
+     "Abraham",
+     "Isaac",
+     "Jacob",
+     "José"
+    ],
+    "Génesis 21-37"
+   ],
+   [
+    0,
+    "Ordena los primeros reyes de Israel:",
+    [
+     "Saúl",
+     "David",
+     "Salomón",
+     "Roboam"
+    ],
+    "1 Samuel 10; 1 Reyes 2; 1 Reyes 11"
+   ],
+   [
+    0,
+    "Ordena estos libros de la Biblia:",
+    [
+     "Génesis",
+     "Éxodo",
+     "Levítico",
+     "Números"
+    ],
+    "Génesis 1:1"
+   ],
+   [
+    0,
+    "Ordena estos libros de la Biblia:",
+    [
+     "Josué",
+     "Jueces",
+     "Rut",
+     "1 Samuel"
+    ],
+    "Josué 1:1"
+   ],
+   [
+    0,
+    "Ordena estos libros de la Biblia:",
+    [
+     "Rut",
+     "Ester",
+     "Salmos",
+     "Isaías"
+    ],
+    "Rut 1:1"
+   ],
+   [
+    0,
+    "Ordena los Evangelios como en la Biblia:",
+    [
+     "Mateo",
+     "Marcos",
+     "Lucas",
+     "Juan"
+    ],
+    "Mateo 1:1"
+   ],
+   [
+    0,
+    "Ordena estos libros de la Biblia:",
+    [
+     "Juan",
+     "Hechos",
+     "Romanos",
+     "1 Corintios"
+    ],
+    "Hechos 1:1"
+   ],
+   [
+    0,
+    "Ordena la historia del Nuevo Testamento:",
+    [
+     "Nace Jesús",
+     "Jesús resucita",
+     "El Espíritu llega en Pentecostés",
+     "Los viajes misioneros de Pablo"
+    ],
+    "Lucas 2; Lucas 24; Hechos 2; Hechos 13"
+   ]
+  ],
+  "who": [
+   [
+    1,
+    "¡Por fin! Ella es hueso de mis huesos y carne de mi carne.",
+    "Adán",
+    [
+     "Noé",
+     "Abraham",
+     "Caín"
+    ],
+    "Génesis 2:23"
+   ],
+   [
+    1,
+    "La serpiente me engañó, y comí.",
+    "Eva",
+    [
+     "Sara",
+     "Rebeca",
+     "Miriam"
+    ],
+    "Génesis 3:13"
+   ],
+   [
+    2,
+    "Pongo mi arcoíris en las nubes como señal de mi pacto.",
+    "Dios",
+    [
+     "Noé",
+     "Moisés",
+     "Abraham"
+    ],
+    "Génesis 9:13"
+   ],
+   [
+    11,
+    "Dios mismo se encargará del cordero.",
+    "Abraham",
+    [
+     "Isaac",
+     "Jacob",
+     "Lot"
+    ],
+    "Génesis 22:8"
+   ],
+   [
+    11,
+    "Aquí están el fuego y la leña, pero ¿dónde está el cordero?",
+    "Isaac",
+    [
+     "Ismael",
+     "Esaú",
+     "Lot"
+    ],
+    "Génesis 22:7"
+   ],
+   [
+    11,
+    "Dios me ha hecho reír. ¡Todos los que lo oigan se reirán conmigo!",
+    "Sara",
+    [
+     "Rebeca",
+     "Raquel",
+     "Agar"
+    ],
+    "Génesis 21:6"
+   ],
+   [
+    12,
+    "Ustedes quisieron hacerme daño, pero Dios lo convirtió en bien.",
+    "José",
+    [
+     "Jacob",
+     "Judá",
+     "Rubén"
+    ],
+    "Génesis 50:20"
+   ],
+   [
+    12,
+    "¿Encontraremos a otro como él, un hombre con el Espíritu de Dios?",
+    "Faraón",
+    [
+     "Potifar",
+     "Jacob",
+     "Judá"
+    ],
+    "Génesis 41:38"
+   ],
+   [
+    3,
+    "¿Quién soy yo para ir a ver al faraón?",
+    "Moisés",
+    [
+     "Aarón",
+     "Josué",
+     "José"
+    ],
+    "Éxodo 3:11"
+   ],
+   [
+    3,
+    "¿Quién es el SEÑOR para que yo le obedezca?",
+    "Faraón",
+    [
+     "Potifar",
+     "Goliat",
+     "Nabucodonosor"
+    ],
+    "Éxodo 5:2"
+   ],
+   [
+    3,
+    "¡Canten al SEÑOR, porque ha triunfado de forma gloriosa!",
+    "Miriam",
+    [
+     "Débora",
+     "Ana",
+     "Ester"
+    ],
+    "Éxodo 15:21"
+   ],
+   [
+    4,
+    "No tendrás otros dioses aparte de mí.",
+    "Dios",
+    [
+     "Moisés",
+     "Aarón",
+     "Josué"
+    ],
+    "Éxodo 20:3"
+   ],
+   [
+    4,
+    "Esto es demasiado para ti. No puedes hacerlo solo. ¡Busca ayudantes!",
+    "Jetro",
+    [
+     "Aarón",
+     "Caleb",
+     "Josué"
+    ],
+    "Éxodo 18:17-21"
+   ],
+   [
+    5,
+    "Mi familia y yo serviremos al SEÑOR.",
+    "Josué",
+    [
+     "Moisés",
+     "Caleb",
+     "Gedeón"
+    ],
+    "Josué 24:15"
+   ],
+   [
+    5,
+    "El SEÑOR su Dios es Dios arriba en el cielo y abajo en la tierra.",
+    "Rahab",
+    [
+     "Rut",
+     "Débora",
+     "Miriam"
+    ],
+    "Josué 2:11"
+   ],
+   [
+    19,
+    "Mi familia es la más pobre, y yo soy el menor de la casa de mi padre.",
+    "Gedeón",
+    [
+     "Sansón",
+     "Barac",
+     "Jonatán"
+    ],
+    "Jueces 6:15"
+   ],
+   [
+    20,
+    "Del que come salió comida, y del fuerte salió algo dulce.",
+    "Sansón",
+    [
+     "Gedeón",
+     "Samuel",
+     "Dalila"
+    ],
+    "Jueces 14:14"
+   ],
+   [
+    20,
+    "¡Sansón, los filisteos vienen por ti!",
+    "Dalila",
+    [
+     "Rut",
+     "Jezabel",
+     "Mical"
+    ],
+    "Jueces 16:9"
+   ],
+   [
+    13,
+    "Adonde tú vayas, iré yo. Tu pueblo será mi pueblo, y tu Dios será mi Dios.",
+    "Rut",
+    [
+     "Noemí",
+     "Orfa",
+     "Ester"
+    ],
+    "Rut 1:16"
+   ],
+   [
+    13,
+    "No me llamen Noemí. Llámenme Mara.",
+    "Noemí",
+    [
+     "Rut",
+     "Orfa",
+     "Ana"
+    ],
+    "Rut 1:20"
+   ],
+   [
+    13,
+    "¡Que el SEÑOR esté con ustedes!",
+    "Booz",
+    [
+     "Elimelec",
+     "Obed",
+     "Isaí"
+    ],
+    "Rut 2:4"
+   ],
+   [
+    6,
+    "Tú vienes contra mí con espada, pero yo vengo en el nombre del SEÑOR.",
+    "David",
+    [
+     "Saúl",
+     "Jonatán",
+     "Samuel"
+    ],
+    "1 Samuel 17:45"
+   ],
+   [
+    6,
+    "¿Acaso soy un perro, para que vengas contra mí con palos?",
+    "Goliat",
+    [
+     "Saúl",
+     "Eliab",
+     "Abner"
+    ],
+    "1 Samuel 17:43"
+   ],
+   [
+    6,
+    "La gente mira la apariencia, pero el SEÑOR mira el corazón.",
+    "Dios",
+    [
+     "Samuel",
+     "Isaí",
+     "David"
+    ],
+    "1 Samuel 16:7"
+   ],
+   [
+    14,
+    "¿Hasta cuándo van a dudar entre dos opiniones? Si el SEÑOR es Dios, ¡síganlo!",
+    "Elías",
+    [
+     "Eliseo",
+     "Acab",
+     "Abdías"
+    ],
+    "1 Reyes 18:21"
+   ],
+   [
+    14,
+    "Solo me queda un puñado de harina en la tinaja y un poco de aceite en la jarra.",
+    "La viuda de Sarepta",
+    [
+     "Jezabel",
+     "Noemí",
+     "Ana"
+    ],
+    "1 Reyes 17:12"
+   ],
+   [
+    15,
+    "Yo sabía que eres un Dios bondadoso y compasivo, que no se enoja fácilmente.",
+    "Jonás",
+    [
+     "Elías",
+     "Daniel",
+     "Jeremías"
+    ],
+    "Jonás 4:2"
+   ],
+   [
+    15,
+    "¿Quién sabe? Tal vez Dios cambie de idea y tenga compasión.",
+    "El rey de Nínive",
+    [
+     "Nabucodonosor",
+     "Faraón",
+     "Darío"
+    ],
+    "Jonás 3:9"
+   ],
+   [
+    7,
+    "Mi Dios envió a su ángel y cerró la boca de los leones.",
+    "Daniel",
+    [
+     "Sadrac",
+     "Darío",
+     "Ezequiel"
+    ],
+    "Daniel 6:22"
+   ],
+   [
+    7,
+    "¡Miren, veo a cuatro hombres sueltos caminando en medio del fuego!",
+    "Nabucodonosor",
+    [
+     "Darío",
+     "Belsasar",
+     "Daniel"
+    ],
+    "Daniel 3:25"
+   ],
+   [
+    16,
+    "¿Quién sabe si llegaste a ser reina precisamente para un momento como este?",
+    "Mardoqueo",
+    [
+     "Amán",
+     "Asuero",
+     "Nehemías"
+    ],
+    "Ester 4:14"
+   ],
+   [
+    16,
+    "Iré a ver al rey. Y si tengo que morir, moriré.",
+    "Ester",
+    [
+     "Rut",
+     "Vasti",
+     "Débora"
+    ],
+    "Ester 4:16"
+   ],
+   [
+    21,
+    "¡Vamos, reconstruyamos el muro de Jerusalén!",
+    "Nehemías",
+    [
+     "Esdras",
+     "Zorobabel",
+     "Hageo"
+    ],
+    "Nehemías 2:17"
+   ],
+   [
+    8,
+    "Soy la sierva del Señor. Que pase conmigo lo que has dicho.",
+    "María",
+    [
+     "Elisabet",
+     "Ana",
+     "Marta"
+    ],
+    "Lucas 1:38"
+   ],
+   [
+    8,
+    "¿Dónde está el rey de los judíos que acaba de nacer? Hemos visto su estrella.",
+    "Los sabios",
+    [
+     "Los pastores",
+     "El rey Herodes",
+     "Simeón"
+    ],
+    "Mateo 2:2"
+   ],
+   [
+    8,
+    "¡Vamos a Belén a ver lo que ha pasado!",
+    "Los pastores",
+    [
+     "Los sabios",
+     "María y José",
+     "Zacarías"
+    ],
+    "Lucas 2:15"
+   ],
+   [
+    9,
+    "Síganme, y los haré pescadores de personas.",
+    "Jesús",
+    [
+     "Juan el Bautista",
+     "Pedro",
+     "Andrés"
+    ],
+    "Mateo 4:19"
+   ],
+   [
+    9,
+    "¡Señor, sálvame!",
+    "Pedro",
+    [
+     "Juan",
+     "Andrés",
+     "Tomás"
+    ],
+    "Mateo 14:30"
+   ],
+   [
+    9,
+    "¡Miren, el Cordero de Dios, que quita el pecado del mundo!",
+    "Juan el Bautista",
+    [
+     "Pedro",
+     "Andrés",
+     "Nicodemo"
+    ],
+    "Juan 1:29"
+   ],
+   [
+    22,
+    "Padre, he pecado contra el cielo y contra ti.",
+    "El hijo perdido",
+    [
+     "El hermano mayor",
+     "El buen samaritano",
+     "Zaqueo"
+    ],
+    "Lucas 15:21"
+   ],
+   [
+    22,
+    "¡Alégrense conmigo, porque encontré mi oveja perdida!",
+    "El pastor",
+    [
+     "La mujer de la moneda",
+     "El padre",
+     "El samaritano"
+    ],
+    "Lucas 15:6"
+   ],
+   [
+    22,
+    "Señor, la mitad de lo que tengo se la doy a los pobres.",
+    "Zaqueo",
+    [
+     "Mateo",
+     "Nicodemo",
+     "Bartimeo"
+    ],
+    "Lucas 19:8"
+   ],
+   [
+    10,
+    "¡He visto al Señor!",
+    "María Magdalena",
+    [
+     "Marta",
+     "Salomé",
+     "Juana"
+    ],
+    "Juan 20:18"
+   ],
+   [
+    10,
+    "¡Señor mío y Dios mío!",
+    "Tomás",
+    [
+     "Pedro",
+     "Juan",
+     "Felipe"
+    ],
+    "Juan 20:28"
+   ],
+   [
+    17,
+    "No tengo plata ni oro, pero lo que tengo te lo doy.",
+    "Pedro",
+    [
+     "Juan",
+     "Pablo",
+     "Esteban"
+    ],
+    "Hechos 3:6"
+   ],
+   [
+    17,
+    "Arrepiéntanse, y bautícese cada uno en el nombre de Jesucristo.",
+    "Pedro",
+    [
+     "Matías",
+     "Felipe",
+     "Santiago"
+    ],
+    "Hechos 2:38"
+   ],
+   [
+    18,
+    "Saulo, Saulo, ¿por qué me persigues?",
+    "Jesús",
+    [
+     "Ananías",
+     "Esteban",
+     "Bernabé"
+    ],
+    "Hechos 9:4"
+   ],
+   [
+    18,
+    "Señores, ¿qué tengo que hacer para ser salvo?",
+    "El carcelero de Filipos",
+    [
+     "Cornelio",
+     "Festo",
+     "Félix"
+    ],
+    "Hechos 16:30"
+   ],
+   [
+    18,
+    "¡Ánimo! Yo confío en Dios.",
+    "Pablo",
+    [
+     "Lucas",
+     "Silas",
+     "Bernabé"
+    ],
+    "Hechos 27:25"
+   ]
+  ],
+  "where": [
+   [
+    2,
+    "El arca de Noé se posó sobre estas montañas.",
+    "ararat",
+    "Génesis 8:4"
+   ],
+   [
+    11,
+    "La familia de Abram vivió primero en esta ciudad.",
+    "ur",
+    "Génesis 11:31"
+   ],
+   [
+    11,
+    "Abram tenía 75 años cuando salió de este pueblo para seguir a Dios.",
+    "haran",
+    "Génesis 12:4"
+   ],
+   [
+    11,
+    "Abraham compró una cueva cerca de este pueblo para enterrar a Sara.",
+    "hebron",
+    "Génesis 23:19"
+   ],
+   [
+    11,
+    "Jacob soñó con una escalera que llegaba hasta el cielo.",
+    "bethel",
+    "Génesis 28:12-19"
+   ],
+   [
+    12,
+    "José encontró aquí a sus hermanos con sus rebaños.",
+    "dothan",
+    "Génesis 37:17"
+   ],
+   [
+    12,
+    "La familia de Jacob se estableció en la tierra de Gosén.",
+    "egypt",
+    "Génesis 47:6"
+   ],
+   [
+    3,
+    "Los israelitas tenían que hacer ladrillos como esclavos.",
+    "egypt",
+    "Éxodo 1:14"
+   ],
+   [
+    3,
+    "Israel cruzó el mar caminando sobre tierra seca.",
+    "redsea",
+    "Éxodo 14:21-22"
+   ],
+   [
+    4,
+    "Dios le dio a Moisés los Diez Mandamientos.",
+    "sinai",
+    "Éxodo 19-20"
+   ],
+   [
+    5,
+    "Las murallas cayeron después de sonar las trompetas.",
+    "jericho",
+    "Josué 6:20"
+   ],
+   [
+    19,
+    "Los 300 hombres de Gedeón se enfrentaron a un enorme ejército acampado en este valle.",
+    "jezreel",
+    "Jueces 6:33; Jueces 7:1"
+   ],
+   [
+    20,
+    "Sansón se llevó las puertas de esta ciudad.",
+    "gaza",
+    "Jueces 16:3"
+   ],
+   [
+    13,
+    "Rut creció en esta tierra.",
+    "moab",
+    "Rut 1:4"
+   ],
+   [
+    13,
+    "Aquí Rut recogió espigas en el campo de Booz.",
+    "bethlehem",
+    "Rut 2:4"
+   ],
+   [
+    6,
+    "David luchó contra Goliat en este valle.",
+    "elah",
+    "1 Samuel 17:2"
+   ],
+   [
+    6,
+    "Samuel ungió como rey al joven David en este pueblo.",
+    "bethlehem",
+    "1 Samuel 16:1-13"
+   ],
+   [
+    14,
+    "Cayó fuego del cielo sobre el altar de Elías.",
+    "carmel",
+    "1 Reyes 18:38"
+   ],
+   [
+    15,
+    "En este puerto Jonás encontró un barco a Tarsis.",
+    "joppa",
+    "Jonás 1:3"
+   ],
+   [
+    15,
+    "Esta gran ciudad se volvió a Dios después de que Jonás predicó.",
+    "nineveh",
+    "Jonás 3:5"
+   ],
+   [
+    7,
+    "Llevaron a Daniel a esta ciudad para servir al rey.",
+    "babylon",
+    "Daniel 1:1-6"
+   ],
+   [
+    16,
+    "La reina Ester vivía en el palacio de esta ciudad.",
+    "susa",
+    "Ester 1:2"
+   ],
+   [
+    21,
+    "Aquí Nehemías servía al rey antes de volver a su tierra.",
+    "susa",
+    "Nehemías 1:1"
+   ],
+   [
+    21,
+    "Nehemías reconstruyó el muro de esta ciudad.",
+    "jerusalem",
+    "Nehemías 2:17"
+   ],
+   [
+    8,
+    "Aquí nació Jesús.",
+    "bethlehem",
+    "Lucas 2:4-7"
+   ],
+   [
+    8,
+    "María vivía aquí cuando el ángel Gabriel la visitó.",
+    "nazareth",
+    "Lucas 1:26-27"
+   ],
+   [
+    8,
+    "Jesús creció en este pueblo.",
+    "nazareth",
+    "Lucas 2:39-40"
+   ],
+   [
+    9,
+    "Jesús hizo de este pueblo de pescadores su hogar.",
+    "capernaum",
+    "Mateo 4:13"
+   ],
+   [
+    9,
+    "Aquí Jesús sanó al siervo de un oficial romano.",
+    "capernaum",
+    "Lucas 7:1-10"
+   ],
+   [
+    22,
+    "Zaqueo se subió a un árbol para ver a Jesús en esta ciudad.",
+    "jericho",
+    "Lucas 19:1-4"
+   ],
+   [
+    22,
+    "En la historia del buen samaritano, el viajero bajaba hacia esta ciudad.",
+    "jericho",
+    "Lucas 10:30"
+   ],
+   [
+    10,
+    "Jesús entró montado en un burro mientras la gente agitaba ramas de palmera.",
+    "jerusalem",
+    "Juan 12:12-15"
+   ],
+   [
+    17,
+    "El Espíritu Santo vino en Pentecostés.",
+    "jerusalem",
+    "Hechos 2:1-5"
+   ],
+   [
+    18,
+    "Saulo se encontró con Jesús en el camino a esta ciudad.",
+    "damascus",
+    "Hechos 9:3"
+   ],
+   [
+    18,
+    "Aquí llamaron cristianos a los creyentes por primera vez.",
+    "antioch",
+    "Hechos 11:26"
+   ],
+   [
+    18,
+    "Pablo nació en esta ciudad.",
+    "tarsus",
+    "Hechos 22:3"
+   ],
+   [
+    18,
+    "Aquí tuvieron preso a Pablo durante dos años.",
+    "caesarea",
+    "Hechos 24:27"
+   ],
+   [
+    18,
+    "En esta isla Pablo conoció al gobernador Sergio Paulo.",
+    "paphos",
+    "Hechos 13:6-7"
+   ]
+  ],
+  "puzzle": [
+   [
+    1,
+    1,
+    "Dios trabajó 6 días y descansó el 7.º. ¿Cuántos días de trabajo hay en 3 semanas?",
+    18,
+    "6 días de trabajo × 3 semanas = 18."
+   ],
+   [
+    1,
+    3,
+    "Adán vivió 930 años, su nieto Enós 905 años y Mahalalel 895 años (Génesis 5). ¿Cuál es su edad promedio?",
+    910,
+    "930 + 905 + 895 = 2730, y 2730 ÷ 3 = 910."
+   ],
+   [
+    2,
+    1,
+    "Noé, su esposa, sus 3 hijos y las esposas de los 3 hijos entraron en el arca. ¿Cuántas personas eran?",
+    8,
+    "1 + 1 + 3 + 3 = 8 personas."
+   ],
+   [
+    2,
+    2,
+    "Noé llevó 7 parejas de cada clase de animal puro. ¿Cuántos animales son con 3 clases?",
+    42,
+    "7 parejas = 14 animales por clase. 14 × 3 = 42."
+   ],
+   [
+    2,
+    3,
+    "El arca medía 300 codos de largo, 50 codos de ancho y 30 codos de alto. ¿Cuál era su volumen en codos cúbicos (como si fuera una simple caja)?",
+    450000,
+    "300 × 50 × 30 = 450 000 codos cúbicos."
+   ],
+   [
+    11,
+    2,
+    "Abram tenía 75 años cuando Dios lo envió desde Harán. Isaac nació cuando Abraham tenía 100. ¿Cuántos años esperó?",
+    25,
+    "100 − 75 = 25 años."
+   ],
+   [
+    11,
+    3,
+    "Abraham tenía 100 años cuando nació Isaac. Isaac se casó con Rebeca a los 40. Abraham vivió hasta los 175. ¿Cuántos años vivió Abraham después de la boda de Isaac?",
+    35,
+    "En la boda, Abraham tenía 100 + 40 = 140. 175 − 140 = 35 años."
+   ],
+   [
+    12,
+    1,
+    "En el banquete de José, Benjamín recibió 5 veces más comida que cada hermano. Si un hermano recibió 3 panecillos, ¿cuántos recibió Benjamín?",
+    15,
+    "3 × 5 = 15 panecillos."
+   ],
+   [
+    12,
+    3,
+    "José tenía 30 años cuando empezó a servir al faraón. Luego vinieron 7 años buenos. En el 2.º año de hambre se dio a conocer a sus hermanos. ¿Cuántos años tenía José entonces?",
+    39,
+    "30 + 7 años buenos + 2 años de hambre = 39."
+   ],
+   [
+    3,
+    1,
+    "Moisés tenía 80 años y Aarón 83 cuando hablaron con el faraón. ¿Cuánto suman sus edades?",
+    163,
+    "80 + 83 = 163."
+   ],
+   [
+    3,
+    3,
+    "En la primera Pascua, los vecinos compartían un cordero. Si un cordero alcanza para 10 personas, ¿cuántos corderos se necesitan para 345 personas?",
+    35,
+    "345 ÷ 10 = 34.5. No se puede tener medio cordero, así que redondeamos hacia arriba: 35."
+   ],
+   [
+    4,
+    1,
+    "En Elim había 12 manantiales y 70 palmeras. ¿Cuántas palmeras más que manantiales había?",
+    58,
+    "70 − 12 = 58."
+   ],
+   [
+    4,
+    2,
+    "Cada persona recogía 1 gomer de maná al día, pero 2 gómeres el 6.º día. El 7.º día nadie recogía. ¿Cuántos gómeres recogía una persona en una semana?",
+    7,
+    "5 días × 1 + 2 el 6.º día + 0 el sábado = 7."
+   ],
+   [
+    5,
+    1,
+    "Israel marchó alrededor de Jericó una vez al día durante 6 días, y 7 veces el 7.º día. ¿Cuántas vueltas en total?",
+    13,
+    "6 + 7 = 13 vueltas."
+   ],
+   [
+    5,
+    3,
+    "40 000 soldados cruzaron el Jordán en filas de 8. Cada fila tardaba 3 segundos en pasar. ¿Cuántos minutos tardaron?",
+    250,
+    "40 000 ÷ 8 = 5000 filas. 5000 × 3 = 15 000 segundos. 15 000 ÷ 60 = 250 minutos."
+   ],
+   [
+    19,
+    1,
+    "Gedeón dividió a sus 300 hombres en 3 grupos iguales. ¿Cuántos hombres había en cada grupo?",
+    100,
+    "300 ÷ 3 = 100."
+   ],
+   [
+    19,
+    3,
+    "El ejército enemigo tenía unos 135 000 hombres. Gedeón tenía 300. ¿Cuántos enemigos tocaban a cada hombre de Gedeón?",
+    450,
+    "135 000 ÷ 300 = 450. ¡Y aun así Dios les dio la victoria!"
+   ],
+   [
+    20,
+    1,
+    "Sansón prometió 30 camisas de lino y 30 mudas de ropa por su adivinanza. ¿Cuántas prendas en total?",
+    60,
+    "30 + 30 = 60."
+   ],
+   [
+    20,
+    2,
+    "Cada jefe filisteo le prometió a Dalila 1100 monedas de plata. Si eran 5 jefes, ¿cuántas monedas eran?",
+    5500,
+    "1100 × 5 = 5500."
+   ],
+   [
+    13,
+    1,
+    "Booz le dio a Rut 6 medidas de cebada. Ella las repartió por igual con Noemí. ¿Cuántas medidas recibió cada una?",
+    3,
+    "6 ÷ 2 = 3."
+   ],
+   [
+    13,
+    3,
+    "Un campo tiene 12 hileras con 48 espigas cada una. Los segadores cortan 3/4 de las espigas. Rut recoge 1/12 de las espigas que quedan. ¿Cuántas recoge Rut?",
+    12,
+    "12 × 48 = 576. Si se cortan 3/4, queda 1/4: 144. 144 ÷ 12 = 12."
+   ],
+   [
+    6,
+    2,
+    "Goliat medía 6 codos y un palmo. Si un codo mide 45 cm y un palmo 22 cm, ¿cuántos cm medía?",
+    292,
+    "6 × 45 = 270, más 22 = 292 cm."
+   ],
+   [
+    6,
+    3,
+    "La punta de la lanza de Goliat pesaba 600 siclos. Un siclo pesa unos 11.5 g. ¿Cuántos gramos pesaba?",
+    6900,
+    "600 × 11.5 = 6900 g (¡casi 7 kg!)."
+   ],
+   [
+    14,
+    1,
+    "Elías mandó echar 4 cántaros de agua sobre el altar, 3 veces. ¿Cuántos cántaros de agua en total?",
+    12,
+    "4 × 3 = 12 cántaros."
+   ],
+   [
+    14,
+    2,
+    "En el monte Carmelo había 450 profetas de Baal y 400 profetas de Asera. ¿Cuántos profetas falsos eran?",
+    850,
+    "450 + 400 = 850."
+   ],
+   [
+    15,
+    2,
+    "Jonás estuvo dentro del pez 3 días y 3 noches. ¿Cuántas horas son?",
+    72,
+    "3 × 24 = 72 horas."
+   ],
+   [
+    15,
+    3,
+    "Nínive tenía 120 000 personas que no distinguían el bien del mal. Si 3/5 de una ciudad de 120 000 fueran adultos, ¿cuántos adultos serían?",
+    72000,
+    "120 000 ÷ 5 = 24 000. 24 000 × 3 = 72 000."
+   ],
+   [
+    7,
+    1,
+    "Daniel oraba 3 veces cada día. ¿Cuántas veces oraba en una semana?",
+    21,
+    "3 × 7 = 21."
+   ],
+   [
+    7,
+    2,
+    "El rey Darío puso 120 gobernadores en su reino y 3 jefes sobre ellos. Si cada jefe vigilaba al mismo número, ¿cuántos gobernadores vigilaba cada uno?",
+    40,
+    "120 ÷ 3 = 40."
+   ],
+   [
+    7,
+    3,
+    "La estatua de oro de Nabucodonosor medía 60 codos de alto. Si un codo mide 45 cm, ¿cuántos metros medía?",
+    27,
+    "60 × 45 = 2700 cm = 27 m."
+   ],
+   [
+    16,
+    1,
+    "El rey Asuero dio un banquete de 180 días y luego otro de 7 días. ¿Cuántos días en total?",
+    187,
+    "180 + 7 = 187 días."
+   ],
+   [
+    16,
+    3,
+    "Las cartas del rey iban a 127 provincias. Si un mensajero puede llegar a 9 provincias al día, ¿cuántos días necesita para llegar a todas?",
+    15,
+    "127 ÷ 9 = 14 y sobra 1, así que necesita un día más: 15."
+   ],
+   [
+    21,
+    2,
+    "Imagina que había que reparar 2600 m de muro y se terminó en 52 días. ¿Cuántos metros se reparaban cada día?",
+    50,
+    "2600 ÷ 52 = 50 m al día."
+   ],
+   [
+    21,
+    3,
+    "42 360 personas regresaron a Jerusalén. Si se dividieran en 12 grupos iguales, ¿cuántas personas habría en cada grupo?",
+    3530,
+    "42 360 ÷ 12 = 3530."
+   ],
+   [
+    8,
+    2,
+    "María y José viajaron unos 150 km de Nazaret a Belén. Si recorrían 25 km al día, ¿cuántos días tardaron?",
+    6,
+    "150 ÷ 25 = 6 días."
+   ],
+   [
+    8,
+    3,
+    "Imagina que los sabios viajaron 1200 km a 30 km por día, descansando 1 día después de cada 6 días de viaje. ¿Cuántos días duró el viaje?",
+    46,
+    "1200 ÷ 30 = 40 días de viaje. 40 ÷ 6 = 6 bloques completos, así que 6 días de descanso. 40 + 6 = 46."
+   ],
+   [
+    9,
+    1,
+    "Después de que Jesús alimentó a 5000 personas, sobraron 12 canastas. Después de alimentar a 4000, sobraron 7. ¿Cuántas canastas en total?",
+    19,
+    "12 + 7 = 19 canastas."
+   ],
+   [
+    9,
+    2,
+    "Jesús hizo sentar a los 5000 hombres en grupos de 50. ¿Cuántos grupos eran?",
+    100,
+    "5000 ÷ 50 = 100 grupos."
+   ],
+   [
+    9,
+    3,
+    "Los discípulos pescaron 153 peces. Si 7 discípulos los repartieran por igual, ¿cuántos peces sobrarían?",
+    6,
+    "153 ÷ 7 = 21 y sobran 6, así que quedan 6 peces."
+   ],
+   [
+    22,
+    1,
+    "Un pastor tenía 100 ovejas y perdió una. ¿Cuántas seguían a salvo?",
+    99,
+    "100 − 1 = 99."
+   ],
+   [
+    22,
+    2,
+    "Zaqueo prometió devolver 4 veces lo que había cobrado injustamente. Si cobró 25 monedas de más, ¿cuántas devolvió?",
+    100,
+    "25 × 4 = 100 monedas."
+   ],
+   [
+    22,
+    3,
+    "Zaqueo tenía 1200 monedas. Dio la mitad a los pobres. Luego devolvió 4 veces las 50 monedas que había cobrado injustamente. ¿Cuántas monedas le quedaron?",
+    400,
+    "La mitad de 1200 es 600. 600 − (50 × 4 = 200) = 400."
+   ],
+   [
+    10,
+    1,
+    "Emaús estaba a unos 11 km de Jerusalén. Los dos amigos fueron y volvieron el mismo día. ¿Cuántos km caminaron?",
+    22,
+    "11 + 11 = 22 km."
+   ],
+   [
+    10,
+    3,
+    "Los dos amigos caminaron 11 km hasta Emaús a 4 km por hora. Llenos de alegría, volvieron corriendo a 6 km por hora. ¿Cuántos minutos caminaron en total?",
+    275,
+    "11 ÷ 4 = 2.75 h = 165 min. 11 ÷ 6 ≈ 1.83 h = 110 min. 165 + 110 = 275 min."
+   ],
+   [
+    17,
+    2,
+    "En Pentecostés se bautizaron unas 3000 personas. Si 12 apóstoles bautizaron al mismo número, ¿cuántas bautizó cada uno?",
+    250,
+    "3000 ÷ 12 = 250."
+   ],
+   [
+    17,
+    3,
+    "Pentecostés es 50 días después de la Pascua. Si la Pascua cae el día 14 del primer mes y cada mes tiene 30 días, ¿qué día del tercer mes es Pentecostés?",
+    4,
+    "Día 14 + 50 = día 64. Los meses 1 y 2 tienen 60 días, así que 64 − 60 = día 4 del mes 3."
+   ],
+   [
+    18,
+    1,
+    "Pablo se quedó en Corinto 1 año y 6 meses. ¿Cuántos meses son?",
+    18,
+    "12 + 6 = 18 meses."
+   ],
+   [
+    18,
+    2,
+    "En el barco de Pablo había 276 personas. Si comieron juntas en grupos de 12, ¿cuántos grupos eran?",
+    23,
+    "276 ÷ 12 = 23 grupos."
+   ],
+   [
+    18,
+    3,
+    "Los marineros midieron 20 brazas de profundidad y luego 15 brazas. Si una braza mide 1.8 m, ¿cuántos metros menos de profundidad había?",
+    9,
+    "20 − 15 = 5 brazas. 5 × 1.8 = 9 m."
+   ]
+  ]
+ },
+ "CHOICES": {
+  "1": {
+   "prompt": "La serpiente dice que el fruto prohibido te hará sabio como Dios. ¿Qué haces?",
+   "options": [
+    "Confiar en la palabra de Dios",
+    "Darle un mordisco"
+   ],
+   "replies": [
+    [
+     "¡Sí! El «no» de Dios era un «no» lleno de amor. Confiar en él es el camino a la verdadera sabiduría."
+    ],
+    [
+     "Eso es lo que eligieron Adán y Eva, y trajo tristeza.",
+     "Pero Dios no se rindió con ellos. Los vistió y les prometió un salvador."
+    ]
+   ],
+   "ref": "Génesis 3:1-21"
+  },
+  "2": {
+   "prompt": "Dios te pide construir un barco gigante lejos del mar. Te llevará años. ¿Qué haces?",
+   "options": [
+    "Obedecer y seguir construyendo",
+    "Esperar un trabajo más fácil"
+   ],
+   "replies": [
+    [
+     "Noé hizo todo lo que Dios le mandó. ¡Pasos fieles, tabla a tabla!"
+    ],
+    [
+     "¡Cuesta seguir adelante! Pero Noé confió en Dios, y el arca salvó a su familia y a los animales."
+    ]
+   ],
+   "ref": "Génesis 6:22"
+  },
+  "3": {
+   "prompt": "Estás junto al mar Rojo. El ejército del faraón viene detrás y delante hay agua. ¿Qué haces?",
+   "options": [
+    "Confiar en que Dios abrirá camino",
+    "Volver corriendo a Egipto"
+   ],
+   "replies": [
+    [
+     "Moisés dijo: «No tengan miedo. Quédense quietos y vean cómo el SEÑOR los salva». ¡Y Dios abrió el mar!"
+    ],
+    [
+     "Muchos israelitas también tenían miedo. Pero Moisés confió en Dios, y Dios abrió un camino en medio del mar."
+    ]
+   ],
+   "ref": "Éxodo 14:10-22"
+  },
+  "4": {
+   "prompt": "Cada mañana cae maná. Dios dice: recoge solo lo que necesitas para hoy. ¿Qué haces?",
+   "options": [
+    "Recoger lo justo",
+    "Guardar de más para después"
+   ],
+   "replies": [
+    [
+     "¡Buena decisión! Dios daba maná fresco cada día. Así Israel aprendió a confiar en él día a día."
+    ],
+    [
+     "¡Algunos israelitas lo hicieron! Lo que sobró se echó a perder durante la noche. Dios quería que confiaran en él cada nuevo día."
+    ]
+   ],
+   "ref": "Éxodo 16:16-21"
+  },
+  "5": {
+   "prompt": "El plan de Dios: marchar en silencio alrededor de Jericó durante siete días. Suena raro. ¿Qué haces?",
+   "options": [
+    "Marchar y confiar en Dios",
+    "Mejor construir escaleras"
+   ],
+   "replies": [
+    [
+     "Josué obedeció, y al séptimo día ¡las murallas se vinieron abajo! Los caminos de Dios funcionan."
+    ],
+    [
+     "¡Parece lo más lógico! Pero Josué siguió el plan de Dios aunque pareciera extraño, y Dios les dio la victoria."
+    ]
+   ],
+   "ref": "Josué 6"
+  },
+  "6": {
+   "prompt": "Un gigante grita insultos. Todos los soldados tienen miedo. Tú solo eres un joven pastor. ¿Qué haces?",
+   "options": [
+    "Avanzar confiando en Dios",
+    "Esconderme con los soldados"
+   ],
+   "replies": [
+    [
+     "¡Así es David! Sabía que la batalla era del SEÑOR, no de las espadas ni del tamaño."
+    ],
+    [
+     "Todos los demás también se escondieron. Pero David recordó cómo Dios lo había ayudado antes, y dio un paso al frente con fe."
+    ]
+   ],
+   "ref": "1 Samuel 17:37-47"
+  },
+  "7": {
+   "prompt": "La nueva ley del rey dice: durante 30 días, ora solo al rey. ¿Qué haces?",
+   "options": [
+    "Seguir orando a Dios",
+    "Dejar de orar 30 días"
+   ],
+   "replies": [
+    [
+     "Daniel siguió orando junto a su ventana abierta. ¡Dios cerró la boca de los leones y lo protegió!"
+    ],
+    [
+     "¡Parecería más seguro! Pero Daniel confió más en Dios que en la ley del rey, y Dios lo protegió."
+    ]
+   ],
+   "ref": "Daniel 6:7-22"
+  },
+  "8": {
+   "prompt": "Eres pastor. ¡Un ángel dice que el Salvador ha nacido en Belén! Es de noche. ¿Qué haces?",
+   "options": [
+    "Ir corriendo a verlo",
+    "Esperar hasta mañana"
+   ],
+   "replies": [
+    [
+     "Los pastores fueron deprisa y encontraron al niño Jesús en un pesebre. ¡Luego se lo contaron a todos!"
+    ],
+    [
+     "¡Esperar parece sensato! Pero los pastores se apresuraron, porque esta noticia era demasiado buena para esperar."
+    ]
+   ],
+   "ref": "Lucas 2:8-17"
+  },
+  "9": {
+   "prompt": "Jesús te llama desde el agua: «¡Ven!». Las olas son altas. ¿Qué haces?",
+   "options": [
+    "Salir de la barca",
+    "Quedarme en la barca"
+   ],
+   "replies": [
+    [
+     "¡Pedro salió y caminó sobre el agua! Cuando le dio miedo, Jesús le tomó de la mano."
+    ],
+    [
+     "Casi todos los discípulos se quedaron en la barca. Pedro salió, y aun cuando empezó a hundirse, Jesús lo sostuvo."
+    ]
+   ],
+   "ref": "Mateo 14:28-31"
+  },
+  "10": {
+   "prompt": "Pedro dijo tres veces que no conocía a Jesús. Ahora Jesús resucitado se encuentra con él. ¿Qué debería hacer Jesús?",
+   "options": [
+    "Perdonar a Pedro",
+    "Elegir a otro"
+   ],
+   "replies": [
+    [
+     "Jesús perdonó a Pedro y le dio una nueva tarea: «Cuida de mis ovejas»."
+    ],
+    [
+     "Podría parecer justo. Pero Jesús le preguntó a Pedro tres veces: «¿Me amas?», y le dio un nuevo comienzo."
+    ]
+   ],
+   "ref": "Juan 21:15-17"
+  },
+  "11": {
+   "prompt": "Dios dice: Deja tu casa y ve a la tierra que yo te mostraré. No sabes adónde. ¿Vas?",
+   "options": [
+    "Hacer las maletas e ir",
+    "Quedarme donde estoy seguro"
+   ],
+   "replies": [
+    [
+     "¡Eso es fe! Abram fue sin saber adónde, y Dios bendijo al mundo a través de su familia."
+    ],
+    [
+     "Quedarse parece seguro. Pero Abram confió en la promesa de Dios y se fue, y Dios lo guio en cada paso."
+    ]
+   ],
+   "ref": "Génesis 12:1-4"
+  },
+  "12": {
+   "prompt": "Los hermanos que te vendieron vienen a pedirte comida. ¿Qué harías?",
+   "options": [
+    "Perdonarlos",
+    "Echarlos"
+   ],
+   "replies": [
+    [
+     "José los perdonó y lloró de alegría. Vio que Dios había convertido el mal en bien."
+    ],
+    [
+     "Parecería justo, ¿verdad? Pero José eligió la gracia. Les dio comida, los perdonó y los abrazó."
+    ]
+   ],
+   "ref": "Génesis 45:1-15; Génesis 50:20"
+  },
+  "13": {
+   "prompt": "Noemí te dice que vuelvas con tu familia. Ella es mayor y pobre. ¿Qué haces?",
+   "options": [
+    "Quedarme con Noemí",
+    "Volver a casa"
+   ],
+   "replies": [
+    [
+     "Eso dijo Rut: «Adonde tú vayas, iré yo». Su amor fiel fue muy bendecido."
+    ],
+    [
+     "Orfa volvió a casa, y era comprensible. Pero Rut se quedó, y Dios le dio una nueva familia con Booz."
+    ]
+   ],
+   "ref": "Rut 1:16"
+  },
+  "14": {
+   "prompt": "El pueblo no se decide entre Dios y Baal. Elías te pide que elijas. ¿Qué dices?",
+   "options": [
+    "Seguir al SEÑOR",
+    "Esperar a ver qué pasa"
+   ],
+   "replies": [
+    [
+     "¡Sí! Elías dijo: «Si el SEÑOR es Dios, síganlo». Y el fuego del cielo mostró quién es Dios."
+    ],
+    [
+     "Mucha gente también se quedó callada. Entonces Dios envió fuego del cielo, y todos gritaron: «¡El SEÑOR es Dios!»."
+    ]
+   ],
+   "ref": "1 Reyes 18:21-39"
+  },
+  "15": {
+   "prompt": "Dios dice: Ve a Nínive, una ciudad de tus enemigos, y adviérteles. ¿Qué haces?",
+   "options": [
+    "Ir a Nínive",
+    "Navegar en dirección contraria"
+   ],
+   "replies": [
+    [
+     "¡Más valiente que Jonás al principio! Dios amaba a la gente de Nínive y quería salvarla."
+    ],
+    [
+     "¡Eso es justo lo que hizo Jonás! Pero Dios envió un gran pez y le dio a Jonás una segunda oportunidad."
+    ]
+   ],
+   "ref": "Jonás 1-3"
+  },
+  "16": {
+   "prompt": "Tu pueblo está en peligro. Presentarte ante el rey sin invitación es arriesgado. ¿Qué haces?",
+   "options": [
+    "Hablar por mi pueblo",
+    "Callar y estar a salvo"
+   ],
+   "replies": [
+    [
+     "¡Valiente como Ester! Oró y ayunó, luego habló, y Dios salvó a su pueblo."
+    ],
+    [
+     "Ester también tenía miedo. Pero Mardoqueo le dijo: quizá estás aquí para un momento como este. Y ella fue."
+    ]
+   ],
+   "ref": "Ester 4:11-16"
+  },
+  "17": {
+   "prompt": "Un hombre que no puede caminar te pide dinero. No tienes nada. ¿Qué haces?",
+   "options": [
+    "Orar en el nombre de Jesús",
+    "Pedir perdón y seguir"
+   ],
+   "replies": [
+    [
+     "¡Eso hizo Pedro! El hombre se levantó de un salto, caminando y alabando a Dios."
+    ],
+    [
+     "Pedro tampoco tenía dinero. Pero dijo: «Lo que tengo te lo doy. En el nombre de Jesús, ¡camina!»."
+    ]
+   ],
+   "ref": "Hechos 3:1-10"
+  },
+  "18": {
+   "prompt": "Saulo antes luchaba contra los seguidores de Jesús. Ahora dice que cree. ¿Le das la bienvenida?",
+   "options": [
+    "Darle la bienvenida",
+    "Mantenerme lejos de él"
+   ],
+   "replies": [
+    [
+     "¡Como Bernabé! Recibió a Saulo y lo llevó a los apóstoles. Saulo llegó a ser Pablo, un gran misionero."
+    ],
+    [
+     "Al principio muchos creyentes tenían miedo de Saulo. Pero Bernabé le dio una oportunidad, y Dios usó a Pablo de una manera grandiosa."
+    ]
+   ],
+   "ref": "Hechos 9:26-28"
+  },
+  "19": {
+   "prompt": "Dios dice que tu ejército de 32 000 es demasiado grande. Solo quiere 300. ¿Qué haces?",
+   "options": [
+    "Mandar a los demás a casa",
+    "Quedarme con el gran ejército"
+   ],
+   "replies": [
+    [
+     "Gedeón obedeció. Con solo 300, ¡todos pudieron ver que la victoria venía de Dios!"
+    ],
+    [
+     "Un gran ejército parece más seguro. Pero Gedeón confió en Dios, y Dios ganó la batalla con solo 300 hombres."
+    ]
+   ],
+   "ref": "Jueces 7:2-7"
+  },
+  "20": {
+   "prompt": "Dalila no deja de preguntarte el secreto de tu fuerza. ¿Qué haces?",
+   "options": [
+    "Guardar el secreto de Dios",
+    "Contárselo todo"
+   ],
+   "replies": [
+    [
+     "¡Sabio! La fuerza de Sansón venía de Dios y de su promesa. Guardarla es guardar tu corazón."
+    ],
+    [
+     "Sansón se lo contó y perdió su fuerza. Pero oró, y Dios le dio fuerza una última vez."
+    ]
+   ],
+   "ref": "Jueces 16:15-30"
+  },
+  "21": {
+   "prompt": "Los vecinos se burlan de ti por reconstruir el muro. ¿Qué haces?",
+   "options": [
+    "Orar y seguir construyendo",
+    "Abandonar el trabajo"
+   ],
+   "replies": [
+    [
+     "Nehemías oró y siguió trabajando. ¡El muro se terminó en solo 52 días!"
+    ],
+    [
+     "¡Que se burlen de ti duele! Nehemías también lo sintió. Oró a Dios y siguió adelante, y Dios los ayudó a terminar."
+    ]
+   ],
+   "ref": "Nehemías 4:1-6; Nehemías 6:15"
+  },
+  "22": {
+   "prompt": "Un hombre herido está tirado junto al camino. Tienes prisa y es un desconocido. ¿Qué haces?",
+   "options": [
+    "Pararme a ayudarlo",
+    "Seguir caminando"
+   ],
+   "replies": [
+    [
+     "¡Ese es el buen samaritano! Jesús dijo: «Ve y haz tú lo mismo»."
+    ],
+    [
+     "El sacerdote y el levita también pasaron de largo. Pero Jesús contó esta historia para que aprendamos a amar como el samaritano."
+    ]
+   ],
+   "ref": "Lucas 10:30-37"
+  }
+ },
+ "PLACES": {
+  "ararat": "Monte Ararat",
+  "ur": "Ur",
+  "haran": "Harán",
+  "hebron": "Hebrón",
+  "bethel": "Betel",
+  "dothan": "Dotán",
+  "egypt": "Egipto (Gosén)",
+  "redsea": "Mar Rojo",
+  "sinai": "Monte Sinaí",
+  "jericho": "Jericó",
+  "jezreel": "Valle de Jezreel",
+  "gaza": "Gaza",
+  "moab": "Moab",
+  "bethlehem": "Belén",
+  "elah": "Valle de Ela",
+  "carmel": "Monte Carmelo",
+  "joppa": "Jope",
+  "nineveh": "Nínive",
+  "babylon": "Babilonia",
+  "susa": "Susa",
+  "jerusalem": "Jerusalén",
+  "nazareth": "Nazaret",
+  "capernaum": "Capernaúm",
+  "damascus": "Damasco",
+  "antioch": "Antioquía",
+  "tarsus": "Tarso",
+  "caesarea": "Cesarea",
+  "paphos": "Pafos (Chipre)"
+ }
+}

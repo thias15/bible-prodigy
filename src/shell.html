@@ -1,14 +1,14 @@
 <title>Scrolls of Light</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Nunito:wght@500;700;800;900&family=Lexend:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Nunito:wght@500;700;800;900&family=Lexend:wght@400;600;700&family=Noto+Sans:wght@500;700;800;900&display=swap">
 <style>
 /* Layout: full-screen game canvas; lapis-and-gold manuscript panels float over it */
 :root{
   --lapis:#1d2b66; --lapis-deep:#0e1534; --lapis-mid:#2b3d8f; --lapis-line:#3a4ea8;
   --gold:#e8b94a; --gold-soft:#f6de98; --vellum:#f6ecd4; --muted:#aab4da;
   --rose:#e2604a; --leaf:#72c46a; --sky:#7cc4ff;
-  --f-display:'Uncial Antiqua', 'Papyrus', Georgia, serif;
-  --f-body:'Nunito', 'Trebuchet MS', system-ui, sans-serif;
+  --f-display:'Uncial Antiqua', Georgia, 'Noto Serif', serif;
+  --f-body:'Nunito', 'Noto Sans', 'Trebuchet MS', system-ui, sans-serif;
   color-scheme: dark;
 }
 html,body{height:100%}
@@ -175,7 +175,8 @@ input[type=range]{width:100%;accent-color:var(--gold)}
 .sw button.on{border-color:var(--gold-soft);box-shadow:0 0 0 2px var(--gold)}
 .sw.txt button{width:auto;border-radius:10px;padding:0 10px;background:#141d48;font-weight:800;font-size:.85rem;height:34px}
 .sw.txt button.on{background:#2b3d8f}
-@media (max-width:620px){#create{grid-template-columns:1fr}#cPrev{margin:0 auto}}
+@media (max-width:620px){#create{grid-template-columns:1fr}#cPrev{margin:0 auto}#title:has(#create:not([hidden])) #tLang{display:none}}
+#tLang{justify-content:flex-end;max-width:calc(100vw - 32px)}
 
 /* ---- battle ---- */
 #battle{position:absolute;inset:0;z-index:25;display:flex;flex-direction:column;background:linear-gradient(var(--bsky,#9fd8ff) 0%,var(--bsky,#9fd8ff) 45%,var(--bground,#6dbf57) 45%,var(--bground2,#5aa848) 100%)}
@@ -338,7 +339,7 @@ input[type=range]{width:100%;accent-color:var(--gold)}
   <div id="modal" hidden><div class="panel"><header><h2 id="mT"></h2><button class="x" id="mX" aria-label="Close">✕</button></header><div class="body" id="mB"></div></div></div>
 
   <div id="title">
-    <div id="tLang" class="sw txt"><button data-lang="en">English</button><button data-lang="de">Deutsch</button></div>
+    <div id="tLang" class="sw txt langsw"><button data-lang="en" lang="en">English</button><button data-lang="de" lang="de">Deutsch</button><button data-lang="es" lang="es">Español</button><button data-lang="el" lang="el">Ελληνικά</button></div>
     <div id="tMain">
       <div class="kicker" data-t="title.kicker">A Bible adventure</div>
       <h1 data-t="title.h1">Scrolls<br>of Light</h1>
