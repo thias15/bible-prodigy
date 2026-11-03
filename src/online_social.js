@@ -64,9 +64,12 @@ if(ON.avail) ON.social=(()=>{
   function stickerUI(f,thanks){ if(!f) return; openModal(t('on.sticker'),`<p>${esc(t('on.stickerP',ON.nmText(f.p.nm)))}</p><div class="cards">${STK.map((e,i)=>`<button class="card" data-k="${i}"><div class="emo">${e}</div><small>${esc(t('stk.'+i))}</small></button>`).join('')}</div>`,
     m=>m.querySelectorAll('[data-k]').forEach(b=>b.onclick=async()=>{ try{ await send(f.id,'',+b.dataset.k); toast(t('on.stkSent')); }catch(e){ toast(/exists|permission/i.test(String(e.code||e.message))?t('on.stkLimit'):ON.errText(e)); } openPals(thanks?'g':'f'); })); }
   async function send(to,g,k){ const C=await ctx(), pid=me(), d=day();
-    if(g){ return C.tx(async tr=>{ const id=pid+'_'+d; if(await tr.get('players/'+to+'/inbox/'+id)) throw Object.assign(new Error('exists'),{code:'exists'}); tr.set('players/'+to+'/inbox/'+id,{from:pid,nm:S.cloud.nm,g,k:k>=0?k:-1,d,at:NET.now}); }); }
-    for(let n=0;n<3;n++){ const id=pid+'_'+d+'_s'+n; if(await C.get('players/'+to+'/inbox/'+id).catch(()=>null)) continue; return C.set('players/'+to+'/inbox/'+id,{from:pid,nm:S.cloud.nm,g:'',k,d,at:NET.now}); }
-    throw Object.assign(new Error('exists'),{code:'exists'}); }
+    // the rules only allow creating these documents, so writing one that already exists is refused
+    if(g) return C.set('players/'+to+'/inbox/'+pid+'_'+d,{from:pid,nm:S.cloud.nm,g,k:k>=0?k:-1,d,at:NET.now});
+    return sendSticker(to,{k}); }
+  async function sendSticker(to,extra){ const C=await ctx(), pid=me(), d=day(); S.stk=S.stk||{}; if(S.stk.d!==d) S.stk={d}; let n=S.stk[to]||0, last=null;
+    for(;n<3;n++){ try{ await C.set('players/'+to+'/inbox/'+pid+'_'+d+'_s'+n,Object.assign({from:pid,nm:S.cloud.nm,g:'',d,at:NET.now},extra)); S.stk[to]=n+1; return; }catch(e){ last=e; } }
+    S.stk[to]=3; throw Object.assign(new Error('exists'),{code:'exists'}); }
   function tabGifts(box){ const list=inbox.slice().sort((a,b)=>(b.data.at||0)-(a.data.at||0));
     box.innerHTML=list.length?list.map(x=>{ const d=x.data; const G=GIFTS.find(g=>g.id===d.g); return `<div class="row"><div class="big">${G?G.e:(STK[d.k]||'💌')}</div><div class="grow"><h4>${esc(ON.nmText(d.nm))}</h4><p>${G?esc(giftName(d.g)):''}${d.k>=0?(G?' · ':'')+STK[d.k]+' '+esc(t('stk.'+d.k)):''}${d.h?' · 🏠':''}</p></div><button class="btn sm gold" data-open="${x.id}">${esc(G?t('on.open'):t('on.ok'))}</button></div>`; }).join('')
       :`<p>${esc(t('on.noGifts'))}</p>`;
@@ -123,7 +126,7 @@ if(ON.avail) ON.social=(()=>{
   let visiting=null;
   const FURN_OK=id=>typeof id==='string'&&id.length<24;
   function stickerHouse(f){ const box=document.createElement('div'); box.className='stkpop'; box.innerHTML=STK.map((e,i)=>`<button data-k="${i}">${e}</button>`).join(''); document.getElementById('hbar').appendChild(box);
-    box.querySelectorAll('[data-k]').forEach(b=>b.onclick=async()=>{ box.remove(); try{ const C=await ctx(), pid=me(), d=day(); for(let n=0;n<3;n++){ const id=pid+'_'+d+'_s'+n; if(await C.get('players/'+f.id+'/inbox/'+id).catch(()=>null)) continue; await C.set('players/'+f.id+'/inbox/'+id,{from:pid,nm:S.cloud.nm,g:'',k:+b.dataset.k,h:1,d,at:NET.now}); toast(t('on.stkSent')); return; } toast(t('on.stkLimit')); }catch(e){ toast(ON.errText(e)); } }); }
+    box.querySelectorAll('[data-k]').forEach(b=>b.onclick=async()=>{ box.remove(); try{ await sendSticker(f.id,{k:+b.dataset.k,h:1}); toast(t('on.stkSent')); }catch(e){ toast(/exists|permission/i.test(String(e.code||e.message))?t('on.stkLimit'):ON.errText(e)); } }); }
   const _leave=leaveHouse;
   leaveHouse=function(silent){ _leave(silent); if(window.HOUSE_VIEW){ window.HOUSE_VIEW=null; visiting=null; document.body.classList.remove('visiting'); const hb=document.querySelector('#hbar .hhead b'); if(hb&&hb.dataset.own) hb.textContent=hb.dataset.own; const sb=document.getElementById('hSticker'); if(sb) sb.hidden=true; } };
   const bp=document.getElementById('bPals'); if(bp) bp.onclick=()=>{ ac(); if(modalOpen||dialogOpen) return; openPals(); };
