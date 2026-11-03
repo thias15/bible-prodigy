@@ -71,6 +71,11 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
 - **Wardrobe:** hair, skin and robe colors plus props to buy (headband, flower crown, olive
   wreath, shepherd staff, lantern, scroll, satchel, cape, bedroll). The Crown of Life is earned
   at the end of the journey.
+- **Online (optional, off until a grown-up turns it on):** cloud saves that work on any device,
+  friends added by friend code, a daily gift and stickers for each friend, a weekly friends
+  leaderboard, groups with a shared weekly challenge (e.g. a Sunday-school class), visits to a
+  friend's house, and live play: a quiz duel (same 10 questions) or a team boss battle. There is
+  no chat and no typed text between players.
 - Works with keyboard (arrows/WASD + Space), mouse (click to walk, wheel to zoom) and touch
   (drag anywhere for a joystick, tap to walk or talk, pinch to zoom).
 
@@ -84,7 +89,16 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
   loads it on any device. A copyable save code works too. The game reminds players to
   back up after finishing a gate.
 - Saves can be lost if someone clears browsing data or plays in a private window, so backups
-  matter. (True cloud saves would need a server and accounts, which this free static version avoids.)
+  matter, or turn on Online.
+- **Online saves** (Settings → Online, grown-up check): progress is saved on the device first and
+  then online. Before a newer online save replaces the one on the device, the game keeps a copy
+  (Settings → Online → earlier saves). If one player was played on two devices without internet,
+  the game asks which save to keep and keeps the other as a backup.
+- **Playing on another device:** each player gets a name like "Star Lamb 47" and can get a login
+  card (name + 4 secret pictures), a continue code / QR code, or a grown-up can sign in with
+  Google and bring the family's players to a new device ("I already play" on the title screen).
+- Privacy: see [privacy.html](privacy.html). The owner dashboard is at `admin.html` (owner's Google
+  account only).
 
 ## Hosting on GitHub Pages (free)
 
@@ -114,7 +128,14 @@ No build step, server or accounts needed. On GitHub Pages the game can be instal
 | `src/r3d.js` | 3D view: world scenes, 3D battles, the house editor, thumbnails |
 | `src/shell.html` | Page layout and styles |
 | `src/lang/` | Spanish (`es/`) and Greek (`el/`) translations as JSON, plus `GLOSSARY.md` (names and terms) and the tools that check and pack them |
-| `src/build.py` | Combines everything into `index.html` (needs Python 3 and Node.js) |
+| `src/online_net.js` | Small data layer over Firebase (or the test server in `src/test/mockfb.js`) |
+| `src/online.js` | Online accounts, cloud saves, login cards, continue codes, Settings → Online |
+| `src/online_social.js` | Friends, gifts, stickers, leaderboards, groups, house visits |
+| `src/online_live.js` | Quiz duel and team boss |
+| `src/online_str.js` | English text for the online features (other languages in `src/lang/<l>/O.json`) |
+| `src/fb/` | Firebase config, security rules (`firestore.rules`) and the bundled SDK (`fb.js`, rebuilt with `npx esbuild entry.js --bundle --minify --format=iife --outfile=fb.js`) |
+| `src/admin.template.html`, `src/privacy.html` | Owner dashboard and privacy page |
+| `src/build.py` | Combines everything into `index.html`, `beta/index.html` (test copy with separate storage), `admin.html` and `privacy.html` (needs Python 3 and Node.js) |
 
 To add a world, add it to `CH` (and `DE.CH`) in `src/worlds3.js` and put its id into `ORDER` in `src/worlds_order.js`
 where it belongs in the story. Existing saves pick up new worlds automatically.
@@ -140,5 +161,6 @@ Then run `python3 src/build.py` and copy `src/dist/index.html` and `src/dist/sw.
 
 ## Credits
 
+- Online features use Google Firebase (Authentication and Cloud Firestore) on the free Spark plan.
 - 3D animals (cow, ox, deer, horse, fox, frog, donkey, wolf, dog, snake, boat): [Quaternius](https://quaternius.com), CC0.
 - [three.js](https://threejs.org) r128, MIT license.

@@ -125,7 +125,7 @@ const ON=(()=>{
   api.pull=pull;
   function adopt(st,r,why){ backupLocal(st,why||'cloud'); let n; try{ n=JSON.parse(r.data); }catch(e){ return; } n.id=st.id; n.cloud=Object.assign({},st.cloud,{rev:r.rev,h:hashOf(n),at:Date.now()});
     lsSet(SKEY(n.id),JSON.stringify(n)); const p=getProfiles(); const it=p.list.find(x=>x.id===n.id); if(it) Object.assign(it,summary(n)); setProfiles(p);
-    if(S===st){ const wasWorld=mode==='world'; S=n; if(wasWorld){ if(modalOpen) closeModal(); startProfile(); toast(t('on.gotNewer')); } } }
+    if(S===st){ const wasWorld=mode==='world'; S=n; if(wasWorld){ if(modalOpen) closeModal(); startProfile(); } toast(t('on.gotNewer')); } }
   function remoteNewer(st,r){ let o=null; try{ o=JSON.parse(r.data); }catch(e){}
     if(!o){ return; } const card=(x,when)=>`<div class="card"><b>${esc(t('title.lv',x.level||1,frags(x),NCH))}</b><small>🪙 ${x.coins||0} · ✔ ${x.correct||0}</small><small>${esc(t('on.lastPlayed',new Date(when||0).toLocaleString(LC[LANG].loc)))}</small></div>`;
     openModal(t('on.confT'),`<p>${esc(t('on.confP'))}</p><div class="cards"><div><div class="sect">${esc(t('on.confHere'))}</div>${card(st,st.savedAt)}<button class="btn gold" id="cfL">${esc(t('on.keepThis'))}</button></div>
@@ -173,7 +173,7 @@ const ON=(()=>{
   async function installPlayer(C,pid,ctxName){ const s=await C.getFresh('saves/'+pid); if(!s) throw new Error('missing'); const p=await C.get('players/'+pid);
     const local=getProfiles().list.map(x=>loadProfile(x.id)).find(x=>x&&x.cloud&&x.cloud.pid===pid);
     D.on=true; api.on=true; saveD();
-    if(local){ S=local; S.cloud.ctx=ctxName; lsSet(SKEY(S.id),JSON.stringify(S)); if(S.lang) applyLang(S.lang); const r=await pull(S,true); if(r!=='adopted') startProfile(); return; }
+    if(local){ S=local; S.cloud.ctx=ctxName; lsSet(SKEY(S.id),JSON.stringify(S)); if(S.lang) applyLang(S.lang); await pull(S,true); if(mode==='title') startProfile(); return; }
     if(profilesFull()){ toast(t('on.full')); return; }
     const o=JSON.parse(s.data); const id='p'+Date.now(); o.id=id; o.cloud={ctx:ctxName,pid,fid:s.fid,rev:s.rev,h:hashOf(o),at:Date.now(),nm:p&&p.nm,code:p&&p.code};
     lsSet(SKEY(id),s.data); lsSet(SKEY(id),JSON.stringify(o)); const pr=getProfiles(); pr.list.push(summary(o)); pr.last=id; setProfiles(pr);
