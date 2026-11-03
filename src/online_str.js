@@ -41,5 +41,9 @@ Object.assign(STR.en,{
 'on.busy':'Finish what you are doing first.','on.coopNeed':'You both need to finish at least one world first.','on.waitFor':'Waiting for {0}…','on.cancel':'Cancel','on.noAnswer':'No answer. Try again later!','on.declined':'{0} can’t play right now.',
 'on.invDuel':'{0} wants a quiz duel!','on.invCoop':'{0} wants to fight a boss together!','on.inviteGone':'That invite has ended.',
 'on.you':'You','on.duelGo':'Quiz duel! Same 10 questions – go!','on.duelEnd':'Duel over','on.tie':'It’s a tie!','on.youWin':'You win!','on.theyWin':'{0} wins!','on.duelCoins':'+{0} shekels',
-'on.coopGo':'Team boss with {0}!','on.team':'Team with {0}','on.teamWin':'Your team beat the boss! Tap a power.','on.coopBonus':'Team bonus: +{0} shekels!'
+'on.coopGo':'Team boss with {0}!','on.team':'Team with {0}','on.teamWin':'Your team beat the boss! Tap a power.','on.coopBonus':'Team bonus: +{0} shekels!',
+'on.askT':'Play online?','on.askP':'Keep your journey safe and play with friends. A grown-up needs to say yes.',
+'on.askB1':'Your progress is saved online, not only on this device','on.askB2':'Keep playing on a tablet, phone or computer','on.askB3':'Add friends, send gifts and play quiz duels together',
+'on.askYes':'Ask a grown-up','on.askNo':'Not now','on.askLater':'You can turn this on later in Settings → Online.',
+'on.cardNowT':'Make a login card?','on.cardNowP':'With a login card, {0} can sign in on any device with 4 secret pictures. Make one now?','on.later':'Later'
 });

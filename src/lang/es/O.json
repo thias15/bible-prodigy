@@ -251,5 +251,16 @@
  "on.coopGo": "¡Jefe en equipo con {0}!",
  "on.team": "Equipo con {0}",
  "on.teamWin": "¡Su equipo venció al jefe! Toca un poder.",
- "on.coopBonus": "Bono de equipo: ¡+{0} siclos!"
+ "on.coopBonus": "Bono de equipo: ¡+{0} siclos!",
+ "on.askT": "¿Jugar en línea?",
+ "on.askP": "Mantén tu viaje a salvo y juega con amigos. Una persona adulta tiene que decir que sí.",
+ "on.askB1": "Tu progreso se guarda en línea, no solo en este dispositivo",
+ "on.askB2": "Sigue jugando en una tableta, un teléfono o una computadora",
+ "on.askB3": "Agrega amigos, envía regalos y jueguen duelos de preguntas",
+ "on.askYes": "Pedir a un adulto",
+ "on.askNo": "Ahora no",
+ "on.askLater": "Puedes activarlo más tarde en Ajustes → En línea.",
+ "on.cardNowT": "¿Crear una tarjeta de acceso?",
+ "on.cardNowP": "Con una tarjeta de acceso, {0} puede entrar en cualquier dispositivo con 4 dibujos secretos. ¿Crear una ahora?",
+ "on.later": "Más tarde"
 }

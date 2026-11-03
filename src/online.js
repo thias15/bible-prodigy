@@ -140,6 +140,20 @@ const ON=(()=>{
       else { updOnline(); if(after) after(); else openOnline(); } }catch(e){ toast(errText(e)); } }
   api.enableFor=enableFor;
 
+  /* ---------- one-time invitation (new players after the intro, existing players once) ---------- */
+  function invite(){ const st=S; if(!st||st.cloud||st.onAsk) return;
+    const show=()=>{ if(S!==st||st.cloud) return; if(busy()){ setTimeout(show,1500); return; } st.onAsk=1; save(); askUI(st); };
+    setTimeout(show,1200); }
+  function askUI(st){ openModal(t('on.askT'),`<div class="askon"><div class="big">☁️ 🤝 🎁</div><p>${esc(t('on.askP'))}</p>
+      <ul><li>☁️ ${esc(t('on.askB1'))}</li><li>📲 ${esc(t('on.askB2'))}</li><li>🎁 ${esc(t('on.askB3'))}</li></ul>
+      <p style="color:var(--muted);font-size:.85rem">${esc(t('on.privacyLine'))} <a href="privacy.html" target="_blank" rel="noopener">${esc(t('on.privacy'))}</a></p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn gold" id="akY">${esc(t('on.askYes'))}</button><button class="btn ghost" id="akN">${esc(t('on.askNo'))}</button></div></div>`,
+    m=>{ m.querySelector('#akN').onclick=()=>{ closeModal(); toast(t('on.askLater')); };
+      m.querySelector('#akY').onclick=()=>gate(()=>enableFor(st,()=>cardNow(st)),()=>askUI(st)); }); }
+  function cardNow(st){ openModal(t('on.cardNowT'),`<p>${esc(t('on.cardNowP',nmText(st.cloud.nm)))}</p><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn gold" id="cnY">🪪 ${esc(t('on.cardT'))}</button><button class="btn ghost" id="cnN">${esc(t('on.later'))}</button></div>`,
+    m=>{ m.querySelector('#cnY').onclick=()=>makeCard(st); m.querySelector('#cnN').onclick=()=>{ closeModal(); toast(t('on.askLater')); }; }); }
+  api.invite=invite;
+
   /* ---------- login card ---------- */
   async function makeCard(st){ const c=st.cloud; const C=await ctxFor(st); if(!C) return toast(t('on.errPerm'));
     picsUI(t('on.cardT'),t('on.cardPicsP'),async(p,fail)=>{ try{
@@ -268,7 +282,7 @@ const ON=(()=>{
     await C.del('players/'+pid); }
 
   /* ---------- hooks into the game ---------- */
-  api.onStart=()=>{ if(api.social) api.social.badge(); if(!D.on||!S||!S.cloud) return; setTimeout(async()=>{ const st=S; const r=await pull(st,true); if(r==='same'||r==='missing') upload(r==='missing'); if(api.social) api.social.start(); },800); };
+  api.onStart=()=>{ if(api.social) api.social.badge(); if(S&&!S.cloud&&!S.onAsk) invite(); if(!D.on||!S||!S.cloud) return; setTimeout(async()=>{ const st=S; const r=await pull(st,true); if(r==='same'||r==='missing') upload(r==='missing'); if(api.social) api.social.start(); },800); };
   document.addEventListener('visibilitychange',()=>{ if(!D.on||!S||!S.cloud) return; if(document.hidden){ clearTimeout(upT); upT=null; upload(); } else if(!busy()) pull(S,true); });
   setInterval(()=>{ if(D.on&&S&&S.cloud&&!document.hidden&&Date.now()-hbT>120000) upload(); },30000);
   { const b=$('#tOnline'); if(b){ b.hidden=false; b.onclick=()=>{ ac(); alreadyPlay(); }; } }

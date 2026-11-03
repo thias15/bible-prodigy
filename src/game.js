@@ -1791,7 +1791,7 @@ $('#cBack').onclick=()=>{ $('#create').hidden=true; $('#tMain').hidden=false; };
 $('#cGo').onclick=()=>{ ac(); const nm=($('#cName').value||'').trim().slice(0,14)||t('create.namePh');
   S=newState(nm,Object.assign({},draft.look),draft.grade); migrate(); if(S.style==='junior') S.autoRead=true; startProfileA(); $('#title').hidden=true; mode='world'; askPersist();
   enterMap('hub'); showWorldUI(); save();
-  talk(LQ.STORY.map(x=>L(NARR(),x)).concat([L(NARR(),t('narr.welcome',nm))]),()=>save()); };
+  talk(LQ.STORY.map(x=>L(NARR(),x)).concat([L(NARR(),t('narr.welcome',nm))]),()=>{ save(); if(typeof ON!=='undefined'&&ON.invite) ON.invite(); }); };
 document.querySelectorAll('[data-lang]').forEach(b=>{ if(!LANGS.includes(b.dataset.lang)) b.remove(); else b.onclick=()=>{ ac(); setLanguage(b.dataset.lang); }; });
 function showWorldUI(){ $('#hud').hidden=false; labelButtons(); updHUD(); showHint(); }
 document.addEventListener('visibilitychange',()=>{ if(document.hidden) save(); });

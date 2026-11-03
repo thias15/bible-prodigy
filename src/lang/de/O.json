@@ -251,5 +251,16 @@
  "on.coopGo": "Team-Boss mit {0}!",
  "on.team": "Team mit {0}",
  "on.teamWin": "Euer Team hat den Boss besiegt! Tippe auf eine Kraft.",
- "on.coopBonus": "Team-Bonus: +{0} Schekel!"
+ "on.coopBonus": "Team-Bonus: +{0} Schekel!",
+ "on.askT": "Online spielen?",
+ "on.askP": "Halte deine Reise sicher und spiel mit Freunden. Ein Erwachsener muss Ja sagen.",
+ "on.askB1": "Dein Fortschritt wird online gespeichert, nicht nur auf diesem Gerät",
+ "on.askB2": "Spiel auf Tablet, Handy oder Computer weiter",
+ "on.askB3": "Füge Freunde hinzu, verschicke Geschenke und spielt Quiz-Duelle",
+ "on.askYes": "Einen Erwachsenen fragen",
+ "on.askNo": "Jetzt nicht",
+ "on.askLater": "Du kannst das später unter Einstellungen → Online einschalten.",
+ "on.cardNowT": "Anmeldekarte erstellen?",
+ "on.cardNowP": "Mit einer Anmeldekarte kann sich {0} auf jedem Gerät mit 4 geheimen Bildern anmelden. Jetzt eine erstellen?",
+ "on.later": "Später"
 }
