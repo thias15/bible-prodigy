@@ -29,6 +29,7 @@ const ON=(()=>{
   function hashStr(s){ let h=2166136261>>>0; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619)>>>0; } return h.toString(36)+'.'+s.length; }
   function snapshot(st){ const o=Object.assign({},st); delete o.cloud; return JSON.stringify(o); }
   const VOL=['cloud','savedAt','px','py','map','log','lastBackup','hp','gifted'];
+  function progress(st){ return JSON.stringify([st.level,st.xp,st.coins,st.answered,st.correct,ORDER.map(i=>st.chs&&st.chs[i]?[st.chs[i].stage,st.chs[i].side]:0),st.items,Object.keys(st.comps||{}).sort().map(k=>[k,st.comps[k].lvl]),st.house&&[(st.house.items||[]).length,st.house.inv,st.house.got],st.vm,st.armor,st.look,st.name]); }
   function hashOf(st){ const o=Object.assign({},st); VOL.forEach(k=>delete o[k]); return hashStr(JSON.stringify(o)); }
   const frags=st=>ORDER.filter(i=>st.chs&&st.chs[i]&&st.chs[i].stage>=4).length;
   function busy(){ return !S||mode!=='world'||modalOpen||dialogOpen||qOpen; }
@@ -102,7 +103,7 @@ const ON=(()=>{
     if(!force&&h===c.h&&Date.now()-hbT<120000) return;
     upBusy=true; try{ const C=await ctxFor(st); if(!C) return;
       if(h!==c.h){ if(data.length>900000){ setStatus('big'); return; }
-        const r=await C.tx(async tr=>{ const cur=await tr.get('saves/'+c.pid); if(cur&&cur.rev!==c.rev&&!force) return {conflict:cur};
+        const r=await C.tx(async tr=>{ const cur=await tr.get('saves/'+c.pid); if(cur&&cur.rev!==c.rev&&!force){ let o=null; try{ o=JSON.parse(cur.data); }catch(e){} if(!(o&&progress(o)===progress(st))) return {conflict:cur}; }
           const rev=(cur?cur.rev:c.rev)+1; tr.set('saves/'+c.pid,{fid:c.fid,data,rev,at:NET.now,dev:D.dev}); return {rev}; });
         if(r&&r.conflict){ if(S===st) remoteNewer(st,r.conflict); return; }
         c.rev=r.rev; c.h=h; c.at=Date.now(); lsSet(SKEY(st.id),JSON.stringify(st)); }
@@ -117,7 +118,9 @@ const ON=(()=>{
   function statusText(){ if(!S||!S.cloud) return ''; if(status.k==='err') return t('on.stErr'); if(status.k==='big') return t('on.stBig'); const at=S.cloud.at; if(!at) return t('on.stNever'); const m=Math.round((Date.now()-at)/60000); return m<1?t('on.stNow'):t('on.stMin',m); }
   async function pull(st,quiet){ if(!D.on||!st||!st.cloud||pulling) return 'skip'; pulling=true; try{ const C=await ctxFor(st); if(!C) return 'nologin';
       const r=await C.getFresh('saves/'+st.cloud.pid); if(!r){ return 'missing'; }
-      if(r.rev>st.cloud.rev){ const mine=hashOf(st)!==st.cloud.h; if(!mine){ adopt(st,r,'cloud'); return 'adopted'; } remoteNewer(st,r); return 'conflict'; }
+      if(r.rev>st.cloud.rev){ const mine=hashOf(st)!==st.cloud.h; if(!mine){ adopt(st,r,'cloud'); return 'adopted'; }
+        let o=null; try{ o=JSON.parse(r.data); }catch(e){} if(o&&progress(o)===progress(st)){ st.cloud.rev=r.rev; st.cloud.h=''; lsSet(SKEY(st.id),JSON.stringify(st)); upload(); return 'same'; }
+        remoteNewer(st,r); return 'conflict'; }
       return 'same'; }catch(e){ if(!quiet) setStatus('err',e); return 'err'; } finally{ pulling=false; } }
   api.pull=pull;
   function adopt(st,r,why){ backupLocal(st,why||'cloud'); let n; try{ n=JSON.parse(r.data); }catch(e){ return; } n.id=st.id; n.cloud=Object.assign({},st.cloud,{rev:r.rev,h:hashOf(n),at:Date.now()});
