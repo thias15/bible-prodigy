@@ -8,7 +8,17 @@ game = rd('game.js').replace('/*__R3D__*/', r3)
 import subprocess
 if (d / 'lang' / 'pack.js').exists():
     subprocess.run(['node', str(d / 'lang' / 'pack.js')], check=True)
-out = shell.replace('/*__DATA__*/', rd('data.js')).replace('/*__I18N__*/', rd('i18n.js')).replace('/*__W2__*/', '\n'.join(rd(f) for f in ['worlds2.js','worlds3.js','companions.js','quiz_extra.js','minigames.js','worlds_order.js','lang/out/lang_es.js','lang/out/lang_el.js'] if (d / f).exists())).replace('/*__GAME__*/', game)
+import json as _j
+# online-feature text for other languages (lang/<l>/O.json)
+for L in ['de','es','el']:
+    f = d / 'lang' / L / 'O.json'
+    o = d / 'lang' / 'out' / ('online_' + L + '.js')
+    (d / 'lang' / 'out').mkdir(exist_ok=True)
+    if f.exists(): o.write_text('Object.assign(STR.' + L + ',' + _j.dumps(_j.loads(f.read_text()), ensure_ascii=False) + ');\n')
+    elif o.exists(): o.unlink()
+W2 = ['worlds2.js','worlds3.js','companions.js','quiz_extra.js','minigames.js','worlds_order.js','lang/out/lang_es.js','lang/out/lang_el.js','online_str.js','lang/out/online_de.js','lang/out/online_es.js','lang/out/online_el.js']
+ONLINE = '\n'.join(rd(f) for f in ['online_net.js','online.js','online_social.js','online_live.js'])
+out = shell.replace('/*__DATA__*/', rd('data.js')).replace('/*__I18N__*/', rd('i18n.js')).replace('/*__W2__*/', '\n'.join(rd(f) for f in W2 if (d / f).exists())).replace('/*__GAME__*/', game.replace('/*__ONLINE__*/', ONLINE))
 (d / 'dist').mkdir(exist_ok=True)
 # artifact version (no doctype; skeleton added at publish); three.js from cdnjs
 (d / 'dist' / 'scrolls-of-light.html').write_text(out.replace("MODEL_FMT='glb'","MODEL_FMT='b64'"))
@@ -30,5 +40,28 @@ standalone = standalone.replace('<title>Scrolls of Light</title>', '<title>Scrol
 standalone = standalone.replace('</body>', "<script>if('serviceWorker' in navigator&&location.protocol.startsWith('http'))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>\n</body>", 1)
 sw = (d / 'sw.template.js').read_text().replace('__VER__', ver)
 (d / 'dist' / 'sw.js').write_text(sw)
-(d / 'dist' / 'index.html').write_text(standalone)
+FBCONF = (d / 'fb' / 'config.json').read_text().strip()
+online_cfg = lambda extra: '<script>window.FBCONF=' + FBCONF + ';window.FBJS="fb.js";' + extra + '</script>\n'
+def with_cfg(html, cfg):
+    i = html.index('<div id="game">')
+    return html[:i] + cfg + html[i:]
+(d / 'dist' / 'index.html').write_text(with_cfg(standalone, online_cfg('')))
+import shutil
+shutil.copy(d / 'fb' / 'fb.js', d / 'dist' / 'fb.js')
+# beta test page: same database, separate local storage, no offline cache, assets from the main folder
+beta = with_cfg(standalone, online_cfg('window.FBPFX="beta-";'))
+beta = beta.replace("'sol.", "'solb.").replace('<head>\n', '<head>\n<base href="../">\n', 1)
+beta = beta.replace("<script>if('serviceWorker' in navigator&&location.protocol.startsWith('http'))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>\n", '')
+beta = beta.replace('<title>Scrolls of Light</title>', '<title>Scrolls of Light (beta)</title>', 1)
+(d / 'dist' / 'beta').mkdir(exist_ok=True)
+(d / 'dist' / 'beta' / 'index.html').write_text(beta)
+# automated-test page: talks to the local mock server instead of Firebase
+mock = with_cfg(standalone, '<script>window.FBMOCK="http://127.0.0.1:8787";</script>\n').replace("<script>if('serviceWorker' in navigator&&location.protocol.startsWith('http'))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>\n", '')
+(d / 'dist' / 'test.html').write_text(mock)
 print('ok', len(out))
+
+# owner dashboard + privacy page
+adm = rd('admin.template.html').replace('/*__NET__*/', rd('online_net.js')).replace('/*__STR__*/', rd('online_str.js'))
+(d / 'dist' / 'admin.html').write_text(adm.replace('/*__CFG__*/', 'window.FBCONF=' + FBCONF + ';window.FBJS="fb.js";'))
+(d / 'dist' / 'admin_test.html').write_text(adm.replace('/*__CFG__*/', 'window.FBMOCK="http://127.0.0.1:8787";'))
+shutil.copy(d / 'privacy.html', d / 'dist' / 'privacy.html')

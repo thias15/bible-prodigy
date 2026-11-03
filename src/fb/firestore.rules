@@ -1,0 +1,143 @@
+rules_version = '2';
+// Scrolls of Light — who may read and write what.
+// Families own players. A device or login has a users/{uid} doc that says which family it
+// belongs to and whether it may act for the whole family ('all') or for one player ('kid').
+// Nothing stored here is free text typed by a child: names, stickers, gifts and groups are ids.
+service cloud.firestore {
+  match /databases/{db}/documents {
+    function signedIn() { return request.auth != null; }
+    function isAdmin() { return signedIn() && request.auth.token.email == 'thias28@gmail.com' && request.auth.token.email_verified == true; }
+    function U() { return /databases/$(db)/documents/users/$(request.auth.uid); }
+    function hasUser() { return signedIn() && exists(U()); }
+    function me() { return get(U()).data; }
+    function fam(fid) { return /databases/$(db)/documents/families/$(fid); }
+    function player(pid) { return /databases/$(db)/documents/players/$(pid); }
+    function canFam(fid) { return hasUser() && me().fid == fid && me().role == 'all'; }
+    function canPid(pid, fid) { return hasUser() && me().fid == fid && (me().role == 'all' || me().get('pid', '') == pid); }
+    function canAct(pid) { return canPid(pid, get(player(pid)).data.fid); }
+    function canActAfter(pid) { return hasUser() && getAfter(player(pid)).data.fid == me().fid && me().role == 'all'; }
+    function friends(pid, other) { return get(/databases/$(db)/documents/players/$(pid)/friends/$(other)).data.s == 'friends'; }
+    function onlyKeys(ks) { return request.resource.data.keys().hasOnly(ks); }
+    function joinOk(newFid) { return get(fam(newFid)).data.get('join', {}).get(request.auth.uid, false) == true; }
+    function sameOrJoin(f) { return request.resource.data.fid == f || joinOk(request.resource.data.fid); }
+
+    match /users/{uid} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow delete: if signedIn() && request.auth.uid == uid;
+      allow create, update: if signedIn() && request.auth.uid == uid && onlyKeys(['fid', 'role', 'pid', 'via']) && (
+        (request.resource.data.role == 'all' && getAfter(fam(request.resource.data.fid)).data.owner == uid)
+        || (request.resource.data.role == 'kid' && !('via' in request.resource.data) && get(fam(request.resource.data.fid)).data.get('cards', {}).get(uid, '') == request.resource.data.pid)
+        || (request.resource.data.role == 'kid' && 'via' in request.resource.data
+            && get(/databases/$(db)/documents/xfer/$(request.resource.data.via)).data.fid == request.resource.data.fid
+            && get(/databases/$(db)/documents/xfer/$(request.resource.data.via)).data.pid == request.resource.data.pid
+            && get(/databases/$(db)/documents/xfer/$(request.resource.data.via)).data.exp > request.time.toMillis()));
+    }
+
+    match /families/{fid} {
+      allow read: if (hasUser() && me().fid == fid) || isAdmin();
+      allow create: if signedIn() && request.resource.data.owner == request.auth.uid && onlyKeys(['owner', 'created', 'gname']);
+      allow update: if canFam(fid) && request.resource.data.owner == resource.data.owner && onlyKeys(['owner', 'created', 'gname', 'kids', 'cards', 'join']);
+      allow delete: if canFam(fid);
+      match /cards/{pid} {
+        allow read, write: if canFam(fid);
+      }
+    }
+
+    match /players/{pid} {
+      allow get: if signedIn();
+      allow list: if isAdmin() || (hasUser() && resource.data.fid == me().fid);
+      allow create: if canFam(request.resource.data.fid) && onlyKeys(['fid', 'code', 'nm', 'look', 'lvl', 'frags', 'comp', 'lang', 'gr', 'wk', 'on', 'house'])
+        && request.resource.data.nm is list && request.resource.data.nm.size() == 3;
+      allow update: if canPid(pid, resource.data.fid) && sameOrJoin(resource.data.fid) && request.resource.data.code == resource.data.code
+        && request.resource.data.nm == resource.data.nm
+        && onlyKeys(['fid', 'code', 'nm', 'look', 'lvl', 'frags', 'comp', 'lang', 'gr', 'wk', 'on', 'house'])
+        && request.resource.data.get('house', []).size() <= 60 && request.resource.data.get('look', {}).size() <= 16;
+      allow delete: if canPid(pid, resource.data.fid) || isAdmin();
+
+      match /friends/{other} {
+        allow read: if canAct(pid);
+        allow create: if onlyKeys(['s', 'at']) && (
+          (canAct(pid) && request.resource.data.s == 'pending') || (canAct(other) && request.resource.data.s == 'asked'));
+        allow update: if onlyKeys(['s', 'at']) && request.resource.data.s == 'friends' && (
+          (canAct(pid) && resource.data.s == 'asked') || (canAct(other) && resource.data.s == 'pending'));
+        allow delete: if canAct(pid) || canAct(other);
+      }
+      match /inbox/{id} {
+        allow read, delete: if canAct(pid);
+        allow create: if onlyKeys(['from', 'nm', 'g', 'k', 'd', 'at', 'h'])
+          && canAct(request.resource.data.from) && friends(pid, request.resource.data.from)
+          && request.resource.data.g in ['', 'coins', 'bread', 'fish', 'honey']
+          && request.resource.data.k is int && request.resource.data.k >= -1 && request.resource.data.k <= 7
+          && request.resource.data.d is string && request.resource.data.d.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')
+          && (id == request.resource.data.from + '_' + request.resource.data.d
+              || (request.resource.data.g == '' && id.matches(request.resource.data.from + '_' + request.resource.data.d + '_s[0-2]')));
+      }
+      match /invites/{from} {
+        allow read: if canAct(pid);
+        allow delete: if canAct(pid) || canAct(from);
+        allow create, update: if canAct(from) && friends(pid, from) && request.resource.data.from == from
+          && onlyKeys(['from', 'nm', 'kind', 'room', 'at']) && request.resource.data.kind in ['duel', 'coop'];
+      }
+    }
+
+    match /codes/{code} {
+      allow get: if signedIn();
+      allow create: if hasUser() && onlyKeys(['pid']) && canActAfter(request.resource.data.pid);
+      allow delete: if canAct(resource.data.pid) || isAdmin();
+    }
+    match /names/{key} {
+      allow get: if signedIn();
+      allow create: if hasUser() && key.matches('^[0-9]+-[0-9]+-[0-9]+$') && onlyKeys(['pid', 'fid'])
+        && request.resource.data.fid == me().fid && canActAfter(request.resource.data.pid);
+      allow update: if canAct(resource.data.pid) && request.resource.data.pid == resource.data.pid && sameOrJoin(resource.data.fid);
+      allow delete: if canAct(resource.data.pid) || isAdmin();
+    }
+
+    match /saves/{pid} {
+      allow read: if resource == null || canPid(pid, resource.data.fid);
+      allow create: if canFam(request.resource.data.fid) && onlyKeys(['fid', 'data', 'rev', 'at', 'dev'])
+        && request.resource.data.data is string && request.resource.data.data.size() < 900000;
+      allow update: if canPid(pid, resource.data.fid) && sameOrJoin(resource.data.fid) && onlyKeys(['fid', 'data', 'rev', 'at', 'dev'])
+        && request.resource.data.data is string && request.resource.data.data.size() < 900000;
+      allow delete: if canPid(pid, resource.data.fid) || isAdmin();
+      match /old/{ts} {
+        allow read, delete: if canAct(pid);
+        allow create: if canAct(pid) && onlyKeys(['fid', 'data', 'rev', 'at']) && request.resource.data.data.size() < 900000;
+      }
+    }
+
+    match /xfer/{code} {
+      allow get: if signedIn();
+      allow create: if canAct(request.resource.data.pid) && request.resource.data.by == request.auth.uid
+        && onlyKeys(['fid', 'pid', 'exp', 'by']) && request.resource.data.exp < request.time.toMillis() + 900000;
+      allow delete: if canAct(resource.data.pid);
+    }
+
+    match /logs/{pid}/days/{d} {
+      allow read: if canAct(pid) || isAdmin();
+      allow write: if canAct(pid);
+      allow delete: if isAdmin();
+    }
+    match /{path=**}/days/{d} {
+      allow read: if isAdmin();
+    }
+
+    match /groups/{g} {
+      allow get: if signedIn();
+      allow create: if canFam(request.resource.data.owner) && onlyKeys(['nm', 'owner', 'goal', 'created'])
+        && g.matches('^[A-Z0-9]{6}$') && request.resource.data.goal is int;
+      allow delete: if canFam(resource.data.owner);
+      match /members/{pid} {
+        allow read: if signedIn();
+        allow write: if canAct(pid) && onlyKeys(['nm', 'look', 'wk', 'at']);
+      }
+    }
+
+    match /rooms/{rid} {
+      allow read: if resource == null || canAct(resource.data.a) || canAct(resource.data.b);
+      allow create: if canAct(request.resource.data.a) && friends(request.resource.data.a, request.resource.data.b);
+      allow update: if (canAct(resource.data.a) || canAct(resource.data.b))
+        && request.resource.data.a == resource.data.a && request.resource.data.b == resource.data.b;
+    }
+  }
+}

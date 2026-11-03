@@ -270,6 +270,36 @@ input[type=range]{width:100%;accent-color:var(--gold)}
 @media (max-width:600px){#track{font-size:.78rem}}
 @media (max-height:480px){#arena{padding-top:34px}#bWho{top:4px;font-size:.85rem;padding:2px 12px}.foe .fh{width:112px;padding:3px 5px}.bossu .fh{width:min(190px,40vw)}#bpanel{padding-top:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom,0px));gap:4px}#bSpells{grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:5px}.spell{padding:.3em .55em}.spell small{display:none}#bMsg{font-size:.85rem}.qin{padding:12px}#qText{margin:8px 0 10px}#qChoices button{min-height:44px;padding:.5em .6em}}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition-duration:.01s!important}}
+
+/* ---- online: accounts, friends, live play ---- */
+.hb{position:relative}.nbadge{position:absolute;top:-6px;right:-6px;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:var(--rose);color:#fff;font-size:.72rem;font-weight:900;line-height:20px;text-align:center;box-shadow:0 0 0 2px #0e1534}
+.onbox{background:#141d48;border:2px solid var(--lapis-line);border-radius:14px;padding:10px 12px;margin:4px 0 8px}.onbox p{margin:0 0 8px}
+.nmprev{display:flex;align-items:center;gap:12px;background:#141d48;border:2px solid var(--gold);border-radius:14px;padding:8px 14px;margin:6px 0}.nmprev span{font-size:2.2rem}.nmprev b{font-size:1.3rem;color:var(--gold-soft)}
+.emogrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:6px}.emogrid button{height:44px;border-radius:12px;border:2px solid var(--lapis-line);background:#141d48;font-size:1.5rem;line-height:1}.emogrid button.on{border-color:var(--gold);background:#2b3d8f}
+.emogrid.big{grid-template-columns:repeat(4,1fr)}.emogrid.big button{height:64px;font-size:2.2rem}
+.numrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.numrow b{font-size:1.5rem;min-width:2.2em;text-align:center}
+.picslots{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:6px 0 10px}.picslots span{height:58px;border-radius:12px;border:2px dashed var(--gold);display:flex;align-items:center;justify-content:center;font-size:2rem;background:#0e1534}
+.logincard{background:#fbf3df;color:#1d2b66;border:4px solid #e8b94a;border-radius:18px;padding:16px;text-align:center;max-width:340px;margin:0 auto}
+.lc-h{font-family:var(--f-display);font-size:1.2rem}.lc-e{font-size:3rem;margin:6px 0}.lc-n{font-size:1.5rem;font-weight:900}.lc-l{margin-top:10px;font-weight:800;font-size:.85rem;opacity:.75}.lc-p{font-size:2.6rem;letter-spacing:.15em}.lc-f{font-size:.8rem;margin-top:8px;opacity:.8}
+@media print{body.printcard *{visibility:hidden}body.printcard .logincard,body.printcard .logincard *{visibility:visible}body.printcard .logincard{position:fixed;left:20px;top:20px}}
+.xfer{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.xfer .qr{background:#fff;border-radius:10px;padding:6px;width:180px}.xfer .qr svg{width:100%;height:auto;display:block}
+.code{font-size:1.9rem;font-weight:900;letter-spacing:.12em;color:var(--gold-soft)}.code.big{font-size:2.2rem;text-align:center;margin:8px 0}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}.tabs button{border-radius:999px;border:2px solid var(--lapis-line);background:#141d48;padding:6px 12px;font-weight:800}.tabs button.on{border-color:var(--gold);background:#2b3d8f}
+.cards.pals{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}.card.pal .av canvas{width:64px;height:74px}.card.pal small.live{color:#7cf08a}
+.pact{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;margin-top:4px}.pact .btn.sm{padding:4px 7px;min-width:0}
+table.board{width:100%;border-collapse:collapse}table.board td,table.board th{padding:6px 4px;border-bottom:1px solid var(--lapis-line);text-align:left}table.board td:nth-child(n+3),table.board th:nth-child(n+3){text-align:center}table.board tr.me td{color:var(--gold-soft);font-weight:900}
+.bar{height:14px;border-radius:7px;background:#0e1534;border:1px solid var(--lapis-line);overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,#e8b94a,#f6de98)}
+#invBox{position:absolute;top:calc(64px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:30;display:flex;flex-direction:column;gap:8px;width:min(420px,92vw)}
+.invite{background:rgba(14,21,52,.96);border:2px solid var(--gold);border-radius:14px;padding:10px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.4)}.invite div{display:flex;gap:6px}
+#duelBar{position:absolute;top:calc(66px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:25;background:rgba(14,21,52,.95);border:2px solid var(--gold);border-radius:999px;padding:6px 16px;display:flex;gap:14px;align-items:center;font-weight:800;white-space:nowrap;font-size:.9rem}#duelBar b{color:var(--gold-soft);font-size:1.1rem}
+#coopTag{position:absolute;top:56px;left:12px;z-index:5;background:rgba(14,21,52,.9);border:2px solid #7cf08a;border-radius:999px;padding:4px 12px;font-weight:800;font-size:.85rem}
+.duelres{display:flex;justify-content:space-around;align-items:center;text-align:center}.duelres .big{font-size:2.6rem}.duelres .score{font-size:2.2rem;font-weight:900;color:var(--gold-soft);margin:4px 0}.duelres .vs{font-size:2rem}
+.spinner{width:40px;height:40px;border-radius:50%;border:4px solid var(--lapis-line);border-top-color:var(--gold);animation:spin 1s linear infinite;margin:14px auto}@keyframes spin{to{transform:rotate(360deg)}}
+body.visiting #htools,body.visiting #inv{display:none}
+.stkpop{display:flex;gap:6px;flex-wrap:wrap;background:#141d48;border:2px solid var(--gold);border-radius:14px;padding:8px;margin-top:6px}.stkpop button{font-size:1.6rem;background:none;border:0}
+.mtile .big{font-size:1.8rem;line-height:1}
+.row .big{white-space:nowrap}
+#modal.ontop{z-index:45}
 </style>
 
 <div id="game">
@@ -291,6 +321,7 @@ input[type=range]{width:100%;accent-color:var(--gold)}
       <button class="hb more" id="bBag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.1a1 1 0 0 1-1 .9H7.2a1 1 0 0 1-1-.9z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-t="btn.bag">Bag</span></button>
       <button class="hb more" id="bWard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3l4 3 4-3 5 4-3 4-2-1v11H8V10l-2 1-3-4z"/></svg><span data-t="btn.wardrobe">Wardrobe</span></button>
       <button class="hb" id="bFriends"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="6" cy="10" rx="2" ry="2.6"/><ellipse cx="10" cy="5.8" rx="2" ry="2.6"/><ellipse cx="14.5" cy="5.8" rx="2" ry="2.6"/><ellipse cx="18.5" cy="10" rx="2" ry="2.6"/><path d="M12 11.5c-3 0-6 4.2-6 6.5 0 1.6 1.3 2.5 3 2.5 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.7 0 3-.9 3-2.5 0-2.3-3-6.5-6-6.5z"/></svg><span data-t="btn.friends">Friends</span></button>
+      <button class="hb more" id="bPals" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/></svg><span data-t="on.pals">Friends</span></button>
       <button class="hb more" id="bHome"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span data-t="btn.house">House</span></button>
       <button class="hb more" id="bBook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/><path d="M12 7l1 2 2 .3-1.5 1.4.4 2.1L12 11.8l-1.9 1 .4-2.1L9 9.3l2-.3z"/></svg><span data-t="btn.book">Book</span></button>
       <button class="hb more" id="bSet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
@@ -346,7 +377,7 @@ input[type=range]{width:100%;accent-color:var(--gold)}
       <p class="sub" data-t="title.sub">Journey through the great stories of the Bible.</p>
       <div class="sect" id="tWho" data-t="title.who" hidden>Who is playing?</div>
       <div id="tProfiles"></div>
-      <div class="btns"><button class="btn gold" id="tNew" data-t="title.new">New Pilgrim</button></div>
+      <div class="btns"><button class="btn gold" id="tNew" data-t="title.new">New Pilgrim</button><button class="btn ghost" id="tOnline" data-t="on.haveT" hidden>I already play</button></div>
     </div>
     <div id="create" hidden>
       <h2 data-t="create.h">Create your pilgrim</h2>

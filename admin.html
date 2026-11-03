@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Scrolls of Light – Owner</title>
+<style>
+:root{--bg:#0e1534;--panel:#141d48;--line:#2b3a7a;--text:#f3ead6;--muted:#a9b0d6;--gold:#e8b94a;--gold2:#f6de98;--green:#7cf08a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+h1{font:400 1.4rem Georgia,serif;color:var(--gold2);margin:0}h2{font:400 1.15rem Georgia,serif;color:var(--gold2);margin:22px 0 8px}
+main{max-width:1180px;margin:0 auto;padding:8px 16px 40px}
+button{font:inherit;font-weight:700;border-radius:10px;border:2px solid var(--gold);background:var(--panel);color:var(--text);padding:7px 14px;cursor:pointer}button.gold{background:var(--gold);color:#1d1406}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:12px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px}.kpi b{display:block;font-size:1.7rem;color:var(--gold2)}.kpi small{color:var(--muted)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;overflow-x:auto}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px}
+table{width:100%;border-collapse:collapse;font-size:.92rem}th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{color:var(--muted);font-weight:700;cursor:pointer}
+td.n,th.n{text-align:right}.live{color:var(--green);font-weight:800}.muted{color:var(--muted)}
+.days{display:flex;gap:2px}.days i{width:9px;height:14px;border-radius:2px;background:#26306a}.days i.p1{background:#5a6bc0}.days i.p2{background:#b99a3a}.days i.p3{background:var(--gold2)}
+svg text{fill:var(--muted);font-size:10px}
+#msg{color:var(--muted)}
+@media (max-width:600px){th,td{padding:6px 5px}}
+</style>
+</head>
+<body>
+<header><h1>Scrolls of Light · Owner dashboard</h1><div><span id="who" class="muted"></span> <button class="gold" id="signin">Sign in with Google</button> <button id="reload" hidden>Refresh</button></div></header>
+<main>
+<p id="msg">Sign in with the owner Google account to see who is playing.</p>
+<div id="out" hidden>
+  <div class="kpis" id="kpis"></div>
+  <h2>Activity (last 30 days)</h2><div class="charts"><div class="card" id="chDays"></div><div class="card" id="chHours"></div></div>
+  <h2>Players</h2><div class="card"><table id="tbl"></table></div>
+  <h2>Families</h2><div class="card"><table id="fam"></table></div>
+  <h2>Clean-up</h2><div class="card"><p class="muted">Deletes play-time records older than 12 months, and online data of players not seen for 12 months (their games on their own devices stay).</p><button id="clean">Clean up now</button> <span id="cleanMsg" class="muted"></span></div>
+</div>
+</main>
+<script>window.FBCONF={"apiKey":"AIzaSyDGHPFAl_grjEFIymMTGoBoFNeLFoDkFMs","authDomain":"bible-prodigy.firebaseapp.com","projectId":"bible-prodigy","storageBucket":"bible-prodigy.firebasestorage.app","messagingSenderId":"637940921740","appId":"1:637940921740:web:009ab6d1cc2ab1a4aa92a9"};window.FBJS="fb.js";</script>
+<script>var STR={en:{}};function t(k){return STR.en[k];}
+/* Text for the online features (cloud saves, friends, live play). Other languages: lang/<l>/O.json → lang packs. */
+Object.assign(STR.en,{
+'nm.fmt':'{w} {a} {n}','nm.gfmt':'The {w} {a}s',
+'nm.a':['Lamb','Lion','Dove','Eagle','Camel','Donkey','Fox','Deer','Bear','Owl','Fish','Whale','Sparrow','Goat','Ox','Horse','Rabbit','Frog','Bee','Ant','Turtle','Butterfly','Hen','Chick','Puppy','Kitten','Hedgehog','Peacock','Ram','Leopard'],
+'nm.w':['Star','Sun','Moon','Rainbow','River','Cedar','Olive','Song','Crown','Lamp','Shield','Mountain','Fire','Cloud','Sparkle','Snow','Honey','Bread','Grape','Sunflower','Trumpet','Scroll','Rose','Lily','Palm','Wheat','Rain','Seed','Bell','Jewel'],
+'stk.0':'Great job!','stk.1':'Praying for you','stk.2':'Hello!','stk.3':'Well done!','stk.4':'Keep going!','stk.5':'You are a star!','stk.6':'Thank you!','stk.7':'Peace be with you',
+'on.sect':'Online','on.offP':'Save your progress online so you can keep playing on any device, and play with friends. A grown-up needs to turn this on.',
+'on.privacyLine':'No real names or chat. The game’s owner can see player names and play times.','on.privacy':'Privacy',
+'on.turnOn':'Turn on (grown-up)','on.manage':'Online & friends','on.ok':'OK',
+'on.gateT':'Grown-ups only','on.gateP':'Please ask a grown-up to answer this:','on.gateNo':'Not quite. Please ask a grown-up.',
+'on.err':'Something went wrong. Please try again.','on.errNet':'No internet connection right now. Your game is saved on this device.','on.errPerm':'This device can’t open that player. Please sign in again.','on.errPopup':'The sign-in window was closed or blocked.',
+'on.nameT':'Pick your player name','on.nameP':'Friends will see this name. Pick a word, an animal and a number.','on.nameA':'Animal','on.nameW':'Word','on.nameN':'Number','on.nameRnd':'Surprise me','on.nameUse':'Use this name','on.nameTaken':'That name is taken. Try another number!',
+'on.ready':'You are online as {0}!','on.picsClear':'Start over',
+'on.cardT':'Login card','on.cardD':'Sign in on any device with your name and 4 pictures','on.cardPicsP':'Pick 4 pictures in order. This is the secret password. Remember them!','on.cardPics':'Secret pictures (in this order)',
+'on.cardHow':'On another device: tap “I already play”, pick your name, then tap your pictures.','on.print':'Print','on.cardNew':'New pictures',
+'on.xferT':'Play on another device','on.xferD':'Get a code or QR to continue somewhere else','on.xferP':'On the other device, open the game and tap “I already play” → “Continue code”, or scan the QR code with its camera.','on.xferCode':'Continue code','on.xferExp':'Works for 10 minutes.',
+'on.full':'This device already has 4 players.','on.haveT':'I already play','on.haveP':'Continue your journey on this device.',
+'on.haveName':'My player name','on.haveNameD':'Use your login card: name + 4 pictures','on.haveCode':'Continue code','on.haveCodeD':'A code from a device where you are signed in','on.haveGrown':'Grown-up sign-in','on.haveGrownD':'Sign in with Google to bring your family’s players here',
+'on.havePicsT':'Your secret pictures','on.havePicsP':'Tap your 4 pictures in order.','on.wrongPics':'Those pictures don’t match. Try again!','on.codeP':'Type the 8-letter code from the other device.','on.codeBad':'That code doesn’t work. It may have run out – ask for a new one.',
+'on.signedIn':'Signed in as {0}','on.famT':'Your family’s players','on.famP':'Signed in as {0}. Pick a player to bring to this device.','on.famNone':'No players yet. Start a game and turn on Online in Settings.','on.onDevice':'On this device',
+'on.gotNewer':'Loaded your newer save from another device.','on.lastPlayed':'Last played {0}',
+'on.confT':'Two different saves','on.confP':'This player was played on two devices without internet. Which save do you want to keep?','on.confHere':'This device','on.confCloud':'Online','on.keepThis':'Keep this one','on.confSafe':'The other save is kept as a backup.','on.keptHere':'Kept the save from this device.',
+'on.stErr':'Couldn’t save online – trying again later.','on.stBig':'This save is too big to save online.','on.stNever':'Not saved online yet','on.stNow':'Saved online just now','on.stMin':'Saved online {0} min ago','on.syncNow':'Save now',
+'on.friendCode':'Friend code','on.acct':'Account','on.guest':'Playing as guest on this device. Ask a grown-up to sign in with Google so your progress is safe.','on.viaCode':'Signed in with a continue code.','on.viaCard':'Signed in with your login card.','on.signedAs':'Grown-up account: {0}','on.signedOut':'Not signed in on this device.',
+'on.linkG':'Grown-up: sign in with Google','on.linkGD':'Keep everyone’s progress safe and use it on other devices',
+'on.bakT':'Earlier saves on this device','on.bakUse':'Go back to this','on.more':'More',
+'on.signOut':'Sign out','on.outMainP':'Sign this device out of Online. If no grown-up signed in with Google, you need a login card or continue code to get back in.','on.outKidP':'Sign this player out on this device.','on.outKeep':'Sign out, keep the game here','on.outRemove':'Sign out and remove from this device','on.signedOutT':'Signed out.',
+'on.delete':'Delete online data','on.delP':'This deletes {0}’s online save, friends, gifts and play times. The game on this device stays.','on.delYes':'Delete online data','on.deleted':'Online data deleted. Your game on this device is still here.',
+'on.pals':'Friends','on.palsD':'Friends, gifts and leaderboards','on.tFriends':'Friends','on.tGifts':'Gift box','on.tBoard':'This week','on.tGroups':'Groups','on.tAdd':'Add friend','on.loading':'Loading…',
+'on.reqs':'Friend requests','on.wantsFriend':'wants to be your friend','on.accept':'Yes','on.decline':'No','on.isOnline':'online',
+'on.gift':'Send a gift','on.sticker':'Send a sticker','on.visit':'Visit house','on.duel':'Quiz duel','on.coop':'Team boss','on.remove':'Remove friend','on.removeP':'Remove {0} from your friends?',
+'on.noFriends':'No friends yet. Share your friend code with a friend you know!','on.waiting':'Waiting','on.waitingP':'Waiting for them to say yes','on.nowFriends':'You are friends now!','on.reqNew':'You have a new friend request!',
+'on.myCodeP':'Your friend code. Tell it to a friend you know in real life:','on.addT':'Add a friend','on.addP':'Type your friend’s code:','on.addBtn':'Add','on.codeBadF':'That friend code doesn’t exist.','on.codeSelf':'That’s your own code!','on.already':'You are already friends.','on.reqSent':'Request sent to {0}!',
+'on.giftP':'Pick a gift for {0}. You can send each friend one gift a day.','on.addSticker':'Add a sticker (optional)','on.giftCoins':'{0} shekels','on.giftSent':'Gift sent to {0}!','on.giftOnce':'You already sent this friend a gift today.',
+'on.stickerP':'Send {0} a sticker:','on.stkSent':'Sticker sent!','on.stkLimit':'You sent enough stickers to this friend today.',
+'on.noGifts':'Your gift box is empty.','on.open':'Open','on.gotGift':'You got: {0}!','on.thankT':'Say thank you?','on.thankP':'Send {0} a thank-you sticker?',
+'on.boardP':'Points this week (resets on Monday).','on.boardKey':'⭐ points · ✔ right answers · 📜 verses learned',
+'on.groupCode':'Group code','on.noGroups':'You are not in a group yet. A teacher or grown-up can make one.','on.joinT':'Join a group','on.join':'Join','on.groupNew':'Make a group (grown-up)','on.codeBadG':'That group code doesn’t exist.','on.groupMax':'You can be in 3 groups.',
+'on.groupNewP':'Pick a name for the group. Then share the group code with everyone.','on.groupMake':'Make group','on.groupShare':'share it with your group','on.challenge':'Group challenge','on.challengeP':'Answer {0} questions right together this week.','on.claim':'Get {0} shekels','on.claimed':'Reward collected','on.claimedT':'Group reward: +{0} shekels!','on.leave':'Leave group',
+'on.visitT':'{0}’s house','on.emptyHouse':'This house is still empty.','on.leaveSticker':'Leave a sticker',
+'on.busy':'Finish what you are doing first.','on.coopNeed':'You both need to finish at least one world first.','on.waitFor':'Waiting for {0}…','on.cancel':'Cancel','on.noAnswer':'No answer. Try again later!','on.declined':'{0} can’t play right now.',
+'on.invDuel':'{0} wants a quiz duel!','on.invCoop':'{0} wants to fight a boss together!','on.inviteGone':'That invite has ended.',
+'on.you':'You','on.duelGo':'Quiz duel! Same 10 questions – go!','on.duelEnd':'Duel over','on.tie':'It’s a tie!','on.youWin':'You win!','on.theyWin':'{0} wins!','on.duelCoins':'+{0} shekels',
+'on.coopGo':'Team boss with {0}!','on.team':'Team with {0}','on.teamWin':'Your team beat the boss! Tap a power.','on.coopBonus':'Team bonus: +{0} shekels!'
+});
+</script>
+<script>
+const $=s=>document.querySelector(s); const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const LANG='en', LC={en:{loc:'en-US'}};
+/* ===================== ONLINE: data layer =====================
+   One small interface over Firebase (real) or a local test server (mock), so the
+   features in online.js never touch Firebase directly. Every login lives in its own
+   named Firebase app, so several kids from different families can share a device. */
+const NET=(()=>{
+  const CONF=window.FBCONF||null, MOCK=window.FBMOCK||null;
+  const avail=!!(CONF||MOCK);
+  let fbReady=null;
+  function loadFB(){ if(MOCK) return Promise.resolve(); if(window.FB) return Promise.resolve(); if(fbReady) return fbReady;
+    fbReady=new Promise((res,rej)=>{ const s=document.createElement('script'); s.src=window.FBJS||'fb.js'; s.onload=()=>window.FB?res():rej(new Error('fb')); s.onerror=()=>{ fbReady=null; rej(new Error('offline')); }; document.head.appendChild(s); });
+    return fbReady; }
+  const PFX=window.FBPFX||'';                       // 'beta-' on the test page
+  const ctxs={};
+  /* ---------- real Firebase context ---------- */
+  function fbCtx(name){ const F=window.FB; const app=F.initializeApp(CONF,PFX+name); const auth=F.getAuth(app);
+    const db=F.initializeFirestore(app,{localCache:F.memoryLocalCache()});
+    const ref=p=>F.doc(db,...p.split('/'));
+    const col=p=>F.collection(db,...p.split('/'));
+    const conv=v=>{ if(v&&typeof v==='object'&&!Array.isArray(v)){ if(v.__now) return F.serverTimestamp(); if(v.__inc!=null) return F.increment(v.__inc); if(v.__del) return F.deleteField(); if(v.__union) return F.arrayUnion(...v.__union); const o={}; for(const k in v) o[k]=conv(v[k]); return o; } return v; };
+    const out=s=>{ if(!s.exists()) return null; const d=s.data(); return fix(d); };
+    const fix=v=>{ if(v&&typeof v==='object'){ if(typeof v.toMillis==='function') return v.toMillis(); if(Array.isArray(v)) return v.map(fix); const o={}; for(const k in v) o[k]=fix(v[k]); return o; } return v; };
+    const q=(c,w,o)=>{ const a=[]; (w||[]).forEach(([f,op,val])=>a.push(F.where(f==='__id'?F.documentId():f,op,val))); if(o&&o.order) a.push(F.orderBy(o.order[0],o.order[1]||'asc')); if(o&&o.limit) a.push(F.limit(o.limit)); return F.query(c,...a); };
+    let readyRes; const ready=new Promise(r=>readyRes=r); F.onAuthStateChanged(auth,u=>{ C.u=u?{uid:u.uid,anon:u.isAnonymous,email:u.email||'',name:u.displayName||''}:null; readyRes(); C.subs.forEach(f=>f(C.u)); });
+    const C={name,u:null,subs:[],ready,
+      onAuth(f){ C.subs.push(f); },
+      anon:()=>F.signInAnonymously(auth),
+      google:async()=>{ const p=new F.GoogleAuthProvider(); p.setCustomParameters({prompt:'select_account'});
+        if(auth.currentUser&&auth.currentUser.isAnonymous){ try{ await F.linkWithPopup(auth.currentUser,p); await auth.currentUser.reload(); C.u=Object.assign({},C.u,{anon:false,email:auth.currentUser.email,name:auth.currentUser.displayName}); return {linked:true}; }
+          catch(e){ if(e.code==='auth/credential-already-in-use'||e.code==='auth/email-already-in-use'){ const cred=F.GoogleAuthProvider.credentialFromError(e); return {inUse:true,cred}; } throw e; } }
+        await F.signInWithPopup(auth,p); return {signedIn:true}; },
+      withCred:cred=>F.signInWithCredential(auth,cred),
+      card:(email,pw)=>F.signInWithEmailAndPassword(auth,email,pw),
+      newCard:(email,pw)=>F.createUserWithEmailAndPassword(auth,email,pw).then(r=>r.user.uid),
+      newPw:pw=>F.updatePassword(auth.currentUser,pw),
+      signOut:()=>F.signOut(auth),
+      get:async p=>out(await F.getDoc(ref(p))),
+      getFresh:async p=>{ try{ return out(await F.getDocFromServer(ref(p))); }catch(e){ return out(await F.getDoc(ref(p))); } },
+      set:(p,d,merge)=>F.setDoc(ref(p),conv(d),merge?{merge:true}:{}),
+      update:(p,d)=>F.updateDoc(ref(p),conv(d)),
+      del:p=>F.deleteDoc(ref(p)),
+      query:async(c,w,o)=>{ const s=await F.getDocs(q(col(c),w,o)); return s.docs.map(d=>({id:d.id,data:fix(d.data())})); },
+      group:async(c,w,o)=>{ const s=await F.getDocs(q(F.collectionGroup(db,c),w,o)); return s.docs.map(d=>({id:d.id,path:d.ref.path,data:fix(d.data())})); },
+      listen:(p,cb,w,o)=>{ const isCol=p.split('/').length%2===1; return isCol? F.onSnapshot(q(col(p),w,o),s=>cb(s.docs.map(d=>({id:d.id,data:fix(d.data())}))),()=>{}) : F.onSnapshot(ref(p),s=>cb(out(s)),()=>{}); },
+      batch:async ops=>{ const b=F.writeBatch(db); ops.forEach(o=>{ if(o.op==='set') b.set(ref(o.path),conv(o.data),o.merge?{merge:true}:{}); else if(o.op==='update') b.update(ref(o.path),conv(o.data)); else b.delete(ref(o.path)); }); await b.commit(); },
+      tx:fn=>F.runTransaction(db,async tr=>fn({get:async p=>out(await tr.get(ref(p))),set:(p,d,m)=>tr.set(ref(p),conv(d),m?{merge:true}:{}),update:(p,d)=>tr.update(ref(p),conv(d)),del:p=>tr.delete(ref(p))})),
+      close:()=>F.deleteApp(app).catch(()=>{}) };
+    return C; }
+  /* ---------- mock context (tests only; talks to lang-free node test server) ---------- */
+  function mockCtx(name){ const K='mock.auth.'+PFX+name; let u=null; try{ u=JSON.parse(localStorage.getItem(K)); }catch(e){}
+    const call=(op,a)=>fetch(MOCK+'/op',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(Object.assign({op,uid:C.u&&C.u.uid},a))}).then(r=>r.json()).then(r=>{ if(r.err){ const e=new Error(r.err); e.code=r.err; throw e; } return r.v; });
+    const setU=v=>{ C.u=v; try{ v?localStorage.setItem(K,JSON.stringify(v)):localStorage.removeItem(K); }catch(e){} C.subs.forEach(f=>f(v)); };
+    const C={name,u,subs:[],ready:Promise.resolve(),
+      onAuth(f){ C.subs.push(f); },
+      anon:async()=>setU({uid:'a'+Math.random().toString(36).slice(2,12),anon:true,email:'',name:''}),
+      google:async()=>{ const g=await call('google',{}); if(C.u&&C.u.anon){ if(g.exists) return {inUse:true,cred:g}; await call('linkGoogle',{g}); setU(Object.assign({},C.u,{anon:false,email:g.email,name:g.name})); return {linked:true}; } setU({uid:g.uid,anon:false,email:g.email,name:g.name}); return {signedIn:true}; },
+      withCred:async cred=>setU({uid:cred.uid,anon:false,email:cred.email,name:cred.name}),
+      card:async(email,pw)=>{ const uid=await call('card',{email,pw}); setU({uid,anon:false,email,name:''}); },
+      newCard:async(email,pw)=>{ const uid=await call('newCard',{email,pw}); setU({uid,anon:false,email,name:''}); return uid; },
+      newPw:pw=>call('newPw',{email:C.u.email,pw}),
+      signOut:async()=>setU(null),
+      get:p=>call('get',{p}), getFresh:p=>call('get',{p}),
+      set:(p,d,merge)=>call('set',{p,d,merge}), update:(p,d)=>call('update',{p,d}), del:p=>call('del',{p}),
+      query:(c,w,o)=>call('query',{c,w,o}), group:(c,w,o)=>call('group',{c,w,o}),
+      listen:(p,cb,w,o)=>{ let alive=true, lastS=''; const tick=async()=>{ if(!alive) return; try{ const v=p.split('/').length%2===1?await call('query',{c:p,w,o}):await call('get',{p}); const s=JSON.stringify(v); if(s!==lastS){ lastS=s; cb(v); } }catch(e){} if(alive) setTimeout(tick,350); }; tick(); return ()=>{ alive=false; }; },
+      batch:ops=>call('batch',{ops}),
+      tx:async fn=>{ const ops=[]; const r=await fn({get:p=>call('get',{p}),set:(p,d,m)=>ops.push({op:'set',path:p,data:d,merge:m}),update:(p,d)=>ops.push({op:'update',path:p,data:d}),del:p=>ops.push({op:'del',path:p})}); if(ops.length) await call('batch',{ops}); return r; },
+      close:async()=>{} };
+    return C; }
+  async function ctx(name){ if(ctxs[name]) return ctxs[name]; await loadFB(); const c=MOCK?mockCtx(name):fbCtx(name); ctxs[name]=c; await c.ready; return c; }
+  async function drop(name){ const c=ctxs[name]; if(!c) return; delete ctxs[name]; try{ await c.signOut(); }catch(e){} await c.close(); }
+  const now={__now:1}, inc=n=>({__inc:n}), delF={__del:1}, union=(...a)=>({__union:a});
+  return {avail,ctx,drop,now,inc,delF,union,loadFB,mock:!!MOCK};
+})();
+
+const AN=['🐑','🦁','🕊️','🦅','🐫','🐴','🦊','🦌','🐻','🦉','🐟','🐋','🐦','🐐','🐂','🐎','🐇','🐸','🐝','🐜','🐢','🦋','🐔','🐥','🐶','🐱','🦔','🦚','🐏','🐆'];
+const WD=['⭐','☀️','🌙','🌈','🌊','🌲','🌿','🎵','👑','🪔','🛡️','⛰️','🔥','☁️','✨','❄️','🍯','🍞','🍇','🌻','🎺','📜','🌹','🌷','🌴','🌾','🌧️','🌱','🔔','💎'];
+const nmText=nm=>nm?`${WD[nm[1]]}${AN[nm[0]]} ${STR.en['nm.w'][nm[1]]} ${STR.en['nm.a'][nm[0]]} ${nm[2]}`:'?';
+const DAY=86400000, dkey=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const LANGN={en:'English',de:'Deutsch',es:'Español',el:'Ελληνικά'};
+let C=null, data=null;
+async function signin(){ try{ C=await NET.ctx('admin'); if(!C.u||C.u.anon) await C.google(); show(); load(); }catch(e){ $('#msg').textContent='Sign-in failed: '+(e.code||e.message); } }
+function show(){ $('#who').textContent=C&&C.u?(C.u.email||''):''; $('#signin').hidden=!!(C&&C.u&&!C.u.anon); $('#reload').hidden=!$('#signin').hidden; }
+async function load(){ $('#msg').textContent='Loading…';
+  try{ const [players,fams]=await Promise.all([C.query('players'),C.query('families')]);
+    let days=[]; try{ days=await C.group('days'); }catch(e){ for(const p of players){ try{ (await C.query('logs/'+p.id+'/days')).forEach(d=>days.push({id:d.id,path:'logs/'+p.id+'/days/'+d.id,data:d.data})); }catch(e2){} } }
+    data={players,fams,days}; render(); $('#msg').textContent=''; $('#out').hidden=false; }
+  catch(e){ $('#msg').textContent=(e.code==='permission-denied'||/permission/i.test(e.message))?'This Google account is not the owner account.':'Could not load: '+(e.code||e.message); } }
+function render(){ const {players,fams,days}=data; const now=Date.now(); const fam={}; fams.forEach(f=>fam[f.id]=f.data);
+  const byP={}; days.forEach(d=>{ const pid=d.path.split('/')[1]; (byP[pid]=byP[pid]||{})[d.id]=d.data; });
+  const last30=[...Array(30)].map((_,i)=>dkey(new Date(now-(29-i)*DAY))), last7=last30.slice(-7), last14=last30.slice(-14);
+  const active=k=>Object.keys(byP).filter(pid=>byP[pid][k]&&byP[pid][k].sec>30).length;
+  const perDay=last30.map(k=>({k,n:active(k),m:Math.round(Object.values(byP).reduce((a,p)=>a+((p[k]&&p[k].sec)||0),0)/60)}));
+  const hours=[...Array(24)].map((_,h)=>Math.round(days.filter(d=>last30.includes(d.id)).reduce((a,d)=>a+((d.data.hr&&d.data.hr[h])||0),0)/60));
+  const wkMin=pid=>Math.round(last7.reduce((a,k)=>a+((byP[pid]&&byP[pid][k]&&byP[pid][k].sec)||0),0)/60);
+  const onNow=players.filter(p=>p.data.on&&now-p.data.on<150000).length;
+  const kp=[['Players',players.length],['Families',fams.length],['Played today',active(dkey(new Date()))],['Played this week',Object.keys(byP).filter(pid=>last7.some(k=>byP[pid][k]&&byP[pid][k].sec>30)).length],['Online now',onNow],['Minutes this week',players.reduce((a,p)=>a+wkMin(p.id),0)]];
+  $('#kpis').innerHTML=kp.map(([l,v])=>`<div class="kpi"><b>${v}</b><small>${l}</small></div>`).join('');
+  $('#chDays').innerHTML=bars(perDay.map(d=>d.n),perDay.map(d=>d.k.slice(5)),'Players per day',5);
+  $('#chHours').innerHTML=bars(hours,hours.map((_,h)=>String(h)),'Minutes played by hour of day (player’s local time)',3);
+  const rows=players.map(p=>({p,fam:fam[p.data.fid]||{},min:wkMin(p.id),last:Math.max(p.data.on||0,...Object.values(byP[p.id]||{}).map(d=>d.at||0))})).sort((a,b)=>b.last-a.last);
+  $('#tbl').innerHTML=`<tr><th>Player</th><th>Family</th><th>Language</th><th class="n">Level</th><th class="n">Worlds</th><th>Last seen</th><th class="n">Min this week</th><th>Last 14 days</th></tr>`+rows.map(r=>{ const d=r.p.data, on=d.on&&now-d.on<150000;
+    return `<tr><td>${esc(nmText(d.nm))}</td><td>${esc(r.fam.gname||'Guest family')}</td><td>${esc(LANGN[d.lang]||d.lang||'')}</td><td class="n">${d.lvl||1}</td><td class="n">${d.frags||0}</td><td class="${on?'live':''}">${on?'● online now':r.last?new Date(r.last).toLocaleString():'—'}</td><td class="n">${r.min}</td>
+      <td><div class="days">${last14.map(k=>{ const s=(byP[r.p.id]&&byP[r.p.id][k]&&byP[r.p.id][k].sec)||0; return `<i class="${s>1800?'p3':s>600?'p2':s>30?'p1':''}" title="${k}: ${Math.round(s/60)} min"></i>`; }).join('')}</div></td></tr>`; }).join('');
+  $('#fam').innerHTML=`<tr><th>Family</th><th class="n">Players</th><th>Created</th></tr>`+fams.map(f=>`<tr><td>${esc(f.data.gname||'Guest family')}</td><td class="n">${players.filter(p=>p.data.fid===f.id).length}</td><td>${f.data.created?new Date(f.data.created).toLocaleDateString():'—'}</td></tr>`).join('');
+}
+function bars(vals,labels,title,every){ const W=560,H=200,pl=28,pb=22,pt=24,max=Math.max(1,...vals); const bw=(W-pl)/vals.length;
+  const ticks=[0,Math.round(max/2),max]; let s=`<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="${esc(title)}"><text x="0" y="12" style="font-size:12px;fill:#f6de98">${esc(title)}</text>`;
+  ticks.forEach(v=>{ const y=H-pb-(H-pb-pt)*v/max; s+=`<line x1="${pl}" x2="${W}" y1="${y}" y2="${y}" stroke="#2b3a7a"/><text x="${pl-4}" y="${y+3}" text-anchor="end">${v}</text>`; });
+  vals.forEach((v,i)=>{ const h=(H-pb-pt)*v/max, x=pl+i*bw+bw*.15; s+=`<rect x="${x}" y="${H-pb-h}" width="${bw*.7}" height="${h}" rx="2" fill="#e8b94a"><title>${esc(labels[i])}: ${v}</title></rect>`; if(i%every===0) s+=`<text x="${x+bw*.35}" y="${H-6}" text-anchor="middle">${esc(labels[i])}</text>`; });
+  return s+'</svg>'; }
+async function clean(){ if(!data) return; const cut=Date.now()-365*DAY, ck=dkey(new Date(cut)); let n=0;
+  for(const d of data.days){ if(d.id<ck){ try{ await C.del(d.path); n++; }catch(e){} } }
+  for(const p of data.players){ const last=p.data.on||0; if(last&&last<cut){ for(const path of ['saves/'+p.id,'codes/'+p.data.code,'names/'+(p.data.nm||[]).join('-'),'players/'+p.id]){ try{ await C.del(path); n++; }catch(e){} } } }
+  $('#cleanMsg').textContent=`Removed ${n} old records.`; load(); }
+$('#signin').onclick=signin; $('#reload').onclick=load; $('#clean').onclick=()=>{ if(confirm('Delete records older than 12 months?')) clean(); };
+(async()=>{ try{ C=await NET.ctx('admin'); if(C.u&&!C.u.anon){ show(); load(); } }catch(e){} })();
+</script>
+</body>
+</html>

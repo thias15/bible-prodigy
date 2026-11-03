@@ -316,7 +316,7 @@ function battleEnd(){ $('#battle').classList.remove('b3d'); if(!BT) return; BT.t
 /* ===================== HOUSE ===================== */
 let HS=null; const HN=8;
 function hdims(id,rot){ const f=FURN[id]; return rot%2?[f.d,f.w]:[f.w,f.d]; }
-function houseData(){ if(!S.house) S.house={items:[],inv:{},got:[]}; return S.house; }
+function houseData(){ if(window.HOUSE_VIEW) return window.HOUSE_VIEW; if(!S.house) S.house={items:[],inv:{},got:[]}; return S.house; }
 function houseOpen(){
   const hd=houseData(); const sc=new TH.Scene(); HS={scene:sc,grid:new Array(HN*HN).fill(null),rugs:new Array(HN*HN).fill(null),items:[],sel:null,ghost:null,placing:null};
   sc.background=c3('#141a38'); sc.add(new TH.HemisphereLight(c3('#fff1dc').getHex(),c3('#7a5a3a').getHex(),.6));
@@ -340,7 +340,7 @@ function houseOpen(){
   hd.items=hd.items.filter(it=>FURN[it.id]); const keep=[]; hd.items.forEach(it=>{ if(placeItem(it.id,it.x,it.z,it.rot,true)) keep.push(it); else hd.inv[it.id]=(hd.inv[it.id]||0)+1; }); hd.items=keep;
   zoomH=1; $('#hbar').hidden=false; renderInv(); selectItem(null);
 }
-function houseSave(){ const hd=houseData(); hd.items=HS.items.map(i=>({id:i.id,x:i.x,z:i.z,rot:i.rot})); save(); }
+function houseSave(){ if(window.HOUSE_VIEW) return; const hd=houseData(); hd.items=HS.items.map(i=>({id:i.id,x:i.x,z:i.z,rot:i.rot})); save(); }
 function houseClose(){ if(!HS) return; cancelPlace(true); houseSave(); disposeTree(HS.scene); HS=null; $('#hbar').hidden=true; }
 function canPlace(id,x,z,rot,ignore){ const [w,d]=hdims(id,rot); if(x<0||z<0||x+w>HN||z+d>HN) return false; const Lr=FURN[id].floor?HS.rugs:HS.grid; for(let i=x;i<x+w;i++) for(let j=z;j<z+d;j++){ const o=Lr[j*HN+i]; if(o&&o!==ignore) return false; } return true; }
 function occupy(it,v){ const [w,d]=hdims(it.id,it.rot); const Lr=FURN[it.id].floor?HS.rugs:HS.grid; for(let i=it.x;i<it.x+w;i++) for(let j=it.z;j<it.z+d;j++) Lr[j*HN+i]=v?it:null; }
