@@ -6,7 +6,7 @@ const XCAVEOF={111:101,112:102,113:103,114:104,115:105};
 const XPOS={101:[1,0],102:[2,1],103:[2,2],104:[0,1],105:[1,2]};
 const XROAD={101:[102,104],102:[101,103],103:[102,105],104:[101,105],105:[103,104]};
 const FRAG={101:2,111:4,102:3,112:5,103:8,113:6,104:7,114:10,105:9,115:1,123:11,124:12};
-const isX=id=>!!(CH[id]&&(CH[id].land||CH[id].cave||CH[id].sail||CH[id].isle||CH[id].tower));
+const isX=id=>!!(CH[id]&&(CH[id].land||CH[id].cave||CH[id].sail||CH[id].isle||CH[id].tower||CH[id].town));
 const xday=()=>{ const d=new Date(); return d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate(); };
 function xr(...a){ let h=2166136261>>>0; const s=a.join('|'); for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619)>>>0; } return mulberry32(h); }
 function XS(){ const XL=S.land||(S.land={}); XL.frag=XL.frag||[]; XL.req=XL.req||{}; XL.isle=XL.isle||{}; XL.shy=XL.shy||{}; XL.tw=XL.tw||{best:0,cp:0}; XL.chest=XL.chest||{}; XL.seen=XL.seen||{}; return XL; }
@@ -59,7 +59,7 @@ function xReq(id){ const XL=XS(), d=xday(); let q=XL.req[id];
 const reqDone=q=>q.ty==='find'?q.got.length>=q.n:q.ty==='hunt'?q.c>=q.n:false;
 function reqText(q){ const k=TVN[q.tv]; return q.ty==='find'?t('rq.q.find',TVE[k],q.got.length,q.n):q.ty==='hunt'?t('rq.q.hunt',q.c,q.n):q.ty==='quiz'?t('rq.q.quiz'):t('rq.q.food'); }
 function travTalk(who,e){ const id=M.id, q=xReq(id), k=TVN[q.tv], nm=e.name, it=TVE[k];
-  const pay=()=>{ q.st=2; const lv=S.level; xReward(25+Math.round(lv*1.6)+(q.ty==='food'?20:0),30+lv*3,Math.random()<.4?pick(['bread','fish']):null); L2().done=(L2().done||0)+1; enterMap(id,{x:P.x,y:P.y}); };
+  const pay=()=>{ q.st=2; const lv=S.level; xReward(25+Math.round(lv*1.6)+(q.ty==='food'?20:0),30+lv*3,Math.random()<.4?pick(['bread','fish']):null); resAdd(['wood','stone','wool','fish'][q.tv%4],4); L2().done=(L2().done||0)+1; enterMap(id,{x:P.x,y:P.y}); };
   const L2=XS;
   if(q.st===2) return talk([L(who,t('rq.again'))]);
   if(q.ty==='quiz'){ return talk([L(who,t('rq.'+k)),L(who,t('rq.hi.quiz'))],()=>xQuiz(3,isJunior()?2:2,(ok,ex)=>{ if(ex) return; if(ok){ talk([L(who,t('rq.thanks'))],pay); } else talk([L(who,t('rq.quizNo'))]); })); }
@@ -111,7 +111,7 @@ function xMap(m){ const R=m.R, id=m.id, XL=XS(), rs=mulberry32(R.seed*3+1), rd=x
   }
   else if(R.cave){ const from=XCAVEOF[id];
     fragSpot(false,{min:10});
-    if(XL.chest[id]!==xday()) spot(m,xFree(m,rd,{min:8}),{e:'🧰',label:t('x.chest'),act:t('x.chestGo'),on:e=>{ XL.chest[id]=xday(); M.ents=M.ents.filter(x=>x!==e); const it=pick(['bread','fish','honey']); xReward(20+Math.round(S.level),15,it); }});
+    if(XL.chest[id]!==xday()) spot(m,xFree(m,rd,{min:8}),{e:'🧰',label:t('x.chest'),act:t('x.chestGo'),on:e=>{ XL.chest[id]=xday(); M.ents=M.ents.filter(x=>x!==e); const it=pick(['bread','fish','honey']); xReward(20+Math.round(S.level),15,it); if(landOpen()) resAdd('stone',3); }});
     m.xm={exitL:t('x.leaveCave'),back:()=>xGo(from,{cave:id}), quest:()=>`🕯️ ${R.name} · 📜 ${XL.frag.length}/12`};
   }
   else if(R.isle){ const st=XL.isle[id]||(XL.isle[id]={st:0,got:[],c:0});
@@ -155,7 +155,7 @@ const isleDone=id=>{ const st=XS().isle[id]; if(!st) return false; return id===1
 function isleQuest(id){ const st=XS().isle[id]||{st:0}; if(st.st===2) return t('is.done'); if(st.st===0) return t('is.q0',CH[id].guide.name);
   return id===121?t('rq.q.hunt',st.c,4):id===122?t('rq.q.find','🏺',st.got.length,3):id===123?t('rq.q.find','🪵',st.got.length,4):t('rq.q.quiz'); }
 function isleTalk(who){ const id=M.id, st=XS().isle[id], ls=k=>[1,2,3].map(i=>STR.en['is.'+id+'.'+k+i]?L(who,t('is.'+id+'.'+k+i)):null).filter(Boolean);
-  const finish=()=>{ st.st=2; const n=FRAG[id]; xReward(60+S.level*2,50+S.level*3,null); talk(ls('b'),()=>{ if(n) xFrag(n); enterMap(id,{x:P.x,y:P.y}); }); };
+  const finish=()=>{ st.st=2; const n=FRAG[id]; xReward(60+S.level*2,50+S.level*3,null); resAdd(id===124?'oil':'fish',8); talk(ls('b'),()=>{ if(n) xFrag(n); enterMap(id,{x:P.x,y:P.y}); }); };
   if(st.st===2) return talk(ls('d'));
   if(id===124){ return talk(st.st===0?ls('a'):[L(who,t('is.124.w1'))],()=>{ st.st=1; save(); xQuiz(4,3,(ok,ex)=>{ if(ex) return; if(ok) finish(); else talk([L(who,t('is.124.no'))]); }); }); }
   if(st.st===0){ st.st=1; save(); return talk(ls('a'),()=>{ enterMap(id,{x:P.x,y:P.y}); updTrack(); }); }
@@ -167,15 +167,18 @@ function towerMenu(){ const XL=XS(), tw=XL.tw; const cps=[0]; for(let c=10;c<=tw
   openModal(t('tw.title'),`<p class="verse">${esc(t('tw.verse'))}<cite>Habakkuk 2:1</cite></p><p>${esc(t('tw.how'))}</p><p><b>${esc(t('tw.best',tw.best||0))}</b></p>
     <div class="cards">${cps.map(c=>`<button class="card" data-tw="${c+1}"><div class="emo">${c?'🚩':'🪜'}</div><b>${esc(t('tw.start',c+1))}</b>${c?`<small>${esc(t('tw.cp'))}</small>`:''}</button>`).join('')}</div>
     ${S.cloud?`<p style="color:var(--muted);font-size:.85rem">${esc(t('tw.friends'))}</p>`:''}`,b=>b.querySelectorAll('[data-tw]').forEach(x=>x.onclick=()=>{ closeModal(); XT={floor:+x.dataset.tw,start:+x.dataset.tw}; S.hp=maxHP(); towerFloor(); })); }
-function towerFloor(){ if(!XT||mode!=='world') return; const n=XT.floor, w=ORDER[(n-1)%ORDER.length], boss=n%5===0; TIER_OVR=1.3+n*.42;
+function towerFloor(){ if(!XT||mode!=='world') return; if(XT.floor%7===0) return sabbath(); const n=XT.floor, w=ORDER[(n-1)%ORDER.length], boss=n%5===0; TIER_OVR=1.3+n*.42;
   startBattle(null,boss,{ch:w}); if(!B){ TIER_OVR=null; return; }
   B.ext={tower:1,keepMap:1,note:t('tw.cleared',n),after:towerAfter}; $('#bWho').textContent=t('tw.floor',n)+' · '+$('#bWho').textContent; }
+function sabbath(){ const n=XT.floor, XL=XS(), tw=XL.tw; S.hp=maxHP(); if(n>tw.best) tw.best=n; XT.floor=n+1; SFX.heal(); save(); updHUD();
+  openModal(t('tw.sabT',n),`<p class="verse">${esc(t('tw.sabV'))}<cite>${esc(t('tw.sabR'))}</cite></p><p>${esc(t('tw.sabP'))}</p><p>${esc(t('tw.hp',Math.ceil(S.hp),maxHP()))}</p>
+    <div class="row" style="gap:8px;flex-wrap:wrap"><button class="btn gold" id="twGo">${esc(t('tw.up'))}</button><button class="btn" id="twStop">${esc(t('tw.leave'))}</button></div>`,b=>{ b.querySelector('#twGo').onclick=()=>{ if(!modalOpen) return; closeModal(); towerFloor(); }; b.querySelector('#twStop').onclick=()=>{ XT=null; closeModal(); }; }); }
 function towerAfter(how){ const XL=XS(), tw=XL.tw, n=XT&&XT.floor; if(!XT) return;
   if(how==='win'){ if(n>tw.best){ tw.best=n; if(typeof ON!=='undefined'&&ON.onSave) save(); }
-    let extra=''; if(n%10===0&&n>tw.cp){ tw.cp=n; const c=50*n/10; S.coins+=c; const h=S.house; h.inv.trophy=(h.inv.trophy||0)+1; if(!h.got.includes('trophy')) h.got.push('trophy'); extra=t('tw.cpGot',n,c); SFX.trumpet(); }
-    let heal=''; if(n%5===0){ const h=Math.round(maxHP()*.4); S.hp=Math.min(maxHP(),S.hp+h); heal=t('tw.rest',h); }
+    let extra=''; if(n%10===0&&n>tw.cp){ tw.cp=n; const c=50*n/10; S.coins+=c; const h=S.house; h.inv.trophy=(h.inv.trophy||0)+1; if(!h.got.includes('trophy')) h.got.push('trophy'); extra=t('tw.cpGot',n,c); if(typeof resAdd==='function') resAdd('oil',5,true); SFX.trumpet(); }
+    let heal=''; if(n%5===0&&typeof resAdd==='function'){ resAdd('oil',2,true); heal=t('tw.oil',2); }
     save(); updHUD(); XT.floor=n+1;
-    openModal(t('tw.done',n),`<p>${esc(t('tw.hp',Math.ceil(S.hp),maxHP()))}</p>${heal?`<p>${esc(heal)}</p>`:''}${extra?`<p class="tag ok">${esc(extra)}</p>`:''}<p>${esc(t('tw.next',n+1))}${(n+1)%5===0?' '+esc(t('tw.bossNext')):''}</p>
+    openModal(t('tw.done',n),`<p>${esc(t('tw.hp',Math.ceil(S.hp),maxHP()))}</p>${heal?`<p>${esc(heal)}</p>`:''}${extra?`<p class="tag ok">${esc(extra)}</p>`:''}<p>${esc(t('tw.next',n+1))}${(n+1)%7===0?' '+esc(t('tw.sabNext')):(n+1)%5===0?' '+esc(t('tw.bossNext')):''}</p>
       <div class="row" style="gap:8px;flex-wrap:wrap"><button class="btn gold" id="twGo">${esc(t('tw.up'))}</button><button class="btn" id="twStop">${esc(t('tw.leave'))}</button></div>`,b=>{ b.querySelector('#twGo').onclick=()=>{ if(!modalOpen) return; closeModal(); towerFloor(); }; b.querySelector('#twStop').onclick=()=>{ XT=null; closeModal(); }; },()=>{ });
     return; }
   const best=tw.best; XT=null; if(how==='lose') openModal(t('tw.endT'),`<p>${esc(t('tw.end',n-1,best))}</p><p>${esc(t('tw.endP'))}</p>`); }
@@ -185,7 +188,7 @@ function towerAfter(how){ const XL=XS(), tw=XL.tw, n=XT&&XT.floor; if(!XT) retur
 { const _em=enterMap; enterMap=function(id,spawn){
     if(isX(id)){ if(!S.chs[id]) S.chs[id]={stage:4,kills:0,side:2,got:[]}; const R=CH[id]; const nt=!R.cave&&!R.tower&&isNight();
       R.tier=Math.min(16,Math.max(5,2+S.level*.35))+(R.cave?1:0)+(nt?1:0); if(!R.cave) R.night=nt?1:0;
-      R.book=R.tower?'Habakkuk 2:1':R.isle||R.sail?CH[id].book0||(CH[id].book0=CH[id].book):t('x.sub',WXE[xWeather(id)]+(nt?' 🌙':'')); }
+      R.book=R.town?t('tn.sub'):R.tower?'Habakkuk 2:1':R.isle||R.sail?CH[id].book0||(CH[id].book0=CH[id].book):t('x.sub',WXE[xWeather(id)]+(nt?' 🌙':'')); }
     _em(id,spawn);
     if(M.R.tower) M.foes=[];
     if(M.sail){ const n={sun:6,wind:9,storm:13}[M.wx]||7; M.foes=M.foes.slice(0,n); }

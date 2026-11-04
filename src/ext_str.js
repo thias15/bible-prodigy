@@ -161,3 +161,39 @@ Object.assign(STR.en,{
 'tw.board':'🪜 Highest tower floor',
 'x.leaveCave':'Leave the cave','x.toShip':'Back to the ship','x.toHarbor':'Back to the harbor','x.hubQ':'Explore the Land 🧭 or climb the Tower 🪜!'
 });
+
+/* ---- Pilgrim's Rest: the new quarter ---- */
+CH[140]=Object.assign({},CH[130],{name:'The New Quarter',book:'Pilgrim’s Rest',seed:14040,w:40,h:23,town:1,tower:0,mus:'hub',flav:[],
+  th:{g:'#86bf5e',g2:'#79b253',p:'#dcc48e',obs:['tree','olive','bush'],w:'#3f8fd0',deco:'flower',sky:'#a8d8f5'}});
+Object.assign(STR.en,{
+'lx.140':'The New Quarter','x.toRest':'Back to Pilgrim’s Rest','tn.sub':'Pilgrim’s Rest',
+'tn.quarter':'New Quarter','tn.quarterGo':'Walk into the New Quarter','tn.lock':'The New Quarter opens after the very last gate.',
+'tn.intro1':'Pilgrim’s Rest is growing! So many travellers come by now that we need more houses, a well and a bakery.','tn.intro2':'Bring wood, stone, wool, fish and olive oil from the Land, the islands and the Tower.','tn.intro3':'Start with the well – every town needs water. “Unless the LORD builds the house, they labor in vain who build it” (Psalm 127:1).',
+'tn.r.wood':'Wood','tn.r.stone':'Stone','tn.r.wool':'Wool','tn.r.fish':'Fish','tn.r.oil':'Olive oil',
+'tn.from.wood':'Galilee, Jordan, Desert, Coast','tn.from.stone':'Desert, Jerusalem, caves','tn.from.wool':'Galilee, Jordan, Jerusalem','tn.from.fish':'Jordan, Coast, islands','tn.from.oil':'Jerusalem, Tower, Rome',
+'tn.gather':'Gather {0}','tn.plot':'Empty plot','tn.build':'Look at this plot','tn.open':'Visit the {0}','tn.board':'Notice board','tn.boardGo':'Read the notice board',
+'tn.drink':'Well','tn.drinkGo':'Drink from the well','tn.drunk':'Fresh water! Your health is full.',
+'tn.t0':'Camp','tn.t1':'Village','tn.t2':'Town','tn.t3':'City on a Hill','tn.lvl':'Town level {0} – {1}','tn.res':'Resources','tn.blds':'Buildings',
+'tn.b.well':'Well','tn.b.bakery':'Bakery','tn.b.workshop':'Workshop','tn.b.pen':'Animal Pen','tn.b.school':'School','tn.b.market':'Market','tn.b.guest':'Guest House','tn.b.lighthouse':'Lighthouse',
+'tn.d.well':'Every town needs water. Build it first!','tn.d.bakery':'Fresh bread for the road, baked every morning.','tn.d.workshop':'A carpenter’s workshop – Jesus was a carpenter too (Mark 6:3).','tn.d.pen':'Your other animal friends rest and play here.',
+'tn.d.school':'Learn and practice the Scriptures together.','tn.d.market':'Buy and sell with travellers from far away.','tn.d.guest':'“Do not forget to show hospitality to strangers” (Hebrews 13:2).','tn.d.lighthouse':'A light for ships on the Great Sea.',
+'tn.e.well.1':'Drink at the well: full health any time.','tn.e.well.2':'+15 maximum health.','tn.e.well.3':'+30 maximum health.',
+'tn.e.bakery.1':'1 fresh bread every day.','tn.e.bakery.2':'2 fresh breads every day.','tn.e.bakery.3':'2 breads and a honey cake every day.',
+'tn.e.workshop.1':'Craft stools, baskets, benches and tables for your house.','tn.e.workshop.2':'Also shelves, chests, jars and lamps.','tn.e.workshop.3':'Also beds, rugs and olive plants.',
+'tn.e.pen.1':'Animals not in your team get 10 XP every day.','tn.e.pen.2':'Animals not in your team get 25 XP every day.','tn.e.pen.3':'Animals not in your team get 50 XP every day.',
+'tn.e.school.1':'Practice gives 5 shekels per right answer.','tn.e.school.2':'Practice gives 7 shekels per right answer.','tn.e.school.3':'Practice gives 9 shekels per right answer.',
+'tn.e.market.1':'Sell resources, and one special deal every day.','tn.e.market.2':'Better prices (+50%).','tn.e.market.3':'Best prices (+100%).',
+'tn.e.guest.1':'Up to 2 travellers you helped move in and bring gifts every day.','tn.e.guest.2':'Up to 4 travellers can live here.','tn.e.guest.3':'Up to 6 travellers can live here.',
+'tn.e.lighthouse.1':'Fewer storm clouds at sea.','tn.e.lighthouse.2':'Even fewer storm clouds at sea.','tn.e.lighthouse.3':'Hardly any storm clouds at sea.',
+'tn.now':'Level {0}','tn.notYet':'Not built yet','tn.up':'Upgrade to level {0}','tn.buildIt':'Build it','tn.upBtn':'Upgrade','tn.buildBtn':'Build','tn.max':'Fully built!','tn.wellFirst':'Build the well first.',
+'tn.built':'{0} is now level {1}!','tn.craft':'Craft furniture','tn.needLv':'Workshop level {0}','tn.crafted':'{0} {1} is in your house menu now!',
+'tn.sell':'Sell resources','tn.deal':'Today’s deal','tn.dealDone':'Bought',
+'tn.morning':'Good morning!','tn.morningP':'Here is what the New Quarter has for you today:','tn.penGot':'{0} animals in the pen got {1} XP',
+'vl.0':['I’m so glad I settled here. Thank you for helping me on the road!'],'vl.1':['Every morning I hear the bread baking. What a lovely smell!'],
+'vl.2':['“How good and pleasant it is when God’s people live together in unity!” (Psalm 133:1)'],'vl.3':['I left a little gift for you by the notice board this morning.'],
+'vl.4':['When I was lost on the road, you helped me. Now this is home.'],'vl.5':['Have you seen the Tower? I get dizzy just looking up!'],
+'vl.6':['My children love the animals in the pen.'],'vl.7':['We pray for you every evening, little pilgrim.'],
+'tw.oil':'+{0} 🫒 olive oil for the town.','tw.sabT':'Floor {0}: a day of rest','tw.sabV':'“On the seventh day God rested from all his work.”','tw.sabR':'Genesis 2:2',
+'tw.sabP':'No battle here. Rest, breathe and get strong again!','tw.sabNext':'It’s a day of rest!','tn.boardT':'🏘️ Town level'
+});
+STR.en['tw.how']='Climb as high as you can! Every floor has a battle and every 5th floor a boss. Every 7th floor is a day of rest. Your health carries over, so use your food wisely. Every 10 floors you reach a checkpoint.';

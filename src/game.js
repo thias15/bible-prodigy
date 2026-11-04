@@ -94,7 +94,7 @@ function save(){ if(!S) return; S.map=M?M.id:S.map; S.px=P.x; S.py=P.y; if(M&&M.
 
 /* ===================== STATS ===================== */
 function gearSum(k){ return S.armor.reduce((a,id)=>a+(ARMOR[id][k]||0),0); }
-const maxHP=()=>60+S.level*15+gearSum('hp');
+const maxHP=()=>60+S.level*15+gearSum('hp')+townHP();
 const atkP=()=>Math.round((8+S.level*3+gearSum('atk'))*(B&&B.cb&&B.cb.dmg?1+B.cb.dmg:1));
 const defP=()=>gearSum('def');
 const xpNeed=()=>30+25*S.level;
@@ -1636,10 +1636,10 @@ function verseLib(){ const vs=ORDER.filter(i=>S.chs[i].stage>=4).map(i=>CH[i].ve
   return vs.map(v=>`<p class="verse">${esc(v.t)}<cite>${esc((t('v.ref',REF(v.r))+' '+t('v.src')).trim())}</cite></p>`).join(''); }
 async function practice(cat){
   closeModal(); let right=0, n=0; practicing=true;
-  for(let i=0;i<10;i++){ const q=makeQuestion(0,cat==='mixed'?null:cat); const ok=await ask(q,{exit:1,n:i+1,of:10}); if(ok==='exit') break; n++; if(ok){ right++; S.coins+=3; } }
+  for(let i=0;i<10;i++){ const q=makeQuestion(0,cat==='mixed'?null:cat); const ok=await ask(q,{exit:1,n:i+1,of:10}); if(ok==='exit') break; n++; if(ok){ right++; S.coins+=pracCoin(); } }
   practicing=false; updHUD(); save();
   if(!n) return;
-  openModal(t('prac.title'),`<p style="font-size:1.2rem;font-weight:800">${esc(t('prac.score',right,n))}</p><p>${t('prac.earned',coinHTML(right*3))}</p><p class="verse">${esc(t('prac.verse'))}<cite>${esc(t('prac.ref'))}</cite></p><button class="btn gold" id="pAgain">${esc(t('prac.again'))}</button>`,b=>{ b.querySelector('#pAgain').onclick=()=>practice(cat); });
+  openModal(t('prac.title'),`<p style="font-size:1.2rem;font-weight:800">${esc(t('prac.score',right,n))}</p><p>${t('prac.earned',coinHTML(right*pracCoin()))}</p><p class="verse">${esc(t('prac.verse'))}<cite>${esc(t('prac.ref'))}</cite></p><button class="btn gold" id="pAgain">${esc(t('prac.again'))}</button>`,b=>{ b.querySelector('#pAgain').onclick=()=>practice(cat); });
 }
 $('#bBag').onclick=()=>{ ac(); if(modalOpen||dialogOpen) return;
   const render=b=>{ const inv=Object.entries(S.items).filter(([k,n])=>n>0);

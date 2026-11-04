@@ -1,13 +1,13 @@
 /* ===================== ONLINE: friends, gifts, stickers, leaderboards, groups, house visits ===================== */
 if(ON.avail) ON.social=(()=>{
-  const GIFTS=[{id:'coins',e:'🪙',n:15},{id:'bread',e:'🍞'},{id:'fish',e:'🐟'},{id:'honey',e:'🍯'}];
+  const GIFTS=[{id:'coins',e:'🪙',n:15},{id:'bread',e:'🍞'},{id:'fish',e:'🐟'},{id:'honey',e:'🍯'},{id:'wood',e:'🪵',res:5},{id:'stone',e:'🪨',res:5},{id:'wool',e:'🧶',res:5}];
   const STK=['🎉','🙏','😊','👍','💪','🌟','❤️','🕊️'];
   const ONLINE_MS=150000;
   let unsub=[], inbox=[], reqs=[], lastPid=null;
   const me=()=>S&&S.cloud&&S.cloud.pid;
   const day=()=>today();
   const ctx=()=>ON.ctxFor(S);
-  const giftName=g=>{ const G=GIFTS.find(x=>x.id===g); if(!G) return ''; return G.id==='coins'?t('on.giftCoins',G.n):(ITEMS[G.id]?ITEMS[G.id].name:G.id); };
+  const giftName=g=>{ const G=GIFTS.find(x=>x.id===g); if(!G) return ''; return G.res?t('tn.r.'+G.id)+' ×'+G.res:G.id==='coins'?t('on.giftCoins',G.n):(ITEMS[G.id]?ITEMS[G.id].name:G.id); };
   const isOnline=p=>p&&p.on&&Date.now()-p.on<ONLINE_MS;
   /* ---------- live badges ---------- */
   function badge(){ const b=document.getElementById('bPals'); if(!b) return; b.hidden=!(ON.on&&S&&S.cloud); const n=inbox.length+reqs.length; let d=b.querySelector('.nbadge'); if(!d){ d=document.createElement('span'); d.className='nbadge'; b.appendChild(d); } d.textContent=n||''; d.hidden=!n; const mb=document.getElementById('bMenu'); if(mb){ let e=mb.querySelector('.nbadge'); if(!e){ e=document.createElement('span'); e.className='nbadge'; mb.appendChild(e); } e.textContent=n||''; e.hidden=!n||!(ON.on&&S&&S.cloud); } }
@@ -75,7 +75,7 @@ if(ON.avail) ON.social=(()=>{
       :`<p>${esc(t('on.noGifts'))}</p>`;
     box.querySelectorAll('[data-open]').forEach(b=>b.onclick=async()=>{ const x=inbox.find(i=>i.id===b.dataset.open); if(!x) return; b.disabled=true; const d=x.data, G=GIFTS.find(g=>g.id===d.g);
       try{ const C=await ctx(); await C.del('players/'+me()+'/inbox/'+x.id); inbox=inbox.filter(i=>i!==x); badge();
-        if(G){ if(G.id==='coins') S.coins+=G.n; else S.items[G.id]=(S.items[G.id]||0)+1; save(); updHUD(); SFX.coin(); toast(t('on.gotGift',giftName(G.id))); }
+        if(G){ if(G.res) resAdd(G.id,G.res,true); else if(G.id==='coins') S.coins+=G.n; else S.items[G.id]=(S.items[G.id]||0)+1; save(); updHUD(); SFX.coin(); toast(t('on.gotGift',giftName(G.id))); }
         if(G) openModal(t('on.thankT'),`<p>${esc(t('on.thankP',ON.nmText(d.nm)))}</p><div style="display:flex;gap:8px"><button class="btn gold" id="tkY">❤️ ${esc(t('stk.6'))}</button><button class="btn ghost" id="tkN">${esc(t('create.back'))}</button></div>`,
           m=>{ m.querySelector('#tkN').onclick=()=>openPals('g'); m.querySelector('#tkY').onclick=async()=>{ try{ await send(d.from,'',6); toast(t('on.stkSent')); }catch(e){} openPals('g'); }; });
         else renderTab(); }catch(e){ b.disabled=false; toast(ON.errText(e)); } }); }
@@ -83,7 +83,9 @@ if(ON.avail) ON.social=(()=>{
   function boardRows(list){ const w=ON.week(); return list.map(p=>({p,wk:p.p&&p.p.wk&&p.p.wk.w===w?p.p.wk:{p:0,r:0,v:0}})).sort((a,b)=>b.wk.p-a.wk.p); }
   async function tabBoard(box){ box.innerHTML=`<p>${esc(t('on.loading'))}</p>`; const fr=cache||(cache=await loadFriends()); if(palsTab!=='b') return;
     const mine={id:me(),me:1,p:{nm:S.cloud.nm,wk:S.wk&&S.wk.w===ON.week()?S.wk:{p:0,r:0,v:0},look:S.look}}; const rows=boardRows([mine].concat(fr.filter(f=>f.s==='friends'&&f.p)));
-    box.innerHTML=`<p>${esc(t('on.boardP'))}</p><table class="board"><tr><th>#</th><th></th><th>⭐</th><th>✔</th><th>📜</th></tr>${rows.map((r,i)=>`<tr class="${r.p.me?'me':''}"><td>${i+1}</td><td>${ON.nmEmo(r.p.p.nm)} ${esc(ON.nmText(r.p.p.nm))}</td><td>${r.wk.p||0}</td><td>${r.wk.r||0}</td><td>${r.wk.v||0}</td></tr>`).join('')}</table><p style="color:var(--muted);font-size:.85rem">${esc(t('on.boardKey'))}</p>`+towerBoard([mine].concat(fr.filter(f=>f.s==='friends'&&f.p))); }
+    box.innerHTML=`<p>${esc(t('on.boardP'))}</p><table class="board"><tr><th>#</th><th></th><th>⭐</th><th>✔</th><th>📜</th></tr>${rows.map((r,i)=>`<tr class="${r.p.me?'me':''}"><td>${i+1}</td><td>${ON.nmEmo(r.p.p.nm)} ${esc(ON.nmText(r.p.p.nm))}</td><td>${r.wk.p||0}</td><td>${r.wk.r||0}</td><td>${r.wk.v||0}</td></tr>`).join('')}</table><p style="color:var(--muted);font-size:.85rem">${esc(t('on.boardKey'))}</p>`+towerBoard([mine].concat(fr.filter(f=>f.s==='friends'&&f.p)))+townBoard([mine].concat(fr.filter(f=>f.s==='friends'&&f.p))); }
+  function townBoard(list){ const rows=list.map(r=>({r,tl:r.me?townLevel():(r.p.tl||0)})).filter(x=>x.tl>0).sort((a,b)=>b.tl-a.tl); if(!rows.length) return '';
+    return `<div class="sect">${esc(t('tn.boardT'))}</div><table class="board">${rows.map((x,i)=>`<tr class="${x.r.me?'me':''}"><td>${i+1}</td><td>${ON.nmEmo(x.r.p.nm)} ${esc(ON.nmText(x.r.p.nm))}</td><td>🏘️ ${x.tl}</td></tr>`).join('')}</table>`; }
   function towerBoard(list){ const myTw=S.land&&S.land.tw&&S.land.tw.best||0; const rows=list.map(r=>({r,tw:r.me?myTw:(r.p.tw||0)})).filter(x=>x.tw>0).sort((a,b)=>b.tw-a.tw); if(!rows.length) return '';
     return `<div class="sect">${esc(t('tw.board'))}</div><table class="board">${rows.map((x,i)=>`<tr class="${x.r.me?'me':''}"><td>${i+1}</td><td>${ON.nmEmo(x.r.p.nm)} ${esc(ON.nmText(x.r.p.nm))}</td><td>🪜 ${x.tw}</td></tr>`).join('')}</table>`; }
   /* ---------- groups ---------- */

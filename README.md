@@ -71,8 +71,14 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
   Acts (Barnabas and the proconsul, Fair Havens, the shipwreck and the viper, Paul teaching in
   Rome), a quest, and a sea animal to befriend (dolphin, monk seal, crab, octopus, palace lizard).
 - **Tower of the Watchman** (Habakkuk 2:1, opens after 10 worlds): an endless climb. Every floor is
-  a battle, every 5th floor a boss, foes get stronger as you go, your health carries over, and every
-  10 floors is a checkpoint with a trophy. Your highest floor shows on the friends leaderboard.
+  a battle, every 5th floor a boss, every 7th floor a day of rest (Genesis 2:2), foes get stronger as you go,
+  your health carries over, and every 10 floors is a checkpoint with a trophy. Your highest floor shows on the friends leaderboard.
+- **The New Quarter of Pilgrim's Rest** (after the last gate): gather wood, stone, wool, fish and olive
+  oil in the Land, on the islands and in the Tower, and build up a town: a well, bakery (daily bread),
+  workshop (craft furniture for your house), animal pen (XP for animals not in your team), school
+  (more shekels in practice), market, guest house (travellers you helped move in and bring gifts) and
+  a lighthouse (fewer storms at sea). Each building has 3 levels; the town grows from Camp to Village,
+  Town and City on a Hill. Friends see your town level and can send wood, stone and wool as gifts.
 - **Variety:** seven hairstyles (including braids, afro and headscarf), three enemy types per
   world (quick, tough, healer), and about 50 animal friends with different abilities.
   The animal shop opens up as you go: cheap friends at the start, rarer ones after more
@@ -153,6 +159,7 @@ No build step, server or accounts needed. On GitHub Pages the game can be instal
 | `src/online_str.js` | English text for the online features (other languages in `src/lang/<l>/O.json`) |
 | `src/ext_str.js` | The Land, sea, islands, Tower, wild animals and team text (other languages in `src/lang/<l>/X.json`) |
 | `src/endgame.js` | The Land, the Great Sea, the islands and the Tower (inserted into `game.js` at `/*__EXT__*/`) |
+| `src/town.js` | The New Quarter town (inserted right after `endgame.js`) |
 | `src/fb/` | Firebase config, security rules (`firestore.rules`) and the bundled SDK (`fb.js`, rebuilt with `npx esbuild entry.js --bundle --minify --format=iife --outfile=fb.js`) |
 | `src/admin.template.html`, `src/privacy.html` | Owner dashboard and privacy page |
 | `src/build.py` | Combines everything into `index.html`, `beta/index.html` (test copy with separate storage), `admin.html` and `privacy.html` (needs Python 3 and Node.js) |
