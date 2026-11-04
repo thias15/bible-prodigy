@@ -55,8 +55,26 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
   *Stille Nacht / Silent Night* (Bethlehem) and *Ode to Joy* ("Joyful, Joyful", the finale).
 - **Read-aloud** for questions and dialogue, using the most natural voice on the device,
   with a voice picker and test button in Settings.
+- **Animal teams.** One animal friend travels with you at first; a second joins at level 10 and a
+  third at level 20. Pick your team and its leader in the Animals menu. Every animal acts in battle
+  (bosses get a bit tougher for bigger teams), and ten Bible pairs give a team bonus, e.g. wolf and
+  lamb ("Peace", Isaiah 11:6) heal you every turn, raven and dove ("Birds of the Ark") give more XP.
+- **After the last gate: the Land.** A road from Pilgrim's Rest leads into five connected regions
+  (Galilee Hills, Jordan Valley, Judean Desert, the Coast, Around Jerusalem). Each has a day/night
+  cycle and its own weather (rain, mist, desert wind), a hidden cave with a treasure chest, a
+  traveller with a new request every day (find lost things, answer questions, chase away
+  gloomlings, share food), and rare wild animals that only live there (War Horse, Rock Badger at
+  night, Dromedary...). After rain a rainbow may appear in Galilee. Twelve lost pages of Psalm 23
+  are hidden in the regions, caves and islands.
+- **Sea journeys with Paul.** From the Coast, sail the Great Sea in a little boat, steer around
+  storm clouds and go ashore on Cyprus, Crete, Malta and in Rome. Each island has its story from
+  Acts (Barnabas and the proconsul, Fair Havens, the shipwreck and the viper, Paul teaching in
+  Rome), a quest, and a sea animal to befriend (dolphin, monk seal, crab, octopus, palace lizard).
+- **Tower of the Watchman** (Habakkuk 2:1, opens after 10 worlds): an endless climb. Every floor is
+  a battle, every 5th floor a boss, foes get stronger as you go, your health carries over, and every
+  10 floors is a checkpoint with a trophy. Your highest floor shows on the friends leaderboard.
 - **Variety:** seven hairstyles (including braids, afro and headscarf), three enemy types per
-  world (quick, tough, healer), and about 40 animal friends with different abilities.
+  world (quick, tough, healer), and about 50 animal friends with different abilities.
   The animal shop opens up as you go: cheap friends at the start, rarer ones after more
   finished worlds, and some (owl, bee, turtle...) only as world rewards.
 - **Two ways to see the world.** A 3D view for exploring up close (characters, animals, landmarks
@@ -133,6 +151,8 @@ No build step, server or accounts needed. On GitHub Pages the game can be instal
 | `src/online_social.js` | Friends, gifts, stickers, leaderboards, groups, house visits |
 | `src/online_live.js` | Quiz duel and team boss |
 | `src/online_str.js` | English text for the online features (other languages in `src/lang/<l>/O.json`) |
+| `src/ext_str.js` | The Land, sea, islands, Tower, wild animals and team text (other languages in `src/lang/<l>/X.json`) |
+| `src/endgame.js` | The Land, the Great Sea, the islands and the Tower (inserted into `game.js` at `/*__EXT__*/`) |
 | `src/fb/` | Firebase config, security rules (`firestore.rules`) and the bundled SDK (`fb.js`, rebuilt with `npx esbuild entry.js --bundle --minify --format=iife --outfile=fb.js`) |
 | `src/admin.template.html`, `src/privacy.html` | Owner dashboard and privacy page |
 | `src/build.py` | Combines everything into `index.html`, `beta/index.html` (test copy with separate storage), `admin.html` and `privacy.html` (needs Python 3 and Node.js) |

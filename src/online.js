@@ -78,7 +78,7 @@ const ON=(()=>{
         m.querySelector('#pC').onclick=()=>{ sel=[]; draw(); }; if(backFn) m.querySelector('#pB').onclick=backFn; draw(); }); }
 
   /* ---------- player record ---------- */
-  function pub(st){ const wk=st.wk&&st.wk.w===week()?st.wk:{w:week(),p:0,r:0,v:0}; return {nm:st.cloud.nm||null,look:st.look,lvl:st.level,frags:frags(st),comp:st.comp||'',lang:st.lang||LANG,gr:st.grade||5,wk,on:NET.now,
+  function pub(st){ const wk=st.wk&&st.wk.w===week()?st.wk:{w:week(),p:0,r:0,v:0}; return {nm:st.cloud.nm||null,look:st.look,lvl:st.level,frags:frags(st),comp:st.comp||'',tw:(st.land&&st.land.tw&&st.land.tw.best)||0,lang:st.lang||LANG,gr:st.grade||5,wk,on:NET.now,
     house:((st.house&&st.house.items)||[]).slice(0,60)}; }
   async function uniqueCode(C){ const L='BCDFGHJKLMNPQRSTVWXZ'; for(let i=0;i<8;i++){ const c=Array.from({length:4},()=>L[rnd(0,L.length-1)]).join('')+'-'+rnd(1000,9999); if(!(await C.get('codes/'+c))) return c; } return 'X'+rid(8).toUpperCase(); }
   async function createPlayer(C,fam,st,nm){ const pid=rid(16), code=await uniqueCode(C), data=snapshot(st);

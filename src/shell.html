@@ -101,6 +101,25 @@ body.easyfont #qText.verseq{font-family:'Lexend',Georgia,serif;font-style:normal
 .hsel{color:var(--gold-soft);font-weight:900}
 #inv{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 4px;scrollbar-width:thin;overscroll-behavior:contain}
 #inv .card{flex:none;width:104px}
+.tslots{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tslot{position:relative;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px;border-radius:14px;border:2px solid var(--gold);background:#1a2558;font-weight:800;font-size:.8rem;text-align:center;min-width:0}
+.tslot.lead{background:linear-gradient(#2a3470,#1a2558)}.tslot.empty{border-style:dashed;border-color:var(--lapis-line);background:transparent;color:var(--muted)}
+.tslot .emo{font-size:34px;line-height:1.1}.tslot .btn.sm{font-size:.68rem;padding:.25em .5em}
+.tslot .tx{position:absolute;top:2px;right:4px;background:none;border:0;color:var(--muted);font-size:1rem;padding:2px 4px}
+.combos{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:6px}
+.combo{display:flex;gap:8px;align-items:center;padding:5px 8px;border-radius:12px;border:2px solid var(--lapis-line);background:#141d48;font-size:.8rem}
+.combo.on{border-color:var(--gold);background:#24306a}.combo .pair{font-size:1.4rem;white-space:nowrap}.combo small{display:block;color:var(--muted);font-weight:700}
+#bComp2 .compE,#bComp3 .compE{animation-delay:-.5s}
+.unit[hidden]{display:none!important}
+#wx{position:absolute;inset:0;pointer-events:none;z-index:4}
+#wx.rain{background:linear-gradient(rgba(40,60,90,.16),rgba(40,60,90,.16)),repeating-linear-gradient(100deg,transparent 0 22px,rgba(210,225,255,.38) 22px 23.5px);background-size:auto,90px 140px;animation:wxr .45s linear infinite}
+#wx.storm{background:linear-gradient(rgba(20,30,60,.3),rgba(20,30,60,.3)),repeating-linear-gradient(104deg,transparent 0 16px,rgba(210,225,255,.45) 16px 18px);background-size:auto,70px 120px;animation:wxr .3s linear infinite}
+@keyframes wxr{to{background-position:0 0,-25px 140px}}
+#wx.wind{background:linear-gradient(rgba(220,190,120,.2),rgba(220,190,120,.2)),repeating-linear-gradient(8deg,transparent 0 30px,rgba(245,225,175,.32) 30px 32px);background-size:auto,220px 60px;animation:wxw .7s linear infinite}
+@keyframes wxw{to{background-position:0 0,220px 10px}}
+#wx.mist{background:radial-gradient(ellipse at 30% 40%,rgba(255,255,255,.38),transparent 60%),radial-gradient(ellipse at 75% 70%,rgba(255,255,255,.3),transparent 55%),rgba(230,235,240,.2)}
+@media (prefers-reduced-motion:reduce){#wx{animation:none!important}}
+.psalm{display:flex;flex-wrap:wrap;gap:4px;font-size:.82rem;margin:8px 0}.psalm span{padding:2px 6px;border-radius:8px;background:#141d48}.psalm .got{color:var(--gold-soft)}.psalm .miss{color:var(--muted)}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
 .card{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 6px 8px;border-radius:14px;border:2px solid var(--lapis-line);background:#141d48;font-weight:800;font-size:.8rem;text-align:center;min-width:0;color:var(--vellum)}
 .card img{width:76px;height:76px;object-fit:contain}
@@ -342,12 +361,15 @@ body.visiting #htools,body.visiting #inv{display:none}
     <div class="dt"><div id="dName"></div><div id="dText"></div><div id="dChoices" class="dchoices" hidden></div><div class="dnext" data-t="dlg.tap">tap ▸</div></div>
   </div>
 
+  <div id="wx" hidden></div>
   <div id="battle" hidden>
     <div id="arena">
       <div id="bWho"></div>
       <div class="side left" id="bLeft">
         <div class="unit" id="bPlayer"><canvas id="bPC"></canvas><div class="uname" id="bPName"></div></div>
         <div class="unit" id="bComp"><div class="compE" id="bCompE"></div></div>
+        <div class="unit" id="bComp2" hidden><div class="compE"></div></div>
+        <div class="unit" id="bComp3" hidden><div class="compE"></div></div>
       </div>
       <div class="side right" id="bFoes"></div>
     </div>

@@ -37,7 +37,7 @@ W.lantern=new TH.PointLight(0xffc878,0,9,1.6); W.scene.add(W.lantern);
 function setAtmos(R,chId){ const a=atmos(R,chId); const key=JSON.stringify(a); if(key===W.atKey) return; W.atKey=key; W.night=a.night;
   if(W.sky) W.sky.dispose(); W.sky=skyTex(a.top,a.mid,a.bot); W.scene.background=W.sky; W.scene.fog=new TH.Fog(c3(a.fog).getHex(),30,78);
   W.hemi.color.copy(c3(a.hs)); W.hemi.groundColor.copy(c3(a.hg)); W.hemi.intensity=a.hi; W.sun.color.copy(c3(a.sc)); W.sun.intensity=a.si; W.lantern.intensity=a.night?1.3:0; }
-function clearWorld(){ if(W.root){ W.scene.remove(W.root); disposeTree(W.root); } W.root=null; W.ents.clear(); W.foes.clear(); W.items=[]; W.dyn=[]; W.anim=[]; W.lmRoots=[]; W.player=null; W.psig=''; W.pet=null; W.petId=''; W.ground=null; W.m=null; W.byTile=null; W.fade=null; W.life=null; CUT=null; }
+function clearWorld(){ if(W.root){ W.scene.remove(W.root); disposeTree(W.root); } W.root=null; W.ents.clear(); W.foes.clear(); W.items=[]; W.dyn=[]; W.anim=[]; W.lmRoots=[]; W.player=null; W.psig=''; W.pet=null; W.petId=''; W.pets=[]; W.boat=null; W.ground=null; W.m=null; W.byTile=null; W.fade=null; W.life=null; CUT=null; }
 const isWet=v=>v===T.W||v===T.BR;
 function paintGround(m,th,P){
   const Wt=m.W, Ht=m.H, R=rng(m.R.seed*7+3);
@@ -121,7 +121,7 @@ function rebuildDyn(d){ W.root.remove(d.o.root); W.lmRoots=W.lmRoots.filter(r=>r
 
 /* ---- entities ---- */
 function gateState(e){ return !isOpen(e.ch)?'locked':(chStage(e.ch)>=4?'done':'open'); }
-function entKey(e){ if(e.kind==='gate') return 'g'+gateState(e)+LANG; if(e.kind==='npc') return 'n'+e.name; return e.kind; }
+function entKey(e){ if(e.kind==='spot') return 's'+e.e+(e.hide?'h':'')+(e.label||''); if(e.kind==='gate') return 'g'+gateState(e)+LANG; if(e.kind==='npc') return 'n'+e.name; return e.kind; }
 function makeEnt(e){
   const o={key:entKey(e),root:new TH.Group()}; const r=o.root;
   if(e.kind==='npc'){ o.P=buildPerson(e.look,{staff:e.staff,angel:e.angel}); r.add(o.P.root); r.position.set(X3(e.x),0,Z3(e.y)); o.face=0; o.t0=e.x*1.7+e.y;
@@ -132,6 +132,9 @@ function makeEnt(e){
   else if(e.kind==='game'){ const g=new TH.Group(); r.add(g); msh(Gc(.05,.06,1.1,6),mat('#6b4a22'),g,0,.55,0); const bd=msh(Gb(.9,.6,.08),texMat('wood'),g,0,1.25,0); msh(Gb(.98,.68,.05),mat('#e8b94a',{metalness:.6,roughness:.4}),g,0,1.25,-.03);
     const EM={manna:'🍞',ark:'🚢',wall:'🧱',fish:'🐟'}; const sp=sprite(emo(EM[e.g]||'⭐'),.55); sp.position.set(0,1.27,.1); g.add(sp); const gl=sprite(tx('glow'),1.4); gl.position.set(0,1.25,.05); gl.material.opacity=.6; g.add(gl); o.upd=t=>{ gl.material.opacity=.45+Math.sin(t*3)*.2; sp.position.y=1.27+Math.sin(t*2)*.03; };
     r.position.set(X3(e.x),0,Z3(e.y)); const L=labelTex(t('mg.'+e.g)); o.label=topSprite(L.tex,.28,L.aspect); o.label.position.y=1.85; o.label.visible=false; r.add(o.label); }
+  else if(e.kind==='spot'){ if(e.hide) return null; const g=new TH.Group(); r.add(g); const s=e.big?1.5:.95; if(e.glow!==false){ const gl=sprite(tx('glow'),1.7*s); gl.material.opacity=.6; gl.position.y=.6*s; g.add(gl); o.gl=gl; }
+    const sp=sprite(emo(e.e),s); sp.position.y=.62*s; g.add(sp); o.sp=sp; o.s=s; const sh=msh(geo('pshadow',()=>new TH.CircleGeometry(.34,24)),basic('#000000',{transparent:true,opacity:.22,depthWrite:false}),g,0,.02,0,false); sh.rotation.x=-PI/2;
+    r.position.set(X3(e.x),0,Z3(e.y)); if(e.label){ const L=labelTex(e.label); o.label=topSprite(L.tex,.28,L.aspect); o.label.position.y=1.35*s+.25; o.label.visible=false; r.add(o.label); } }
   else if(e.kind==='exit'){ const ex=buildExit(); o.upd=ex.update; r.add(ex.root); r.rotation.y=PI/2.7; r.position.set(X3(e.x)-.1,0,Z3(e.y)); }
   else if(e.kind==='boss'){ const b=CH[M.id].boss; o.G=buildBoss3(b.kind,b.c); o.G.root.scale.setScalar(1.15); r.add(o.G.root); r.position.set(X3(e.x),0,Z3(e.y)); if(o.G.setMarches) o.G.setMarches(0);
     const L=labelTex(b.name,{fg:'#ffb8a8'}); o.label=topSprite(L.tex,.34,L.aspect); o.label.position.y=2.6; r.add(o.label); }
@@ -151,6 +154,7 @@ function syncEnts(dt,tm){
     else if(e.kind==='gate'){ if(o.upd) o.upd(tm); o.label.visible=d<5; }
     else if(e.kind==='exit'){ if(o.upd) o.upd(tm); }
     else if(e.kind==='game'){ if(o.upd) o.upd(tm); o.label.visible=d<5; }
+    else if(e.kind==='spot'){ if(!e.still) o.sp.position.y=.62*o.s+Math.sin(tm*3+e.x)*.06; if(o.gl) o.gl.material.opacity=.45+Math.sin(tm*2.5+e.y)*.15; if(o.label) o.label.visible=d<6; }
     else if(e.kind==='boss'){ o.G.update(dt,tm); const a=Math.atan2(X3(px)-X3(e.x),Z3(py)-Z3(e.y)); o.G.root.rotation.y+=angTo(o.G.root.rotation.y,a)*Math.min(1,dt*3); o.label.visible=d<7; }
   }
   for(const [e,o] of W.ents) if(!seen.has(e)){ if(o){ W.root.remove(o.root); disposeTree(o.root); } W.ents.delete(e); }
@@ -185,14 +189,20 @@ function renderWorld(tm){
   W.pface+=angTo(W.pface,P.ang!=null?P.ang:(DIRANG[P.dir]||0))*Math.min(1,dt*13);
   const pl=W.player; pl.root.position.copy(W.ppos); pl.root.rotation.y=W.pface; pl.update(dt,W.snap?0:Math.min(spd,6)*.62,tm); pl.root.visible=!(P.blink&&P.inv>0&&Math.floor(tm*12)%2&&mode==='world');
   if(W.night){ W.lantern.position.set(W.ppos.x,1.6,W.ppos.z+.3); }
+  if(M.sail){ if(!W.boat){ const bo=buildLandmark({k:'boat',x:0,y:0,w:4,h:2},lmCtx()); W.boat=new TH.Group(); W.boat.add(bo.root); bo.root.scale.setScalar(.6); bo.root.position.set(0,0,0); W.root.add(W.boat); }
+    W.boat.position.set(W.ppos.x,0,W.ppos.z); W.boat.rotation.y=W.pface+PI/2; W.boat.position.y=.02+Math.sin(tm*1.6)*.05; pl.root.position.y=.24+Math.sin(tm*1.6)*.05; }
   // pet
-  const pkey=petKey(S.comp); if(pkey!==W.petId){ const old=W.pet; W.pet=petModel(S.comp); W.petId=pkey; W.root.add(W.pet.root); if(old){ W.petPos.copy(old.root.position); W.root.remove(old.root); disposeTree(old.root); } else W.petPos.set(X3(CP.fx),0,Z3(CP.fy)); }
-  if(W.pet){ const ptx=X3(CP.fx), ptz=Z3(CP.fy); const px0=W.petPos.x, pz0=W.petPos.z;
-    if(W.snap) W.petPos.set(ptx,0,ptz); else { W.petPos.x=dmp(W.petPos.x,ptx,7,dt); W.petPos.z=dmp(W.petPos.z,ptz,7,dt); }
-    const dx=W.petPos.x-W.ppos.x, dz=W.petPos.z-W.ppos.z, dd=Math.hypot(dx,dz); if(dd<.75&&dd>1e-4){ W.petPos.x=W.ppos.x+dx/dd*.75; W.petPos.z=W.ppos.z+dz/dd*.75; }
-    const mvx=W.petPos.x-px0, mvz=W.petPos.z-pz0, ps=dt>0?Math.hypot(mvx,mvz)/dt:0;
-    const want=ps>.3?Math.atan2(mvx,mvz):Math.atan2(W.ppos.x-W.petPos.x,W.ppos.z-W.petPos.z); W.petFace+=angTo(W.petFace,want)*Math.min(1,dt*7);
-    { const cs=S.comps[S.comp]; const tier=cs?(cs.lvl>=8?2:cs.lvl>=4?1:0):0; W.pet.root.scale.setScalar(1+tier*.12); } W.pet.root.position.copy(W.petPos); W.pet.root.rotation.y=W.petFace; W.pet.update(dt,ps,tm); }
+  const tmW=team(); W.pets=W.pets||[];
+  for(let i=0;i<3;i++){ const id=tmW[i], pp=W.pets[i]||(W.pets[i]={pet:null,id:'',pos:new TH.Vector3(),face:0}); const CQ=CPS[i];
+    const pkey=id?petKey(id):''; if(pkey!==pp.id){ const old=pp.pet; pp.pet=id?petModel(id):null; pp.id=pkey; if(pp.pet){ W.root.add(pp.pet.root); if(old) pp.pos.copy(old.root.position); else pp.pos.set(X3(CQ.fx),0,Z3(CQ.fy)); } if(old){ W.root.remove(old.root); disposeTree(old.root); } }
+    const pet=pp.pet; if(!pet) continue; const ptx=X3(CQ.fx), ptz=Z3(CQ.fy); const px0=pp.pos.x, pz0=pp.pos.z;
+    if(W.snap) pp.pos.set(ptx,0,ptz); else { pp.pos.x=dmp(pp.pos.x,ptx,7-i,dt); pp.pos.z=dmp(pp.pos.z,ptz,7-i,dt); }
+    const dx=pp.pos.x-W.ppos.x, dz=pp.pos.z-W.ppos.z, dd=Math.hypot(dx,dz); if(dd<.75&&dd>1e-4){ pp.pos.x=W.ppos.x+dx/dd*.75; pp.pos.z=W.ppos.z+dz/dd*.75; }
+    for(let j=0;j<i;j++){ const o=W.pets[j]; if(!o||!o.pet) continue; const ex=pp.pos.x-o.pos.x, ez=pp.pos.z-o.pos.z, ed=Math.hypot(ex,ez); if(ed<.7&&ed>1e-4){ pp.pos.x=o.pos.x+ex/ed*.7; pp.pos.z=o.pos.z+ez/ed*.7; } }
+    const mvx=pp.pos.x-px0, mvz=pp.pos.z-pz0, ps=dt>0?Math.hypot(mvx,mvz)/dt:0;
+    const want=ps>.3?Math.atan2(mvx,mvz):Math.atan2(W.ppos.x-pp.pos.x,W.ppos.z-pp.pos.z); pp.face+=angTo(pp.face,want)*Math.min(1,dt*7);
+    { const cs=S.comps[id]; const tier=cs?(cs.lvl>=8?2:cs.lvl>=4?1:0):0; pet.root.scale.setScalar((1+tier*.12)*(i?.85:1)); } pet.root.position.copy(pp.pos); pet.root.visible=!M.sail; pet.root.rotation.y=pp.face; pet.update(dt,ps,tm+i*.7); }
+  W.pet=W.pets[0]&&W.pets[0].pet;
   syncEnts(dt,tm); syncFoes(dt,tm); updFade(dt); updLife(dt,tm);
   const c=M.id!=='hub'&&S.chs[M.id];
   W.items.forEach(o=>{ const vis=!!c&&c.side===1&&!c.got.includes(o.it.idx); o.g.visible=vis; if(vis){ o.s.position.y=.62+Math.sin(tm*3+o.it.idx)*.08; } });
@@ -262,7 +272,8 @@ function battleStart(){
   const add=(el,obj,kind,x,z,ry,extra)=>{ x*=XK; obj.root.position.set(x,.15,z); obj.root.rotation.y=ry; sc.add(obj.root); obj.root.updateMatrixWorld(true); const bb=new TH.Box3().setFromObject(obj.root);
     const u=Object.assign({el,obj,kind,home:new TH.Vector3(x,.15,z),off:new TH.Vector3(),h:Math.max(.6,bb.max.y-.15),shake:0,flash:0,scale:obj.root.scale.x},extra||{}); BT.units.set(el,u); return u; };
   const pl=buildPerson(S.look,personOpts()); BT.player=add($('#bPlayer'),pl,'player',-2.1,0,PI/2-.55,{dir:1});
-  const pet=petModel(S.comp); if(pet.kind==='icon') pet.root.scale.setScalar(port?1.0:1.35); BT.pet=add($('#bComp'),pet,'pet',port?-2.6:-2.95,port?1.7:1.15,PI/2-.4,{dir:1});
+  const tmB=team(); const PP=[[port?-2.6:-2.95,port?1.7:1.15],[port?-3.1:-3.5,port?-.8:-1.1],[port?-.6:-.9,port?1.9:1.3]];
+  tmB.forEach((id,i)=>{ const pet=petModel(id); if(pet.kind==='icon') pet.root.scale.setScalar((port?1.0:1.35)*(i?.8:1)); else if(i) pet.root.scale.multiplyScalar(.8); const u=add($(i?'#bComp'+(i+1):'#bComp'),pet,'pet',PP[i][0],PP[i][1],PI/2-.4,{dir:1}); if(!i) BT.pet=u; });
   const n=B.foes.length; const POSN=B.boss?[[2.5,-.1]]:n===1?[[2.2,0]]:n===2?[[1.9,-.9],[2.7,1.0]]:[[1.8,1.25],[2.35,-.8],[3.4,.45]];
   B.foes.forEach((f,i)=>{ let G; if(f.boss){ G=buildBoss3(f.boss.kind,f.boss.c); G.root.scale.setScalar(BOSS_SCALE[f.boss.kind]||1.55); } else { G=buildFoe(f.shape,f.c); G.root.scale.setScalar(.95); }
     const [x,z]=POSN[i]||[2+i,0]; const u=add(f.el,G,'foe',x,z,-PI/2+.55,{dir:-1,f}); f.r3=u; });
@@ -305,13 +316,13 @@ function renderBattle(tm){
     const cv2=u.kind==='pet'?el.querySelector('.compE'):el.querySelector('canvas'); if(cv2){ cv2.style.width=Math.round(hpx*(u.kind==='foe'&&u.f.boss?.9:.7))+'px'; cv2.style.height=Math.round(hpx)+'px'; } });
   const tg=B.foes[B.target]; if(tg&&tg.r3&&tg.hp>0){ BT.target.visible=true; BT.target.position.set(tg.r3.obj.root.position.x,.17,tg.r3.obj.root.position.z); const s=tg.boss?1.6:1; BT.target.scale.set(s,s,1); BT.target.material.opacity=.55+Math.sin(tm*5)*.3; } else BT.target.visible=false;
   if(B.shield>0){ const p=BT.player.obj.root.position; BT.bubble.position.set(p.x,.85,p.z); BT.bubble.scale.setScalar(1+Math.sin(tm*4)*.03); } else BT.bubble.position.y=-9;
-  if(B.compShield>0){ const p=BT.pet.obj.root.position; BT.guard.position.set(p.x,.5,p.z); } else BT.guard.position.y=-9;
+  if(B.compShield>0&&BT.pet){ const p=BT.pet.obj.root.position; BT.guard.position.set(p.x,.5,p.z); } else BT.guard.position.y=-9;
   B.foes.forEach(f=>{ if(!f.r3) return; if(f.stun&&!f.r3.ice){ f.r3.ice=msh(Gs(.85,20,14),new TH.MeshStandardMaterial({color:c3('#cfeaff'),transparent:true,opacity:.35,roughness:.05,metalness:.2,depthWrite:false}),BT.scene,0,0,0,false); }
     if(f.r3.ice){ if(!f.stun||f.hp<=0){ BT.scene.remove(f.r3.ice); f.r3.ice=null; } else { const p=f.r3.obj.root.position; f.r3.ice.position.set(p.x,.75,p.z); } } });
   RD.render(BT.scene,cam);
 }
 function battleEnd(){ $('#battle').classList.remove('b3d'); if(!BT) return; BT.tw.forEach(w=>w.res()); disposeTree(BT.scene); if(BT.sky) BT.sky.dispose(); BT=null; cam.clearViewOffset();
-  ['#bPlayer','#bComp'].forEach(s=>{ const el=$(s); el.style.left=el.style.top=''; }); const ce=$('#bComp .compE'); if(ce){ ce.style.width=ce.style.height=''; } }
+  ['#bPlayer','#bComp','#bComp2','#bComp3'].forEach(s=>{ const el=$(s); el.style.left=el.style.top=''; const ce=el.querySelector('.compE'); if(ce){ ce.style.width=ce.style.height=''; } }); }
 
 /* ===================== HOUSE ===================== */
 let HS=null; const HN=8;

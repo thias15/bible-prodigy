@@ -46,12 +46,12 @@ service cloud.firestore {
     match /players/{pid} {
       allow get: if signedIn();
       allow list: if isAdmin() || (hasUser() && resource.data.fid == me().fid);
-      allow create: if canFam(request.resource.data.fid) && onlyKeys(['fid', 'code', 'nm', 'look', 'lvl', 'frags', 'comp', 'lang', 'gr', 'wk', 'on', 'house'])
+      allow create: if canFam(request.resource.data.fid) && onlyKeys(['fid', 'code', 'nm', 'look', 'lvl', 'frags', 'comp', 'lang', 'gr', 'wk', 'on', 'house', 'tw'])
         && request.resource.data.nm is list && request.resource.data.nm.size() == 3;
       allow update: if canPid(pid, resource.data.fid) && sameOrJoin(resource.data.fid) && request.resource.data.code == resource.data.code
         && request.resource.data.nm == resource.data.nm
-        && onlyKeys(['fid', 'code', 'nm', 'look', 'lvl', 'frags', 'comp', 'lang', 'gr', 'wk', 'on', 'house'])
-        && request.resource.data.get('house', []).size() <= 60 && request.resource.data.get('look', {}).size() <= 16;
+        && onlyKeys(['fid', 'code', 'nm', 'look', 'lvl', 'frags', 'comp', 'lang', 'gr', 'wk', 'on', 'house', 'tw'])
+        && request.resource.data.get('house', []).size() <= 60 && request.resource.data.get('look', {}).size() <= 16 && request.resource.data.get('tw', 0) is int;
       allow delete: if canPid(pid, resource.data.fid) || isAdmin();
 
       match /friends/{other} {

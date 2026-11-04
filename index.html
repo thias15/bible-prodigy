@@ -113,6 +113,25 @@ body.easyfont #qText.verseq{font-family:'Lexend',Georgia,serif;font-style:normal
 .hsel{color:var(--gold-soft);font-weight:900}
 #inv{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 4px;scrollbar-width:thin;overscroll-behavior:contain}
 #inv .card{flex:none;width:104px}
+.tslots{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tslot{position:relative;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px;border-radius:14px;border:2px solid var(--gold);background:#1a2558;font-weight:800;font-size:.8rem;text-align:center;min-width:0}
+.tslot.lead{background:linear-gradient(#2a3470,#1a2558)}.tslot.empty{border-style:dashed;border-color:var(--lapis-line);background:transparent;color:var(--muted)}
+.tslot .emo{font-size:34px;line-height:1.1}.tslot .btn.sm{font-size:.68rem;padding:.25em .5em}
+.tslot .tx{position:absolute;top:2px;right:4px;background:none;border:0;color:var(--muted);font-size:1rem;padding:2px 4px}
+.combos{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:6px}
+.combo{display:flex;gap:8px;align-items:center;padding:5px 8px;border-radius:12px;border:2px solid var(--lapis-line);background:#141d48;font-size:.8rem}
+.combo.on{border-color:var(--gold);background:#24306a}.combo .pair{font-size:1.4rem;white-space:nowrap}.combo small{display:block;color:var(--muted);font-weight:700}
+#bComp2 .compE,#bComp3 .compE{animation-delay:-.5s}
+.unit[hidden]{display:none!important}
+#wx{position:absolute;inset:0;pointer-events:none;z-index:4}
+#wx.rain{background:linear-gradient(rgba(40,60,90,.16),rgba(40,60,90,.16)),repeating-linear-gradient(100deg,transparent 0 22px,rgba(210,225,255,.38) 22px 23.5px);background-size:auto,90px 140px;animation:wxr .45s linear infinite}
+#wx.storm{background:linear-gradient(rgba(20,30,60,.3),rgba(20,30,60,.3)),repeating-linear-gradient(104deg,transparent 0 16px,rgba(210,225,255,.45) 16px 18px);background-size:auto,70px 120px;animation:wxr .3s linear infinite}
+@keyframes wxr{to{background-position:0 0,-25px 140px}}
+#wx.wind{background:linear-gradient(rgba(220,190,120,.2),rgba(220,190,120,.2)),repeating-linear-gradient(8deg,transparent 0 30px,rgba(245,225,175,.32) 30px 32px);background-size:auto,220px 60px;animation:wxw .7s linear infinite}
+@keyframes wxw{to{background-position:0 0,220px 10px}}
+#wx.mist{background:radial-gradient(ellipse at 30% 40%,rgba(255,255,255,.38),transparent 60%),radial-gradient(ellipse at 75% 70%,rgba(255,255,255,.3),transparent 55%),rgba(230,235,240,.2)}
+@media (prefers-reduced-motion:reduce){#wx{animation:none!important}}
+.psalm{display:flex;flex-wrap:wrap;gap:4px;font-size:.82rem;margin:8px 0}.psalm span{padding:2px 6px;border-radius:8px;background:#141d48}.psalm .got{color:var(--gold-soft)}.psalm .miss{color:var(--muted)}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
 .card{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 6px 8px;border-radius:14px;border:2px solid var(--lapis-line);background:#141d48;font-weight:800;font-size:.8rem;text-align:center;min-width:0;color:var(--vellum)}
 .card img{width:76px;height:76px;object-fit:contain}
@@ -357,12 +376,15 @@ body.visiting #htools,body.visiting #inv{display:none}
     <div class="dt"><div id="dName"></div><div id="dText"></div><div id="dChoices" class="dchoices" hidden></div><div class="dnext" data-t="dlg.tap">tap ▸</div></div>
   </div>
 
+  <div id="wx" hidden></div>
   <div id="battle" hidden>
     <div id="arena">
       <div id="bWho"></div>
       <div class="side left" id="bLeft">
         <div class="unit" id="bPlayer"><canvas id="bPC"></canvas><div class="uname" id="bPName"></div></div>
         <div class="unit" id="bComp"><div class="compE" id="bCompE"></div></div>
+        <div class="unit" id="bComp2" hidden><div class="compE"></div></div>
+        <div class="unit" id="bComp3" hidden><div class="compE"></div></div>
       </div>
       <div class="side right" id="bFoes"></div>
     </div>
@@ -4105,6 +4127,176 @@ Object.assign(STR.es,{"nm.fmt": "{a} {w} {n}", "nm.gfmt": "Equipo {a} {w}", "nm.
 
 Object.assign(STR.el,{"nm.fmt": "{a} {w} {n}", "nm.gfmt": "Ομάδα {a} {w}", "nm.a": ["Αρνί", "Λιοντάρι", "Περιστέρι", "Αετός", "Καμήλα", "Γαϊδουράκι", "Αλεπού", "Ελάφι", "Αρκούδα", "Κουκουβάγια", "Ψάρι", "Φάλαινα", "Σπουργίτι", "Κατσίκα", "Βόδι", "Άλογο", "Κουνέλι", "Βάτραχος", "Μέλισσα", "Μυρμήγκι", "Χελώνα", "Πεταλούδα", "Κότα", "Κοτοπουλάκι", "Κουτάβι", "Γατάκι", "Σκαντζόχοιρος", "Παγώνι", "Κριάρι", "Λεοπάρδαλη"], "nm.w": ["Αστέρι", "Ήλιος", "Φεγγάρι", "Ουράνιο Τόξο", "Ποτάμι", "Κέδρος", "Ελιά", "Τραγούδι", "Στέμμα", "Λυχνάρι", "Ασπίδα", "Βουνό", "Φωτιά", "Σύννεφο", "Λάμψη", "Χιόνι", "Μέλι", "Ψωμί", "Σταφύλι", "Ηλιοτρόπιο", "Σάλπιγγα", "Περγαμηνή", "Τριαντάφυλλο", "Κρίνο", "Φοίνικας", "Σιτάρι", "Βροχή", "Σπόρος", "Καμπάνα", "Πετράδι"], "stk.0": "Μπράβο σου!", "stk.1": "Προσεύχομαι για σένα", "stk.2": "Γεια σου!", "stk.3": "Τα κατάφερες!", "stk.4": "Συνέχισε έτσι!", "stk.5": "Είσαι αστέρι!", "stk.6": "Ευχαριστώ!", "stk.7": "Ειρήνη σε σένα", "on.sect": "Online", "on.offP": "Αποθήκευσε την πρόοδό σου online, για να συνεχίζεις να παίζεις σε οποιαδήποτε συσκευή και να παίζεις με φίλους. Πρέπει να το ενεργοποιήσει ένας μεγάλος.", "on.privacyLine": "Χωρίς πραγματικά ονόματα και χωρίς συνομιλία. Ο ιδιοκτήτης του παιχνιδιού μπορεί να δει τα ονόματα των παικτών και τους χρόνους παιχνιδιού.", "on.privacy": "Απόρρητο", "on.turnOn": "Ενεργοποίηση (για μεγάλους)", "on.manage": "Online και φίλοι", "on.ok": "OK", "on.gateT": "Μόνο για μεγάλους", "on.gateP": "Ζήτα από έναν μεγάλο να απαντήσει σε αυτό:", "on.gateNo": "Όχι ακριβώς. Ζήτα βοήθεια από έναν μεγάλο.", "on.err": "Κάτι πήγε στραβά. Δοκίμασε ξανά.", "on.errNet": "Δεν υπάρχει σύνδεση στο ίντερνετ αυτή τη στιγμή. Το παιχνίδι σου είναι αποθηκευμένο σε αυτή τη συσκευή.", "on.errPerm": "Αυτή η συσκευή δεν μπορεί να ανοίξει αυτόν τον παίκτη. Συνδέσου ξανά.", "on.errPopup": "Το παράθυρο σύνδεσης έκλεισε ή μπλοκαρίστηκε.", "on.nameT": "Διάλεξε το όνομα παίκτη σου", "on.nameP": "Οι φίλοι σου θα βλέπουν αυτό το όνομα. Διάλεξε ένα ζώο, μια λέξη και έναν αριθμό.", "on.nameA": "Ζώο", "on.nameW": "Λέξη", "on.nameN": "Αριθμός", "on.nameRnd": "Κάνε μου έκπληξη", "on.nameUse": "Αυτό το όνομα", "on.nameTaken": "Αυτό το όνομα υπάρχει ήδη. Δοκίμασε άλλον αριθμό!", "on.ready": "Είσαι online ως {0}!", "on.picsClear": "Από την αρχή", "on.cardT": "Κάρτα σύνδεσης", "on.cardD": "Συνδέσου σε οποιαδήποτε συσκευή με το όνομά σου και 4 εικόνες", "on.cardPicsP": "Διάλεξε 4 εικόνες με τη σειρά. Αυτός είναι ο μυστικός σου κωδικός. Να τις θυμάσαι!", "on.cardPics": "Μυστικές εικόνες (με αυτή τη σειρά)", "on.cardHow": "Σε άλλη συσκευή: πάτησε «Παίζω ήδη», διάλεξε το όνομά σου και μετά πάτησε τις εικόνες σου.", "on.print": "Εκτύπωση", "on.cardNew": "Νέες εικόνες", "on.xferT": "Παίξε σε άλλη συσκευή", "on.xferD": "Πάρε έναν κωδικό ή QR για να συνεχίσεις κάπου αλλού", "on.xferP": "Στην άλλη συσκευή, άνοιξε το παιχνίδι και πάτησε «Παίζω ήδη» → «Κωδικός συνέχειας» ή σκάναρε τον κωδικό QR με την κάμερά της.", "on.xferCode": "Κωδικός συνέχειας", "on.xferExp": "Ισχύει για 10 λεπτά.", "on.full": "Αυτή η συσκευή έχει ήδη 4 παίκτες.", "on.haveT": "Παίζω ήδη", "on.haveP": "Συνέχισε το ταξίδι σου σε αυτή τη συσκευή.", "on.haveName": "Το όνομα παίκτη μου", "on.haveNameD": "Χρησιμοποίησε την κάρτα σύνδεσής σου: όνομα + 4 εικόνες", "on.haveCode": "Κωδικός συνέχειας", "on.haveCodeD": "Ένας κωδικός από μια συσκευή όπου είσαι συνδεδεμένος", "on.haveGrown": "Σύνδεση για μεγάλους", "on.haveGrownD": "Σύνδεση με Google για να φέρεις εδώ τους παίκτες της οικογένειάς σου", "on.havePicsT": "Οι μυστικές σου εικόνες", "on.havePicsP": "Πάτησε τις 4 εικόνες σου με τη σειρά.", "on.wrongPics": "Αυτές οι εικόνες δεν ταιριάζουν. Δοκίμασε ξανά!", "on.codeP": "Γράψε τον κωδικό με τα 8 γράμματα από την άλλη συσκευή.", "on.codeBad": "Αυτός ο κωδικός δεν λειτουργεί. Ίσως έληξε – ζήτα έναν καινούριο.", "on.signedIn": "Συνδεδεμένος ως {0}", "on.famT": "Οι παίκτες της οικογένειάς σου", "on.famP": "Συνδεδεμένος ως {0}. Διάλεξε έναν παίκτη για να τον φέρεις σε αυτή τη συσκευή.", "on.famNone": "Δεν υπάρχουν παίκτες ακόμα. Ξεκίνα ένα παιχνίδι και ενεργοποίησε το «Online» στις Ρυθμίσεις.", "on.onDevice": "Σε αυτή τη συσκευή", "on.gotNewer": "Φορτώθηκε η πιο πρόσφατη αποθήκευσή σου από άλλη συσκευή.", "on.lastPlayed": "Τελευταίο παιχνίδι: {0}", "on.confT": "Δύο διαφορετικές αποθηκεύσεις", "on.confP": "Αυτός ο παίκτης έπαιξε σε δύο συσκευές χωρίς ίντερνετ. Ποια αποθήκευση θέλεις να κρατήσεις;", "on.confHere": "Αυτή η συσκευή", "on.confCloud": "Online", "on.keepThis": "Κράτα αυτή", "on.confSafe": "Η άλλη αποθήκευση φυλάγεται ως αντίγραφο ασφαλείας.", "on.keptHere": "Κρατήθηκε η αποθήκευση από αυτή τη συσκευή.", "on.stErr": "Δεν έγινε online αποθήκευση – θα ξαναδοκιμάσει αργότερα.", "on.stBig": "Αυτή η αποθήκευση είναι πολύ μεγάλη για να αποθηκευτεί online.", "on.stNever": "Δεν έχει αποθηκευτεί online ακόμα", "on.stNow": "Αποθηκεύτηκε online μόλις τώρα", "on.stMin": "Αποθηκεύτηκε online πριν από {0} λεπτά", "on.syncNow": "Αποθήκευση τώρα", "on.friendCode": "Κωδικός φίλου", "on.acct": "Λογαριασμός", "on.guest": "Παίζεις ως επισκέπτης σε αυτή τη συσκευή. Ζήτα από έναν μεγάλο να συνδεθεί με Google για να είναι ασφαλής η πρόοδός σου.", "on.viaCode": "Συνδέθηκες με κωδικό συνέχειας.", "on.viaCard": "Συνδέθηκες με την κάρτα σύνδεσής σου.", "on.signedAs": "Λογαριασμός μεγάλου: {0}", "on.signedOut": "Δεν υπάρχει σύνδεση σε αυτή τη συσκευή.", "on.linkG": "Για μεγάλους: σύνδεση με Google", "on.linkGD": "Κράτα ασφαλή την πρόοδο όλων και χρησιμοποίησέ την και σε άλλες συσκευές", "on.bakT": "Παλαιότερες αποθηκεύσεις σε αυτή τη συσκευή", "on.bakUse": "Επιστροφή σε αυτή", "on.more": "Περισσότερα", "on.signOut": "Αποσύνδεση", "on.outMainP": "Αποσύνδεση αυτής της συσκευής από το Online. Αν δεν έχει συνδεθεί κάποιος μεγάλος με Google, θα χρειαστείς κάρτα σύνδεσης ή κωδικό συνέχειας για να μπεις ξανά.", "on.outKidP": "Αποσύνδεση αυτού του παίκτη από αυτή τη συσκευή.", "on.outKeep": "Αποσύνδεση, το παιχνίδι μένει εδώ", "on.outRemove": "Αποσύνδεση και αφαίρεση από αυτή τη συσκευή", "on.signedOutT": "Αποσυνδέθηκες.", "on.delete": "Διαγραφή online δεδομένων", "on.delP": "Αυτό διαγράφει την online αποθήκευση, τους φίλους, τα δώρα και τους χρόνους παιχνιδιού του παίκτη {0}. Το παιχνίδι σε αυτή τη συσκευή μένει.", "on.delYes": "Διαγραφή online δεδομένων", "on.deleted": "Τα online δεδομένα διαγράφηκαν. Το παιχνίδι σου σε αυτή τη συσκευή είναι ακόμα εδώ.", "on.pals": "Φίλοι", "on.palsD": "Φίλοι, δώρα και πίνακες κατάταξης", "on.tFriends": "Φίλοι", "on.tGifts": "Κουτί δώρων", "on.tBoard": "Αυτή την εβδομάδα", "on.tGroups": "Ομάδες", "on.tAdd": "Πρόσθεσε φίλο", "on.loading": "Φόρτωση…", "on.reqs": "Αιτήματα φιλίας", "on.wantsFriend": "θέλει να γίνετε φίλοι", "on.accept": "Ναι", "on.decline": "Όχι", "on.isOnline": "online", "on.gift": "Στείλε δώρο", "on.sticker": "Στείλε αυτοκόλλητο", "on.visit": "Επίσκεψη στο σπίτι", "on.duel": "Μονομαχία κουίζ", "on.coop": "Ομαδική μάχη", "on.remove": "Αφαίρεση φίλου", "on.removeP": "Αφαίρεση του παίκτη {0} από τους φίλους σου;", "on.noFriends": "Δεν έχεις φίλους ακόμα. Δώσε τον κωδικό φίλου σου σε κάποιον φίλο που ξέρεις!", "on.waiting": "Σε αναμονή", "on.waitingP": "Περιμένουμε να πει ναι", "on.nowFriends": "Τώρα είστε φίλοι!", "on.reqNew": "Έχεις νέο αίτημα φιλίας!", "on.myCodeP": "Ο κωδικός φίλου σου. Πες τον σε έναν φίλο που ξέρεις στην πραγματική ζωή:", "on.addT": "Πρόσθεσε έναν φίλο", "on.addP": "Γράψε τον κωδικό του φίλου σου:", "on.addBtn": "Προσθήκη", "on.codeBadF": "Αυτός ο κωδικός φίλου δεν υπάρχει.", "on.codeSelf": "Αυτός είναι ο δικός σου κωδικός!", "on.already": "Είστε ήδη φίλοι.", "on.reqSent": "Το αίτημα στάλθηκε: {0}!", "on.giftP": "Διάλεξε ένα δώρο για: {0}. Μπορείς να στέλνεις σε κάθε φίλο ένα δώρο τη μέρα.", "on.addSticker": "Πρόσθεσε αυτοκόλλητο (αν θέλεις)", "on.giftCoins": "{0} σίκλοι", "on.giftSent": "Το δώρο στάλθηκε: {0}!", "on.giftOnce": "Έστειλες ήδη δώρο σε αυτόν τον φίλο σήμερα.", "on.stickerP": "Στείλε αυτοκόλλητο σε: {0}", "on.stkSent": "Το αυτοκόλλητο στάλθηκε!", "on.stkLimit": "Έστειλες αρκετά αυτοκόλλητα σε αυτόν τον φίλο σήμερα.", "on.noGifts": "Το κουτί δώρων σου είναι άδειο.", "on.open": "Άνοιξε", "on.gotGift": "Πήρες: {0}!", "on.thankT": "Να πεις ευχαριστώ;", "on.thankP": "Να στείλεις αυτοκόλλητο «ευχαριστώ» σε: {0};", "on.boardP": "Πόντοι αυτής της εβδομάδας (μηδενίζονται τη Δευτέρα).", "on.boardKey": "⭐ πόντοι · ✔ σωστές απαντήσεις · 📜 εδάφια που έμαθες", "on.groupCode": "Κωδικός ομάδας", "on.noGroups": "Δεν είσαι ακόμα σε ομάδα. Ένας δάσκαλος ή ένας μεγάλος μπορεί να φτιάξει μία.", "on.joinT": "Μπες σε μια ομάδα", "on.join": "Είσοδος", "on.groupNew": "Φτιάξε ομάδα (για μεγάλους)", "on.codeBadG": "Αυτός ο κωδικός ομάδας δεν υπάρχει.", "on.groupMax": "Μπορείς να είσαι σε έως 3 ομάδες.", "on.groupNewP": "Διάλεξε ένα όνομα για την ομάδα. Μετά δώσε τον κωδικό ομάδας σε όλους.", "on.groupMake": "Δημιουργία ομάδας", "on.groupShare": "δώσ' τον στην ομάδα σου", "on.challenge": "Πρόκληση ομάδας", "on.challengeP": "Απαντήστε σωστά σε {0} ερωτήσεις όλοι μαζί αυτή την εβδομάδα.", "on.claim": "Πάρε {0} σίκλους", "on.claimed": "Η ανταμοιβή πάρθηκε", "on.claimedT": "Ανταμοιβή ομάδας: +{0} σίκλοι!", "on.leave": "Έξοδος από την ομάδα", "on.visitT": "Το σπίτι: {0}", "on.emptyHouse": "Αυτό το σπίτι είναι ακόμα άδειο.", "on.leaveSticker": "Άφησε ένα αυτοκόλλητο", "on.busy": "Τελείωσε πρώτα αυτό που κάνεις.", "on.coopNeed": "Πρέπει πρώτα να έχετε τελειώσει και οι δύο τουλάχιστον έναν κόσμο.", "on.waitFor": "Περιμένουμε: {0}…", "on.cancel": "Άκυρο", "on.noAnswer": "Καμία απάντηση. Δοκίμασε ξανά αργότερα!", "on.declined": "{0}: δεν μπορεί να παίξει τώρα.", "on.invDuel": "{0}: θέλει μονομαχία κουίζ!", "on.invCoop": "{0}: θέλει να πολεμήσετε μαζί έναν δυνατό εχθρό!", "on.inviteGone": "Αυτή η πρόσκληση έληξε.", "on.you": "Εσύ", "on.duelGo": "Μονομαχία κουίζ! Ίδιες 10 ερωτήσεις – πάμε!", "on.duelEnd": "Η μονομαχία τελείωσε", "on.tie": "Ισοπαλία!", "on.youWin": "Κέρδισες!", "on.theyWin": "{0}: κέρδισε!", "on.duelCoins": "+{0} σίκλοι", "on.coopGo": "Ομαδική μάχη με: {0}!", "on.team": "Ομάδα με: {0}", "on.teamWin": "Η ομάδα σας νίκησε τον δυνατό εχθρό! Πάτησε μια δύναμη.", "on.coopBonus": "Μπόνους ομάδας: +{0} σίκλοι!", "on.askT": "Παιχνίδι online;", "on.askP": "Κράτα το ταξίδι σου ασφαλές και παίξε με φίλους. Πρέπει να πει «ναι» ένας μεγάλος.", "on.askB1": "Η πρόοδός σου αποθηκεύεται online, όχι μόνο σε αυτή τη συσκευή", "on.askB2": "Συνέχισε να παίζεις σε τάμπλετ, κινητό ή υπολογιστή", "on.askB3": "Πρόσθεσε φίλους, στείλε δώρα και παίξτε μονομαχίες κουίζ", "on.askYes": "Ρώτα έναν μεγάλο", "on.askNo": "Όχι τώρα", "on.askLater": "Μπορείς να το ενεργοποιήσεις αργότερα στις Ρυθμίσεις → Online.", "on.cardNowT": "Να φτιάξουμε κάρτα σύνδεσης;", "on.cardNowP": "Με μια κάρτα σύνδεσης, ο παίκτης {0} μπορεί να μπει από οποιαδήποτε συσκευή με 4 μυστικές εικόνες. Να φτιάξουμε μία τώρα;", "on.later": "Αργότερα"});
 
+/* Text for companion teams, The Land, the sea journeys and the Tower. Other languages: lang/<l>/X.json → lang/out/ext_<l>.js */
+Object.assign(STR.en,{
+'team.t':'Your team','team.note':'Up to 3 animals can travel with you: a 2nd joins at level 10, a 3rd at level 20. Some pairs from the Bible work extra well together!',
+'team.lead':'Leader','team.makeLead':'Lead','team.free':'Free spot – tap an animal below','team.lock':'Unlocks at level {0}','team.in':'In your team','team.out':'Leave the team',
+'team.slot':'Level {0}: a {1} animal friend can join your team! Open Animals to choose.','team.second':'second','team.third':'third',
+'cb.title':'Bible pairs','cb.active':'Active!','cb.hidden':'Find both animals to learn what this pair can do.',
+'cb.peace':'Peace','cb.peace.d':'“The wolf will live with the lamb” (Isaiah 11:6). Heals you a little every turn.',
+'cb.lionlamb':'Lion and Lamb','cb.lionlamb.d':'Jesus is called both the Lion of Judah and the Lamb (Revelation 5:5–6). Stronger powers and a little healing.',
+'cb.courage':'Courage','cb.courage.d':'“Bold as a lion” (Proverbs 28:1) and “wings like eagles” (Isaiah 40:31). Your powers hit harder.',
+'cb.gentle':'Gentle Strength','cb.gentle.d':'“The leopard will lie down with the young goat” (Isaiah 11:6). Your powers hit harder.',
+'cb.manger':'At the Manger','cb.manger.d':'“The ox knows its owner, the donkey its master’s manger” (Isaiah 1:3). A shield blocks the first hits of every battle.',
+'cb.ark':'Birds of the Ark','cb.ark.d':'Noah sent out a raven and a dove (Genesis 8:7–8). +20% XP after battles.',
+'cb.work':'Busy Workers','cb.work.d':'Go to the ant and be wise (Proverbs 6:6). +25% shekels after battles.',
+'cb.jonah':'Jonah’s Sea','cb.jonah.d':'A great fish swallowed Jonah (Jonah 1:17). All foes are washed back and miss their first turn.',
+'cb.flock':'The Flock','cb.flock.d':'“The LORD is my shepherd” (Psalm 23:1). Heals you a little every turn.',
+'cb.stream':'Streams of Water','cb.stream.d':'“As the deer pants for streams of water” (Psalm 42:1). Heals you every turn.'
+});
+
+/* ---- new places (ids outside ORDER, so they never count as worlds) ---- */
+(function(){
+const lk=(s,h,r,sa,o)=>Object.assign({skin:SK[s],hair:h,robe:r,sash:sa},o||{});
+const PAUL={name:'Paul',look:lk(2,'#2a1a10','#8a5a3a','#e9d8a6',{beard:'#2a1a10'}),staff:1};
+const gf=[{name:'Gloomling',c:'#5a4a7a',shape:'blob'},{name:'Thornling',c:'#6a7a3a',shape:'spiky',trait:'tough'},{name:'Whisper Wisp',c:'#7a6aa0',shape:'wisp',trait:'quick'}];
+const flav=(a,b)=>[{name:a[0],look:a[1],lk:a[2],lines:['…']},{name:b[0],look:b[1],lk:b[2],lines:['…']}];
+const reg=(o)=>Object.assign({ponds:1,dense:30,kills:99,foeMax:3,foes:gf,boss:{name:'Gloom',kind:'night',c:'#3a3a5a',where:''},
+  guide:{name:'Traveller',look:lk(1,'#5a3418','#7a6a4a','#e9d8a6')},side:{name:'Traveller',look:lk(2,'#3a2414','#6a5a7a','#e9d8a6'),items:[],what:''},hint:'',intro:[],outro:[],post:'',reward:{},verse:{t:'',r:''}},o);
+Object.assign(CH,{
+101:reg({name:'Galilee Hills',book:'The Land',seed:10101,w:64,h:44,land:1,mus:'c9',
+  th:{g:'#86bf5e',g2:'#79b253',p:'#d9c48e',obs:['tree','olive','bush','rock'],w:'#3f8fd0',deco:'flower',sky:'#a8d8f5'},lake:1,dense:34,lm:{k:'farmhouse',x:.78,y:.12,w:5,h:4},
+  flav:flav(['Shepherd Boy',lk(1,'#4a2a14','#c9b48a','#7a5a3a'),'lf.101a'],['Fisherman’s Wife',lk(2,'#2a1a10','#5a7aa0','#e9d8a6',{hs:1,wrap:'#e8dcc0'}),'lf.101b'])}),
+102:reg({name:'Jordan Valley',book:'The Land',seed:10202,w:64,h:44,land:1,mus:'c10',river:{d:'v',at:.52},
+  th:{g:'#9cc46a',g2:'#8fb75e',p:'#d8c08a',obs:['palm','bush','tree'],w:'#4a9ad8',deco:'reed',sky:'#bfe3f5'},dense:30,lm:{k:'camp',x:.25,y:.15,w:5,h:4},
+  flav:flav(['Farmer',lk(3,'#1a1a1a','#8a6a3a','#c8a46a',{beard:'#1a1a1a'}),'lf.102a'],['Potter',lk(2,'#3a2414','#a0603a','#e9d8a6',{hs:2}),'lf.102b'])}),
+103:reg({name:'Judean Desert',book:'The Land',seed:10303,w:64,h:44,land:1,mus:'c3',ponds:0,
+  th:{g:'#dcc28a',g2:'#d2b67c',p:'#efe0b8',obs:['rock','cactus','rock','palm'],w:'#4a9ad8',deco:'pebble',sky:'#f3e6c4'},dense:44,lm:{k:'mountain',x:.7,y:.12,w:7,h:5},
+  flav:flav(['Shepherdess',lk(3,'#2b1a10','#8a3a3a','#e3b64a',{hs:1,wrap:'#e8dcc0'}),'lf.103a'],['Old Hermit',lk(1,'#bdbdbd','#6b5a3a','#c8a46a',{beard:'#d8d8d8'}),'lf.103b'])}),
+104:reg({name:'The Coast',book:'The Land',seed:10404,w:64,h:44,land:1,mus:'c15',sea:1,ponds:0,
+  th:{g:'#a8c870',g2:'#9cbd64',p:'#e8d8a8',obs:['palm','rock','bush'],w:'#2f86c8',deco:'grass',sky:'#b0dcf5'},dense:26,lm:{k:'granary',x:.72,y:.14,w:5,h:4},
+  flav:flav(['Net Mender',lk(2,'#3a2414','#3a6a8a','#e9d8a6',{beard:'#3a2414'}),'lf.104a'],['Tanner’s Girl',lk(3,'#1a1a1a','#c0703a','#e9d8a6',{hs:1}),'lf.104b'])}),
+105:reg({name:'Around Jerusalem',book:'The Land',seed:10505,w:64,h:44,land:1,mus:'c16',
+  th:{g:'#a9b874',g2:'#9dad68',p:'#e3d3a6',obs:['olive','rock','tree','olive'],w:'#3f8fd0',deco:'grass',sky:'#c8e0f0'},dense:32,lm:{k:'citywall',x:.5,y:.06,w:8,h:4},
+  flav:flav(['Temple Singer',lk(1,'#3a2414','#e9e2cf','#4a6ab0',{beard:'#3a2414'}),'lf.105a'],['Spice Seller',lk(4,'#1a1a1a','#7b3fa0','#e3b64a',{hs:1,wrap:'#e8b94a'}),'lf.105b'])}),
+130:reg({name:'Tower of the Watchman',book:'Habakkuk 2:1',seed:13030,w:22,h:16,tower:1,mus:'c17',ponds:0,dense:4,
+  th:{g:'#b0a690',g2:'#a69c86',p:'#d0c4a6',obs:['rock'],w:'#3f8fd0',deco:'pebble',sky:'#d8d0bc'},lm:{k:'gatehouse',x:.6,y:.1,w:5,h:4},
+  flav:flav(['Watchman',lk(2,'#3a2414','#6a5a7a','#e3b64a',{beard:'#3a2414'}),'lf.130a'],['Lamp Keeper',lk(1,'#5a3418','#8a6a3a','#e9d8a6',{hs:1}),'lf.130b'])}),
+120:reg({name:'The Great Sea',book:'Acts 27',seed:12020,w:66,h:42,sail:1,mus:'c15',ponds:0,dense:0,
+  th:{g:'#a8c870',g2:'#9cbd64',p:'#e8d8a8',obs:['palm','rock'],w:'#2a7cc0',deco:'grass',sky:'#a8d4f0'},lm:{k:'boat',x:.5,y:.5,w:4,h:2},
+  foes:[{name:'Squall',c:'#5a6a80',shape:'wisp',trait:'quick'},{name:'Wave Gloom',c:'#2f5a8a',shape:'blob',trait:'tough'},{name:'Wind Whirl',c:'#8a9ab0',shape:'spiky'}],
+  flav:flav(['Sailor',lk(2,'#1a1a1a','#3a5a8a','#e9d8a6'),'lf.x'],['Sailor',lk(2,'#1a1a1a','#3a5a8a','#e9d8a6'),'lf.x'])}),
+121:reg({name:'Cyprus',book:'Acts 13:4–12',seed:12121,w:46,h:32,isle:1,mus:'c18',sea:1,ponds:0,
+  th:{g:'#b3c46e',g2:'#a6b862',p:'#e6d6a6',obs:['olive','rock','palm','bush'],w:'#2f86c8',deco:'flower',sky:'#b0dcf5'},dense:22,lm:{k:'palace',x:.66,y:.14,w:6,h:4},
+  guide:{name:'Barnabas',look:lk(1,'#5a3418','#3a6a5a','#e3b64a',{beard:'#5a3418'}),staff:1},
+  flav:flav(['Sergius Paulus',lk(0,'#8a6a4a','#e9e2cf','#b02a2a'),'lf.121a'],['Island Girl',lk(2,'#2b1a10','#c07a3a','#e9d8a6',{hs:1}),'lf.121b'])}),
+122:reg({name:'Crete',book:'Acts 27:7–13',seed:12222,w:46,h:32,isle:1,mus:'c18',sea:1,ponds:0,
+  th:{g:'#c2c47a',g2:'#b6b86e',p:'#ecdcae',obs:['rock','olive','bush'],w:'#2f86c8',deco:'pebble',sky:'#b8dcf0'},dense:30,lm:{k:'granary',x:.7,y:.14,w:5,h:4},
+  guide:PAUL,flav:flav(['Ship’s Captain',lk(2,'#1a1a1a','#3a4a7a','#c8a46a',{beard:'#1a1a1a'}),'lf.122a'],['Julius the Centurion',lk(1,'#3a2414','#b02a2a','#c8a46a'),'lf.122b'])}),
+123:reg({name:'Malta',book:'Acts 28:1–10',seed:12323,w:46,h:32,isle:1,mus:'c18',sea:1,ponds:0,
+  th:{g:'#c8bc80',g2:'#bcb074',p:'#efe0b8',obs:['rock','palm','bush'],w:'#2f86c8',deco:'pebble',sky:'#a8c8e0'},dense:26,lm:{k:'wreck',x:.5,y:.62,w:5,h:3},
+  guide:PAUL,flav:flav(['Publius',lk(1,'#8a6a4a','#e9e2cf','#4a6ab0',{beard:'#8a6a4a'}),'lf.123a'],['Islander',lk(3,'#1a1a1a','#8a6a3a','#e9d8a6',{beard:'#1a1a1a'}),'lf.123b'])}),
+124:reg({name:'Rome',book:'Acts 28:16–31',seed:12424,w:46,h:32,isle:1,mus:'c16',ponds:0,
+  th:{g:'#b4b48a',g2:'#a8a87e',p:'#ddd2b4',obs:['tree','rock','bush'],w:'#3f8fd0',deco:'grass',sky:'#c8dcec'},dense:20,lm:{k:'palace',x:.6,y:.12,w:6,h:4},
+  guide:PAUL,flav:flav(['Priscilla',lk(1,'#3a2414','#7b3fa0','#e9d8a6',{hs:1,wrap:'#e8dcc0'}),'lf.124a'],['Aquila',lk(2,'#2a1a10','#6a5a3a','#c8a46a',{beard:'#2a1a10'}),'lf.124b'])})
+});
+const cave=(id,seed,name)=>reg({name,book:'The Land',seed,w:30,h:20,cave:1,night:1,mus:'c8',ponds:1,dense:34,
+  th:{g:'#6e665c',g2:'#665e54',p:'#8a7e6c',obs:['rock'],w:'#2a5a8a',deco:'pebble',sky:'#3a3a4a'},lm:{k:'camp',x:.75,y:.2,w:4,h:3},
+  foes:[{name:'Cave Gloom',c:'#3a3a5a',shape:'blob'},{name:'Echo Wisp',c:'#6a6a9a',shape:'wisp',trait:'quick'},{name:'Stalag Spike',c:'#7a7060',shape:'spiky',trait:'tough'}],
+  flav:flav(['…',lk(1,'#000','#000','#000'),'lf.x'],['…',lk(1,'#000','#000','#000'),'lf.x'])});
+Object.assign(CH,{111:cave(111,11111,'Cave of the Hills'),112:cave(112,11212,'Cave by the River'),113:cave(113,11313,'Cave of En-Gedi'),114:cave(114,11414,'Sea Cave'),115:cave(115,11515,'Cave under the Olives')});
+/* animals that can only be befriended out in the Land and at sea */
+Object.assign(COMPS,{
+  hedgehog:{name:'Hedgehog',e:'🦔',type:'stun',p:36,desc:'Curls into a prickly ball that can freeze a foe. Lives in the Galilee hills.',wild:101},
+  horse:{name:'War Horse',e:'🐎',type:'attack',p:22,desc:'“Do you give the horse his strength?” (Job 39:19). Gallops in with a mighty kick.',wild:102},
+  badger:{name:'Rock Badger',e:'🦡',type:'shield',p:62,desc:'“They make their homes in the rocks” (Proverbs 30:26). Comes out at night in the desert.',wild:103},
+  dromedary:{name:'Dromedary',e:'🐪',type:'coins',p:12,desc:'Rebekah watered the camels (Genesis 24:19). Carries home extra shekels.',wild:105},
+  dolphin:{name:'Dolphin',e:'🐬',type:'all',p:11,desc:'Leaps through the waves and splashes every foe at once.',wild:120},
+  seal:{name:'Monk Seal',e:'🦭',type:'heal',p:16,desc:'A gentle seal from the rocky shores of Cyprus. Big, cozy healing.',wild:121},
+  crab:{name:'Crab',e:'🦀',type:'shield',p:55,desc:'A hard shell held up like a shield. Lives in the harbors of Crete.',wild:122},
+  octopus:{name:'Octopus',e:'🐙',type:'all',p:12,desc:'Eight arms, eight hits! Found in the clear water around Malta.',wild:123},
+  lizard:{name:'Palace Lizard',e:'🦎',type:'stun',p:44,desc:'“The lizard is found in kings’ palaces” (Proverbs 30:28). Freezes foes with a quick stare.',wild:124}
+});
+})();
+
+Object.assign(STR.en,{
+'lx.101':'Galilee Hills','lx.102':'Jordan Valley','lx.103':'Judean Desert','lx.104':'The Coast','lx.105':'Around Jerusalem','lx.111':'Cave of the Hills','lx.112':'Cave by the River','lx.113':'Cave of En-Gedi','lx.114':'Sea Cave','lx.115':'Cave under the Olives',
+'lx.120':'The Great Sea','lx.121':'Cyprus','lx.122':'Crete','lx.123':'Malta','lx.124':'Rome','lx.130':'Tower of the Watchman',
+'lg.121':'Barnabas','lg.122':'Paul','lg.123':'Paul','lg.124':'Paul','lg.130':'Watchman',
+'ln.101.0':'Shepherd Boy','ln.101.1':'Fisherman’s Wife','ln.102.0':'Farmer','ln.102.1':'Potter','ln.103.0':'Shepherdess','ln.103.1':'Old Hermit','ln.104.0':'Net Mender','ln.104.1':'Tanner’s Girl',
+'ln.105.0':'Temple Singer','ln.105.1':'Spice Seller','ln.121.0':'Sergius Paulus','ln.121.1':'Island Girl','ln.122.0':'Ship’s Captain','ln.122.1':'Julius the Centurion','ln.123.0':'Publius','ln.123.1':'Islander','ln.124.0':'Priscilla','ln.124.1':'Aquila','ln.130.0':'Watchman','ln.130.1':'Lamp Keeper',
+'lf.101a':['I count my sheep every evening. If one is missing, I go and look until I find it – just like the Good Shepherd!'],
+'lf.101b':['My husband fishes on the lake all night. Some say Jesus once filled their nets so full they almost broke!'],
+'lf.102a':['This is the river where John baptized people – and where Jesus was baptized too. The water is cold, but the people came from everywhere.'],
+'lf.102b':['God is like a potter, and we are the clay (Isaiah 64:8). He shapes us with gentle hands.'],
+'lf.103a':['David hid from King Saul in these hills. He could have hurt Saul in a cave, but he chose not to.'],
+'lf.103b':['Out here it is quiet. Jesus went into the desert to pray. Sometimes being quiet is the best way to listen to God.'],
+'lf.104a':['From this coast Jonah tried to sail away from God – the wrong way! It did not go well for him.'],
+'lf.104b':['Peter stayed at a tanner’s house in Joppa. Up on the roof, God showed him that the good news is for everyone.'],
+'lf.105a':['We sing the Psalms on the way up to the Temple: “I was glad when they said to me, let us go to the house of the LORD!”'],
+'lf.105b':['Spices from far away! The wise men brought myrrh and frankincense to baby Jesus, you know.'],
+'lf.121a':['I am the proconsul of Cyprus. I wanted to hear God’s word, and Paul and Barnabas came to teach me.'],
+'lf.121b':['Barnabas grew up here on Cyprus! His name means “son of encouragement”.'],
+'lf.122a':['Paul told us to wait for winter here. I wanted to sail on… I should have listened.'],
+'lf.122b':['I am Julius. I must bring Paul to Rome. He is a prisoner, but he is the bravest man on this ship.'],
+'lf.123a':['My father was very sick with fever. Paul prayed for him, put his hands on him, and he was healed!'],
+'lf.123b':['We saw the ship break apart on the rocks. But all 276 people reached the shore safely!'],
+'lf.124a':['Aquila and I made tents with Paul in Corinth. Now we are together again in Rome!'],
+'lf.124b':['Paul writes letters to churches far away. Those letters are now in your Bible!'],
+'lf.130a':['I keep watch from the top of this tower, day and night.'],
+'lf.130b':['Every floor has a lamp. “Your word is a lamp to my feet” (Psalm 119:105).'],
+'lf.x':['…'],
+'wc.hedgehog':'Hedgehog','wc.hedgehog.d':'Curls into a prickly ball that can freeze a foe. Lives in the Galilee hills.',
+'wc.horse':'War Horse','wc.horse.d':'“Do you give the horse his strength?” (Job 39:19). Gallops in with a mighty kick.',
+'wc.badger':'Rock Badger','wc.badger.d':'“They make their homes in the rocks” (Proverbs 30:26). Comes out at night in the desert.',
+'wc.dromedary':'Dromedary','wc.dromedary.d':'Rebekah watered the camels (Genesis 24:19). Carries home extra shekels.',
+'wc.dolphin':'Dolphin','wc.dolphin.d':'Leaps through the waves and splashes every foe at once.',
+'wc.seal':'Monk Seal','wc.seal.d':'A gentle seal from the rocky shores of Cyprus. Big, cozy healing.',
+'wc.crab':'Crab','wc.crab.d':'A hard shell held up like a shield. Lives in the harbors of Crete.',
+'wc.octopus':'Octopus','wc.octopus.d':'Eight arms, eight hits! Found in the clear water around Malta.',
+'wc.lizard':'Palace Lizard','wc.lizard.d':'“The lizard is found in kings’ palaces” (Proverbs 30:28). Freezes foes with a quick stare.',
+'x.sub':'The Land · {0}','x.nightFalls':'🌙 Night falls over the Land.','x.morning':'☀️ The sun rises. Good morning!','x.secret':'✨ You found a secret spot!',
+'x.reward':'+{0} shekels · +{1} XP','x.locked':'Locked','x.tower':'Tower of the Watchman','x.towerGo':'Enter the Tower','x.towerLock':'The Tower opens after you finish {0} worlds.',
+'x.land':'The Land','x.landGo':'Travel into the Land','x.landLock':'The road into the Land opens after the very last gate.',
+'land.intro1':'You did it – the Scroll of Light is whole again! But the journey is not over.','land.intro2':'Out there lies the whole Land: the hills of Galilee, the Jordan, the desert, the coast and the hills around Jerusalem.',
+'land.intro3':'Travellers need help every day. Wild animals hide in the hills, and caves hold old secrets.','land.intro4':'Someone even found pieces of an old song scroll – a Psalm. Can you find all 12 pieces?',
+'x.frag':'Lost page','x.fragGo':'Pick up the lost page','x.wild':'Wild animal','x.wildGo':'Make friends with the {0}','x.roadTo':'→ {0}','x.roadGo':'Travel to {0}',
+'x.cave':'Cave','x.caveGo':'Go into the cave','x.ship':'Paul’s ship','x.shipGo':'Sail the Great Sea','x.pick':'Pick it up',
+'x.rainbow':'Rainbow','x.rainbowGo':'Walk to the rainbow','x.rainbowT':'“I set my rainbow in the cloud” (Genesis 9:13). God keeps his promises. You feel fresh and strong!',
+'x.chest':'Old chest','x.chestGo':'Open the chest','x.landAt':'Go ashore at {0}','x.sailHome':'Sail back to the coast',
+'sea.intro1':'At the harbor a big wooden ship creaks in the waves. The sailors are getting ready.','sea.intro2':'Paul sailed this sea many times: to Cyprus with Barnabas, and later past Crete and Malta all the way to Rome.',
+'sea.intro3':'Sail to the islands and help Paul and his friends. Watch out for storm clouds!','sea.q':'Islands helped: {0}/4',
+'ps.ref':'Psalm 23','ps.found':'Lost page {0} of 12!','ps.moreP':'More pages are hidden in the Land, in the caves and on the islands.','ps.allP':'You found the whole Psalm! Read it again – it’s a song of trust.',
+'ps.reward':'The whole Psalm is found! +300 shekels, +200 XP and a golden trophy for your house.',
+'ps.1':'The LORD is my shepherd; I shall not want.','ps.2':'He makes me lie down in green pastures.','ps.3':'He leads me beside still waters.','ps.4':'He restores my soul.',
+'ps.5':'He guides me in the paths of righteousness for his name’s sake.','ps.6':'Even though I walk through the valley of the shadow of death,','ps.7':'I will fear no evil, for you are with me.',
+'ps.8':'Your rod and your staff, they comfort me.','ps.9':'You prepare a table before me in the presence of my enemies.','ps.10':'You anoint my head with oil; my cup runs over.',
+'ps.11':'Surely goodness and loving kindness shall follow me all the days of my life,','ps.12':'and I will dwell in the house of the LORD forever.',
+'tv.merchant':'Merchant','tv.shepherd':'Shepherd','tv.fisher':'Fisherman','tv.widow':'Widow','tv.potter':'Potter','tv.pilgrim':'Pilgrim','tv.scribe':'Scribe','tv.vine':'Vine Grower',
+'rq.merchant':'Peace to you! I travel from town to town with my wares.','rq.shepherd':'Hello, friend! I look after the flock out here.','rq.fisher':'Shalom! I am on my way to the lake.',
+'rq.widow':'Oh, a kind face! I am so glad you came by.','rq.potter':'Greetings! I make jars and bowls from clay.','rq.pilgrim':'Peace! I am walking up to Jerusalem for the feast.',
+'rq.scribe':'Ah, a young learner! I copy the holy scrolls.','rq.vine':'Welcome! Have you seen my vineyard? The grapes are almost ready.',
+'rq.hi.find':'Could you help me? I lost {0} {1} somewhere around here. Please bring them back!','rq.hi.hunt':'Gloomlings keep blocking the road. Could you chase away {0} of them?',
+'rq.hi.quiz':'I love to talk about God’s word. Will you answer my questions? Get 2 of 3 right!','rq.hi.food':'I have walked so far and I am very hungry. Do you have some food to share?',
+'rq.noFood':'Oh, your bag is empty. Lydia’s shop at Pilgrim’s Rest sells bread – come back if you get some!','rq.give':'Give {0}','rq.notNow':'Not now','rq.ok':'That’s all right. Maybe later!',
+'rq.thanksFood':'Thank you! “Whoever gives even a cup of water…” – Jesus said that kindness is never forgotten.','rq.thanks':'Thank you so much! God bless you. Please take this.',
+'rq.quizNo':'Good try! Come and talk to me again whenever you are ready.','rq.again':'Thank you again for your help! Tomorrow somebody else might need you.','rq.wait':'Still need your help: {0}','rq.back':'Done! Go back to the {0}.',
+'rq.q.find':'Find {0} {1}/{2}','rq.q.hunt':'Defeat gloomlings {0}/{1}','rq.q.quiz':'Answer the questions','rq.q.food':'Share some food','rq.q.new':'A traveller needs help!','rq.q.done':'Helped today ✓',
+'wild.hi':'A wild {0} {1} peeks out at you. It looks shy…','wild.how':'Answer {0} questions right to earn its trust!','wild.yes':'The {0} {1} trusts you now. It wants to come along!','wild.no':'The {0} got scared and ran away. Try again tomorrow!',
+'is.q0':'Talk to {0}','is.done':'Quest done ✓',
+'is.121.a1':'Welcome to Cyprus! I’m Barnabas – I grew up on this island. Paul and I sailed here to share the good news.','is.121.a2':'The proconsul, Sergius Paulus, wants to hear God’s word. But a sorcerer called Elymas keeps trying to stop him.','is.121.a3':'Gloomlings of confusion are blocking the road to the palace. Please chase away 4 of them!',
+'is.121.w1':'Keep going! The road to the palace is still blocked.','is.121.b1':'The road is clear! Paul spoke to the proconsul, and Elymas could not stop it.','is.121.b2':'When Sergius Paulus saw what happened, he believed and was amazed at the teaching about the Lord (Acts 13:12).','is.121.d1':'Barnabas means “son of encouragement”. I hope you feel encouraged today!',
+'is.122.a1':'This harbor is called Fair Havens. I warned the captain: “If we sail now, the trip will be dangerous” (Acts 27:10).','is.122.a2':'Whatever they decide, the ship needs food. Please find 3 jars of grain that rolled away from the market!',
+'is.122.w1':'We still need more jars of grain for the long trip.','is.122.b1':'Thank you! In the storm I will tell everyone: “Take heart! God told me that not one of you will be lost” (Acts 27:22).','is.122.d1':'Trust God even when the waves are high.',
+'is.123.a1':'Our ship broke apart on the rocks – but everyone swam or floated to shore, just as God promised!','is.123.a2':'The islanders were very kind and built a fire, because it was raining and cold (Acts 28:2). Please help me gather 4 bundles of sticks!',
+'is.123.w1':'We still need more sticks to keep the fire going.','is.123.b1':'Thank you! When I put the sticks on the fire, a viper came out and bit my hand.','is.123.b2':'I shook it off into the fire and was not hurt at all! God protected me. Then we prayed for the sick people of Malta, and they were healed.','is.123.d1':'God took care of us on Malta. He will take care of you, too.',
+'is.124.a1':'Welcome to Rome! I am a prisoner here, but they let me live in my own rented house.','is.124.a2':'Every day people come to visit, and I tell them about Jesus “with all boldness” (Acts 28:31).','is.124.a3':'Will you help me teach my visitors? Answer 3 of 4 questions right!',
+'is.124.w1':'More visitors have come! Will you help me teach them?','is.124.no':'Good try! Let’s try again soon.','is.124.b1':'Well done! Even in chains, God’s word cannot be chained.','is.124.b2':'From here I write letters to the churches – to Philippi, Ephesus, Colossae… Here, I found something for you.','is.124.d1':'“I can do all things through Christ who strengthens me” (Philippians 4:13).',
+'tw.title':'Tower of the Watchman','tw.verse':'“I will stand at my watch and station myself on the tower.”','tw.how':'Climb as high as you can! Every floor has a battle, and every 5th floor a boss. Your health carries over, so use your food wisely. Every 10 floors you reach a checkpoint.',
+'tw.best':'Your highest floor: {0}','tw.start':'Start at floor {0}','tw.cp':'Checkpoint','tw.friends':'Your highest floor is shown to your friends on the leaderboard.',
+'tw.hi1':'Welcome to the tower! I keep watch here, like the prophet Habakkuk.','tw.hi2':'The stairs go up and up. How high can you climb?','tw.stairs':'Stairs','tw.climb':'Climb the Tower','tw.quest':'Climb the Tower · best floor {0}',
+'tw.floor':'Floor {0}','tw.cleared':'Floor {0} cleared!','tw.done':'Floor {0} cleared!','tw.hp':'Health: {0} / {1}','tw.rest':'You rest by a window: +{0} health.','tw.next':'Next: floor {0}.','tw.bossNext':'A boss waits there!',
+'tw.cpGot':'Checkpoint {0} reached! +{1} shekels and a trophy for your house.','tw.up':'Climb on','tw.leave':'Leave the tower','tw.endT':'Back down the stairs','tw.end':'You reached floor {0}. Your best: {1}.','tw.endP':'Rest, eat something and try again!',
+'tw.board':'🪜 Highest tower floor',
+'x.leaveCave':'Leave the cave','x.toShip':'Back to the ship','x.toHarbor':'Back to the harbor','x.hubQ':'Explore the Land 🧭 or climb the Tower 🪜!'
+});
+
+Object.assign(STR.de,{"team.t": "Dein Team", "team.note": "Bis zu 3 Tiere können mit dir reisen: ein 2. ab Stufe 10, ein 3. ab Stufe 20. Manche Paare aus der Bibel passen besonders gut zusammen!", "team.lead": "Anführer", "team.makeLead": "Anführen", "team.free": "Freier Platz – tippe unten auf ein Tier", "team.lock": "Ab Stufe {0}", "team.in": "Im Team", "team.out": "Team verlassen", "team.slot": "Stufe {0}: Ein {1} Tierfreund kann jetzt in dein Team! Öffne „Tiere“, um ihn auszuwählen.", "team.second": "zweiter", "team.third": "dritter", "cb.title": "Bibel-Paare", "cb.active": "Aktiv!", "cb.hidden": "Finde beide Tiere, um zu sehen, was dieses Paar kann.", "cb.peace": "Frieden", "cb.peace.d": "„Der Wolf wird beim Lamm wohnen“ (Jesaja 11,6). Heilt dich in jeder Runde ein bisschen.", "cb.lionlamb": "Löwe und Lamm", "cb.lionlamb.d": "Jesus heißt der Löwe aus Juda und auch das Lamm (Offenbarung 5,5-6). Stärkere Kräfte und ein wenig Heilung.", "cb.courage": "Mut", "cb.courage.d": "„Mutig wie ein Löwe“ (nach Sprüche 28,1) und „Flügel wie Adler“ (Jesaja 40,31). Deine Kräfte treffen stärker.", "cb.gentle": "Sanfte Stärke", "cb.gentle.d": "„Der Leopard wird beim Böckchen liegen“ (Jesaja 11,6). Deine Kräfte treffen stärker.", "cb.manger": "An der Krippe", "cb.manger.d": "„Der Ochse kennt seinen Herrn und der Esel die Krippe seines Herrn“ (Jesaja 1,3). Ein Schild hält in jedem Kampf die ersten Treffer ab.", "cb.ark": "Vögel der Arche", "cb.ark.d": "Noah ließ einen Raben und eine Taube fliegen (1. Mose 8,7-8). +20 % EP nach Kämpfen.", "cb.work": "Fleißige Arbeiter", "cb.work.d": "Geh zur Ameise und werde weise (nach Sprüche 6,6). +25 % Schekel nach Kämpfen.", "cb.jonah": "Jonas Meer", "cb.jonah.d": "Ein großer Fisch verschluckte Jona (Jona 2,1). Alle Gegner werden weggespült und setzen ihre erste Runde aus.", "cb.flock": "Die Herde", "cb.flock.d": "„Der HERR ist mein Hirte“ (Psalm 23,1). Heilt dich in jeder Runde ein bisschen.", "cb.stream": "Wasserbäche", "cb.stream.d": "„Wie der Hirsch schreit nach frischem Wasser“ (Psalm 42,2). Heilt dich in jeder Runde.", "lx.101": "Hügel von Galiläa", "lx.102": "Jordantal", "lx.103": "Judäische Wüste", "lx.104": "Die Küste", "lx.105": "Rund um Jerusalem", "lx.111": "Höhle in den Hügeln", "lx.112": "Höhle am Fluss", "lx.113": "Höhle von En-Gedi", "lx.114": "Meereshöhle", "lx.115": "Höhle unter den Ölbäumen", "lx.120": "Das Große Meer", "lx.121": "Zypern", "lx.122": "Kreta", "lx.123": "Malta", "lx.124": "Rom", "lx.130": "Turm des Wächters", "lg.121": "Barnabas", "lg.122": "Paulus", "lg.123": "Paulus", "lg.124": "Paulus", "lg.130": "Wächter", "ln.101.0": "Hirtenjunge", "ln.101.1": "Fischersfrau", "ln.102.0": "Bauer", "ln.102.1": "Töpfer", "ln.103.0": "Hirtin", "ln.103.1": "Alter Einsiedler", "ln.104.0": "Netzflicker", "ln.104.1": "Gerberstochter", "ln.105.0": "Tempelsänger", "ln.105.1": "Gewürzhändler", "ln.121.0": "Sergius Paulus", "ln.121.1": "Inselmädchen", "ln.122.0": "Kapitän", "ln.122.1": "Hauptmann Julius", "ln.123.0": "Publius", "ln.123.1": "Inselbewohner", "ln.124.0": "Priscilla", "ln.124.1": "Aquila", "ln.130.0": "Wächter", "ln.130.1": "Lampenwärter", "lf.101a": ["Jeden Abend zähle ich meine Schafe. Wenn eins fehlt, suche ich es, bis ich es finde – genau wie der gute Hirte!"], "lf.101b": ["Mein Mann fischt die ganze Nacht auf dem See. Man erzählt, dass Jesus ihre Netze einmal so voll gemacht hat, dass sie fast rissen!"], "lf.102a": ["An diesem Fluss hat Johannes die Menschen getauft – und auch Jesus wurde hier getauft. Das Wasser ist kalt, aber die Leute kamen von überall her."], "lf.102b": ["Gott ist wie ein Töpfer, und wir sind der Ton (nach Jesaja 64,7). Er formt uns mit sanften Händen."], "lf.103a": ["In diesen Hügeln hat sich David vor König Saul versteckt. In einer Höhle hätte er Saul etwas antun können, aber er hat es nicht getan."], "lf.103b": ["Hier draußen ist es still. Jesus ging in die Wüste, um zu beten. Manchmal ist Stillsein der beste Weg, auf Gott zu hören."], "lf.104a": ["Von dieser Küste aus wollte Jona vor Gott davonsegeln – in die falsche Richtung! Das ging nicht gut für ihn aus."], "lf.104b": ["Petrus wohnte in Joppe bei einem Gerber. Oben auf dem Dach zeigte Gott ihm, dass die gute Nachricht für alle Menschen ist."], "lf.105a": ["Auf dem Weg hinauf zum Tempel singen wir die Psalmen: „Ich freute mich, als man mir sagte: Lasst uns zum Haus des HERRN gehen!“"], "lf.105b": ["Gewürze aus fernen Ländern! Weißt du, die Weisen brachten dem Jesuskind Weihrauch und Myrrhe."], "lf.121a": ["Ich bin der Statthalter von Zypern. Ich wollte Gottes Wort hören, und Paulus und Barnabas kamen, um es mir zu erklären."], "lf.121b": ["Barnabas ist hier auf Zypern aufgewachsen! Sein Name bedeutet „Sohn des Trostes“."], "lf.122a": ["Paulus hat gesagt, wir sollen hier den Winter abwarten. Ich wollte weitersegeln … Ich hätte auf ihn hören sollen."], "lf.122b": ["Ich bin Julius. Ich soll Paulus nach Rom bringen. Er ist ein Gefangener, aber er ist der mutigste Mann auf diesem Schiff."], "lf.123a": ["Mein Vater hatte hohes Fieber. Paulus betete für ihn, legte ihm die Hände auf, und er wurde gesund!"], "lf.123b": ["Wir haben gesehen, wie das Schiff an den Felsen zerbrach. Aber alle 276 Menschen kamen sicher an Land!"], "lf.124a": ["Aquila und ich haben in Korinth mit Paulus Zelte genäht. Jetzt sind wir in Rom wieder zusammen!"], "lf.124b": ["Paulus schreibt Briefe an Gemeinden in fernen Städten. Diese Briefe stehen heute in deiner Bibel!"], "lf.130a": ["Ich halte oben auf diesem Turm Wache, Tag und Nacht."], "lf.130b": ["Auf jedem Stockwerk brennt eine Lampe. „Dein Wort ist meines Fußes Leuchte“ (Psalm 119,105)."], "wc.hedgehog": "Igel", "wc.hedgehog.d": "Rollt sich zu einer stacheligen Kugel ein, die Gegner erstarren lässt. Lebt in den Hügeln von Galiläa.", "wc.horse": "Streitross", "wc.horse.d": "„Kannst du dem Pferd Kraft geben?“ (Hiob 39,19). Galoppiert heran und tritt kräftig zu.", "wc.badger": "Klippschliefer", "wc.badger.d": "„Sie bauen ihr Haus in den Felsen“ (nach Sprüche 30,26). Kommt nachts in der Wüste heraus.", "wc.dromedary": "Dromedar", "wc.dromedary.d": "Rebekka gab den Kamelen zu trinken (1. Mose 24,19). Bringt extra Schekel mit nach Hause.", "wc.dolphin": "Delfin", "wc.dolphin.d": "Springt durch die Wellen und bespritzt alle Gegner auf einmal.", "wc.seal": "Mönchsrobbe", "wc.seal.d": "Eine sanfte Robbe von den felsigen Küsten Zyperns. Große, gemütliche Heilung.", "wc.crab": "Krabbe", "wc.crab.d": "Hält ihren harten Panzer wie einen Schild hoch. Lebt in den Häfen von Kreta.", "wc.octopus": "Krake", "wc.octopus.d": "Acht Arme, acht Treffer! Lebt im klaren Wasser rund um Malta.", "wc.lizard": "Palast-Eidechse", "wc.lizard.d": "„Die Eidechse wohnt in Königspalästen“ (nach Sprüche 30,28). Lässt Gegner mit einem schnellen Blick erstarren.", "x.sub": "Das Land · {0}", "x.nightFalls": "🌙 Die Nacht bricht über das Land herein.", "x.morning": "☀️ Die Sonne geht auf. Guten Morgen!", "x.secret": "✨ Du hast einen geheimen Ort gefunden!", "x.reward": "+{0} Schekel · +{1} EP", "x.locked": "Verschlossen", "x.tower": "Turm des Wächters", "x.towerGo": "Den Turm betreten", "x.towerLock": "Der Turm öffnet sich, wenn du {0} Welten geschafft hast.", "x.land": "Das Land", "x.landGo": "Ins Land reisen", "x.landLock": "Der Weg ins Land öffnet sich nach dem allerletzten Tor.", "land.intro1": "Du hast es geschafft – die Schriftrolle des Lichts ist wieder ganz! Aber die Reise ist noch nicht zu Ende.", "land.intro2": "Dort draußen liegt das ganze Land: die Hügel von Galiläa, der Jordan, die Wüste, die Küste und die Hügel rund um Jerusalem.", "land.intro3": "Jeden Tag brauchen Reisende Hilfe. In den Hügeln verstecken sich wilde Tiere, und in den Höhlen warten alte Geheimnisse.", "land.intro4": "Jemand hat sogar Stücke einer alten Liedrolle gefunden – einen Psalm. Findest du alle 12 Stücke?", "x.frag": "Verlorene Seite", "x.fragGo": "Die verlorene Seite aufheben", "x.wild": "Wildes Tier", "x.wildGo": "Freundschaft schließen: {0}", "x.roadTo": "→ {0}", "x.roadGo": "Reise nach {0}", "x.cave": "Höhle", "x.caveGo": "In die Höhle gehen", "x.ship": "Paulus’ Schiff", "x.shipGo": "Über das Große Meer segeln", "x.pick": "Aufheben", "x.rainbow": "Regenbogen", "x.rainbowGo": "Zum Regenbogen gehen", "x.rainbowT": "„Meinen Bogen habe ich in die Wolken gesetzt“ (1. Mose 9,13). Gott hält seine Versprechen. Du fühlst dich frisch und stark!", "x.chest": "Alte Truhe", "x.chestGo": "Die Truhe öffnen", "x.landAt": "In {0} an Land gehen", "x.sailHome": "Zurück zur Küste segeln", "sea.intro1": "Im Hafen knarrt ein großes Holzschiff in den Wellen. Die Seeleute machen sich bereit.", "sea.intro2": "Paulus ist oft über dieses Meer gesegelt: mit Barnabas nach Zypern und später an Kreta und Malta vorbei bis nach Rom.", "sea.intro3": "Segle zu den Inseln und hilf Paulus und seinen Freunden. Pass auf die Sturmwolken auf!", "sea.q": "Inseln geholfen: {0}/4", "ps.ref": "Psalm 23", "ps.found": "Verlorene Seite {0} von 12!", "ps.moreP": "Weitere Seiten sind im Land, in den Höhlen und auf den Inseln versteckt.", "ps.allP": "Du hast den ganzen Psalm gefunden! Lies ihn noch einmal – es ist ein Lied des Vertrauens.", "ps.reward": "Der ganze Psalm ist gefunden! +300 Schekel, +200 EP und ein goldener Pokal für dein Haus.", "ps.1": "Der HERR ist mein Hirte, mir wird nichts mangeln.", "ps.2": "Er weidet mich auf einer grünen Aue", "ps.3": "und führet mich zum frischen Wasser.", "ps.4": "Er erquicket meine Seele.", "ps.5": "Er führet mich auf rechter Straße um seines Namens willen.", "ps.6": "Und ob ich schon wanderte im finstern Tal,", "ps.7": "fürchte ich kein Unglück; denn du bist bei mir,", "ps.8": "dein Stecken und Stab trösten mich.", "ps.9": "Du bereitest vor mir einen Tisch im Angesicht meiner Feinde.", "ps.10": "Du salbest mein Haupt mit Öl und schenkest mir voll ein.", "ps.11": "Gutes und Barmherzigkeit werden mir folgen mein Leben lang,", "ps.12": "und ich werde bleiben im Hause des HERRN immerdar.", "tv.merchant": "Händler", "tv.shepherd": "Hirte", "tv.fisher": "Fischer", "tv.widow": "Witwe", "tv.potter": "Töpfer", "tv.pilgrim": "Pilger", "tv.scribe": "Schreiber", "tv.vine": "Weinbauer", "rq.merchant": "Friede sei mit dir! Ich ziehe mit meinen Waren von Stadt zu Stadt.", "rq.shepherd": "Hallo, Freund! Ich passe hier draußen auf die Herde auf.", "rq.fisher": "Schalom! Ich bin auf dem Weg zum See.", "rq.widow": "Oh, ein freundliches Gesicht! Wie schön, dass du vorbeikommst.", "rq.potter": "Sei gegrüßt! Ich mache Krüge und Schalen aus Ton.", "rq.pilgrim": "Friede! Ich gehe zum Fest hinauf nach Jerusalem.", "rq.scribe": "Ah, ein junger Schüler! Ich schreibe die heiligen Schriftrollen ab.", "rq.vine": "Willkommen! Hast du meinen Weinberg gesehen? Die Trauben sind fast reif.", "rq.hi.find": "Kannst du mir helfen? Ich habe hier irgendwo {0} {1} verloren. Bitte bring sie mir zurück!", "rq.hi.hunt": "Düsterlinge versperren immer wieder den Weg. Kannst du {0} von ihnen verjagen?", "rq.hi.quiz": "Ich rede so gern über Gottes Wort. Beantwortest du meine Fragen? 2 von 3 müssen stimmen!", "rq.hi.food": "Ich bin so weit gelaufen und habe großen Hunger. Hast du etwas zu essen für mich?", "rq.noFood": "Oh, deine Tasche ist leer. In Lydias Laden in der Pilgerrast gibt es Brot – komm wieder, wenn du etwas hast!", "rq.give": "{0} geben", "rq.notNow": "Jetzt nicht", "rq.ok": "Schon gut. Vielleicht später!", "rq.thanksFood": "Danke! „Wer auch nur einen Becher Wasser gibt …“ – Jesus hat gesagt, dass Freundlichkeit nie vergessen wird.", "rq.thanks": "Vielen Dank! Gott segne dich. Bitte nimm das hier.", "rq.quizNo": "Guter Versuch! Komm wieder zu mir, wenn du bereit bist.", "rq.again": "Nochmals danke für deine Hilfe! Morgen braucht vielleicht jemand anderes dich.", "rq.wait": "Ich brauche noch deine Hilfe: {0}", "rq.back": "Geschafft! Geh zurück zu: {0}.", "rq.q.find": "Finde {0} {1}/{2}", "rq.q.hunt": "Besiege Düsterlinge {0}/{1}", "rq.q.quiz": "Beantworte die Fragen", "rq.q.food": "Teile etwas zu essen", "rq.q.new": "Ein Reisender braucht Hilfe!", "rq.q.done": "Heute geholfen ✓", "wild.hi": "Ein wildes Tier schaut dich an: {0} {1}. Es wirkt scheu …", "wild.how": "Beantworte {0} Fragen richtig, um sein Vertrauen zu gewinnen!", "wild.yes": "{0} {1} vertraut dir jetzt und möchte mitkommen!", "wild.no": "{0} hat sich erschreckt und ist weggelaufen. Versuch es morgen wieder!", "is.q0": "Sprich mit {0}", "is.121.a1": "Willkommen auf Zypern! Ich bin Barnabas – ich bin auf dieser Insel aufgewachsen. Paulus und ich sind hergesegelt, um die gute Nachricht weiterzusagen.", "is.121.a2": "Der Statthalter Sergius Paulus möchte Gottes Wort hören. Aber ein Zauberer namens Elymas will ihn immer wieder davon abhalten.", "is.121.a3": "Düsterlinge der Verwirrung versperren den Weg zum Palast. Bitte verjag 4 von ihnen!", "is.121.w1": "Weiter so! Der Weg zum Palast ist noch versperrt.", "is.121.b1": "Der Weg ist frei! Paulus hat mit dem Statthalter gesprochen, und Elymas konnte es nicht verhindern.", "is.121.b2": "Als Sergius Paulus sah, was geschehen war, glaubte er und staunte über die Lehre vom Herrn (nach Apostelgeschichte 13,12).", "is.121.d1": "Barnabas bedeutet „Sohn des Trostes“. Ich hoffe, du fühlst dich heute ermutigt!", "is.122.a1": "Dieser Hafen heißt Guthafen. Ich habe den Kapitän gewarnt: „Wenn wir jetzt segeln, wird die Fahrt gefährlich“ (nach Apostelgeschichte 27,10).", "is.122.a2": "Egal, wie sie entscheiden – das Schiff braucht Essen. Bitte finde 3 Krüge mit Getreide, die vom Markt weggerollt sind!", "is.122.w1": "Wir brauchen noch mehr Getreidekrüge für die lange Reise.", "is.122.b1": "Danke! Im Sturm werde ich allen sagen: „Habt Mut! Gott hat mir gesagt, dass keiner von euch verloren geht“ (nach Apostelgeschichte 27,22).", "is.122.d1": "Vertrau Gott, auch wenn die Wellen hoch sind.", "is.123.a1": "Unser Schiff ist an den Felsen zerbrochen – aber alle sind ans Ufer geschwommen oder getrieben, genau wie Gott es versprochen hat!", "is.123.a2": "Die Inselbewohner waren sehr freundlich und machten ein Feuer, weil es regnete und kalt war (Apostelgeschichte 28,2). Hilf mir bitte, 4 Bündel Reisig zu sammeln!", "is.123.w1": "Wir brauchen noch mehr Reisig, damit das Feuer weiterbrennt.", "is.123.b1": "Danke! Als ich das Reisig aufs Feuer legte, kam eine Giftschlange heraus und biss mich in die Hand.", "is.123.b2": "Ich schüttelte sie ins Feuer und mir passierte gar nichts! Gott hat mich beschützt. Dann beteten wir für die Kranken auf Malta, und sie wurden gesund.", "is.123.d1": "Gott hat auf Malta für uns gesorgt. Er sorgt auch für dich.", "is.124.a1": "Willkommen in Rom! Ich bin hier ein Gefangener, aber ich darf in meiner eigenen gemieteten Wohnung leben.", "is.124.a2": "Jeden Tag kommen Leute zu Besuch, und ich erzähle ihnen ganz mutig und frei von Jesus (nach Apostelgeschichte 28,31).", "is.124.a3": "Hilfst du mir, meine Besucher zu unterrichten? 3 von 4 Antworten müssen stimmen!", "is.124.w1": "Es sind neue Besucher gekommen! Hilfst du mir, sie zu unterrichten?", "is.124.no": "Guter Versuch! Wir probieren es bald noch einmal.", "is.124.b1": "Gut gemacht! Auch wenn ich in Ketten liege – Gottes Wort ist nicht gefesselt.", "is.124.b2": "Von hier schreibe ich Briefe an die Gemeinden – nach Philippi, Ephesus, Kolossä … Schau, ich habe etwas für dich gefunden.", "is.124.d1": "„Ich kann alles durch Christus, der mich stark macht“ (nach Philipper 4,13).", "tw.title": "Turm des Wächters", "tw.verse": "„Ich will auf meinem Wachposten stehen und mich auf den Turm stellen.“", "tw.how": "Klettere so hoch du kannst! Auf jedem Stockwerk wartet ein Kampf, auf jedem 5. ein Boss. Deine Gesundheit bleibt, wie sie ist – iss also klug. Alle 10 Stockwerke erreichst du einen Kontrollpunkt.", "tw.best": "Dein höchstes Stockwerk: {0}", "tw.start": "Ab Stockwerk {0} starten", "tw.cp": "Kontrollpunkt", "tw.friends": "Dein höchstes Stockwerk sehen deine Freunde in der Bestenliste.", "tw.hi1": "Willkommen im Turm! Ich halte hier Wache, wie der Prophet Habakuk.", "tw.hi2": "Die Treppe führt immer weiter hinauf. Wie hoch kommst du?", "tw.stairs": "Treppe", "tw.climb": "Den Turm erklimmen", "tw.quest": "Erklimme den Turm · bestes Stockwerk {0}", "tw.floor": "Stockwerk {0}", "tw.cleared": "Stockwerk {0} geschafft!", "tw.done": "Stockwerk {0} geschafft!", "tw.hp": "Gesundheit: {0} / {1}", "tw.rest": "Du ruhst dich an einem Fenster aus: +{0} Gesundheit.", "tw.next": "Als Nächstes: Stockwerk {0}.", "tw.bossNext": "Dort wartet ein Boss!", "tw.cpGot": "Kontrollpunkt {0} erreicht! +{1} Schekel und ein Pokal für dein Haus.", "tw.up": "Weiterklettern", "tw.leave": "Turm verlassen", "tw.endT": "Die Treppe wieder hinunter", "tw.end": "Du hast Stockwerk {0} erreicht. Dein Rekord: {1}.", "tw.endP": "Ruh dich aus, iss etwas und versuch es noch einmal!", "tw.board": "🪜 Höchstes Turm-Stockwerk", "x.leaveCave": "Höhle verlassen", "x.toShip": "Zurück zum Schiff", "x.toHarbor": "Zurück zum Hafen", "x.hubQ": "Erkunde das Land 🧭 oder erklimm den Turm 🪜!", "is.done": "Aufgabe geschafft ✓"});
+
+Object.assign(STR.es,{"team.t": "Tu equipo", "team.note": "Hasta 3 animales pueden viajar contigo: el 2.º se une en el nivel 10 y el 3.º en el nivel 20. ¡Algunas parejas de la Biblia funcionan especialmente bien juntas!", "team.lead": "Líder", "team.makeLead": "Guiar", "team.free": "Lugar libre: toca un animal abajo", "team.lock": "Se abre en el nivel {0}", "team.in": "En tu equipo", "team.out": "Salir del equipo", "team.slot": "Nivel {0}: ¡un {1} amigo animal puede unirse a tu equipo! Abre Animales para elegir.", "team.second": "segundo", "team.third": "tercer", "cb.title": "Parejas bíblicas", "cb.active": "¡Activa!", "cb.hidden": "Encuentra los dos animales para saber qué puede hacer esta pareja.", "cb.peace": "Paz", "cb.peace.d": "«El lobo vivirá con el cordero» (Isaías 11:6). Te cura un poco en cada turno.", "cb.lionlamb": "León y Cordero", "cb.lionlamb.d": "A Jesús se le llama el León de Judá y también el Cordero (Apocalipsis 5:5-6). Poderes más fuertes y un poco de curación.", "cb.courage": "Valor", "cb.courage.d": "«Valiente como un león» (Proverbios 28:1) y «alas como de águila» (Isaías 40:31). Tus poderes golpean más fuerte.", "cb.gentle": "Fuerza amable", "cb.gentle.d": "«El leopardo se echará junto al cabrito» (Isaías 11:6). Tus poderes golpean más fuerte.", "cb.manger": "En el pesebre", "cb.manger.d": "«El buey conoce a su dueño, y el burro el pesebre de su amo» (Isaías 1:3). Un escudo frena los primeros golpes de cada batalla.", "cb.ark": "Aves del arca", "cb.ark.d": "Noé soltó un cuervo y una paloma (Génesis 8:7-8). +20 % de XP después de las batallas.", "cb.work": "Trabajadores incansables", "cb.work.d": "Mira a la hormiga y aprende a ser sabio (Proverbios 6:6). +25 % de siclos después de las batallas.", "cb.jonah": "El mar de Jonás", "cb.jonah.d": "Un gran pez se tragó a Jonás (Jonás 1:17). Las olas arrastran a todos los enemigos y pierden su primer turno.", "cb.flock": "El rebaño", "cb.flock.d": "«El SEÑOR es mi pastor» (Salmo 23:1). Te cura un poco en cada turno.", "cb.stream": "Corrientes de agua", "cb.stream.d": "«Como el ciervo busca las corrientes de agua» (Salmo 42:1). Te cura en cada turno.", "lx.101": "Colinas de Galilea", "lx.102": "Valle del Jordán", "lx.103": "Desierto de Judea", "lx.104": "La costa", "lx.105": "Alrededores de Jerusalén", "lx.111": "Cueva de las colinas", "lx.112": "Cueva junto al río", "lx.113": "Cueva de En-gadi", "lx.114": "Cueva del mar", "lx.115": "Cueva bajo los olivos", "lx.120": "El Gran Mar", "lx.121": "Chipre", "lx.122": "Creta", "lx.123": "Malta", "lx.124": "Roma", "lx.130": "Torre del Centinela", "lg.121": "Bernabé", "lg.122": "Pablo", "lg.123": "Pablo", "lg.124": "Pablo", "lg.130": "Centinela", "ln.101.0": "Pastorcito", "ln.101.1": "Esposa del pescador", "ln.102.0": "Agricultor", "ln.102.1": "Alfarero", "ln.103.0": "Pastora", "ln.103.1": "Ermitaño anciano", "ln.104.0": "Remendador de redes", "ln.104.1": "Hija del curtidor", "ln.105.0": "Cantora del templo", "ln.105.1": "Vendedor de especias", "ln.121.0": "Sergio Paulo", "ln.121.1": "Niña de la isla", "ln.122.0": "Capitán del barco", "ln.122.1": "Julio el centurión", "ln.123.0": "Publio", "ln.123.1": "Isleño", "ln.124.0": "Priscila", "ln.124.1": "Aquila", "ln.130.0": "Centinela", "ln.130.1": "Guardián de las lámparas", "lf.101a": ["Cada tarde cuento mis ovejas. Si falta una, salgo a buscarla hasta encontrarla… ¡igual que el Buen Pastor!"], "lf.101b": ["Mi esposo pesca en el lago toda la noche. ¡Dicen que una vez Jesús les llenó tanto las redes que casi se rompían!"], "lf.102a": ["En este río Juan bautizaba a la gente, y aquí también fue bautizado Jesús. El agua está fría, pero venía gente de todas partes."], "lf.102b": ["Dios es como un alfarero, y nosotros somos el barro (Isaías 64:8). Nos da forma con manos cariñosas."], "lf.103a": ["David se escondió del rey Saúl en estas colinas. En una cueva pudo hacerle daño a Saúl, pero decidió no hacerlo."], "lf.103b": ["Aquí afuera todo está tranquilo. Jesús se iba al desierto a orar. A veces el silencio es la mejor manera de escuchar a Dios."], "lf.104a": ["Desde esta costa Jonás quiso huir de Dios en barco… ¡en la dirección equivocada! No le fue nada bien."], "lf.104b": ["Pedro se quedó en casa de un curtidor en Jope. Arriba, en la azotea, Dios le mostró que la buena noticia es para todos."], "lf.105a": ["Cantamos los Salmos mientras subimos al templo: «¡Me alegré cuando me dijeron: vamos a la casa del SEÑOR!»"], "lf.105b": ["¡Especias de lugares lejanos! ¿Sabías que los sabios le llevaron mirra e incienso al niño Jesús?"], "lf.121a": ["Soy el procónsul de Chipre. Quería escuchar la palabra de Dios, y Pablo y Bernabé vinieron a enseñarme."], "lf.121b": ["¡Bernabé creció aquí, en Chipre! Su nombre significa «hijo de consolación»."], "lf.122a": ["Pablo nos dijo que pasáramos el invierno aquí. Yo quise seguir navegando… Debí haberle hecho caso."], "lf.122b": ["Soy Julio. Tengo que llevar a Pablo a Roma. Es un prisionero, pero es el hombre más valiente de este barco."], "lf.123a": ["Mi padre estaba muy enfermo con fiebre. Pablo oró por él, puso sus manos sobre él… ¡y quedó sano!"], "lf.123b": ["Vimos cómo el barco se rompía contra las rocas. ¡Pero las 276 personas llegaron sanas y salvas a la orilla!"], "lf.124a": ["Aquila y yo hacíamos tiendas con Pablo en Corinto. ¡Ahora estamos juntos otra vez en Roma!"], "lf.124b": ["Pablo escribe cartas a iglesias que están lejos. ¡Esas cartas ahora están en tu Biblia!"], "lf.130a": ["Vigilo desde lo alto de esta torre, de día y de noche."], "lf.130b": ["Cada piso tiene una lámpara. «Tu palabra es una lámpara a mis pies» (Salmo 119:105)."], "wc.hedgehog": "Erizo", "wc.hedgehog.d": "Se enrolla en una bola de púas que puede congelar a un enemigo. Vive en las colinas de Galilea.", "wc.horse": "Caballo de guerra", "wc.horse.d": "«¿Le diste tú al caballo su fuerza?» (Job 39:19). Llega al galope con una patada poderosa.", "wc.badger": "Damán", "wc.badger.d": "«Hacen su casa entre las rocas» (Proverbios 30:26). Sale de noche en el desierto.", "wc.dromedary": "Dromedario", "wc.dromedary.d": "Rebeca dio de beber a los camellos (Génesis 24:19). Trae siclos extra a casa.", "wc.dolphin": "Delfín", "wc.dolphin.d": "Salta entre las olas y salpica a todos los enemigos a la vez.", "wc.seal": "Foca monje", "wc.seal.d": "Una foca tranquila de las costas rocosas de Chipre. Una curación grande y reconfortante.", "wc.crab": "Cangrejo", "wc.crab.d": "Levanta su caparazón duro como un escudo. Vive en los puertos de Creta.", "wc.octopus": "Pulpo", "wc.octopus.d": "¡Ocho brazos, ocho golpes! Vive en las aguas cristalinas de Malta.", "wc.lizard": "Lagartija del palacio", "wc.lizard.d": "«La lagartija está en los palacios de los reyes» (Proverbios 30:28). Congela a los enemigos con una mirada rápida.", "x.sub": "Tierra Santa · {0}", "x.nightFalls": "🌙 Cae la noche sobre Tierra Santa.", "x.morning": "☀️ Sale el sol. ¡Buenos días!", "x.secret": "✨ ¡Encontraste un lugar secreto!", "x.reward": "+{0} siclos · +{1} XP", "x.locked": "Cerrado", "x.tower": "Torre del Centinela", "x.towerGo": "Entrar en la Torre", "x.towerLock": "La Torre se abre cuando termines {0} mundos.", "x.land": "Tierra Santa", "x.landGo": "Viajar por Tierra Santa", "x.landLock": "El camino a Tierra Santa se abre después de la última puerta.", "land.intro1": "¡Lo lograste! ¡El Pergamino de Luz vuelve a estar completo! Pero el viaje no ha terminado.", "land.intro2": "Ahí afuera está toda la tierra: las colinas de Galilea, el Jordán, el desierto, la costa y las colinas alrededor de Jerusalén.", "land.intro3": "Cada día hay viajeros que necesitan ayuda. Los animales salvajes se esconden en las colinas, y las cuevas guardan antiguos secretos.", "land.intro4": "Alguien hasta encontró pedazos de un antiguo pergamino de canciones: un Salmo. ¿Puedes encontrar las 12 páginas?", "x.frag": "Página perdida", "x.fragGo": "Recoger la página perdida", "x.wild": "Animal salvaje", "x.wildGo": "Hacerte amigo de: {0}", "x.roadTo": "→ {0}", "x.roadGo": "Viajar a {0}", "x.cave": "Cueva", "x.caveGo": "Entrar en la cueva", "x.ship": "El barco de Pablo", "x.shipGo": "Navegar por el Gran Mar", "x.pick": "Recoger", "x.rainbow": "Arcoíris", "x.rainbowGo": "Caminar hacia el arcoíris", "x.rainbowT": "«Pongo mi arcoíris en las nubes» (Génesis 9:13). Dios cumple sus promesas. ¡Te sientes fresco y fuerte!", "x.chest": "Cofre antiguo", "x.chestGo": "Abrir el cofre", "x.landAt": "Desembarcar en {0}", "x.sailHome": "Volver a la costa", "sea.intro1": "En el puerto, un gran barco de madera cruje entre las olas. Los marineros se preparan.", "sea.intro2": "Pablo navegó muchas veces por este mar: a Chipre con Bernabé, y más tarde, pasando por Creta y Malta, hasta Roma.", "sea.intro3": "Navega a las islas y ayuda a Pablo y a sus amigos. ¡Cuidado con las nubes de tormenta!", "sea.q": "Islas ayudadas: {0}/4", "ps.ref": "Salmo 23", "ps.found": "¡Página perdida {0} de 12!", "ps.moreP": "Hay más páginas escondidas en Tierra Santa, en las cuevas y en las islas.", "ps.allP": "¡Encontraste el Salmo completo! Léelo otra vez: es una canción de confianza.", "ps.reward": "¡Encontraste el Salmo completo! +300 siclos, +200 XP y un trofeo dorado para tu casa.", "ps.1": "El SEÑOR es mi pastor; nada me faltará.", "ps.2": "En lugares de delicados pastos me hará descansar;", "ps.3": "junto a aguas de reposo me pastoreará.", "ps.4": "Confortará mi alma;", "ps.5": "me guiará por sendas de justicia por amor de su nombre.", "ps.6": "Aunque ande en valle de sombra de muerte,", "ps.7": "no temeré mal alguno, porque tú estarás conmigo;", "ps.8": "tu vara y tu cayado me infundirán aliento.", "ps.9": "Aderezas mesa delante de mí en presencia de mis angustiadores;", "ps.10": "unges mi cabeza con aceite; mi copa está rebosando.", "ps.11": "Ciertamente el bien y la misericordia me seguirán todos los días de mi vida,", "ps.12": "y en la casa del SEÑOR moraré por largos días.", "tv.merchant": "Mercader", "tv.shepherd": "Pastor", "tv.fisher": "Pescador", "tv.widow": "Viuda", "tv.potter": "Alfarero", "tv.pilgrim": "Peregrino", "tv.scribe": "Escriba", "tv.vine": "Viñador", "rq.merchant": "¡La paz sea contigo! Viajo de pueblo en pueblo con mis mercancías.", "rq.shepherd": "¡Hola, amigo! Aquí afuera cuido el rebaño.", "rq.fisher": "¡Shalom! Voy camino al lago.", "rq.widow": "¡Oh, una cara amable! Qué alegría que pasaras por aquí.", "rq.potter": "¡Saludos! Hago cántaros y tazones de barro.", "rq.pilgrim": "¡Paz! Subo a Jerusalén para la fiesta.", "rq.scribe": "¡Ah, un joven aprendiz! Yo copio los rollos sagrados.", "rq.vine": "¡Bienvenido! ¿Has visto mi viña? Las uvas ya casi están listas.", "rq.hi.find": "¿Me ayudas? Perdí {0} {1} por aquí cerca. ¡Por favor, tráemelos!", "rq.hi.hunt": "Las Sombritas no dejan de bloquear el camino. ¿Podrías ahuyentar a {0}?", "rq.hi.quiz": "Me encanta hablar de la palabra de Dios. ¿Respondes mis preguntas? ¡Acierta 2 de 3!", "rq.hi.food": "He caminado muchísimo y tengo mucha hambre. ¿Tienes algo de comida para compartir?", "rq.noFood": "Oh, tu bolsa está vacía. En la tienda de Lidia, en el Descanso del Peregrino, venden pan. ¡Vuelve si consigues algo!", "rq.give": "Dar {0}", "rq.notNow": "Ahora no", "rq.ok": "No pasa nada. ¡Quizás más tarde!", "rq.thanksFood": "¡Gracias! «Quien dé aunque sea un vaso de agua…»: Jesús dijo que la bondad nunca se olvida.", "rq.thanks": "¡Muchísimas gracias! Que Dios te bendiga. Toma, esto es para ti.", "rq.quizNo": "¡Buen intento! Vuelve a hablar conmigo cuando quieras.", "rq.again": "¡Gracias otra vez por tu ayuda! Mañana otra persona podría necesitarte.", "rq.wait": "Todavía necesito tu ayuda: {0}", "rq.back": "¡Listo! Vuelve con quien te pidió ayuda: {0}.", "rq.q.find": "Busca {0} {1}/{2}", "rq.q.hunt": "Derrota Sombritas {0}/{1}", "rq.q.quiz": "Responde las preguntas", "rq.q.food": "Comparte comida", "rq.q.new": "¡Un viajero necesita ayuda!", "rq.q.done": "Ayudaste hoy ✓", "wild.hi": "{0} {1}: un animal salvaje se asoma y te mira. Parece tímido…", "wild.how": "¡Responde bien {0} preguntas para ganarte su confianza!", "wild.yes": "{0} {1} ya confía en ti. ¡Quiere venir contigo!", "wild.no": "{0} se asustó y huyó. ¡Inténtalo otra vez mañana!", "is.q0": "Habla con {0}", "is.121.a1": "¡Bienvenido a Chipre! Soy Bernabé y crecí en esta isla. Pablo y yo vinimos navegando para compartir la buena noticia.", "is.121.a2": "El procónsul, Sergio Paulo, quiere escuchar la palabra de Dios. Pero un hechicero llamado Elimas no deja de intentar impedirlo.", "is.121.a3": "Unas Sombritas de la confusión bloquean el camino al palacio. ¡Por favor, ahuyenta a 4 de ellas!", "is.121.w1": "¡Sigue así! El camino al palacio todavía está bloqueado.", "is.121.b1": "¡El camino está libre! Pablo habló con el procónsul, y Elimas no pudo impedirlo.", "is.121.b2": "Cuando Sergio Paulo vio lo que pasó, creyó y se quedó asombrado de la enseñanza sobre el Señor (Hechos 13:12).", "is.121.d1": "Bernabé significa «hijo de consolación». ¡Espero que hoy te sientas animado!", "is.122.a1": "Este puerto se llama Buenos Puertos. Le advertí al capitán: «Si navegamos ahora, el viaje será peligroso» (Hechos 27:10).", "is.122.a2": "Decidan lo que decidan, el barco necesita comida. ¡Por favor, encuentra 3 cántaros de grano que rodaron lejos del mercado!", "is.122.w1": "Todavía necesitamos más cántaros de grano para el largo viaje.", "is.122.b1": "¡Gracias! En la tormenta les diré a todos: «¡Ánimo! Dios me dijo que ninguno de ustedes se perderá» (Hechos 27:22).", "is.122.d1": "Confía en Dios aunque las olas estén altas.", "is.123.a1": "Nuestro barco se rompió contra las rocas, pero todos llegaron a la orilla nadando o flotando, ¡tal como Dios lo prometió!", "is.123.a2": "Los isleños fueron muy amables y encendieron una fogata, porque llovía y hacía frío (Hechos 28:2). ¡Ayúdame a juntar 4 haces de leña!", "is.123.w1": "Todavía necesitamos más leña para que el fuego no se apague.", "is.123.b1": "¡Gracias! Cuando eché la leña al fuego, salió una víbora y me mordió la mano.", "is.123.b2": "¡La sacudí al fuego y no me pasó nada! Dios me protegió. Después oramos por los enfermos de Malta, y fueron sanados.", "is.123.d1": "Dios nos cuidó en Malta. También te cuidará a ti.", "is.124.a1": "¡Bienvenido a Roma! Aquí soy prisionero, pero me dejan vivir en una casa alquilada.", "is.124.a2": "Cada día viene gente a visitarme, y les hablo de Jesús «con toda valentía» (Hechos 28:31).", "is.124.a3": "¿Me ayudas a enseñar a mis visitas? ¡Acierta 3 de 4 preguntas!", "is.124.w1": "¡Han llegado más visitas! ¿Me ayudas a enseñarles?", "is.124.no": "¡Buen intento! Volvamos a intentarlo pronto.", "is.124.b1": "¡Muy bien! Aunque yo esté encadenado, la palabra de Dios no se puede encadenar.", "is.124.b2": "Desde aquí escribo cartas a las iglesias: a Filipos, a Éfeso, a Colosas… Mira, encontré algo para ti.", "is.124.d1": "«Todo lo puedo en Cristo que me fortalece» (Filipenses 4:13).", "tw.title": "Torre del Centinela", "tw.verse": "«Me quedaré en mi puesto de guardia y vigilaré desde la torre».", "tw.how": "¡Sube lo más alto que puedas! En cada piso hay una batalla, y cada 5 pisos, un jefe. Tu salud no se recupera entre pisos, así que usa bien tu comida. Cada 10 pisos llegas a un punto de control.", "tw.best": "Tu piso más alto: {0}", "tw.start": "Empezar en el piso {0}", "tw.cp": "Punto de control", "tw.friends": "Tus amigos ven tu piso más alto en la clasificación.", "tw.hi1": "¡Bienvenido a la torre! Aquí vigilo, como el profeta Habacuc.", "tw.hi2": "Las escaleras suben y suben. ¿Hasta dónde puedes llegar?", "tw.stairs": "Escaleras", "tw.climb": "Subir la Torre", "tw.quest": "Sube la Torre · mejor piso {0}", "tw.floor": "Piso {0}", "tw.cleared": "¡Piso {0} superado!", "tw.done": "¡Superaste el piso {0}!", "tw.hp": "Salud: {0} / {1}", "tw.rest": "Descansas junto a una ventana: +{0} de salud.", "tw.next": "Siguiente: piso {0}.", "tw.bossNext": "¡Allí te espera un jefe!", "tw.cpGot": "¡Llegaste al punto de control {0}! +{1} siclos y un trofeo para tu casa.", "tw.up": "Seguir subiendo", "tw.leave": "Salir de la torre", "tw.endT": "Escaleras abajo", "tw.end": "Llegaste al piso {0}. Tu récord: {1}.", "tw.endP": "¡Descansa, come algo y vuelve a intentarlo!", "tw.board": "🪜 Piso más alto de la torre", "x.leaveCave": "Salir de la cueva", "x.toShip": "Volver al barco", "x.toHarbor": "Volver al puerto", "x.hubQ": "¡Explora Tierra Santa 🧭 o sube la Torre 🪜!", "is.done": "Misión cumplida ✓"});
+
+Object.assign(STR.el,{"team.t": "Η ομάδα σου", "team.note": "Μέχρι 3 ζωάκια μπορούν να ταξιδεύουν μαζί σου: το 2ο έρχεται στο επίπεδο 10 και το 3ο στο επίπεδο 20. Μερικά ζευγάρια από τη Βίβλο τα πάνε τέλεια μαζί!", "team.lead": "Αρχηγός", "team.makeLead": "Αρχηγός", "team.free": "Ελεύθερη θέση – πάτα ένα ζωάκι παρακάτω", "team.lock": "Ξεκλειδώνει στο επίπεδο {0}", "team.in": "Στην ομάδα σου", "team.out": "Έξω από την ομάδα", "team.slot": "Επίπεδο {0}: ένα {1} ζωάκι φίλος μπορεί να μπει στην ομάδα σου! Άνοιξε τα Ζωάκια για να διαλέξεις.", "team.second": "δεύτερο", "team.third": "τρίτο", "cb.title": "Ζευγάρια της Βίβλου", "cb.active": "Ενεργό!", "cb.hidden": "Βρες και τα δύο ζωάκια για να μάθεις τι μπορεί να κάνει αυτό το ζευγάρι.", "cb.peace": "Ειρήνη", "cb.peace.d": "«Ο λύκος θα ζει μαζί με το αρνί» (Ησαΐας 11:6). Σε γιατρεύει λίγο σε κάθε γύρο.", "cb.lionlamb": "Λιοντάρι και Αρνί", "cb.lionlamb.d": "Ο Ιησούς λέγεται και Λιοντάρι του Ιούδα και Αρνί (Αποκάλυψη 5:5-6). Πιο δυνατές δυνάμεις και λίγη γιατρειά.", "cb.courage": "Θάρρος", "cb.courage.d": "«Θαρραλέοι σαν λιοντάρι» (Παροιμίες 28:1) και «φτερά σαν των αετών» (Ησαΐας 40:31). Οι δυνάμεις σου χτυπούν πιο δυνατά.", "cb.gentle": "Ήπια Δύναμη", "cb.gentle.d": "«Η λεοπάρδαλη θα ξαπλώνει μαζί με το κατσικάκι» (Ησαΐας 11:6). Οι δυνάμεις σου χτυπούν πιο δυνατά.", "cb.manger": "Στη φάτνη", "cb.manger.d": "«Το βόδι γνωρίζει τον αφέντη του και το γαϊδουράκι τη φάτνη του κυρίου του» (Ησαΐας 1:3). Μια ασπίδα σταματά τα πρώτα χτυπήματα σε κάθε μάχη.", "cb.ark": "Πουλιά της Κιβωτού", "cb.ark.d": "Ο Νώε έστειλε έξω ένα κοράκι και ένα περιστέρι (Γένεση 8:7-8). +20% XP μετά από τις μάχες.", "cb.work": "Εργατικοί Φίλοι", "cb.work.d": "Πήγαινε στο μυρμήγκι και γίνε σοφός (Παροιμίες 6:6). +25% σίκλοι μετά από τις μάχες.", "cb.jonah": "Η θάλασσα του Ιωνά", "cb.jonah.d": "Ένα μεγάλο ψάρι κατάπιε τον Ιωνά (Ιωνάς 1:17). Όλοι οι αντίπαλοι παρασύρονται πίσω και χάνουν τον πρώτο τους γύρο.", "cb.flock": "Το κοπάδι", "cb.flock.d": "«Ο Κύριος είναι ο βοσκός μου» (Ψαλμός 23:1). Σε γιατρεύει λίγο σε κάθε γύρο.", "cb.stream": "Πηγές νερού", "cb.stream.d": "«Όπως το ελάφι λαχταρά τις πηγές του νερού» (Ψαλμός 42:1). Σε γιατρεύει σε κάθε γύρο.", "lx.101": "Λόφοι της Γαλιλαίας", "lx.102": "Κοιλάδα του Ιορδάνη", "lx.103": "Έρημος της Ιουδαίας", "lx.104": "Η ακτή", "lx.105": "Γύρω από την Ιερουσαλήμ", "lx.111": "Σπηλιά των λόφων", "lx.112": "Σπηλιά δίπλα στο ποτάμι", "lx.113": "Σπηλιά του Εν-γαδί", "lx.114": "Θαλάσσια σπηλιά", "lx.115": "Σπηλιά κάτω από τις ελιές", "lx.120": "Η Μεγάλη Θάλασσα", "lx.121": "Κύπρος", "lx.122": "Κρήτη", "lx.123": "Μάλτα", "lx.124": "Ρώμη", "lx.130": "Ο Πύργος του Φρουρού", "lg.121": "Βαρνάβας", "lg.122": "Παύλος", "lg.123": "Παύλος", "lg.124": "Παύλος", "lg.130": "Φρουρός", "ln.101.0": "Βοσκόπουλο", "ln.101.1": "Γυναίκα του ψαρά", "ln.102.0": "Γεωργός", "ln.102.1": "Αγγειοπλάστης", "ln.103.0": "Βοσκοπούλα", "ln.103.1": "Γέρος ερημίτης", "ln.104.0": "Μπαλωματής διχτυών", "ln.104.1": "Κόρη του βυρσοδέψη", "ln.105.0": "Ψάλτης του Ναού", "ln.105.1": "Μπαχαρατζής", "ln.121.0": "Σέργιος Παύλος", "ln.121.1": "Κορίτσι του νησιού", "ln.122.0": "Καπετάνιος", "ln.122.1": "Ιούλιος ο εκατόνταρχος", "ln.123.0": "Πόπλιος", "ln.123.1": "Νησιώτης", "ln.124.0": "Πρίσκιλλα", "ln.124.1": "Ακύλας", "ln.130.0": "Φρουρός", "ln.130.1": "Φύλακας των λυχναριών", "lf.101a": ["Κάθε βράδυ μετράω τα πρόβατά μου. Αν λείπει κάποιο, πάω και το ψάχνω μέχρι να το βρω – όπως ο Καλός Ποιμένας!"], "lf.101b": ["Ο άντρας μου ψαρεύει στη λίμνη όλη νύχτα. Λένε ότι μια φορά ο Ιησούς γέμισε τα δίχτυα τους τόσο, που κόντευαν να σκιστούν!"], "lf.102a": ["Σε αυτό το ποτάμι βάπτιζε ο Ιωάννης τους ανθρώπους – εδώ βαπτίστηκε και ο Ιησούς. Το νερό είναι κρύο, αλλά ο κόσμος ερχόταν από παντού."], "lf.102b": ["Ο Θεός είναι σαν αγγειοπλάστης κι εμείς είμαστε ο πηλός (Ησαΐας 64:8). Μας πλάθει με τρυφερά χέρια."], "lf.103a": ["Ο Δαβίδ κρυβόταν από τον βασιλιά Σαούλ σε αυτούς τους λόφους. Μέσα σε μια σπηλιά μπορούσε να κάνει κακό στον Σαούλ, αλλά διάλεξε να μην το κάνει."], "lf.103b": ["Εδώ έξω είναι ήσυχα. Ο Ιησούς πήγαινε στην έρημο για να προσευχηθεί. Μερικές φορές η ησυχία είναι ο καλύτερος τρόπος να ακούσεις τον Θεό."], "lf.104a": ["Από αυτή την ακτή ο Ιωνάς προσπάθησε να φύγει μακριά από τον Θεό – προς τη λάθος μεριά! Δεν του βγήκε καθόλου καλά."], "lf.104b": ["Ο Πέτρος έμεινε στο σπίτι ενός βυρσοδέψη στην Ιόππη. Πάνω στη στέγη, ο Θεός του έδειξε ότι τα καλά νέα είναι για όλους."], "lf.105a": ["Ψέλνουμε τους Ψαλμούς καθώς ανεβαίνουμε στον Ναό: «Χάρηκα όταν μου είπαν: πάμε στο σπίτι του Κυρίου!»"], "lf.105b": ["Μπαχαρικά από μακρινές χώρες! Ξέρεις, οι μάγοι έφεραν σμύρνα και λιβάνι στο μωρό Ιησού."], "lf.121a": ["Είμαι ο ανθύπατος της Κύπρου. Ήθελα να ακούσω τον λόγο του Θεού, κι ο Παύλος με τον Βαρνάβα ήρθαν να με διδάξουν."], "lf.121b": ["Ο Βαρνάβας μεγάλωσε εδώ, στην Κύπρο! Το όνομά του σημαίνει «γιος της ενθάρρυνσης»."], "lf.122a": ["Ο Παύλος μας είπε να περιμένουμε εδώ να περάσει ο χειμώνας. Εγώ ήθελα να συνεχίσουμε… Έπρεπε να τον είχα ακούσει."], "lf.122b": ["Είμαι ο Ιούλιος. Πρέπει να φέρω τον Παύλο στη Ρώμη. Είναι φυλακισμένος, αλλά είναι ο πιο γενναίος άνθρωπος σε αυτό το πλοίο."], "lf.123a": ["Ο πατέρας μου ήταν πολύ άρρωστος με πυρετό. Ο Παύλος προσευχήθηκε, ακούμπησε τα χέρια του πάνω του, κι εκείνος έγινε καλά!"], "lf.123b": ["Είδαμε το πλοίο να σπάει στα βράχια. Όμως και οι 276 άνθρωποι έφτασαν σώοι στη στεριά!"], "lf.124a": ["Εγώ και ο Ακύλας φτιάχναμε σκηνές μαζί με τον Παύλο στην Κόρινθο. Τώρα είμαστε πάλι μαζί στη Ρώμη!"], "lf.124b": ["Ο Παύλος γράφει γράμματα σε εκκλησίες μακριά. Αυτά τα γράμματα είναι σήμερα μέσα στη Βίβλο σου!"], "lf.130a": ["Φυλάω σκοπιά από την κορυφή αυτού του πύργου, μέρα και νύχτα."], "lf.130b": ["Κάθε όροφος έχει ένα λυχνάρι. «Ο λόγος σου είναι λυχνάρι για τα πόδια μου» (Ψαλμός 119:105)."], "wc.hedgehog": "Σκαντζόχοιρος", "wc.hedgehog.d": "Κουλουριάζεται σε μια αγκαθωτή μπάλα που μπορεί να παγώσει έναν αντίπαλο. Ζει στους λόφους της Γαλιλαίας.", "wc.horse": "Πολεμικό άλογο", "wc.horse.d": "«Εσύ δίνεις στο άλογο τη δύναμή του;» (Ιώβ 39:19). Έρχεται καλπάζοντας με μια δυνατή κλοτσιά.", "wc.badger": "Βραχοκούνελο", "wc.badger.d": "«Φτιάχνουν τα σπίτια τους μέσα στα βράχια» (Παροιμίες 30:26). Βγαίνει τη νύχτα στην έρημο.", "wc.dromedary": "Δρομάδα", "wc.dromedary.d": "Η Ρεβέκκα πότισε τις καμήλες (Γένεση 24:19). Κουβαλάει στο σπίτι επιπλέον σίκλους.", "wc.dolphin": "Δελφίνι", "wc.dolphin.d": "Πηδάει μέσα από τα κύματα και πιτσιλάει όλους τους αντιπάλους μαζί.", "wc.seal": "Φώκια μονάχους", "wc.seal.d": "Μια ήρεμη φώκια από τις βραχώδεις ακτές της Κύπρου. Μεγάλη, ζεστή γιατρειά.", "wc.crab": "Καβούρι", "wc.crab.d": "Ένα σκληρό καβούκι που το σηκώνει σαν ασπίδα. Ζει στα λιμάνια της Κρήτης.", "wc.octopus": "Χταπόδι", "wc.octopus.d": "Οχτώ πλοκάμια, οχτώ χτυπήματα! Ζει στα καθαρά νερά γύρω από τη Μάλτα.", "wc.lizard": "Σαύρα του παλατιού", "wc.lizard.d": "«Η σαύρα βρίσκεται μέσα στα παλάτια των βασιλιάδων» (Παροιμίες 30:28). Παγώνει τους αντιπάλους με ένα γρήγορο βλέμμα.", "x.sub": "Η Χώρα · {0}", "x.nightFalls": "🌙 Πέφτει η νύχτα πάνω στη Χώρα.", "x.morning": "☀️ Ο ήλιος ανατέλλει. Καλημέρα!", "x.secret": "✨ Βρήκες ένα μυστικό σημείο!", "x.reward": "+{0} σίκλοι · +{1} XP", "x.locked": "Κλειδωμένο", "x.tower": "Ο Πύργος του Φρουρού", "x.towerGo": "Μπες στον Πύργο", "x.towerLock": "Ο Πύργος ανοίγει όταν τελειώσεις {0} κόσμους.", "x.land": "Η Χώρα", "x.landGo": "Ταξίδεψε στη Χώρα", "x.landLock": "Ο δρόμος για τη Χώρα ανοίγει μετά την τελευταία πύλη.", "land.intro1": "Τα κατάφερες – η Περγαμηνή του Φωτός είναι πάλι ολόκληρη! Όμως το ταξίδι δεν τελείωσε.", "land.intro2": "Εκεί έξω απλώνεται όλη η Χώρα: οι λόφοι της Γαλιλαίας, ο Ιορδάνης, η έρημος, η ακτή και οι λόφοι γύρω από την Ιερουσαλήμ.", "land.intro3": "Οι ταξιδιώτες χρειάζονται βοήθεια κάθε μέρα. Άγρια ζώα κρύβονται στους λόφους και οι σπηλιές κρύβουν παλιά μυστικά.", "land.intro4": "Κάποιος βρήκε μάλιστα κομμάτια από μια παλιά περγαμηνή με τραγούδι – έναν Ψαλμό. Μπορείς να βρεις και τα 12 κομμάτια;", "x.frag": "Χαμένη σελίδα", "x.fragGo": "Μάζεψε τη χαμένη σελίδα", "x.wild": "Άγριο ζώο", "x.wildGo": "Γίνε φίλος με: {0}", "x.roadTo": "→ {0}", "x.roadGo": "Ταξίδεψε προς: {0}", "x.cave": "Σπηλιά", "x.caveGo": "Μπες στη σπηλιά", "x.ship": "Το πλοίο του Παύλου", "x.shipGo": "Ταξίδεψε στη Μεγάλη Θάλασσα", "x.pick": "Μάζεψέ το", "x.rainbow": "Ουράνιο τόξο", "x.rainbowGo": "Περπάτα ως το ουράνιο τόξο", "x.rainbowT": "«Βάζω το τόξο μου στα σύννεφα» (Γένεση 9:13). Ο Θεός κρατάει τις υποσχέσεις του. Νιώθεις φρέσκος και δυνατός!", "x.chest": "Παλιό σεντούκι", "x.chestGo": "Άνοιξε το σεντούκι", "x.landAt": "Βγες στη στεριά: {0}", "x.sailHome": "Γύρνα με το πλοίο στην ακτή", "sea.intro1": "Στο λιμάνι ένα μεγάλο ξύλινο πλοίο τρίζει μέσα στα κύματα. Οι ναύτες ετοιμάζονται.", "sea.intro2": "Ο Παύλος ταξίδεψε σε αυτή τη θάλασσα πολλές φορές: στην Κύπρο με τον Βαρνάβα και αργότερα, περνώντας από την Κρήτη και τη Μάλτα, ως τη Ρώμη.", "sea.intro3": "Ταξίδεψε στα νησιά και βοήθησε τον Παύλο και τους φίλους του. Πρόσεχε τα σύννεφα της καταιγίδας!", "sea.q": "Νησιά που βοήθησες: {0}/4", "ps.ref": "Ψαλμός 23", "ps.found": "Χαμένη σελίδα {0} από 12!", "ps.moreP": "Κι άλλες σελίδες είναι κρυμμένες στη Χώρα, στις σπηλιές και στα νησιά.", "ps.allP": "Βρήκες ολόκληρο τον Ψαλμό! Διάβασέ τον ξανά – είναι ένα τραγούδι εμπιστοσύνης.", "ps.reward": "Βρήκες ολόκληρο τον Ψαλμό! +300 σίκλοι, +200 XP και ένα χρυσό τρόπαιο για το σπίτι σου.", "ps.1": "Ο Κύριος είναι ο βοσκός μου· τίποτα δεν θα μου λείψει.", "ps.2": "Σε πράσινα λιβάδια με ξαπλώνει να ξεκουραστώ.", "ps.3": "Με οδηγεί κοντά σε ήρεμα νερά.", "ps.4": "Δίνει καινούργια δύναμη στην ψυχή μου.", "ps.5": "Με οδηγεί σε σωστά μονοπάτια για χάρη του ονόματός του.", "ps.6": "Ακόμα κι αν περπατήσω στην κοιλάδα της σκιάς του θανάτου,", "ps.7": "δεν θα φοβηθώ κανένα κακό, γιατί εσύ είσαι μαζί μου.", "ps.8": "Η ράβδος σου και το ραβδί σου με παρηγορούν.", "ps.9": "Μου ετοιμάζεις τραπέζι μπροστά στους εχθρούς μου.", "ps.10": "Αλείφεις το κεφάλι μου με λάδι· το ποτήρι μου ξεχειλίζει.", "ps.11": "Η καλοσύνη και η αγάπη σου θα με ακολουθούν όλες τις μέρες της ζωής μου,", "ps.12": "και θα κατοικώ στο σπίτι του Κυρίου για πάντα.", "tv.merchant": "Έμπορος", "tv.shepherd": "Βοσκός", "tv.fisher": "Ψαράς", "tv.widow": "Χήρα", "tv.potter": "Αγγειοπλάστης", "tv.pilgrim": "Προσκυνητής", "tv.scribe": "Γραμματέας", "tv.vine": "Αμπελουργός", "rq.merchant": "Ειρήνη σε σένα! Ταξιδεύω από πόλη σε πόλη με την πραμάτεια μου.", "rq.shepherd": "Γεια σου, φίλε! Εδώ έξω προσέχω το κοπάδι.", "rq.fisher": "Σαλόμ! Πηγαίνω για τη λίμνη.", "rq.widow": "Ω, ένα καλοσυνάτο πρόσωπο! Χαίρομαι τόσο που πέρασες.", "rq.potter": "Χαιρετώ! Φτιάχνω σταμνιά και μπολ από πηλό.", "rq.pilgrim": "Ειρήνη! Ανεβαίνω στην Ιερουσαλήμ για τη γιορτή.", "rq.scribe": "Α, ένας νεαρός μαθητής! Εγώ αντιγράφω τις ιερές περγαμηνές.", "rq.vine": "Καλώς ήρθες! Είδες το αμπέλι μου; Τα σταφύλια σχεδόν ωρίμασαν.", "rq.hi.find": "Μπορείς να με βοηθήσεις; Έχασα {0} {1} κάπου εδώ γύρω. Σε παρακαλώ, φέρ' τα μου πίσω!", "rq.hi.hunt": "Τα Σκοτεινούλια κλείνουν συνέχεια τον δρόμο. Μπορείς να διώξεις {0} από αυτά;", "rq.hi.quiz": "Μου αρέσει πολύ να μιλάω για τον λόγο του Θεού. Θα απαντήσεις στις ερωτήσεις μου; Βρες σωστά τις 2 από τις 3!", "rq.hi.food": "Περπάτησα πολύ και πεινάω πάρα πολύ. Έχεις λίγο φαγητό να μοιραστείς;", "rq.noFood": "Ω, το σακίδιό σου είναι άδειο. Το μαγαζί της Λυδίας στην Ανάπαυση του Προσκυνητή πουλάει ψωμί – έλα πάλι αν βρεις λίγο!", "rq.give": "Δώσε: {0}", "rq.notNow": "Όχι τώρα", "rq.ok": "Δεν πειράζει. Ίσως αργότερα!", "rq.thanksFood": "Ευχαριστώ! «Όποιος δώσει έστω κι ένα ποτήρι νερό…» – ο Ιησούς είπε ότι η καλοσύνη δεν ξεχνιέται ποτέ.", "rq.thanks": "Σ' ευχαριστώ πάρα πολύ! Ο Θεός να σ' ευλογεί. Πάρε αυτό, σε παρακαλώ.", "rq.quizNo": "Καλή προσπάθεια! Έλα να μου ξαναμιλήσεις όποτε είσαι έτοιμος.", "rq.again": "Σ' ευχαριστώ ξανά για τη βοήθεια! Αύριο μπορεί να σε χρειαστεί κάποιος άλλος.", "rq.wait": "Χρειάζομαι ακόμα τη βοήθειά σου: {0}", "rq.back": "Έτοιμο! Γύρνα πίσω: {0}.", "rq.q.find": "Βρες {0} {1}/{2}", "rq.q.hunt": "Νίκησε Σκοτεινούλια {0}/{1}", "rq.q.quiz": "Απάντησε στις ερωτήσεις", "rq.q.food": "Μοιράσου λίγο φαγητό", "rq.q.new": "Ένας ταξιδιώτης χρειάζεται βοήθεια!", "rq.q.done": "Βοήθησες σήμερα ✓", "wild.hi": "{0} {1}: ένα άγριο ζωάκι σε κρυφοκοιτάζει. Φαίνεται ντροπαλό…", "wild.how": "Απάντησε σωστά σε {0} ερωτήσεις για να κερδίσεις την εμπιστοσύνη του!", "wild.yes": "{0} {1}: τώρα σε εμπιστεύεται και θέλει να έρθει μαζί σου!", "wild.no": "{0}: τρόμαξε και το έσκασε. Δοκίμασε ξανά αύριο!", "is.q0": "Μίλα με: {0}", "is.121.a1": "Καλώς ήρθες στην Κύπρο! Είμαι ο Βαρνάβας – μεγάλωσα σε αυτό το νησί. Ο Παύλος κι εγώ ήρθαμε με το πλοίο για να πούμε τα καλά νέα.", "is.121.a2": "Ο ανθύπατος, ο Σέργιος Παύλος, θέλει να ακούσει τον λόγο του Θεού. Όμως ένας μάγος, ο Ελύμας, προσπαθεί συνέχεια να τον εμποδίσει.", "is.121.a3": "Σκοτεινούλια της σύγχυσης κλείνουν τον δρόμο για το παλάτι. Σε παρακαλώ, διώξε 4 από αυτά!", "is.121.w1": "Συνέχισε! Ο δρόμος για το παλάτι είναι ακόμα κλειστός.", "is.121.b1": "Ο δρόμος άνοιξε! Ο Παύλος μίλησε στον ανθύπατο, και ο Ελύμας δεν μπόρεσε να τον σταματήσει.", "is.121.b2": "Όταν ο Σέργιος Παύλος είδε τι έγινε, πίστεψε και θαύμασε τη διδασκαλία για τον Κύριο (Πράξεις 13:12).", "is.121.d1": "Βαρνάβας σημαίνει «γιος της ενθάρρυνσης». Εύχομαι να νιώθεις ενθάρρυνση σήμερα!", "is.122.a1": "Αυτό το λιμάνι λέγεται Καλοί Λιμένες. Προειδοποίησα τον καπετάνιο: «Αν σαλπάρουμε τώρα, το ταξίδι θα είναι επικίνδυνο» (Πράξεις 27:10).", "is.122.a2": "Ό,τι κι αν αποφασίσουν, το πλοίο χρειάζεται τρόφιμα. Σε παρακαλώ, βρες 3 πιθάρια με σιτάρι που κύλησαν μακριά από την αγορά!", "is.122.w1": "Χρειαζόμαστε κι άλλα πιθάρια με σιτάρι για το μεγάλο ταξίδι.", "is.122.b1": "Ευχαριστώ! Στην καταιγίδα θα πω σε όλους: «Κουράγιο! Ο Θεός μού είπε ότι κανείς σας δεν θα χαθεί» (Πράξεις 27:22).", "is.122.d1": "Να εμπιστεύεσαι τον Θεό ακόμα κι όταν τα κύματα είναι ψηλά.", "is.123.a1": "Το πλοίο μας έσπασε στα βράχια – αλλά όλοι έφτασαν στη στεριά κολυμπώντας ή πιασμένοι από σανίδες, όπως το είχε υποσχεθεί ο Θεός!", "is.123.a2": "Οι ντόπιοι ήταν πολύ καλοί και άναψαν φωτιά, γιατί έβρεχε και έκανε κρύο (Πράξεις 28:2). Σε παρακαλώ, βοήθησέ με να μαζέψω 4 δεμάτια ξύλα!", "is.123.w1": "Χρειαζόμαστε κι άλλα ξύλα για να μη σβήσει η φωτιά.", "is.123.b1": "Ευχαριστώ! Όταν έριξα τα ξύλα στη φωτιά, βγήκε μια οχιά και με δάγκωσε στο χέρι.", "is.123.b2": "Την τίναξα μέσα στη φωτιά και δεν έπαθα τίποτα! Ο Θεός με προστάτεψε. Μετά προσευχηθήκαμε για τους αρρώστους της Μάλτας, και έγιναν καλά.", "is.123.d1": "Ο Θεός μάς φρόντισε στη Μάλτα. Θα φροντίσει κι εσένα.", "is.124.a1": "Καλώς ήρθες στη Ρώμη! Εδώ είμαι φυλακισμένος, αλλά με αφήνουν να μένω σε ένα σπίτι που νοικιάζω.", "is.124.a2": "Κάθε μέρα έρχονται άνθρωποι να με δουν, και τους μιλάω για τον Ιησού «με κάθε θάρρος» (Πράξεις 28:31).", "is.124.a3": "Θα με βοηθήσεις να διδάξω τους επισκέπτες μου; Απάντησε σωστά σε 3 από τις 4 ερωτήσεις!", "is.124.w1": "Ήρθαν κι άλλοι επισκέπτες! Θα με βοηθήσεις να τους διδάξω;", "is.124.no": "Καλή προσπάθεια! Ας ξαναδοκιμάσουμε σύντομα.", "is.124.b1": "Μπράβο! Ακόμα κι αν εγώ είμαι δεμένος με αλυσίδες, ο λόγος του Θεού δεν δένεται.", "is.124.b2": "Από εδώ γράφω γράμματα στις εκκλησίες – στους Φιλίππους, στην Έφεσο, στις Κολοσσές… Να, βρήκα κάτι για σένα.", "is.124.d1": "«Όλα μπορώ να τα κάνω με τη δύναμη του Χριστού που με δυναμώνει» (Φιλιππησίους 4:13).", "tw.title": "Ο Πύργος του Φρουρού", "tw.verse": "«Θα σταθώ στη σκοπιά μου και θα στηθώ πάνω στον πύργο.»", "tw.how": "Ανέβα όσο πιο ψηλά μπορείς! Σε κάθε όροφο έχει μάχη και κάθε 5ο όροφο έναν αρχηγό. Η υγεία σου δεν ξαναγεμίζει, γι' αυτό χρησιμοποίησε το φαγητό σου σοφά. Κάθε 10 ορόφους φτάνεις σε ένα σημείο ελέγχου.", "tw.best": "Ο πιο ψηλός σου όροφος: {0}", "tw.start": "Ξεκίνα από τον όροφο {0}", "tw.cp": "Σημείο ελέγχου", "tw.friends": "Ο πιο ψηλός σου όροφος φαίνεται στους φίλους σου στον πίνακα κατάταξης.", "tw.hi1": "Καλώς ήρθες στον πύργο! Εδώ φυλάω σκοπιά, όπως ο προφήτης Αββακούμ.", "tw.hi2": "Οι σκάλες ανεβαίνουν όλο και πιο ψηλά. Πόσο ψηλά μπορείς να φτάσεις;", "tw.stairs": "Σκάλες", "tw.climb": "Ανέβα στον Πύργο", "tw.quest": "Ανέβα στον Πύργο · καλύτερος όροφος {0}", "tw.floor": "Όροφος {0}", "tw.cleared": "Ο όροφος {0} καθάρισε!", "tw.done": "Τελείωσες τον όροφο {0}!", "tw.hp": "Υγεία: {0} / {1}", "tw.rest": "Ξεκουράζεσαι δίπλα σε ένα παράθυρο: +{0} υγεία.", "tw.next": "Επόμενος: όροφος {0}.", "tw.bossNext": "Εκεί σε περιμένει ένας αρχηγός!", "tw.cpGot": "Έφτασες στο σημείο ελέγχου {0}! +{1} σίκλοι και ένα τρόπαιο για το σπίτι σου.", "tw.up": "Συνέχισε να ανεβαίνεις", "tw.leave": "Φύγε από τον πύργο", "tw.endT": "Πίσω κάτω από τις σκάλες", "tw.end": "Έφτασες στον όροφο {0}. Το ρεκόρ σου: {1}.", "tw.endP": "Ξεκουράσου, φάε κάτι και δοκίμασε ξανά!", "tw.board": "🪜 Πιο ψηλός όροφος στον πύργο", "x.leaveCave": "Βγες από τη σπηλιά", "x.toShip": "Πίσω στο πλοίο", "x.toHarbor": "Πίσω στο λιμάνι", "x.hubQ": "Εξερεύνησε τη Χώρα 🧭 ή ανέβα στον Πύργο 🪜!", "is.done": "Αποστολή ολοκληρώθηκε ✓"});
+
 </script>
 <script src="three.min.js"></script>
 <script>
@@ -4176,7 +4368,8 @@ function applyLang(l){
   if(S) S.lang=LANG;
 }
 const pl=f=>f.pl||(LANG==='en'?f.name+'s':f.name);
-const NCH=ORDER.length, POS=id=>ORDER.indexOf(+id)+1, tierOf=id=>1+(Math.max(1,POS(id))-1)*9/(NCH-1);
+const NCH=ORDER.length, POS=id=>ORDER.indexOf(+id)+1, tierOf=id=>TIER_OVR!=null?TIER_OVR:(CH[id]&&CH[id].tier)||1+(Math.max(1,POS(id))-1)*9/(NCH-1);
+let TIER_OVR=null;
 function isOpen(id){ id=+id; const p=POS(id); if(p<=1) return true; const c=S.chs[id]; if(c&&c.stage>0) return true; const prev=S.chs[ORDER[p-2]]; return !!prev&&prev.stage>=4; }
 const allDone=()=>ORDER.every(i=>S.chs[i]&&S.chs[i].stage>=4);
 const doneCount=o=>ORDER.filter(i=>(o||S).chs[i]&&(o||S).chs[i].stage>=4).length;
@@ -4184,7 +4377,7 @@ const doneCount=o=>ORDER.filter(i=>(o||S).chs[i]&&(o||S).chs[i].stage>=4).length
 /* ===================== STATE ===================== */
 let S=null, M=null;
 const P={x:0,y:0,fx:0,fy:0,tx:0,ty:0,mv:false,prog:0,dir:'down',path:[],inv:0,walk:0,pend:null};
-const CP={fx:0,fy:0};
+const CP={fx:0,fy:0}, CPS=[CP,{fx:0,fy:0},{fx:0,fy:0}];
 let trail=[];
 const keys={};
 let mode='title';
@@ -4198,13 +4391,13 @@ function newState(name,look,grade){
     level:1,xp:0,hp:75,coins:20,items:{bread:2},armor:[],comps:{lamb:{lvl:1,xp:0}},comp:'lamb',dyes:[],cos:[],
     chs,map:'hub',px:29,py:14,stats:{},recent:[],sound:true,music:true,musVol:.6,autoRead:false,voice:'',flags:{},answered:0,correct:0,lastBackup:0,created:Date.now(),view:'3d',b3d:'3d',gfx:'high',props:{},ownedProps:[],house:{items:[],inv:{},got:[]}};
 }
-function save(){ if(!S) return; S.map=M?M.id:S.map; S.px=P.x; S.py=P.y; S.lang=LANG; S.savedAt=Date.now(); lsSet(SKEY(S.id),JSON.stringify(S));
+function save(){ if(!S) return; S.map=M?M.id:S.map; S.px=P.x; S.py=P.y; if(M&&M.ext){ S.map='hub'; S.px=M.ext.hx; S.py=M.ext.hy; } S.lang=LANG; S.savedAt=Date.now(); lsSet(SKEY(S.id),JSON.stringify(S));
   const p=getProfiles(); const i=p.list.findIndex(x=>x.id===S.id); const sm=summary(S); if(i>=0) p.list[i]=sm; else p.list.push(sm); p.last=S.id; setProfiles(p); if(typeof ON!=='undefined'&&ON.onSave) ON.onSave(); }
 
 /* ===================== STATS ===================== */
 function gearSum(k){ return S.armor.reduce((a,id)=>a+(ARMOR[id][k]||0),0); }
 const maxHP=()=>60+S.level*15+gearSum('hp');
-const atkP=()=>8+S.level*3+gearSum('atk');
+const atkP=()=>Math.round((8+S.level*3+gearSum('atk'))*(B&&B.cb&&B.cb.dmg?1+B.cb.dmg:1));
 const defP=()=>gearSum('def');
 const xpNeed=()=>30+25*S.level;
 
@@ -4724,6 +4917,12 @@ function drawLandmark(c,lm,s,tm){
     if(lm.sign){ const txt=t(lm.sign); c.font=`800 ${s*.34}px Nunito, sans-serif`; c.textAlign='center'; const tw=c.measureText(txt).width+s*.4; c.fillStyle='#5a3a1e'; c.fillRect(cx-tw/2,Y-s*.35,tw,s*.5); c.fillStyle='#f6de98'; c.fillText(txt,cx,Y+s*.03); }
   }
 }
+function drawSpot(c,e,tm){ const X=e.x*TS+TS/2, Y=e.y*TS+TS*.55, b=Math.sin(tm*3+e.x)*3;
+  if(e.glow!==false){ const g=c.createRadialGradient(X,Y,2,X,Y,TS*.7); g.addColorStop(0,e.gc||'rgba(255,240,170,.6)'); g.addColorStop(1,'rgba(255,240,170,0)'); c.fillStyle=g; c.fillRect(X-TS*.8,Y-TS*.8,TS*1.6,TS*1.6); }
+  ell(c,X,e.y*TS+TS*.92,TS*.28,TS*.08,0,'rgba(0,0,0,.25)'); c.font=`${TS*(e.big?1.2:.8)}px serif`; c.textAlign='center'; c.textBaseline='middle'; c.fillText(e.e,X,Y+(e.still?0:b)-(e.big?TS*.2:0)); c.textBaseline='alphabetic';
+  if(e.label&&Math.abs(e.x-P.x)+Math.abs(e.y-P.y)<6){ c.font=`800 ${TS*.27}px Nunito, sans-serif`; const w=c.measureText(e.label).width+10; c.fillStyle='rgba(14,21,52,.8)'; c.fillRect(X-w/2,e.y*TS-TS*.45,w,TS*.34); c.fillStyle='#f6de98'; c.fillText(e.label,X,e.y*TS-TS*.2); } }
+function drawBoat2(c,X,Y,s,dir){ c.save(); c.translate(X,Y); if(dir==='left') c.scale(-1,1); c.fillStyle='#6b4a22'; c.beginPath(); c.moveTo(-s*.75,-s*.18); c.lineTo(s*.75,-s*.18); c.lineTo(s*.5,s*.18); c.lineTo(-s*.5,s*.18); c.closePath(); c.fill();
+  c.fillStyle='#8a6a3a'; c.fillRect(-s*.7,-s*.24,s*1.4,s*.08); c.fillStyle='#4a3216'; c.fillRect(-s*.03,-s*1.25,s*.06,s*1.05); c.fillStyle='#f1e7cf'; c.beginPath(); c.moveTo(s*.05,-s*1.2); c.quadraticCurveTo(s*.6,-s*.75,s*.05,-s*.3); c.closePath(); c.fill(); c.restore(); }
 function drawGate(c,g,s,tm){
   const X=g.x*s, Y=g.y*s, W=2*s, H=2*s, open=isOpen(g.ch), done=S.chs[g.ch].stage>=4;
   c.fillStyle='#a8a090'; c.fillRect(X,Y+s*.2,s*.45,H-s*.2); c.fillRect(X+W-s*.45,Y+s*.2,s*.45,H-s*.2);
@@ -4840,7 +5039,7 @@ function enterMap(id,spawn){
   if(mode==='house') leaveHouse(true);
   M=buildMap(id); buildCache(M);
   const sp=spawn||M.spawn; P.x=P.tx=sp.x; P.y=P.ty=sp.y; P.fx=P.x; P.fy=P.y; P.mv=false; P.path=[]; P.pend=null; P.inv=1.2; P.blink=0; P.ang=null;
-  CP.fx=P.x-1; CP.fy=P.y; trail=[];
+  CPS.forEach((c,i)=>{ c.fx=P.x-1-i; c.fy=P.y; }); trail=[];
   if(id!=='hub'){ const c=S.chs[id]; for(let i=0;i<9+Math.floor(tierOf(id)/2);i++) spawnFoe(true); if(c.stage===2) addBoss(); }
   M.respawn=0;
   const R=M.R; banner(R.name, id==='hub'?R.sub:R.book);
@@ -4933,7 +5132,7 @@ function updateFree(dt){
     let nx=P.fx+ux*sp, ny=P.fy+uy*sp;
     if(!blockedAt(nx,ny)){ P.fx=nx; P.fy=ny; } else if(!blockedAt(nx,P.fy)){ P.fx=nx; } else if(!blockedAt(P.fx,ny)){ P.fy=ny; } else if(P.path.length){ P.path=[]; }
     P.ang=Math.atan2(ux,uy); P.dir=Math.abs(ux)>Math.abs(uy)?(ux>0?'right':'left'):(uy>0?'down':'up'); P.walk+=dt*10; }
-  const tx=Math.round(P.fx), ty=Math.round(P.fy); if(tx!==P.x||ty!==P.y){ trail.push({x:P.x,y:P.y}); if(trail.length>3) trail.shift(); P.x=P.tx=tx; P.y=P.ty=ty; onStep(); }
+  const tx=Math.round(P.fx), ty=Math.round(P.fy); if(tx!==P.x||ty!==P.y){ trail.push({x:P.x,y:P.y}); if(trail.length>5) trail.shift(); P.x=P.tx=tx; P.y=P.ty=ty; onStep(); }
 }
 function update(dt){
   if(mode!=='world'||dialogOpen||modalOpen||qOpen||(R3.ok&&R3.cutting)) return;
@@ -4945,14 +5144,13 @@ function update(dt){
     let nx,ny;
     if(d){ P.dir=d; nx=P.x+DIRS[d][0]; ny=P.y+DIRS[d][1]; }
     else if(P.path.length){ const nxt=P.path[0]; nx=nxt.x; ny=nxt.y; const dx=nx-P.x, dy=ny-P.y; P.dir=dx>0?'right':dx<0?'left':dy>0?'down':'up'; if(!walkable(nx,ny)){ P.path=[]; nx=undefined; } else P.path.shift(); }
-    if(nx!==undefined&&walkable(nx,ny)){ P.tx=nx; P.ty=ny; P.mv=true; P.prog=0; trail.push({x:P.x,y:P.y}); if(trail.length>3) trail.shift(); }
+    if(nx!==undefined&&walkable(nx,ny)){ P.tx=nx; P.ty=ny; P.mv=true; P.prog=0; trail.push({x:P.x,y:P.y}); if(trail.length>5) trail.shift(); }
     else if(!P.path.length&&P.pend){ if(nearEnt(P.pend)) interact(P.pend); P.pend=null; }
   }
   if(free){} else if(P.mv){ P.prog+=dt*SPEED; P.walk+=dt*10; if(P.prog>=1){ P.x=P.tx; P.y=P.ty; P.mv=false; P.prog=0; onStep(); } P.fx=P.x+(P.tx-P.x)*(P.mv?P.prog:0); P.fy=P.y+(P.ty-P.y)*(P.mv?P.prog:0); }
   else { P.fx=P.x; P.fy=P.y; }
   if(!free) P.ang=null;
-  const tgt=trail.length?trail[trail.length-1]:{x:P.x-1,y:P.y};
-  CP.fx+=(tgt.x-CP.fx)*Math.min(1,dt*6); CP.fy+=(tgt.y-CP.fy)*Math.min(1,dt*6);
+  CPS.forEach((c,i)=>{ const tg=trail[trail.length-1-i]||{x:P.x-1-i,y:P.y}; const k=Math.min(1,dt*(6-i)); c.fx+=(tg.x-c.fx)*k; c.fy+=(tg.y-c.fy)*k; });
   if(M.id!=='hub'){
     for(const f of M.foes){
       if(!f.mv){ f.tm-=dt; if(f.tm<=0){ f.tm=.7+Math.random()*1.4;
@@ -4977,7 +5175,7 @@ function updAct(force){
   if(best!==actEnt||force){ actEnt=best; const b=$('#act');
     if(!best) b.hidden=true;
     else { b.hidden=false; b.textContent= best.kind==='gate'?(isOpen(best.ch)?t('act.enter',POS(best.ch),CH[best.ch].name):t('act.locked',POS(best.ch)))
-      : best.kind==='exit'?t('act.home') : best.kind==='home'?t('act.house') : best.kind==='game'?t('sign.game',t('mg.'+best.g)) : best.kind==='boss'?t('act.boss',bn(CH[M.id].boss.name)) : t('act.talk',best.name); } }
+      : best.kind==='exit'?(M.xm&&M.xm.exitL||t('act.home')) : best.kind==='home'?t('act.house') : best.kind==='game'?t('sign.game',t('mg.'+best.g)) : best.kind==='boss'?t('act.boss',bn(CH[M.id].boss.name)) : best.kind==='spot'?best.act : t('act.talk',best.name); } }
 }
 $('#act').addEventListener('click',()=>{ ac(); doAct(); });
 function doAct(){ if(actEnt) interact(actEnt); }
@@ -5021,12 +5219,14 @@ function render(tm){
     else if(e.kind==='game') draws.push({y:e.y+1,f:()=>{ const X=e.x*TS+TS/2, Y=e.y*TS; ctx.fillStyle='#6b4a22'; ctx.fillRect(X-TS*.05,Y+TS*.2,TS*.1,TS*.75); ctx.fillStyle='#8a6a3a'; ctx.fillRect(X-TS*.42,Y-TS*.2,TS*.84,TS*.55); ctx.strokeStyle='#e8b94a'; ctx.lineWidth=2; ctx.strokeRect(X-TS*.42,Y-TS*.2,TS*.84,TS*.55); circ(ctx,X,Y+TS*.07,TS*.3,`rgba(255,240,180,${.25+.15*Math.sin(tm*3)})`); ctx.font=`${TS*.42}px serif`; ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText(GAME_EMO[e.g],X,Y+TS*.09); ctx.textBaseline='alphabetic'; }});
     else if(e.kind==='boss') draws.push({y:e.y+1,f:()=>drawBoss(ctx,e.x*TS+TS/2,e.y*TS+TS*.1,TS*.62,CH[M.id].boss,tm,{marches:0})});
     else if(e.kind==='npc') draws.push({y:e.y+1,f:()=>drawNPC(e,tm)});
+    else if(e.kind==='spot'&&!e.hide) draws.push({y:e.y+1,f:()=>drawSpot(ctx,e,tm)});
   });
   if(M.items){ const c=S.chs[M.id]; if(c&&c.side===1) M.items.forEach(it=>{ if(!c.got.includes(it.idx)) draws.push({y:it.y+.5,f:()=>{ const X=it.x*TS+TS/2, Y=it.y*TS+TS/2+Math.sin(tm*3+it.idx)*3; circ(ctx,X,Y,TS*.34,'rgba(255,236,160,.35)'); circ(ctx,X,Y,TS*.22,'rgba(255,246,200,.45)'); ctx.font=`${TS*.5}px serif`; ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText(it.e,X,Y); ctx.textBaseline='alphabetic'; }}); }); }
   M.foes.forEach(f=>{ const ft=CH[M.id].foes[f.type]||CH[M.id].foes[0]; draws.push({y:f.fy+1,f:()=>drawFoe(ctx,f.fx*TS+TS/2,f.fy*TS+TS*.42,TS*.32,ft.c,tm+f.seed,ft.shape)}); });
-  const comp=COMPS[S.comp]; if(comp) draws.push({y:CP.fy+.95,f:()=>{ const X=CP.fx*TS+TS/2, Y=CP.fy*TS+TS*.5; const g=ctx.createRadialGradient(X,Y,2,X,Y,TS*.62); g.addColorStop(0,'rgba(255,246,200,.55)'); g.addColorStop(1,'rgba(255,246,200,0)'); ctx.fillStyle=g; ctx.fillRect(X-TS*.7,Y-TS*.7,TS*1.4,TS*1.4);
-    ell(ctx,X,CP.fy*TS+TS*.92,TS*.26,TS*.08,0,'rgba(0,0,0,.25)'); ctx.strokeStyle='rgba(246,222,152,.85)'; ctx.lineWidth=2; ctx.beginPath(); ctx.ellipse(X,CP.fy*TS+TS*.92,TS*.3,TS*.1,0,0,Math.PI*2); ctx.stroke();
-    ctx.font=`${TS*.86}px serif`; ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText(comp.e,X,Y+Math.sin(tm*6)*2); ctx.textBaseline='alphabetic'; }});
+  if(!M.sail) team().forEach((k,i)=>{ const comp=COMPS[k], CQ=CPS[i]; if(comp) draws.push({y:CQ.fy+.95,f:()=>{ const X=CQ.fx*TS+TS/2, Y=CQ.fy*TS+TS*.5, sc=i?.82:1; const g=ctx.createRadialGradient(X,Y,2,X,Y,TS*.62*sc); g.addColorStop(0,'rgba(255,246,200,.55)'); g.addColorStop(1,'rgba(255,246,200,0)'); ctx.fillStyle=g; ctx.fillRect(X-TS*.7,Y-TS*.7,TS*1.4,TS*1.4);
+    ell(ctx,X,CQ.fy*TS+TS*.92,TS*.26*sc,TS*.08*sc,0,'rgba(0,0,0,.25)'); ctx.strokeStyle='rgba(246,222,152,.85)'; ctx.lineWidth=2; ctx.beginPath(); ctx.ellipse(X,CQ.fy*TS+TS*.92,TS*.3*sc,TS*.1*sc,0,0,Math.PI*2); ctx.stroke();
+    ctx.font=`${TS*.86*sc}px serif`; ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText(comp.e,X,Y+Math.sin(tm*6+i*1.7)*2); ctx.textBaseline='alphabetic'; }}); });
+  if(M.sail) draws.push({y:P.fy+1.0,f:()=>drawBoat2(ctx,P.fx*TS+TS/2,P.fy*TS+TS*.85,TS,P.dir)});
   draws.push({y:P.fy+1.01,f:()=>{ const flick=P.blink&&P.inv>0&&Math.floor(tm*12)%2; if(flick) ctx.globalAlpha=.5; drawPerson(ctx,P.fx*TS+TS/2,P.fy*TS+TS*.95,TS*1.05,S.look,playerOpts({dir:P.dir,bob:P.mv?Math.abs(Math.sin(P.walk))*3:0})); ctx.globalAlpha=1; }});
   draws.sort((a,b)=>a.y-b.y).forEach(d=>d.f());
   M.ents.forEach(e=>{ if(e.kind==='npc') drawNPCLabel(e,tm); });
@@ -5045,6 +5245,7 @@ function drawNPC(e,tm){
 function drawNPCLabel(e){ const d=Math.abs(e.x-P.x)+Math.abs(e.y-P.y); if(d>=6||(P.x===e.x&&P.y===e.y+1)) return;
   const X=e.x*TS+TS/2, Y=e.y*TS+TS*.95; ctx.font=`800 ${TS*.27}px Nunito, sans-serif`; ctx.textAlign='center'; const w=ctx.measureText(e.name).width+10; ctx.fillStyle='rgba(14,21,52,.8)'; ctx.fillRect(X-w/2,Y+2,w,TS*.34); ctx.fillStyle='#f6de98'; ctx.fillText(e.name,X,Y+TS*.27); }
 function npcMark(e){
+  if(e.markF) return e.markF();
   if(e.role==='elder'){ if(!S.flags.met) return '!'; if(allDone()&&!S.flags.ending) return '!'; return null; }
   if(M.id==='hub') return null;
   const c=S.chs[M.id];
@@ -5111,6 +5312,7 @@ function interact(e){
   if(e.kind==='exit'){ flash(); enterMap('hub',{x:2+(POS(M.id)-1)*3,y:17}); return; }
   if(e.kind==='home'){ openHouse(); return; }
   if(e.kind==='game'){ startMini(e.g); return; }
+  if(e.kind==='spot'){ if(e.on) e.on(e); return; }
   if(e.kind==='boss'){ const b=CH[M.id].boss; talk([L(CH[M.id].guide,t('boss.intro',b.name,CH[M.id].hint))],()=>startBattle(null,true)); return; }
   if(e.kind!=='npc') return;
   const who={name:e.name,look:e.look,angel:e.angel,opts:{staff:e.staff}};
@@ -5409,6 +5611,16 @@ const BM={serpent:{type:'truth'},mocker:{type:'blast',n:4,icon:'🪵'},heart:{ty
   famine:{type:'glean',n:4,icon:'🌾'},horde:{type:'blast',n:3,icon:'🏺'},pride:{type:'armor',n:4,icon:'🙏'},rubble:{type:'stun',n:3,icon:'🧱'},lost:{type:'found',n:3,icons:['🐑','🪙','👦']},altar:{type:'blast',n:3,icon:'🔥'},whirl:{type:'dodge',n:2,icon:'🧭'},scroll:{type:'king',n:3,icon:'👑'},mute:{type:'mute',n:2,icon:'🗣️'},chains:{type:'chains',n:1,icon:'🎶'}};
 const compTier=cs=>cs?(cs.lvl>=8?2:cs.lvl>=4?1:0):0;
 const compStars=cs=>'★'.repeat(compTier(cs));
+const partySlots=()=>S?1+(S.level>=10?1:0)+(S.level>=20?1:0):1;
+function team(){ if(!S) return []; let p=Array.isArray(S.party)?S.party.slice():[]; if(COMPS[S.comp]&&p[0]!==S.comp) p=[S.comp,...p.filter(k=>k!==S.comp)];
+  p=p.filter((k,i)=>COMPS[k]&&S.comps[k]&&p.indexOf(k)===i).slice(0,partySlots()); if(!p.length&&COMPS[S.comp]) p=[S.comp]; S.party=p; if(p[0]) S.comp=p[0]; return p; }
+const compEl=i=>$(i?'#bComp'+(i+1):'#bComp');
+/* animal pairs from the Bible that give a team bonus */
+const COMBOS=[{id:'peace',a:['wolf','lamb'],e:'🕊️',heal:.08},{id:'lionlamb',a:['lion','lamb'],e:'👑',dmg:.1,heal:.04},{id:'courage',a:['lion','eagle'],e:'🦅',dmg:.15},
+  {id:'gentle',a:['leopard','goat'],e:'🌿',dmg:.1},{id:'manger',a:['ox','donkey'],e:'⭐',guard:1},{id:'ark',a:['dove','raven'],e:'🌈',xp:.2},
+  {id:'work',a:['ant','bee'],e:'🍯',coins:.25},{id:'jonah',a:['fish','whale'],e:'🌊',stun:1},{id:'flock',a:['lamb','ram'],e:'🐑',heal:.05},{id:'stream',a:['deer','fish'],e:'💧',heal:.06}];
+function activeCombos(tm){ tm=tm||team(); return COMBOS.filter(c=>c.a.every(k=>tm.includes(k))); }
+function comboFx(tm){ const fx={}; activeCombos(tm).forEach(c=>{ ['heal','dmg','xp','coins'].forEach(k=>{ if(c[k]) fx[k]=(fx[k]||0)+c[k]; }); if(c.guard) fx.guard=1; if(c.stun) fx.stun=1; fx.e=fx.e||c.e; }); return fx; }
 function makeFoe(chId,boss,typeIdx,champ){
   const R=CH[chId], tr=tierOf(chId)+(champ?3:0); const base=Math.round(18+tr*10); const xk=isJunior()?.85:S.style==='explorer'?1.1:1;
   if(boss){ const hp=Math.round((base*3.2+tr*12)*(S.style==='explorer'?1.15:1)*(champ?1.3:1)); const k=R.boss.kind; const mech=BM[k]||{type:'none'};
@@ -5430,11 +5642,13 @@ function startBattle(foeEnt,boss,opt){
   else { let n=1; if(R.foeMax>=2&&Math.random()<.45) n=2; if(R.foeMax>=3&&Math.random()<.25) n=3; foes=Array.from({length:n},(_,i)=>makeFoe(chId,false,i===0&&foeEnt?foeEnt.type:null)); }
   B={ch:chId,boss,foes,ent:foeEnt,shield:0,compShield:0,streak:0,target:0,turn:0,hurt:0,champ:!!opt.champ,r3:!!(R3.ok&&S.b3d!=='2d'),coop:opt.coop||null};
   if(opt.coop&&foes[0]){ foes[0].max*=2; foes[0].hp=foes[0].max; }
+  { const nT=team().length; B.cb=comboFx(); if(nT>1) foes.forEach(f=>{ const k=f.boss?1+.15*(nT-1):1+.08*(nT-1); f.max=Math.round(f.max*k); f.hp=f.max; });
+    if(B.cb.guard) B.shield=1; if(B.cb.stun) foes.forEach(f=>{ if(f.marches==null) f.stun=1; }); const cbs=activeCombos(); if(cbs.length) setTimeout(()=>toast(cbs.map(c=>c.e+' '+t('cb.'+c.id)).join(' · ')),400); }
   foes.forEach(f=>f.intent=f.boss?'atk':nextIntent(f));
   const bt=$('#battle'); bt.style.setProperty('--bsky',R.night?'#1b2450':R.th.sky); bt.style.setProperty('--bground',R.th.g); bt.style.setProperty('--bground2',R.th.g2);
   $('#bWho').textContent=boss?(opt.champ?t('champ.title',R.boss.name):R.boss.name):(foes.length>1?t('b.appearsN',foes.length):t('b.appears1',foes[0].name));
   const pc=$('#bPC'), sz=battleSize(); pc.width=sz.pw*dpr; pc.height=sz.ph*dpr; pc.style.width=sz.pw+'px'; pc.style.height=sz.ph+'px';
-  $('#bPName').textContent=S.name; const comp=COMPS[S.comp], cs=S.comps[S.comp]; $('#bCompE').textContent=comp?comp.e:''; $('#bCompE').style.fontSize=(sz.pw*.36*(1+compTier(cs)*.12))+'px'; $('#bComp').classList.toggle('evo',compTier(cs)>0);
+  $('#bPName').textContent=S.name; const tmB=team(); [0,1,2].forEach(i=>{ const el=compEl(i), k=tmB[i], comp=COMPS[k], cs=k&&S.comps[k]; el.hidden=!comp; const ee=el.querySelector('.compE'); ee.textContent=comp?comp.e:''; ee.style.fontSize=(sz.pw*.36*(i?.72:1)*(1+compTier(cs)*.12))+'px'; el.classList.toggle('evo',compTier(cs)>0); });
   const fz=$('#bFoes'); fz.innerHTML='';
   foes.forEach((f,i)=>{ const u=document.createElement('div'); u.className='unit foe'+(i===0?' target':'')+(boss?' bossu':''); u.dataset.i=i;
     const fs=boss?sz.bs:sz.fs; const tag=f.trait?` <span class="ftag">${esc(t('trait.'+f.trait))}</span>`:'';
@@ -5558,17 +5772,19 @@ async function battleLoop(){
       await mechAnswer(ok,q,sp.id);
     }
     if(B.foes.every(f=>f.hp<=0)){ await sleep(400); return victory(); }
-    const comp=COMPS[S.comp], cs=S.comps[S.comp]; const pit=B.foes.find(f=>f.boss&&f.hp>0&&f.mech.type==='pit'&&f.m.v<f.mech.n);
-    if(pit&&comp){ if(B.turn===1||B.turn%3===0) msg(t('bm.jealous.pit',comp.name)); }
-    else if(comp&&cs){ const ce=$('#bComp'); const tier=compTier(cs); const special=tier>0&&B.turn%3===0; const pw=Math.round(comp.p*(1+(cs.lvl-1)*.28)*(1+tier*.25)*(special?1.8:1));
+    const tmA=team(), lead=COMPS[tmA[0]]; const pit=B.foes.find(f=>f.boss&&f.hp>0&&f.mech.type==='pit'&&f.m.v<f.mech.n);
+    if(pit&&lead){ if(B.turn===1||B.turn%3===0) msg(t('bm.jealous.pit',lead.name)); }
+    else for(let ti=0;ti<tmA.length;ti++){ const comp=COMPS[tmA[ti]], cs=S.comps[tmA[ti]]; if(!comp||!cs) continue; if(B.foes.every(f=>f.hp<=0)) break;
+      const ce=compEl(ti); const tier=compTier(cs); const special=tier>0&&(B.turn+ti)%3===0; const pw=Math.round(comp.p*(1+(cs.lvl-1)*.28)*(1+tier*.25)*(special?1.8:1)*(ti?.75:1));
       if(special){ floatText(ce,t('evo.special'),'info'); await sleep(250); }
       const tgt=()=>B.foes[B.target].hp>0?B.foes[B.target]:B.foes.find(f=>f.hp>0);
       if(comp.type==='attack'||comp.type==='all'||comp.type==='coins'){ const ts=comp.type==='all'?B.foes.filter(f=>f.hp>0):[tgt()]; const dmg=comp.type==='coins'?Math.round(pw*.8):pw;
-        anim(ce,'lunge-r'); for(const f of ts){ if(f.marches!=null){ floatText(f.el,t('b.wallsStrong'),'info'); continue; } const dd=f.boss?mechDmg(f,dmg,null):dmg; f.hp=Math.max(0,f.hp-dd); floatText(f.el,'−'+dd,'dmg'); anim(f.el,'shake'); } SFX.hit(); updBattle(); await sleep(450); }
+        anim(ce,'lunge-r'); for(const f of ts){ if(!f) continue; if(f.marches!=null){ floatText(f.el,t('b.wallsStrong'),'info'); continue; } const dd=f.boss?mechDmg(f,dmg,null):dmg; f.hp=Math.max(0,f.hp-dd); floatText(f.el,'−'+dd,'dmg'); anim(f.el,'shake'); } SFX.hit(); updBattle(); await sleep(450); }
       else if(comp.type==='heal'&&(S.hp<maxHP()*.7||special)){ const h=Math.min(maxHP()-S.hp,Math.round(pw*.7)); if(h>0){ S.hp+=h; floatText(pl_,'+'+h,'heal'); updBattle(); await sleep(400); } }
-      else if(comp.type==='shield'){ B.compShield=Math.min(special?95:70,comp.p+cs.lvl*2+(special?30:0)); floatText(ce,t('b.guard'),'info'); await sleep(350); }
+      else if(comp.type==='shield'){ B.compShield=Math.max(B.compShield||0,Math.min(special?95:70,Math.round((comp.p+cs.lvl*2)*(ti?.8:1))+(special?30:0))); floatText(ce,t('b.guard'),'info'); await sleep(350); }
       else if(comp.type==='stun'){ const f=tgt(); anim(ce,'lunge-r'); if(f&&f.marches==null&&(special||Math.random()*100<comp.p+cs.lvl*2)){ f.stun=1; floatText(f.el,t('b.stunned'),'info'); } else if(f){ const d=Math.round(pw*.25); f.hp=Math.max(0,f.hp-d); floatText(f.el,'−'+d,'dmg'); } updBattle(); await sleep(400); } }
-    if(pit&&pit.m.v>=pit.mech.n&&!pit.m.back){ pit.m.back=1; toast(t('bm.jealous.full',comp?comp.name:'')); }
+    if(B.cb&&B.cb.heal&&S.hp<maxHP()&&!pit){ const h=Math.min(maxHP()-S.hp,Math.round(maxHP()*B.cb.heal)); if(h>0){ S.hp+=h; floatText(pl_,'+'+h+' '+B.cb.e,'heal'); updBattle(); await sleep(350); } }
+    if(pit&&pit.m.v>=pit.mech.n&&!pit.m.back){ pit.m.back=1; toast(t('bm.jealous.full',lead?lead.name:'')); }
     if(B.foes.every(f=>f.hp<=0)){ await sleep(400); return victory(); }
     await mechTurn();
     for(const f of B.foes.filter(f=>f.hp>0)){
@@ -5589,27 +5805,30 @@ function victory(){ if(B&&B.boss) wkAdd(10,0,0);
   const chId=B.ch, R=CH[chId], n=B.foes.length; let xp=0, coins=0;
   const tr=tierOf(chId); if(B.boss){ xp=Math.round((14+tr*7)*5); coins=Math.round((6+tr*4)*5); } else { xp=Math.round(n*(10+tr*6)); coins=Math.round(n*(5+tr*3)); }
   if(B.champ){ xp=Math.round(xp*1.5); coins=Math.round(coins*2); }
-  const comp=COMPS[S.comp], cs=S.comps[S.comp]; let bonus=0;
-  if(comp&&cs&&comp.type==='coins'){ bonus=comp.p+cs.lvl*2; coins+=bonus; }
-  S.coins+=coins; const lv=gainXP(xp); let compLv=false, evo=false;
-  if(cs){ const t0=compTier(cs); cs.xp+=Math.round(xp/2); while(cs.xp>=40+cs.lvl*30){ cs.xp-=40+cs.lvl*30; cs.lvl++; compLv=true; } evo=compTier(cs)>t0; }
+  const tmV=team(); let bonus=0, comp=null; const compLv=[], evo=[];
+  tmV.forEach(k=>{ const c=COMPS[k], s2=S.comps[k]; if(c&&s2&&c.type==='coins'){ bonus+=c.p+s2.lvl*2; comp=comp||c; } }); coins+=bonus;
+  if(B.cb){ if(B.cb.coins) coins=Math.round(coins*(1+B.cb.coins)); if(B.cb.xp) xp=Math.round(xp*(1+B.cb.xp)); }
+  S.coins+=coins; const lv=gainXP(xp);
+  tmV.forEach((k,i)=>{ const cs=S.comps[k]; if(!cs) return; const t0=compTier(cs); cs.xp+=Math.round(xp/(i?3:2)); let up=false; while(cs.xp>=40+cs.lvl*30){ cs.xp-=40+cs.lvl*30; cs.lvl++; up=true; } if(up) compLv.push(k); if(compTier(cs)>t0) evo.push(k); });
   let drop=null; if(!B.boss&&Math.random()<.22){ drop=pick(['bread','bread','fish']); addItem(drop,1); }
   const c=S.chs[chId]; let note='', rare=null;
   B.foes.forEach(f=>{ const k=f.boss?'boss:'+f.boss.kind:'foe:'+chId+':'+f.name; S.book=S.book||{}; S.book[k]=(S.book[k]||0)+1; });
-  if(B.champ){ S.champs=S.champs||{}; const first=!S.champs[chId]; S.champs[chId]=(S.champs[chId]||0)+1; note=t('champ.won',bn(R.boss.name)); if(first){ rare=grantRare(chId); } }
+  if(B.ext){ note=B.ext.note||''; }
+  else if(B.champ){ S.champs=S.champs||{}; const first=!S.champs[chId]; S.champs[chId]=(S.champs[chId]||0)+1; note=t('champ.won',bn(R.boss.name)); if(first){ rare=grantRare(chId); } }
   else if(B.boss){ c.stage=3; M.ents=M.ents.filter(e=>e.kind!=='boss'); note=t('win.bossDown',bn(R.boss.name),R.guide.name); }
   else if(c.stage===1){ c.kills+=n; if(c.kills>=R.kills){ c.kills=R.kills; c.stage=2; addBoss(); note=t('win.bossUp',bn(R.boss.name),R.boss.where); } }
   if(B.ent) M.foes=M.foes.filter(f=>f!==B.ent);
   challengeEvent('win',{boss:B.boss,hurt:B.hurt,n});
   SFX.win(); save();
-  const lines=[t('win.xp',xp),t('win.coins',coins)]; if(bonus) lines.push(t('win.bonus',comp.name,bonus)); if(drop) lines.push(t('win.found',ITEMS[drop].e,ITEMS[drop].name)); if(lv) lines.push(t('win.lvl',S.level)); if(compLv) lines.push(t('win.comp',comp.name,cs.lvl));
-  if(evo) lines.push(t('evo.grew',comp.name,compStars(cs)));
+  const lines=[t('win.xp',xp),t('win.coins',coins)]; if(bonus) lines.push(t('win.bonus',comp.name,bonus)); if(drop) lines.push(t('win.found',ITEMS[drop].e,ITEMS[drop].name)); if(lv) lines.push(t('win.lvl',S.level)); compLv.forEach(k=>lines.push(t('win.comp',COMPS[k].name,S.comps[k].lvl)));
+  evo.forEach(k=>lines.push(t('evo.grew',COMPS[k].name,compStars(S.comps[k]))));
   if(rare) lines.push(t('champ.rare',rare));
   const newSp=lv&&SPELLS.find(s=>s.lv===S.level); if(newSp) lines.push(t('win.spell',newSp.name));
   resultPanel(t('win.title'),lines,note);
-  if(B.boss&&!B.champ) B.cut=1;
+  if(B.ext&&B.ext.win) B.ext.win(lines,xp,coins);
+  if(B.boss&&!B.champ&&!B.ext) B.cut=1;
 }
-function gainXP(x){ S.xp+=x; let up=false; while(S.xp>=xpNeed()){ S.xp-=xpNeed(); S.level++; up=true; } if(up){ S.hp=maxHP(); SFX.lvl(); } return up; }
+function gainXP(x){ S.xp+=x; let up=false; const l0=S.level; while(S.xp>=xpNeed()){ S.xp-=xpNeed(); S.level++; up=true; } if(up){ S.hp=maxHP(); SFX.lvl(); [10,20].forEach((n,i)=>{ if(l0<n&&S.level>=n) setTimeout(()=>toast(t('team.slot',n,t(i?'team.third':'team.second')),true),1600); }); } return up; }
 function defeat(){ S.hp=maxHP(); S.coins=Math.max(0,S.coins-Math.min(10,Math.floor(S.coins*.1))); resultPanel(t('lose.title'),[t('lose.l1'),t('lose.l2')],t('lose.note'),true); }
 function resultPanel(title,lines,note,lost){
   const box=$('#bSpells'); box.innerHTML='';
@@ -5621,8 +5840,9 @@ function endBattle(how){
   const cut=B&&B.cut&&how==='win'?B.ch:null;
   if(B&&B.r3) R3.battleEnd();
   $('#battle').hidden=true; mode='world'; $('#hud').hidden=false;
-  if(how==='lose') enterMap(M.id); else { P.inv=how==='flee'?2.5:1.5; P.blink=1; sceneMusic(); }
-  B=null; actEnt=null; save(); updHUD();
+  const ext=B&&B.ext; TIER_OVR=null;
+  if(how==='lose'&&!(ext&&ext.keepMap)) enterMap(M.id); else { P.inv=how==='flee'?2.5:1.5; P.blink=1; sceneMusic(); }
+  B=null; actEnt=null; save(); updHUD(); if(ext&&ext.after) ext.after(how);
   if(cut){ setTimeout(()=>banner(t('cut.'+cut),CH[cut].name),R3.ok&&S.view==='3d'?600:100); if(R3.ok&&S.view==='3d') R3.cutscene(cut); }
 }
 
@@ -5642,13 +5862,23 @@ const PROP_PRICE={headband:30,flowers:45,wreath:70,crown:0,staff:60,lantern:80,s
 const PROP_EMO={headband:'🎀',flowers:'🌸',wreath:'🌿',crown:'👑',staff:'🪵',lantern:'🏮',scroll:'📜',satchel:'👜',cape:'🧣',bedroll:'🛏️'};
 const thImg=(key,emoji)=>R3.ok?`<img alt="" data-th="${key}">`:`<div class="emo">${emoji}</div>`;
 function openFriends(){
-  const render=b=>{ const own=Object.entries(S.comps);
-    b.innerHTML=`<p style="margin:0 0 4px;color:var(--muted);font-weight:700">${esc(t('fr.note'))}</p><div class="sect">${esc(t('stable.yours'))}</div><div class="cards">`
-      +own.map(([k,v])=>{ const c=COMPS[k], on=S.comp===k; return `<button class="card ${on?'on':''}" data-pick="${k}"><div class="emo">${c.e}</div><b>${esc(c.name)} <span style="color:var(--gold-soft)">${esc(t('fr.lv',v.lvl))}</span></b><span class="tag">${esc(t('ct.'+c.type))}</span><small>${esc(c.desc)}</small>${on?`<span class="own">${esc(t('stable.with'))}</span>`:`<span class="pr">${esc(t('stable.bring'))}</span>`}</button>`; }).join('')+`</div>`
+  const setTeam=p=>{ S.party=p; S.comp=p[0]; team(); SFX.open(); save(); };
+  const render=b=>{ const own=Object.entries(S.comps), tm=team(), slots=partySlots(), cbs=activeCombos(tm);
+    const slotH=[0,1,2].map(i=>{ const k=tm[i];
+      if(k) return `<div class="tslot ${i?'':'lead'}"><div class="emo">${COMPS[k].e}</div><b>${esc(COMPS[k].name)}</b>${i?`<button class="btn sm" data-lead="${k}">⭐ ${esc(t('team.makeLead'))}</button>`:`<span class="tag">⭐ ${esc(t('team.lead'))}</span>`}${tm.length>1?`<button class="tx" data-out="${k}" aria-label="${esc(t('team.out'))}">✕</button>`:''}</div>`;
+      return i<slots?`<div class="tslot empty"><div class="emo">＋</div><small>${esc(t('team.free'))}</small></div>`:`<div class="tslot empty"><div class="emo">🔒</div><small>${esc(t('team.lock',i===1?10:20))}</small></div>`; }).join('');
+    const cbH=COMBOS.filter(c=>c.a.every(k=>COMPS[k])).map(c=>{ const on=cbs.includes(c), have=c.a.every(k=>S.comps[k]); return `<div class="combo ${on?'on':''}"><span class="pair">${c.a.map(k=>`<span style="${S.comps[k]?'':'filter:grayscale(1) opacity(.45)'}">${COMPS[k].e}</span>`).join('+')}</span><div><b>${c.e} ${esc(t('cb.'+c.id))}</b>${on?` <span class="tag ok">${esc(t('cb.active'))}</span>`:''}<small>${esc(have||on?t('cb.'+c.id+'.d'):t('cb.hidden'))}</small></div></div>`; }).join('');
+    b.innerHTML=`<p style="margin:0 0 4px;color:var(--muted);font-weight:700">${esc(t('team.note'))}</p><div class="sect">${esc(t('team.t'))}</div><div class="tslots">${slotH}</div>`
+      +`<div class="sect">${esc(t('stable.yours'))}</div><div class="cards">`
+      +own.filter(([k])=>COMPS[k]).map(([k,v])=>{ const c=COMPS[k], on=tm.includes(k); return `<button class="card ${on?'on':''}" data-pick="${k}"><div class="emo">${c.e}</div><b>${esc(c.name)} <span style="color:var(--gold-soft)">${esc(t('fr.lv',v.lvl))}</span></b><span class="tag">${esc(t('ct.'+c.type))}</span><small>${esc(c.desc)}</small>${on?`<span class="own">${esc(t('team.in'))}</span>`:`<span class="pr">${esc(t('stable.bring'))}</span>`}</button>`; }).join('')+`</div>`
+      +`<div class="sect">${esc(t('cb.title'))}</div><div class="combos">${cbH}</div>`
       +`<div class="sect">${esc(t('stable.need'))}</div><div class="cards">`+Object.entries(COMPS).filter(([k,c])=>c.price&&!S.comps[k]).sort((a,b)=>a[1].price-b[1].price).map(([k,c])=>{ const lock=(c.req||0)>doneCount(); return lock?`<div class="card bk unk"><div class="emo" style="filter:grayscale(1) brightness(.5)">${c.e}</div><b>${esc(c.name)}</b><small>${esc(t('fr.req',c.req))}</small><span class="pr"><span class="coin"></span>${c.price}</span></div>`:`<button class="card" data-adopt="${k}" ${S.coins<c.price?'disabled':''}><div class="emo">${c.e}</div><b>${esc(c.name)}</b><span class="tag">${esc(t('ct.'+c.type))}</span><small>${esc(c.desc)}</small><span class="pr"><span class="coin"></span>${c.price} · ${esc(t('stable.adopt'))}</span></button>`; }).join('')+`</div>`
       +`<p style="color:var(--muted);font-size:.85rem">${esc(t('stable.more'))}</p>`;
-    b.querySelectorAll('[data-pick]').forEach(x=>x.onclick=()=>{ S.comp=x.dataset.pick; SFX.open(); save(); render(b); });
-    b.querySelectorAll('[data-adopt]').forEach(x=>x.onclick=()=>{ const k=x.dataset.adopt, c=COMPS[k]; if(S.coins>=c.price&&(c.req||0)<=doneCount()){ S.coins-=c.price; S.comps[k]={lvl:Math.max(1,S.level-2),xp:0}; S.comp=k; SFX.coin(); toast(t('toast.joined',c.e,c.name)); save(); updHUD(); render(b);} });
+    const join=k=>{ const p=team().slice(); if(p.includes(k)) return; if(p.length<partySlots()) p.push(k); else p[p.length-1]=k; setTeam(p); };
+    b.querySelectorAll('[data-pick]').forEach(x=>x.onclick=()=>{ const k=x.dataset.pick, p=team(); if(p.includes(k)){ if(p.length>1) setTeam(p.filter(q=>q!==k)); } else join(k); render(b); });
+    b.querySelectorAll('[data-lead]').forEach(x=>x.onclick=()=>{ const k=x.dataset.lead; setTeam([k,...team().filter(q=>q!==k)]); render(b); });
+    b.querySelectorAll('[data-out]').forEach(x=>x.onclick=()=>{ const p=team(); if(p.length>1) setTeam(p.filter(q=>q!==x.dataset.out)); render(b); });
+    b.querySelectorAll('[data-adopt]').forEach(x=>x.onclick=()=>{ const k=x.dataset.adopt, c=COMPS[k]; if(S.coins>=c.price&&(c.req||0)<=doneCount()){ S.coins-=c.price; S.comps[k]={lvl:Math.max(1,S.level-2),xp:0}; join(k); SFX.coin(); toast(t('toast.joined',c.e,c.name)); save(); updHUD(); render(b);} });
     if(R3.ok) R3.lazyThumbs(b); };
   openModal(t('fr.title'),'',render);
 }
@@ -10880,7 +11110,7 @@ W.lantern=new TH.PointLight(0xffc878,0,9,1.6); W.scene.add(W.lantern);
 function setAtmos(R,chId){ const a=atmos(R,chId); const key=JSON.stringify(a); if(key===W.atKey) return; W.atKey=key; W.night=a.night;
   if(W.sky) W.sky.dispose(); W.sky=skyTex(a.top,a.mid,a.bot); W.scene.background=W.sky; W.scene.fog=new TH.Fog(c3(a.fog).getHex(),30,78);
   W.hemi.color.copy(c3(a.hs)); W.hemi.groundColor.copy(c3(a.hg)); W.hemi.intensity=a.hi; W.sun.color.copy(c3(a.sc)); W.sun.intensity=a.si; W.lantern.intensity=a.night?1.3:0; }
-function clearWorld(){ if(W.root){ W.scene.remove(W.root); disposeTree(W.root); } W.root=null; W.ents.clear(); W.foes.clear(); W.items=[]; W.dyn=[]; W.anim=[]; W.lmRoots=[]; W.player=null; W.psig=''; W.pet=null; W.petId=''; W.ground=null; W.m=null; W.byTile=null; W.fade=null; W.life=null; CUT=null; }
+function clearWorld(){ if(W.root){ W.scene.remove(W.root); disposeTree(W.root); } W.root=null; W.ents.clear(); W.foes.clear(); W.items=[]; W.dyn=[]; W.anim=[]; W.lmRoots=[]; W.player=null; W.psig=''; W.pet=null; W.petId=''; W.pets=[]; W.boat=null; W.ground=null; W.m=null; W.byTile=null; W.fade=null; W.life=null; CUT=null; }
 const isWet=v=>v===T.W||v===T.BR;
 function paintGround(m,th,P){
   const Wt=m.W, Ht=m.H, R=rng(m.R.seed*7+3);
@@ -10964,7 +11194,7 @@ function rebuildDyn(d){ W.root.remove(d.o.root); W.lmRoots=W.lmRoots.filter(r=>r
 
 /* ---- entities ---- */
 function gateState(e){ return !isOpen(e.ch)?'locked':(chStage(e.ch)>=4?'done':'open'); }
-function entKey(e){ if(e.kind==='gate') return 'g'+gateState(e)+LANG; if(e.kind==='npc') return 'n'+e.name; return e.kind; }
+function entKey(e){ if(e.kind==='spot') return 's'+e.e+(e.hide?'h':'')+(e.label||''); if(e.kind==='gate') return 'g'+gateState(e)+LANG; if(e.kind==='npc') return 'n'+e.name; return e.kind; }
 function makeEnt(e){
   const o={key:entKey(e),root:new TH.Group()}; const r=o.root;
   if(e.kind==='npc'){ o.P=buildPerson(e.look,{staff:e.staff,angel:e.angel}); r.add(o.P.root); r.position.set(X3(e.x),0,Z3(e.y)); o.face=0; o.t0=e.x*1.7+e.y;
@@ -10975,6 +11205,9 @@ function makeEnt(e){
   else if(e.kind==='game'){ const g=new TH.Group(); r.add(g); msh(Gc(.05,.06,1.1,6),mat('#6b4a22'),g,0,.55,0); const bd=msh(Gb(.9,.6,.08),texMat('wood'),g,0,1.25,0); msh(Gb(.98,.68,.05),mat('#e8b94a',{metalness:.6,roughness:.4}),g,0,1.25,-.03);
     const EM={manna:'🍞',ark:'🚢',wall:'🧱',fish:'🐟'}; const sp=sprite(emo(EM[e.g]||'⭐'),.55); sp.position.set(0,1.27,.1); g.add(sp); const gl=sprite(tx('glow'),1.4); gl.position.set(0,1.25,.05); gl.material.opacity=.6; g.add(gl); o.upd=t=>{ gl.material.opacity=.45+Math.sin(t*3)*.2; sp.position.y=1.27+Math.sin(t*2)*.03; };
     r.position.set(X3(e.x),0,Z3(e.y)); const L=labelTex(t('mg.'+e.g)); o.label=topSprite(L.tex,.28,L.aspect); o.label.position.y=1.85; o.label.visible=false; r.add(o.label); }
+  else if(e.kind==='spot'){ if(e.hide) return null; const g=new TH.Group(); r.add(g); const s=e.big?1.5:.95; if(e.glow!==false){ const gl=sprite(tx('glow'),1.7*s); gl.material.opacity=.6; gl.position.y=.6*s; g.add(gl); o.gl=gl; }
+    const sp=sprite(emo(e.e),s); sp.position.y=.62*s; g.add(sp); o.sp=sp; o.s=s; const sh=msh(geo('pshadow',()=>new TH.CircleGeometry(.34,24)),basic('#000000',{transparent:true,opacity:.22,depthWrite:false}),g,0,.02,0,false); sh.rotation.x=-PI/2;
+    r.position.set(X3(e.x),0,Z3(e.y)); if(e.label){ const L=labelTex(e.label); o.label=topSprite(L.tex,.28,L.aspect); o.label.position.y=1.35*s+.25; o.label.visible=false; r.add(o.label); } }
   else if(e.kind==='exit'){ const ex=buildExit(); o.upd=ex.update; r.add(ex.root); r.rotation.y=PI/2.7; r.position.set(X3(e.x)-.1,0,Z3(e.y)); }
   else if(e.kind==='boss'){ const b=CH[M.id].boss; o.G=buildBoss3(b.kind,b.c); o.G.root.scale.setScalar(1.15); r.add(o.G.root); r.position.set(X3(e.x),0,Z3(e.y)); if(o.G.setMarches) o.G.setMarches(0);
     const L=labelTex(b.name,{fg:'#ffb8a8'}); o.label=topSprite(L.tex,.34,L.aspect); o.label.position.y=2.6; r.add(o.label); }
@@ -10994,6 +11227,7 @@ function syncEnts(dt,tm){
     else if(e.kind==='gate'){ if(o.upd) o.upd(tm); o.label.visible=d<5; }
     else if(e.kind==='exit'){ if(o.upd) o.upd(tm); }
     else if(e.kind==='game'){ if(o.upd) o.upd(tm); o.label.visible=d<5; }
+    else if(e.kind==='spot'){ if(!e.still) o.sp.position.y=.62*o.s+Math.sin(tm*3+e.x)*.06; if(o.gl) o.gl.material.opacity=.45+Math.sin(tm*2.5+e.y)*.15; if(o.label) o.label.visible=d<6; }
     else if(e.kind==='boss'){ o.G.update(dt,tm); const a=Math.atan2(X3(px)-X3(e.x),Z3(py)-Z3(e.y)); o.G.root.rotation.y+=angTo(o.G.root.rotation.y,a)*Math.min(1,dt*3); o.label.visible=d<7; }
   }
   for(const [e,o] of W.ents) if(!seen.has(e)){ if(o){ W.root.remove(o.root); disposeTree(o.root); } W.ents.delete(e); }
@@ -11028,14 +11262,20 @@ function renderWorld(tm){
   W.pface+=angTo(W.pface,P.ang!=null?P.ang:(DIRANG[P.dir]||0))*Math.min(1,dt*13);
   const pl=W.player; pl.root.position.copy(W.ppos); pl.root.rotation.y=W.pface; pl.update(dt,W.snap?0:Math.min(spd,6)*.62,tm); pl.root.visible=!(P.blink&&P.inv>0&&Math.floor(tm*12)%2&&mode==='world');
   if(W.night){ W.lantern.position.set(W.ppos.x,1.6,W.ppos.z+.3); }
+  if(M.sail){ if(!W.boat){ const bo=buildLandmark({k:'boat',x:0,y:0,w:4,h:2},lmCtx()); W.boat=new TH.Group(); W.boat.add(bo.root); bo.root.scale.setScalar(.6); bo.root.position.set(0,0,0); W.root.add(W.boat); }
+    W.boat.position.set(W.ppos.x,0,W.ppos.z); W.boat.rotation.y=W.pface+PI/2; W.boat.position.y=.02+Math.sin(tm*1.6)*.05; pl.root.position.y=.24+Math.sin(tm*1.6)*.05; }
   // pet
-  const pkey=petKey(S.comp); if(pkey!==W.petId){ const old=W.pet; W.pet=petModel(S.comp); W.petId=pkey; W.root.add(W.pet.root); if(old){ W.petPos.copy(old.root.position); W.root.remove(old.root); disposeTree(old.root); } else W.petPos.set(X3(CP.fx),0,Z3(CP.fy)); }
-  if(W.pet){ const ptx=X3(CP.fx), ptz=Z3(CP.fy); const px0=W.petPos.x, pz0=W.petPos.z;
-    if(W.snap) W.petPos.set(ptx,0,ptz); else { W.petPos.x=dmp(W.petPos.x,ptx,7,dt); W.petPos.z=dmp(W.petPos.z,ptz,7,dt); }
-    const dx=W.petPos.x-W.ppos.x, dz=W.petPos.z-W.ppos.z, dd=Math.hypot(dx,dz); if(dd<.75&&dd>1e-4){ W.petPos.x=W.ppos.x+dx/dd*.75; W.petPos.z=W.ppos.z+dz/dd*.75; }
-    const mvx=W.petPos.x-px0, mvz=W.petPos.z-pz0, ps=dt>0?Math.hypot(mvx,mvz)/dt:0;
-    const want=ps>.3?Math.atan2(mvx,mvz):Math.atan2(W.ppos.x-W.petPos.x,W.ppos.z-W.petPos.z); W.petFace+=angTo(W.petFace,want)*Math.min(1,dt*7);
-    { const cs=S.comps[S.comp]; const tier=cs?(cs.lvl>=8?2:cs.lvl>=4?1:0):0; W.pet.root.scale.setScalar(1+tier*.12); } W.pet.root.position.copy(W.petPos); W.pet.root.rotation.y=W.petFace; W.pet.update(dt,ps,tm); }
+  const tmW=team(); W.pets=W.pets||[];
+  for(let i=0;i<3;i++){ const id=tmW[i], pp=W.pets[i]||(W.pets[i]={pet:null,id:'',pos:new TH.Vector3(),face:0}); const CQ=CPS[i];
+    const pkey=id?petKey(id):''; if(pkey!==pp.id){ const old=pp.pet; pp.pet=id?petModel(id):null; pp.id=pkey; if(pp.pet){ W.root.add(pp.pet.root); if(old) pp.pos.copy(old.root.position); else pp.pos.set(X3(CQ.fx),0,Z3(CQ.fy)); } if(old){ W.root.remove(old.root); disposeTree(old.root); } }
+    const pet=pp.pet; if(!pet) continue; const ptx=X3(CQ.fx), ptz=Z3(CQ.fy); const px0=pp.pos.x, pz0=pp.pos.z;
+    if(W.snap) pp.pos.set(ptx,0,ptz); else { pp.pos.x=dmp(pp.pos.x,ptx,7-i,dt); pp.pos.z=dmp(pp.pos.z,ptz,7-i,dt); }
+    const dx=pp.pos.x-W.ppos.x, dz=pp.pos.z-W.ppos.z, dd=Math.hypot(dx,dz); if(dd<.75&&dd>1e-4){ pp.pos.x=W.ppos.x+dx/dd*.75; pp.pos.z=W.ppos.z+dz/dd*.75; }
+    for(let j=0;j<i;j++){ const o=W.pets[j]; if(!o||!o.pet) continue; const ex=pp.pos.x-o.pos.x, ez=pp.pos.z-o.pos.z, ed=Math.hypot(ex,ez); if(ed<.7&&ed>1e-4){ pp.pos.x=o.pos.x+ex/ed*.7; pp.pos.z=o.pos.z+ez/ed*.7; } }
+    const mvx=pp.pos.x-px0, mvz=pp.pos.z-pz0, ps=dt>0?Math.hypot(mvx,mvz)/dt:0;
+    const want=ps>.3?Math.atan2(mvx,mvz):Math.atan2(W.ppos.x-pp.pos.x,W.ppos.z-pp.pos.z); pp.face+=angTo(pp.face,want)*Math.min(1,dt*7);
+    { const cs=S.comps[id]; const tier=cs?(cs.lvl>=8?2:cs.lvl>=4?1:0):0; pet.root.scale.setScalar((1+tier*.12)*(i?.85:1)); } pet.root.position.copy(pp.pos); pet.root.visible=!M.sail; pet.root.rotation.y=pp.face; pet.update(dt,ps,tm+i*.7); }
+  W.pet=W.pets[0]&&W.pets[0].pet;
   syncEnts(dt,tm); syncFoes(dt,tm); updFade(dt); updLife(dt,tm);
   const c=M.id!=='hub'&&S.chs[M.id];
   W.items.forEach(o=>{ const vis=!!c&&c.side===1&&!c.got.includes(o.it.idx); o.g.visible=vis; if(vis){ o.s.position.y=.62+Math.sin(tm*3+o.it.idx)*.08; } });
@@ -11105,7 +11345,8 @@ function battleStart(){
   const add=(el,obj,kind,x,z,ry,extra)=>{ x*=XK; obj.root.position.set(x,.15,z); obj.root.rotation.y=ry; sc.add(obj.root); obj.root.updateMatrixWorld(true); const bb=new TH.Box3().setFromObject(obj.root);
     const u=Object.assign({el,obj,kind,home:new TH.Vector3(x,.15,z),off:new TH.Vector3(),h:Math.max(.6,bb.max.y-.15),shake:0,flash:0,scale:obj.root.scale.x},extra||{}); BT.units.set(el,u); return u; };
   const pl=buildPerson(S.look,personOpts()); BT.player=add($('#bPlayer'),pl,'player',-2.1,0,PI/2-.55,{dir:1});
-  const pet=petModel(S.comp); if(pet.kind==='icon') pet.root.scale.setScalar(port?1.0:1.35); BT.pet=add($('#bComp'),pet,'pet',port?-2.6:-2.95,port?1.7:1.15,PI/2-.4,{dir:1});
+  const tmB=team(); const PP=[[port?-2.6:-2.95,port?1.7:1.15],[port?-3.1:-3.5,port?-.8:-1.1],[port?-.6:-.9,port?1.9:1.3]];
+  tmB.forEach((id,i)=>{ const pet=petModel(id); if(pet.kind==='icon') pet.root.scale.setScalar((port?1.0:1.35)*(i?.8:1)); else if(i) pet.root.scale.multiplyScalar(.8); const u=add($(i?'#bComp'+(i+1):'#bComp'),pet,'pet',PP[i][0],PP[i][1],PI/2-.4,{dir:1}); if(!i) BT.pet=u; });
   const n=B.foes.length; const POSN=B.boss?[[2.5,-.1]]:n===1?[[2.2,0]]:n===2?[[1.9,-.9],[2.7,1.0]]:[[1.8,1.25],[2.35,-.8],[3.4,.45]];
   B.foes.forEach((f,i)=>{ let G; if(f.boss){ G=buildBoss3(f.boss.kind,f.boss.c); G.root.scale.setScalar(BOSS_SCALE[f.boss.kind]||1.55); } else { G=buildFoe(f.shape,f.c); G.root.scale.setScalar(.95); }
     const [x,z]=POSN[i]||[2+i,0]; const u=add(f.el,G,'foe',x,z,-PI/2+.55,{dir:-1,f}); f.r3=u; });
@@ -11148,13 +11389,13 @@ function renderBattle(tm){
     const cv2=u.kind==='pet'?el.querySelector('.compE'):el.querySelector('canvas'); if(cv2){ cv2.style.width=Math.round(hpx*(u.kind==='foe'&&u.f.boss?.9:.7))+'px'; cv2.style.height=Math.round(hpx)+'px'; } });
   const tg=B.foes[B.target]; if(tg&&tg.r3&&tg.hp>0){ BT.target.visible=true; BT.target.position.set(tg.r3.obj.root.position.x,.17,tg.r3.obj.root.position.z); const s=tg.boss?1.6:1; BT.target.scale.set(s,s,1); BT.target.material.opacity=.55+Math.sin(tm*5)*.3; } else BT.target.visible=false;
   if(B.shield>0){ const p=BT.player.obj.root.position; BT.bubble.position.set(p.x,.85,p.z); BT.bubble.scale.setScalar(1+Math.sin(tm*4)*.03); } else BT.bubble.position.y=-9;
-  if(B.compShield>0){ const p=BT.pet.obj.root.position; BT.guard.position.set(p.x,.5,p.z); } else BT.guard.position.y=-9;
+  if(B.compShield>0&&BT.pet){ const p=BT.pet.obj.root.position; BT.guard.position.set(p.x,.5,p.z); } else BT.guard.position.y=-9;
   B.foes.forEach(f=>{ if(!f.r3) return; if(f.stun&&!f.r3.ice){ f.r3.ice=msh(Gs(.85,20,14),new TH.MeshStandardMaterial({color:c3('#cfeaff'),transparent:true,opacity:.35,roughness:.05,metalness:.2,depthWrite:false}),BT.scene,0,0,0,false); }
     if(f.r3.ice){ if(!f.stun||f.hp<=0){ BT.scene.remove(f.r3.ice); f.r3.ice=null; } else { const p=f.r3.obj.root.position; f.r3.ice.position.set(p.x,.75,p.z); } } });
   RD.render(BT.scene,cam);
 }
 function battleEnd(){ $('#battle').classList.remove('b3d'); if(!BT) return; BT.tw.forEach(w=>w.res()); disposeTree(BT.scene); if(BT.sky) BT.sky.dispose(); BT=null; cam.clearViewOffset();
-  ['#bPlayer','#bComp'].forEach(s=>{ const el=$(s); el.style.left=el.style.top=''; }); const ce=$('#bComp .compE'); if(ce){ ce.style.width=ce.style.height=''; } }
+  ['#bPlayer','#bComp','#bComp2','#bComp3'].forEach(s=>{ const el=$(s); el.style.left=el.style.top=''; const ce=el.querySelector('.compE'); if(ce){ ce.style.width=ce.style.height=''; } }); }
 
 /* ===================== HOUSE ===================== */
 let HS=null; const HN=8;
@@ -11238,6 +11479,219 @@ return {ok:true, canvas:glc, renderWorld, renderBattle, renderHouse, pick, battl
   FURN, PROP_LIST, PROP_PRICE, PETB, cutscene, portrait, get cutting(){ return !!CUT; }, loadGLB };
 
 })(); }catch(err){ console.error(err); return {ok:false}; } })();
+
+/* ===================== AFTER THE JOURNEY: THE LAND, THE GREAT SEA, THE TOWER ===================== */
+/* Everything here lives in its own maps (ids 101+, never in ORDER). Saves only gain S.land and S.party;
+   while you are out there the save still says 'hub', so an older version of the game can always load it. */
+const XLAND=[101,102,103,104,105], XCAVE={101:111,102:112,103:113,104:114,105:115}, XISLE=[121,122,123,124];
+const XCAVEOF={111:101,112:102,113:103,114:104,115:105};
+const XPOS={101:[1,0],102:[2,1],103:[2,2],104:[0,1],105:[1,2]};
+const XROAD={101:[102,104],102:[101,103],103:[102,105],104:[101,105],105:[103,104]};
+const FRAG={101:2,111:4,102:3,112:5,103:8,113:6,104:7,114:10,105:9,115:1,123:11,124:12};
+const isX=id=>!!(CH[id]&&(CH[id].land||CH[id].cave||CH[id].sail||CH[id].isle||CH[id].tower));
+const xday=()=>{ const d=new Date(); return d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate(); };
+function xr(...a){ let h=2166136261>>>0; const s=a.join('|'); for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619)>>>0; } return mulberry32(h); }
+function XS(){ const XL=S.land||(S.land={}); XL.frag=XL.frag||[]; XL.req=XL.req||{}; XL.isle=XL.isle||{}; XL.shy=XL.shy||{}; XL.tw=XL.tw||{best:0,cp:0}; XL.chest=XL.chest||{}; XL.seen=XL.seen||{}; return XL; }
+const landOpen=()=>allDone(), towerOpen=()=>doneCount()>=10;
+const isNight=()=>Math.floor(Date.now()/60000)%12>=8;
+const WXS={101:['sun','sun','rain','mist'],102:['sun','sun','rain'],103:['sun','sun','wind'],104:['sun','wind','rain','mist'],105:['sun','sun','rain'],120:['sun','wind','storm'],121:['sun','sun','rain'],122:['sun','wind','sun'],123:['sun','storm','rain'],124:['sun','sun','rain']};
+const WXE={sun:'☀️',rain:'🌧️',mist:'🌫️',wind:'💨',storm:'⛈️'};
+function xWeather(id){ const a=WXS[id]; if(!a) return 'sun'; return a[Math.floor(xr('wx',id,xday())()*a.length)]; }
+let HUBX={land:{x:29,y:14},tower:{x:29,y:14}}, XARR=null, XT=null;
+for(const id in CH){ if(isX(+id)&&CH[id].mus&&TRACKS[CH[id].mus]) TRACKS['c'+id]=TRACKS[CH[id].mus]; }
+
+/* ---- localisation of the new places and animals (they are data, so refresh after every language switch) ---- */
+function xLoc(){ for(const id in CH){ const R=CH[id]; if(!isX(+id)) continue; const n=STR[LANG]&&STR[LANG]['lx.'+id]||STR.en['lx.'+id]; if(n) R.name=n;
+    if(R.guide&&STR.en['lg.'+id]) R.guide.name=t('lg.'+id); (R.flav||[]).forEach((f,i)=>{ if(STR.en['ln.'+id+'.'+i]) f.name=t('ln.'+id+'.'+i); }); }
+  for(const k in COMPS){ if(COMPS[k].wild&&STR.en['wc.'+k]){ COMPS[k].name=t('wc.'+k); COMPS[k].desc=t('wc.'+k+'.d'); } } }
+{ const _al=applyLang; applyLang=function(l){ _al(l); xLoc(); }; }
+
+/* ---- placement helpers ---- */
+function xFree(m,rnd,o){ o=o||{}; const W=m.W, gap=o.gap||2;
+  const c=(m.reach||[]).filter(k=>{ const x=k%W,y=(k/W)|0; if(o.min&&Math.abs(x-m.spawn.x)+Math.abs(y-m.spawn.y)<o.min) return false;
+    if(m.ents.some(e=>Math.abs(e.x-x)<=gap&&Math.abs(e.y-y)<=gap)) return false; if(o.f&&!o.f(x,y)) return false; return true; });
+  if(!c.length) return null; const k=c[Math.floor(rnd()*c.length)]; return {x:k%W,y:(k/W)|0}; }
+function xEdge(m,dx,dy){ const W=m.W; let best=null, bs=-1e9;
+  (m.reach||[]).forEach(k=>{ const x=k%W,y=(k/W)|0; if(Math.abs(x-m.spawn.x)+Math.abs(y-m.spawn.y)<8) return; if(m.ents.some(e=>Math.abs(e.x-x)<=2&&Math.abs(e.y-y)<=2)) return;
+    const s=dx*x/W+dy*y/m.H+hash(x,y)*.02; if(s>bs){ bs=s; best={x,y}; } }); return best; }
+function xNear(x,y){ for(const [dx,dy] of [[0,1],[1,0],[-1,0],[0,-1],[1,1],[-1,1],[1,-1],[-1,-1]]) if(walkable(x+dx,y+dy)) return {x:x+dx,y:y+dy}; return null; }
+function xPlace(p){ P.x=P.tx=p.x; P.y=P.ty=p.y; P.fx=P.x; P.fy=P.y; P.mv=false; P.path=[]; P.pend=null; P.inv=1.5; CPS.forEach((c,i)=>{ c.fx=P.x; c.fy=P.y+1+i*.3; }); trail=[];
+  M.foes=M.foes.filter(f=>Math.abs(f.x-P.x)+Math.abs(f.y-P.y)>5); if(R3.ok&&R3.snap) R3.snap(); }
+const spot=(m,p,o)=>{ if(!p) return null; const e=Object.assign({kind:'spot',x:p.x,y:p.y},o); m.ents.push(e); return e; };
+function xGo(id,near){ flash(); XARR=near||null; enterMap(id); }
+
+/* ---- shared talk helpers ---- */
+const xWho=e=>({name:e.name,look:e.look,angel:e.angel,opts:{staff:e.staff}});
+function xQuiz(n,need,done){ (async()=>{ let ok=0; for(let i=0;i<n;i++){ const q=makeQuestion(pick(ORDER.filter(isOpen))); const r=await ask(q,{n:i+1,of:n,exit:true}); if(r==='exit') return done(false,true); if(r) ok++; if(ok+(n-i-1)<need) break; } done(ok>=need); })(); }
+function xReward(coins,xp,item){ S.coins+=coins; const lv=gainXP(xp); if(item) addItem(item,1); wkAdd(5,0,0); SFX.coin(); updHUD(); save();
+  toast(t('x.reward',coins,xp)+(item?' · '+ITEMS[item].e:''),true); if(lv) setTimeout(()=>toast(t('win.lvl',S.level)),1200); }
+function xJoin(k){ const c=COMPS[k]; S.comps[k]={lvl:Math.max(1,S.level-3),xp:0}; const p=team(); if(p.length<partySlots()){ S.party=p.concat(k); team(); } SFX.lvl(); toast(t('toast.joined',c.e,c.name),true); save(); }
+function xFrag(n){ const XL=XS(); if(XL.frag.includes(n)) return; XL.frag.push(n); SFX.trumpet(); save(); updTrack();
+  const all=XL.frag.length>=12;
+  openModal(t('ps.found',XL.frag.length),`<p class="verse" style="font-size:1.15rem">“${esc(t('ps.'+n))}”<cite>${esc(t('ps.ref'))}</cite></p>${psalmHTML()}<p>${esc(all?t('ps.allP'):t('ps.moreP'))}</p>`,null,()=>{ if(all&&!XL.psalm){ XL.psalm=1; S.coins+=300; const h=S.house; h.inv.trophy=(h.inv.trophy||0)+1; if(!h.got.includes('trophy')) h.got.push('trophy'); gainXP(200); save(); updHUD(); toast(t('ps.reward'),true); } }); }
+function psalmHTML(){ const XL=XS(); return `<div class="psalm">${Array.from({length:12},(_,i)=>i+1).map(n=>XL.frag.includes(n)?`<span class="got">${esc(t('ps.'+n))}</span>`:`<span class="miss">${n} · · ·</span>`).join(' ')}</div>`; }
+
+/* ---- daily traveller requests ---- */
+const TVN=['merchant','shepherd','fisher','widow','potter','pilgrim','scribe','vine'], TVE={merchant:'🧺',shepherd:'🐑',fisher:'🐟',widow:'🪙',potter:'🏺',pilgrim:'👡',scribe:'🪶',vine:'🍇'};
+const TVLOOK=[[1,'#5a3418','#7a5a3a','#e9d8a6',{beard:'#5a3418'}],[2,'#2a1a10','#6a7a3a','#e9d8a6'],[3,'#1a1a1a','#3a6a8a','#c8a46a',{beard:'#1a1a1a'}],[1,'#8a8a8a','#5a4a6a','#e9d8a6',{hs:1,wrap:'#e8dcc0'}],[2,'#3a2414','#a0603a','#e9d8a6',{hs:2}],[0,'#c08a4a','#8a6a3a','#e9d8a6'],[2,'#1a1a1a','#e9e2cf','#4a6ab0',{beard:'#1a1a1a'}],[4,'#1a1a1a','#7b3fa0','#e3b64a',{hs:1}]];
+function xReq(id){ const XL=XS(), d=xday(); let q=XL.req[id];
+  if(!q||q.d!==d){ const r=xr('req',id,d); const ty=['find','quiz','hunt','food'][Math.floor(r()*4)]; const tv=Math.floor(r()*TVN.length);
+    q=XL.req[id]={d,ty,tv,st:0,n:ty==='find'?3+Math.floor(r()*2):ty==='quiz'?3:ty==='hunt'?4+Math.floor(r()*3):1,got:[],c:0}; }
+  return q; }
+const reqDone=q=>q.ty==='find'?q.got.length>=q.n:q.ty==='hunt'?q.c>=q.n:false;
+function reqText(q){ const k=TVN[q.tv]; return q.ty==='find'?t('rq.q.find',TVE[k],q.got.length,q.n):q.ty==='hunt'?t('rq.q.hunt',q.c,q.n):q.ty==='quiz'?t('rq.q.quiz'):t('rq.q.food'); }
+function travTalk(who,e){ const id=M.id, q=xReq(id), k=TVN[q.tv], nm=e.name, it=TVE[k];
+  const pay=()=>{ q.st=2; const lv=S.level; xReward(25+Math.round(lv*1.6)+(q.ty==='food'?20:0),30+lv*3,Math.random()<.4?pick(['bread','fish']):null); L2().done=(L2().done||0)+1; enterMap(id,{x:P.x,y:P.y}); };
+  const L2=XS;
+  if(q.st===2) return talk([L(who,t('rq.again'))]);
+  if(q.ty==='quiz'){ return talk([L(who,t('rq.'+k)),L(who,t('rq.hi.quiz'))],()=>xQuiz(3,isJunior()?2:2,(ok,ex)=>{ if(ex) return; if(ok){ talk([L(who,t('rq.thanks'))],pay); } else talk([L(who,t('rq.quizNo'))]); })); }
+  if(q.ty==='food'){ const has=['bread','fish','honey'].find(f=>S.items[f]>0); let gave=false;
+    if(!has) return talk([L(who,t('rq.'+k)),L(who,t('rq.hi.food')),L(who,t('rq.noFood'))]);
+    return talk([L(who,t('rq.'+k)),{who,text:t('rq.hi.food'),choice:[t('rq.give',ITEMS[has].e+' '+ITEMS[has].name),t('rq.notNow')],onPick:i=>{ if(i===0){ gave=true; S.items[has]--; return [L(who,t('rq.thanksFood'))]; } return [L(who,t('rq.ok'))]; }}],()=>{ if(gave) pay(); }); }
+  if(q.st===0){ q.st=1; save(); talk([L(who,t('rq.'+k)),L(who,q.ty==='find'?t('rq.hi.find',q.n,it):t('rq.hi.hunt',q.n))],()=>{ enterMap(id,{x:P.x,y:P.y}); updTrack(); }); return; }
+  if(reqDone(q)) return talk([L(who,t('rq.thanks'))],pay);
+  talk([L(who,t('rq.wait',reqText(q)))]); }
+
+/* ---- wild animals (only out here) ---- */
+function xWild(id){ const k=Object.keys(COMPS).find(k=>COMPS[k].wild===id); if(!k||S.comps[k]) return null; if(XS().shy[k]===xday()) return null;
+  if(XLAND.includes(id)&&k!=='badger'&&xr('wild',k,xday())()>.7) return null; return k; }
+function wildTalk(e){ const k=e.wild, c=COMPS[k], who={name:c.name,look:null};
+  talk([L(NARR(),t('wild.hi',c.e,c.name)),L(NARR(),t('wild.how',isJunior()?2:3))],()=>xQuiz(3,isJunior()?2:3,(ok,ex)=>{ if(ex) return;
+    if(ok){ M.ents=M.ents.filter(x=>x!==e); xJoin(k); talk([L(NARR(),t('wild.yes',c.e,c.name))]); }
+    else { XS().shy[k]=xday(); M.ents=M.ents.filter(x=>x!==e); save(); talk([L(NARR(),t('wild.no',c.name))]); } })); }
+
+/* ---- hub: the tower and the road out into the Land ---- */
+function xHub(m){ const W=m.W, tx=W-14;
+  for(let y=3;y<=7;y++) for(let x=tx-1;x<=tx+4;x++) m.set(x,y,y<6&&x>=tx&&x<tx+4?T.L:T.G);
+  m.lms.push({k:'gatehouse',x:tx,y:3,w:4,h:3});
+  HUBX.tower={x:tx+2,y:7}; spot(m,{x:tx+2,y:6},{e:'🪜',big:0,label:t('x.tower'),act:towerOpen()?t('x.towerGo'):t('x.locked'),on:()=>{ if(!towerOpen()) return toast(t('x.towerLock',10)); xGo(130); }});
+  const lx=W-6; for(let y=14;y<=16;y++) for(let x=lx-1;x<=lx+1;x++) m.set(x,y,T.G);
+  HUBX.land={x:lx,y:17}; spot(m,{x:lx,y:16},{e:'🧭',label:t('x.land'),act:landOpen()?t('x.landGo'):t('x.locked'),on:()=>{ if(!landOpen()) return toast(t('x.landLock'));
+    const XL=XS(), go=()=>xGo(XL.last&&XLAND.includes(XL.last)?XL.last:101);
+    if(!XL.seen.land){ XL.seen.land=1; save(); return talk([1,2,3,4].map(i=>L_(SIMEON,t('land.intro'+i))),go); } go(); }});
+}
+const L_=(who,txt)=>L({name:who.name,look:who.look},txt);
+
+/* ---- region maps of the Land ---- */
+function xMap(m){ const R=m.R, id=m.id, XL=XS(), rs=mulberry32(R.seed*3+1), rd=xr('day',id,xday());
+  m.items=[]; m.ents=m.ents.filter(e=>!(e.kind==='npc'&&e.role==='side')&&!(e.kind==='npc'&&e.role==='flavor'&&R.cave));
+  let fi=0; m.ents.forEach(e=>{ if(e.kind==='npc'&&e.role==='flavor'){ const f=(R.flav||[])[fi++]; if(f&&f.lk) e.lk=f.lk; } });
+  const home=R.tower?HUBX.tower:HUBX.land; m.ext={hx:home.x,hy:home.y}; m.wx=R.cave||R.tower?'sun':xWeather(id); m.xland=1;
+  const guide=m.ents.find(e=>e.kind==='npc'&&e.role==='guide');
+  const fragSpot=(hidden,o)=>{ const n=FRAG[id]; if(!n||XL.frag.includes(n)) return; const p=xFree(m,rs,Object.assign({min:hidden?12:6},o)); spot(m,p,{e:'📜',label:hidden?'':t('x.frag'),act:t('x.fragGo'),secret:hidden,hide:hidden,on:e=>{ M.ents=M.ents.filter(x=>x!==e); xFrag(n); }}); };
+  const wildSpot=()=>{ const k=xWild(id); if(!k) return; const p=xFree(m,rd,{min:8}); spot(m,p,{e:COMPS[k].e,wild:k,label:t('x.wild'),act:t('x.wildGo',COMPS[k].name),night:k==='badger',hide:k==='badger'&&!isNight(),gc:'rgba(180,255,200,.55)',on:wildTalk}); };
+  if(R.land){ XL.last=id;
+    if(guide){ const q=xReq(id); const lk2=TVLOOK[q.tv]; guide.name=t('tv.'+TVN[q.tv]); guide.look=lk({skin:SK[lk2[0]],hair:lk2[1],robe:lk2[2],sash:lk2[3]},lk2[4]); guide.role='trav'; guide.staff=0;
+      guide.xon=travTalk; guide.markF=()=>{ const q2=xReq(id); return q2.st===0?'!':q2.st===1&&reqDone(q2)?'?':null; }; }
+    XROAD[id].forEach(to=>{ const a=XPOS[id], b=XPOS[to]; spot(m,xEdge(m,b[0]-a[0],b[1]-a[1]),{e:'🧭',road:to,label:t('x.roadTo',CH[to].name),act:t('x.roadGo',CH[to].name),on:()=>xGo(to,{road:id})}); });
+    spot(m,xFree(m,rs,{min:10,gap:3}),{e:'🕳️',cave:XCAVE[id],still:1,glow:false,label:t('x.cave'),act:t('x.caveGo'),on:()=>xGo(XCAVE[id])});
+    if(id===104) spot(m,xEdge(m,.25,1),{e:'⛵',big:1,still:1,label:t('x.ship'),act:t('x.shipGo'),on:()=>{ const go=()=>xGo(120,{home:1}); if(!XL.seen.sea){ XL.seen.sea=1; save(); return talk([1,2,3].map(i=>L(NARR(),t('sea.intro'+i))),go); } go(); }});
+    fragSpot(true); wildSpot();
+    const q=xReq(id); if(q.ty==='find'&&q.st===1){ const it=TVE[TVN[q.tv]]; for(let i=0;i<q.n;i++){ const p=xFree(m,xr('it',id,xday(),i),{min:6}); if(!p||q.got.includes(i)) continue; spot(m,p,{e:it,still:0,act:t('x.pick'),on:e=>{ q.got.push(i); M.ents=M.ents.filter(x=>x!==e); SFX.coin(); toast(t('found',it,q.got.length,q.n)); if(q.got.length>=q.n) toast(t('rq.back',guide?guide.name:'')); save(); updTrack(); }}); } }
+    if(id===101&&m.wx==='rain'&&XL.rain!==xday()) spot(m,xFree(m,rd,{min:8}),{e:'🌈',big:1,label:t('x.rainbow'),act:t('x.rainbowGo'),on:e=>{ XL.rain=xday(); M.ents=M.ents.filter(x=>x!==e); S.hp=maxHP(); xReward(40,20,null); talk([L(NARR(),t('x.rainbowT'))]); }});
+    m.xm={back:()=>{ flash(); XARR=null; enterMap('hub',HUBX.land); }, quest:()=>{ const q2=xReq(id); return `${WXE[m.wx]}${isNight()?'🌙':''} ${R.name} · ${q2.st===0?t('rq.q.new'):q2.st===2?t('rq.q.done'):reqText(q2)} · 📜 ${XL.frag.length}/12`; }};
+  }
+  else if(R.cave){ const from=XCAVEOF[id];
+    fragSpot(false,{min:10});
+    if(XL.chest[id]!==xday()) spot(m,xFree(m,rd,{min:8}),{e:'🧰',label:t('x.chest'),act:t('x.chestGo'),on:e=>{ XL.chest[id]=xday(); M.ents=M.ents.filter(x=>x!==e); const it=pick(['bread','fish','honey']); xReward(20+Math.round(S.level),15,it); }});
+    m.xm={exitL:t('x.leaveCave'),back:()=>xGo(from,{cave:id}), quest:()=>`🕯️ ${R.name} · 📜 ${XL.frag.length}/12`};
+  }
+  else if(R.isle){ const st=XL.isle[id]||(XL.isle[id]={st:0,got:[],c:0});
+    if(guide){ guide.role='isle'; guide.xon=isleTalk; guide.markF=()=>st.st===0?'!':(isleDone(id)&&st.st===1)?'?':null; }
+    wildSpot();
+    if(id===122||id===123){ const it=id===122?'🏺':'🪵'; const n=id===122?3:4; if(st.st===1) for(let i=0;i<n;i++){ if(st.got.includes(i)) continue; const p=xFree(m,mulberry32(R.seed+i*7),{min:6}); spot(m,p,{e:it,act:t('x.pick'),on:e=>{ st.got.push(i); M.ents=M.ents.filter(x=>x!==e); SFX.coin(); toast(t('found',it,st.got.length,n)); save(); updTrack(); }}); } }
+    m.xm={exitL:id===124?t('x.toHarbor'):t('x.toShip'),back:()=>xGo(120,{isle:id}), quest:()=>`${WXE[m.wx]} ${R.name} · ${isleQuest(id)}`};
+  }
+  else if(R.tower){ const front=m.bossPos||{x:m.W-6,y:6};
+    if(guide){ guide.role='tower'; guide.xon=(who)=>talk([L(who,t('tw.hi1')),L(who,t('tw.hi2'))],towerMenu); }
+    spot(m,{x:front.x,y:front.y},{e:'🪜',big:1,still:1,label:t('tw.stairs'),act:t('tw.climb'),on:towerMenu});
+    m.xm={back:()=>{ flash(); enterMap('hub',HUBX.tower); }, quest:()=>t('tw.quest',XL.tw.best||0)};
+    m.reach=[];
+  }
+  return m;
+}
+const lk=(o,x)=>Object.assign(o,x||{});
+
+/* ---- the Great Sea ---- */
+const ISLES={121:{c:[52,11],r:[6,3.4],dock:[46,12]},122:{c:[33,30],r:[9,3],dock:[33,26]},123:{c:[15,23],r:[3.2,2.6],dock:[19,23]},124:{coast:1,dock:[8,9]}};
+function xSea(id){ const R=CH[id], W=R.w, H=R.h, rnd=mulberry32(R.seed), tt=new Uint8Array(W*H).fill(T.W);
+  const inb=(x,y)=>x>=0&&y>=0&&x<W&&y<H, get=(x,y)=>inb(x,y)?tt[y*W+x]:T.B, set=(x,y,v)=>{ if(inb(x,y)) tt[y*W+x]=v; };
+  const m={id,W,H,t:tt,R,th:R.th,ents:[],foes:[],lms:[],items:[],get,set,sail:1,xland:1};
+  const land=(x,y)=>{ set(x,y,T.G); };
+  for(const k in ISLES){ const I=ISLES[k]; if(I.coast) continue; for(let y=0;y<H;y++) for(let x=0;x<W;x++){ const d=((x-I.c[0])/I.r[0])**2+((y-I.c[1])/I.r[1])**2; if(d<1+(hash(x+k,y)-.5)*.35) land(x,y); } }
+  for(let y=0;y<H;y++) for(let x=0;x<W;x++){ if(x<=6-Math.round(y*.25)+Math.round(Math.sin(y*.7))&&y<20) land(x,y); if(x>=W-3+Math.round(Math.sin(y*.5)*.6)) land(x,y); if(y===0||y===H-1||x===0) set(x,y,T.B); }
+  for(let i=0;i<W*H;i++){ if(tt[i]===T.G){ const x=i%W,y=(i/W)|0; let inner=true; for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]) if(get(x+dx,y+dy)===T.W) inner=false; if(inner){ const r=rnd(); if(r<.35) tt[i]=T.B; else if(r<.55) tt[i]=T.D; } } }
+  const XL=XS(); m.ext={hx:HUBX.land.x,hy:HUBX.land.y}; m.wx=xWeather(id);
+  const dock=(k,ax,ay,o)=>{ let best=null,bd=1e9; for(let y=1;y<H-1;y++) for(let x=1;x<W-1;x++){ if(get(x,y)!==T.W) continue; if(![[1,0],[-1,0],[0,1],[0,-1]].some(([dx,dy])=>get(x+dx,y+dy)===T.G||get(x+dx,y+dy)===T.D||get(x+dx,y+dy)===T.B)) continue; const d=Math.abs(x-ax)+Math.abs(y-ay); if(d<bd){ bd=d; best={x,y}; } } return spot(m,best,o); };
+  for(const k in ISLES){ const I=ISLES[k], st=XL.isle[k]; dock(+k,I.dock[0],I.dock[1],{e:'⚓',isle:+k,label:CH[k].name+(st&&st.st===2?' ✓':''),act:t('x.landAt',CH[k].name),on:()=>xGo(+k)}); }
+  const homeD=dock(0,W-4,22,{e:'🏠',home:1,label:CH[104].name,act:t('x.sailHome'),on:()=>xGo(104,{ship:1})});
+  m.spawn=homeD?{x:homeD.x-1,y:homeD.y}:{x:W-6,y:22}; if(get(m.spawn.x,m.spawn.y)!==T.W) m.spawn={x:W-7,y:22};
+  const seen=new Set([m.spawn.y*W+m.spawn.x]), q=[[m.spawn.x,m.spawn.y]]; while(q.length){ const [x,y]=q.shift(); for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const nx=x+dx,ny=y+dy,k=ny*W+nx; if(!seen.has(k)&&get(nx,ny)===T.W&&!entAt(m,nx,ny)){ seen.add(k); q.push([nx,ny]); } } }
+  m.reach=[...seen].filter(k=>Math.abs(k%W-m.spawn.x)+Math.abs(((k/W)|0)-m.spawn.y)>8);
+  const wk=xWild(id); if(wk){ const p=xFree(m,xr('dol',xday()),{min:12}); spot(m,p,{e:COMPS[wk].e,wild:wk,label:t('x.wild'),act:t('x.wildGo',COMPS[wk].name),gc:'rgba(180,255,200,.55)',on:wildTalk}); }
+  m.xm={back:()=>xGo(104,{ship:1}), quest:()=>`${WXE[m.wx]}${isNight()?'🌙':''} ${R.name} · ${t('sea.q',XISLE.filter(i=>XL.isle[i]&&XL.isle[i].st===2).length)}`};
+  return m; }
+
+/* ---- the islands: Paul's journeys (Acts 13 and 27–28) ---- */
+const isleDone=id=>{ const st=XS().isle[id]; if(!st) return false; return id===121?st.c>=4:id===122?st.got.length>=3:id===123?st.got.length>=4:false; };
+function isleQuest(id){ const st=XS().isle[id]||{st:0}; if(st.st===2) return t('is.done'); if(st.st===0) return t('is.q0',CH[id].guide.name);
+  return id===121?t('rq.q.hunt',st.c,4):id===122?t('rq.q.find','🏺',st.got.length,3):id===123?t('rq.q.find','🪵',st.got.length,4):t('rq.q.quiz'); }
+function isleTalk(who){ const id=M.id, st=XS().isle[id], ls=k=>[1,2,3].map(i=>STR.en['is.'+id+'.'+k+i]?L(who,t('is.'+id+'.'+k+i)):null).filter(Boolean);
+  const finish=()=>{ st.st=2; const n=FRAG[id]; xReward(60+S.level*2,50+S.level*3,null); talk(ls('b'),()=>{ if(n) xFrag(n); enterMap(id,{x:P.x,y:P.y}); }); };
+  if(st.st===2) return talk(ls('d'));
+  if(id===124){ return talk(st.st===0?ls('a'):[L(who,t('is.124.w1'))],()=>{ st.st=1; save(); xQuiz(4,3,(ok,ex)=>{ if(ex) return; if(ok) finish(); else talk([L(who,t('is.124.no'))]); }); }); }
+  if(st.st===0){ st.st=1; save(); return talk(ls('a'),()=>{ enterMap(id,{x:P.x,y:P.y}); updTrack(); }); }
+  if(isleDone(id)) return finish();
+  talk(ls('w')); }
+
+/* ---- the Tower of the Watchman (Habakkuk 2:1): endless floors, checkpoint every 10 ---- */
+function towerMenu(){ const XL=XS(), tw=XL.tw; const cps=[0]; for(let c=10;c<=tw.cp;c+=10) cps.push(c);
+  openModal(t('tw.title'),`<p class="verse">${esc(t('tw.verse'))}<cite>Habakkuk 2:1</cite></p><p>${esc(t('tw.how'))}</p><p><b>${esc(t('tw.best',tw.best||0))}</b></p>
+    <div class="cards">${cps.map(c=>`<button class="card" data-tw="${c+1}"><div class="emo">${c?'🚩':'🪜'}</div><b>${esc(t('tw.start',c+1))}</b>${c?`<small>${esc(t('tw.cp'))}</small>`:''}</button>`).join('')}</div>
+    ${S.cloud?`<p style="color:var(--muted);font-size:.85rem">${esc(t('tw.friends'))}</p>`:''}`,b=>b.querySelectorAll('[data-tw]').forEach(x=>x.onclick=()=>{ closeModal(); XT={floor:+x.dataset.tw,start:+x.dataset.tw}; S.hp=maxHP(); towerFloor(); })); }
+function towerFloor(){ if(!XT||mode!=='world') return; const n=XT.floor, w=ORDER[(n-1)%ORDER.length], boss=n%5===0; TIER_OVR=1.3+n*.42;
+  startBattle(null,boss,{ch:w}); if(!B){ TIER_OVR=null; return; }
+  B.ext={tower:1,keepMap:1,note:t('tw.cleared',n),after:towerAfter}; $('#bWho').textContent=t('tw.floor',n)+' · '+$('#bWho').textContent; }
+function towerAfter(how){ const XL=XS(), tw=XL.tw, n=XT&&XT.floor; if(!XT) return;
+  if(how==='win'){ if(n>tw.best){ tw.best=n; if(typeof ON!=='undefined'&&ON.onSave) save(); }
+    let extra=''; if(n%10===0&&n>tw.cp){ tw.cp=n; const c=50*n/10; S.coins+=c; const h=S.house; h.inv.trophy=(h.inv.trophy||0)+1; if(!h.got.includes('trophy')) h.got.push('trophy'); extra=t('tw.cpGot',n,c); SFX.trumpet(); }
+    let heal=''; if(n%5===0){ const h=Math.round(maxHP()*.4); S.hp=Math.min(maxHP(),S.hp+h); heal=t('tw.rest',h); }
+    save(); updHUD(); XT.floor=n+1;
+    openModal(t('tw.done',n),`<p>${esc(t('tw.hp',Math.ceil(S.hp),maxHP()))}</p>${heal?`<p>${esc(heal)}</p>`:''}${extra?`<p class="tag ok">${esc(extra)}</p>`:''}<p>${esc(t('tw.next',n+1))}${(n+1)%5===0?' '+esc(t('tw.bossNext')):''}</p>
+      <div class="row" style="gap:8px;flex-wrap:wrap"><button class="btn gold" id="twGo">${esc(t('tw.up'))}</button><button class="btn" id="twStop">${esc(t('tw.leave'))}</button></div>`,b=>{ b.querySelector('#twGo').onclick=()=>{ if(!modalOpen) return; closeModal(); towerFloor(); }; b.querySelector('#twStop').onclick=()=>{ XT=null; closeModal(); }; },()=>{ });
+    return; }
+  const best=tw.best; XT=null; if(how==='lose') openModal(t('tw.endT'),`<p>${esc(t('tw.end',n-1,best))}</p><p>${esc(t('tw.endP'))}</p>`); }
+
+/* ---- engine hooks ---- */
+{ const _bm=buildMap; buildMap=function(id){ if(CH[id]&&CH[id].sail) return xSea(id); const m=_bm(id); if(id==='hub') xHub(m); else if(isX(id)) xMap(m); return m; }; }
+{ const _em=enterMap; enterMap=function(id,spawn){
+    if(isX(id)){ if(!S.chs[id]) S.chs[id]={stage:4,kills:0,side:2,got:[]}; const R=CH[id]; const nt=!R.cave&&!R.tower&&isNight();
+      R.tier=Math.min(16,Math.max(5,2+S.level*.35))+(R.cave?1:0)+(nt?1:0); if(!R.cave) R.night=nt?1:0;
+      R.book=R.tower?'Habakkuk 2:1':R.isle||R.sail?CH[id].book0||(CH[id].book0=CH[id].book):t('x.sub',WXE[xWeather(id)]+(nt?' 🌙':'')); }
+    _em(id,spawn);
+    if(M.R.tower) M.foes=[];
+    if(M.sail){ const n={sun:6,wind:9,storm:13}[M.wx]||7; M.foes=M.foes.slice(0,n); }
+    if(XARR){ const a=XARR; XARR=null; let tg=null;
+      if(a.road) tg=M.ents.find(e=>e.road===a.road); else if(a.cave) tg=M.ents.find(e=>e.cave===a.cave); else if(a.isle) tg=M.ents.find(e=>e.isle===a.isle); else if(a.ship||a.home) tg=M.ents.find(e=>a.ship?e.e==='⛵':e.home);
+      const p=tg&&xNear(tg.x,tg.y); if(p) xPlace(p); }
+    M.nightNow=isNight(); updTrack(); }; }
+{ const _wk=walkable; walkable=function(x,y){ if(M&&M.sail){ const v=M.get(x,y); return (v===T.W||v===T.BR)&&!entAt(M,x,y); } return _wk(x,y); }; }
+{ const _ia=interact; interact=function(e){
+    if(M&&M.xm&&e.kind==='exit'){ ac(); P.path=[]; P.pend=null; M.xm.back(); return; }
+    if(e.kind==='npc'&&e.xon){ ac(); P.path=[]; P.pend=null; keys.up=keys.down=keys.left=keys.right=false; return e.xon(xWho(e),e); }
+    return _ia(e); }; }
+{ const _qt=questText; questText=function(){ if(M&&M.xm) return M.xm.quest(); if(M&&M.id==='hub'&&S.flags.met&&allDone()&&S.flags.ending) return t('x.hubQ'); return _qt(); }; }
+{ const _v=victory; victory=function(){ const ch=B&&B.ch, n=B?B.foes.length:0, ext=B&&B.ext; const r=_v();
+    if(!ext&&S&&isX(ch)){ if(XLAND.includes(ch)){ const q=xReq(ch); if(q.ty==='hunt'&&q.st===1&&q.c<q.n){ q.c=Math.min(q.n,q.c+n); if(q.c>=q.n) setTimeout(()=>toast(t('rq.back',t('tv.'+TVN[q.tv]))),900); } }
+      if(ch===121){ const st=XS().isle[121]; if(st&&st.st===1) st.c=Math.min(4,st.c+n); } save(); }
+    return r; }; }
+let wxShown='';
+{ const _up=update; update=function(dt){ _up(dt);
+    const want=mode==='world'&&M&&M.wx&&M.wx!=='sun'?M.wx:''; if(want!==wxShown){ wxShown=want; const el=$('#wx'); el.className=want; el.hidden=!want; }
+    if(mode!=='world'||!M||!M.xland) return;
+    const nt=isNight(); if(nt!==M.nightNow&&!M.R.cave&&!M.R.tower){ M.nightNow=nt; M.R.night=nt?1:0; toast(t(nt?'x.nightFalls':'x.morning')); M.ents.forEach(e=>{ if(e.night) e.hide=!nt; }); }
+    for(const e of M.ents){ if(e.secret){ const near=Math.abs(e.x-P.x)+Math.abs(e.y-P.y)<=3; if(e.hide===near){ e.hide=!near; if(near){ SFX.open(); toast(t('x.secret')); } } } } }; }
+xLoc();
 
 /* ===================== ONLINE: data layer =====================
    One small interface over Firebase (real) or a local test server (mock), so the
@@ -11393,7 +11847,7 @@ const ON=(()=>{
         m.querySelector('#pC').onclick=()=>{ sel=[]; draw(); }; if(backFn) m.querySelector('#pB').onclick=backFn; draw(); }); }
 
   /* ---------- player record ---------- */
-  function pub(st){ const wk=st.wk&&st.wk.w===week()?st.wk:{w:week(),p:0,r:0,v:0}; return {nm:st.cloud.nm||null,look:st.look,lvl:st.level,frags:frags(st),comp:st.comp||'',lang:st.lang||LANG,gr:st.grade||5,wk,on:NET.now,
+  function pub(st){ const wk=st.wk&&st.wk.w===week()?st.wk:{w:week(),p:0,r:0,v:0}; return {nm:st.cloud.nm||null,look:st.look,lvl:st.level,frags:frags(st),comp:st.comp||'',tw:(st.land&&st.land.tw&&st.land.tw.best)||0,lang:st.lang||LANG,gr:st.grade||5,wk,on:NET.now,
     house:((st.house&&st.house.items)||[]).slice(0,60)}; }
   async function uniqueCode(C){ const L='BCDFGHJKLMNPQRSTVWXZ'; for(let i=0;i<8;i++){ const c=Array.from({length:4},()=>L[rnd(0,L.length-1)]).join('')+'-'+rnd(1000,9999); if(!(await C.get('codes/'+c))) return c; } return 'X'+rid(8).toUpperCase(); }
   async function createPlayer(C,fam,st,nm){ const pid=rid(16), code=await uniqueCode(C), data=snapshot(st);
@@ -11690,7 +12144,9 @@ if(ON.avail) ON.social=(()=>{
   function boardRows(list){ const w=ON.week(); return list.map(p=>({p,wk:p.p&&p.p.wk&&p.p.wk.w===w?p.p.wk:{p:0,r:0,v:0}})).sort((a,b)=>b.wk.p-a.wk.p); }
   async function tabBoard(box){ box.innerHTML=`<p>${esc(t('on.loading'))}</p>`; const fr=cache||(cache=await loadFriends()); if(palsTab!=='b') return;
     const mine={id:me(),me:1,p:{nm:S.cloud.nm,wk:S.wk&&S.wk.w===ON.week()?S.wk:{p:0,r:0,v:0},look:S.look}}; const rows=boardRows([mine].concat(fr.filter(f=>f.s==='friends'&&f.p)));
-    box.innerHTML=`<p>${esc(t('on.boardP'))}</p><table class="board"><tr><th>#</th><th></th><th>⭐</th><th>✔</th><th>📜</th></tr>${rows.map((r,i)=>`<tr class="${r.p.me?'me':''}"><td>${i+1}</td><td>${ON.nmEmo(r.p.p.nm)} ${esc(ON.nmText(r.p.p.nm))}</td><td>${r.wk.p||0}</td><td>${r.wk.r||0}</td><td>${r.wk.v||0}</td></tr>`).join('')}</table><p style="color:var(--muted);font-size:.85rem">${esc(t('on.boardKey'))}</p>`; }
+    box.innerHTML=`<p>${esc(t('on.boardP'))}</p><table class="board"><tr><th>#</th><th></th><th>⭐</th><th>✔</th><th>📜</th></tr>${rows.map((r,i)=>`<tr class="${r.p.me?'me':''}"><td>${i+1}</td><td>${ON.nmEmo(r.p.p.nm)} ${esc(ON.nmText(r.p.p.nm))}</td><td>${r.wk.p||0}</td><td>${r.wk.r||0}</td><td>${r.wk.v||0}</td></tr>`).join('')}</table><p style="color:var(--muted);font-size:.85rem">${esc(t('on.boardKey'))}</p>`+towerBoard([mine].concat(fr.filter(f=>f.s==='friends'&&f.p))); }
+  function towerBoard(list){ const myTw=S.land&&S.land.tw&&S.land.tw.best||0; const rows=list.map(r=>({r,tw:r.me?myTw:(r.p.tw||0)})).filter(x=>x.tw>0).sort((a,b)=>b.tw-a.tw); if(!rows.length) return '';
+    return `<div class="sect">${esc(t('tw.board'))}</div><table class="board">${rows.map((x,i)=>`<tr class="${x.r.me?'me':''}"><td>${i+1}</td><td>${ON.nmEmo(x.r.p.nm)} ${esc(ON.nmText(x.r.p.nm))}</td><td>🪜 ${x.tw}</td></tr>`).join('')}</table>`; }
   /* ---------- groups ---------- */
   async function tabGroups(box){ box.innerHTML=`<p>${esc(t('on.loading'))}</p>`; const C=await ctx(); const gs=S.cloud.groups||[]; const out=[];
     for(const g of gs){ try{ const d=await C.get('groups/'+g); if(d) out.push({id:g,d}); }catch(e){} } if(palsTab!=='c') return;
