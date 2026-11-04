@@ -98,7 +98,7 @@
   "elder.intro": [
    "¡Ah, por fin un peregrino! Soy Simeón. He esperado muchos años para ver cumplirse las promesas de Dios.",
    "El Pergamino de Luz cuenta la gran historia del amor de Dios: desde la creación hasta la tumba vacía.",
-   "Pero la Sombra de la Duda lo rompió en veintiocho piezas y las escondió en las historias de la Biblia.",
+   "Pero la Sombra de la Duda lo rompió en treinta y cuatro piezas y las escondió en las historias de la Biblia.",
    "Estas Puertas del Recuerdo llevan a esas historias. Responde con sabiduría, sé valiente y trae las piezas a casa.",
    "La puerta 1, el Jardín del Edén, está abierta. Y mira: el corderito de Isaí ha decidido seguirte. ¡Que Dios te acompañe!"
   ],
@@ -680,7 +680,39 @@
   "cut.25": "¡La sabiduría viene de Dios!",
   "cut.26": "¡Este es mi Hijo amado!",
   "cut.27": "¡El mejor vino quedó para el final!",
-  "cut.28": "¡Jesús es la resurrección y la vida!"
+  "cut.28": "¡Jesús es la resurrección y la vida!",
+  "bm.excuse": "La niebla se esconde tras un escudo de excusas: «¿Quién soy yo?», «¿Y si no me creen?», «¡No sé hablar bien!». Tus golpes hacen la mitad de daño hasta que respondas bien 4 veces.",
+  "bm.excuse.m": "Rompe las excusas",
+  "bm.excuse.full": "«¡Yo estaré contigo!» ¡La promesa de Dios rompe el escudo de excusas!",
+  "bm.grumble": "El gigante refunfuña: «¡No podemos!». Cada respuesta correcta trae un regalo de la buena tierra: uvas, miel y leche. Cuando encuentres los 3, ¡tus ataques serán fuertes!",
+  "bm.grumble.m": "Regalos de la tierra",
+  "bm.grumble.one": "¡Encontraste un regalo de la tierra!",
+  "bm.grumble.full": "¡Una tierra donde fluyen leche y miel! «¡El SEÑOR está con nosotros!» ¡Ahora tus ataques son fuertes!",
+  "bm.chariot": "¡900 carros de hierro avanzan retumbando hacia ti! Cada 3 respuestas correctas cae un aguacero, y los carros se quedan atascados en el barro durante un turno.",
+  "bm.chariot.m": "Llama a la lluvia",
+  "bm.chariot.full": "¡Cae un aguacero y el río Cisón se desborda! ¡Los carros se quedan atascados en el barro!",
+  "bm.surround": "¡La sombra te rodea por todos lados! Cada 4 respuestas correctas, ¡los montes llenos de caballos y carros de fuego la atacan!",
+  "bm.surround.m": "Abre los ojos",
+  "bm.surround.full": "«¡SEÑOR, ábrele los ojos!» ¡Los montes llenos de carros de fuego atacan a la sombra!",
+  "bm.denlion": "Daniel oraba tres veces al día. Consigue una racha de 3 y luego usa Golpe de Fe o Explosión de Valor para un golpe poderoso.",
+  "bm.denlion.m": "Ora 3 veces",
+  "bm.denlion.full": "«¡Mi Dios envió a su ángel!» ¡La boca del león queda cerrada!",
+  "bm.worry": "¡La Hierba de la Preocupación vuelve a crecer una y otra vez! Responde bien 3 veces para «mirar los lirios» y detenerla.",
+  "bm.worry.m": "Mira los lirios",
+  "bm.worry.full": "«¡No se preocupen por el mañana!» Los lirios florecen y la preocupación deja de crecer.",
+  "bm.worry.regen": "La Hierba de la Preocupación vuelve a crecer: «¿Y si…?»",
+  "furn.burningbush": "La zarza ardiente",
+  "furn.grapecluster": "Racimo gigante de Escol",
+  "furn.deborahpalm": "La palmera de Débora",
+  "furn.firechariot": "Pequeño carro de fuego",
+  "furn.prayerwindow": "La ventana de Daniel hacia Jerusalén",
+  "furn.lilyvase": "Jarrón con lirios del campo",
+  "cut.29": "¡Yo estaré contigo!",
+  "cut.30": "El SEÑOR está con nosotros. ¡No tengan miedo!",
+  "cut.31": "¡El SEÑOR va delante de ti!",
+  "cut.32": "¡Son más los que están con nosotros!",
+  "cut.33": "¡Dios cerró la boca de los leones!",
+  "cut.34": "Miren los lirios. ¡No se preocupen!"
  },
  "MG": {
   "_": {
@@ -746,7 +778,7 @@
  },
  "STORY": [
   "Hace mucho tiempo, el gran Pergamino de Luz contaba toda la historia del amor de Dios: desde el primer amanecer hasta la mañana más brillante de todas.",
-  "Pero la Sombra de la Duda se coló a escondidas. Rompió el Pergamino en veintiocho piezas y las escondió a lo largo de los tiempos de la Biblia.",
+  "Pero la Sombra de la Duda se coló a escondidas. Rompió el Pergamino en treinta y cuatro piezas y las escondió a lo largo de los tiempos de la Biblia.",
   "Sin el Pergamino, las Sombritas se extendieron por todas partes: susurros de mentiras, preocupación, orgullo y miedo.",
   "Ahora se necesita un joven peregrino. Alguien valiente. Alguien curioso. Alguien como tú."
  ],

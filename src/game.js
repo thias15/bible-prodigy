@@ -345,7 +345,7 @@ function drawFoe(c,cx,cy,r,col,t,shape){
   if(shape==='eye'){ c.fillStyle=gloomGrad(c,cx,y,r,col); c.beginPath(); c.arc(cx,y,r,0,Math.PI*2); c.fill(); c.fillStyle=shade(col,-.3); for(let i=0;i<3;i++) ell(c,cx+(i-1)*r*.6,y+r*.95+Math.sin(t*5+i)*r*.05,r*.16,r*.28,0,c.fillStyle); gloomEyes(c,cx,y,r,t,1); return; }
   gloomBody(c,cx,y,r,col,t); gloomEyes(c,cx,y,r,t);
 }
-const BOSS_LOOK={restless:'night',sleepy:'doubt',riddle:'scroll',tempter:'serpent',empty:'famine',grief:'night'};
+const BOSS_LOOK={excuse:'mute',grumble:'giant',chariot:'storm',surround:'horde',denlion:'jealous',worry:'whirl',forgot:'scroll',hurry:'whirl',sadroad:'night',puzzled:'doubt',hardheart:'pride',lastshadow:'night',restless:'night',sleepy:'doubt',riddle:'scroll',tempter:'serpent',empty:'famine',grief:'night'};
 function drawBoss(c,cx,cy,r,b,t,extra){
   const k=BOSS_LOOK[b.kind]||b.kind, col=b.c; const bob=Math.sin(t*2)*r*.05; cy+=bob;
   ell(c,cx,cy+r*1.2-bob,r*.9,r*.2,0,'rgba(0,0,0,.28)');
@@ -1060,7 +1060,8 @@ function completeChapter(id){
   if(Date.now()-(S.lastBackup||0)>3*86400000) setTimeout(()=>toast(t('toast.backup')),2600);
   save(); updHUD();
 }
-const TREASURE={23:'stonepillar',24:'templelamp',25:'goldenlamp',26:'rivershell',27:'stonejar',28:'perfumejar',19:'gideonjar',20:'honeycomb',21:'trowel',22:'lostcoin',1:'lifesap',2:'ark',11:'starglobe',12:'coat',3:'mosesbasket',4:'tablets',5:'shofar',13:'sheaf',6:'harp',14:'oiljar',15:'fishstatue',7:'lionstatue',16:'scepter',8:'manger',9:'net',10:'palms',17:'flamelamp',18:'anchor'};
+const TREASURE={29:'burningbush',30:'grapecluster',31:'deborahpalm',32:'firechariot',33:'prayerwindow',34:'lilyvase',35:'lawscroll',36:'teacherscroll',37:'emmausbread',38:'isaiahscroll',39:'ananiaslamp',40:'treeoflife',23:'stonepillar',24:'templelamp',25:'goldenlamp',26:'rivershell',27:'stonejar',28:'perfumejar',19:'gideonjar',20:'honeycomb',21:'trowel',22:'lostcoin',1:'lifesap',2:'ark',11:'starglobe',12:'coat',3:'mosesbasket',4:'tablets',5:'shofar',13:'sheaf',6:'harp',14:'oiljar',15:'fishstatue',7:'lionstatue',16:'scepter',8:'manger',9:'net',10:'palms',17:'flamelamp',18:'anchor'};
+for(const k in TREASURE) if(!CH[k]) delete TREASURE[k];
 function grantTreasure(id){ const k=TREASURE[id]; if(!k) return null; const h=S.house||(S.house={items:[],inv:{},got:[]}); if(!h.got) h.got=[]; if(h.got.includes(k)) return null; h.got.push(k); h.inv=h.inv||{}; h.inv[k]=(h.inv[k]||0)+1; return k; }
 function ending(who){
   talk(t('ending').map(x=>L(who,x)),()=>{
@@ -1307,7 +1308,7 @@ function speakQ(q){ const num=(q.cat==='math'||q.cat==='logic')&&!q.map&&q.type!
 let B=null;
 const BM={serpent:{type:'truth'},mocker:{type:'blast',n:4,icon:'🪵'},heart:{type:'armor',n:5,icon:'🐸'},calf:{type:'regen',n:3,icon:'🔨'},walls:{type:'marches'},giant:{type:'streak',n:3,icon:'🪨'},
   idol:{type:'furnace',n:3,icon:'🔥'},night:{type:'blast',n:3,icon:'⭐'},storm:{type:'stun',n:3,icon:'🌊'},doubt:{type:'cats',n:3,icon:'👁️'},tower:{type:'grow',n:4,icon:'🧱'},jealous:{type:'pit',n:2,icon:'🪢'},
-  famine:{type:'glean',n:4,icon:'🌾'},horde:{type:'blast',n:3,icon:'🏺'},restless:{type:'blast',n:4,icon:'🪜'},sleepy:{type:'regen',n:3,icon:'🪔'},riddle:{type:'cats',n:3,icon:'🧠'},tempter:{type:'truth'},empty:{type:'found',n:6,icons:['🏺','🏺','🏺','🏺','🏺','🏺']},grief:{type:'blast',n:3,icon:'🪨'},pride:{type:'armor',n:4,icon:'🙏'},rubble:{type:'stun',n:3,icon:'🧱'},lost:{type:'found',n:3,icons:['🐑','🪙','👦']},altar:{type:'blast',n:3,icon:'🔥'},whirl:{type:'dodge',n:2,icon:'🧭'},scroll:{type:'king',n:3,icon:'👑'},mute:{type:'mute',n:2,icon:'🗣️'},chains:{type:'chains',n:1,icon:'🎶'}};
+  famine:{type:'glean',n:4,icon:'🌾'},horde:{type:'blast',n:3,icon:'🏺'},restless:{type:'blast',n:4,icon:'🪜'},sleepy:{type:'regen',n:3,icon:'🪔'},riddle:{type:'cats',n:3,icon:'🧠'},tempter:{type:'truth'},empty:{type:'found',n:6,icons:['🏺','🏺','🏺','🏺','🏺','🏺']},grief:{type:'blast',n:3,icon:'🪨'},excuse:{type:'armor',n:4,icon:'🔥'},grumble:{type:'found',n:3,icons:['🍇','🍯','🥛']},chariot:{type:'stun',n:3,icon:'🌧️'},surround:{type:'blast',n:4,icon:'🔥'},denlion:{type:'streak',n:3,icon:'🙏'},worry:{type:'regen',n:3,icon:'🌸'},forgot:{type:'found',n:3,icons:['📜','📜','📜']},hurry:{type:'cats',n:3,icon:'📖'},sadroad:{type:'regen',n:3,icon:'🍞'},puzzled:{type:'truth'},hardheart:{type:'blast',n:3,icon:'💡'},lastshadow:{type:'king',n:3,icon:'👑'},pride:{type:'armor',n:4,icon:'🙏'},rubble:{type:'stun',n:3,icon:'🧱'},lost:{type:'found',n:3,icons:['🐑','🪙','👦']},altar:{type:'blast',n:3,icon:'🔥'},whirl:{type:'dodge',n:2,icon:'🧭'},scroll:{type:'king',n:3,icon:'👑'},mute:{type:'mute',n:2,icon:'🗣️'},chains:{type:'chains',n:1,icon:'🎶'}};
 const compTier=cs=>cs?(cs.lvl>=8?2:cs.lvl>=4?1:0):0;
 const compStars=cs=>'★'.repeat(compTier(cs));
 const partySlots=()=>S?1+(S.level>=10?1:0)+(S.level>=20?1:0):1;
@@ -1415,7 +1416,7 @@ function mechDmg(f,dmg,q){ const m=f.mech; if(!m) return dmg; const st=f.m;
   if(m.type==='armor') return st.v>=m.n?Math.round(dmg*1.3):Math.round(dmg*.5);
   if(m.type==='cats') return st.cats.length>=m.n?Math.round(dmg*1.5):Math.round(dmg*.55);
   if(m.type==='found') return st.v>=m.n?Math.round(dmg*1.5):Math.round(dmg*.6);
-  if(m.type==='king'&&st.crown){ st.crown=0; floatText(f.el,t('bm.scroll.full'),'info'); return dmg*2; }
+  if(m.type==='king'&&st.crown){ st.crown=0; floatText(f.el,t(STR.en['bm.'+f.boss.kind+'.full']?'bm.'+f.boss.kind+'.full':'bm.scroll.full'),'info'); return dmg*2; }
   if(m.type==='grow'&&st.lvl>0){ st.lvl--; }
   return dmg; }
 async function hitFoe(f,dmg,q){ if(f.hp<=0) return; if(f.marches!==null&&f.marches!==undefined){ f.marches++; dmg=Math.ceil(f.max/f.boss.marches); SFX.trumpet(); floatText(f.el,t('b.lap',f.marches,f.boss.marches),'info'); }
@@ -1427,7 +1428,7 @@ async function foeHit(f,mult){ const pl_=$('#bPlayer'); anim(f.el,'lunge-l'); aw
 async function mechAnswer(ok,q,sp){ const bf=B.foes.find(f=>f.boss&&f.hp>0); if(!bf) return; const m=bf.mech, st=bf.m; if(!m||m.type==='none'||m.type==='marches') return;
   const full=()=>st.v>=(m.n||1);
   if(m.type==='cats'){ if(ok&&!st.cats.includes(q.cat)){ st.cats.push(q.cat); if(st.cats.length===m.n){ toast(t(STR.en['bm.'+bf.boss.kind+'.full']?'bm.'+bf.boss.kind+'.full':'bm.doubt.full')); SFX.lvl(); } } updBattle(); return; }
-  if(m.type==='streak'){ if(ok&&B.streak>=m.n&&(sp==='faith'||sp==='courage')){ floatText(bf.el,t('bm.giant.full'),'info'); st.crit=1; } return; }
+  if(m.type==='streak'){ if(ok&&B.streak>=m.n&&(sp==='faith'||sp==='courage')){ floatText(bf.el,t(STR.en['bm.'+bf.boss.kind+'.full']?'bm.'+bf.boss.kind+'.full':'bm.giant.full'),'info'); st.crit=1; } return; }
   if(m.type==='chains'){ if(ok&&sp==='pray'&&st.v<1){ st.v=1; toast(t('bm.chains.full')); SFX.trumpet(); const h=Math.round(maxHP()*.15); S.hp=Math.min(maxHP(),S.hp+h); updBattle(); } return; }
   if(m.type==='grow') return;
   if(!ok){ if(m.type==='dodge'||m.type==='mute') st.v=0; updBattle(); return; }
@@ -1445,7 +1446,7 @@ async function mechTurn(){ const bf=B.foes.find(f=>f.boss&&f.hp>0); if(!bf) retu
   if(m.type==='regen'&&st.v<m.n){ const h=Math.round(bf.max*.06); bf.hp=Math.min(bf.max,bf.hp+h); floatText(bf.el,'+'+h+' ✨','heal'); msg(t(STR.en['bm.'+bf.boss.kind+'.regen']?'bm.'+bf.boss.kind+'.regen':'bm.calf.regen')); updBattle(); await sleep(450); }
   if(m.type==='furnace'&&st.v<m.n&&!(B.shield>0)){ const d=Math.max(1,Math.round(maxHP()*.05)); S.hp=Math.max(1,S.hp-d); floatText($('#bPlayer'),'−'+d+' 🔥','hurt'); updBattle(); await sleep(400); }
   if(m.type==='grow'){ st.lvl=Math.min(5,st.lvl+1); updBattle(); }
-  if(m.type==='king'){ st.k=(st.k||0)+1; if(st.k%m.n===0){ st.crown=1; toast(t('bm.scroll.chance')); } }
+  if(m.type==='king'){ st.k=(st.k||0)+1; if(st.k%m.n===0){ st.crown=1; toast(t(STR.en['bm.'+bf.boss.kind+'.chance']?'bm.'+bf.boss.kind+'.chance':'bm.scroll.chance')); } }
   if(m.type==='mute'){ const opts=SPELLS.filter(sp=>S.level>=sp.lv&&sp.id!=='faith'); st.muted=opts.length?pick(opts).id:null; }
 }
 async function battleLoop(){
@@ -1462,7 +1463,7 @@ async function battleLoop(){
       if(ok){ B.streak++; const quick=S.style==='explorer'&&q.ms<7000; let mult=(B.streak>=3?1.5:1)*(.9+Math.random()*.2)*(quick?1.2:1); const alive=B.foes.filter(f=>f.hp>0);
         if(quick) floatText(pl_,t('b.quick'),'info');
         if(B.streak===3) toast(t('b.streakToast'));
-        if(bf&&bf.mech.type==='streak'&&B.streak>=bf.mech.n&&(sp.id==='faith'||sp.id==='courage')){ mult*=2.2; floatText(bf.el,t('bm.giant.full'),'info'); }
+        if(bf&&bf.mech.type==='streak'&&B.streak>=bf.mech.n&&(sp.id==='faith'||sp.id==='courage')){ mult*=2.2; floatText(bf.el,t(STR.en['bm.'+bf.boss.kind+'.full']?'bm.'+bf.boss.kind+'.full':'bm.giant.full'),'info'); }
         if(sp.id==='faith'||sp.id==='courage'){ const f=B.foes[B.target].hp>0?B.foes[B.target]:alive[0]; anim(pl_,'lunge-r'); await bolt(pl_,f.el); await hitFoe(f,Math.round(atkP()*(sp.id==='courage'?1.7:1)*mult),q); msg(t('b.hits',sp.name)); }
         else if(sp.id==='wisdom'){ anim(pl_,'lunge-r'); for(const f of alive){ bolt(pl_,f.el,'#9fd0ff'); } await sleep(420); for(const f of alive) await hitFoe(f,Math.round(atkP()*.85*mult),q); msg(t('b.wave')); }
         else if(sp.id==='pray'){ const h=Math.min(maxHP()-S.hp,Math.round(maxHP()*.35*(B.streak>=3?1.3:1))); S.hp+=h; SFX.heal(); floatText(pl_,'+'+h,'heal'); msg(t('b.prayer')); updBattle(); await sleep(500); }

@@ -16,7 +16,7 @@ const XUNLOCK=[[103,5],[102,24],[105,15],[104,21],[101,9]];   // [region, world 
 const regionOpen=id=>{ const u=XUNLOCK.find(x=>x[0]===id); return !u||DONE(u[1]); };
 const landOpen=()=>XUNLOCK.some(u=>DONE(u[1])), towerOpen=()=>DONE(5), townOpen=()=>DONE(24), seaOpen=()=>DONE(18);
 const unlockBy=id=>{ const u=XUNLOCK.find(x=>x[0]===id); return u?CH[u[1]].name:''; };
-for(const [a,b] of [[23,'c11'],[24,'c13'],[25,'c16'],[26,'c9'],[27,'c22'],[28,'c10']]) if(!TRACKS['c'+a]&&TRACKS[b]) TRACKS['c'+a]=TRACKS[b];
+for(const [a,b] of [[23,'c11'],[24,'c13'],[25,'c16'],[26,'c9'],[27,'c22'],[28,'c10'],[29,'c4'],[30,'c4'],[31,'c19'],[32,'c14'],[33,'c7'],[34,'c9'],[35,'c16'],[36,'c8'],[37,'c10'],[38,'c17'],[39,'c17'],[40,'c18']]) if(!TRACKS['c'+a]&&TRACKS[b]) TRACKS['c'+a]=TRACKS[b];
 const isNight=()=>Math.floor(Date.now()/60000)%12>=8;
 const WXS={101:['sun','sun','rain','mist'],102:['sun','sun','rain'],103:['sun','sun','wind'],104:['sun','wind','rain','mist'],105:['sun','sun','rain'],120:['sun','wind','storm'],121:['sun','sun','rain'],122:['sun','wind','sun'],123:['sun','storm','rain'],124:['sun','sun','rain']};
 const WXE={sun:'☀️',rain:'🌧️',mist:'🌫️',wind:'💨',storm:'⛈️'};
@@ -96,7 +96,7 @@ function xHub(m){ const W=m.W, tx=W-14;
 }
 const L_=(who,txt)=>L({name:who.name,look:who.look},txt);
 /* era signposts under the row of gates */
-const ERAS=[['era.0',1],['era.1',11],['era.2',3],['era.3',19],['era.4',6],['era.5',7],['era.6',8],['era.7',17]];
+const ERAS=[['era.0',1],['era.1',11],['era.2',CH[29]?29:3],['era.3',CH[31]?31:19],['era.4',6],['era.5',7],['era.6',8],['era.7',17]];
 function eraOf(id){ let e=0; const p=ORDER.indexOf(+id); ERAS.forEach((x,i)=>{ if(ORDER.indexOf(x[1])<=p&&ORDER.indexOf(x[1])>=0) e=i; }); return e; }
 { const _xh0=xHub; xHub=function(m){ _xh0(m); ERAS.forEach(([k,first],i)=>{ const p=ORDER.indexOf(first); if(p<0) return; const x=2+p*3; if(m.get(x,20)===T.B) m.set(x,20,T.G);
     spot(m,{x,y:20},{e:'🪧',still:1,glow:false,label:t(k),act:t('era.see',t(k)),on:()=>{ const ws=ORDER.filter(id=>eraOf(id)===i);

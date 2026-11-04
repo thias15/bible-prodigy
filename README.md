@@ -1,21 +1,21 @@
 # Scrolls of Light
 
 A browser game for kids ages 8–15, inspired by Prodigy, set in the stories of the Bible.
-Explore 28 Bible worlds, meet the people of the story, and battle Gloomlings (little shadows
+Explore 34 Bible worlds, meet the people of the story, and battle Gloomlings (little shadows
 of lies, worry, pride and fear) by answering questions. Every right answer powers your attack.
 
 **Play:** once GitHub Pages is on, the game lives at `https://thias15.github.io/bible-prodigy/`.
 
 ## What's in the game
 
-- **28 Bible worlds plus a hub town**, in Bible order and grouped into eras (Beginnings, Patriarchs,
+- **34 Bible worlds plus a hub town**, in Bible order and grouped into eras (Beginnings, Patriarchs,
   Exodus, Judges, Kings, Exile and Return, Jesus, the Early Church): Garden of Eden, Mountains of Ararat,
-  Plains of Canaan (Abraham), Bethel (Jacob's ladder), Joseph's Journey, Land of Egypt, Wilderness of Sinai, Jericho,
-  Oak of Ophrah (Gideon), Hills of Zorah (Samson), Fields of Ruth, Shiloh (Samuel), Valley of Elah, Solomon's Temple,
-  Mount Carmel (Elijah), Road to Nineveh (Jonah), Babylon, Palace of Susa (Esther),
+  Plains of Canaan (Abraham), Bethel (Jacob's ladder), Joseph's Journey, Mount Horeb (the burning bush), Land of Egypt, Wilderness of Sinai,
+  Kadesh (the twelve spies), Jericho, Mount Tabor (Deborah), Oak of Ophrah (Gideon), Hills of Zorah (Samson), Fields of Ruth, Shiloh (Samuel), Valley of Elah, Solomon's Temple,
+  Mount Carmel (Elijah), Dothan (Elisha), Road to Nineveh (Jonah), Babylon, the Lions' Den, Palace of Susa (Esther),
   Walls of Jerusalem (Nehemiah), Bethlehem (at night), River Jordan (baptism and temptation), Cana,
-  Sea of Galilee, Road of Parables, Bethany (Lazarus), Jerusalem, Pentecost and Paul's Voyage — connected by the Gates of Remembrance in Pilgrim's Rest.
-- **A story to finish.** The Shadow of Doubt tore the Scroll of Light into twenty-eight pieces.
+  Sea of Galilee, Mount of Beatitudes, Road of Parables, Bethany (Lazarus), Jerusalem, Pentecost and Paul's Voyage — connected by the Gates of Remembrance in Pilgrim's Rest.
+- **A story to finish.** The Shadow of Doubt tore the Scroll of Light into thirty-four pieces.
   Each world has a guide (Eve, Noah, Abraham, Joseph, Moses, Gideon, Ruth, David, Elijah,
   Jonah, Esther, Nehemiah, Peter, Paul...), a main quest, a boss, a helper quest and a memory verse.
   Every guide asks you a story choice ("Stay with Naomi or go home?") and tells you what
@@ -163,6 +163,7 @@ No build step, server or accounts needed. On GitHub Pages the game can be instal
 | `src/ext_str.js` | The Land, sea, islands, Tower, wild animals and team text (other languages in `src/lang/<l>/X.json`) |
 | `src/endgame.js` | The Land, the Great Sea, the islands and the Tower (inserted into `game.js` at `/*__EXT__*/`) |
 | `src/worlds4.js` | Worlds 23–28 (Bethel, Shiloh, Solomon's Temple, River Jordan, Cana, Bethany) in English and German |
+| `src/worlds5.js` | Worlds 29–34 (Mount Horeb, Kadesh, Mount Tabor, Dothan, the Lions' Den, Mount of Beatitudes) in English and German |
 | `src/town.js` | The New Quarter town (inserted right after `endgame.js`) |
 | `src/fb/` | Firebase config, security rules (`firestore.rules`) and the bundled SDK (`fb.js`, rebuilt with `npx esbuild entry.js --bundle --minify --format=iife --outfile=fb.js`) |
 | `src/admin.template.html`, `src/privacy.html` | Owner dashboard and privacy page |

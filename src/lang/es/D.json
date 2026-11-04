@@ -594,6 +594,72 @@
      "Lázaro sale de la tumba"
     ],
     "Juan 11:1-44"
+   ],
+   [
+    29,
+    "Ordena el día de Moisés en Horeb:",
+    [
+     "Moisés lleva el rebaño a Horeb",
+     "Ve una zarza que arde pero no se quema",
+     "Dios dice: «Quítate las sandalias»",
+     "Dios envía a Moisés al faraón"
+    ],
+    "Éxodo 3:1-10"
+   ],
+   [
+    30,
+    "Ordena la historia de los espías:",
+    [
+     "Moisés envía a doce espías",
+     "Exploran la tierra durante 40 días",
+     "Traen un racimo de uvas enorme",
+     "Diez espías dicen: «¡No podemos!»"
+    ],
+    "Números 13"
+   ],
+   [
+    31,
+    "Ordena la historia de Débora:",
+    [
+     "Débora juzga a Israel bajo una palmera",
+     "Llama a Barac",
+     "Barac reúne a 10 000 hombres en el monte Tabor",
+     "El río Cisón arrastra los carros"
+    ],
+    "Jueces 4-5"
+   ],
+   [
+    32,
+    "Ordena la historia de Dotán:",
+    [
+     "Un ejército rodea Dotán de noche",
+     "El siervo tiene miedo",
+     "Eliseo ora: «Ábrele los ojos»",
+     "El siervo ve carros de fuego"
+    ],
+    "2 Reyes 6:14-17"
+   ],
+   [
+    33,
+    "Ordena la historia de Daniel:",
+    [
+     "El rey firma una nueva ley",
+     "Daniel sigue orando en su ventana",
+     "Echan a Daniel a los leones",
+     "Por la mañana, el rey encuentra a Daniel sano y salvo"
+    ],
+    "Daniel 6"
+   ],
+   [
+    34,
+    "Ordena la historia del constructor sabio:",
+    [
+     "Escucha las palabras de Jesús",
+     "Construye su casa sobre la roca",
+     "La lluvia y el viento golpean la casa",
+     "La casa sigue firme"
+    ],
+    "Mateo 7:24-25"
    ]
   ],
   "who": [
@@ -1201,6 +1267,72 @@
      "Juana"
     ],
     "Juan 11:27"
+   ],
+   [
+    29,
+    "¿Quién soy yo para ir ante el faraón?",
+    "Moisés",
+    [
+     "Aarón",
+     "Jetro",
+     "José"
+    ],
+    "Éxodo 3:11"
+   ],
+   [
+    30,
+    "¡Subamos ya y conquistemos la tierra, porque podemos hacerlo!",
+    "Caleb",
+    [
+     "Moisés",
+     "Aarón",
+     "Coré"
+    ],
+    "Números 13:30"
+   ],
+   [
+    31,
+    "Si tú vienes conmigo, iré. Pero si no vienes conmigo, no iré.",
+    "Barac",
+    [
+     "Gedeón",
+     "Sísara",
+     "Sansón"
+    ],
+    "Jueces 4:8"
+   ],
+   [
+    32,
+    "No tengas miedo, porque son más los que están con nosotros que los que están con ellos.",
+    "Eliseo",
+    [
+     "Elías",
+     "Naamán",
+     "Jonás"
+    ],
+    "2 Reyes 6:16"
+   ],
+   [
+    33,
+    "¡Que tu Dios, a quien sirves siempre, te salve!",
+    "El rey Darío",
+    [
+     "Nabucodonosor",
+     "Belsasar",
+     "Ciro"
+    ],
+    "Daniel 6:16"
+   ],
+   [
+    34,
+    "Miren las aves del cielo: no siembran ni cosechan, y aun así su Padre del cielo les da de comer.",
+    "Jesús",
+    [
+     "Pedro",
+     "Juan el Bautista",
+     "Salomón"
+    ],
+    "Mateo 6:26"
    ]
   ],
   "where": [
@@ -2228,6 +2360,102 @@
     ]
    ],
    "ref": "Juan 11:21-44"
+  },
+  "29": {
+   "prompt": "Dios te pide que hagas algo difícil, y te sientes demasiado pequeño para eso. ¿Qué le dices?",
+   "options": [
+    "Aquí estoy. Confío en ti",
+    "Por favor, envía a otro"
+   ],
+   "replies": [
+    [
+     "¡Así se le responde a Dios! Él le dijo a Moisés: «Yo estaré contigo», y también estará contigo."
+    ],
+    [
+     "¡Eso mismo dijo Moisés! Pero Dios tuvo paciencia. Le dio a su hermano Aarón para ayudarlo, y Moisés fue. Dios nos ayuda cuando nos sentimos pequeños."
+    ]
+   ],
+   "ref": "Éxodo 3:11-4:15"
+  },
+  "30": {
+   "prompt": "Todos a tu alrededor dicen: «¡Es demasiado difícil! ¡No podemos!». ¿Qué haces?",
+   "options": [
+    "Recordar que Dios está con nosotros",
+    "Quejarme yo también"
+   ],
+   "replies": [
+    [
+     "¡Igual que Josué y Caleb! Ellos dijeron: «El SEÑOR está con nosotros. ¡No tengan miedo!»."
+    ],
+    [
+     "Es fácil quejarse cuando todos los demás lo hacen. Pero Josué y Caleb recordaron lo grande que es Dios, y Dios los bendijo por eso."
+    ]
+   ],
+   "ref": "Números 14:6-9"
+  },
+  "31": {
+   "prompt": "Dios dice: «¡Adelante! Yo voy delante de ti». ¡Pero el enemigo tiene carros de hierro! ¿Qué haces?",
+   "options": [
+    "Ir, porque Dios va primero",
+    "Quedarme en casa, donde es seguro"
+   ],
+   "replies": [
+    [
+     "¡Eso hizo Barac! Bajó corriendo del monte Tabor, y Dios envió la lluvia que detuvo los carros."
+    ],
+    [
+     "Barac también tenía miedo y le pidió a Débora que lo acompañara. ¡Pero fue! Y Dios le dio la victoria a Israel."
+    ]
+   ],
+   "ref": "Jueces 4:14-15"
+  },
+  "32": {
+   "prompt": "Te despiertas y ves problemas por todas partes. No ves ninguna salida. ¿Qué haces?",
+   "options": [
+    "Orar: Señor, abre mis ojos",
+    "Asustarme y huir"
+   ],
+   "replies": [
+    [
+     "¡Eso hizo Eliseo! Dios le abrió los ojos al siervo, y los montes estaban llenos de carros de fuego."
+    ],
+    [
+     "El siervo de Eliseo también se asustó: «¡Ay, no! ¿Qué vamos a hacer?». Pero Eliseo oró, y Dios le mostró su gran ayuda por todos lados."
+    ]
+   ],
+   "ref": "2 Reyes 6:15-17"
+  },
+  "33": {
+   "prompt": "Algunas personas dicen que orar es una tontería y que deberías dejar de hacerlo. ¿Qué haces?",
+   "options": [
+    "Seguir orando, como siempre",
+    "Dejar de orar para que nadie me vea"
+   ],
+   "replies": [
+    [
+     "¡Eso hizo Daniel! Siguió orando tres veces al día, y Dios cerró la boca de los leones."
+    ],
+    [
+     "Es difícil cuando otros se burlan de nosotros. Pero Daniel siguió hablando con Dios, igual que antes, y Dios lo cuidó."
+    ]
+   ],
+   "ref": "Daniel 6:10-22"
+  },
+  "34": {
+   "prompt": "Estás preocupado por mañana: un examen, un lugar nuevo, muchos «¿y si…?». ¿Qué haces?",
+   "options": [
+    "Contárselo a Dios y confiar en él",
+    "Seguir preocupándome toda la noche"
+   ],
+   "replies": [
+    [
+     "¡Buena elección! Jesús dijo que tu Padre del cielo sabe lo que necesitas. ¡Él alimenta a las aves y viste a los lirios!"
+    ],
+    [
+     "Todos nos preocupamos a veces. Jesús dijo: «Miren las aves y los lirios. Su Padre los cuida, ¡y ustedes valen mucho más!»."
+    ]
+   ],
+   "ref": "Mateo 6:25-34"
   }
  },
  "PLACES": {

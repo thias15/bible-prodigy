@@ -595,6 +595,54 @@
   "en": "Quick and brave, from a fig tree in Bethany. Jumps in to help every turn.",
   "de": "Flink und mutig, aus einem Feigenbaum in Betanien. Springt jede Runde zu Hilfe."
  },
+ "COMPS.sandal.name": {
+  "en": "Holy Ground Sandals",
+  "de": "Sandalen vom heiligen Boden"
+ },
+ "COMPS.sandal.desc": {
+  "en": "\"Take off your sandals, for the place where you are standing is holy ground\" (Exodus 3:5). They soften the next hit.",
+  "de": "„Zieh deine Schuhe aus, denn der Ort, auf dem du stehst, ist heiliger Boden“ (nach 2. Mose 3,5). Sie mildern den nächsten Treffer."
+ },
+ "COMPS.snail.name": {
+  "en": "Vineyard Snail",
+  "de": "Weinbergschnecke"
+ },
+ "COMPS.snail.desc": {
+  "en": "Rode back from the Valley of Eshcol on a giant bunch of grapes (Numbers 13:23). Slowly but surely, it gathers extra shekels after each win.",
+  "de": "Ist aus dem Tal Eschkol auf einer riesigen Weintraube mitgereist (nach 4. Mose 13,23). Langsam, aber sicher sammelt sie nach jedem Sieg Extra-Schekel."
+ },
+ "COMPS.ladybug.name": {
+  "en": "Palm Ladybug",
+  "de": "Palmen-Marienkäfer"
+ },
+ "COMPS.ladybug.desc": {
+  "en": "Lives in Deborah's palm tree (Judges 4:5). Flies over the battlefield and tickles every foe at once.",
+  "de": "Wohnt in Deboras Palme (nach Richter 4,5). Fliegt über das Kampffeld und kitzelt alle Gegner auf einmal."
+ },
+ "COMPS.glow.name": {
+  "en": "Chariot Glow",
+  "de": "Feuerwagen-Glanz"
+ },
+ "COMPS.glow.desc": {
+  "en": "A bright glow from the hills full of horses and chariots of fire (2 Kings 6:17). Rushes in to help every turn.",
+  "de": "Ein heller Glanz von den Bergen voller feuriger Pferde und Wagen (nach 2. Könige 6,17). Eilt jede Runde zu Hilfe."
+ },
+ "COMPS.cat.name": {
+  "en": "Palace Cat",
+  "de": "Palastkatze"
+ },
+ "COMPS.cat.desc": {
+  "en": "Kept King Darius company on his long, sleepless night (Daniel 6:18). Its calm stare freezes foes, like the lions whose mouths God shut (Daniel 6:22).",
+  "de": "Leistete König Darius in seiner langen, schlaflosen Nacht Gesellschaft (nach Daniel 6,19). Ihr ruhiger Blick lässt Gegner erstarren, wie die Löwen, denen Gott das Maul verschloss (nach Daniel 6,23)."
+ },
+ "COMPS.lily.name": {
+  "en": "Field Lily",
+  "de": "Feldlilie"
+ },
+ "COMPS.lily.desc": {
+  "en": "\"Consider the lilies of the field, how they grow\" (Matthew 6:28). Reminds you not to worry and refreshes you every turn.",
+  "de": "„Schaut die Lilien auf dem Feld an, wie sie wachsen“ (nach Matthäus 6,28). Erinnert dich daran, dich nicht zu sorgen, und erfrischt dich jede Runde."
+ },
  "CH.1.name": {
   "en": "Garden of Eden",
   "de": "Garten Eden"
@@ -3966,5 +4014,725 @@
  "CH.28.verse.r": {
   "en": "John 11:25",
   "de": "Johannes 11,25"
+ },
+ "CH.29.name": {
+  "en": "Mount Horeb",
+  "de": "Berg Horeb"
+ },
+ "CH.29.book": {
+  "en": "Exodus 3–4",
+  "de": "2. Mose 3–4"
+ },
+ "CH.29.foe.name": {
+  "en": "Shrinkling",
+  "de": "Schrumpfling"
+ },
+ "CH.29.foe.pl": {
+  "en": null,
+  "de": "Schrumpflinge"
+ },
+ "CH.29.foe.what": {
+  "en": "shadows of \"I can't\"",
+  "de": "Schatten des „Ich kann das nicht“"
+ },
+ "CH.29.foes.0.name": {
+  "en": "Shrinkling",
+  "de": "Schrumpfling"
+ },
+ "CH.29.foes.1.name": {
+  "en": "Excuse Wisp",
+  "de": "Ausredenlicht"
+ },
+ "CH.29.foes.2.name": {
+  "en": "Hide-Away Drip",
+  "de": "Versteck-Tropfen"
+ },
+ "CH.29.boss.name": {
+  "en": "Excuse Fog",
+  "de": "Ausredennebel"
+ },
+ "CH.29.boss.where": {
+  "en": "burning bush",
+  "de": "beim brennenden Dornbusch"
+ },
+ "CH.29.guide.name": {
+  "en": "Moses",
+  "de": "Mose"
+ },
+ "CH.29.intro.0": {
+  "en": "Hello, traveler! I'm Moses. My people, the Israelites, came to Egypt back in Joseph's day. But now a new Pharaoh has made them slaves, and I had to run away to Midian.",
+  "de": "Hallo, Wanderer! Ich bin Mose. Mein Volk, die Israeliten, kam zur Zeit von Josef nach Ägypten. Aber jetzt hat ein neuer Pharao sie zu Sklaven gemacht, und ich musste nach Midian fliehen."
+ },
+ "CH.29.intro.1": {
+  "en": "Now I'm a shepherd. I take care of the sheep of my father-in-law, Jethro. Today I led the flock far into the wilderness, all the way to Horeb, the mountain of God.",
+  "de": "Jetzt bin ich Hirte. Ich hüte die Schafe meines Schwiegervaters Jitro. Heute habe ich die Herde weit in die Wüste geführt, bis zum Horeb, dem Berg Gottes."
+ },
+ "CH.29.intro.2": {
+  "en": "Look over there! That bush is on fire, but it isn't burning up! I have to go closer and see this amazing sight.",
+  "de": "Schau mal dort! Der Busch brennt, aber er verbrennt nicht! Ich muss näher hingehen und mir das genau ansehen."
+ },
+ "CH.29.intro.3": {
+  "en": "Shrinklings keep whispering, 'You can't do it. Who are you, anyway?' Defeat 5 of them, then face the Excuse Fog by the burning bush.",
+  "de": "Schrumpflinge flüstern ständig: „Das schaffst du nie. Wer bist du denn schon?“ Besiege 5 Düsterlinge, dann stell dich dem Ausredennebel beim brennenden Dornbusch."
+ },
+ "CH.29.hint": {
+  "en": "The Excuse Fog hides by the burning bush. When God sends you, He goes with you!",
+  "de": "Der Ausredennebel versteckt sich beim brennenden Dornbusch. Wenn Gott dich sendet, geht er mit dir!"
+ },
+ "CH.29.outro.0": {
+  "en": "God called to me from the bush: 'Moses, Moses! Take off your sandals, for the place where you are standing is holy ground.'",
+  "de": "Gott rief mich aus dem Busch: „Mose, Mose! Zieh deine Schuhe aus, denn der Ort, auf dem du stehst, ist heiliger Boden.“"
+ },
+ "CH.29.outro.1": {
+  "en": "He said, 'I have seen my people suffering. I am sending you to Pharaoh.' I had so many excuses! But God said, 'I will be with you,' and He gave me my brother Aaron to help me speak.",
+  "de": "Er sagte: „Ich habe das Elend meines Volkes gesehen. Ich sende dich zum Pharao.“ Ich hatte so viele Ausreden! Aber Gott sagte: „Ich will mit dir sein“, und er gab mir meinen Bruder Aaron, der für mich reden sollte."
+ },
+ "CH.29.outro.2": {
+  "en": "Here's a piece of the Scroll. And these Holy Ground Sandals want to come with you. Wherever God sends you, you can walk with Him!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und diese Sandalen vom heiligen Boden möchten mit dir kommen. Wohin Gott dich auch schickt, du kannst mit ihm gehen!"
+ },
+ "CH.29.post": {
+  "en": "When God asks you to do something, He doesn't send you alone. He goes with you!",
+  "de": "Wenn Gott dich um etwas bittet, schickt er dich nicht allein. Er geht mit dir!"
+ },
+ "CH.29.side.name": {
+  "en": "Zipporah",
+  "de": "Zippora"
+ },
+ "CH.29.side.what": {
+  "en": "runaway goats",
+  "de": "weggelaufene Ziegen"
+ },
+ "CH.29.side.ask": {
+  "en": "I'm Zipporah, Moses' wife. My father Jethro is a priest of Midian, and our family keeps sheep and goats. 3 young goats ran off among the rocks! Can you find them?",
+  "de": "Ich bin Zippora, die Frau von Mose. Mein Vater Jitro ist Priester in Midian, und unsere Familie hält Schafe und Ziegen. 3 junge Ziegen sind zwischen die Felsen gelaufen! Findest du sie?"
+ },
+ "CH.29.side.thanks": {
+  "en": "Thank you! I first met Moses at a well, when he helped my sisters and me water our flock. He's always helping! Take this.",
+  "de": "Danke! Ich habe Mose an einem Brunnen kennengelernt, als er meinen Schwestern und mir half, unsere Herde zu tränken. Er hilft immer! Nimm das."
+ },
+ "CH.29.flav.0.name": {
+  "en": "Jethro",
+  "de": "Jitro"
+ },
+ "CH.29.flav.0.lines.0": {
+  "en": "I'm Jethro, priest of Midian. Moses has kept my flocks for many years now. He is a faithful shepherd.",
+  "de": "Ich bin Jitro, Priester in Midian. Mose hütet schon viele Jahre meine Herden. Er ist ein treuer Hirte."
+ },
+ "CH.29.flav.1.name": {
+  "en": "Aaron",
+  "de": "Aaron"
+ },
+ "CH.29.flav.1.lines.0": {
+  "en": "I'm Aaron, Moses' brother. God told me to go and meet him at the mountain of God. I'll help him speak to Pharaoh!",
+  "de": "Ich bin Aaron, der Bruder von Mose. Gott hat mir gesagt, ich soll ihm am Berg Gottes entgegengehen. Ich helfe ihm, mit dem Pharao zu reden!"
+ },
+ "CH.29.verse.t": {
+  "en": "Now go; I will be with your mouth and teach you what to say.",
+  "de": "Geh nun! Ich will mit deinem Mund sein und dich lehren, was du sagen sollst."
+ },
+ "CH.29.verse.r": {
+  "en": "Exodus 4:12",
+  "de": "2. Mose 4,12"
+ },
+ "CH.30.name": {
+  "en": "Kadesh",
+  "de": "Kadesch"
+ },
+ "CH.30.book": {
+  "en": "Numbers 13–14",
+  "de": "4. Mose 13–14"
+ },
+ "CH.30.foe.name": {
+  "en": "Grumbling",
+  "de": "Murrling"
+ },
+ "CH.30.foe.pl": {
+  "en": null,
+  "de": "Murrlinge"
+ },
+ "CH.30.foe.what": {
+  "en": "shadows of grumbling",
+  "de": "Schatten des Murrens"
+ },
+ "CH.30.foes.0.name": {
+  "en": "Grumbling",
+  "de": "Murrling"
+ },
+ "CH.30.foes.1.name": {
+  "en": "Moan Wisp",
+  "de": "Jammerlicht"
+ },
+ "CH.30.foes.2.name": {
+  "en": "Giant Shadow",
+  "de": "Riesenschatten"
+ },
+ "CH.30.boss.name": {
+  "en": "The Grumble Giant",
+  "de": "Der Murr-Riese"
+ },
+ "CH.30.boss.where": {
+  "en": "edge of the camp",
+  "de": "am Rand des Lagers"
+ },
+ "CH.30.guide.name": {
+  "en": "Caleb",
+  "de": "Kaleb"
+ },
+ "CH.30.intro.0": {
+  "en": "Welcome to Kadesh! I'm Caleb. God brought us out of Egypt, gave us His law at Mount Sinai, and now we're camped right at the edge of the Promised Land!",
+  "de": "Willkommen in Kadesch! Ich bin Kaleb. Gott hat uns aus Ägypten herausgeführt, uns am Berg Sinai sein Gesetz gegeben, und jetzt lagern wir direkt an der Grenze zum verheißenen Land!"
+ },
+ "CH.30.intro.1": {
+  "en": "Moses sent twelve of us to spy out the land of Canaan. We explored it for forty days. Joshua and I were two of the spies.",
+  "de": "Mose hat zwölf von uns ausgeschickt, um das Land Kanaan zu erkunden. Vierzig Tage lang sind wir durchs Land gezogen. Josua und ich waren zwei der Kundschafter."
+ },
+ "CH.30.intro.2": {
+  "en": "It's an amazing land! But ten of the spies came back scared: 'The people are giants! We looked like grasshoppers next to them!' Now the whole camp is grumbling.",
+  "de": "Es ist ein wunderbares Land! Aber zehn Kundschafter kamen voller Angst zurück: „Die Leute dort sind Riesen! Neben ihnen sahen wir aus wie Heuschrecken!“ Jetzt murrt das ganze Lager."
+ },
+ "CH.30.intro.3": {
+  "en": "Grumblings are spreading fear everywhere. Defeat 6 of them, then face the Grumble Giant at the edge of the camp.",
+  "de": "Murrlinge verbreiten überall Angst. Besiege 6 Düsterlinge, dann stell dich dem Murr-Riesen am Rand des Lagers."
+ },
+ "CH.30.hint": {
+  "en": "The Grumble Giant stomps around at the edge of the camp. It looks huge, but God is bigger!",
+  "de": "Der Murr-Riese stampft am Rand des Lagers herum. Er sieht riesig aus, aber Gott ist größer!"
+ },
+ "CH.30.outro.0": {
+  "en": "Joshua and I told everyone, 'The land is very good! If the LORD is pleased with us, He will bring us in. Don't be afraid. The LORD is with us!'",
+  "de": "Josua und ich sagten zu allen: „Das Land ist sehr gut! Wenn der Herr Gefallen an uns hat, bringt er uns hinein. Habt keine Angst. Der Herr ist mit uns!“"
+ },
+ "CH.30.outro.1": {
+  "en": "But the people wouldn't listen, so they had to wander in the wilderness for forty years. Still, God promised that Joshua and I would one day enter the land, because we followed Him with our whole heart.",
+  "de": "Aber das Volk wollte nicht hören, und darum mussten sie vierzig Jahre durch die Wüste ziehen. Doch Gott versprach, dass Josua und ich eines Tages in das Land kommen würden, weil wir ihm von ganzem Herzen gefolgt sind."
+ },
+ "CH.30.outro.2": {
+  "en": "Here's a piece of the Scroll. And this little Vineyard Snail rode all the way back on our giant bunch of grapes. It wants to come with you!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und diese kleine Weinbergschnecke ist auf unserer riesigen Weintraube mitgereist. Sie möchte mit dir kommen!"
+ },
+ "CH.30.post": {
+  "en": "Don't let fear or grumbling make you forget what God can do. Trust Him like Joshua and Caleb!",
+  "de": "Lass dich von Angst und Murren nicht vergessen machen, was Gott kann. Vertrau ihm wie Josua und Kaleb!"
+ },
+ "CH.30.side.name": {
+  "en": "Joshua",
+  "de": "Josua"
+ },
+ "CH.30.side.what": {
+  "en": "bunches of grapes",
+  "de": "Weintrauben"
+ },
+ "CH.30.side.ask": {
+  "en": "I'm Joshua, Moses' helper. We brought back grapes, pomegranates and figs from the land, but some grapes fell off along the way! Can you find 3 bunches?",
+  "de": "Ich bin Josua, der Helfer von Mose. Wir haben Trauben, Granatäpfel und Feigen aus dem Land mitgebracht, aber unterwegs sind ein paar Trauben heruntergefallen! Findest du 3 davon?"
+ },
+ "CH.30.side.thanks": {
+  "en": "Thanks! One bunch was so big that two of us had to carry it on a pole. God's land is truly good! Take this.",
+  "de": "Danke! Eine Traube war so groß, dass zwei von uns sie an einer Stange tragen mussten. Gottes Land ist wirklich gut! Nimm das."
+ },
+ "CH.30.flav.0.name": {
+  "en": "Worried Spy",
+  "de": "Ängstlicher Kundschafter"
+ },
+ "CH.30.flav.0.lines.0": {
+  "en": "Did you see how tall those people were? And their cities have huge walls! I don't think we can do it...",
+  "de": "Hast du gesehen, wie groß die Leute dort waren? Und ihre Städte haben riesige Mauern! Ich glaube nicht, dass wir das schaffen …"
+ },
+ "CH.30.flav.1.name": {
+  "en": "Grumbling Neighbor",
+  "de": "Murrende Nachbarin"
+ },
+ "CH.30.flav.1.lines.0": {
+  "en": "Why did we ever leave Egypt? At least there we had cucumbers and melons! Hmm... but we were slaves there, weren't we?",
+  "de": "Warum sind wir bloß aus Ägypten weggegangen? Da hatten wir wenigstens Gurken und Melonen! Hm … aber da waren wir ja Sklaven, oder?"
+ },
+ "CH.30.verse.t": {
+  "en": "The LORD is with us. Do not be afraid of them.",
+  "de": "Der Herr ist mit uns; fürchtet euch nicht vor ihnen!"
+ },
+ "CH.30.verse.r": {
+  "en": "Numbers 14:9",
+  "de": "4. Mose 14,9"
+ },
+ "CH.31.name": {
+  "en": "Mount Tabor",
+  "de": "Berg Tabor"
+ },
+ "CH.31.book": {
+  "en": "Judges 4–5",
+  "de": "Richter 4–5"
+ },
+ "CH.31.foe.name": {
+  "en": "Rattling",
+  "de": "Klapperling"
+ },
+ "CH.31.foe.pl": {
+  "en": null,
+  "de": "Klapperlinge"
+ },
+ "CH.31.foe.what": {
+  "en": "shadows of fear",
+  "de": "Schatten der Angst"
+ },
+ "CH.31.foes.0.name": {
+  "en": "Rattling",
+  "de": "Klapperling"
+ },
+ "CH.31.foes.1.name": {
+  "en": "Wheel Imp",
+  "de": "Radwicht"
+ },
+ "CH.31.foes.2.name": {
+  "en": "Iron Brute",
+  "de": "Eisengroll"
+ },
+ "CH.31.boss.name": {
+  "en": "Iron Chariot Gloom",
+  "de": "Eisenwagen-Dunkel"
+ },
+ "CH.31.boss.where": {
+  "en": "Kishon river",
+  "de": "am Bach Kischon"
+ },
+ "CH.31.guide.name": {
+  "en": "Deborah",
+  "de": "Debora"
+ },
+ "CH.31.intro.0": {
+  "en": "Welcome! I'm Deborah. I'm a prophet, and I lead Israel as a judge. People come to me under my palm tree to settle their arguments.",
+  "de": "Willkommen! Ich bin Debora. Ich bin Prophetin und Richterin in Israel. Die Leute kommen zu mir unter meine Palme, damit ich ihren Streit schlichte."
+ },
+ "CH.31.intro.1": {
+  "en": "After Jericho fell, Israel kept forgetting God. Now King Jabin of Canaan has been cruel to us for twenty years. His army commander, Sisera, has 900 iron chariots!",
+  "de": "Nachdem Jericho gefallen war, hat Israel Gott immer wieder vergessen. Jetzt quält uns König Jabin von Kanaan schon zwanzig Jahre lang. Sein Heerführer Sisera hat 900 eiserne Streitwagen!"
+ },
+ "CH.31.intro.2": {
+  "en": "God told me to call Barak. He is gathering 10,000 men here on Mount Tabor. Barak said, 'I will only go if you go with me.' So I'm going too!",
+  "de": "Gott hat mir gesagt, ich soll Barak rufen. Er sammelt hier auf dem Berg Tabor 10.000 Männer. Barak sagte: „Ich gehe nur, wenn du mitkommst.“ Also gehe ich mit!"
+ },
+ "CH.31.intro.3": {
+  "en": "Rattlings make everyone shake with fear. Defeat 6 of them, then face the Iron Chariot Gloom down by the Kishon river.",
+  "de": "Klapperlinge lassen alle vor Angst zittern. Besiege 6 Düsterlinge, dann stell dich dem Eisenwagen-Dunkel unten am Bach Kischon."
+ },
+ "CH.31.hint": {
+  "en": "The Iron Chariot Gloom rumbles by the Kishon river. Has not the LORD gone ahead of you?",
+  "de": "Das Eisenwagen-Dunkel rattert am Bach Kischon. Ist nicht der Herr vor dir hergezogen?"
+ },
+ "CH.31.outro.0": {
+  "en": "I told Barak, 'Go! This is the day the LORD has given Sisera into your hands. Has not the LORD gone ahead of you?' And down the mountain they ran!",
+  "de": "Ich sagte zu Barak: „Auf! Heute hat der Herr Sisera in deine Hand gegeben. Ist nicht der Herr vor dir hergezogen?“ Und sie stürmten den Berg hinunter!"
+ },
+ "CH.31.outro.1": {
+  "en": "God sent a great storm. The clouds poured down rain, and the Kishon river swept the chariots away! Sisera ran off on foot, and a brave woman named Jael stopped him. Then Barak and I sang a song of praise to the LORD.",
+  "de": "Gott schickte ein großes Unwetter. Die Wolken gossen Regen herab, und der Bach Kischon riss die Streitwagen mit sich fort! Sisera floh zu Fuß, und eine mutige Frau namens Jaël hielt ihn auf. Dann sangen Barak und ich ein Loblied für den Herrn."
+ },
+ "CH.31.outro.2": {
+  "en": "Here's a piece of the Scroll. And this little Palm Ladybug lives in my palm tree. It wants to come with you!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und dieser kleine Palmen-Marienkäfer wohnt in meiner Palme. Er möchte mit dir kommen!"
+ },
+ "CH.31.post": {
+  "en": "God can use anyone who trusts Him, and He always goes ahead of you!",
+  "de": "Gott kann jeden gebrauchen, der ihm vertraut, und er geht immer vor dir her!"
+ },
+ "CH.31.side.name": {
+  "en": "Barak",
+  "de": "Barak"
+ },
+ "CH.31.side.what": {
+  "en": "shields",
+  "de": "Schilde"
+ },
+ "CH.31.side.ask": {
+  "en": "I'm Barak. The men of Zebulun and Naphtali are coming to Mount Tabor, but we hardly have any shields! 3 of them were left lying in the grass. Can you find them?",
+  "de": "Ich bin Barak. Die Männer aus Sebulon und Naftali kommen zum Berg Tabor, aber wir haben kaum Schilde! 3 davon liegen noch irgendwo im Gras. Findest du sie?"
+ },
+ "CH.31.side.thanks": {
+  "en": "Thank you! Deborah says the battle belongs to the LORD, not to iron chariots. Take this.",
+  "de": "Danke! Debora sagt, der Kampf gehört dem Herrn, nicht den eisernen Streitwagen. Nimm das."
+ },
+ "CH.31.flav.0.name": {
+  "en": "Soldier from Naphtali",
+  "de": "Soldat aus Naftali"
+ },
+ "CH.31.flav.0.lines.0": {
+  "en": "Sisera has 900 iron chariots, and we don't even have swords for everyone! But Deborah says God will go ahead of us.",
+  "de": "Sisera hat 900 eiserne Streitwagen, und wir haben nicht einmal für jeden ein Schwert! Aber Debora sagt, Gott wird vor uns herziehen."
+ },
+ "CH.31.flav.1.name": {
+  "en": "Farmer by the Kishon",
+  "de": "Bauer am Kischon"
+ },
+ "CH.31.flav.1.lines.0": {
+  "en": "Look at those dark clouds over the mountains. I think a big rain is coming! That riverbed fills up fast.",
+  "de": "Sieh dir die dunklen Wolken über den Bergen an. Ich glaube, da kommt ein großer Regen! Das Bachbett füllt sich schnell."
+ },
+ "CH.31.verse.t": {
+  "en": "Let those who love him be like the sun when it rises in its strength.",
+  "de": "Die ihn aber lieb haben, sollen sein, wie die Sonne aufgeht in ihrer Pracht!"
+ },
+ "CH.31.verse.r": {
+  "en": "Judges 5:31",
+  "de": "Richter 5,31"
+ },
+ "CH.32.name": {
+  "en": "Dothan",
+  "de": "Dotan"
+ },
+ "CH.32.book": {
+  "en": "2 Kings 6",
+  "de": "2. Könige 6"
+ },
+ "CH.32.foe.name": {
+  "en": "Panicling",
+  "de": "Panikling"
+ },
+ "CH.32.foe.pl": {
+  "en": null,
+  "de": "Paniklinge"
+ },
+ "CH.32.foe.what": {
+  "en": "shadows of panic",
+  "de": "Schatten der Panik"
+ },
+ "CH.32.foes.0.name": {
+  "en": "Panicling",
+  "de": "Panikling"
+ },
+ "CH.32.foes.1.name": {
+  "en": "Siege Imp",
+  "de": "Belagerungswicht"
+ },
+ "CH.32.foes.2.name": {
+  "en": "Dread Drip",
+  "de": "Grauentropfen"
+ },
+ "CH.32.boss.name": {
+  "en": "Surrounding Gloom",
+  "de": "Umzingelndes Dunkel"
+ },
+ "CH.32.boss.where": {
+  "en": "city gate",
+  "de": "am Stadttor"
+ },
+ "CH.32.guide.name": {
+  "en": "Elisha",
+  "de": "Elisa"
+ },
+ "CH.32.intro.0": {
+  "en": "Welcome to Dothan! I'm Elisha. Maybe you met my teacher Elijah on Mount Carmel. When God took him up to heaven, I carried on his work as a prophet.",
+  "de": "Willkommen in Dotan! Ich bin Elisa. Vielleicht hast du meinen Lehrer Elia auf dem Berg Karmel kennengelernt. Als Gott ihn in den Himmel holte, habe ich seine Arbeit als Prophet weitergeführt."
+ },
+ "CH.32.intro.1": {
+  "en": "The king of Aram keeps planning secret attacks on Israel. But God shows me where his soldiers are hiding, so I warn the king of Israel every time!",
+  "de": "Der König von Aram plant immer wieder heimliche Angriffe auf Israel. Aber Gott zeigt mir, wo seine Soldaten sich verstecken, und so warne ich den König von Israel jedes Mal!"
+ },
+ "CH.32.intro.2": {
+  "en": "Now the king of Aram is angry. He found out I'm here in Dothan, and in the night his horses and chariots came and surrounded the whole city!",
+  "de": "Jetzt ist der König von Aram wütend. Er hat herausgefunden, dass ich hier in Dotan bin, und in der Nacht haben seine Pferde und Wagen die ganze Stadt umzingelt!"
+ },
+ "CH.32.intro.3": {
+  "en": "Paniclings make everyone cry, 'Oh no! What shall we do?' Defeat 6 of them, then face the Surrounding Gloom at the city gate.",
+  "de": "Paniklinge bringen alle dazu zu rufen: „Oh nein! Was sollen wir tun?“ Besiege 6 Düsterlinge, dann stell dich dem Umzingelnden Dunkel am Stadttor."
+ },
+ "CH.32.hint": {
+  "en": "The Surrounding Gloom waits at the city gate. Don't be afraid: those who are with us are more than those who are with them!",
+  "de": "Das Umzingelnde Dunkel wartet am Stadttor. Fürchte dich nicht: Bei uns sind mehr als bei ihnen!"
+ },
+ "CH.32.outro.0": {
+  "en": "My servant was so scared! I prayed, 'LORD, open his eyes so he can see.' And he saw the hills full of horses and chariots of fire all around us!",
+  "de": "Mein Diener hatte solche Angst! Ich betete: „Herr, öffne ihm die Augen, damit er sieht.“ Und er sah die Berge rings um uns voller feuriger Pferde und Wagen!"
+ },
+ "CH.32.outro.1": {
+  "en": "Then God struck the enemy soldiers blind, and I led them all the way to Samaria. There God opened their eyes, and the king of Israel gave them a great feast and sent them home. After that, the raiders stopped coming.",
+  "de": "Dann schlug Gott die feindlichen Soldaten mit Blindheit, und ich führte sie bis nach Samaria. Dort öffnete Gott ihnen die Augen, und der König von Israel gab ihnen ein großes Festmahl und schickte sie nach Hause. Danach kamen keine Räuberbanden mehr."
+ },
+ "CH.32.outro.2": {
+  "en": "Here's a piece of the Scroll. And this little Chariot Glow shone down from the hills of fire. It wants to come with you, so you'll remember you're never alone!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und dieser kleine Feuerwagen-Glanz leuchtete von den Bergen voller Feuer herab. Er möchte mit dir kommen, damit du nie vergisst: Du bist nicht allein!"
+ },
+ "CH.32.post": {
+  "en": "Even when trouble seems to be all around you, God's help is bigger. Ask Him to open your eyes!",
+  "de": "Auch wenn Schwierigkeiten dich von allen Seiten umgeben: Gottes Hilfe ist größer. Bitte ihn, dir die Augen zu öffnen!"
+ },
+ "CH.32.side.name": {
+  "en": "Elisha's Servant",
+  "de": "Elisas Diener"
+ },
+ "CH.32.side.what": {
+  "en": "flatbreads",
+  "de": "Fladenbrote"
+ },
+ "CH.32.side.ask": {
+  "en": "I'm Elisha's servant. I got up early to make breakfast, but when I saw the army outside, I dropped 3 flatbreads and ran! Can you find them?",
+  "de": "Ich bin Elisas Diener. Ich bin früh aufgestanden, um Frühstück zu machen, aber als ich das Heer draußen sah, habe ich 3 Fladenbrote fallen lassen und bin weggerannt! Findest du sie?"
+ },
+ "CH.32.side.thanks": {
+  "en": "Thank you! Elisha keeps saying, 'Don't be afraid.' I'm trying to believe it! Take this.",
+  "de": "Danke! Elisa sagt immer wieder: „Fürchte dich nicht.“ Ich versuche, es zu glauben! Nimm das."
+ },
+ "CH.32.flav.0.name": {
+  "en": "Watchman of Dothan",
+  "de": "Wächter von Dotan"
+ },
+ "CH.32.flav.0.lines.0": {
+  "en": "Horses and chariots everywhere! I've never seen so many soldiers around our little city.",
+  "de": "Überall Pferde und Wagen! So viele Soldaten habe ich noch nie um unsere kleine Stadt gesehen."
+ },
+ "CH.32.flav.1.name": {
+  "en": "Woman from Shunem",
+  "de": "Frau aus Schunem"
+ },
+ "CH.32.flav.1.lines.0": {
+  "en": "My husband and I built a little room on our roof for Elisha, with a bed, a table, a chair and a lamp. God has blessed our family so much!",
+  "de": "Mein Mann und ich haben Elisa ein kleines Zimmer auf unserem Dach gebaut, mit Bett, Tisch, Stuhl und Lampe. Gott hat unsere Familie so reich gesegnet!"
+ },
+ "CH.32.verse.t": {
+  "en": "Do not be afraid, for those who are with us are more than those who are with them.",
+  "de": "Fürchte dich nicht! Denn die bei uns sind, sind mehr als die bei ihnen."
+ },
+ "CH.32.verse.r": {
+  "en": "2 Kings 6:16",
+  "de": "2. Könige 6,16"
+ },
+ "CH.33.name": {
+  "en": "The Lions' Den",
+  "de": "Die Löwengrube"
+ },
+ "CH.33.book": {
+  "en": "Daniel 6",
+  "de": "Daniel 6"
+ },
+ "CH.33.foe.name": {
+  "en": "Schemeling",
+  "de": "Ränkling"
+ },
+ "CH.33.foe.pl": {
+  "en": null,
+  "de": "Ränklinge"
+ },
+ "CH.33.foe.what": {
+  "en": "shadows of jealousy and tricks",
+  "de": "Schatten von Neid und List"
+ },
+ "CH.33.foes.0.name": {
+  "en": "Schemeling",
+  "de": "Ränkling"
+ },
+ "CH.33.foes.1.name": {
+  "en": "Trick Wisp",
+  "de": "Listlicht"
+ },
+ "CH.33.foes.2.name": {
+  "en": "Roar Brute",
+  "de": "Brüllgroll"
+ },
+ "CH.33.boss.name": {
+  "en": "Den Lion Gloom",
+  "de": "Löwengruben-Dunkel"
+ },
+ "CH.33.boss.where": {
+  "en": "lions' den",
+  "de": "bei der Löwengrube"
+ },
+ "CH.33.guide.name": {
+  "en": "Daniel",
+  "de": "Daniel"
+ },
+ "CH.33.intro.0": {
+  "en": "Welcome back to Babylon! I'm Daniel. Remember my friends and the fiery furnace? Many years have passed. Now I'm an old man, and Darius is king.",
+  "de": "Willkommen zurück in Babylon! Ich bin Daniel. Erinnerst du dich an meine Freunde und den Feuerofen? Viele Jahre sind vergangen. Jetzt bin ich ein alter Mann, und Darius ist König."
+ },
+ "CH.33.intro.1": {
+  "en": "King Darius made me one of his three top leaders. Some of the other leaders are jealous, so they tricked the king into making a new law: for thirty days, nobody may pray to anyone except the king!",
+  "de": "König Darius hat mich zu einem seiner drei obersten Beamten gemacht. Einige der anderen Beamten sind neidisch. Darum haben sie den König dazu gebracht, ein neues Gesetz zu machen: Dreißig Tage lang darf niemand zu jemand anderem beten als zum König!"
+ },
+ "CH.33.intro.2": {
+  "en": "But I will keep praying to my God, just like always. Three times a day, I kneel by my open window that faces Jerusalem and give thanks.",
+  "de": "Aber ich bete weiter zu meinem Gott, wie immer. Dreimal am Tag knie ich an meinem offenen Fenster, das nach Jerusalem zeigt, und danke Gott."
+ },
+ "CH.33.intro.3": {
+  "en": "Schemelings are spreading jealousy and tricks. Defeat 6 of them, then face the Den Lion Gloom by the lions' den.",
+  "de": "Ränklinge verbreiten Neid und List. Besiege 6 Düsterlinge, dann stell dich dem Löwengruben-Dunkel bei der Löwengrube."
+ },
+ "CH.33.hint": {
+  "en": "The Den Lion Gloom prowls by the lions' den. Keep praying like Daniel: God hears you!",
+  "de": "Das Löwengruben-Dunkel schleicht um die Löwengrube. Bete weiter wie Daniel: Gott hört dich!"
+ },
+ "CH.33.outro.0": {
+  "en": "They threw me into the lions' den. King Darius said, 'May your God, whom you serve all the time, rescue you!' He couldn't sleep all night.",
+  "de": "Sie warfen mich in die Löwengrube. König Darius sagte: „Dein Gott, dem du ohne Aufhören dienst, der möge dich retten!“ Er konnte die ganze Nacht nicht schlafen."
+ },
+ "CH.33.outro.1": {
+  "en": "Early in the morning the king hurried to the den and called, 'Daniel, has your God been able to rescue you?' I answered, 'My God sent His angel and shut the lions' mouths!' I didn't have a single scratch.",
+  "de": "Früh am Morgen eilte der König zur Grube und rief: „Daniel, hat dein Gott dich retten können?“ Ich antwortete: „Mein Gott hat seinen Engel gesandt und den Löwen das Maul verschlossen!“ Ich hatte nicht einen einzigen Kratzer."
+ },
+ "CH.33.outro.2": {
+  "en": "Then Darius told everyone to honor the God of Daniel, the living God. Here's a piece of the Scroll. And this Palace Cat kept the king company all that long night. It wants to come with you!",
+  "de": "Dann befahl Darius allen, den Gott Daniels zu ehren, den lebendigen Gott. Hier ist ein Teil der Schriftrolle. Und diese Palastkatze hat dem König in der langen Nacht Gesellschaft geleistet. Sie möchte mit dir kommen!"
+ },
+ "CH.33.post": {
+  "en": "Keep talking to God every day, even when it's hard. He hears you, and He is able to rescue!",
+  "de": "Rede jeden Tag mit Gott, auch wenn es schwer ist. Er hört dich, und er kann retten!"
+ },
+ "CH.33.side.name": {
+  "en": "Palace Servant",
+  "de": "Palastdiener"
+ },
+ "CH.33.side.what": {
+  "en": "oil lamps",
+  "de": "Öllampen"
+ },
+ "CH.33.side.ask": {
+  "en": "I'm a servant in King Darius' palace. The king is so worried about Daniel that he won't eat and can't sleep. I want to light his room, but I lost 3 oil lamps! Can you find them?",
+  "de": "Ich bin Diener im Palast von König Darius. Der König macht sich solche Sorgen um Daniel, dass er nicht isst und nicht schlafen kann. Ich will sein Zimmer erleuchten, aber ich habe 3 Öllampen verloren! Findest du sie?"
+ },
+ "CH.33.side.thanks": {
+  "en": "Thank you! The king walks up and down all night. I think he really hopes Daniel's God will save him. Take this.",
+  "de": "Danke! Der König geht die ganze Nacht auf und ab. Ich glaube, er hofft wirklich, dass Daniels Gott ihn rettet. Nimm das."
+ },
+ "CH.33.flav.0.name": {
+  "en": "Royal Official",
+  "de": "Hoher Beamter"
+ },
+ "CH.33.flav.0.lines.0": {
+  "en": "We looked and looked, but we couldn't find anything wrong with Daniel. He is faithful and honest in everything he does!",
+  "de": "Wir haben gesucht und gesucht, aber wir konnten nichts finden, was Daniel falsch gemacht hätte. Er ist treu und ehrlich in allem, was er tut!"
+ },
+ "CH.33.flav.1.name": {
+  "en": "King Darius",
+  "de": "König Darius"
+ },
+ "CH.33.flav.1.lines.0": {
+  "en": "I made a law that can't be changed, and now I wish I hadn't! Oh, Daniel, may your God rescue you.",
+  "de": "Ich habe ein Gesetz gemacht, das man nicht ändern kann, und jetzt wünschte ich, ich hätte es nie getan! Ach, Daniel, möge dein Gott dich retten."
+ },
+ "CH.33.verse.t": {
+  "en": "He is the living God, and he endures forever. He rescues and he saves.",
+  "de": "Er ist der lebendige Gott, der ewig bleibt. Er rettet und hilft."
+ },
+ "CH.33.verse.r": {
+  "en": "Daniel 6:26-27",
+  "de": "Daniel 6,27-28"
+ },
+ "CH.34.name": {
+  "en": "Mount of Beatitudes",
+  "de": "Berg der Seligpreisungen"
+ },
+ "CH.34.book": {
+  "en": "Matthew 5–7",
+  "de": "Matthäus 5–7"
+ },
+ "CH.34.foe.name": {
+  "en": "Worryling",
+  "de": "Sorgling"
+ },
+ "CH.34.foe.pl": {
+  "en": null,
+  "de": "Sorglinge"
+ },
+ "CH.34.foe.what": {
+  "en": "shadows of worry",
+  "de": "Schatten der Sorge"
+ },
+ "CH.34.foes.0.name": {
+  "en": "Worryling",
+  "de": "Sorgling"
+ },
+ "CH.34.foes.1.name": {
+  "en": "What-If Wisp",
+  "de": "Was-wäre-wenn-Licht"
+ },
+ "CH.34.foes.2.name": {
+  "en": "Tomorrow Drip",
+  "de": "Morgen-Tropfen"
+ },
+ "CH.34.boss.name": {
+  "en": "The Worry Weed",
+  "de": "Das Sorgenkraut"
+ },
+ "CH.34.boss.where": {
+  "en": "hillside",
+  "de": "am Berghang"
+ },
+ "CH.34.guide.name": {
+  "en": "Matthew",
+  "de": "Matthäus"
+ },
+ "CH.34.intro.0": {
+  "en": "Shalom! I'm Matthew. I used to sit at a tax booth counting coins. Then Jesus said, 'Follow me,' and I left everything to follow Him!",
+  "de": "Schalom! Ich bin Matthäus. Früher saß ich am Zoll und habe Münzen gezählt. Dann sagte Jesus: „Folge mir nach!“, und ich habe alles stehen lassen und bin ihm gefolgt!"
+ },
+ "CH.34.intro.1": {
+  "en": "After all the miracles by the Sea of Galilee, huge crowds follow Jesus everywhere. Today He went up on this hillside, sat down, and began to teach us.",
+  "de": "Nach all den Wundern am See Genezareth folgen Jesus überall riesige Menschenmengen. Heute ist er auf diesen Berg gestiegen, hat sich hingesetzt und angefangen, uns zu lehren."
+ },
+ "CH.34.intro.2": {
+  "en": "He said we are the salt of the earth and the light of the world. And He taught us how to pray: 'Our Father in heaven, hallowed be your name...'",
+  "de": "Er hat gesagt, dass wir das Salz der Erde und das Licht der Welt sind. Und er hat uns beten gelehrt: „Unser Vater im Himmel, geheiligt werde dein Name …“"
+ },
+ "CH.34.intro.3": {
+  "en": "Worrylings keep whispering, 'What if? What if?' Defeat 6 of them, then face the Worry Weed on the hillside.",
+  "de": "Sorglinge flüstern ständig: „Und was, wenn …? Und was, wenn …?“ Besiege 6 Düsterlinge, dann stell dich dem Sorgenkraut am Berghang."
+ },
+ "CH.34.hint": {
+  "en": "The Worry Weed keeps growing on the hillside. Look at the birds and the lilies: your Father in heaven cares for you!",
+  "de": "Das Sorgenkraut wuchert am Berghang. Schau dir die Vögel und die Lilien an: Dein Vater im Himmel sorgt für dich!"
+ },
+ "CH.34.outro.0": {
+  "en": "Jesus said, 'Look at the birds of the air. They don't plant or harvest, but your heavenly Father feeds them. Aren't you worth much more than they are?'",
+  "de": "Jesus sagte: „Seht euch die Vögel am Himmel an. Sie säen nicht und ernten nicht, und doch ernährt sie euer Vater im Himmel. Seid ihr nicht viel mehr wert als sie?“"
+ },
+ "CH.34.outro.1": {
+  "en": "'Consider the lilies of the field. Not even King Solomon was dressed as beautifully as one of them! So don't worry about tomorrow. Seek first God's kingdom.' And He said a wise man builds his house on the rock by doing what Jesus says.",
+  "de": "„Schaut die Lilien auf dem Feld an! Nicht einmal König Salomo war so schön gekleidet wie eine von ihnen. Darum sorgt euch nicht um morgen. Trachtet zuerst nach Gottes Reich.“ Und er sagte, dass ein kluger Mann sein Haus auf den Felsen baut, indem er tut, was Jesus sagt."
+ },
+ "CH.34.outro.2": {
+  "en": "Here's a piece of the Scroll. And this Field Lily grew right here on the hillside. It wants to come with you, to remind you not to worry!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und diese Feldlilie ist genau hier am Berghang gewachsen. Sie möchte mit dir kommen und dich daran erinnern, dich nicht zu sorgen!"
+ },
+ "CH.34.post": {
+  "en": "Don't worry about tomorrow. Your Father in heaven knows what you need. Seek Him first!",
+  "de": "Sorg dich nicht um morgen. Dein Vater im Himmel weiß, was du brauchst. Such ihn zuerst!"
+ },
+ "CH.34.side.name": {
+  "en": "Salt Seller",
+  "de": "Salzhändler"
+ },
+ "CH.34.side.what": {
+  "en": "jars of salt",
+  "de": "Salzkrüge"
+ },
+ "CH.34.side.ask": {
+  "en": "I sell salt at the market. Jesus just said, 'You are the salt of the earth!' I got so excited that I dropped 3 jars of salt! Can you find them?",
+  "de": "Ich verkaufe Salz auf dem Markt. Jesus hat gerade gesagt: „Ihr seid das Salz der Erde!“ Ich habe mich so gefreut, dass ich 3 Salzkrüge fallen gelassen habe! Findest du sie?"
+ },
+ "CH.34.side.thanks": {
+  "en": "Thank you! Salt makes food taste good. Jesus wants us to make the world better, like salt. Take this.",
+  "de": "Danke! Salz macht das Essen lecker. Jesus möchte, dass wir die Welt besser machen, so wie Salz. Nimm das."
+ },
+ "CH.34.flav.0.name": {
+  "en": "Builder",
+  "de": "Baumeister"
+ },
+ "CH.34.flav.0.lines.0": {
+  "en": "Jesus said the wise man builds his house on the rock. When the storm comes, it stands! I'm going to check my house's foundation tonight.",
+  "de": "Jesus hat gesagt, der kluge Mann baut sein Haus auf den Felsen. Wenn der Sturm kommt, bleibt es stehen! Heute Abend schaue ich mir das Fundament von meinem Haus an."
+ },
+ "CH.34.flav.1.name": {
+  "en": "Girl in the Crowd",
+  "de": "Mädchen aus der Menge"
+ },
+ "CH.34.flav.1.lines.0": {
+  "en": "Jesus taught us to pray, 'Our Father in heaven...' I'm going to pray it every night!",
+  "de": "Jesus hat uns beten gelehrt: „Unser Vater im Himmel …“ Das bete ich jetzt jeden Abend!"
+ },
+ "CH.34.verse.t": {
+  "en": "Seek first the kingdom of God and his righteousness, and all these things will be added to you.",
+  "de": "Trachtet zuerst nach dem Reich Gottes und nach seiner Gerechtigkeit, so wird euch das alles zufallen."
+ },
+ "CH.34.verse.r": {
+  "en": "Matthew 6:33",
+  "de": "Matthäus 6,33"
  }
 }

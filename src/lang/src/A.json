@@ -338,14 +338,14 @@
    "en": [
     "Ah, a pilgrim at last! I am Simeon. I have waited many years to see God's promises come true.",
     "The Scroll of Light tells the great story of God's love — from creation all the way to the empty tomb.",
-    "But the Shadow of Doubt tore it into twenty-eight pieces and hid them in the stories of the Bible.",
+    "But the Shadow of Doubt tore it into thirty-four pieces and hid them in the stories of the Bible.",
     "These Gates of Remembrance lead into those stories. Answer wisely, be brave, and bring the pieces home.",
     "Gate 1, the Garden of Eden, is open. And look — Jesse's little lamb has decided to follow you. God be with you!"
    ],
    "de": [
     "Ah, endlich ein Pilger! Ich bin Simeon. Viele Jahre habe ich darauf gewartet, dass Gottes Versprechen wahr werden.",
     "Die Schriftrolle des Lichts erzählt die große Geschichte von Gottes Liebe – von der Schöpfung bis zum leeren Grab.",
-    "Aber der Schatten des Zweifels hat sie in achtundzwanzig Teile zerrissen und in den Geschichten der Bibel versteckt.",
+    "Aber der Schatten des Zweifels hat sie in vierunddreißig Teile zerrissen und in den Geschichten der Bibel versteckt.",
     "Diese Tore der Erinnerung führen in diese Geschichten. Antworte weise, sei mutig und bring die Teile nach Hause.",
     "Tor 1, der Garten Eden, ist offen. Und schau – das kleine Lamm von Jesse möchte mit dir gehen. Gott sei mit dir!"
    ]
@@ -2601,6 +2601,134 @@
   "cut.28": {
    "en": "Jesus is the resurrection and the life!",
    "de": "Jesus ist die Auferstehung und das Leben!"
+  },
+  "bm.excuse": {
+   "en": "The fog hides behind a shield of excuses: \"Who am I?\" \"What if they don't believe me?\" \"I'm not good with words!\" Your hits do half damage until you answer 4 right.",
+   "de": "Der Nebel versteckt sich hinter einem Schild aus Ausreden: „Wer bin ich denn?“ „Was, wenn sie mir nicht glauben?“ „Ich kann nicht gut reden!“ Deine Treffer zählen halb, bis du 4 richtig beantwortest."
+  },
+  "bm.excuse.m": {
+   "en": "Break the excuses",
+   "de": "Zerbrich die Ausreden"
+  },
+  "bm.excuse.full": {
+   "en": "\"I will be with you!\" God's promise breaks the shield of excuses!",
+   "de": "„Ich will mit dir sein!“ Gottes Versprechen zerbricht den Schild aus Ausreden!"
+  },
+  "bm.grumble": {
+   "en": "The giant grumbles, \"We can't do it!\" Every right answer brings back a gift from the good land: grapes, honey and milk. When all 3 are found, your attacks are strong!",
+   "de": "Der Riese murrt: „Das schaffen wir nie!“ Jede richtige Antwort bringt ein Geschenk aus dem guten Land zurück: Trauben, Honig und Milch. Wenn du alle 3 gefunden hast, treffen deine Angriffe stark!"
+  },
+  "bm.grumble.m": {
+   "en": "Gifts of the land",
+   "de": "Gaben des Landes"
+  },
+  "bm.grumble.one": {
+   "en": "Gift of the land found!",
+   "de": "Gabe des Landes gefunden!"
+  },
+  "bm.grumble.full": {
+   "en": "A land flowing with milk and honey! \"The LORD is with us!\" Your attacks are strong now!",
+   "de": "Ein Land, in dem Milch und Honig fließen! „Der Herr ist mit uns!“ Jetzt treffen deine Angriffe stark!"
+  },
+  "bm.chariot": {
+   "en": "900 iron chariots rumble toward you! Every 3 right answers, the rain pours down, and the chariots get stuck in the mud for a turn.",
+   "de": "900 eiserne Streitwagen rattern auf dich zu! Bei jeweils 3 richtigen Antworten prasselt der Regen herab, und die Wagen bleiben eine Runde im Schlamm stecken."
+  },
+  "bm.chariot.m": {
+   "en": "Call the rain",
+   "de": "Ruf den Regen"
+  },
+  "bm.chariot.full": {
+   "en": "The rain pours down and the Kishon floods! The chariots are stuck in the mud!",
+   "de": "Der Regen prasselt, und der Kischon tritt über die Ufer! Die Wagen stecken im Schlamm fest!"
+  },
+  "bm.surround": {
+   "en": "The gloom surrounds you on every side! Every 4 right answers, the hills full of horses and chariots of fire blast it!",
+   "de": "Das Dunkel umzingelt dich von allen Seiten! Bei jeweils 4 richtigen Antworten treffen es die Berge voller feuriger Pferde und Wagen!"
+  },
+  "bm.surround.m": {
+   "en": "Open your eyes",
+   "de": "Öffne die Augen"
+  },
+  "bm.surround.full": {
+   "en": "\"LORD, open his eyes!\" The hills full of chariots of fire blast the gloom!",
+   "de": "„Herr, öffne ihm die Augen!“ Die Berge voller Feuerwagen treffen das Dunkel!"
+  },
+  "bm.denlion": {
+   "en": "Daniel prayed three times a day. Get a streak of 3, then use Faith Strike or Courage Blast for a mighty hit!",
+   "de": "Daniel betete dreimal am Tag. Schaffe 3 richtige in Folge, dann trifft Glaubensschlag oder Mutstoß gewaltig!"
+  },
+  "bm.denlion.m": {
+   "en": "Pray 3 times",
+   "de": "Dreimal beten"
+  },
+  "bm.denlion.full": {
+   "en": "\"My God sent His angel!\" The lion's mouth is shut!",
+   "de": "„Mein Gott hat seinen Engel gesandt!“ Das Maul des Löwen ist verschlossen!"
+  },
+  "bm.worry": {
+   "en": "The Worry Weed keeps growing back! Answer 3 right to \"consider the lilies\" and stop it.",
+   "de": "Das Sorgenkraut wächst immer wieder nach! Beantworte 3 richtig, dann „schaust du die Lilien an“ und hältst es auf."
+  },
+  "bm.worry.m": {
+   "en": "Consider the lilies",
+   "de": "Schau die Lilien an"
+  },
+  "bm.worry.full": {
+   "en": "\"Do not worry about tomorrow!\" The lilies bloom, and the worry stops growing back.",
+   "de": "„Sorgt euch nicht um morgen!“ Die Lilien blühen, und die Sorge wächst nicht mehr nach."
+  },
+  "bm.worry.regen": {
+   "en": "The Worry Weed grows back: \"What if...?\"",
+   "de": "Das Sorgenkraut wächst nach: „Und was, wenn …?“"
+  },
+  "furn.burningbush": {
+   "en": "The burning bush",
+   "de": "Der brennende Dornbusch"
+  },
+  "furn.grapecluster": {
+   "en": "Giant grape cluster from Eshcol",
+   "de": "Riesentraube aus Eschkol"
+  },
+  "furn.deborahpalm": {
+   "en": "Deborah's palm tree",
+   "de": "Deboras Palme"
+  },
+  "furn.firechariot": {
+   "en": "Little chariot of fire",
+   "de": "Kleiner Feuerwagen"
+  },
+  "furn.prayerwindow": {
+   "en": "Daniel's window toward Jerusalem",
+   "de": "Daniels Fenster nach Jerusalem"
+  },
+  "furn.lilyvase": {
+   "en": "Vase of field lilies",
+   "de": "Vase mit Feldlilien"
+  },
+  "cut.29": {
+   "en": "I will be with you!",
+   "de": "Ich will mit dir sein!"
+  },
+  "cut.30": {
+   "en": "The LORD is with us. Do not be afraid!",
+   "de": "Der Herr ist mit uns. Fürchtet euch nicht!"
+  },
+  "cut.31": {
+   "en": "The LORD goes ahead of you!",
+   "de": "Der Herr zieht vor dir her!"
+  },
+  "cut.32": {
+   "en": "Those who are with us are more!",
+   "de": "Bei uns sind mehr!"
+  },
+  "cut.33": {
+   "en": "God shut the lions' mouths!",
+   "de": "Gott hat den Löwen das Maul verschlossen!"
+  },
+  "cut.34": {
+   "en": "Consider the lilies. Do not worry!",
+   "de": "Schaut die Lilien an. Sorgt euch nicht!"
   }
  },
  "MG": {
@@ -3641,13 +3769,13 @@
  "STORY": {
   "en": [
    "Long ago, the great Scroll of Light told the whole story of God's love — from the very first sunrise to the brightest morning of all.",
-   "But the Shadow of Doubt crept in. It tore the Scroll into twenty-eight pieces and hid them across the ages of the Bible.",
+   "But the Shadow of Doubt crept in. It tore the Scroll into thirty-four pieces and hid them across the ages of the Bible.",
    "Without the Scroll, Gloomlings spread everywhere: whispers of lies, worry, pride and fear.",
    "Now a young pilgrim is needed. Someone brave. Someone curious. Someone like you."
   ],
   "de": [
    "Vor langer Zeit erzählte die große Schriftrolle des Lichts die ganze Geschichte von Gottes Liebe – vom allerersten Sonnenaufgang bis zum hellsten Morgen von allen.",
-   "Doch der Schatten des Zweifels schlich sich heran. Er zerriss die Schriftrolle in achtundzwanzig Teile und versteckte sie in den Zeiten der Bibel.",
+   "Doch der Schatten des Zweifels schlich sich heran. Er zerriss die Schriftrolle in vierunddreißig Teile und versteckte sie in den Zeiten der Bibel.",
    "Ohne die Schriftrolle breiteten sich Düsterlinge überall aus: Flüstern von Lügen, Sorgen, Hochmut und Angst.",
    "Jetzt wird ein junger Pilger gebraucht. Jemand Mutiges. Jemand Neugieriges. Jemand wie du."
   ]
