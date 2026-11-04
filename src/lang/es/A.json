@@ -98,7 +98,7 @@
   "elder.intro": [
    "¡Ah, por fin un peregrino! Soy Simeón. He esperado muchos años para ver cumplirse las promesas de Dios.",
    "El Pergamino de Luz cuenta la gran historia del amor de Dios: desde la creación hasta la tumba vacía.",
-   "Pero la Sombra de la Duda lo rompió en veintidós piezas y las escondió en las historias de la Biblia.",
+   "Pero la Sombra de la Duda lo rompió en veintiocho piezas y las escondió en las historias de la Biblia.",
    "Estas Puertas del Recuerdo llevan a esas historias. Responde con sabiduría, sé valiente y trae las piezas a casa.",
    "La puerta 1, el Jardín del Edén, está abierta. Y mira: el corderito de Isaí ha decidido seguirte. ¡Que Dios te acompañe!"
   ],
@@ -649,7 +649,38 @@
   "mg.reward": "¡+{0} siclos del juego!",
   "mg.desc": "Minijuegos que has desbloqueado. Juega todas las veces que quieras.",
   "sign.game": "Jugar: {0}",
-  "fr.req": "Se desbloquea tras terminar {0} mundos"
+  "fr.req": "Se desbloquea tras terminar {0} mundos",
+  "bm.restless": "Jacob no podía descansar. Responde 4 bien para subir la escalera, ¡y un rayo de luz del cielo golpea a la sombra!",
+  "bm.restless.m": "Sube la escalera",
+  "bm.restless.full": "¡Escalera arriba! «¡Yo estoy contigo!» ¡La luz del cielo golpea a la sombra!",
+  "bm.sleepy": "¡La niebla del sueño vuelve a crecer una y otra vez! Responde 3 bien para encender la lámpara de Dios y detenerla.",
+  "bm.sleepy.m": "Enciende la lámpara",
+  "bm.sleepy.full": "«¡Habla, SEÑOR, que tu siervo escucha!» La lámpara brilla y la niebla ya no vuelve a crecer.",
+  "bm.riddle": "La sombra se esconde detrás de un escudo de acertijos. Responde bien en 3 temas distintos para romperlo. ¡La verdadera sabiduría viene de Dios!",
+  "bm.riddle.m": "Sabiduría",
+  "bm.riddle.full": "¡La sabiduría de Dios rompe el escudo de acertijos!",
+  "bm.tempter": "Responde como Jesús: «¡Escrito está!». Las respuestas de Biblia y de versículos golpean fuerte. Las demás solo golpean un poquito.",
+  "bm.tempter.m": "¡Escrito está!",
+  "bm.tempter.full": "«¡Escrito está!» ¡La palabra de Dios hace huir al tentador!",
+  "bm.empty": "Las seis tinajas de piedra están vacías. Cada respuesta correcta llena una. Cuando las seis estén llenas, ¡tus ataques serán fuertes!",
+  "bm.empty.m": "Tinajas llenas",
+  "bm.empty.one": "¡Tinaja llena!",
+  "bm.empty.full": "¡Las seis tinajas están llenas hasta el borde! ¡Ahora tus ataques son fuertes!",
+  "bm.grief": "Una piedra pesada tapa la tumba. ¡Cada 3 respuestas correctas, quítala rodando con un gran golpe!",
+  "bm.grief.m": "Quita la piedra",
+  "bm.grief.full": "«¡Lázaro, sal fuera!» ¡La piedra rueda a un lado!",
+  "furn.stonepillar": "El pilar de piedra de Jacob",
+  "furn.templelamp": "La lámpara de Dios",
+  "furn.goldenlamp": "Lámpara de oro del templo",
+  "furn.rivershell": "Concha del río Jordán",
+  "furn.stonejar": "Tinaja de piedra de Caná",
+  "furn.perfumejar": "El frasco de perfume de María",
+  "cut.23": "¡Dios está contigo dondequiera que vayas!",
+  "cut.24": "¡Habla, Señor, que te escucho!",
+  "cut.25": "¡La sabiduría viene de Dios!",
+  "cut.26": "¡Este es mi Hijo amado!",
+  "cut.27": "¡El mejor vino quedó para el final!",
+  "cut.28": "¡Jesús es la resurrección y la vida!"
  },
  "MG": {
   "_": {
@@ -715,7 +746,7 @@
  },
  "STORY": [
   "Hace mucho tiempo, el gran Pergamino de Luz contaba toda la historia del amor de Dios: desde el primer amanecer hasta la mañana más brillante de todas.",
-  "Pero la Sombra de la Duda se coló a escondidas. Rompió el Pergamino en veintidós piezas y las escondió a lo largo de los tiempos de la Biblia.",
+  "Pero la Sombra de la Duda se coló a escondidas. Rompió el Pergamino en veintiocho piezas y las escondió a lo largo de los tiempos de la Biblia.",
   "Sin el Pergamino, las Sombritas se extendieron por todas partes: susurros de mentiras, preocupación, orgullo y miedo.",
   "Ahora se necesita un joven peregrino. Alguien valiente. Alguien curioso. Alguien como tú."
  ],

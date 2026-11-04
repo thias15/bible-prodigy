@@ -10,7 +10,13 @@ const isX=id=>!!(CH[id]&&(CH[id].land||CH[id].cave||CH[id].sail||CH[id].isle||CH
 const xday=()=>{ const d=new Date(); return d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate(); };
 function xr(...a){ let h=2166136261>>>0; const s=a.join('|'); for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619)>>>0; } return mulberry32(h); }
 function XS(){ const XL=S.land||(S.land={}); XL.frag=XL.frag||[]; XL.req=XL.req||{}; XL.isle=XL.isle||{}; XL.shy=XL.shy||{}; XL.tw=XL.tw||{best:0,cp:0}; XL.chest=XL.chest||{}; XL.seen=XL.seen||{}; return XL; }
-const landOpen=()=>allDone(), towerOpen=()=>doneCount()>=10;
+/* the Land opens region by region, each right after the stories that happen there */
+const DONE=id=>!!(S&&S.chs[id]&&S.chs[id].stage>=4);
+const XUNLOCK=[[103,5],[102,24],[105,15],[104,21],[101,9]];   // [region, world that opens it]
+const regionOpen=id=>{ const u=XUNLOCK.find(x=>x[0]===id); return !u||DONE(u[1]); };
+const landOpen=()=>XUNLOCK.some(u=>DONE(u[1])), towerOpen=()=>DONE(5), townOpen=()=>DONE(24), seaOpen=()=>DONE(18);
+const unlockBy=id=>{ const u=XUNLOCK.find(x=>x[0]===id); return u?CH[u[1]].name:''; };
+for(const [a,b] of [[23,'c11'],[24,'c13'],[25,'c16'],[26,'c9'],[27,'c22'],[28,'c10']]) if(!TRACKS['c'+a]&&TRACKS[b]) TRACKS['c'+a]=TRACKS[b];
 const isNight=()=>Math.floor(Date.now()/60000)%12>=8;
 const WXS={101:['sun','sun','rain','mist'],102:['sun','sun','rain'],103:['sun','sun','wind'],104:['sun','wind','rain','mist'],105:['sun','sun','rain'],120:['sun','wind','storm'],121:['sun','sun','rain'],122:['sun','wind','sun'],123:['sun','storm','rain'],124:['sun','sun','rain']};
 const WXE={sun:'☀️',rain:'🌧️',mist:'🌫️',wind:'💨',storm:'⛈️'};
@@ -82,13 +88,23 @@ function wildTalk(e){ const k=e.wild, c=COMPS[k], who={name:c.name,look:null};
 function xHub(m){ const W=m.W, tx=W-14;
   for(let y=3;y<=7;y++) for(let x=tx-1;x<=tx+4;x++) m.set(x,y,y<6&&x>=tx&&x<tx+4?T.L:T.G);
   m.lms.push({k:'gatehouse',x:tx,y:3,w:4,h:3});
-  HUBX.tower={x:tx+2,y:7}; spot(m,{x:tx+2,y:6},{e:'🪜',big:0,label:t('x.tower'),act:towerOpen()?t('x.towerGo'):t('x.locked'),on:()=>{ if(!towerOpen()) return toast(t('x.towerLock',10)); xGo(130); }});
+  HUBX.tower={x:tx+2,y:7}; spot(m,{x:tx+2,y:6},{e:'🪜',big:0,label:t('x.tower'),act:towerOpen()?t('x.towerGo'):t('x.locked'),on:()=>{ if(!towerOpen()) return toast(t('x.towerLock2',CH[5].name)); xGo(130); }});
   const lx=W-6; for(let y=14;y<=16;y++) for(let x=lx-1;x<=lx+1;x++) m.set(x,y,T.G);
-  HUBX.land={x:lx,y:17}; spot(m,{x:lx,y:16},{e:'🧭',label:t('x.land'),act:landOpen()?t('x.landGo'):t('x.locked'),on:()=>{ if(!landOpen()) return toast(t('x.landLock'));
-    const XL=XS(), go=()=>xGo(XL.last&&XLAND.includes(XL.last)?XL.last:101);
+  HUBX.land={x:lx,y:17}; spot(m,{x:lx,y:16},{e:'🧭',label:t('x.land'),act:landOpen()?t('x.landGo'):t('x.locked'),on:()=>{ if(!landOpen()) return toast(t('x.roadLock',unlockBy(103)));
+    const XL=XS(), op=XUNLOCK.map(u=>u[0]).filter(regionOpen), go=()=>xGo(XL.last&&op.includes(XL.last)?XL.last:op[op.length-1]);
     if(!XL.seen.land){ XL.seen.land=1; save(); return talk([1,2,3,4].map(i=>L_(SIMEON,t('land.intro'+i))),go); } go(); }});
 }
 const L_=(who,txt)=>L({name:who.name,look:who.look},txt);
+/* era signposts under the row of gates */
+const ERAS=[['era.0',1],['era.1',11],['era.2',3],['era.3',19],['era.4',6],['era.5',7],['era.6',8],['era.7',17]];
+function eraOf(id){ let e=0; const p=ORDER.indexOf(+id); ERAS.forEach((x,i)=>{ if(ORDER.indexOf(x[1])<=p&&ORDER.indexOf(x[1])>=0) e=i; }); return e; }
+{ const _xh0=xHub; xHub=function(m){ _xh0(m); ERAS.forEach(([k,first],i)=>{ const p=ORDER.indexOf(first); if(p<0) return; const x=2+p*3; if(m.get(x,20)===T.B) m.set(x,20,T.G);
+    spot(m,{x,y:20},{e:'🪧',still:1,glow:false,label:t(k),act:t('era.see',t(k)),on:()=>{ const ws=ORDER.filter(id=>eraOf(id)===i);
+      openModal(t(k),`<p>${esc(t(k+'.d'))}</p>${ws.map(id=>`<div class="row"><div class="big">${DONE(id)?'✅':isOpen(id)?'🚪':'🔒'}</div><div class="grow"><h4>${POS(id)} · ${esc(CH[id].name)}</h4><p>${esc(CH[id].book)}</p></div></div>`).join('')}`); }}); }); }; }
+/* announce what just opened when you come home */
+function xAnnounce(){ const XL=XS(), seen=XL.seen.open||(XL.seen.open=[]); const now=[];
+  XUNLOCK.forEach(([r])=>{ if(regionOpen(r)&&!seen.includes(r)) now.push(r); }); if(towerOpen()&&!seen.includes(130)) now.push(130); if(townOpen()&&!seen.includes(140)) now.push(140); if(seaOpen()&&!seen.includes(120)) now.push(120);
+  if(!now.length) return; now.forEach(r=>seen.push(r)); save(); now.forEach((r,i)=>setTimeout(()=>toast(t('xo.new',CH[r].name),true),900+i*1800)); }
 
 /* ---- region maps of the Land ---- */
 function xMap(m){ const R=m.R, id=m.id, XL=XS(), rs=mulberry32(R.seed*3+1), rd=xr('day',id,xday());
@@ -101,9 +117,9 @@ function xMap(m){ const R=m.R, id=m.id, XL=XS(), rs=mulberry32(R.seed*3+1), rd=x
   if(R.land){ XL.last=id;
     if(guide){ const q=xReq(id); const lk2=TVLOOK[q.tv]; guide.name=t('tv.'+TVN[q.tv]); guide.look=lk({skin:SK[lk2[0]],hair:lk2[1],robe:lk2[2],sash:lk2[3]},lk2[4]); guide.role='trav'; guide.staff=0;
       guide.xon=travTalk; guide.markF=()=>{ const q2=xReq(id); return q2.st===0?'!':q2.st===1&&reqDone(q2)?'?':null; }; }
-    XROAD[id].forEach(to=>{ const a=XPOS[id], b=XPOS[to]; spot(m,xEdge(m,b[0]-a[0],b[1]-a[1]),{e:'🧭',road:to,label:t('x.roadTo',CH[to].name),act:t('x.roadGo',CH[to].name),on:()=>xGo(to,{road:id})}); });
+    XROAD[id].forEach(to=>{ const a=XPOS[id], b=XPOS[to]; spot(m,xEdge(m,b[0]-a[0],b[1]-a[1]),{e:'🧭',road:to,label:t('x.roadTo',CH[to].name),act:t('x.roadGo',CH[to].name),on:()=>{ if(!regionOpen(to)) return toast(t('x.roadLock',unlockBy(to))); xGo(to,{road:id}); }}); });
     spot(m,xFree(m,rs,{min:10,gap:3}),{e:'🕳️',cave:XCAVE[id],still:1,glow:false,label:t('x.cave'),act:t('x.caveGo'),on:()=>xGo(XCAVE[id])});
-    if(id===104) spot(m,xEdge(m,.25,1),{e:'⛵',big:1,still:1,label:t('x.ship'),act:t('x.shipGo'),on:()=>{ const go=()=>xGo(120,{home:1}); if(!XL.seen.sea){ XL.seen.sea=1; save(); return talk([1,2,3].map(i=>L(NARR(),t('sea.intro'+i))),go); } go(); }});
+    if(id===104) spot(m,xEdge(m,.25,1),{e:'⛵',big:1,still:1,label:t('x.ship'),act:t('x.shipGo'),on:()=>{ if(!seaOpen()) return toast(t('x.seaLock',CH[18].name)); const go=()=>xGo(120,{home:1}); if(!XL.seen.sea){ XL.seen.sea=1; save(); return talk([1,2,3].map(i=>L(NARR(),t('sea.intro'+i))),go); } go(); }});
     fragSpot(true); wildSpot();
     const q=xReq(id); if(q.ty==='find'&&q.st===1){ const it=TVE[TVN[q.tv]]; for(let i=0;i<q.n;i++){ const p=xFree(m,xr('it',id,xday(),i),{min:6}); if(!p||q.got.includes(i)) continue; spot(m,p,{e:it,still:0,act:t('x.pick'),on:e=>{ q.got.push(i); M.ents=M.ents.filter(x=>x!==e); SFX.coin(); toast(t('found',it,q.got.length,q.n)); if(q.got.length>=q.n) toast(t('rq.back',guide?guide.name:'')); save(); updTrack(); }}); } }
     if(id===101&&m.wx==='rain'&&XL.rain!==xday()) spot(m,xFree(m,rd,{min:8}),{e:'🌈',big:1,label:t('x.rainbow'),act:t('x.rainbowGo'),on:e=>{ XL.rain=xday(); M.ents=M.ents.filter(x=>x!==e); S.hp=maxHP(); xReward(40,20,null); talk([L(NARR(),t('x.rainbowT'))]); }});
@@ -195,7 +211,7 @@ function towerAfter(how){ const XL=XS(), tw=XL.tw, n=XT&&XT.floor; if(!XT) retur
     if(XARR){ const a=XARR; XARR=null; let tg=null;
       if(a.road) tg=M.ents.find(e=>e.road===a.road); else if(a.cave) tg=M.ents.find(e=>e.cave===a.cave); else if(a.isle) tg=M.ents.find(e=>e.isle===a.isle); else if(a.ship||a.home) tg=M.ents.find(e=>a.ship?e.e==='⛵':e.home);
       const p=tg&&xNear(tg.x,tg.y); if(p) xPlace(p); }
-    M.nightNow=isNight(); updTrack(); }; }
+    M.nightNow=isNight(); updTrack(); if(id==='hub'&&S.flags.met) xAnnounce(); }; }
 { const _wk=walkable; walkable=function(x,y){ if(M&&M.sail){ const v=M.get(x,y); return (v===T.W||v===T.BR)&&!entAt(M,x,y); } return _wk(x,y); }; }
 { const _ia=interact; interact=function(e){
     if(M&&M.xm&&e.kind==='exit'){ ac(); P.path=[]; P.pend=null; M.xm.back(); return; }

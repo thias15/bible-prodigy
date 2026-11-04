@@ -20,7 +20,7 @@ for L in ['de','es','el']:
     o = d / 'lang' / 'out' / ('ext_' + L + '.js')
     if f.exists(): o.write_text('Object.assign(STR.' + L + ',' + _j.dumps(_j.loads(f.read_text()), ensure_ascii=False) + ');\n')
     elif o.exists(): o.unlink()
-W2 = ['worlds2.js','worlds3.js','companions.js','quiz_extra.js','minigames.js','worlds_order.js','lang/out/lang_es.js','lang/out/lang_el.js','online_str.js','lang/out/online_de.js','lang/out/online_es.js','lang/out/online_el.js','ext_str.js','lang/out/ext_de.js','lang/out/ext_es.js','lang/out/ext_el.js']
+W2 = ['worlds2.js','worlds3.js','companions.js','quiz_extra.js','worlds4.js','minigames.js','worlds_order.js','lang/out/lang_es.js','lang/out/lang_el.js','online_str.js','lang/out/online_de.js','lang/out/online_es.js','lang/out/online_el.js','ext_str.js','lang/out/ext_de.js','lang/out/ext_es.js','lang/out/ext_el.js']
 ONLINE = '\n'.join(rd(f) for f in ['online_net.js','online.js','online_social.js','online_live.js'])
 out = shell.replace('/*__DATA__*/', rd('data.js')).replace('/*__I18N__*/', rd('i18n.js')).replace('/*__W2__*/', '\n'.join(rd(f) for f in W2 if (d / f).exists())).replace('/*__GAME__*/', game.replace('/*__EXT__*/', rd('endgame.js') + '\n' + rd('town.js')).replace('/*__ONLINE__*/', ONLINE))
 (d / 'dist').mkdir(exist_ok=True)

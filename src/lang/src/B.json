@@ -547,6 +547,54 @@
   "en": "Mighty river giant that blocks big hits (Job 40:15).",
   "de": "Ein mächtiger Flussriese, der große Treffer abhält (nach Hiob 40,15)."
  },
+ "COMPS.spark.name": {
+  "en": "Angel Spark",
+  "de": "Engelsfunke"
+ },
+ "COMPS.spark.desc": {
+  "en": "A tiny spark of heaven's light that warms you back to health. Jacob saw angels on the stairway (Genesis 28:12).",
+  "de": "Ein winziger Funke aus dem Licht des Himmels, der dich wieder fit macht. Jakob sah Engel auf der Treppe (nach 1. Mose 28,12)."
+ },
+ "COMPS.lamp.name": {
+  "en": "Temple Lamp",
+  "de": "Tempellampe"
+ },
+ "COMPS.lamp.desc": {
+  "en": "\"The lamp of God had not yet gone out\" (1 Samuel 3:3). Its glow softens the next hit.",
+  "de": "„Die Lampe Gottes war noch nicht erloschen“ (nach 1. Samuel 3,3). Ihr Schein mildert den nächsten Treffer."
+ },
+ "COMPS.monkey.name": {
+  "en": "Ship Monkey",
+  "de": "Schiffsaffe"
+ },
+ "COMPS.monkey.desc": {
+  "en": "Came home on Solomon's ships with gold and silver (1 Kings 10:22). Brings extra shekels after each win.",
+  "de": "Kam mit Salomos Schiffen voller Gold und Silber (nach 1. Könige 10,22). Bringt nach jedem Sieg Extra-Schekel."
+ },
+ "COMPS.swan.name": {
+  "en": "River Swan",
+  "de": "Flussschwan"
+ },
+ "COMPS.swan.desc": {
+  "en": "Glides along the Jordan and splashes every foe at once.",
+  "de": "Gleitet den Jordan entlang und bespritzt alle Gegner auf einmal."
+ },
+ "COMPS.jar.name": {
+  "en": "Water Jar",
+  "de": "Wasserkrug"
+ },
+ "COMPS.jar.desc": {
+  "en": "Filled to the brim, like the jars at Cana (John 2:7). Refreshes you every turn.",
+  "de": "Bis zum Rand gefüllt wie die Krüge in Kana (nach Johannes 2,7). Erfrischt dich jede Runde."
+ },
+ "COMPS.squirrel.name": {
+  "en": "Fig Squirrel",
+  "de": "Feigenhörnchen"
+ },
+ "COMPS.squirrel.desc": {
+  "en": "Quick and brave, from a fig tree in Bethany. Jumps in to help every turn.",
+  "de": "Flink und mutig, aus einem Feigenbaum in Betanien. Springt jede Runde zu Hilfe."
+ },
  "CH.1.name": {
   "en": "Garden of Eden",
   "de": "Garten Eden"
@@ -3198,5 +3246,725 @@
  "CH.22.verse.r": {
   "en": "Luke 19:10",
   "de": "Lukas 19,10"
+ },
+ "CH.23.name": {
+  "en": "Bethel",
+  "de": "Bethel"
+ },
+ "CH.23.book": {
+  "en": "Genesis 28",
+  "de": "1. Mose 28"
+ },
+ "CH.23.foe.name": {
+  "en": "Fretling",
+  "de": "Bangling"
+ },
+ "CH.23.foe.pl": {
+  "en": null,
+  "de": "Banglinge"
+ },
+ "CH.23.foe.what": {
+  "en": "shadows of loneliness",
+  "de": "Schatten der Einsamkeit"
+ },
+ "CH.23.foes.0.name": {
+  "en": "Fretling",
+  "de": "Bangling"
+ },
+ "CH.23.foes.1.name": {
+  "en": "Lonely Wisp",
+  "de": "Einsamkeitslicht"
+ },
+ "CH.23.foes.2.name": {
+  "en": "Night Drip",
+  "de": "Nachttropfen"
+ },
+ "CH.23.boss.name": {
+  "en": "Restless Gloom",
+  "de": "Ruheloses Dunkel"
+ },
+ "CH.23.boss.where": {
+  "en": "stone pillar",
+  "de": "beim Steinmal"
+ },
+ "CH.23.guide.name": {
+  "en": "Jacob",
+  "de": "Jakob"
+ },
+ "CH.23.intro.0": {
+  "en": "Shh... it's night. I'm Jacob. I'm running away from home, because my brother Esau is very angry with me.",
+  "de": "Psst ... es ist Nacht. Ich bin Jakob. Ich bin von zu Hause weggelaufen, weil mein Bruder Esau sehr wütend auf mich ist."
+ },
+ "CH.23.intro.1": {
+  "en": "I tricked him and took the blessing that was meant for him. Now I'm going far away, to my uncle Laban in Haran.",
+  "de": "Ich habe ihn ausgetrickst und mir den Segen geholt, der für ihn bestimmt war. Jetzt gehe ich weit weg, zu meinem Onkel Laban nach Haran."
+ },
+ "CH.23.intro.2": {
+  "en": "The sun went down, so I took one of these stones as a pillow. I've never felt so alone. Does God even see me out here?",
+  "de": "Die Sonne ist untergegangen, also habe ich einen von diesen Steinen als Kopfkissen genommen. Ich habe mich noch nie so allein gefühlt. Sieht Gott mich hier draußen überhaupt?"
+ },
+ "CH.23.intro.3": {
+  "en": "Fretlings keep whispering, 'You're all alone. Nobody is with you.' Defeat 5 of them, then face the Restless Gloom by the stone pillar.",
+  "de": "Banglinge flüstern ständig: „Du bist ganz allein. Niemand ist bei dir.“ Besiege 5 Düsterlinge, dann stell dich dem Ruhelosen Dunkel beim Steinmal."
+ },
+ "CH.23.hint": {
+  "en": "The Restless Gloom waits by the stone pillar. You are never too far away for God to find you!",
+  "de": "Das Ruhelose Dunkel wartet beim Steinmal. Du bist nie zu weit weg, als dass Gott dich nicht finden könnte!"
+ },
+ "CH.23.outro.0": {
+  "en": "I had a dream! A stairway stood on the earth, and its top reached up to heaven. God's angels were going up and down on it!",
+  "de": "Ich hatte einen Traum! Eine Treppe stand auf der Erde, und ihre Spitze reichte bis zum Himmel. Gottes Engel stiegen darauf hinauf und herab!"
+ },
+ "CH.23.outro.1": {
+  "en": "The LORD stood above it and said, 'I am with you and will keep you wherever you go.' I woke up and said, 'Surely the LORD is in this place, and I didn't know it!'",
+  "de": "Der Herr stand oben und sagte: „Ich bin mit dir und will dich behüten, wohin du auch gehst.“ Ich wachte auf und sagte: „Wirklich, der Herr ist an diesem Ort, und ich wusste es nicht!“"
+ },
+ "CH.23.outro.2": {
+  "en": "I set up my stone pillow as a pillar, poured oil on it, and called this place Bethel, 'house of God'. Here's a piece of the Scroll. And this little Angel Spark wants to come with you and light your way!",
+  "de": "Ich habe mein Steinkissen als Steinmal aufgestellt, Öl darauf gegossen und den Ort Bethel genannt, „Haus Gottes“. Hier ist ein Teil der Schriftrolle. Und dieser kleine Engelsfunke möchte mit dir kommen und dir den Weg leuchten!"
+ },
+ "CH.23.post": {
+  "en": "Even when you feel alone, God is with you, wherever you go.",
+  "de": "Auch wenn du dich allein fühlst: Gott ist bei dir, wohin du auch gehst."
+ },
+ "CH.23.side.name": {
+  "en": "Shepherd of Luz",
+  "de": "Hirte aus Lus"
+ },
+ "CH.23.side.what": {
+  "en": "lost lambs",
+  "de": "verlorene Lämmer"
+ },
+ "CH.23.side.ask": {
+  "en": "The town over there is called Luz. I'm a shepherd, and 3 of my lambs wandered off in the dark! Can you find them?",
+  "de": "Die Stadt da drüben heißt Lus. Ich bin Hirte, und 3 meiner Lämmer sind im Dunkeln weggelaufen! Findest du sie?"
+ },
+ "CH.23.side.thanks": {
+  "en": "You found them all! God watches over Jacob even better than I watch over my lambs. Take this.",
+  "de": "Du hast sie alle gefunden! Gott passt auf Jakob noch besser auf als ich auf meine Lämmer. Nimm das."
+ },
+ "CH.23.flav.0.name": {
+  "en": "Traveler",
+  "de": "Reisender"
+ },
+ "CH.23.flav.0.lines.0": {
+  "en": "That young man is walking all the way from Beersheba to Haran. That's a very long road to walk alone!",
+  "de": "Dieser junge Mann geht den ganzen Weg von Beerscheba bis nach Haran. Das ist ein sehr langer Weg, wenn man allein ist!"
+ },
+ "CH.23.flav.1.name": {
+  "en": "Old Woman of Luz",
+  "de": "Alte Frau aus Lus"
+ },
+ "CH.23.flav.1.lines.0": {
+  "en": "Long ago, Jacob's grandfather Abraham built an altar near here and called on the name of the LORD.",
+  "de": "Vor langer Zeit hat Jakobs Großvater Abraham hier in der Nähe einen Altar gebaut und den Namen des Herrn angerufen."
+ },
+ "CH.23.verse.t": {
+  "en": "I am with you, and will keep you wherever you go.",
+  "de": "Ich bin mit dir und will dich behüten, wohin du auch gehst."
+ },
+ "CH.23.verse.r": {
+  "en": "Genesis 28:15",
+  "de": "1. Mose 28,15"
+ },
+ "CH.24.name": {
+  "en": "Shiloh",
+  "de": "Silo"
+ },
+ "CH.24.book": {
+  "en": "1 Samuel 1–3",
+  "de": "1. Samuel 1–3"
+ },
+ "CH.24.foe.name": {
+  "en": "Dozeling",
+  "de": "Döserling"
+ },
+ "CH.24.foe.pl": {
+  "en": null,
+  "de": "Döserlinge"
+ },
+ "CH.24.foe.what": {
+  "en": "shadows of not listening",
+  "de": "Schatten des Nicht-Zuhörens"
+ },
+ "CH.24.foes.0.name": {
+  "en": "Dozeling",
+  "de": "Döserling"
+ },
+ "CH.24.foes.1.name": {
+  "en": "Yawn Wisp",
+  "de": "Gähnlicht"
+ },
+ "CH.24.foes.2.name": {
+  "en": "Snore Brute",
+  "de": "Schnarchgroll"
+ },
+ "CH.24.boss.name": {
+  "en": "The Sleepy Fog",
+  "de": "Der Schlafnebel"
+ },
+ "CH.24.boss.where": {
+  "en": "house of the LORD",
+  "de": "beim Haus des Herrn"
+ },
+ "CH.24.guide.name": {
+  "en": "Samuel",
+  "de": "Samuel"
+ },
+ "CH.24.intro.0": {
+  "en": "Hi! I'm Samuel. I live here in Shiloh, at the house of the LORD, and I help Eli the priest.",
+  "de": "Hallo! Ich bin Samuel. Ich wohne hier in Silo, beim Haus des Herrn, und helfe dem Priester Eli."
+ },
+ "CH.24.intro.1": {
+  "en": "My mother Hannah prayed for a baby for a long, long time. God answered her prayer, and that's me! So she brought me here to serve the LORD.",
+  "de": "Meine Mutter Hanna hat lange, lange um ein Baby gebetet. Gott hat ihr Gebet erhört, und das bin ich! Darum hat sie mich hierher gebracht, damit ich dem Herrn diene."
+ },
+ "CH.24.intro.2": {
+  "en": "In these days, people hardly ever hear a word from God. Eli's eyes are getting weak. But the lamp of God hasn't gone out yet.",
+  "de": "In dieser Zeit hört man nur selten ein Wort von Gott. Elis Augen werden schwach. Aber die Lampe Gottes ist noch nicht erloschen."
+ },
+ "CH.24.intro.3": {
+  "en": "Dozelings make everyone sleepy, so nobody listens to God. Defeat 5 of them, then face the Sleepy Fog at the house of the LORD.",
+  "de": "Döserlinge machen alle schläfrig, damit niemand auf Gott hört. Besiege 5 Düsterlinge, dann stell dich dem Schlafnebel beim Haus des Herrn."
+ },
+ "CH.24.hint": {
+  "en": "The Sleepy Fog drifts around the house of the LORD. Keep your ears open: God still speaks!",
+  "de": "Der Schlafnebel wabert um das Haus des Herrn. Halte deine Ohren offen: Gott redet noch heute!"
+ },
+ "CH.24.outro.0": {
+  "en": "Someone called my name in the night! Three times I ran to Eli and said, 'Here I am!' But it wasn't Eli.",
+  "de": "In der Nacht hat jemand meinen Namen gerufen! Dreimal bin ich zu Eli gelaufen und habe gesagt: „Hier bin ich!“ Aber es war nicht Eli."
+ },
+ "CH.24.outro.1": {
+  "en": "Then Eli understood: it was the LORD! The next time, I said, 'Speak, for your servant hears.' And God spoke to me.",
+  "de": "Da verstand Eli: Es war der Herr! Beim nächsten Mal sagte ich: „Rede, denn dein Diener hört.“ Und Gott sprach zu mir."
+ },
+ "CH.24.outro.2": {
+  "en": "Here's a piece of the Scroll. And this Temple Lamp still burns bright. It wants to come with you and shine on your path!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und diese Tempellampe brennt immer noch hell. Sie möchte mit dir kommen und deinen Weg erleuchten!"
+ },
+ "CH.24.post": {
+  "en": "God still speaks through His word. Be ready to say, 'Speak, LORD, I'm listening!'",
+  "de": "Gott redet noch heute durch sein Wort. Sei bereit zu sagen: „Rede, Herr, ich höre!“"
+ },
+ "CH.24.side.name": {
+  "en": "Hannah",
+  "de": "Hanna"
+ },
+ "CH.24.side.what": {
+  "en": "balls of yarn",
+  "de": "Wollknäuel"
+ },
+ "CH.24.side.ask": {
+  "en": "I'm Hannah, Samuel's mother. Every year I make him a new little robe. But I dropped 3 balls of yarn on the way up to Shiloh! Can you find them?",
+  "de": "Ich bin Hanna, Samuels Mutter. Jedes Jahr nähe ich ihm ein neues kleines Gewand. Aber auf dem Weg nach Silo habe ich 3 Wollknäuel verloren! Findest du sie?"
+ },
+ "CH.24.side.thanks": {
+  "en": "Thank you! I prayed for this boy, and the LORD gave me what I asked. Take this!",
+  "de": "Danke! Um diesen Jungen habe ich gebetet, und der Herr hat mir gegeben, was ich erbeten habe. Nimm das!"
+ },
+ "CH.24.flav.0.name": {
+  "en": "Eli",
+  "de": "Eli"
+ },
+ "CH.24.flav.0.lines.0": {
+  "en": "When Hannah prayed so hard that only her lips moved, I didn't understand at first. Then I told her, 'Go in peace. May God give you what you asked.'",
+  "de": "Als Hanna so innig betete, dass sich nur ihre Lippen bewegten, habe ich es zuerst nicht verstanden. Dann habe ich ihr gesagt: „Geh in Frieden. Gott gebe dir, worum du gebeten hast.“"
+ },
+ "CH.24.flav.1.name": {
+  "en": "Elkanah",
+  "de": "Elkana"
+ },
+ "CH.24.flav.1.lines.0": {
+  "en": "I'm Elkanah, Samuel's father. Every year our family walks up to Shiloh to worship the LORD.",
+  "de": "Ich bin Elkana, Samuels Vater. Jedes Jahr zieht unsere Familie hinauf nach Silo, um den Herrn anzubeten."
+ },
+ "CH.24.verse.t": {
+  "en": "Speak, LORD, for your servant hears.",
+  "de": "Rede, Herr, denn dein Diener hört."
+ },
+ "CH.24.verse.r": {
+  "en": "1 Samuel 3:9-10",
+  "de": "1. Samuel 3,9-10"
+ },
+ "CH.25.name": {
+  "en": "Solomon's Temple",
+  "de": "Salomos Tempel"
+ },
+ "CH.25.book": {
+  "en": "1 Kings 3 · 6–8 · 10",
+  "de": "1. Könige 3 · 6–8 · 10"
+ },
+ "CH.25.foe.name": {
+  "en": "Muddling",
+  "de": "Wirrling"
+ },
+ "CH.25.foe.pl": {
+  "en": null,
+  "de": "Wirrlinge"
+ },
+ "CH.25.foe.what": {
+  "en": "shadows of foolishness",
+  "de": "Schatten der Torheit"
+ },
+ "CH.25.foes.0.name": {
+  "en": "Muddling",
+  "de": "Wirrling"
+ },
+ "CH.25.foes.1.name": {
+  "en": "Riddle Wisp",
+  "de": "Rätsellicht"
+ },
+ "CH.25.foes.2.name": {
+  "en": "Folly Drip",
+  "de": "Torheitstropfen"
+ },
+ "CH.25.boss.name": {
+  "en": "Riddle Gloom",
+  "de": "Rätsel-Dunkel"
+ },
+ "CH.25.boss.where": {
+  "en": "temple court",
+  "de": "im Tempelvorhof"
+ },
+ "CH.25.guide.name": {
+  "en": "Solomon",
+  "de": "Salomo"
+ },
+ "CH.25.intro.0": {
+  "en": "Welcome to Jerusalem! I'm Solomon, son of King David. When I became king, I felt like a little child who didn't know what to do.",
+  "de": "Willkommen in Jerusalem! Ich bin Salomo, der Sohn von König David. Als ich König wurde, fühlte ich mich wie ein kleines Kind, das nicht weiß, was es tun soll."
+ },
+ "CH.25.intro.1": {
+  "en": "God said to me in a dream, 'Ask what I should give you.' I asked for an understanding heart, so I could lead His people well.",
+  "de": "Gott sagte im Traum zu mir: „Bitte, was ich dir geben soll.“ Ich bat um ein hörendes Herz, damit ich sein Volk gut führen kann."
+ },
+ "CH.25.intro.2": {
+  "en": "God gave me wisdom, and much more! Now we are building a temple for the LORD, with cedar wood from Lebanon and lots of gold.",
+  "de": "Gott schenkte mir Weisheit, und noch viel mehr! Jetzt bauen wir dem Herrn einen Tempel, mit Zedernholz aus dem Libanon und viel Gold."
+ },
+ "CH.25.intro.3": {
+  "en": "Muddlings are spreading foolish ideas everywhere. Defeat 6 of them, then face the Riddle Gloom in the temple court.",
+  "de": "Wirrlinge verbreiten überall dumme Ideen. Besiege 6 Düsterlinge, dann stell dich dem Rätsel-Dunkel im Tempelvorhof."
+ },
+ "CH.25.hint": {
+  "en": "The Riddle Gloom hides behind its riddles in the temple court. True wisdom comes from God!",
+  "de": "Das Rätsel-Dunkel versteckt sich im Tempelvorhof hinter seinen Rätseln. Wahre Weisheit kommt von Gott!"
+ },
+ "CH.25.outro.0": {
+  "en": "The temple is finished! When the priests brought in the ark, a cloud filled the house. It was the glory of the LORD!",
+  "de": "Der Tempel ist fertig! Als die Priester die Bundeslade hineintrugen, erfüllte eine Wolke das Haus. Es war die Herrlichkeit des Herrn!"
+ },
+ "CH.25.outro.1": {
+  "en": "Later the Queen of Sheba came from far away to test me with hard questions. God helped me answer every one, and she praised the LORD.",
+  "de": "Später kam die Königin von Saba von weit her, um mich mit schweren Fragen zu prüfen. Gott half mir, jede zu beantworten, und sie lobte den Herrn."
+ },
+ "CH.25.outro.2": {
+  "en": "Here's a piece of the Scroll. And this monkey came home on my ships with gold and silver. It wants to travel with you!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und dieser Affe ist mit meinen Schiffen voller Gold und Silber gekommen. Er möchte mit dir reisen!"
+ },
+ "CH.25.post": {
+  "en": "If you need wisdom, ask God. He loves to give it!",
+  "de": "Wenn du Weisheit brauchst, bitte Gott darum. Er schenkt sie gern!"
+ },
+ "CH.25.side.name": {
+  "en": "Builder from Tyre",
+  "de": "Baumeister aus Tyrus"
+ },
+ "CH.25.side.what": {
+  "en": "cedar logs",
+  "de": "Zedernstämme"
+ },
+ "CH.25.side.ask": {
+  "en": "I'm a builder from Tyre. King Hiram sent cedar logs from Lebanon for the temple, but 4 of them rolled away! Can you find them?",
+  "de": "Ich bin ein Baumeister aus Tyrus. König Hiram hat Zedernstämme aus dem Libanon für den Tempel geschickt, aber 4 davon sind weggerollt! Findest du sie?"
+ },
+ "CH.25.side.thanks": {
+  "en": "Thank you! Every stone was made ready at the quarry, so no hammer was heard while the temple was built. Take this!",
+  "de": "Danke! Jeder Stein wurde schon im Steinbruch fertig gemacht, darum hörte man beim Tempelbau keinen Hammer. Nimm das!"
+ },
+ "CH.25.flav.0.name": {
+  "en": "Mother with a Baby",
+  "de": "Mutter mit Baby"
+ },
+ "CH.25.flav.0.lines.0": {
+  "en": "Another woman said my baby was hers! King Solomon's wise judgment showed who the real mother was. My baby is safe with me!",
+  "de": "Eine andere Frau sagte, mein Baby gehöre ihr! Das weise Urteil von König Salomo zeigte, wer die echte Mutter war. Mein Baby ist sicher bei mir!"
+ },
+ "CH.25.flav.1.name": {
+  "en": "Queen of Sheba",
+  "de": "Königin von Saba"
+ },
+ "CH.25.flav.1.lines.0": {
+  "en": "I didn't believe what people said about Solomon's wisdom until I saw it myself. Not even half of it had been told to me!",
+  "de": "Ich habe nicht geglaubt, was man über Salomos Weisheit erzählte, bis ich es selbst gesehen habe. Nicht einmal die Hälfte hatte man mir gesagt!"
+ },
+ "CH.25.verse.t": {
+  "en": "Give your servant an understanding heart to judge your people.",
+  "de": "Gib deinem Diener ein hörendes Herz, damit er dein Volk richten kann."
+ },
+ "CH.25.verse.r": {
+  "en": "1 Kings 3:9",
+  "de": "1. Könige 3,9"
+ },
+ "CH.26.name": {
+  "en": "River Jordan",
+  "de": "Am Jordan"
+ },
+ "CH.26.book": {
+  "en": "Matthew 3–4",
+  "de": "Matthäus 3–4"
+ },
+ "CH.26.foe.name": {
+  "en": "Whisperling",
+  "de": "Flüsterling"
+ },
+ "CH.26.foe.pl": {
+  "en": null,
+  "de": "Flüsterlinge"
+ },
+ "CH.26.foe.what": {
+  "en": "shadows of temptation",
+  "de": "Schatten der Versuchung"
+ },
+ "CH.26.foes.0.name": {
+  "en": "Whisperling",
+  "de": "Flüsterling"
+ },
+ "CH.26.foes.1.name": {
+  "en": "Shortcut Imp",
+  "de": "Abkürzungswicht"
+ },
+ "CH.26.foes.2.name": {
+  "en": "Hunger Drip",
+  "de": "Hungertropfen"
+ },
+ "CH.26.boss.name": {
+  "en": "Gloom of Temptation",
+  "de": "Dunkel der Versuchung"
+ },
+ "CH.26.boss.where": {
+  "en": "edge of the wilderness",
+  "de": "am Rand der Wüste"
+ },
+ "CH.26.guide.name": {
+  "en": "John the Baptist",
+  "de": "Johannes der Täufer"
+ },
+ "CH.26.intro.0": {
+  "en": "Welcome to the Jordan River! I'm John. I wear clothes of camel's hair and eat locusts and wild honey.",
+  "de": "Willkommen am Jordan! Ich bin Johannes. Ich trage Kleider aus Kamelhaar und esse Heuschrecken und wilden Honig."
+ },
+ "CH.26.intro.1": {
+  "en": "I tell everyone, 'Repent, for the kingdom of heaven is near!' People come, confess their sins, and I baptize them in the river.",
+  "de": "Ich sage allen: „Kehrt um, denn das Himmelreich ist nahe!“ Die Leute kommen, bekennen ihre Sünden, und ich taufe sie im Fluss."
+ },
+ "CH.26.intro.2": {
+  "en": "Then Jesus came to be baptized. When He came up out of the water, heaven opened, and the Spirit of God came down on Him like a dove. A voice said, 'This is my beloved Son!'",
+  "de": "Dann kam Jesus, um sich taufen zu lassen. Als er aus dem Wasser stieg, öffnete sich der Himmel, und der Geist Gottes kam wie eine Taube auf ihn herab. Eine Stimme sagte: „Das ist mein geliebter Sohn!“"
+ },
+ "CH.26.intro.3": {
+  "en": "Whisperlings twist God's words to trick people. Defeat 6 of them, then face the Gloom of Temptation at the edge of the wilderness.",
+  "de": "Flüsterlinge verdrehen Gottes Worte, um Menschen zu täuschen. Besiege 6 Düsterlinge, dann stell dich dem Dunkel der Versuchung am Rand der Wüste."
+ },
+ "CH.26.hint": {
+  "en": "The Gloom of Temptation waits at the edge of the wilderness. Answer it like Jesus did: 'It is written!'",
+  "de": "Das Dunkel der Versuchung wartet am Rand der Wüste. Antworte wie Jesus: „Es steht geschrieben!“"
+ },
+ "CH.26.outro.0": {
+  "en": "After His baptism, Jesus went into the wilderness and fasted for 40 days and 40 nights. Then the devil came to tempt Him three times.",
+  "de": "Nach seiner Taufe ging Jesus in die Wüste und fastete 40 Tage und 40 Nächte. Dann kam der Teufel und versuchte ihn dreimal."
+ },
+ "CH.26.outro.1": {
+  "en": "Every time, Jesus answered with God's word: 'It is written!' Then the devil left Him, and angels came and served Him.",
+  "de": "Jedes Mal antwortete Jesus mit Gottes Wort: „Es steht geschrieben!“ Da verließ ihn der Teufel, und Engel kamen und dienten ihm."
+ },
+ "CH.26.outro.2": {
+  "en": "Here's a piece of the Scroll. And this swan glides along the river. It wants to come with you!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und dieser Schwan gleitet den Fluss entlang. Er möchte mit dir kommen!"
+ },
+ "CH.26.post": {
+  "en": "When you're tempted, remember God's word. It is stronger than any lie!",
+  "de": "Wenn du versucht wirst, denk an Gottes Wort. Es ist stärker als jede Lüge!"
+ },
+ "CH.26.side.name": {
+  "en": "Andrew",
+  "de": "Andreas"
+ },
+ "CH.26.side.what": {
+  "en": "pots of wild honey",
+  "de": "Töpfe mit wildem Honig"
+ },
+ "CH.26.side.ask": {
+  "en": "I'm Andrew, one of John's followers. John eats locusts and wild honey, and I promised to find him 3 pots of honey for supper. Will you help?",
+  "de": "Ich bin Andreas, einer von Johannes’ Jüngern. Johannes isst Heuschrecken und wilden Honig, und ich habe versprochen, 3 Töpfe Honig fürs Abendessen zu finden. Hilfst du mir?"
+ },
+ "CH.26.side.thanks": {
+  "en": "Thanks! One day John pointed to Jesus and said, 'Look, the Lamb of God!' I want to follow Him! Take this.",
+  "de": "Danke! Eines Tages zeigte Johannes auf Jesus und sagte: „Seht, das Lamm Gottes!“ Ich will ihm folgen! Nimm das."
+ },
+ "CH.26.flav.0.name": {
+  "en": "Tax Collector",
+  "de": "Zöllner"
+ },
+ "CH.26.flav.0.lines.0": {
+  "en": "I came to be baptized and asked John what I should do. He said, 'Don't collect more money than you're supposed to.'",
+  "de": "Ich kam, um mich taufen zu lassen, und fragte Johannes, was ich tun soll. Er sagte: „Verlangt nicht mehr Geld, als festgesetzt ist.“"
+ },
+ "CH.26.flav.1.name": {
+  "en": "Soldier",
+  "de": "Soldat"
+ },
+ "CH.26.flav.1.lines.0": {
+  "en": "John told us soldiers, 'Don't bully anyone, don't accuse anyone falsely, and be happy with your pay.'",
+  "de": "Johannes sagte zu uns Soldaten: „Tut niemandem Gewalt an, beschuldigt niemanden zu Unrecht und seid mit eurem Lohn zufrieden.“"
+ },
+ "CH.26.verse.t": {
+  "en": "Man shall not live by bread alone, but by every word that comes out of the mouth of God.",
+  "de": "Der Mensch lebt nicht vom Brot allein, sondern von jedem Wort, das aus dem Mund Gottes kommt."
+ },
+ "CH.26.verse.r": {
+  "en": "Matthew 4:4",
+  "de": "Matthäus 4,4"
+ },
+ "CH.27.name": {
+  "en": "Cana",
+  "de": "Kana"
+ },
+ "CH.27.book": {
+  "en": "John 2",
+  "de": "Johannes 2"
+ },
+ "CH.27.foe.name": {
+  "en": "Lackling",
+  "de": "Mangling"
+ },
+ "CH.27.foe.pl": {
+  "en": null,
+  "de": "Manglinge"
+ },
+ "CH.27.foe.what": {
+  "en": "shadows of \"not enough\"",
+  "de": "Schatten des „Nicht genug“"
+ },
+ "CH.27.foes.0.name": {
+  "en": "Lackling",
+  "de": "Mangling"
+ },
+ "CH.27.foes.1.name": {
+  "en": "Grumble Imp",
+  "de": "Murrwicht"
+ },
+ "CH.27.foes.2.name": {
+  "en": "Dry Drip",
+  "de": "Trockentropfen"
+ },
+ "CH.27.boss.name": {
+  "en": "Gloom of Emptiness",
+  "de": "Dunkel der Leere"
+ },
+ "CH.27.boss.where": {
+  "en": "wedding house",
+  "de": "beim Hochzeitshaus"
+ },
+ "CH.27.guide.name": {
+  "en": "Mary",
+  "de": "Maria"
+ },
+ "CH.27.intro.0": {
+  "en": "Shalom! I'm Mary, the mother of Jesus. We're at a wedding here in Cana, in Galilee. Jesus and His disciples were invited too!",
+  "de": "Schalom! Ich bin Maria, die Mutter von Jesus. Wir sind auf einer Hochzeit hier in Kana in Galiläa. Jesus und seine Jünger sind auch eingeladen!"
+ },
+ "CH.27.intro.1": {
+  "en": "A wedding feast lasts for days, with music, food and dancing. But oh no, the wine has run out! The family will be so embarrassed.",
+  "de": "Ein Hochzeitsfest dauert mehrere Tage, mit Musik, Essen und Tanz. Aber oh nein, der Wein ist ausgegangen! Das ist der Familie bestimmt sehr peinlich."
+ },
+ "CH.27.intro.2": {
+  "en": "I told Jesus, 'They have no wine.' Then I said to the servants, 'Do whatever He tells you.'",
+  "de": "Ich habe zu Jesus gesagt: „Sie haben keinen Wein mehr.“ Dann habe ich zu den Dienern gesagt: „Was er euch sagt, das tut!“"
+ },
+ "CH.27.intro.3": {
+  "en": "Lacklings whisper, 'There will never be enough!' Defeat 5 of them, then face the Gloom of Emptiness at the wedding house.",
+  "de": "Manglinge flüstern: „Es wird nie genug sein!“ Besiege 5 Düsterlinge, dann stell dich dem Dunkel der Leere beim Hochzeitshaus."
+ },
+ "CH.27.hint": {
+  "en": "The Gloom of Emptiness lurks by the wedding house. Trust Jesus, and do whatever He tells you!",
+  "de": "Das Dunkel der Leere lauert beim Hochzeitshaus. Vertrau Jesus und tu, was er dir sagt!"
+ },
+ "CH.27.outro.0": {
+  "en": "Jesus told the servants, 'Fill the jars with water.' They filled six big stone jars right up to the brim.",
+  "de": "Jesus sagte zu den Dienern: „Füllt die Krüge mit Wasser.“ Sie füllten sechs große Steinkrüge bis zum Rand."
+ },
+ "CH.27.outro.1": {
+  "en": "Then He said, 'Now draw some out and take it to the master of the feast.' The water had become wine, the best wine of all! This was Jesus' first sign, and His disciples believed in Him.",
+  "de": "Dann sagte er: „Schöpft jetzt davon und bringt es dem Speisemeister.“ Das Wasser war zu Wein geworden, zum besten Wein von allen! Das war das erste Zeichen von Jesus, und seine Jünger glaubten an ihn."
+ },
+ "CH.27.outro.2": {
+  "en": "Here's a piece of the Scroll. And one of the servants wants you to have this little Water Jar. It will refresh you on your journey!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und einer der Diener möchte dir diesen kleinen Wasserkrug schenken. Er wird dich auf deiner Reise erfrischen!"
+ },
+ "CH.27.post": {
+  "en": "Do whatever Jesus tells you. He can do more than you imagine!",
+  "de": "Tu, was Jesus dir sagt. Er kann mehr, als du dir vorstellen kannst!"
+ },
+ "CH.27.side.name": {
+  "en": "Wedding Servant",
+  "de": "Hochzeitsdiener"
+ },
+ "CH.27.side.what": {
+  "en": "water buckets",
+  "de": "Wassereimer"
+ },
+ "CH.27.side.ask": {
+  "en": "I'm a servant at the wedding. Something tells me we'll need a lot of water today! Can you find 3 buckets for me?",
+  "de": "Ich bin ein Diener auf der Hochzeit. Irgendwie habe ich das Gefühl, dass wir heute viel Wasser brauchen! Findest du 3 Eimer für mich?"
+ },
+ "CH.27.side.thanks": {
+  "en": "Thanks! Mary said, 'Do whatever He tells you,' and I want to be ready. Take this.",
+  "de": "Danke! Maria hat gesagt: „Was er euch sagt, das tut!“, und ich will bereit sein. Nimm das."
+ },
+ "CH.27.flav.0.name": {
+  "en": "Master of the Feast",
+  "de": "Speisemeister"
+ },
+ "CH.27.flav.0.lines.0": {
+  "en": "Everyone serves the good wine first. But this wine is the best of all! Where did it come from?",
+  "de": "Jeder schenkt zuerst den guten Wein aus. Aber dieser Wein ist der beste von allen! Wo kommt er nur her?"
+ },
+ "CH.27.flav.1.name": {
+  "en": "Nathanael",
+  "de": "Natanael"
+ },
+ "CH.27.flav.1.lines.0": {
+  "en": "I'm Nathanael, and I'm from Cana! I once asked, 'Can anything good come out of Nazareth?' Now I know the answer!",
+  "de": "Ich bin Natanael, und ich komme aus Kana! Ich habe einmal gefragt: „Kann aus Nazaret etwas Gutes kommen?“ Jetzt kenne ich die Antwort!"
+ },
+ "CH.27.verse.t": {
+  "en": "Whatever he says to you, do it.",
+  "de": "Was er euch sagt, das tut!"
+ },
+ "CH.27.verse.r": {
+  "en": "John 2:5",
+  "de": "Johannes 2,5"
+ },
+ "CH.28.name": {
+  "en": "Bethany",
+  "de": "Betanien"
+ },
+ "CH.28.book": {
+  "en": "John 11",
+  "de": "Johannes 11"
+ },
+ "CH.28.foe.name": {
+  "en": "Sorrowling",
+  "de": "Kummerling"
+ },
+ "CH.28.foe.pl": {
+  "en": null,
+  "de": "Kummerlinge"
+ },
+ "CH.28.foe.what": {
+  "en": "shadows of hopelessness",
+  "de": "Schatten der Hoffnungslosigkeit"
+ },
+ "CH.28.foes.0.name": {
+  "en": "Sorrowling",
+  "de": "Kummerling"
+ },
+ "CH.28.foes.1.name": {
+  "en": "Tear Wisp",
+  "de": "Tränenlicht"
+ },
+ "CH.28.foes.2.name": {
+  "en": "Stone Brute",
+  "de": "Steingroll"
+ },
+ "CH.28.boss.name": {
+  "en": "Gloom of Grief",
+  "de": "Dunkel der Trauer"
+ },
+ "CH.28.boss.where": {
+  "en": "Lazarus' tomb",
+  "de": "beim Grab des Lazarus"
+ },
+ "CH.28.guide.name": {
+  "en": "Martha",
+  "de": "Marta"
+ },
+ "CH.28.intro.0": {
+  "en": "Welcome to Bethany. I'm Martha. My sister Mary, my brother Lazarus and I love Jesus, and Jesus loves us.",
+  "de": "Willkommen in Betanien. Ich bin Marta. Meine Schwester Maria, mein Bruder Lazarus und ich lieben Jesus, und Jesus liebt uns."
+ },
+ "CH.28.intro.1": {
+  "en": "Lazarus got very sick. We sent a message to Jesus: 'Lord, the one you love is sick.' But Jesus stayed where He was for two more days.",
+  "de": "Lazarus wurde sehr krank. Wir haben Jesus eine Nachricht geschickt: „Herr, der, den du lieb hast, ist krank.“ Aber Jesus blieb noch zwei Tage dort, wo er war."
+ },
+ "CH.28.intro.2": {
+  "en": "Now Lazarus has died. He has been in the tomb for four days. Our friends are crying with us, and my heart is so heavy.",
+  "de": "Jetzt ist Lazarus gestorben. Er liegt schon seit vier Tagen im Grab. Unsere Freunde weinen mit uns, und mein Herz ist so schwer."
+ },
+ "CH.28.intro.3": {
+  "en": "Sorrowlings whisper, 'It's too late. There is no hope.' Defeat 6 of them, then face the Gloom of Grief at Lazarus' tomb.",
+  "de": "Kummerlinge flüstern: „Es ist zu spät. Es gibt keine Hoffnung.“ Besiege 6 Düsterlinge, dann stell dich dem Dunkel der Trauer beim Grab des Lazarus."
+ },
+ "CH.28.hint": {
+  "en": "The Gloom of Grief sits by the tomb. But Jesus is the resurrection and the life!",
+  "de": "Das Dunkel der Trauer sitzt beim Grab. Aber Jesus ist die Auferstehung und das Leben!"
+ },
+ "CH.28.outro.0": {
+  "en": "Jesus came! He said, 'I am the resurrection and the life.' I told Him, 'Yes, Lord. I believe that you are the Christ, the Son of God.'",
+  "de": "Jesus ist gekommen! Er sagte: „Ich bin die Auferstehung und das Leben.“ Ich antwortete: „Ja, Herr. Ich glaube, dass du der Christus bist, der Sohn Gottes.“"
+ },
+ "CH.28.outro.1": {
+  "en": "Jesus wept with us. Then they rolled the stone away, and Jesus called out loudly, 'Lazarus, come out!' And Lazarus walked out of the tomb, alive!",
+  "de": "Jesus weinte mit uns. Dann rollten sie den Stein weg, und Jesus rief laut: „Lazarus, komm heraus!“ Und Lazarus kam aus dem Grab, lebendig!"
+ },
+ "CH.28.outro.2": {
+  "en": "Here's a piece of the Scroll. And this little Fig Squirrel from our garden wants to come with you!",
+  "de": "Hier ist ein Teil der Schriftrolle. Und dieses kleine Feigenhörnchen aus unserem Garten möchte mit dir kommen!"
+ },
+ "CH.28.post": {
+  "en": "Jesus is sad with us when we are sad. And He has power even over death!",
+  "de": "Jesus ist traurig mit uns, wenn wir traurig sind. Und er hat sogar Macht über den Tod!"
+ },
+ "CH.28.side.name": {
+  "en": "Mary of Bethany",
+  "de": "Maria aus Betanien"
+ },
+ "CH.28.side.what": {
+  "en": "loaves of bread",
+  "de": "Brote"
+ },
+ "CH.28.side.ask": {
+  "en": "I'm Mary, Martha's sister. So many friends came from Jerusalem to comfort us! Martha wants to give them all something to eat. Can you find 4 loaves of bread?",
+  "de": "Ich bin Maria, Martas Schwester. So viele Freunde sind aus Jerusalem gekommen, um uns zu trösten! Marta möchte ihnen allen etwas zu essen geben. Findest du 4 Brote?"
+ },
+ "CH.28.side.thanks": {
+  "en": "Thank you! When Jesus came, I fell at His feet and cried. He saw me crying, and He cried too. Take this.",
+  "de": "Danke! Als Jesus kam, fiel ich ihm zu Füßen und weinte. Er sah mich weinen, und er weinte auch. Nimm das."
+ },
+ "CH.28.flav.0.name": {
+  "en": "Lazarus",
+  "de": "Lazarus"
+ },
+ "CH.28.flav.0.lines.0": {
+  "en": "I was in the tomb for four days. Then I heard Jesus' voice: 'Lazarus, come out!' And I came out, still wrapped in grave clothes!",
+  "de": "Ich lag vier Tage im Grab. Dann hörte ich die Stimme von Jesus: „Lazarus, komm heraus!“ Und ich kam heraus, noch in Grabtücher gewickelt!"
+ },
+ "CH.28.flav.1.name": {
+  "en": "Friend from Jerusalem",
+  "de": "Freund aus Jerusalem"
+ },
+ "CH.28.flav.1.lines.0": {
+  "en": "When we saw Jesus crying, we said, 'See how He loved him!'",
+  "de": "Als wir Jesus weinen sahen, sagten wir: „Seht, wie lieb er ihn hatte!“"
+ },
+ "CH.28.verse.t": {
+  "en": "I am the resurrection and the life. He who believes in me will live, even if he dies.",
+  "de": "Ich bin die Auferstehung und das Leben. Wer an mich glaubt, der wird leben, auch wenn er stirbt."
+ },
+ "CH.28.verse.r": {
+  "en": "John 11:25",
+  "de": "Johannes 11,25"
  }
 }

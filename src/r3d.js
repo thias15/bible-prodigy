@@ -275,7 +275,7 @@ function battleStart(){
   const tmB=team(); const PP=[[port?-2.6:-2.95,port?1.7:1.15],[port?-3.1:-3.5,port?-.8:-1.1],[port?-.6:-.9,port?1.9:1.3]];
   tmB.forEach((id,i)=>{ const pet=petModel(id); if(pet.kind==='icon') pet.root.scale.setScalar((port?1.0:1.35)*(i?.8:1)); else if(i) pet.root.scale.multiplyScalar(.8); const u=add($(i?'#bComp'+(i+1):'#bComp'),pet,'pet',PP[i][0],PP[i][1],PI/2-.4,{dir:1}); if(!i) BT.pet=u; });
   const n=B.foes.length; const POSN=B.boss?[[2.5,-.1]]:n===1?[[2.2,0]]:n===2?[[1.9,-.9],[2.7,1.0]]:[[1.8,1.25],[2.35,-.8],[3.4,.45]];
-  B.foes.forEach((f,i)=>{ let G; if(f.boss){ G=buildBoss3(f.boss.kind,f.boss.c); G.root.scale.setScalar(BOSS_SCALE[f.boss.kind]||1.55); } else { G=buildFoe(f.shape,f.c); G.root.scale.setScalar(.95); }
+  B.foes.forEach((f,i)=>{ let G; if(f.boss){ G=buildBoss3(f.boss.kind,f.boss.c); G.root.scale.setScalar(BOSS_SCALE[BOSS_LOOK[f.boss.kind]||f.boss.kind]||1.55); } else { G=buildFoe(f.shape,f.c); G.root.scale.setScalar(.95); }
     const [x,z]=POSN[i]||[2+i,0]; const u=add(f.el,G,'foe',x,z,-PI/2+.55,{dir:-1,f}); f.r3=u; });
   BT.target=msh(geo('tring',()=>new TH.RingGeometry(.62,.76,40)),basic('#f6de98',{transparent:true,opacity:.85,depthWrite:false}),sc,0,.17,0,false); BT.target.rotation.x=-PI/2;
   BT.bubble=msh(Gs(.95,24,16),new TH.MeshStandardMaterial({color:c3('#9fd8ff'),transparent:true,opacity:.22,roughness:.1,emissive:c3('#3a7ab0'),depthWrite:false}),sc,0,-9,0,false);

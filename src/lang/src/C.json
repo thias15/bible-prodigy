@@ -4749,6 +4749,1260 @@
     "„Was sollen wir essen?“",
     "„Wer ist der Größte?“"
    ]
+  },
+  {
+   "ch": 23,
+   "diff": 1,
+   "en": [
+    "Why was Jacob running away from home?",
+    "His brother Esau was angry with him",
+    "He wanted to see the sea",
+    "His sheep ran away",
+    "He was looking for treasure"
+   ],
+   "ref": "Genesis 27:41-43",
+   "de": [
+    "Warum lief Jakob von zu Hause weg?",
+    "Sein Bruder Esau war wütend auf ihn",
+    "Er wollte das Meer sehen",
+    "Seine Schafe waren weggelaufen",
+    "Er suchte einen Schatz"
+   ]
+  },
+  {
+   "ch": 23,
+   "diff": 1,
+   "en": [
+    "What did Jacob use as a pillow?",
+    "A stone",
+    "A sack of wool",
+    "His coat",
+    "A pile of hay"
+   ],
+   "ref": "Genesis 28:11",
+   "de": [
+    "Was benutzte Jakob als Kopfkissen?",
+    "Einen Stein",
+    "Einen Wollsack",
+    "Seinen Mantel",
+    "Einen Heuhaufen"
+   ]
+  },
+  {
+   "ch": 23,
+   "diff": 1,
+   "en": [
+    "What did Jacob see in his dream?",
+    "A stairway reaching up to heaven",
+    "A giant fish",
+    "A burning bush",
+    "Seven fat cows"
+   ],
+   "ref": "Genesis 28:12",
+   "de": [
+    "Was sah Jakob in seinem Traum?",
+    "Eine Treppe, die bis zum Himmel reichte",
+    "Einen riesigen Fisch",
+    "Einen brennenden Dornbusch",
+    "Sieben fette Kühe"
+   ]
+  },
+  {
+   "ch": 23,
+   "diff": 2,
+   "en": [
+    "Who was going up and down the stairway?",
+    "The angels of God",
+    "Birds",
+    "Shepherds",
+    "Jacob's brothers"
+   ],
+   "ref": "Genesis 28:12",
+   "de": [
+    "Wer stieg auf der Treppe hinauf und herab?",
+    "Die Engel Gottes",
+    "Vögel",
+    "Hirten",
+    "Jakobs Brüder"
+   ]
+  },
+  {
+   "ch": 23,
+   "diff": 2,
+   "en": [
+    "What did God promise Jacob?",
+    "\"I am with you and will keep you wherever you go\"",
+    "\"You will be a king\"",
+    "\"You will never be tired\"",
+    "\"You will find gold\""
+   ],
+   "ref": "Genesis 28:15",
+   "de": [
+    "Was versprach Gott Jakob?",
+    "„Ich bin mit dir und will dich behüten, wohin du auch gehst“",
+    "„Du wirst König werden“",
+    "„Du wirst nie müde sein“",
+    "„Du wirst Gold finden“"
+   ]
+  },
+  {
+   "ch": 23,
+   "diff": 2,
+   "en": [
+    "What did Jacob say when he woke up?",
+    "\"Surely the LORD is in this place, and I didn't know it!\"",
+    "\"What a strange dream!\"",
+    "\"I want to go home!\"",
+    "\"Where is my pillow?\""
+   ],
+   "ref": "Genesis 28:16",
+   "de": [
+    "Was sagte Jakob, als er aufwachte?",
+    "„Wirklich, der Herr ist an diesem Ort, und ich wusste es nicht!“",
+    "„Was für ein seltsamer Traum!“",
+    "„Ich will nach Hause!“",
+    "„Wo ist mein Kissen?“"
+   ]
+  },
+  {
+   "ch": 23,
+   "diff": 2,
+   "en": [
+    "What did Jacob do with his stone pillow in the morning?",
+    "Set it up as a pillar and poured oil on it",
+    "Threw it away",
+    "Took it with him",
+    "Broke it into pieces"
+   ],
+   "ref": "Genesis 28:18",
+   "de": [
+    "Was machte Jakob am Morgen mit seinem Steinkissen?",
+    "Er stellte es als Steinmal auf und goss Öl darauf",
+    "Er warf es weg",
+    "Er nahm es mit",
+    "Er zerschlug es"
+   ]
+  },
+  {
+   "ch": 23,
+   "diff": 3,
+   "en": [
+    "What does the name \"Bethel\" mean?",
+    "House of God",
+    "City of Light",
+    "Place of Stones",
+    "Land of Dreams"
+   ],
+   "ref": "Genesis 28:19",
+   "de": [
+    "Was bedeutet der Name „Bethel“?",
+    "Haus Gottes",
+    "Stadt des Lichts",
+    "Ort der Steine",
+    "Land der Träume"
+   ]
+  },
+  {
+   "ch": 23,
+   "diff": 3,
+   "en": [
+    "What was the town called before Jacob named it Bethel?",
+    "Luz",
+    "Haran",
+    "Hebron",
+    "Ur"
+   ],
+   "ref": "Genesis 28:19",
+   "de": [
+    "Wie hieß die Stadt, bevor Jakob sie Bethel nannte?",
+    "Lus",
+    "Haran",
+    "Hebron",
+    "Ur"
+   ]
+  },
+  {
+   "ch": 23,
+   "diff": 3,
+   "en": [
+    "Where was Jacob traveling to?",
+    "To his uncle Laban in Haran",
+    "To Pharaoh in Egypt",
+    "To the temple in Jerusalem",
+    "To the city of Nineveh"
+   ],
+   "ref": "Genesis 28:2-10",
+   "de": [
+    "Wohin war Jakob unterwegs?",
+    "Zu seinem Onkel Laban nach Haran",
+    "Zum Pharao nach Ägypten",
+    "Zum Tempel nach Jerusalem",
+    "In die Stadt Ninive"
+   ]
+  },
+  {
+   "ch": 23,
+   "diff": 3,
+   "en": [
+    "What did Jacob promise to give back to God?",
+    "A tenth of everything God gave him",
+    "All his sheep",
+    "His best camel",
+    "Nothing at all"
+   ],
+   "ref": "Genesis 28:22",
+   "de": [
+    "Was versprach Jakob, Gott zurückzugeben?",
+    "Den Zehnten von allem, was Gott ihm gibt",
+    "Alle seine Schafe",
+    "Sein bestes Kamel",
+    "Gar nichts"
+   ]
+  },
+  {
+   "ch": 24,
+   "diff": 1,
+   "en": [
+    "What did Hannah pray for?",
+    "A son",
+    "A new house",
+    "Lots of money",
+    "Rain"
+   ],
+   "ref": "1 Samuel 1:11",
+   "de": [
+    "Worum betete Hanna?",
+    "Um einen Sohn",
+    "Um ein neues Haus",
+    "Um viel Geld",
+    "Um Regen"
+   ]
+  },
+  {
+   "ch": 24,
+   "diff": 1,
+   "en": [
+    "What was the name of Hannah's son?",
+    "Samuel",
+    "Samson",
+    "Saul",
+    "Solomon"
+   ],
+   "ref": "1 Samuel 1:20",
+   "de": [
+    "Wie hieß Hannas Sohn?",
+    "Samuel",
+    "Simson",
+    "Saul",
+    "Salomo"
+   ]
+  },
+  {
+   "ch": 24,
+   "diff": 1,
+   "en": [
+    "Who called Samuel in the night?",
+    "The LORD",
+    "A soldier",
+    "His mother",
+    "A shepherd"
+   ],
+   "ref": "1 Samuel 3:4-10",
+   "de": [
+    "Wer rief Samuel in der Nacht?",
+    "Der Herr",
+    "Ein Soldat",
+    "Seine Mutter",
+    "Ein Hirte"
+   ]
+  },
+  {
+   "ch": 24,
+   "diff": 2,
+   "en": [
+    "Which priest did young Samuel help?",
+    "Eli",
+    "Aaron",
+    "Elijah",
+    "Ezra"
+   ],
+   "ref": "1 Samuel 2:11",
+   "de": [
+    "Welchem Priester half der junge Samuel?",
+    "Eli",
+    "Aaron",
+    "Elia",
+    "Esra"
+   ]
+  },
+  {
+   "ch": 24,
+   "diff": 2,
+   "en": [
+    "Where was the house of the LORD in Samuel's time?",
+    "Shiloh",
+    "Bethlehem",
+    "Nineveh",
+    "Nazareth"
+   ],
+   "ref": "1 Samuel 1:3",
+   "de": [
+    "Wo stand zur Zeit Samuels das Haus des Herrn?",
+    "In Silo",
+    "In Bethlehem",
+    "In Ninive",
+    "In Nazaret"
+   ]
+  },
+  {
+   "ch": 24,
+   "diff": 2,
+   "en": [
+    "How many times did Samuel run to Eli, thinking Eli had called him?",
+    "Three times",
+    "Once",
+    "Seven times",
+    "Ten times"
+   ],
+   "ref": "1 Samuel 3:4-8",
+   "de": [
+    "Wie oft lief Samuel zu Eli, weil er dachte, Eli hätte ihn gerufen?",
+    "Dreimal",
+    "Einmal",
+    "Siebenmal",
+    "Zehnmal"
+   ]
+  },
+  {
+   "ch": 24,
+   "diff": 2,
+   "en": [
+    "What did Samuel say when God called him again?",
+    "\"Speak, for your servant hears\"",
+    "\"Let me sleep\"",
+    "\"Who are you?\"",
+    "\"Go away\""
+   ],
+   "ref": "1 Samuel 3:10",
+   "de": [
+    "Was sagte Samuel, als Gott ihn wieder rief?",
+    "„Rede, denn dein Diener hört“",
+    "„Lass mich schlafen“",
+    "„Wer bist du?“",
+    "„Geh weg“"
+   ]
+  },
+  {
+   "ch": 24,
+   "diff": 3,
+   "en": [
+    "What was still burning when God called Samuel?",
+    "The lamp of God",
+    "A campfire",
+    "The city gate",
+    "A torch on the wall"
+   ],
+   "ref": "1 Samuel 3:3",
+   "de": [
+    "Was brannte noch, als Gott Samuel rief?",
+    "Die Lampe Gottes",
+    "Ein Lagerfeuer",
+    "Das Stadttor",
+    "Eine Fackel an der Wand"
+   ]
+  },
+  {
+   "ch": 24,
+   "diff": 3,
+   "en": [
+    "What did Eli first think when he saw Hannah praying?",
+    "That she was drunk",
+    "That she was singing",
+    "That she was sleeping",
+    "That she was lost"
+   ],
+   "ref": "1 Samuel 1:13-14",
+   "de": [
+    "Was dachte Eli zuerst, als er Hanna beten sah?",
+    "Dass sie betrunken war",
+    "Dass sie sang",
+    "Dass sie schlief",
+    "Dass sie sich verlaufen hatte"
+   ]
+  },
+  {
+   "ch": 24,
+   "diff": 3,
+   "en": [
+    "What did Hannah bring Samuel every year?",
+    "A little robe she had made",
+    "A new pair of sandals",
+    "A toy donkey",
+    "A bag of coins"
+   ],
+   "ref": "1 Samuel 2:19",
+   "de": [
+    "Was brachte Hanna Samuel jedes Jahr?",
+    "Ein kleines Gewand, das sie selbst genäht hatte",
+    "Ein Paar neue Sandalen",
+    "Einen Spielzeugesel",
+    "Einen Beutel Münzen"
+   ]
+  },
+  {
+   "ch": 24,
+   "diff": 3,
+   "en": [
+    "As Samuel grew up, what did all Israel learn about him?",
+    "He was a prophet of the LORD",
+    "He was a king",
+    "He was a giant",
+    "He was a fisherman"
+   ],
+   "ref": "1 Samuel 3:20",
+   "de": [
+    "Was erkannte ganz Israel, als Samuel älter wurde?",
+    "Er war ein Prophet des Herrn",
+    "Er war ein König",
+    "Er war ein Riese",
+    "Er war ein Fischer"
+   ]
+  },
+  {
+   "ch": 25,
+   "diff": 1,
+   "en": [
+    "What did Solomon ask God for?",
+    "Wisdom",
+    "Riches",
+    "A long life",
+    "Victory over his enemies"
+   ],
+   "ref": "1 Kings 3:9",
+   "de": [
+    "Worum bat Salomo Gott?",
+    "Um Weisheit",
+    "Um Reichtum",
+    "Um ein langes Leben",
+    "Um Sieg über seine Feinde"
+   ]
+  },
+  {
+   "ch": 25,
+   "diff": 1,
+   "en": [
+    "Who was Solomon's father?",
+    "King David",
+    "King Saul",
+    "Abraham",
+    "Moses"
+   ],
+   "ref": "1 Kings 2:12",
+   "de": [
+    "Wer war Salomos Vater?",
+    "König David",
+    "König Saul",
+    "Abraham",
+    "Mose"
+   ]
+  },
+  {
+   "ch": 25,
+   "diff": 1,
+   "en": [
+    "What great building did Solomon build for the LORD?",
+    "The temple",
+    "A tall tower",
+    "The city of Babylon",
+    "A giant ship"
+   ],
+   "ref": "1 Kings 6:1",
+   "de": [
+    "Welches große Gebäude baute Salomo für den Herrn?",
+    "Den Tempel",
+    "Einen hohen Turm",
+    "Die Stadt Babylon",
+    "Ein riesiges Schiff"
+   ]
+  },
+  {
+   "ch": 25,
+   "diff": 2,
+   "en": [
+    "How did God speak to Solomon at Gibeon?",
+    "In a dream",
+    "In a burning bush",
+    "Through a donkey",
+    "By writing on a wall"
+   ],
+   "ref": "1 Kings 3:5",
+   "de": [
+    "Wie sprach Gott in Gibeon zu Salomo?",
+    "Im Traum",
+    "Aus einem brennenden Dornbusch",
+    "Durch einen Esel",
+    "Durch eine Schrift an der Wand"
+   ]
+  },
+  {
+   "ch": 25,
+   "diff": 2,
+   "en": [
+    "Because Solomon asked for wisdom, what else did God give him?",
+    "Riches and honor",
+    "Wings to fly",
+    "Nothing else",
+    "A magic ring"
+   ],
+   "ref": "1 Kings 3:13",
+   "de": [
+    "Weil Salomo um Weisheit bat – was schenkte Gott ihm noch dazu?",
+    "Reichtum und Ehre",
+    "Flügel zum Fliegen",
+    "Sonst nichts",
+    "Einen Zauberring"
+   ]
+  },
+  {
+   "ch": 25,
+   "diff": 2,
+   "en": [
+    "Two women both said a baby was theirs. How did Solomon know the real mother?",
+    "She was the one who wanted to save the baby's life",
+    "He asked the baby",
+    "He drew straws",
+    "He sent them both away"
+   ],
+   "ref": "1 Kings 3:24-27",
+   "de": [
+    "Zwei Frauen sagten beide, ein Baby gehöre ihnen. Woran erkannte Salomo die echte Mutter?",
+    "Sie wollte das Leben des Babys retten",
+    "Er fragte das Baby",
+    "Er ließ das Los entscheiden",
+    "Er schickte beide weg"
+   ]
+  },
+  {
+   "ch": 25,
+   "diff": 2,
+   "en": [
+    "Which wood was used for the walls inside the temple?",
+    "Cedar",
+    "Bamboo",
+    "Birch",
+    "Willow"
+   ],
+   "ref": "1 Kings 6:15-18",
+   "de": [
+    "Aus welchem Holz waren die Wände im Inneren des Tempels?",
+    "Aus Zedernholz",
+    "Aus Bambus",
+    "Aus Birke",
+    "Aus Weide"
+   ]
+  },
+  {
+   "ch": 25,
+   "diff": 2,
+   "en": [
+    "What covered the inside of the temple?",
+    "Pure gold",
+    "Silver paint",
+    "Bright tiles",
+    "Animal skins"
+   ],
+   "ref": "1 Kings 6:21-22",
+   "de": [
+    "Womit war das Innere des Tempels überzogen?",
+    "Mit reinem Gold",
+    "Mit Silberfarbe",
+    "Mit bunten Fliesen",
+    "Mit Tierfellen"
+   ]
+  },
+  {
+   "ch": 25,
+   "diff": 3,
+   "en": [
+    "Who came from far away to test Solomon with hard questions?",
+    "The Queen of Sheba",
+    "Queen Esther",
+    "Queen Jezebel",
+    "Queen Vashti"
+   ],
+   "ref": "1 Kings 10:1",
+   "de": [
+    "Wer kam von weit her, um Salomo mit schweren Fragen zu prüfen?",
+    "Die Königin von Saba",
+    "Königin Ester",
+    "Königin Isebel",
+    "Königin Waschti"
+   ]
+  },
+  {
+   "ch": 25,
+   "diff": 3,
+   "en": [
+    "What filled the temple when the ark was brought in?",
+    "A cloud, the glory of the LORD",
+    "Smoke from a fire",
+    "Thousands of birds",
+    "Rushing water"
+   ],
+   "ref": "1 Kings 8:10-11",
+   "de": [
+    "Was erfüllte den Tempel, als die Bundeslade hineingebracht wurde?",
+    "Eine Wolke, die Herrlichkeit des Herrn",
+    "Rauch von einem Feuer",
+    "Tausende Vögel",
+    "Rauschendes Wasser"
+   ]
+  },
+  {
+   "ch": 25,
+   "diff": 3,
+   "en": [
+    "What did Solomon's ships bring back every three years?",
+    "Gold, silver, ivory, apes and peacocks",
+    "Snow and ice",
+    "Lions and bears",
+    "Only fish"
+   ],
+   "ref": "1 Kings 10:22",
+   "de": [
+    "Was brachten Salomos Schiffe alle drei Jahre mit?",
+    "Gold, Silber, Elfenbein, Affen und Pfauen",
+    "Schnee und Eis",
+    "Löwen und Bären",
+    "Nur Fische"
+   ]
+  },
+  {
+   "ch": 26,
+   "diff": 1,
+   "en": [
+    "Who baptized Jesus?",
+    "John the Baptist",
+    "Peter",
+    "Moses",
+    "Elijah"
+   ],
+   "ref": "Matthew 3:13",
+   "de": [
+    "Wer taufte Jesus?",
+    "Johannes der Täufer",
+    "Petrus",
+    "Mose",
+    "Elia"
+   ]
+  },
+  {
+   "ch": 26,
+   "diff": 1,
+   "en": [
+    "In which river was Jesus baptized?",
+    "The Jordan",
+    "The Nile",
+    "The Euphrates",
+    "The Tigris"
+   ],
+   "ref": "Matthew 3:13",
+   "de": [
+    "In welchem Fluss wurde Jesus getauft?",
+    "Im Jordan",
+    "Im Nil",
+    "Im Euphrat",
+    "Im Tigris"
+   ]
+  },
+  {
+   "ch": 26,
+   "diff": 1,
+   "en": [
+    "What came down on Jesus like a dove?",
+    "The Spirit of God",
+    "A leaf",
+    "A golden crown",
+    "A falling star"
+   ],
+   "ref": "Matthew 3:16",
+   "de": [
+    "Was kam wie eine Taube auf Jesus herab?",
+    "Der Geist Gottes",
+    "Ein Blatt",
+    "Eine goldene Krone",
+    "Eine Sternschnuppe"
+   ]
+  },
+  {
+   "ch": 26,
+   "diff": 2,
+   "en": [
+    "What did the voice from heaven say?",
+    "\"This is my beloved Son, in whom I am well pleased\"",
+    "\"Go to Nineveh\"",
+    "\"Build an ark\"",
+    "\"Let my people go\""
+   ],
+   "ref": "Matthew 3:17",
+   "de": [
+    "Was sagte die Stimme vom Himmel?",
+    "„Das ist mein geliebter Sohn, an dem ich Freude habe“",
+    "„Geh nach Ninive“",
+    "„Bau eine Arche“",
+    "„Lass mein Volk gehen“"
+   ]
+  },
+  {
+   "ch": 26,
+   "diff": 2,
+   "en": [
+    "What did John the Baptist eat?",
+    "Locusts and wild honey",
+    "Bread and fish",
+    "Manna",
+    "Figs and grapes"
+   ],
+   "ref": "Matthew 3:4",
+   "de": [
+    "Was aß Johannes der Täufer?",
+    "Heuschrecken und wilden Honig",
+    "Brot und Fisch",
+    "Manna",
+    "Feigen und Trauben"
+   ]
+  },
+  {
+   "ch": 26,
+   "diff": 2,
+   "en": [
+    "What were John's clothes made of?",
+    "Camel's hair",
+    "Fine silk",
+    "Fish scales",
+    "Gold thread"
+   ],
+   "ref": "Matthew 3:4",
+   "de": [
+    "Woraus waren die Kleider von Johannes gemacht?",
+    "Aus Kamelhaar",
+    "Aus feiner Seide",
+    "Aus Fischschuppen",
+    "Aus Goldfäden"
+   ]
+  },
+  {
+   "ch": 26,
+   "diff": 2,
+   "en": [
+    "How long did Jesus fast in the wilderness?",
+    "40 days and 40 nights",
+    "3 days",
+    "7 days",
+    "One year"
+   ],
+   "ref": "Matthew 4:2",
+   "de": [
+    "Wie lange fastete Jesus in der Wüste?",
+    "40 Tage und 40 Nächte",
+    "3 Tage",
+    "7 Tage",
+    "Ein Jahr"
+   ]
+  },
+  {
+   "ch": 26,
+   "diff": 2,
+   "en": [
+    "How did Jesus answer every temptation?",
+    "\"It is written...\" with words from Scripture",
+    "By running away",
+    "By staying silent",
+    "By calling an army"
+   ],
+   "ref": "Matthew 4:4-10",
+   "de": [
+    "Wie antwortete Jesus auf jede Versuchung?",
+    "„Es steht geschrieben …“ mit Worten aus der Bibel",
+    "Er lief weg",
+    "Er schwieg",
+    "Er rief ein Heer herbei"
+   ]
+  },
+  {
+   "ch": 26,
+   "diff": 3,
+   "en": [
+    "The devil told Jesus to turn stones into what?",
+    "Bread",
+    "Gold",
+    "Water",
+    "Fish"
+   ],
+   "ref": "Matthew 4:3",
+   "de": [
+    "Was sollte Jesus nach dem Willen des Teufels aus Steinen machen?",
+    "Brot",
+    "Gold",
+    "Wasser",
+    "Fische"
+   ]
+  },
+  {
+   "ch": 26,
+   "diff": 3,
+   "en": [
+    "What did John say when Jesus came to be baptized?",
+    "\"I need to be baptized by you\"",
+    "\"Go away\"",
+    "\"You are too young\"",
+    "\"Come back tomorrow\""
+   ],
+   "ref": "Matthew 3:14",
+   "de": [
+    "Was sagte Johannes, als Jesus zur Taufe kam?",
+    "„Ich müsste von dir getauft werden“",
+    "„Geh weg“",
+    "„Du bist zu jung“",
+    "„Komm morgen wieder“"
+   ]
+  },
+  {
+   "ch": 26,
+   "diff": 3,
+   "en": [
+    "What happened when the devil left Jesus?",
+    "Angels came and served Him",
+    "A storm began",
+    "Jesus fell asleep",
+    "The river dried up"
+   ],
+   "ref": "Matthew 4:11",
+   "de": [
+    "Was geschah, als der Teufel Jesus verließ?",
+    "Engel kamen und dienten ihm",
+    "Ein Sturm begann",
+    "Jesus schlief ein",
+    "Der Fluss trocknete aus"
+   ]
+  },
+  {
+   "ch": 27,
+   "diff": 1,
+   "en": [
+    "Where was the wedding where Jesus did His first sign?",
+    "Cana in Galilee",
+    "Bethlehem",
+    "Jericho",
+    "Rome"
+   ],
+   "ref": "John 2:1",
+   "de": [
+    "Wo war die Hochzeit, bei der Jesus sein erstes Zeichen tat?",
+    "In Kana in Galiläa",
+    "In Bethlehem",
+    "In Jericho",
+    "In Rom"
+   ]
+  },
+  {
+   "ch": 27,
+   "diff": 1,
+   "en": [
+    "What ran out at the wedding?",
+    "Wine",
+    "Bread",
+    "Water",
+    "Candles"
+   ],
+   "ref": "John 2:3",
+   "de": [
+    "Was ging auf der Hochzeit aus?",
+    "Der Wein",
+    "Das Brot",
+    "Das Wasser",
+    "Die Kerzen"
+   ]
+  },
+  {
+   "ch": 27,
+   "diff": 1,
+   "en": [
+    "Who told Jesus about the problem?",
+    "His mother, Mary",
+    "Peter",
+    "The bride",
+    "A soldier"
+   ],
+   "ref": "John 2:3",
+   "de": [
+    "Wer erzählte Jesus von dem Problem?",
+    "Seine Mutter Maria",
+    "Petrus",
+    "Die Braut",
+    "Ein Soldat"
+   ]
+  },
+  {
+   "ch": 27,
+   "diff": 2,
+   "en": [
+    "What did Mary tell the servants?",
+    "\"Do whatever he tells you\"",
+    "\"Run to the market\"",
+    "\"Go home\"",
+    "\"Hide the jars\""
+   ],
+   "ref": "John 2:5",
+   "de": [
+    "Was sagte Maria zu den Dienern?",
+    "„Was er euch sagt, das tut!“",
+    "„Lauft zum Markt!“",
+    "„Geht nach Hause!“",
+    "„Versteckt die Krüge!“"
+   ]
+  },
+  {
+   "ch": 27,
+   "diff": 2,
+   "en": [
+    "How many stone water jars were there?",
+    "Six",
+    "Two",
+    "Twelve",
+    "Forty"
+   ],
+   "ref": "John 2:6",
+   "de": [
+    "Wie viele steinerne Wasserkrüge standen dort?",
+    "Sechs",
+    "Zwei",
+    "Zwölf",
+    "Vierzig"
+   ]
+  },
+  {
+   "ch": 27,
+   "diff": 2,
+   "en": [
+    "What did Jesus tell the servants to fill the jars with?",
+    "Water",
+    "Wine",
+    "Oil",
+    "Sand"
+   ],
+   "ref": "John 2:7",
+   "de": [
+    "Womit sollten die Diener die Krüge füllen?",
+    "Mit Wasser",
+    "Mit Wein",
+    "Mit Öl",
+    "Mit Sand"
+   ]
+  },
+  {
+   "ch": 27,
+   "diff": 2,
+   "en": [
+    "How full did the servants fill the jars?",
+    "Up to the brim",
+    "Halfway",
+    "Just a little",
+    "They forgot"
+   ],
+   "ref": "John 2:7",
+   "de": [
+    "Wie voll füllten die Diener die Krüge?",
+    "Bis zum Rand",
+    "Halb voll",
+    "Nur ein bisschen",
+    "Sie vergaßen es"
+   ]
+  },
+  {
+   "ch": 27,
+   "diff": 3,
+   "en": [
+    "Who tasted the water that had become wine?",
+    "The master of the feast",
+    "King Herod",
+    "Pilate",
+    "John the Baptist"
+   ],
+   "ref": "John 2:8-9",
+   "de": [
+    "Wer probierte das Wasser, das zu Wein geworden war?",
+    "Der Speisemeister",
+    "König Herodes",
+    "Pilatus",
+    "Johannes der Täufer"
+   ]
+  },
+  {
+   "ch": 27,
+   "diff": 3,
+   "en": [
+    "What did the master of the feast say about the wine?",
+    "The good wine was kept until now",
+    "It tasted like water",
+    "It was too sweet",
+    "There wasn't enough"
+   ],
+   "ref": "John 2:10",
+   "de": [
+    "Was sagte der Speisemeister über den Wein?",
+    "Der gute Wein wurde bis jetzt aufgehoben",
+    "Er schmeckte wie Wasser",
+    "Er war zu süß",
+    "Es gab nicht genug"
+   ]
+  },
+  {
+   "ch": 27,
+   "diff": 3,
+   "en": [
+    "Which of Jesus' signs was this?",
+    "The first",
+    "The last",
+    "The tenth",
+    "The hundredth"
+   ],
+   "ref": "John 2:11",
+   "de": [
+    "Das wievielte Zeichen von Jesus war das?",
+    "Das erste",
+    "Das letzte",
+    "Das zehnte",
+    "Das hundertste"
+   ]
+  },
+  {
+   "ch": 27,
+   "diff": 3,
+   "en": [
+    "What happened because of this sign?",
+    "His disciples believed in Him",
+    "Everyone went home angry",
+    "The wedding was cancelled",
+    "The jars broke"
+   ],
+   "ref": "John 2:11",
+   "de": [
+    "Was geschah wegen dieses Zeichens?",
+    "Seine Jünger glaubten an ihn",
+    "Alle gingen wütend nach Hause",
+    "Die Hochzeit wurde abgesagt",
+    "Die Krüge zerbrachen"
+   ]
+  },
+  {
+   "ch": 28,
+   "diff": 1,
+   "en": [
+    "Who was the brother of Mary and Martha?",
+    "Lazarus",
+    "Peter",
+    "Thomas",
+    "Andrew"
+   ],
+   "ref": "John 11:1-2",
+   "de": [
+    "Wer war der Bruder von Maria und Marta?",
+    "Lazarus",
+    "Petrus",
+    "Thomas",
+    "Andreas"
+   ]
+  },
+  {
+   "ch": 28,
+   "diff": 1,
+   "en": [
+    "In which village did Mary, Martha and Lazarus live?",
+    "Bethany",
+    "Nazareth",
+    "Cana",
+    "Capernaum"
+   ],
+   "ref": "John 11:1",
+   "de": [
+    "In welchem Dorf wohnten Maria, Marta und Lazarus?",
+    "In Betanien",
+    "In Nazaret",
+    "In Kana",
+    "In Kapernaum"
+   ]
+  },
+  {
+   "ch": 28,
+   "diff": 1,
+   "en": [
+    "What did Jesus call out at the tomb?",
+    "\"Lazarus, come out!\"",
+    "\"Wake up, everyone!\"",
+    "\"Open the gate!\"",
+    "\"Go home!\""
+   ],
+   "ref": "John 11:43",
+   "de": [
+    "Was rief Jesus am Grab?",
+    "„Lazarus, komm heraus!“",
+    "„Wacht alle auf!“",
+    "„Öffnet das Tor!“",
+    "„Geht nach Hause!“"
+   ]
+  },
+  {
+   "ch": 28,
+   "diff": 2,
+   "en": [
+    "How long had Lazarus been in the tomb when Jesus arrived?",
+    "Four days",
+    "One hour",
+    "Forty days",
+    "One year"
+   ],
+   "ref": "John 11:17",
+   "de": [
+    "Wie lange lag Lazarus schon im Grab, als Jesus ankam?",
+    "Vier Tage",
+    "Eine Stunde",
+    "Vierzig Tage",
+    "Ein Jahr"
+   ]
+  },
+  {
+   "ch": 28,
+   "diff": 2,
+   "en": [
+    "What did Jesus do when He saw Mary and the others crying?",
+    "He wept",
+    "He laughed",
+    "He walked away",
+    "He scolded them"
+   ],
+   "ref": "John 11:33-35",
+   "de": [
+    "Was tat Jesus, als er Maria und die anderen weinen sah?",
+    "Er weinte",
+    "Er lachte",
+    "Er ging weg",
+    "Er schimpfte mit ihnen"
+   ]
+  },
+  {
+   "ch": 28,
+   "diff": 2,
+   "en": [
+    "What was lying in front of the tomb?",
+    "A stone",
+    "A wooden door",
+    "A tree",
+    "A guard dog"
+   ],
+   "ref": "John 11:38",
+   "de": [
+    "Was lag vor dem Grab?",
+    "Ein Stein",
+    "Eine Holztür",
+    "Ein Baum",
+    "Ein Wachhund"
+   ]
+  },
+  {
+   "ch": 28,
+   "diff": 2,
+   "en": [
+    "What did Jesus say to Martha?",
+    "\"I am the resurrection and the life\"",
+    "\"I am the vine\"",
+    "\"I am the good shepherd\"",
+    "\"I am the door\""
+   ],
+   "ref": "John 11:25",
+   "de": [
+    "Was sagte Jesus zu Marta?",
+    "„Ich bin die Auferstehung und das Leben“",
+    "„Ich bin der Weinstock“",
+    "„Ich bin der gute Hirte“",
+    "„Ich bin die Tür“"
+   ]
+  },
+  {
+   "ch": 28,
+   "diff": 3,
+   "en": [
+    "What did Martha say she believed?",
+    "That Jesus is the Christ, the Son of God",
+    "That Lazarus was only sleeping",
+    "That it was too late",
+    "That Jesus was a gardener"
+   ],
+   "ref": "John 11:27",
+   "de": [
+    "Was glaubte Marta, wie sie sagte?",
+    "Dass Jesus der Christus ist, der Sohn Gottes",
+    "Dass Lazarus nur schläft",
+    "Dass es zu spät ist",
+    "Dass Jesus ein Gärtner ist"
+   ]
+  },
+  {
+   "ch": 28,
+   "diff": 3,
+   "en": [
+    "How long did Jesus stay where He was after hearing Lazarus was sick?",
+    "Two more days",
+    "Two weeks",
+    "One hour",
+    "He left right away"
+   ],
+   "ref": "John 11:6",
+   "de": [
+    "Wie lange blieb Jesus noch, nachdem er gehört hatte, dass Lazarus krank war?",
+    "Noch zwei Tage",
+    "Zwei Wochen",
+    "Eine Stunde",
+    "Er brach sofort auf"
+   ]
+  },
+  {
+   "ch": 28,
+   "diff": 3,
+   "en": [
+    "What was Lazarus wrapped in when he came out?",
+    "Grave clothes",
+    "A royal robe",
+    "A fishing net",
+    "A blanket"
+   ],
+   "ref": "John 11:44",
+   "de": [
+    "Worin war Lazarus eingewickelt, als er herauskam?",
+    "In Grabtücher",
+    "In ein Königsgewand",
+    "In ein Fischernetz",
+    "In eine Decke"
+   ]
+  },
+  {
+   "ch": 28,
+   "diff": 3,
+   "en": [
+    "What message did the sisters send to Jesus?",
+    "\"Lord, the one you love is sick\"",
+    "\"Please send money\"",
+    "\"Don't come here\"",
+    "\"We are moving away\""
+   ],
+   "ref": "John 11:3",
+   "de": [
+    "Welche Nachricht schickten die Schwestern an Jesus?",
+    "„Herr, der, den du lieb hast, ist krank“",
+    "„Bitte schick Geld“",
+    "„Komm nicht hierher“",
+    "„Wir ziehen weg“"
+   ]
   }
  ],
  "VQ": [
@@ -5850,6 +7104,126 @@
     "stark",
     "fertig",
     "Lukas 19,10"
+   ]
+  },
+  {
+   "en": [
+    23,
+    "I am with you, and will ___ you wherever you go.",
+    "keep",
+    "leave",
+    "test",
+    "find",
+    "Genesis 28:15"
+   ],
+   "de": [
+    23,
+    "Ich bin mit dir und will dich ___, wohin du auch gehst.",
+    "behüten",
+    "verlassen",
+    "prüfen",
+    "finden",
+    "1. Mose 28,15"
+   ]
+  },
+  {
+   "en": [
+    24,
+    "Speak, LORD, for your servant ___.",
+    "hears",
+    "sleeps",
+    "sings",
+    "waits",
+    "1 Samuel 3:9-10"
+   ],
+   "de": [
+    24,
+    "Rede, Herr, denn dein Diener ___.",
+    "hört",
+    "schläft",
+    "singt",
+    "wartet",
+    "1. Samuel 3,9-10"
+   ]
+  },
+  {
+   "en": [
+    25,
+    "Give your servant an understanding ___ to judge your people.",
+    "heart",
+    "sword",
+    "crown",
+    "castle",
+    "1 Kings 3:9"
+   ],
+   "de": [
+    25,
+    "Gib deinem Diener ein hörendes ___, damit er dein Volk richten kann.",
+    "Herz",
+    "Schwert",
+    "Haus",
+    "Pferd",
+    "1. Könige 3,9"
+   ]
+  },
+  {
+   "en": [
+    26,
+    "Man shall not live by bread alone, but by every ___ that comes out of the mouth of God.",
+    "word",
+    "song",
+    "wish",
+    "gift",
+    "Matthew 4:4"
+   ],
+   "de": [
+    26,
+    "Der Mensch lebt nicht vom Brot allein, sondern von jedem ___, das aus dem Mund Gottes kommt.",
+    "Wort",
+    "Lied",
+    "Geschenk",
+    "Licht",
+    "Matthäus 4,4"
+   ]
+  },
+  {
+   "en": [
+    27,
+    "Whatever he ___ to you, do it.",
+    "says",
+    "gives",
+    "shows",
+    "sends",
+    "John 2:5"
+   ],
+   "de": [
+    27,
+    "Was er euch ___, das tut!",
+    "sagt",
+    "gibt",
+    "zeigt",
+    "schickt",
+    "Johannes 2,5"
+   ]
+  },
+  {
+   "en": [
+    28,
+    "I am the resurrection and the ___. He who believes in me will live, even if he dies.",
+    "life",
+    "light",
+    "king",
+    "story",
+    "John 11:25"
+   ],
+   "de": [
+    28,
+    "Ich bin die Auferstehung und das ___. Wer an mich glaubt, der wird leben, auch wenn er stirbt.",
+    "Leben",
+    "Licht",
+    "Ende",
+    "Lied",
+    "Johannes 11,25"
    ]
   }
  ]

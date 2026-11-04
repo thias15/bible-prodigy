@@ -84,7 +84,7 @@ function bMenu(b){ const lv=tLv(b.id), need=b.id!=='well'&&!tLv('well');
 /* ---- hooks: hub gate, map building, resources out in the Land ---- */
 HUBX.town={x:29,y:14};
 { const _xh=xHub; xHub=function(m){ _xh(m); const x=m.W-10, y=16; for(let yy=15;yy<=16;yy++) for(let xx=x-1;xx<=x+1;xx++) m.set(xx,yy,T.G);
-    HUBX.town={x,y:17}; spot(m,{x,y},{e:'🏘️',label:t('tn.quarter'),act:landOpen()?t('tn.quarterGo'):t('x.locked'),on:()=>{ if(!landOpen()) return toast(t('tn.lock'));
+    HUBX.town={x,y:17}; spot(m,{x,y},{e:'🏘️',label:t('tn.quarter'),act:townOpen()?t('tn.quarterGo'):t('x.locked'),on:()=>{ if(!townOpen()) return toast(t('tn.lock2',CH[24].name));
       const T_=TS_(); if(!T_.seen){ T_.seen=1; save(); return talk([1,2,3].map(i=>L_(SIMEON,t('tn.intro'+i))),()=>xGo(140)); } xGo(140); }}); }; }
 { const _bm2=buildMap; buildMap=function(id){ if(CH[id]&&CH[id].town) return xTown(id); return _bm2(id); }; }
 { const _em2=enterMap; enterMap=function(id,spawn){ _em2(id,spawn); if(M.R.town){ M.foes=[]; townMorning(); }

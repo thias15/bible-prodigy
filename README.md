@@ -1,20 +1,21 @@
 # Scrolls of Light
 
 A browser game for kids ages 8–15, inspired by Prodigy, set in the stories of the Bible.
-Explore 22 Bible worlds, meet the people of the story, and battle Gloomlings (little shadows
+Explore 28 Bible worlds, meet the people of the story, and battle Gloomlings (little shadows
 of lies, worry, pride and fear) by answering questions. Every right answer powers your attack.
 
 **Play:** once GitHub Pages is on, the game lives at `https://thias15.github.io/bible-prodigy/`.
 
 ## What's in the game
 
-- **22 Bible worlds plus a hub town**, in Bible order: Garden of Eden, Mountains of Ararat,
-  Plains of Canaan (Abraham), Joseph's Journey, Land of Egypt, Wilderness of Sinai, Jericho,
-  Oak of Ophrah (Gideon), Hills of Zorah (Samson), Fields of Ruth, Valley of Elah,
+- **28 Bible worlds plus a hub town**, in Bible order and grouped into eras (Beginnings, Patriarchs,
+  Exodus, Judges, Kings, Exile and Return, Jesus, the Early Church): Garden of Eden, Mountains of Ararat,
+  Plains of Canaan (Abraham), Bethel (Jacob's ladder), Joseph's Journey, Land of Egypt, Wilderness of Sinai, Jericho,
+  Oak of Ophrah (Gideon), Hills of Zorah (Samson), Fields of Ruth, Shiloh (Samuel), Valley of Elah, Solomon's Temple,
   Mount Carmel (Elijah), Road to Nineveh (Jonah), Babylon, Palace of Susa (Esther),
-  Walls of Jerusalem (Nehemiah), Bethlehem (at night), Sea of Galilee, Road of Parables,
-  Jerusalem, Pentecost and Paul's Voyage — connected by the Gates of Remembrance in Pilgrim's Rest.
-- **A story to finish.** The Shadow of Doubt tore the Scroll of Light into twenty-two pieces.
+  Walls of Jerusalem (Nehemiah), Bethlehem (at night), River Jordan (baptism and temptation), Cana,
+  Sea of Galilee, Road of Parables, Bethany (Lazarus), Jerusalem, Pentecost and Paul's Voyage — connected by the Gates of Remembrance in Pilgrim's Rest.
+- **A story to finish.** The Shadow of Doubt tore the Scroll of Light into twenty-eight pieces.
   Each world has a guide (Eve, Noah, Abraham, Joseph, Moses, Gideon, Ruth, David, Elijah,
   Jonah, Esther, Nehemiah, Peter, Paul...), a main quest, a boss, a helper quest and a memory verse.
   Every guide asks you a story choice ("Stay with Naomi or go home?") and tells you what
@@ -59,21 +60,23 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
   third at level 20. Pick your team and its leader in the Animals menu. Every animal acts in battle
   (bosses get a bit tougher for bigger teams), and ten Bible pairs give a team bonus, e.g. wolf and
   lamb ("Peace", Isaiah 11:6) heal you every turn, raven and dove ("Birds of the Ark") give more XP.
-- **After the last gate: the Land.** A road from Pilgrim's Rest leads into five connected regions
-  (Galilee Hills, Jordan Valley, Judean Desert, the Coast, Around Jerusalem). Each has a day/night
+- **The Land opens step by step.** A road from Pilgrim's Rest leads into five connected regions that
+  open along the journey, each after the stories that happen there: the Judean Desert after Jericho, the
+  Jordan Valley after Shiloh, Around Jerusalem after Nineveh, the Coast after Nehemiah and the Galilee
+  Hills after the Sea of Galilee. Each has a day/night
   cycle and its own weather (rain, mist, desert wind), a hidden cave with a treasure chest, a
   traveller with a new request every day (find lost things, answer questions, chase away
   gloomlings, share food), and rare wild animals that only live there (War Horse, Rock Badger at
   night, Dromedary...). After rain a rainbow may appear in Galilee. Twelve lost pages of Psalm 23
   are hidden in the regions, caves and islands.
-- **Sea journeys with Paul.** From the Coast, sail the Great Sea in a little boat, steer around
+- **Sea journeys with Paul** (after Paul's Voyage). From the Coast, sail the Great Sea in a little boat, steer around
   storm clouds and go ashore on Cyprus, Crete, Malta and in Rome. Each island has its story from
   Acts (Barnabas and the proconsul, Fair Havens, the shipwreck and the viper, Paul teaching in
   Rome), a quest, and a sea animal to befriend (dolphin, monk seal, crab, octopus, palace lizard).
-- **Tower of the Watchman** (Habakkuk 2:1, opens after 10 worlds): an endless climb. Every floor is
+- **Tower of the Watchman** (Habakkuk 2:1, opens after Jericho): an endless climb. Every floor is
   a battle, every 5th floor a boss, every 7th floor a day of rest (Genesis 2:2), foes get stronger as you go,
   your health carries over, and every 10 floors is a checkpoint with a trophy. Your highest floor shows on the friends leaderboard.
-- **The New Quarter of Pilgrim's Rest** (after the last gate): gather wood, stone, wool, fish and olive
+- **The New Quarter of Pilgrim's Rest** (opens after Shiloh): gather wood, stone, wool, fish and olive
   oil in the Land, on the islands and in the Tower, and build up a town: a well, bakery (daily bread),
   workshop (craft furniture for your house), animal pen (XP for animals not in your team), school
   (more shekels in practice), market, guest house (travellers you helped move in and bring gifts) and
@@ -159,6 +162,7 @@ No build step, server or accounts needed. On GitHub Pages the game can be instal
 | `src/online_str.js` | English text for the online features (other languages in `src/lang/<l>/O.json`) |
 | `src/ext_str.js` | The Land, sea, islands, Tower, wild animals and team text (other languages in `src/lang/<l>/X.json`) |
 | `src/endgame.js` | The Land, the Great Sea, the islands and the Tower (inserted into `game.js` at `/*__EXT__*/`) |
+| `src/worlds4.js` | Worlds 23–28 (Bethel, Shiloh, Solomon's Temple, River Jordan, Cana, Bethany) in English and German |
 | `src/town.js` | The New Quarter town (inserted right after `endgame.js`) |
 | `src/fb/` | Firebase config, security rules (`firestore.rules`) and the bundled SDK (`fb.js`, rebuilt with `npx esbuild entry.js --bundle --minify --format=iife --outfile=fb.js`) |
 | `src/admin.template.html`, `src/privacy.html` | Owner dashboard and privacy page |

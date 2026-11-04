@@ -528,6 +528,72 @@
      "Los viajes misioneros de Pablo"
     ],
     "Lucas 2; Lucas 24; Hechos 2; Hechos 13"
+   ],
+   [
+    23,
+    "Ordena la noche de Jacob en Betel:",
+    [
+     "Jacob huye de Esaú",
+     "Duerme con una piedra como almohada",
+     "Sueña con una escalera hasta el cielo",
+     "Pone la piedra de pie como un pilar"
+    ],
+    "Génesis 27:41-28:18"
+   ],
+   [
+    24,
+    "Ordena la historia de Samuel:",
+    [
+     "Ana pide un hijo en oración",
+     "Nace Samuel",
+     "Ana lleva a Samuel con Elí",
+     "Dios llama a Samuel en la noche"
+    ],
+    "1 Samuel 1-3"
+   ],
+   [
+    25,
+    "Ordena la historia de Salomón:",
+    [
+     "Salomón pide sabiduría a Dios",
+     "Dos madres van a ver al rey",
+     "Se construye el templo",
+     "La reina de Sabá viene de visita"
+    ],
+    "1 Reyes 3-10"
+   ],
+   [
+    26,
+    "Ordena estos sucesos:",
+    [
+     "Juan predica junto al Jordán",
+     "Jesús es bautizado",
+     "El Espíritu baja como una paloma",
+     "Jesús es tentado en el desierto"
+    ],
+    "Mateo 3-4"
+   ],
+   [
+    27,
+    "Ordena la boda de Caná:",
+    [
+     "Se acaba el vino",
+     "María se lo cuenta a Jesús",
+     "Los sirvientes llenan seis tinajas de agua",
+     "El encargado prueba el mejor vino"
+    ],
+    "Juan 2:1-11"
+   ],
+   [
+    28,
+    "Ordena la historia de Lázaro:",
+    [
+     "Lázaro se enferma",
+     "Jesús espera dos días más",
+     "Marta sale al encuentro de Jesús",
+     "Lázaro sale de la tumba"
+    ],
+    "Juan 11:1-44"
    ]
   ],
   "who": [
@@ -1069,6 +1135,72 @@
      "Bernabé"
     ],
     "Hechos 27:25"
+   ],
+   [
+    23,
+    "¡De verdad el SEÑOR está en este lugar, y yo no lo sabía!",
+    "Jacob",
+    [
+     "Esaú",
+     "Isaac",
+     "Labán"
+    ],
+    "Génesis 28:16"
+   ],
+   [
+    24,
+    "Por este niño oraba, y el SEÑOR me dio lo que le pedí.",
+    "Ana",
+    [
+     "Sara",
+     "Rut",
+     "Isabel"
+    ],
+    "1 Samuel 1:27"
+   ],
+   [
+    25,
+    "¡No me habían contado ni la mitad! Tu sabiduría es mayor de lo que oí.",
+    "La reina de Sabá",
+    [
+     "La reina Ester",
+     "Betsabé",
+     "La reina Vasti"
+    ],
+    "1 Reyes 10:7"
+   ],
+   [
+    26,
+    "Yo necesito que tú me bautices, ¿y tú vienes a mí?",
+    "Juan el Bautista",
+    [
+     "Pedro",
+     "Andrés",
+     "Nicodemo"
+    ],
+    "Mateo 3:14"
+   ],
+   [
+    27,
+    "Todos sirven primero el buen vino, ¡pero tú has guardado el buen vino hasta ahora!",
+    "El encargado de la fiesta",
+    [
+     "María",
+     "Pedro",
+     "El novio"
+    ],
+    "Juan 2:10"
+   ],
+   [
+    28,
+    "Sí, Señor. Creo que tú eres el Cristo, el Hijo de Dios.",
+    "Marta",
+    [
+     "María Magdalena",
+     "Salomé",
+     "Juana"
+    ],
+    "Juan 11:27"
    ]
   ],
   "where": [
@@ -2000,6 +2132,102 @@
     ]
    ],
    "ref": "Lucas 10:30-37"
+  },
+  "23": {
+   "prompt": "Estás lejos de casa, está oscuro y te sientes muy solo. ¿Qué haces?",
+   "options": [
+    "Recordar que Dios está conmigo",
+    "Quedarme despierto preocupado"
+   ],
+   "replies": [
+    [
+     "¡Esa es la promesa que Dios le dio a Jacob: «Yo estoy contigo dondequiera que vayas»! ¡Nunca estás solo!"
+    ],
+    [
+     "Jacob también se sentía solo. Pero esa misma noche Dios le mostró: «Yo estoy contigo y te cuidaré»."
+    ]
+   ],
+   "ref": "Génesis 28:15"
+  },
+  "24": {
+   "prompt": "En la noche oyes que alguien te llama por tu nombre. Todos los demás duermen. ¿Qué haces?",
+   "options": [
+    "Decir: Habla, SEÑOR, que te escucho",
+    "Taparme la cabeza con la manta"
+   ],
+   "replies": [
+    [
+     "¡Eso es lo que Samuel aprendió a decir! A Dios le encanta hablar con quienes escuchan."
+    ],
+    [
+     "Al principio Samuel tampoco entendía. Pero Elí lo ayudó, y Samuel dijo: «Habla, que tu siervo escucha»."
+    ]
+   ],
+   "ref": "1 Samuel 3:8-10"
+  },
+  "25": {
+   "prompt": "Dios te dice: Pídeme lo que quieras y te lo daré. ¿Qué le pides?",
+   "options": [
+    "Sabiduría para hacer lo correcto",
+    "Oro y tesoros"
+   ],
+   "replies": [
+    [
+     "¡Eso es lo que pidió Salomón! A Dios le gustó tanto que también le dio riquezas y honra."
+    ],
+    [
+     "¡Mucha gente elegiría eso! Pero Salomón pidió un corazón que sepa entender, y Dios le dio riquezas de regalo además."
+    ]
+   ],
+   "ref": "1 Reyes 3:5-13"
+  },
+  "26": {
+   "prompt": "Alguien te dice: «Hazlo solo esta vez, nadie se va a enterar». Sabes que está mal. ¿Qué te ayuda a mantenerte firme?",
+   "options": [
+    "Recordar la palabra de Dios",
+    "Simplemente ceder"
+   ],
+   "replies": [
+    [
+     "¡Eso hizo Jesús! Tres veces dijo: «Escrito está», y el tentador tuvo que irse."
+    ],
+    [
+     "Todos sentimos la tentación a veces, y Jesús lo entiende. Él nos enseña a mantenernos firmes: con la palabra de Dios y con su ayuda."
+    ]
+   ],
+   "ref": "Mateo 4:1-11"
+  },
+  "27": {
+   "prompt": "Jesús te dice que llenes de agua unas tinajas enormes. ¡Pero lo que hace falta es vino, no agua! ¿Qué haces?",
+   "options": [
+    "Hacer lo que dice Jesús",
+    "Decirle que no tiene sentido"
+   ],
+   "replies": [
+    [
+     "¡Igual que los sirvientes! Llenaron las tinajas hasta el borde, y Jesús convirtió el agua en el mejor vino."
+    ],
+    [
+     "¡Sí que sonaba raro! Pero María dijo: «Hagan todo lo que él les diga», y los sirvientes obedecieron. Entonces Jesús hizo algo asombroso."
+    ]
+   ],
+   "ref": "Juan 2:5-10"
+  },
+  "28": {
+   "prompt": "Tu amigo está muy enfermo, y Jesús no viene enseguida. ¿Qué haces?",
+   "options": [
+    "Seguir confiando en Jesús",
+    "Pensar que no le importa"
+   ],
+   "replies": [
+    [
+     "¡Como Marta! Incluso estando triste dijo: «Yo creo». Y Jesús mostró la gloria de Dios."
+    ],
+    [
+     "Marta y María también se lo preguntaban: «Señor, si hubieras estado aquí…». ¡Pero a Jesús le importaban tanto que lloró, y luego resucitó a Lázaro!"
+    ]
+   ],
+   "ref": "Juan 11:21-44"
   }
  },
  "PLACES": {

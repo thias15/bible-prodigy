@@ -2,7 +2,7 @@
 const fs=require('fs'),vm=require('vm'),path=require('path');
 const D=path.join(__dirname,'..');
 function load(){
-  const files=['data.js','i18n.js','worlds2.js','worlds3.js','companions.js','quiz_extra.js','worlds_order.js'];
+  const files=['data.js','i18n.js','worlds2.js','worlds3.js','companions.js','quiz_extra.js','worlds4.js','worlds_order.js'];
   const src=files.map(f=>fs.readFileSync(path.join(D,f),'utf8')).join('\n;\n');
   const ctx={console}; vm.createContext(ctx);
   vm.runInContext(src+'\n;this.__x={DE,STR,BQ,BQ_DE,VQ,VQ_DE,VOCAB,VOCAB_DE,SPELL,SPELL_DE,GROUPS,GROUPS_DE,BOOKS,BOOKS_DE,BOOK_DE,STORY_DE,STORY_INTRO,QX,CHOICES,PLACES,CH,HUB,SIMEON,HUBNPC,ITEMS,ARMOR,COMPS,SPELLS,DYES,REF_FIX,ORDER}',ctx);

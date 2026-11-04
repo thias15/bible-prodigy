@@ -119,7 +119,7 @@ Object.assign(STR.en,{
 'x.sub':'The Land · {0}','x.nightFalls':'🌙 Night falls over the Land.','x.morning':'☀️ The sun rises. Good morning!','x.secret':'✨ You found a secret spot!',
 'x.reward':'+{0} shekels · +{1} XP','x.locked':'Locked','x.tower':'Tower of the Watchman','x.towerGo':'Enter the Tower','x.towerLock':'The Tower opens after you finish {0} worlds.',
 'x.land':'The Land','x.landGo':'Travel into the Land','x.landLock':'The road into the Land opens after the very last gate.',
-'land.intro1':'You did it – the Scroll of Light is whole again! But the journey is not over.','land.intro2':'Out there lies the whole Land: the hills of Galilee, the Jordan, the desert, the coast and the hills around Jerusalem.',
+'land.intro1':'Well done, pilgrim! A road now leads from Pilgrim’s Rest out into the Land itself.','land.intro2':'Bit by bit you can explore it all: the desert, the Jordan Valley, the hills around Jerusalem, the coast and Galilee. Each region opens after the stories that happen there.',
 'land.intro3':'Travellers need help every day. Wild animals hide in the hills, and caves hold old secrets.','land.intro4':'Someone even found pieces of an old song scroll – a Psalm. Can you find all 12 pieces?',
 'x.frag':'Lost page','x.fragGo':'Pick up the lost page','x.wild':'Wild animal','x.wildGo':'Make friends with the {0}','x.roadTo':'→ {0}','x.roadGo':'Travel to {0}',
 'x.cave':'Cave','x.caveGo':'Go into the cave','x.ship':'Paul’s ship','x.shipGo':'Sail the Great Sea','x.pick':'Pick it up',
@@ -159,6 +159,10 @@ Object.assign(STR.en,{
 'tw.floor':'Floor {0}','tw.cleared':'Floor {0} cleared!','tw.done':'Floor {0} cleared!','tw.hp':'Health: {0} / {1}','tw.rest':'You rest by a window: +{0} health.','tw.next':'Next: floor {0}.','tw.bossNext':'A boss waits there!',
 'tw.cpGot':'Checkpoint {0} reached! +{1} shekels and a trophy for your house.','tw.up':'Climb on','tw.leave':'Leave the tower','tw.endT':'Back down the stairs','tw.end':'You reached floor {0}. Your best: {1}.','tw.endP':'Rest, eat something and try again!',
 'tw.board':'🪜 Highest tower floor',
+'x.towerLock2':'The Tower opens after the world {0}.','x.roadLock':'This road opens after the world {0}.','x.seaLock':'Paul’s ship sails after the world {0}.','tn.lock2':'The New Quarter opens after the world {0}.','xo.new':'New: {0} is open!','bm.sleepy.regen':'The sleepy fog grows thicker! Light the lamp!',
+'era.0':'Beginnings','era.1':'Patriarchs','era.2':'Exodus','era.3':'Judges','era.4':'Kings','era.5':'Exile and Return','era.6':'Jesus','era.7':'The Early Church','era.see':'Read the signpost: {0}',
+'era.0.d':'God makes the world, and keeps His promise to Noah.','era.1.d':'Abraham, Isaac, Jacob and Joseph trust God’s promises.','era.2.d':'God rescues His people from Egypt and leads them through the wilderness.','era.3.d':'Brave judges and faithful people in the land God gave.',
+'era.4.d':'Kings and prophets: David, Solomon, Elijah and Jonah.','era.5.d':'Far from home, God’s people stay faithful – and come back to rebuild.','era.6.d':'Jesus is born, teaches, heals, dies and rises again.','era.7.d':'The Holy Spirit comes, and the good news goes out to the whole world.',
 'x.leaveCave':'Leave the cave','x.toShip':'Back to the ship','x.toHarbor':'Back to the harbor','x.hubQ':'Explore the Land 🧭 or climb the Tower 🪜!'
 });
 

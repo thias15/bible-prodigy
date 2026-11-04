@@ -109,8 +109,8 @@
    "de": "Welt"
   },
   "btn.friends": {
-   "en": "Friends",
-   "de": "Freunde"
+   "en": "Animals",
+   "de": "Tiere"
   },
   "track.quest": {
    "en": "Quest",
@@ -338,14 +338,14 @@
    "en": [
     "Ah, a pilgrim at last! I am Simeon. I have waited many years to see God's promises come true.",
     "The Scroll of Light tells the great story of God's love — from creation all the way to the empty tomb.",
-    "But the Shadow of Doubt tore it into twenty-two pieces and hid them in the stories of the Bible.",
+    "But the Shadow of Doubt tore it into twenty-eight pieces and hid them in the stories of the Bible.",
     "These Gates of Remembrance lead into those stories. Answer wisely, be brave, and bring the pieces home.",
     "Gate 1, the Garden of Eden, is open. And look — Jesse's little lamb has decided to follow you. God be with you!"
    ],
    "de": [
     "Ah, endlich ein Pilger! Ich bin Simeon. Viele Jahre habe ich darauf gewartet, dass Gottes Versprechen wahr werden.",
     "Die Schriftrolle des Lichts erzählt die große Geschichte von Gottes Liebe – von der Schöpfung bis zum leeren Grab.",
-    "Aber der Schatten des Zweifels hat sie in zweiundzwanzig Teile zerrissen und in den Geschichten der Bibel versteckt.",
+    "Aber der Schatten des Zweifels hat sie in achtundzwanzig Teile zerrissen und in den Geschichten der Bibel versteckt.",
     "Diese Tore der Erinnerung führen in diese Geschichten. Antworte weise, sei mutig und bring die Teile nach Hause.",
     "Tor 1, der Garten Eden, ist offen. Und schau – das kleine Lamm von Jesse möchte mit dir gehen. Gott sei mit dir!"
    ]
@@ -2477,6 +2477,130 @@
   "fr.req": {
    "en": "Unlocks after {0} finished worlds",
    "de": "Ab {0} geschafften Welten"
+  },
+  "bm.restless": {
+   "en": "Jacob could not rest. Answer 4 right to climb the stairway, and a blast of heaven's light hits the gloom!",
+   "de": "Jakob fand keine Ruhe. Beantworte 4 richtig, dann steigst du die Treppe hinauf, und das Licht des Himmels trifft das Dunkel!"
+  },
+  "bm.restless.m": {
+   "en": "Climb the stairway",
+   "de": "Steig die Treppe hinauf"
+  },
+  "bm.restless.full": {
+   "en": "Up the stairway! \"I am with you!\" Heaven's light blasts the gloom!",
+   "de": "Die Treppe hinauf! „Ich bin mit dir!“ Das Licht des Himmels trifft das Dunkel!"
+  },
+  "bm.sleepy": {
+   "en": "The sleepy fog keeps growing back! Answer 3 right to light the lamp of God and stop it.",
+   "de": "Der Schlafnebel wächst immer wieder nach! Beantworte 3 richtig, dann zündest du die Lampe Gottes an und hältst ihn auf."
+  },
+  "bm.sleepy.m": {
+   "en": "Light the lamp",
+   "de": "Zünde die Lampe an"
+  },
+  "bm.sleepy.full": {
+   "en": "\"Speak, LORD, for your servant hears!\" The lamp shines, and the fog stops growing back.",
+   "de": "„Rede, Herr, denn dein Diener hört!“ Die Lampe leuchtet, und der Nebel wächst nicht mehr nach."
+  },
+  "bm.riddle": {
+   "en": "The gloom hides behind a shield of riddles. Answer right in 3 different subjects to break it. True wisdom comes from God!",
+   "de": "Das Dunkel versteckt sich hinter einem Rätselschild. Antworte in 3 verschiedenen Themen richtig, um ihn zu zerbrechen. Wahre Weisheit kommt von Gott!"
+  },
+  "bm.riddle.m": {
+   "en": "Wisdom",
+   "de": "Weisheit"
+  },
+  "bm.riddle.full": {
+   "en": "Wisdom from God breaks the riddle shield!",
+   "de": "Weisheit von Gott zerbricht den Rätselschild!"
+  },
+  "bm.tempter": {
+   "en": "Answer like Jesus did: \"It is written!\" Bible and memory-verse answers hit hard. Other answers only hit weakly.",
+   "de": "Antworte wie Jesus: „Es steht geschrieben!“ Bibel- und Merkvers-Antworten treffen hart. Andere Antworten treffen nur schwach."
+  },
+  "bm.tempter.m": {
+   "en": "It is written!",
+   "de": "Es steht geschrieben!"
+  },
+  "bm.tempter.full": {
+   "en": "\"It is written!\" God's word drives the tempter away!",
+   "de": "„Es steht geschrieben!“ Gottes Wort vertreibt den Versucher!"
+  },
+  "bm.empty": {
+   "en": "The six stone jars are empty. Every right answer fills one jar. When all six are full, your attacks are strong!",
+   "de": "Die sechs Steinkrüge sind leer. Jede richtige Antwort füllt einen Krug. Wenn alle sechs voll sind, treffen deine Angriffe stark!"
+  },
+  "bm.empty.m": {
+   "en": "Jars filled",
+   "de": "Krüge gefüllt"
+  },
+  "bm.empty.one": {
+   "en": "Jar filled!",
+   "de": "Krug gefüllt!"
+  },
+  "bm.empty.full": {
+   "en": "All six jars are filled to the brim! Your attacks are strong now!",
+   "de": "Alle sechs Krüge sind bis zum Rand gefüllt! Jetzt treffen deine Angriffe stark!"
+  },
+  "bm.grief": {
+   "en": "A heavy stone blocks the tomb. Every 3 right answers, roll it away with a big blast!",
+   "de": "Ein schwerer Stein liegt vor dem Grab. Bei jeweils 3 richtigen Antworten rollst du ihn mit einem großen Schlag weg!"
+  },
+  "bm.grief.m": {
+   "en": "Roll away the stone",
+   "de": "Roll den Stein weg"
+  },
+  "bm.grief.full": {
+   "en": "\"Lazarus, come out!\" The stone rolls away!",
+   "de": "„Lazarus, komm heraus!“ Der Stein rollt weg!"
+  },
+  "furn.stonepillar": {
+   "en": "Jacob's stone pillar",
+   "de": "Jakobs Steinmal"
+  },
+  "furn.templelamp": {
+   "en": "The lamp of God",
+   "de": "Die Lampe Gottes"
+  },
+  "furn.goldenlamp": {
+   "en": "Golden temple lamp",
+   "de": "Goldene Tempellampe"
+  },
+  "furn.rivershell": {
+   "en": "Shell from the Jordan",
+   "de": "Muschel aus dem Jordan"
+  },
+  "furn.stonejar": {
+   "en": "Stone water jar from Cana",
+   "de": "Steinkrug aus Kana"
+  },
+  "furn.perfumejar": {
+   "en": "Mary's jar of perfume",
+   "de": "Marias Salbgefäß"
+  },
+  "cut.23": {
+   "en": "God is with you wherever you go!",
+   "de": "Gott ist mit dir, wohin du auch gehst!"
+  },
+  "cut.24": {
+   "en": "Speak, Lord, I am listening!",
+   "de": "Rede, Herr, ich höre!"
+  },
+  "cut.25": {
+   "en": "Wisdom comes from God!",
+   "de": "Weisheit kommt von Gott!"
+  },
+  "cut.26": {
+   "en": "This is my beloved Son!",
+   "de": "Das ist mein geliebter Sohn!"
+  },
+  "cut.27": {
+   "en": "The best wine was saved for last!",
+   "de": "Der beste Wein kam zum Schluss!"
+  },
+  "cut.28": {
+   "en": "Jesus is the resurrection and the life!",
+   "de": "Jesus ist die Auferstehung und das Leben!"
   }
  },
  "MG": {
@@ -3517,13 +3641,13 @@
  "STORY": {
   "en": [
    "Long ago, the great Scroll of Light told the whole story of God's love — from the very first sunrise to the brightest morning of all.",
-   "But the Shadow of Doubt crept in. It tore the Scroll into twenty-two pieces and hid them across the ages of the Bible.",
+   "But the Shadow of Doubt crept in. It tore the Scroll into twenty-eight pieces and hid them across the ages of the Bible.",
    "Without the Scroll, Gloomlings spread everywhere: whispers of lies, worry, pride and fear.",
    "Now a young pilgrim is needed. Someone brave. Someone curious. Someone like you."
   ],
   "de": [
    "Vor langer Zeit erzählte die große Schriftrolle des Lichts die ganze Geschichte von Gottes Liebe – vom allerersten Sonnenaufgang bis zum hellsten Morgen von allen.",
-   "Doch der Schatten des Zweifels schlich sich heran. Er zerriss die Schriftrolle in zweiundzwanzig Teile und versteckte sie in den Zeiten der Bibel.",
+   "Doch der Schatten des Zweifels schlich sich heran. Er zerriss die Schriftrolle in achtundzwanzig Teile und versteckte sie in den Zeiten der Bibel.",
    "Ohne die Schriftrolle breiteten sich Düsterlinge überall aus: Flüstern von Lügen, Sorgen, Hochmut und Angst.",
    "Jetzt wird ein junger Pilger gebraucht. Jemand Mutiges. Jemand Neugieriges. Jemand wie du."
   ]
