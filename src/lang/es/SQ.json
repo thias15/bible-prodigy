@@ -1,0 +1,131 @@
+{
+ "sq.done": "¡Misión de la historia completada! +{0} 🪙 +{1} XP",
+ "sq.no": "Casi. ¡Escucha la historia otra vez e inténtalo de nuevo!",
+ "sq.q": "Misión de la historia: habla con {0}",
+ "sq.11.n": "Rebeca",
+ "sq.11.a": [
+  "¡Hola, viajero! Soy Rebeca. Vengo a este pozo todas las tardes a llenar mi cántaro de agua.",
+  "Hoy llegó un siervo anciano con diez camellos sedientos. Me pidió un poco de agua.",
+  "Le di de beber, y luego le dije: «¡También sacaré agua para tus camellos, hasta que todos hayan bebido lo suficiente!». ¡Es muchísima agua para diez camellos!",
+  "Él me contó que le había pedido a Dios exactamente esa señal. ¡Dios lo guio hasta mí para encontrar una esposa para Isaac, el hijo de Abraham!"
+ ],
+ "sq.11.q": "¿Qué hizo Rebeca por el siervo?",
+ "sq.11.o": [
+  "Le dio agua y también dio de beber a todos sus camellos",
+  "Le vendió el agua a cambio de plata",
+  "Le dijo que buscara otro pozo"
+ ],
+ "sq.11.ok": "¡Sí! Una bondad que hace más de lo que se pide. Dios usó mi bondad en su gran plan. (Génesis 24)",
+ "sq.5.n": "Rahab",
+ "sq.5.a": [
+  "¡Pst! Por aquí, junto a la muralla. Soy Rahab. Mi casa está construida dentro de la muralla de Jericó.",
+  "Dos espías de Israel vinieron a mi casa. Los hombres del rey vinieron a buscarlos, así que los escondí bajo los tallos de lino de mi azotea.",
+  "Les dije: «Yo sé que el SEÑOR les ha dado esta tierra. ¡Su Dios es Dios arriba en el cielo y abajo en la tierra!».",
+  "Me prometieron proteger a mi familia. Solo tenía que colgar algo en mi ventana para que reconocieran mi casa."
+ ],
+ "sq.5.q": "¿Qué colgó Rahab en su ventana?",
+ "sq.5.o": [
+  "Un cordón rojo",
+  "Una lámpara de oro",
+  "Una bandera blanca"
+ ],
+ "sq.5.ok": "¡Así es, un cordón rojo! Cuando cayeron las murallas, toda mi familia se salvó. (Josué 2 y 6)",
+ "sq.19.n": "Fura",
+ "sq.19.a": [
+  "¡Hola! Soy Fura, el criado de Gedeón. Ahora Gedeón es valiente, pero no siempre estuvo tan seguro.",
+  "Una noche puso un vellón de lana en la era y oró: «Si el vellón se moja de rocío pero el suelo queda seco, sabré que nos vas a ayudar».",
+  "¡A la mañana siguiente exprimió un tazón entero de agua! Después, para la noche siguiente, le pidió a Dios la señal contraria.",
+  "Dios tuvo paciencia con Gedeón y le dio la señal que pidió las dos veces."
+ ],
+ "sq.19.q": "¿Qué pasó la segunda noche?",
+ "sq.19.o": [
+  "El vellón estaba seco, pero el suelo estaba mojado",
+  "El vellón estaba mojado, pero el suelo estaba seco",
+  "El viento se llevó el vellón volando"
+ ],
+ "sq.19.ok": "¡Exacto! Dios tiene paciencia con nosotros cuando dudamos, y ayuda a que nuestra fe crezca. (Jueces 6:36-40)",
+ "sq.24.n": "Ana",
+ "sq.24.a": [
+  "¡Hola, querido! Soy Ana, la madre de Samuel. Vengo a Siló todos los años para el sacrificio.",
+  "Oré muchísimo tiempo pidiendo un hijo, ¡y Dios me respondió! Por eso le devolví a Samuel para que sirviera aquí al SEÑOR.",
+  "¡Crece tan rápido! Así que cada año le traigo algo que hice con mis propias manos.",
+  "Dios también me bendijo con más hijos: tres hijos y dos hijas. ¡Dios es tan bueno!"
+ ],
+ "sq.24.q": "¿Qué le llevaba Ana a Samuel cada año?",
+ "sq.24.o": [
+  "Una pequeña túnica que ella había hecho",
+  "Una corona de oro",
+  "Un par de sandalias nuevas"
+ ],
+ "sq.24.ok": "¡Sí, una pequeña túnica, un poquito más grande cada año! (1 Samuel 2:19)",
+ "sq.25.n": "Obed-edom",
+ "sq.25.a": [
+  "¡Shalom! Soy Obed-edom. Una vez el arca de Dios se quedó en mi casa durante tres meses, ¡y Dios bendijo a toda mi familia!",
+  "Después, el rey David vino para llevar el arca a Jerusalén. ¡Qué día! ¡Trompetas, gritos de alegría y música por todas partes!",
+  "El rey se quitó su manto real y se puso un sencillo efod de lino, porque estaba feliz de honrar a Dios.",
+  "Más tarde, su hijo Salomón construyó este templo, y llevaron el arca al Lugar Santísimo."
+ ],
+ "sq.25.q": "¿Qué hizo el rey David cuando el arca entró en Jerusalén?",
+ "sq.25.o": [
+  "Danzó ante el SEÑOR con todas sus fuerzas",
+  "Se escondió dentro de su palacio",
+  "Se sentó en su trono a mirar en silencio"
+ ],
+ "sq.25.ok": "¡Sí! David danzó con todas sus fuerzas, lleno de alegría por Dios. (2 Samuel 6:14)",
+ "sq.8.n": "Ana la profetisa",
+ "sq.8.a": [
+  "¡Dios te bendiga, pequeño! Soy Ana, una profetisa. Tengo 84 años y adoro a Dios en el templo día y noche.",
+  "Cuando el niño Jesús tenía cuarenta días, María y José lo trajeron al templo de Jerusalén.",
+  "Un anciano que estaba allí tomó al bebé en sus brazos y alabó a Dios: «¡Ahora he visto tu salvación!». Había esperado toda su vida ese día.",
+  "Yo llegué justo en ese momento y di gracias a Dios, ¡y les hablé de este niño a todos los que esperaban el rescate de Dios!"
+ ],
+ "sq.8.q": "¿Quién tomó al niño Jesús en sus brazos en el templo y alabó a Dios?",
+ "sq.8.o": [
+  "Simeón",
+  "Herodes",
+  "Zacarías"
+ ],
+ "sq.8.ok": "¡Simeón! Lo conoces, ¿verdad? Te está esperando en el Descanso del Peregrino. (Lucas 2:25-38)",
+ "sq.9.n": "Juan, el discípulo",
+ "sq.9.a": [
+  "¡Buenos días! Soy Juan. Después de que Jesús resucitó, vinimos aquí a pescar, pero en toda la noche no sacamos nada.",
+  "Al amanecer, un hombre en la orilla nos gritó: «¡Echen la red al lado derecho de la barca!». ¡De pronto la red se llenó!",
+  "Yo dije: «¡Es el Señor!». Pedro se lanzó al agua y nadó hasta la orilla. Jesús tenía un fuego encendido, con pescado y pan. «Vengan a desayunar», nos dijo.",
+  "Después Jesús le preguntó a Pedro tres veces: «¿Me amas?». Y tres veces le dio una nueva tarea: «Cuida de mis ovejas»."
+ ],
+ "sq.9.q": "¿Cuántos peces grandes había en la red?",
+ "sq.9.o": [
+  "153",
+  "12",
+  "5000"
+ ],
+ "sq.9.ok": "¡153 peces grandes, y la red ni siquiera se rompió! Jesús perdonó a Pedro y le dio un nuevo comienzo. (Juan 21)",
+ "sq.10.n": "Hombre con un cántaro",
+ "sq.10.a": [
+  "¡Shalom! Hoy dos discípulos de Jesús me siguieron hasta casa. Yo cargo cántaros de agua, ¡así que me reconocieron fácilmente!",
+  "Mi señor tiene un gran salón en el piso de arriba, ya preparado. Jesús va a comer allí la cena de la Pascua con sus amigos.",
+  "Antes de la cena, Jesús hizo algo que solo hacen los sirvientes. Los discípulos se sorprendieron mucho, ¡y al principio Pedro hasta dijo que no!",
+  "Después Jesús tomó el pan y la copa y dijo: «Hagan esto para acordarse de mí»."
+ ],
+ "sq.10.q": "¿Qué hizo Jesús por sus discípulos antes de la cena?",
+ "sq.10.o": [
+  "Les lavó los pies",
+  "Les dio ropa nueva",
+  "Los mandó a comprar comida"
+ ],
+ "sq.10.ok": "¡Sí! Jesús les lavó los pies y dijo: «Ámense unos a otros como yo los he amado». (Juan 13; Lucas 22)",
+ "sq.17.n": "Rode",
+ "sq.17.a": [
+  "¡Hola! Soy Rode. Soy sirvienta en la casa de María, la madre de Juan Marcos. Esta noche muchos creyentes están orando aquí.",
+  "El rey Herodes metió a Pedro en la cárcel, con cadenas y soldados alrededor. ¡Así que oramos y oramos!",
+  "Un ángel despertó a Pedro, las cadenas se le cayeron, ¡y la puerta de hierro se abrió sola!",
+  "Entonces alguien llamó a nuestra puerta. Reconocí la voz de Pedro, y me puse tan contenta que… bueno, se me olvidó algo importante."
+ ],
+ "sq.17.q": "¿Qué se le olvidó hacer a Rode?",
+ "sq.17.o": [
+  "Abrirle la puerta a Pedro",
+  "Encender las lámparas",
+  "Cerrar el portón con llave"
+ ],
+ "sq.17.ok": "¡Ja, ja, sí! Corrí a contárselo a todos y dejé a Pedro llamando afuera. ¡Dios responde la oración! (Hechos 12:1-17)"
+}

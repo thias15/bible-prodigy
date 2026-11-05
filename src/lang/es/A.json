@@ -98,7 +98,7 @@
   "elder.intro": [
    "¡Ah, por fin un peregrino! Soy Simeón. He esperado muchos años para ver cumplirse las promesas de Dios.",
    "El Pergamino de Luz cuenta la gran historia del amor de Dios: desde la creación hasta la tumba vacía.",
-   "Pero la Sombra de la Duda lo rompió en treinta y cuatro piezas y las escondió en las historias de la Biblia.",
+   "Pero la Sombra de la Duda lo rompió en cuarenta piezas y las escondió en las historias de la Biblia.",
    "Estas Puertas del Recuerdo llevan a esas historias. Responde con sabiduría, sé valiente y trae las piezas a casa.",
    "La puerta 1, el Jardín del Edén, está abierta. Y mira: el corderito de Isaí ha decidido seguirte. ¡Que Dios te acompañe!"
   ],
@@ -712,7 +712,39 @@
   "cut.31": "¡El SEÑOR va delante de ti!",
   "cut.32": "¡Son más los que están con nosotros!",
   "cut.33": "¡Dios cerró la boca de los leones!",
-  "cut.34": "Miren los lirios. ¡No se preocupen!"
+  "cut.34": "Miren los lirios. ¡No se preocupen!",
+  "bm.forgot": "La palabra de Dios estuvo perdida en el templo durante años. Cada respuesta correcta encuentra una parte del libro perdido. Cuando encuentres las 3, ¡tus ataques serán fuertes!",
+  "bm.forgot.m": "Partes encontradas",
+  "bm.forgot.one": "¡Encontraste una parte del libro!",
+  "bm.forgot.full": "¡Apareció el Libro de la Ley! Ya nadie olvida la palabra de Dios, ¡y tus ataques son fuertes!",
+  "bm.hurry": "La multitud apurada se esconde detrás de un escudo de prisa. Responde bien en 3 temas distintos para romperlo, ¡como los maestros que se asombraban de las respuestas de Jesús!",
+  "bm.hurry.m": "Respuestas asombrosas",
+  "bm.hurry.full": "«¡Tengo que estar en la casa de mi Padre!» ¡Las respuestas sabias rompen el escudo de prisa!",
+  "bm.sadroad": "¡La sombra triste vuelve a crecer una y otra vez! Responde bien 3 veces para partir el pan con Jesús y detenerla.",
+  "bm.sadroad.m": "Parte el pan",
+  "bm.sadroad.full": "Se les abrieron los ojos: ¡es Jesús! El pan está partido, y la sombra ya no vuelve a crecer.",
+  "bm.puzzled": "«¿Cómo voy a entender si nadie me lo explica?» Las respuestas de la Biblia y de los versículos para memorizar golpean fuerte. Las demás solo golpean flojito.",
+  "bm.puzzled.m": "La palabra de Dios explica",
+  "bm.puzzled.full": "¡Las Escrituras se abren! ¡La confusión desaparece!",
+  "bm.hardheart": "El corazón de Saulo era duro y sus ojos estaban a oscuras. Cada 3 respuestas correctas, ¡una luz del cielo ataca a la sombra!",
+  "bm.hardheart.m": "Luz del cielo",
+  "bm.hardheart.full": "¡Una luz del cielo! Caen las escamas, ¡y un corazón duro cambia!",
+  "bm.lastshadow": "¡Mira a Jesús, el Rey en el trono! Cada tercer turno, tu siguiente golpe cuenta doble. ¡La última sombra no puede soportar su luz!",
+  "bm.lastshadow.m": "Mira al Rey",
+  "bm.lastshadow.full": "«¡Yo hago nuevas todas las cosas!» ×2",
+  "bm.lastshadow.chance": "¡El Rey viene pronto! Tu siguiente golpe cuenta doble.",
+  "furn.lawscroll": "El Libro de la Ley perdido",
+  "furn.teacherscroll": "Pergamino de los atrios del templo",
+  "furn.emmausbread": "Pan de Emaús",
+  "furn.isaiahscroll": "Pergamino de Isaías",
+  "furn.ananiaslamp": "La lámpara de Ananías de la calle Derecha",
+  "furn.treeoflife": "Árbol de la vida",
+  "cut.35": "¡La palabra de Dios apareció de nuevo!",
+  "cut.36": "¡En la casa de mi Padre!",
+  "cut.37": "¡El Señor de verdad ha resucitado!",
+  "cut.38": "¡Siguió su camino lleno de alegría!",
+  "cut.39": "¡Jesús cambia corazones!",
+  "cut.40": "¡Yo hago nuevas todas las cosas!"
  },
  "MG": {
   "_": {
@@ -778,7 +810,7 @@
  },
  "STORY": [
   "Hace mucho tiempo, el gran Pergamino de Luz contaba toda la historia del amor de Dios: desde el primer amanecer hasta la mañana más brillante de todas.",
-  "Pero la Sombra de la Duda se coló a escondidas. Rompió el Pergamino en treinta y cuatro piezas y las escondió a lo largo de los tiempos de la Biblia.",
+  "Pero la Sombra de la Duda se coló a escondidas. Rompió el Pergamino en cuarenta piezas y las escondió a lo largo de los tiempos de la Biblia.",
   "Sin el Pergamino, las Sombritas se extendieron por todas partes: susurros de mentiras, preocupación, orgullo y miedo.",
   "Ahora se necesita un joven peregrino. Alguien valiente. Alguien curioso. Alguien como tú."
  ],

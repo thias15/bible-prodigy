@@ -7257,6 +7257,1260 @@
     "In einer großen Scheune",
     "In einer verschlossenen Kiste"
    ]
+  },
+  {
+   "ch": 35,
+   "diff": 1,
+   "en": [
+    "How old was Josiah when he became king?",
+    "Eight years old",
+    "Thirty years old",
+    "Two years old",
+    "Eighty years old"
+   ],
+   "ref": "2 Kings 22:1",
+   "de": [
+    "Wie alt war Josia, als er König wurde?",
+    "Acht Jahre",
+    "Dreißig Jahre",
+    "Zwei Jahre",
+    "Achtzig Jahre"
+   ]
+  },
+  {
+   "ch": 35,
+   "diff": 1,
+   "en": [
+    "What was found in the house of the LORD?",
+    "The Book of the Law",
+    "A golden crown",
+    "A hidden sword",
+    "A treasure map"
+   ],
+   "ref": "2 Kings 22:8",
+   "de": [
+    "Was wurde im Haus des Herrn gefunden?",
+    "Das Buch des Gesetzes",
+    "Eine goldene Krone",
+    "Ein verstecktes Schwert",
+    "Eine Schatzkarte"
+   ]
+  },
+  {
+   "ch": 35,
+   "diff": 1,
+   "en": [
+    "What did Josiah do when he heard the words of the book?",
+    "He tore his robes",
+    "He laughed",
+    "He threw the book away",
+    "He went to sleep"
+   ],
+   "ref": "2 Kings 22:11",
+   "de": [
+    "Was tat Josia, als er die Worte des Buches hörte?",
+    "Er zerriss seine Kleider",
+    "Er lachte",
+    "Er warf das Buch weg",
+    "Er ging schlafen"
+   ]
+  },
+  {
+   "ch": 35,
+   "diff": 2,
+   "en": [
+    "Who found the Book of the Law?",
+    "Hilkiah the high priest",
+    "Elijah the prophet",
+    "King Ahab",
+    "Goliath"
+   ],
+   "ref": "2 Kings 22:8",
+   "de": [
+    "Wer fand das Buch des Gesetzes?",
+    "Der Hohepriester Hilkija",
+    "Der Prophet Elia",
+    "König Ahab",
+    "Goliat"
+   ]
+  },
+  {
+   "ch": 35,
+   "diff": 2,
+   "en": [
+    "Who read the book to King Josiah?",
+    "Shaphan the scribe",
+    "Queen Esther",
+    "Pharaoh",
+    "Jonah"
+   ],
+   "ref": "2 Kings 22:10",
+   "de": [
+    "Wer las König Josia das Buch vor?",
+    "Der Schreiber Schafan",
+    "Königin Ester",
+    "Der Pharao",
+    "Jona"
+   ]
+  },
+  {
+   "ch": 35,
+   "diff": 2,
+   "en": [
+    "What were the workers doing in the temple when the book was found?",
+    "Repairing it",
+    "Tearing it down",
+    "Painting it red",
+    "Sleeping in it"
+   ],
+   "ref": "2 Kings 22:5-8",
+   "de": [
+    "Was taten die Arbeiter im Tempel, als das Buch gefunden wurde?",
+    "Sie besserten ihn aus",
+    "Sie rissen ihn ab",
+    "Sie strichen ihn rot an",
+    "Sie schliefen darin"
+   ]
+  },
+  {
+   "ch": 35,
+   "diff": 2,
+   "en": [
+    "Which prophetess did Josiah's men ask about the book?",
+    "Huldah",
+    "Miriam",
+    "Deborah",
+    "Anna"
+   ],
+   "ref": "2 Kings 22:14",
+   "de": [
+    "Welche Prophetin fragten Josias Männer wegen des Buches?",
+    "Hulda",
+    "Mirjam",
+    "Debora",
+    "Hanna"
+   ]
+  },
+  {
+   "ch": 35,
+   "diff": 3,
+   "en": [
+    "To whom did Josiah read the Book of the Covenant?",
+    "All the people, small and great",
+    "Only the priests",
+    "Only his family",
+    "Nobody"
+   ],
+   "ref": "2 Kings 23:2",
+   "de": [
+    "Wem las Josia das Buch des Bundes vor?",
+    "Dem ganzen Volk, Klein und Groß",
+    "Nur den Priestern",
+    "Nur seiner Familie",
+    "Niemandem"
+   ]
+  },
+  {
+   "ch": 35,
+   "diff": 3,
+   "en": [
+    "Which feast did Josiah celebrate as the book said?",
+    "The Passover",
+    "The Feast of Purim",
+    "A birthday feast",
+    "A wedding feast"
+   ],
+   "ref": "2 Kings 23:21-22",
+   "de": [
+    "Welches Fest feierte Josia, wie es im Buch stand?",
+    "Das Passafest",
+    "Das Purimfest",
+    "Ein Geburtstagsfest",
+    "Ein Hochzeitsfest"
+   ]
+  },
+  {
+   "ch": 35,
+   "diff": 3,
+   "en": [
+    "Whose way did Josiah walk in?",
+    "The way of his ancestor David",
+    "The way of King Saul",
+    "The way of Pharaoh",
+    "The way of Goliath"
+   ],
+   "ref": "2 Kings 22:2",
+   "de": [
+    "Auf wessen Weg ging Josia?",
+    "Auf dem Weg seines Vorfahren David",
+    "Auf dem Weg von König Saul",
+    "Auf dem Weg des Pharao",
+    "Auf dem Weg von Goliat"
+   ]
+  },
+  {
+   "ch": 35,
+   "diff": 3,
+   "en": [
+    "What did Josiah do with the idols in the land?",
+    "He removed and destroyed them",
+    "He put them in the temple",
+    "He gave them as gifts",
+    "He painted them gold"
+   ],
+   "ref": "2 Kings 23:4-6",
+   "de": [
+    "Was tat Josia mit den Götzen im Land?",
+    "Er entfernte und zerstörte sie",
+    "Er stellte sie in den Tempel",
+    "Er verschenkte sie",
+    "Er strich sie golden an"
+   ]
+  },
+  {
+   "ch": 36,
+   "diff": 1,
+   "en": [
+    "How old was Jesus when He stayed behind in Jerusalem?",
+    "Twelve",
+    "Two",
+    "Thirty",
+    "Twenty"
+   ],
+   "ref": "Luke 2:42",
+   "de": [
+    "Wie alt war Jesus, als er in Jerusalem zurückblieb?",
+    "Zwölf",
+    "Zwei",
+    "Dreißig",
+    "Zwanzig"
+   ]
+  },
+  {
+   "ch": 36,
+   "diff": 1,
+   "en": [
+    "Which feast did Jesus' family go to in Jerusalem every year?",
+    "The Passover",
+    "The harvest party",
+    "A wedding",
+    "The king's birthday"
+   ],
+   "ref": "Luke 2:41",
+   "de": [
+    "Zu welchem Fest ging die Familie von Jesus jedes Jahr nach Jerusalem?",
+    "Zum Passafest",
+    "Zum Erntefest im Dorf",
+    "Zu einer Hochzeit",
+    "Zum Geburtstag des Königs"
+   ]
+  },
+  {
+   "ch": 36,
+   "diff": 1,
+   "en": [
+    "Where did Mary and Joseph find Jesus?",
+    "In the temple",
+    "At the market",
+    "By the sea",
+    "In a stable"
+   ],
+   "ref": "Luke 2:46",
+   "de": [
+    "Wo fanden Maria und Josef Jesus?",
+    "Im Tempel",
+    "Auf dem Markt",
+    "Am See",
+    "In einem Stall"
+   ]
+  },
+  {
+   "ch": 36,
+   "diff": 2,
+   "en": [
+    "How many days did they search before they found Him?",
+    "Three",
+    "One",
+    "Seven",
+    "Forty"
+   ],
+   "ref": "Luke 2:46",
+   "de": [
+    "Wie viele Tage suchten sie, bis sie ihn fanden?",
+    "Drei",
+    "Einen",
+    "Sieben",
+    "Vierzig"
+   ]
+  },
+  {
+   "ch": 36,
+   "diff": 2,
+   "en": [
+    "What was Jesus doing with the teachers?",
+    "Listening to them and asking them questions",
+    "Selling doves",
+    "Playing games",
+    "Sleeping"
+   ],
+   "ref": "Luke 2:46",
+   "de": [
+    "Was tat Jesus bei den Lehrern?",
+    "Er hörte ihnen zu und stellte ihnen Fragen",
+    "Er verkaufte Tauben",
+    "Er spielte Spiele",
+    "Er schlief"
+   ]
+  },
+  {
+   "ch": 36,
+   "diff": 2,
+   "en": [
+    "Why were the people who heard Jesus amazed?",
+    "At His understanding and His answers",
+    "At His fine clothes",
+    "At His loud voice",
+    "At His height"
+   ],
+   "ref": "Luke 2:47",
+   "de": [
+    "Worüber staunten alle, die Jesus zuhörten?",
+    "Über sein Verständnis und seine Antworten",
+    "Über seine feinen Kleider",
+    "Über seine laute Stimme",
+    "Über seine Größe"
+   ]
+  },
+  {
+   "ch": 36,
+   "diff": 2,
+   "en": [
+    "What did Jesus call the temple?",
+    "\"My Father's house\"",
+    "\"My palace\"",
+    "\"The big building\"",
+    "\"My school\""
+   ],
+   "ref": "Luke 2:49",
+   "de": [
+    "Wie nannte Jesus den Tempel?",
+    "„Das Haus meines Vaters“",
+    "„Mein Palast“",
+    "„Das große Gebäude“",
+    "„Meine Schule“"
+   ]
+  },
+  {
+   "ch": 36,
+   "diff": 3,
+   "en": [
+    "Where did Mary and Joseph first look for Jesus?",
+    "Among their relatives and friends",
+    "At the river",
+    "In Bethlehem",
+    "In Egypt"
+   ],
+   "ref": "Luke 2:44",
+   "de": [
+    "Wo suchten Maria und Josef Jesus zuerst?",
+    "Bei ihren Verwandten und Bekannten",
+    "Am Fluss",
+    "In Bethlehem",
+    "In Ägypten"
+   ]
+  },
+  {
+   "ch": 36,
+   "diff": 3,
+   "en": [
+    "How far had they traveled before they missed Jesus?",
+    "A day's journey",
+    "A whole week",
+    "Just a few steps",
+    "Forty days"
+   ],
+   "ref": "Luke 2:44",
+   "de": [
+    "Wie weit waren sie gereist, bevor sie Jesus vermissten?",
+    "Eine Tagesreise",
+    "Eine ganze Woche",
+    "Nur ein paar Schritte",
+    "Vierzig Tage"
+   ]
+  },
+  {
+   "ch": 36,
+   "diff": 3,
+   "en": [
+    "What did Jesus do after His parents found Him?",
+    "He went home to Nazareth and obeyed them",
+    "He stayed in the temple forever",
+    "He became a king",
+    "He sailed to Rome"
+   ],
+   "ref": "Luke 2:51",
+   "de": [
+    "Was tat Jesus, nachdem seine Eltern ihn gefunden hatten?",
+    "Er ging mit nach Nazaret und gehorchte ihnen",
+    "Er blieb für immer im Tempel",
+    "Er wurde König",
+    "Er segelte nach Rom"
+   ]
+  },
+  {
+   "ch": 36,
+   "diff": 3,
+   "en": [
+    "What did Mary do with all these things?",
+    "She treasured them in her heart",
+    "She wrote a song about them",
+    "She forgot them",
+    "She told the king"
+   ],
+   "ref": "Luke 2:51",
+   "de": [
+    "Was tat Maria mit all diesen Dingen?",
+    "Sie bewahrte sie in ihrem Herzen",
+    "Sie schrieb ein Lied darüber",
+    "Sie vergaß sie",
+    "Sie erzählte es dem König"
+   ]
+  },
+  {
+   "ch": 37,
+   "diff": 1,
+   "en": [
+    "To which village were the two disciples walking?",
+    "Emmaus",
+    "Bethlehem",
+    "Nineveh",
+    "Jericho"
+   ],
+   "ref": "Luke 24:13",
+   "de": [
+    "In welches Dorf gingen die beiden Jünger?",
+    "Nach Emmaus",
+    "Nach Bethlehem",
+    "Nach Ninive",
+    "Nach Jericho"
+   ]
+  },
+  {
+   "ch": 37,
+   "diff": 1,
+   "en": [
+    "Who came near and walked with them?",
+    "Jesus",
+    "An angel",
+    "King Herod",
+    "A Roman soldier"
+   ],
+   "ref": "Luke 24:15",
+   "de": [
+    "Wer kam dazu und ging mit ihnen?",
+    "Jesus",
+    "Ein Engel",
+    "König Herodes",
+    "Ein römischer Soldat"
+   ]
+  },
+  {
+   "ch": 37,
+   "diff": 1,
+   "en": [
+    "When did they recognize Jesus?",
+    "When He broke the bread",
+    "When He sang a song",
+    "When He showed them a map",
+    "When He rode a donkey"
+   ],
+   "ref": "Luke 24:30-31",
+   "de": [
+    "Wann erkannten sie Jesus?",
+    "Als er das Brot brach",
+    "Als er ein Lied sang",
+    "Als er ihnen eine Karte zeigte",
+    "Als er auf einem Esel ritt"
+   ]
+  },
+  {
+   "ch": 37,
+   "diff": 2,
+   "en": [
+    "What was the name of one of the two disciples?",
+    "Cleopas",
+    "Zacchaeus",
+    "Nicodemus",
+    "Barnabas"
+   ],
+   "ref": "Luke 24:18",
+   "de": [
+    "Wie hieß einer der beiden Jünger?",
+    "Kleopas",
+    "Zachäus",
+    "Nikodemus",
+    "Barnabas"
+   ]
+  },
+  {
+   "ch": 37,
+   "diff": 2,
+   "en": [
+    "Why didn't they recognize Jesus at first?",
+    "Their eyes were kept from recognizing Him",
+    "It was too dark",
+    "He wore a mask",
+    "They were asleep"
+   ],
+   "ref": "Luke 24:16",
+   "de": [
+    "Warum erkannten sie Jesus zuerst nicht?",
+    "Ihre Augen wurden gehalten, sodass sie ihn nicht erkannten",
+    "Es war zu dunkel",
+    "Er trug eine Maske",
+    "Sie schliefen"
+   ]
+  },
+  {
+   "ch": 37,
+   "diff": 2,
+   "en": [
+    "What did Jesus explain to them on the road?",
+    "What all the Scriptures said about Him",
+    "How to catch fish",
+    "How to build a house",
+    "The way to Rome"
+   ],
+   "ref": "Luke 24:27",
+   "de": [
+    "Was erklärte Jesus ihnen unterwegs?",
+    "Was alle Schriften über ihn sagen",
+    "Wie man Fische fängt",
+    "Wie man ein Haus baut",
+    "Den Weg nach Rom"
+   ]
+  },
+  {
+   "ch": 37,
+   "diff": 2,
+   "en": [
+    "What did they say about their hearts?",
+    "\"Did not our hearts burn within us?\"",
+    "\"Our hearts are made of stone\"",
+    "\"Our hearts are tired\"",
+    "\"Our hearts are cold\""
+   ],
+   "ref": "Luke 24:32",
+   "de": [
+    "Was sagten sie über ihr Herz?",
+    "„Brannte nicht unser Herz in uns?“",
+    "„Unser Herz ist aus Stein“",
+    "„Unser Herz ist müde“",
+    "„Unser Herz ist kalt“"
+   ]
+  },
+  {
+   "ch": 37,
+   "diff": 3,
+   "en": [
+    "What did the disciples ask the stranger at the village?",
+    "\"Stay with us, for it is nearly evening\"",
+    "\"Please go away\"",
+    "\"Carry our bags\"",
+    "\"Tell us a joke\""
+   ],
+   "ref": "Luke 24:29",
+   "de": [
+    "Worum baten die Jünger den Fremden im Dorf?",
+    "„Bleib bei uns, denn es will Abend werden“",
+    "„Bitte geh weg“",
+    "„Trag unser Gepäck“",
+    "„Erzähl uns einen Witz“"
+   ]
+  },
+  {
+   "ch": 37,
+   "diff": 3,
+   "en": [
+    "What happened right after they recognized Jesus?",
+    "He vanished from their sight",
+    "He fell asleep",
+    "He left on a boat",
+    "He started to cook"
+   ],
+   "ref": "Luke 24:31",
+   "de": [
+    "Was geschah gleich, nachdem sie Jesus erkannt hatten?",
+    "Er verschwand vor ihren Augen",
+    "Er schlief ein",
+    "Er fuhr mit einem Boot weg",
+    "Er fing an zu kochen"
+   ]
+  },
+  {
+   "ch": 37,
+   "diff": 3,
+   "en": [
+    "What did the two disciples do then?",
+    "They returned to Jerusalem that same hour",
+    "They went to bed",
+    "They moved to Egypt",
+    "They stayed home and kept it secret"
+   ],
+   "ref": "Luke 24:33",
+   "de": [
+    "Was taten die beiden Jünger dann?",
+    "Sie kehrten noch in derselben Stunde nach Jerusalem zurück",
+    "Sie gingen ins Bett",
+    "Sie zogen nach Ägypten",
+    "Sie blieben zu Hause und hielten es geheim"
+   ]
+  },
+  {
+   "ch": 37,
+   "diff": 3,
+   "en": [
+    "What did the disciples in Jerusalem tell them?",
+    "\"The Lord has risen indeed, and has appeared to Simon!\"",
+    "\"Go back home\"",
+    "\"We are going fishing\"",
+    "\"Nothing has happened\""
+   ],
+   "ref": "Luke 24:34",
+   "de": [
+    "Was sagten ihnen die Jünger in Jerusalem?",
+    "„Der Herr ist wirklich auferstanden und Simon erschienen!“",
+    "„Geht wieder nach Hause“",
+    "„Wir gehen fischen“",
+    "„Es ist nichts passiert“"
+   ]
+  },
+  {
+   "ch": 38,
+   "diff": 1,
+   "en": [
+    "Who told Philip to go to the desert road?",
+    "An angel of the Lord",
+    "A Roman soldier",
+    "A camel driver",
+    "King Herod"
+   ],
+   "ref": "Acts 8:26",
+   "de": [
+    "Wer sagte Philippus, er solle zur Wüstenstraße gehen?",
+    "Ein Engel des Herrn",
+    "Ein römischer Soldat",
+    "Ein Kameltreiber",
+    "König Herodes"
+   ]
+  },
+  {
+   "ch": 38,
+   "diff": 1,
+   "en": [
+    "What was the Ethiopian official riding in?",
+    "A chariot",
+    "A boat",
+    "A cart full of hay",
+    "A wagon pulled by oxen"
+   ],
+   "ref": "Acts 8:28",
+   "de": [
+    "Worin fuhr der Beamte aus Äthiopien?",
+    "In einem Wagen",
+    "In einem Boot",
+    "In einem Heuwagen",
+    "In einem Ochsenkarren"
+   ]
+  },
+  {
+   "ch": 38,
+   "diff": 1,
+   "en": [
+    "Which prophet's book was he reading?",
+    "Isaiah",
+    "Jonah",
+    "Malachi",
+    "Obadiah"
+   ],
+   "ref": "Acts 8:28",
+   "de": [
+    "Aus welchem Prophetenbuch las er?",
+    "Jesaja",
+    "Jona",
+    "Maleachi",
+    "Obadja"
+   ]
+  },
+  {
+   "ch": 38,
+   "diff": 2,
+   "en": [
+    "What did Philip ask the official?",
+    "\"Do you understand what you are reading?\"",
+    "\"Where are you going?\"",
+    "\"Can I have a ride?\"",
+    "\"What is your name?\""
+   ],
+   "ref": "Acts 8:30",
+   "de": [
+    "Was fragte Philippus den Beamten?",
+    "„Verstehst du auch, was du liest?“",
+    "„Wohin fährst du?“",
+    "„Darf ich mitfahren?“",
+    "„Wie heißt du?“"
+   ]
+  },
+  {
+   "ch": 38,
+   "diff": 2,
+   "en": [
+    "What did the official answer?",
+    "\"How can I, unless someone guides me?\"",
+    "\"Yes, it is easy\"",
+    "\"Leave me alone\"",
+    "\"I cannot read\""
+   ],
+   "ref": "Acts 8:31",
+   "de": [
+    "Was antwortete der Beamte?",
+    "„Wie kann ich, wenn mich niemand anleitet?“",
+    "„Ja, das ist leicht“",
+    "„Lass mich in Ruhe“",
+    "„Ich kann nicht lesen“"
+   ]
+  },
+  {
+   "ch": 38,
+   "diff": 2,
+   "en": [
+    "What was the official in charge of?",
+    "All the treasure of the queen of Ethiopia",
+    "The queen's horses",
+    "The royal kitchen",
+    "The city gates"
+   ],
+   "ref": "Acts 8:27",
+   "de": [
+    "Worüber hatte der Beamte die Aufsicht?",
+    "Über den ganzen Schatz der Königin von Äthiopien",
+    "Über die Pferde der Königin",
+    "Über die königliche Küche",
+    "Über die Stadttore"
+   ]
+  },
+  {
+   "ch": 38,
+   "diff": 2,
+   "en": [
+    "What did Philip tell him about?",
+    "The good news about Jesus",
+    "The weather",
+    "The way to Egypt",
+    "His own adventures"
+   ],
+   "ref": "Acts 8:35",
+   "de": [
+    "Wovon erzählte Philippus ihm?",
+    "Von der guten Nachricht über Jesus",
+    "Vom Wetter",
+    "Vom Weg nach Ägypten",
+    "Von seinen eigenen Abenteuern"
+   ]
+  },
+  {
+   "ch": 38,
+   "diff": 3,
+   "en": [
+    "Which road was it?",
+    "The road from Jerusalem down to Gaza",
+    "The road to Damascus",
+    "The road to Emmaus",
+    "The road to Rome"
+   ],
+   "ref": "Acts 8:26",
+   "de": [
+    "Welche Straße war es?",
+    "Die Straße von Jerusalem hinab nach Gaza",
+    "Die Straße nach Damaskus",
+    "Die Straße nach Emmaus",
+    "Die Straße nach Rom"
+   ]
+  },
+  {
+   "ch": 38,
+   "diff": 3,
+   "en": [
+    "What did the official say when they came to some water?",
+    "\"See, here is water! What prevents me from being baptized?\"",
+    "\"Let's go fishing!\"",
+    "\"Let's water the horses\"",
+    "\"Let's go swimming!\""
+   ],
+   "ref": "Acts 8:36",
+   "de": [
+    "Was sagte der Beamte, als sie an ein Wasser kamen?",
+    "„Sieh, hier ist Wasser! Was hindert mich, getauft zu werden?“",
+    "„Lass uns angeln!“",
+    "„Lass uns die Pferde tränken“",
+    "„Lass uns schwimmen gehen!“"
+   ]
+  },
+  {
+   "ch": 38,
+   "diff": 3,
+   "en": [
+    "What happened to Philip after the baptism?",
+    "The Spirit of the Lord carried him away",
+    "He fell asleep",
+    "He rode off in the chariot",
+    "He went back to Jerusalem by boat"
+   ],
+   "ref": "Acts 8:39",
+   "de": [
+    "Was geschah mit Philippus nach der Taufe?",
+    "Der Geist des Herrn nahm ihn weg",
+    "Er schlief ein",
+    "Er fuhr mit dem Wagen davon",
+    "Er fuhr mit einem Boot nach Jerusalem"
+   ]
+  },
+  {
+   "ch": 38,
+   "diff": 3,
+   "en": [
+    "How did the official go on his way?",
+    "Rejoicing",
+    "Crying",
+    "Grumbling",
+    "Confused"
+   ],
+   "ref": "Acts 8:39",
+   "de": [
+    "Wie zog der Beamte seinen Weg?",
+    "Voller Freude",
+    "Weinend",
+    "Murrend",
+    "Verwirrt"
+   ]
+  },
+  {
+   "ch": 39,
+   "diff": 1,
+   "en": [
+    "To which city was Saul traveling?",
+    "Damascus",
+    "Jericho",
+    "Nineveh",
+    "Bethlehem"
+   ],
+   "ref": "Acts 9:2-3",
+   "de": [
+    "In welche Stadt war Saulus unterwegs?",
+    "Nach Damaskus",
+    "Nach Jericho",
+    "Nach Ninive",
+    "Nach Bethlehem"
+   ]
+  },
+  {
+   "ch": 39,
+   "diff": 1,
+   "en": [
+    "What flashed around Saul on the road?",
+    "A light from heaven",
+    "A shower of falling leaves",
+    "A flock of birds",
+    "A sandstorm"
+   ],
+   "ref": "Acts 9:3",
+   "de": [
+    "Was umstrahlte Saulus auf dem Weg?",
+    "Ein Licht vom Himmel",
+    "Ein Regen aus fallenden Blättern",
+    "Ein Vogelschwarm",
+    "Ein Sandsturm"
+   ]
+  },
+  {
+   "ch": 39,
+   "diff": 1,
+   "en": [
+    "What did the voice say to Saul?",
+    "\"Saul, Saul, why do you persecute me?\"",
+    "\"Saul, go home!\"",
+    "\"Saul, you will be king\"",
+    "\"Saul, build an ark\""
+   ],
+   "ref": "Acts 9:4",
+   "de": [
+    "Was sagte die Stimme zu Saulus?",
+    "„Saul, Saul, was verfolgst du mich?“",
+    "„Saul, geh nach Hause!“",
+    "„Saul, du wirst König“",
+    "„Saul, bau eine Arche“"
+   ]
+  },
+  {
+   "ch": 39,
+   "diff": 2,
+   "en": [
+    "Who was speaking to Saul?",
+    "Jesus",
+    "Moses",
+    "An angel named Gabriel",
+    "Peter"
+   ],
+   "ref": "Acts 9:5",
+   "de": [
+    "Wer sprach mit Saulus?",
+    "Jesus",
+    "Mose",
+    "Ein Engel namens Gabriel",
+    "Petrus"
+   ]
+  },
+  {
+   "ch": 39,
+   "diff": 2,
+   "en": [
+    "How long was Saul unable to see?",
+    "Three days",
+    "Forty days",
+    "One hour",
+    "Seven years"
+   ],
+   "ref": "Acts 9:9",
+   "de": [
+    "Wie lange konnte Saulus nicht sehen?",
+    "Drei Tage",
+    "Vierzig Tage",
+    "Eine Stunde",
+    "Sieben Jahre"
+   ]
+  },
+  {
+   "ch": 39,
+   "diff": 2,
+   "en": [
+    "Whom did the Lord send to help Saul?",
+    "Ananias",
+    "Barnabas",
+    "Peter",
+    "Silas"
+   ],
+   "ref": "Acts 9:10-11",
+   "de": [
+    "Wen schickte der Herr, um Saulus zu helfen?",
+    "Hananias",
+    "Barnabas",
+    "Petrus",
+    "Silas"
+   ]
+  },
+  {
+   "ch": 39,
+   "diff": 2,
+   "en": [
+    "Why was Ananias afraid to go to Saul?",
+    "He had heard how much harm Saul had done to believers",
+    "Saul was a giant",
+    "Saul had a lion",
+    "The road was flooded"
+   ],
+   "ref": "Acts 9:13",
+   "de": [
+    "Warum hatte Hananias Angst, zu Saulus zu gehen?",
+    "Er hatte gehört, wie viel Böses Saulus den Gläubigen angetan hatte",
+    "Saulus war ein Riese",
+    "Saulus hatte einen Löwen",
+    "Die Straße war überflutet"
+   ]
+  },
+  {
+   "ch": 39,
+   "diff": 3,
+   "en": [
+    "On which street was Saul staying?",
+    "Straight Street",
+    "Golden Street",
+    "River Street",
+    "Market Street"
+   ],
+   "ref": "Acts 9:11",
+   "de": [
+    "In welcher Straße wohnte Saulus?",
+    "In der Geraden Straße",
+    "In der Goldenen Straße",
+    "In der Flussstraße",
+    "In der Marktstraße"
+   ]
+  },
+  {
+   "ch": 39,
+   "diff": 3,
+   "en": [
+    "What fell from Saul's eyes?",
+    "Something like scales",
+    "Tears of gold",
+    "Sand",
+    "Feathers"
+   ],
+   "ref": "Acts 9:18",
+   "de": [
+    "Was fiel Saulus von den Augen?",
+    "Etwas wie Schuppen",
+    "Goldene Tränen",
+    "Sand",
+    "Federn"
+   ]
+  },
+  {
+   "ch": 39,
+   "diff": 3,
+   "en": [
+    "What did Ananias call Saul?",
+    "\"Brother Saul\"",
+    "\"Enemy Saul\"",
+    "\"King Saul\"",
+    "\"Stranger\""
+   ],
+   "ref": "Acts 9:17",
+   "de": [
+    "Wie nannte Hananias Saulus?",
+    "„Bruder Saul“",
+    "„Feind Saul“",
+    "„König Saul“",
+    "„Fremder“"
+   ]
+  },
+  {
+   "ch": 39,
+   "diff": 3,
+   "en": [
+    "What did Saul begin to preach in the synagogues?",
+    "That Jesus is the Son of God",
+    "That everyone should go home",
+    "That he was the greatest",
+    "Nothing at all"
+   ],
+   "ref": "Acts 9:20",
+   "de": [
+    "Was fing Saulus an, in den Synagogen zu predigen?",
+    "Dass Jesus der Sohn Gottes ist",
+    "Dass alle nach Hause gehen sollen",
+    "Dass er selbst der Größte ist",
+    "Gar nichts"
+   ]
+  },
+  {
+   "ch": 40,
+   "diff": 1,
+   "en": [
+    "On which island was John when he saw his vision?",
+    "Patmos",
+    "Malta",
+    "Cyprus",
+    "Crete"
+   ],
+   "ref": "Revelation 1:9",
+   "de": [
+    "Auf welcher Insel war Johannes, als er seine Vision hatte?",
+    "Patmos",
+    "Malta",
+    "Zypern",
+    "Kreta"
+   ]
+  },
+  {
+   "ch": 40,
+   "diff": 1,
+   "en": [
+    "What did the voice tell John to do with what he saw?",
+    "Write it in a book",
+    "Keep it a secret",
+    "Paint it on a wall",
+    "Forget it"
+   ],
+   "ref": "Revelation 1:11",
+   "de": [
+    "Was sollte Johannes mit dem tun, was er sah?",
+    "Es in ein Buch schreiben",
+    "Es geheim halten",
+    "Es an eine Wand malen",
+    "Es vergessen"
+   ]
+  },
+  {
+   "ch": 40,
+   "diff": 1,
+   "en": [
+    "What did John see coming down out of heaven from God?",
+    "The holy city, the New Jerusalem",
+    "A giant ship",
+    "A golden chariot",
+    "A tall tower"
+   ],
+   "ref": "Revelation 21:2",
+   "de": [
+    "Was sah Johannes von Gott aus dem Himmel herabkommen?",
+    "Die heilige Stadt, das neue Jerusalem",
+    "Ein riesiges Schiff",
+    "Einen goldenen Wagen",
+    "Einen hohen Turm"
+   ]
+  },
+  {
+   "ch": 40,
+   "diff": 2,
+   "en": [
+    "What will God wipe away from His people's eyes?",
+    "Every tear",
+    "The sunlight",
+    "The dust",
+    "The stars"
+   ],
+   "ref": "Revelation 21:4",
+   "de": [
+    "Was wird Gott von den Augen seiner Menschen abwischen?",
+    "Jede Träne",
+    "Das Sonnenlicht",
+    "Den Staub",
+    "Die Sterne"
+   ]
+  },
+  {
+   "ch": 40,
+   "diff": 2,
+   "en": [
+    "What will be no more in the new creation?",
+    "Death, crying and pain",
+    "Trees and rivers",
+    "Songs and joy",
+    "Light"
+   ],
+   "ref": "Revelation 21:4",
+   "de": [
+    "Was wird es in der neuen Schöpfung nicht mehr geben?",
+    "Tod, Weinen und Schmerz",
+    "Bäume und Flüsse",
+    "Lieder und Freude",
+    "Licht"
+   ]
+  },
+  {
+   "ch": 40,
+   "diff": 2,
+   "en": [
+    "What did the One on the throne say?",
+    "\"Behold, I am making all things new\"",
+    "\"Everything stays the same\"",
+    "\"Go back to sleep\"",
+    "\"Build a tower\""
+   ],
+   "ref": "Revelation 21:5",
+   "de": [
+    "Was sagte der, der auf dem Thron saß?",
+    "„Siehe, ich mache alles neu“",
+    "„Alles bleibt, wie es ist“",
+    "„Schlaft weiter“",
+    "„Baut einen Turm“"
+   ]
+  },
+  {
+   "ch": 40,
+   "diff": 2,
+   "en": [
+    "What flowed from the throne of God?",
+    "The river of the water of life",
+    "A river of gold",
+    "A river of fire",
+    "A river of milk"
+   ],
+   "ref": "Revelation 22:1",
+   "de": [
+    "Was floss vom Thron Gottes?",
+    "Der Strom mit dem Wasser des Lebens",
+    "Ein Fluss aus Gold",
+    "Ein Fluss aus Feuer",
+    "Ein Fluss aus Milch"
+   ]
+  },
+  {
+   "ch": 40,
+   "diff": 3,
+   "en": [
+    "What grew on each side of the river?",
+    "The tree of life",
+    "A forest of cedars",
+    "Fields of wheat",
+    "Rose bushes"
+   ],
+   "ref": "Revelation 22:2",
+   "de": [
+    "Was wuchs zu beiden Seiten des Stromes?",
+    "Der Baum des Lebens",
+    "Ein Zedernwald",
+    "Weizenfelder",
+    "Rosenbüsche"
+   ]
+  },
+  {
+   "ch": 40,
+   "diff": 3,
+   "en": [
+    "What are the leaves of the tree of life for?",
+    "The healing of the nations",
+    "Making baskets",
+    "Feeding the sheep",
+    "Building houses"
+   ],
+   "ref": "Revelation 22:2",
+   "de": [
+    "Wozu dienen die Blätter des Baumes des Lebens?",
+    "Zur Heilung der Völker",
+    "Zum Korbflechten",
+    "Als Futter für die Schafe",
+    "Zum Häuserbauen"
+   ]
+  },
+  {
+   "ch": 40,
+   "diff": 3,
+   "en": [
+    "What did Jesus call Himself in John's vision?",
+    "\"The Alpha and the Omega, the First and the Last\"",
+    "\"The King of the island\"",
+    "\"The Great Fisherman\"",
+    "\"The Mighty Sailor\""
+   ],
+   "ref": "Revelation 22:13",
+   "de": [
+    "Wie nannte sich Jesus in der Vision von Johannes?",
+    "„Das A und das O, der Erste und der Letzte“",
+    "„Der König der Insel“",
+    "„Der große Fischer“",
+    "„Der mächtige Seemann“"
+   ]
+  },
+  {
+   "ch": 40,
+   "diff": 3,
+   "en": [
+    "What does Jesus promise near the very end of the Bible?",
+    "\"Surely I am coming soon\"",
+    "\"I will never come back\"",
+    "\"I am going on a journey\"",
+    "\"Goodbye forever\""
+   ],
+   "ref": "Revelation 22:20",
+   "de": [
+    "Was verspricht Jesus ganz am Ende der Bibel?",
+    "„Ja, ich komme bald“",
+    "„Ich komme nie zurück“",
+    "„Ich gehe auf eine Reise“",
+    "„Lebt für immer wohl“"
+   ]
   }
  ],
  "VQ": [
@@ -8598,6 +9852,126 @@
     "Haus",
     "Thron",
     "Matthäus 6,33"
+   ]
+  },
+  {
+   "en": [
+    35,
+    "He turned to the LORD with all his ___ and with all his soul and with all his might.",
+    "heart",
+    "money",
+    "army",
+    "house",
+    "2 Kings 23:25"
+   ],
+   "de": [
+    35,
+    "Er kehrte zum Herrn um von ganzem ___, von ganzer Seele und mit all seiner Kraft.",
+    "Herzen",
+    "Geld",
+    "Heer",
+    "Haus",
+    "2. Könige 23,25"
+   ]
+  },
+  {
+   "en": [
+    36,
+    "And Jesus increased in ___ and in stature and in favor with God and man.",
+    "wisdom",
+    "riches",
+    "games",
+    "strength",
+    "Luke 2:52"
+   ],
+   "de": [
+    36,
+    "Und Jesus nahm zu an ___, Alter und Gnade bei Gott und den Menschen.",
+    "Weisheit",
+    "Reichtum",
+    "Spielen",
+    "Kraft",
+    "Lukas 2,52"
+   ]
+  },
+  {
+   "en": [
+    37,
+    "Did not our hearts ___ within us while he talked to us on the road?",
+    "burn",
+    "sleep",
+    "break",
+    "hide",
+    "Luke 24:32"
+   ],
+   "de": [
+    37,
+    "___ nicht unser Herz in uns, als er mit uns redete auf dem Weg?",
+    "Brannte",
+    "Schlief",
+    "Brach",
+    "Fror",
+    "Lukas 24,32"
+   ]
+  },
+  {
+   "en": [
+    38,
+    "Beginning with this Scripture he told him the good ___ about Jesus.",
+    "news",
+    "story",
+    "song",
+    "joke",
+    "Acts 8:35"
+   ],
+   "de": [
+    38,
+    "Er fing mit diesem Schriftwort an und erzählte ihm die gute ___ von Jesus.",
+    "Nachricht",
+    "Geschichte",
+    "Melodie",
+    "Idee",
+    "Apostelgeschichte 8,35"
+   ]
+  },
+  {
+   "en": [
+    39,
+    "And immediately he proclaimed Jesus in the synagogues, saying, \"He is the ___ of God.\"",
+    "Son",
+    "friend",
+    "house",
+    "word",
+    "Acts 9:20"
+   ],
+   "de": [
+    39,
+    "Und sogleich predigte er in den Synagogen von Jesus, dass dieser Gottes ___ sei.",
+    "Sohn",
+    "Freund",
+    "Haus",
+    "Wort",
+    "Apostelgeschichte 9,20"
+   ]
+  },
+  {
+   "en": [
+    40,
+    "Behold, I am making all things ___.",
+    "new",
+    "old",
+    "small",
+    "quiet",
+    "Revelation 21:5"
+   ],
+   "de": [
+    40,
+    "Siehe, ich mache alles ___.",
+    "neu",
+    "alt",
+    "klein",
+    "leise",
+    "Offenbarung 21,5"
    ]
   }
  ]

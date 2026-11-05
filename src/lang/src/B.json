@@ -643,6 +643,54 @@
   "en": "\"Consider the lilies of the field, how they grow\" (Matthew 6:28). Reminds you not to worry and refreshes you every turn.",
   "de": "„Schaut die Lilien auf dem Feld an, wie sie wachsen“ (nach Matthäus 6,28). Erinnert dich daran, dich nicht zu sorgen, und erfrischt dich jede Runde."
  },
+ "COMPS.candle.name": {
+  "en": "Scroll Candle",
+  "de": "Schriftrollen-Kerze"
+ },
+ "COMPS.candle.desc": {
+  "en": "\"Your word is a lamp to my feet and a light to my path\" (Psalm 119:105). Its bright flicker can dazzle a foe so it skips its turn.",
+  "de": "„Dein Wort ist meines Fußes Leuchte und ein Licht auf meinem Weg“ (Psalm 119,105). Ihr helles Flackern kann einen Gegner blenden, sodass er aussetzt."
+ },
+ "COMPS.quill.name": {
+  "en": "Scribe's Quill",
+  "de": "Schreiberfeder"
+ },
+ "COMPS.quill.desc": {
+  "en": "From the temple courts, where everyone was amazed at the boy Jesus' answers (Luke 2:47). Writes a sharp reply every turn.",
+  "de": "Aus den Tempelhöfen, wo alle über die Antworten des jungen Jesus staunten (nach Lukas 2,47). Schreibt jede Runde eine treffende Antwort."
+ },
+ "COMPS.sunset.name": {
+  "en": "Evening Glow",
+  "de": "Abendleuchten"
+ },
+ "COMPS.sunset.desc": {
+  "en": "\"Stay with us, for it is nearly evening\" (Luke 24:29). Its warm light makes your heart burn with joy and restores you every turn.",
+  "de": "„Bleib bei uns, denn es will Abend werden“ (Lukas 24,29). Sein warmes Licht lässt dein Herz vor Freude brennen und stärkt dich jede Runde."
+ },
+ "COMPS.giraffe.name": {
+  "en": "Royal Giraffe",
+  "de": "Königsgiraffe"
+ },
+ "COMPS.giraffe.desc": {
+  "en": "From the faraway land of the queen of Ethiopia (Acts 8:27). Sees far over the desert and swings at every foe at once.",
+  "de": "Aus dem fernen Land der Königin von Äthiopien (nach Apostelgeschichte 8,27). Sieht weit über die Wüste und trifft alle Gegner auf einmal."
+ },
+ "COMPS.basket.name": {
+  "en": "Wall Basket",
+  "de": "Mauerkorb"
+ },
+ "COMPS.basket.desc": {
+  "en": "Saul's friends let him down over the Damascus wall in a basket (Acts 9:25). It catches the next hit for you.",
+  "de": "Die Freunde von Saulus ließen ihn in einem Korb über die Mauer von Damaskus hinunter (nach Apostelgeschichte 9,25). Er fängt den nächsten Treffer für dich ab."
+ },
+ "COMPS.skybow.name": {
+  "en": "Throne Rainbow",
+  "de": "Thron-Regenbogen"
+ },
+ "COMPS.skybow.desc": {
+  "en": "\"A rainbow like an emerald was all around the throne\" (Revelation 4:3). A sign of God's promise that refreshes you every turn.",
+  "de": "„Ein Regenbogen wie ein Smaragd war rings um den Thron“ (nach Offenbarung 4,3). Ein Zeichen von Gottes Versprechen, das dich jede Runde erfrischt."
+ },
  "CH.1.name": {
   "en": "Garden of Eden",
   "de": "Garten Eden"
@@ -2768,8 +2816,8 @@
   "de": "Jetzt reise ich nach Rom. Auch wenn ich in Ketten bin – die gute Nachricht lässt sich nicht anketten!"
  },
  "CH.18.outro.2": {
-  "en": "This is the very last piece of the Scroll of Light. Take it to Simeon in Pilgrim's Rest. And take this sailboat — your journey goes on!",
-  "de": "Das ist das allerletzte Teil der Schriftrolle des Lichts. Bring es zu Simeon in die Pilgerrast. Und nimm dieses Segelboot mit – deine Reise geht weiter!"
+  "en": "Here's a piece of the Scroll of Light. And take this sailboat — your journey goes on! There is still more of God's story to discover.",
+  "de": "Hier ist ein Teil der Schriftrolle des Lichts. Und nimm dieses Segelboot mit – deine Reise geht weiter! Es gibt noch mehr von Gottes Geschichte zu entdecken."
  },
  "CH.18.post": {
   "en": "I have fought the good fight. I have finished the course. I have kept the faith. Keep going, friend!",
@@ -4734,5 +4782,725 @@
  "CH.34.verse.r": {
   "en": "Matthew 6:33",
   "de": "Matthäus 6,33"
+ },
+ "CH.35.name": {
+  "en": "The Lost Scroll",
+  "de": "Die verlorene Schriftrolle"
+ },
+ "CH.35.book": {
+  "en": "2 Kings 22–23",
+  "de": "2. Könige 22–23"
+ },
+ "CH.35.foe.name": {
+  "en": "Forgetling",
+  "de": "Vergessling"
+ },
+ "CH.35.foe.pl": {
+  "en": null,
+  "de": "Vergesslinge"
+ },
+ "CH.35.foe.what": {
+  "en": "shadows of forgetting God",
+  "de": "Schatten, die Gott vergessen lassen"
+ },
+ "CH.35.foes.0.name": {
+  "en": "Forgetling",
+  "de": "Vergessling"
+ },
+ "CH.35.foes.1.name": {
+  "en": "Dust Wisp",
+  "de": "Staublicht"
+ },
+ "CH.35.foes.2.name": {
+  "en": "Cobweb Drip",
+  "de": "Spinnwebtropfen"
+ },
+ "CH.35.boss.name": {
+  "en": "Gloom of Forgetting",
+  "de": "Dunkel des Vergessens"
+ },
+ "CH.35.boss.where": {
+  "en": "temple storeroom",
+  "de": "in der Tempelkammer"
+ },
+ "CH.35.guide.name": {
+  "en": "King Josiah",
+  "de": "König Josia"
+ },
+ "CH.35.intro.0": {
+  "en": "Welcome to Jerusalem! I'm Josiah. I became king when I was only eight years old. I want to do what is right in the eyes of the LORD, like my ancestor King David.",
+  "de": "Willkommen in Jerusalem! Ich bin Josia. Ich wurde König, als ich erst acht Jahre alt war. Ich will tun, was dem Herrn gefällt, wie mein Vorfahre König David."
+ },
+ "CH.35.intro.1": {
+  "en": "For many years, the kings before me forgot God. They worshiped idols, and the house of the LORD became dusty and broken.",
+  "de": "Viele Jahre lang haben die Könige vor mir Gott vergessen. Sie haben Götzen angebetet, und das Haus des Herrn wurde staubig und kaputt."
+ },
+ "CH.35.intro.2": {
+  "en": "So I sent carpenters, builders and masons to repair the temple. While they work, Hilkiah the high priest is searching through the old rooms.",
+  "de": "Darum habe ich Zimmerleute, Bauleute und Maurer geschickt, um den Tempel auszubessern. Während sie arbeiten, durchsucht der Hohepriester Hilkija die alten Kammern."
+ },
+ "CH.35.intro.3": {
+  "en": "Forgetlings want everyone to forget God's words forever. Defeat 6 of them, then face the Gloom of Forgetting in the temple storeroom.",
+  "de": "Vergesslinge wollen, dass alle Gottes Worte für immer vergessen. Besiege 6 Düsterlinge, dann stell dich dem Dunkel des Vergessens in der Tempelkammer."
+ },
+ "CH.35.hint": {
+  "en": "The Gloom of Forgetting hides in the temple storeroom. God's word was lost, but it can be found again!",
+  "de": "Das Dunkel des Vergessens versteckt sich in der Tempelkammer. Gottes Wort war verloren, aber man kann es wiederfinden!"
+ },
+ "CH.35.outro.0": {
+  "en": "Hilkiah found it: the Book of the Law, lost for years in the house of the LORD! Shaphan the scribe read it to me, and I tore my robes. We had not obeyed God's words at all!",
+  "de": "Hilkija hat es gefunden: das Buch des Gesetzes, jahrelang verloren im Haus des Herrn! Der Schreiber Schafan hat es mir vorgelesen, und ich habe meine Kleider zerrissen. Wir hatten Gottes Worten überhaupt nicht gehorcht!"
+ },
+ "CH.35.outro.1": {
+  "en": "The prophetess Huldah told us God had heard my humble heart. So I gathered all the people, small and great, and read the whole book to them. Together we promised to follow the LORD with all our heart.",
+  "de": "Die Prophetin Hulda sagte uns, dass Gott mein demütiges Herz gesehen hat. Da habe ich das ganze Volk versammelt, Klein und Groß, und ihnen das ganze Buch vorgelesen. Gemeinsam haben wir versprochen, dem Herrn von ganzem Herzen zu folgen."
+ },
+ "CH.35.outro.2": {
+  "en": "Then we removed the idols and kept a Passover like no one had kept since the days of the judges! Here's a piece of the Scroll. And this little Scroll Candle wants to come with you, so you never lose God's word again!",
+  "de": "Dann haben wir die Götzen entfernt und ein Passafest gefeiert wie seit der Zeit der Richter nicht mehr! Hier ist ein Teil der Schriftrolle. Und diese kleine Schriftrollen-Kerze möchte mit dir kommen, damit du Gottes Wort nie wieder verlierst!"
+ },
+ "CH.35.post": {
+  "en": "God's word is a treasure. Read it, remember it, and follow it with all your heart!",
+  "de": "Gottes Wort ist ein Schatz. Lies es, merk es dir und folge ihm von ganzem Herzen!"
+ },
+ "CH.35.side.name": {
+  "en": "Temple Builder",
+  "de": "Tempelbauer"
+ },
+ "CH.35.side.what": {
+  "en": "hammers",
+  "de": "Hämmer"
+ },
+ "CH.35.side.ask": {
+  "en": "I'm one of the builders repairing the house of the LORD. The king trusts us so much that nobody even counts the money! But I lost 3 hammers. Can you find them?",
+  "de": "Ich bin einer der Bauleute, die das Haus des Herrn ausbessern. Der König vertraut uns so sehr, dass niemand das Geld nachzählt! Aber ich habe 3 Hämmer verloren. Findest du sie?"
+ },
+ "CH.35.side.thanks": {
+  "en": "Thank you! Now we can keep working faithfully. Who knows what we'll find in these old rooms? Take this!",
+  "de": "Danke! Jetzt können wir treu weiterarbeiten. Wer weiß, was wir in diesen alten Kammern noch finden? Nimm das!"
+ },
+ "CH.35.flav.0.name": {
+  "en": "Hilkiah the Priest",
+  "de": "Hilkija der Priester"
+ },
+ "CH.35.flav.0.lines.0": {
+  "en": "I said to Shaphan the scribe, 'I have found the Book of the Law in the house of the LORD!' How could we ever have lost it?",
+  "de": "Ich sagte zum Schreiber Schafan: „Ich habe das Buch des Gesetzes im Haus des Herrn gefunden!“ Wie konnten wir es nur verlieren?"
+ },
+ "CH.35.flav.1.name": {
+  "en": "Huldah the Prophetess",
+  "de": "Hulda die Prophetin"
+ },
+ "CH.35.flav.1.lines.0": {
+  "en": "The king's men came to ask me about the book. I told them: 'Because your heart was tender and you humbled yourself, the LORD has heard you.'",
+  "de": "Die Männer des Königs kamen und fragten mich nach dem Buch. Ich sagte ihnen: „Weil dein Herz weich war und du dich gedemütigt hast, hat der Herr dich erhört.“"
+ },
+ "CH.35.verse.t": {
+  "en": "He turned to the LORD with all his heart and with all his soul and with all his might.",
+  "de": "Er kehrte zum Herrn um von ganzem Herzen, von ganzer Seele und mit all seiner Kraft."
+ },
+ "CH.35.verse.r": {
+  "en": "2 Kings 23:25",
+  "de": "2. Könige 23,25"
+ },
+ "CH.36.name": {
+  "en": "The Temple Courts",
+  "de": "Im Tempel"
+ },
+ "CH.36.book": {
+  "en": "Luke 2:41–52",
+  "de": "Lukas 2,41–52"
+ },
+ "CH.36.foe.name": {
+  "en": "Hurryling",
+  "de": "Hetzling"
+ },
+ "CH.36.foe.pl": {
+  "en": null,
+  "de": "Hetzlinge"
+ },
+ "CH.36.foe.what": {
+  "en": "shadows of rushing and worry",
+  "de": "Schatten von Hetze und Sorge"
+ },
+ "CH.36.foes.0.name": {
+  "en": "Hurryling",
+  "de": "Hetzling"
+ },
+ "CH.36.foes.1.name": {
+  "en": "Rush Imp",
+  "de": "Eilwicht"
+ },
+ "CH.36.foes.2.name": {
+  "en": "Fret Brute",
+  "de": "Sorgengroll"
+ },
+ "CH.36.boss.name": {
+  "en": "Gloom of the Rushing Crowd",
+  "de": "Dunkel der eiligen Menge"
+ },
+ "CH.36.boss.where": {
+  "en": "temple courts",
+  "de": "in den Tempelhöfen"
+ },
+ "CH.36.guide.name": {
+  "en": "Joseph of Nazareth",
+  "de": "Josef aus Nazaret"
+ },
+ "CH.36.intro.0": {
+  "en": "Shalom! I'm Joseph, a carpenter from Nazareth. Every year, Mary and I walk to Jerusalem with our family and friends for the Feast of the Passover.",
+  "de": "Schalom! Ich bin Josef, ein Zimmermann aus Nazaret. Jedes Jahr gehen Maria und ich mit unserer Familie und unseren Freunden zum Passafest nach Jerusalem."
+ },
+ "CH.36.intro.1": {
+  "en": "This year Jesus is twelve years old. When the feast was over, we started home in a big crowd. We thought Jesus was with our relatives somewhere.",
+  "de": "Dieses Jahr ist Jesus zwölf Jahre alt. Als das Fest vorbei war, machten wir uns in einer großen Reisegruppe auf den Heimweg. Wir dachten, Jesus sei irgendwo bei unseren Verwandten."
+ },
+ "CH.36.intro.2": {
+  "en": "After a whole day's walk, we looked for Him, but He wasn't there! We hurried back to Jerusalem. We've been searching for Him for three days now.",
+  "de": "Nach einem ganzen Tagesmarsch suchten wir ihn, aber er war nicht da! Wir eilten zurück nach Jerusalem. Jetzt suchen wir ihn schon seit drei Tagen."
+ },
+ "CH.36.intro.3": {
+  "en": "Hurrylings make everyone rush and worry. Defeat 6 of them, then face the Gloom of the Rushing Crowd in the temple courts.",
+  "de": "Hetzlinge bringen alle dazu, zu hetzen und sich zu sorgen. Besiege 6 Düsterlinge, dann stell dich dem Dunkel der eiligen Menge in den Tempelhöfen."
+ },
+ "CH.36.hint": {
+  "en": "The Gloom of the Rushing Crowd swirls around the temple courts. Slow down: maybe Jesus is right where He should be!",
+  "de": "Das Dunkel der eiligen Menge wirbelt durch die Tempelhöfe. Werd langsamer: Vielleicht ist Jesus genau da, wo er sein soll!"
+ },
+ "CH.36.outro.0": {
+  "en": "We found Him! Jesus was sitting in the temple among the teachers, listening to them and asking them questions. Everyone was amazed at His understanding and His answers.",
+  "de": "Wir haben ihn gefunden! Jesus saß im Tempel mitten unter den Lehrern, hörte ihnen zu und stellte ihnen Fragen. Alle staunten über sein Verständnis und seine Antworten."
+ },
+ "CH.36.outro.1": {
+  "en": "Mary said, 'Son, we were so worried looking for you!' Jesus answered, 'Why were you looking for me? Didn't you know I had to be in my Father's house?' Then He came home with us and obeyed us, and Mary treasured all these things in her heart.",
+  "de": "Maria sagte: „Kind, wir haben dich voller Sorge gesucht!“ Jesus antwortete: „Warum habt ihr mich gesucht? Wusstet ihr nicht, dass ich im Haus meines Vaters sein muss?“ Dann kam er mit uns nach Hause und gehorchte uns, und Maria bewahrte all das in ihrem Herzen."
+ },
+ "CH.36.outro.2": {
+  "en": "Jesus grew in wisdom and stature, and in favor with God and people. Here's a piece of the Scroll. And this little Scribe's Quill from the temple wants to come with you!",
+  "de": "Jesus nahm zu an Weisheit und Größe und an Gunst bei Gott und den Menschen. Hier ist ein Teil der Schriftrolle. Und diese kleine Schreiberfeder aus dem Tempel möchte mit dir kommen!"
+ },
+ "CH.36.post": {
+  "en": "Jesus loved being in His Father's house. You can grow in wisdom too, by listening and asking good questions!",
+  "de": "Jesus war gern im Haus seines Vaters. Auch du kannst an Weisheit zunehmen, wenn du zuhörst und gute Fragen stellst!"
+ },
+ "CH.36.side.name": {
+  "en": "Cousin from Nazareth",
+  "de": "Cousine aus Nazaret"
+ },
+ "CH.36.side.what": {
+  "en": "flatbreads",
+  "de": "Fladenbrote"
+ },
+ "CH.36.side.ask": {
+  "en": "I'm one of Jesus' relatives from Nazareth. We packed flatbreads for the long walk home, but in all the rush I dropped 3 of them! Can you find them?",
+  "de": "Ich bin eine Verwandte von Jesus aus Nazaret. Wir haben Fladenbrote für den langen Heimweg eingepackt, aber in der ganzen Eile habe ich 3 davon verloren! Findest du sie?"
+ },
+ "CH.36.side.thanks": {
+  "en": "Thank you! We were in such a hurry that we didn't notice Jesus wasn't with us. Next time I'll slow down. Take this!",
+  "de": "Danke! Wir hatten es so eilig, dass wir gar nicht gemerkt haben, dass Jesus nicht bei uns war. Nächstes Mal mache ich langsamer. Nimm das!"
+ },
+ "CH.36.flav.0.name": {
+  "en": "Teacher of the Law",
+  "de": "Gesetzeslehrer"
+ },
+ "CH.36.flav.0.lines.0": {
+  "en": "I've taught in these courts for forty years. But I've never heard a boy listen so well and answer so wisely!",
+  "de": "Ich lehre seit vierzig Jahren in diesen Höfen. Aber noch nie habe ich einen Jungen gehört, der so gut zuhört und so weise antwortet!"
+ },
+ "CH.36.flav.1.name": {
+  "en": "Pilgrim Boy",
+  "de": "Pilgerjunge"
+ },
+ "CH.36.flav.1.lines.0": {
+  "en": "Every year we walk up to Jerusalem for the Passover. We sing psalms on the road: 'I was glad when they said to me, Let us go to the house of the LORD!'",
+  "de": "Jedes Jahr ziehen wir zum Passafest hinauf nach Jerusalem. Unterwegs singen wir Psalmen: „Ich freute mich, als man mir sagte: Lasst uns zum Haus des Herrn gehen!“"
+ },
+ "CH.36.verse.t": {
+  "en": "And Jesus increased in wisdom and in stature and in favor with God and man.",
+  "de": "Und Jesus nahm zu an Weisheit, Alter und Gnade bei Gott und den Menschen."
+ },
+ "CH.36.verse.r": {
+  "en": "Luke 2:52",
+  "de": "Lukas 2,52"
+ },
+ "CH.37.name": {
+  "en": "Road to Emmaus",
+  "de": "Weg nach Emmaus"
+ },
+ "CH.37.book": {
+  "en": "Luke 24:13–35",
+  "de": "Lukas 24,13–35"
+ },
+ "CH.37.foe.name": {
+  "en": "Sighling",
+  "de": "Seufzling"
+ },
+ "CH.37.foe.pl": {
+  "en": null,
+  "de": "Seufzlinge"
+ },
+ "CH.37.foe.what": {
+  "en": "shadows of sadness and lost hope",
+  "de": "Schatten von Traurigkeit und verlorener Hoffnung"
+ },
+ "CH.37.foes.0.name": {
+  "en": "Sighling",
+  "de": "Seufzling"
+ },
+ "CH.37.foes.1.name": {
+  "en": "Dusk Wisp",
+  "de": "Dämmerlicht"
+ },
+ "CH.37.foes.2.name": {
+  "en": "Heavy Drip",
+  "de": "Schwertropfen"
+ },
+ "CH.37.boss.name": {
+  "en": "Gloom of the Sad Road",
+  "de": "Dunkel des traurigen Weges"
+ },
+ "CH.37.boss.where": {
+  "en": "village of Emmaus",
+  "de": "beim Dorf Emmaus"
+ },
+ "CH.37.guide.name": {
+  "en": "Cleopas",
+  "de": "Kleopas"
+ },
+ "CH.37.intro.0": {
+  "en": "Hello, friend. I'm Cleopas. My friend and I are walking from Jerusalem to our village, Emmaus. It's a long walk, and our hearts are heavy.",
+  "de": "Hallo, Freund. Ich bin Kleopas. Mein Freund und ich gehen von Jerusalem in unser Dorf Emmaus. Es ist ein langer Weg, und unsere Herzen sind schwer."
+ },
+ "CH.37.intro.1": {
+  "en": "We followed Jesus. We hoped He was the one who would rescue Israel. But three days ago He was crucified, and we saw Him laid in a tomb.",
+  "de": "Wir sind Jesus gefolgt. Wir hatten gehofft, dass er Israel erlösen würde. Aber vor drei Tagen wurde er gekreuzigt, und wir haben gesehen, wie er in ein Grab gelegt wurde."
+ },
+ "CH.37.intro.2": {
+  "en": "This morning some women said the tomb was empty, and angels told them He is alive! But how can that be? We don't know what to believe.",
+  "de": "Heute Morgen haben einige Frauen erzählt, das Grab sei leer, und Engel hätten gesagt, dass er lebt! Aber wie kann das sein? Wir wissen nicht, was wir glauben sollen."
+ },
+ "CH.37.intro.3": {
+  "en": "Sighlings whisper, 'It's over. All hope is gone.' Defeat 6 of them, then face the Gloom of the Sad Road near the village of Emmaus.",
+  "de": "Seufzlinge flüstern: „Es ist vorbei. Alle Hoffnung ist weg.“ Besiege 6 Düsterlinge, dann stell dich dem Dunkel des traurigen Weges beim Dorf Emmaus."
+ },
+ "CH.37.hint": {
+  "en": "The Gloom of the Sad Road waits near Emmaus. Keep walking: sometimes Jesus is closer than you think!",
+  "de": "Das Dunkel des traurigen Weges wartet bei Emmaus. Geh weiter: Manchmal ist Jesus näher, als du denkst!"
+ },
+ "CH.37.outro.0": {
+  "en": "A stranger walked with us. Beginning with Moses and all the Prophets, He explained everything the Scriptures said about the Christ. At the village we begged Him, 'Stay with us, for it is nearly evening.'",
+  "de": "Ein Fremder ging mit uns. Angefangen bei Mose und allen Propheten erklärte er uns alles, was in den Schriften über den Christus steht. Im Dorf baten wir ihn: „Bleib bei uns, denn es will Abend werden.“"
+ },
+ "CH.37.outro.1": {
+  "en": "At the table He took the bread, blessed it, broke it and gave it to us. Then our eyes were opened: it was Jesus! And He vanished from our sight. We said, 'Weren't our hearts burning while He talked with us on the road?'",
+  "de": "Am Tisch nahm er das Brot, dankte, brach es und gab es uns. Da wurden uns die Augen geöffnet: Es war Jesus! Und er verschwand vor unseren Augen. Wir sagten: „Brannte nicht unser Herz, als er unterwegs mit uns redete?“"
+ },
+ "CH.37.outro.2": {
+  "en": "We ran all the way back to Jerusalem to tell the others: 'The Lord is risen indeed!' Here's a piece of the Scroll. And this warm Evening Glow wants to stay with you, like we asked Jesus to stay with us!",
+  "de": "Wir sind den ganzen Weg nach Jerusalem zurückgerannt, um es den anderen zu sagen: „Der Herr ist wirklich auferstanden!“ Hier ist ein Teil der Schriftrolle. Und dieses warme Abendleuchten möchte bei dir bleiben, so wie wir Jesus gebeten haben, bei uns zu bleiben!"
+ },
+ "CH.37.post": {
+  "en": "Jesus walks with you, even on sad days. Open the Scriptures, and let Him make your heart burn with joy!",
+  "de": "Jesus geht mit dir, auch an traurigen Tagen. Schlag die Bibel auf und lass dein Herz vor Freude brennen!"
+ },
+ "CH.37.side.name": {
+  "en": "Village Baker",
+  "de": "Bäckerin aus Emmaus"
+ },
+ "CH.37.side.what": {
+  "en": "bundles of barley",
+  "de": "Gerstenbündel"
+ },
+ "CH.37.side.ask": {
+  "en": "I bake bread for the travelers who stop in Emmaus. But I dropped 3 bundles of barley along the road! Can you find them before evening?",
+  "de": "Ich backe Brot für die Reisenden, die in Emmaus Rast machen. Aber ich habe 3 Gerstenbündel am Weg verloren! Findest du sie, bevor es Abend wird?"
+ },
+ "CH.37.side.thanks": {
+  "en": "Thank you! Tonight Cleopas has a guest for supper. Somehow I think breaking bread will be very special tonight. Take this!",
+  "de": "Danke! Heute Abend hat Kleopas einen Gast zum Essen. Irgendwie glaube ich, dass das Brotbrechen heute ganz besonders wird. Nimm das!"
+ },
+ "CH.37.flav.0.name": {
+  "en": "Cleopas' Friend",
+  "de": "Freund von Kleopas"
+ },
+ "CH.37.flav.0.lines.0": {
+  "en": "The stranger asked what we were talking about. We stood still, looking sad, and said, 'Are you the only visitor in Jerusalem who doesn't know what happened there?'",
+  "de": "Der Fremde fragte, worüber wir reden. Wir blieben traurig stehen und sagten: „Bist du der Einzige in Jerusalem, der nicht weiß, was dort passiert ist?“"
+ },
+ "CH.37.flav.1.name": {
+  "en": "Traveler on the Road",
+  "de": "Wanderer"
+ },
+ "CH.37.flav.1.lines.0": {
+  "en": "Emmaus is about seven miles from Jerusalem. That's a long way to walk, and a long way to run back in the dark!",
+  "de": "Emmaus liegt etwa elf Kilometer von Jerusalem entfernt. Das ist ein weiter Weg zum Gehen – und ein weiter Weg, um im Dunkeln zurückzurennen!"
+ },
+ "CH.37.verse.t": {
+  "en": "Did not our hearts burn within us while he talked to us on the road, while he opened to us the Scriptures?",
+  "de": "Brannte nicht unser Herz in uns, als er mit uns redete auf dem Weg und uns die Schrift öffnete?"
+ },
+ "CH.37.verse.r": {
+  "en": "Luke 24:32",
+  "de": "Lukas 24,32"
+ },
+ "CH.38.name": {
+  "en": "The Desert Road",
+  "de": "Die Wüstenstraße"
+ },
+ "CH.38.book": {
+  "en": "Acts 8:26–40",
+  "de": "Apostelgeschichte 8,26–40"
+ },
+ "CH.38.foe.name": {
+  "en": "Puzzling",
+  "de": "Rätselling"
+ },
+ "CH.38.foe.pl": {
+  "en": null,
+  "de": "Rätsellinge"
+ },
+ "CH.38.foe.what": {
+  "en": "shadows of confusion",
+  "de": "Schatten der Verwirrung"
+ },
+ "CH.38.foes.0.name": {
+  "en": "Puzzling",
+  "de": "Rätselling"
+ },
+ "CH.38.foes.1.name": {
+  "en": "Mirage Wisp",
+  "de": "Trugbildlicht"
+ },
+ "CH.38.foes.2.name": {
+  "en": "Dust Drip",
+  "de": "Staubtropfen"
+ },
+ "CH.38.boss.name": {
+  "en": "Gloom of Puzzlement",
+  "de": "Dunkel der Ratlosigkeit"
+ },
+ "CH.38.boss.where": {
+  "en": "water by the road",
+  "de": "beim Wasser am Weg"
+ },
+ "CH.38.guide.name": {
+  "en": "Philip",
+  "de": "Philippus"
+ },
+ "CH.38.intro.0": {
+  "en": "Hi there! I'm Philip. I tell people the good news about Jesus. An angel of the Lord told me, 'Go south, to the road that goes down from Jerusalem to Gaza.'",
+  "de": "Hallo! Ich bin Philippus. Ich erzähle den Leuten die gute Nachricht von Jesus. Ein Engel des Herrn sagte zu mir: „Geh nach Süden, auf die Straße, die von Jerusalem nach Gaza hinabführt.“"
+ },
+ "CH.38.intro.1": {
+  "en": "It's a desert road. Why would God send me out here? But I went. And look: a chariot is coming! The man inside is an important official from Ethiopia, in charge of the queen's treasure.",
+  "de": "Das ist eine Wüstenstraße. Warum schickt Gott mich hierher? Aber ich bin gegangen. Und schau: Da kommt ein Wagen! Der Mann darin ist ein wichtiger Beamter aus Äthiopien, der über den Schatz der Königin wacht."
+ },
+ "CH.38.intro.2": {
+  "en": "He has been to Jerusalem to worship, and now he's reading the prophet Isaiah out loud. The Spirit told me, 'Go over and join this chariot.'",
+  "de": "Er war in Jerusalem, um Gott anzubeten, und jetzt liest er laut aus dem Propheten Jesaja. Der Geist sagte zu mir: „Geh hin und halte dich zu diesem Wagen.“"
+ },
+ "CH.38.intro.3": {
+  "en": "Puzzlings make God's word seem too hard to understand. Defeat 6 of them, then face the Gloom of Puzzlement by the water near the road.",
+  "de": "Rätsellinge lassen Gottes Wort zu schwer erscheinen. Besiege 6 Düsterlinge, dann stell dich dem Dunkel der Ratlosigkeit beim Wasser am Weg."
+ },
+ "CH.38.hint": {
+  "en": "The Gloom of Puzzlement waits by the water. God's word is the key: answers from the Bible hit it hardest!",
+  "de": "Das Dunkel der Ratlosigkeit wartet beim Wasser. Gottes Wort ist der Schlüssel: Antworten aus der Bibel treffen es am härtesten!"
+ },
+ "CH.38.outro.0": {
+  "en": "I ran up to the chariot and asked, 'Do you understand what you are reading?' He said, 'How can I, unless someone guides me?' and invited me to sit with him.",
+  "de": "Ich lief zum Wagen und fragte: „Verstehst du auch, was du liest?“ Er sagte: „Wie kann ich, wenn mich niemand anleitet?“ und bat mich, mich zu ihm zu setzen."
+ },
+ "CH.38.outro.1": {
+  "en": "He was reading, 'Like a lamb before its shearer is silent, so he opened not his mouth.' Beginning with that Scripture, I told him the good news about Jesus. Then he said, 'See, here is water! What prevents me from being baptized?'",
+  "de": "Er las gerade: „Wie ein Lamm, das vor seinem Scherer verstummt, so tat er seinen Mund nicht auf.“ Ausgehend von diesem Bibelwort erzählte ich ihm die gute Nachricht von Jesus. Da sagte er: „Sieh, hier ist Wasser! Was hindert mich, getauft zu werden?“"
+ },
+ "CH.38.outro.2": {
+  "en": "So I baptized him, and he went on his way rejoicing! Here's a piece of the Scroll. And this tall Royal Giraffe from the faraway land of his queen wants to travel with you!",
+  "de": "Also habe ich ihn getauft, und er zog voller Freude seinen Weg! Hier ist ein Teil der Schriftrolle. Und diese große Königsgiraffe aus dem fernen Land seiner Königin möchte mit dir reisen!"
+ },
+ "CH.38.post": {
+  "en": "When the Bible is hard to understand, ask! God sends people to help us, and He loves to explain His word.",
+  "de": "Wenn die Bibel schwer zu verstehen ist, frag nach! Gott schickt Menschen, die uns helfen, und er erklärt sein Wort gern."
+ },
+ "CH.38.side.name": {
+  "en": "Chariot Driver",
+  "de": "Wagenlenker"
+ },
+ "CH.38.side.what": {
+  "en": "bags of the queen's treasure",
+  "de": "Beutel mit dem Schatz der Königin"
+ },
+ "CH.38.side.ask": {
+  "en": "I drive the chariot for my master. He takes care of all the treasure of Queen Candace of Ethiopia. But 3 bags fell off on this bumpy road! Can you find them?",
+  "de": "Ich lenke den Wagen für meinen Herrn. Er verwaltet den ganzen Schatz der Königin Kandake von Äthiopien. Aber auf dieser holprigen Straße sind 3 Beutel heruntergefallen! Findest du sie?"
+ },
+ "CH.38.side.thanks": {
+  "en": "Thank you! My master says he found a treasure today that's worth more than all the queen's gold. Take this!",
+  "de": "Danke! Mein Herr sagt, er hat heute einen Schatz gefunden, der mehr wert ist als alles Gold der Königin. Nimm das!"
+ },
+ "CH.38.flav.0.name": {
+  "en": "Traveler to Gaza",
+  "de": "Reisender nach Gaza"
+ },
+ "CH.38.flav.0.lines.0": {
+  "en": "This road goes all the way down to Gaza. Not many people come out here into the desert. Only those God sends!",
+  "de": "Diese Straße führt bis hinunter nach Gaza. Nicht viele Leute kommen hier in die Wüste. Nur die, die Gott schickt!"
+ },
+ "CH.38.flav.1.name": {
+  "en": "Philip's Daughter",
+  "de": "Tochter von Philippus"
+ },
+ "CH.38.flav.1.lines.0": {
+  "en": "Later my father Philip lived in Caesarea with my three sisters and me. He told everyone about Jesus wherever he went!",
+  "de": "Später wohnte mein Vater Philippus mit meinen drei Schwestern und mir in Cäsarea. Überall, wo er hinkam, erzählte er von Jesus!"
+ },
+ "CH.38.verse.t": {
+  "en": "Then Philip opened his mouth, and beginning with this Scripture he told him the good news about Jesus.",
+  "de": "Philippus aber tat seinen Mund auf und fing mit diesem Schriftwort an und erzählte ihm die gute Nachricht von Jesus."
+ },
+ "CH.38.verse.r": {
+  "en": "Acts 8:35",
+  "de": "Apostelgeschichte 8,35"
+ },
+ "CH.39.name": {
+  "en": "Damascus Road",
+  "de": "Weg nach Damaskus"
+ },
+ "CH.39.book": {
+  "en": "Acts 9:1–22",
+  "de": "Apostelgeschichte 9,1–22"
+ },
+ "CH.39.foe.name": {
+  "en": "Grudgeling",
+  "de": "Grollling"
+ },
+ "CH.39.foe.pl": {
+  "en": null,
+  "de": "Grolllinge"
+ },
+ "CH.39.foe.what": {
+  "en": "shadows of hatred and hard hearts",
+  "de": "Schatten von Hass und harten Herzen"
+ },
+ "CH.39.foes.0.name": {
+  "en": "Grudgeling",
+  "de": "Grollling"
+ },
+ "CH.39.foes.1.name": {
+  "en": "Scowl Imp",
+  "de": "Finsterwicht"
+ },
+ "CH.39.foes.2.name": {
+  "en": "Stone-Heart Brute",
+  "de": "Steinherzgroll"
+ },
+ "CH.39.boss.name": {
+  "en": "Gloom of the Hard Heart",
+  "de": "Dunkel des harten Herzens"
+ },
+ "CH.39.boss.where": {
+  "en": "Damascus road",
+  "de": "auf dem Weg nach Damaskus"
+ },
+ "CH.39.guide.name": {
+  "en": "Ananias",
+  "de": "Hananias"
+ },
+ "CH.39.intro.0": {
+  "en": "Peace to you. I'm Ananias, a follower of Jesus here in Damascus. We've heard scary news: a man named Saul is coming to arrest anyone who follows Jesus!",
+  "de": "Friede sei mit dir. Ich bin Hananias, ein Nachfolger von Jesus hier in Damaskus. Wir haben beängstigende Nachrichten gehört: Ein Mann namens Saulus kommt, um alle zu verhaften, die Jesus folgen!"
+ },
+ "CH.39.intro.1": {
+  "en": "But on the road, near the city, a light from heaven flashed around Saul. He fell to the ground and heard a voice: 'Saul, Saul, why do you persecute me?' Saul asked, 'Who are you, Lord?' The answer: 'I am Jesus.'",
+  "de": "Aber auf dem Weg, kurz vor der Stadt, umstrahlte Saulus plötzlich ein Licht vom Himmel. Er fiel zu Boden und hörte eine Stimme: „Saul, Saul, was verfolgst du mich?“ Saulus fragte: „Wer bist du, Herr?“ Die Antwort: „Ich bin Jesus.“"
+ },
+ "CH.39.intro.2": {
+  "en": "When Saul got up, he couldn't see anything. His friends led him by the hand into Damascus. For three days he has been blind, and he hasn't eaten or drunk anything.",
+  "de": "Als Saulus aufstand, konnte er nichts sehen. Seine Begleiter führten ihn an der Hand nach Damaskus. Seit drei Tagen ist er blind, und er hat nichts gegessen und nichts getrunken."
+ },
+ "CH.39.intro.3": {
+  "en": "Grudgelings fill hearts with anger and hate. Defeat 7 of them, then face the Gloom of the Hard Heart on the Damascus road.",
+  "de": "Grolllinge füllen Herzen mit Wut und Hass. Besiege 7 Düsterlinge, dann stell dich dem Dunkel des harten Herzens auf dem Weg nach Damaskus."
+ },
+ "CH.39.hint": {
+  "en": "The Gloom of the Hard Heart blocks the Damascus road. No heart is too hard for Jesus to change!",
+  "de": "Das Dunkel des harten Herzens versperrt den Weg nach Damaskus. Kein Herz ist zu hart, als dass Jesus es nicht verändern könnte!"
+ },
+ "CH.39.outro.0": {
+  "en": "The Lord spoke to me in a vision: 'Go to Straight Street and find Saul.' I said, 'Lord, I've heard how much harm this man has done to your people!' But the Lord said, 'Go, for he is my chosen instrument.'",
+  "de": "Der Herr sprach in einer Erscheinung zu mir: „Geh in die Gerade Straße und such Saulus.“ Ich sagte: „Herr, ich habe gehört, wie viel Böses dieser Mann deinem Volk angetan hat!“ Aber der Herr sagte: „Geh hin, denn er ist mein auserwähltes Werkzeug.“"
+ },
+ "CH.39.outro.1": {
+  "en": "I was afraid, but I went. I put my hands on him and said, 'Brother Saul, the Lord Jesus has sent me so that you may see again and be filled with the Holy Spirit.' Something like scales fell from his eyes, and he could see! He got up and was baptized.",
+  "de": "Ich hatte Angst, aber ich ging. Ich legte ihm die Hände auf und sagte: „Bruder Saul, der Herr Jesus hat mich gesandt, damit du wieder sehen kannst und mit dem Heiligen Geist erfüllt wirst.“ Da fiel es ihm wie Schuppen von den Augen, und er konnte sehen! Er stand auf und ließ sich taufen."
+ },
+ "CH.39.outro.2": {
+  "en": "Right away Saul began to preach that Jesus is the Son of God! Here's a piece of the Scroll. And this sturdy basket helped Saul escape over the city wall one night. It wants to come with you!",
+  "de": "Sofort fing Saulus an zu predigen, dass Jesus der Sohn Gottes ist! Hier ist ein Teil der Schriftrolle. Und dieser stabile Korb hat Saulus eines Nachts geholfen, über die Stadtmauer zu fliehen. Er möchte mit dir kommen!"
+ },
+ "CH.39.post": {
+  "en": "Jesus can change any heart. And sometimes He asks us to be brave, like Ananias, and go to someone we're afraid of.",
+  "de": "Jesus kann jedes Herz verändern. Und manchmal bittet er uns, mutig zu sein wie Hananias und zu jemandem zu gehen, vor dem wir Angst haben."
+ },
+ "CH.39.side.name": {
+  "en": "Judas of Straight Street",
+  "de": "Judas aus der Geraden Straße"
+ },
+ "CH.39.side.what": {
+  "en": "loaves of bread",
+  "de": "Brote"
+ },
+ "CH.39.side.ask": {
+  "en": "I'm Judas. Saul is staying at my house on Straight Street. He hasn't eaten for three days! When he's ready, he'll need food. Can you find 3 loaves of bread?",
+  "de": "Ich bin Judas. Saulus wohnt in meinem Haus in der Geraden Straße. Er hat seit drei Tagen nichts gegessen! Wenn er so weit ist, braucht er etwas zu essen. Findest du 3 Brote?"
+ },
+ "CH.39.side.thanks": {
+  "en": "Thank you! Saul can see again, and now he's eating and getting strong. What a change in that man! Take this.",
+  "de": "Danke! Saulus kann wieder sehen, und jetzt isst er und kommt wieder zu Kräften. Was für eine Veränderung bei diesem Mann! Nimm das."
+ },
+ "CH.39.flav.0.name": {
+  "en": "Saul's Traveling Companion",
+  "de": "Reisebegleiter von Saulus"
+ },
+ "CH.39.flav.0.lines.0": {
+  "en": "We were walking with Saul when it happened. We heard the voice, but we didn't see anyone! We just stood there, speechless.",
+  "de": "Wir waren mit Saulus unterwegs, als es geschah. Wir hörten die Stimme, aber wir sahen niemanden! Wir standen einfach sprachlos da."
+ },
+ "CH.39.flav.1.name": {
+  "en": "Disciple of Damascus",
+  "de": "Jünger aus Damaskus"
+ },
+ "CH.39.flav.1.lines.0": {
+  "en": "Saul used to hunt us. Now he preaches about Jesus, and others want to stop him! One night we let him down through an opening in the wall in a big basket.",
+  "de": "Saulus hat uns früher gejagt. Jetzt predigt er von Jesus, und andere wollen ihn aufhalten! Eines Nachts haben wir ihn in einem großen Korb durch eine Öffnung in der Mauer hinuntergelassen."
+ },
+ "CH.39.verse.t": {
+  "en": "And immediately he proclaimed Jesus in the synagogues, saying, \"He is the Son of God.\"",
+  "de": "Und sogleich predigte er in den Synagogen von Jesus, dass dieser Gottes Sohn sei."
+ },
+ "CH.39.verse.r": {
+  "en": "Acts 9:20",
+  "de": "Apostelgeschichte 9,20"
+ },
+ "CH.40.name": {
+  "en": "Isle of Patmos",
+  "de": "Insel Patmos"
+ },
+ "CH.40.book": {
+  "en": "Revelation 1 · 21–22",
+  "de": "Offenbarung 1 · 21–22"
+ },
+ "CH.40.foe.name": {
+  "en": "Dimling",
+  "de": "Trübling"
+ },
+ "CH.40.foe.pl": {
+  "en": null,
+  "de": "Trüblinge"
+ },
+ "CH.40.foe.what": {
+  "en": "the last shadows of gloom",
+  "de": "die letzten Schatten der Düsternis"
+ },
+ "CH.40.foes.0.name": {
+  "en": "Dimling",
+  "de": "Trübling"
+ },
+ "CH.40.foes.1.name": {
+  "en": "Fading Wisp",
+  "de": "Verblassendes Licht"
+ },
+ "CH.40.foes.2.name": {
+  "en": "Last Tear Drip",
+  "de": "Letzte-Träne-Tropfen"
+ },
+ "CH.40.boss.name": {
+  "en": "The Last Shadow",
+  "de": "Der letzte Schatten"
+ },
+ "CH.40.boss.where": {
+  "en": "mountaintop",
+  "de": "auf dem Berggipfel"
+ },
+ "CH.40.guide.name": {
+  "en": "John the Apostle",
+  "de": "Der Apostel Johannes"
+ },
+ "CH.40.intro.0": {
+  "en": "Welcome to Patmos, little pilgrim! I'm John. Long ago I was a young fisherman in Galilee, and I followed Jesus. Now I'm very old, living on this rocky island because I told people about Him.",
+  "de": "Willkommen auf Patmos, kleiner Pilger! Ich bin Johannes. Vor langer Zeit war ich ein junger Fischer in Galiläa und bin Jesus gefolgt. Jetzt bin ich sehr alt und lebe auf dieser felsigen Insel, weil ich den Menschen von ihm erzählt habe."
+ },
+ "CH.40.intro.1": {
+  "en": "On the Lord's Day, I heard a loud voice behind me, like a trumpet. I turned and saw Jesus, shining like the sun! He put His hand on me and said, 'Do not be afraid. I am the First and the Last.'",
+  "de": "Am Tag des Herrn hörte ich hinter mir eine laute Stimme wie eine Posaune. Ich drehte mich um und sah Jesus, strahlend wie die Sonne! Er legte seine Hand auf mich und sagte: „Fürchte dich nicht. Ich bin der Erste und der Letzte.“"
+ },
+ "CH.40.intro.2": {
+  "en": "He told me, 'Write down what you see.' Then He showed me wonderful things that are still to come, things full of hope for everyone who loves Him.",
+  "de": "Er sagte zu mir: „Schreib auf, was du siehst.“ Dann zeigte er mir wunderbare Dinge, die noch kommen werden, Dinge voller Hoffnung für alle, die ihn lieben."
+ },
+ "CH.40.intro.3": {
+  "en": "Dimlings whisper that sadness will last forever. Defeat 7 of them, then face the Last Shadow on the mountaintop.",
+  "de": "Trüblinge flüstern, dass die Traurigkeit für immer bleibt. Besiege 7 Düsterlinge, dann stell dich dem letzten Schatten auf dem Berggipfel."
+ },
+ "CH.40.hint": {
+  "en": "The Last Shadow waits on the mountaintop. It's small and fading. Look to Jesus, the King who makes all things new!",
+  "de": "Der letzte Schatten wartet auf dem Berggipfel. Er ist klein und verblasst schon. Schau auf Jesus, den König, der alles neu macht!"
+ },
+ "CH.40.outro.0": {
+  "en": "I saw a new heaven and a new earth! The holy city, the New Jerusalem, came down from God, shining like a jewel. God will live with His people. He will wipe away every tear. No more death, no more crying, no more pain!",
+  "de": "Ich sah einen neuen Himmel und eine neue Erde! Die heilige Stadt, das neue Jerusalem, kam von Gott herab und strahlte wie ein Edelstein. Gott wird bei seinen Menschen wohnen. Er wird jede Träne abwischen. Kein Tod mehr, kein Weinen mehr, kein Schmerz mehr!"
+ },
+ "CH.40.outro.1": {
+  "en": "A river of the water of life flowed from the throne of God, clear as crystal. On each side stood the tree of life, with fruit every month, and its leaves are for healing. The One on the throne said, 'Behold, I make all things new!'",
+  "de": "Ein Strom mit dem Wasser des Lebens floss vom Thron Gottes, klar wie Kristall. Zu beiden Seiten stand der Baum des Lebens, der jeden Monat Früchte trägt, und seine Blätter dienen zur Heilung. Der auf dem Thron saß, sagte: „Siehe, ich mache alles neu!“"
+ },
+ "CH.40.outro.2": {
+  "en": "Here is the very last piece of the Scroll of Light! Take it to Simeon in Pilgrim's Rest. Jesus says, 'I am coming soon.' And this rainbow, like the one around God's throne, wants to come with you!",
+  "de": "Hier ist das allerletzte Teil der Schriftrolle des Lichts! Bring es zu Simeon in die Pilgerrast. Jesus sagt: „Ich komme bald.“ Und dieser Regenbogen, wie der um Gottes Thron, möchte mit dir kommen!"
+ },
+ "CH.40.post": {
+  "en": "Jesus says, 'Behold, I am coming soon!' One day there will be no more tears. Until then, keep shining His light!",
+  "de": "Jesus sagt: „Siehe, ich komme bald!“ Eines Tages wird es keine Tränen mehr geben. Bis dahin: Lass sein Licht weiter leuchten!"
+ },
+ "CH.40.side.name": {
+  "en": "Patmos Fisherman",
+  "de": "Fischer von Patmos"
+ },
+ "CH.40.side.what": {
+  "en": "seashells",
+  "de": "Muscheln"
+ },
+ "CH.40.side.ask": {
+  "en": "I fish around this island. My little girl loves seashells, and I promised to bring her 3 pretty ones. The waves washed them away! Can you find them?",
+  "de": "Ich fische rund um diese Insel. Meine kleine Tochter liebt Muscheln, und ich habe ihr 3 schöne versprochen. Die Wellen haben sie weggespült! Findest du sie?"
+ },
+ "CH.40.side.thanks": {
+  "en": "Thank you! Old John says one day there will be a city with gates made of pearls. Imagine that! Take this.",
+  "de": "Danke! Der alte Johannes sagt, eines Tages gibt es eine Stadt mit Toren aus Perlen. Stell dir das vor! Nimm das."
+ },
+ "CH.40.flav.0.name": {
+  "en": "Messenger from Ephesus",
+  "de": "Bote aus Ephesus"
+ },
+ "CH.40.flav.0.lines.0": {
+  "en": "John wrote letters to seven churches in Asia. I'll carry them across the sea, so the churches can be encouraged!",
+  "de": "Johannes hat Briefe an sieben Gemeinden in Asien geschrieben. Ich bringe sie übers Meer, damit die Gemeinden ermutigt werden!"
+ },
+ "CH.40.flav.1.name": {
+  "en": "Island Shepherd",
+  "de": "Hirte der Insel"
+ },
+ "CH.40.flav.1.lines.0": {
+  "en": "John says the new city won't need the sun or moon, because the glory of God gives it light. And its gates will never be shut!",
+  "de": "Johannes sagt, die neue Stadt braucht weder Sonne noch Mond, denn die Herrlichkeit Gottes erleuchtet sie. Und ihre Tore werden nie geschlossen!"
+ },
+ "CH.40.verse.t": {
+  "en": "Behold, I am making all things new.",
+  "de": "Siehe, ich mache alles neu."
+ },
+ "CH.40.verse.r": {
+  "en": "Revelation 21:5",
+  "de": "Offenbarung 21,5"
  }
 }

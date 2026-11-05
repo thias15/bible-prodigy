@@ -338,14 +338,14 @@
    "en": [
     "Ah, a pilgrim at last! I am Simeon. I have waited many years to see God's promises come true.",
     "The Scroll of Light tells the great story of God's love — from creation all the way to the empty tomb.",
-    "But the Shadow of Doubt tore it into thirty-four pieces and hid them in the stories of the Bible.",
+    "But the Shadow of Doubt tore it into forty pieces and hid them in the stories of the Bible.",
     "These Gates of Remembrance lead into those stories. Answer wisely, be brave, and bring the pieces home.",
     "Gate 1, the Garden of Eden, is open. And look — Jesse's little lamb has decided to follow you. God be with you!"
    ],
    "de": [
     "Ah, endlich ein Pilger! Ich bin Simeon. Viele Jahre habe ich darauf gewartet, dass Gottes Versprechen wahr werden.",
     "Die Schriftrolle des Lichts erzählt die große Geschichte von Gottes Liebe – von der Schöpfung bis zum leeren Grab.",
-    "Aber der Schatten des Zweifels hat sie in vierunddreißig Teile zerrissen und in den Geschichten der Bibel versteckt.",
+    "Aber der Schatten des Zweifels hat sie in vierzig Teile zerrissen und in den Geschichten der Bibel versteckt.",
     "Diese Tore der Erinnerung führen in diese Geschichten. Antworte weise, sei mutig und bring die Teile nach Hause.",
     "Tor 1, der Garten Eden, ist offen. Und schau – das kleine Lamm von Jesse möchte mit dir gehen. Gott sei mit dir!"
    ]
@@ -2729,6 +2729,134 @@
   "cut.34": {
    "en": "Consider the lilies. Do not worry!",
    "de": "Schaut die Lilien an. Sorgt euch nicht!"
+  },
+  "bm.forgot": {
+   "en": "God's word was lost in the temple for years. Each right answer finds a piece of the lost book. When all 3 are found, your attacks are strong!",
+   "de": "Gottes Wort war jahrelang im Tempel verloren. Jede richtige Antwort findet ein Stück des verlorenen Buches. Wenn alle 3 gefunden sind, treffen deine Angriffe stark!"
+  },
+  "bm.forgot.m": {
+   "en": "Pieces found",
+   "de": "Stücke gefunden"
+  },
+  "bm.forgot.one": {
+   "en": "A piece of the book found!",
+   "de": "Ein Stück des Buches gefunden!"
+  },
+  "bm.forgot.full": {
+   "en": "The Book of the Law is found! God's word is remembered, and your attacks are strong!",
+   "de": "Das Buch des Gesetzes ist gefunden! Gottes Wort ist nicht mehr vergessen, und deine Angriffe treffen stark!"
+  },
+  "bm.hurry": {
+   "en": "The rushing crowd hides behind a shield of hurry. Answer right in 3 different subjects to break it, like the teachers amazed at Jesus' answers!",
+   "de": "Die eilige Menge versteckt sich hinter einem Schild aus Hetze. Antworte in 3 verschiedenen Themen richtig, um ihn zu zerbrechen – wie die Lehrer, die über die Antworten von Jesus staunten!"
+  },
+  "bm.hurry.m": {
+   "en": "Amazing answers",
+   "de": "Erstaunliche Antworten"
+  },
+  "bm.hurry.full": {
+   "en": "\"I must be in my Father's house!\" Wise answers break the shield of hurry!",
+   "de": "„Ich muss im Haus meines Vaters sein!“ Weise Antworten zerbrechen den Schild der Hetze!"
+  },
+  "bm.sadroad": {
+   "en": "The sad gloom keeps growing back! Answer 3 right to break the bread with Jesus and stop it.",
+   "de": "Das traurige Dunkel wächst immer wieder nach! Beantworte 3 richtig, dann brichst du mit Jesus das Brot und hältst es auf."
+  },
+  "bm.sadroad.m": {
+   "en": "Break the bread",
+   "de": "Brich das Brot"
+  },
+  "bm.sadroad.full": {
+   "en": "Their eyes were opened: it's Jesus! The bread is broken, and the gloom stops growing back.",
+   "de": "Ihre Augen wurden geöffnet: Es ist Jesus! Das Brot ist gebrochen, und das Dunkel wächst nicht mehr nach."
+  },
+  "bm.puzzled": {
+   "en": "\"How can I understand unless someone guides me?\" Bible and memory-verse answers hit hard. Other answers only hit weakly.",
+   "de": "„Wie kann ich verstehen, wenn mich niemand anleitet?“ Bibel- und Merkvers-Antworten treffen hart. Andere Antworten treffen nur schwach."
+  },
+  "bm.puzzled.m": {
+   "en": "God's word explains",
+   "de": "Gottes Wort erklärt"
+  },
+  "bm.puzzled.full": {
+   "en": "The Scripture is opened! The puzzlement clears away!",
+   "de": "Die Schrift ist geöffnet! Die Ratlosigkeit verschwindet!"
+  },
+  "bm.hardheart": {
+   "en": "Saul's heart was hard and his eyes were dark. Every 3 right answers, a light from heaven blasts the gloom!",
+   "de": "Saulus’ Herz war hart und seine Augen dunkel. Bei jeweils 3 richtigen Antworten trifft ein Licht vom Himmel das Dunkel!"
+  },
+  "bm.hardheart.m": {
+   "en": "Light from heaven",
+   "de": "Licht vom Himmel"
+  },
+  "bm.hardheart.full": {
+   "en": "A light from heaven! Scales fall away, and a hard heart is changed!",
+   "de": "Ein Licht vom Himmel! Die Schuppen fallen ab, und ein hartes Herz wird verändert!"
+  },
+  "bm.lastshadow": {
+   "en": "Look to Jesus, the King on the throne! Every third turn your next hit counts double. The last shadow can't stand His light!",
+   "de": "Schau auf Jesus, den König auf dem Thron! Jede dritte Runde zählt dein nächster Treffer doppelt. Der letzte Schatten hält seinem Licht nicht stand!"
+  },
+  "bm.lastshadow.m": {
+   "en": "Look to the King",
+   "de": "Schau auf den König"
+  },
+  "bm.lastshadow.full": {
+   "en": "\"Behold, I make all things new!\" ×2",
+   "de": "„Siehe, ich mache alles neu!“ ×2"
+  },
+  "bm.lastshadow.chance": {
+   "en": "The King is coming soon! Your next hit counts double.",
+   "de": "Der König kommt bald! Dein nächster Treffer zählt doppelt."
+  },
+  "furn.lawscroll": {
+   "en": "The lost Book of the Law",
+   "de": "Das verlorene Buch des Gesetzes"
+  },
+  "furn.teacherscroll": {
+   "en": "Scroll from the temple courts",
+   "de": "Schriftrolle aus den Tempelhöfen"
+  },
+  "furn.emmausbread": {
+   "en": "Bread from Emmaus",
+   "de": "Brot aus Emmaus"
+  },
+  "furn.isaiahscroll": {
+   "en": "Scroll of Isaiah",
+   "de": "Schriftrolle des Jesaja"
+  },
+  "furn.ananiaslamp": {
+   "en": "Ananias' lamp from Straight Street",
+   "de": "Lampe des Hananias aus der Geraden Straße"
+  },
+  "furn.treeoflife": {
+   "en": "Tree of life",
+   "de": "Baum des Lebens"
+  },
+  "cut.35": {
+   "en": "God's word is found again!",
+   "de": "Gottes Wort ist wiedergefunden!"
+  },
+  "cut.36": {
+   "en": "In my Father's house!",
+   "de": "Im Haus meines Vaters!"
+  },
+  "cut.37": {
+   "en": "The Lord is risen indeed!",
+   "de": "Der Herr ist wirklich auferstanden!"
+  },
+  "cut.38": {
+   "en": "He went on his way rejoicing!",
+   "de": "Er zog voller Freude seinen Weg!"
+  },
+  "cut.39": {
+   "en": "Jesus changes hearts!",
+   "de": "Jesus verändert Herzen!"
+  },
+  "cut.40": {
+   "en": "Behold, I make all things new!",
+   "de": "Siehe, ich mache alles neu!"
   }
  },
  "MG": {
@@ -3769,13 +3897,13 @@
  "STORY": {
   "en": [
    "Long ago, the great Scroll of Light told the whole story of God's love — from the very first sunrise to the brightest morning of all.",
-   "But the Shadow of Doubt crept in. It tore the Scroll into thirty-four pieces and hid them across the ages of the Bible.",
+   "But the Shadow of Doubt crept in. It tore the Scroll into forty pieces and hid them across the ages of the Bible.",
    "Without the Scroll, Gloomlings spread everywhere: whispers of lies, worry, pride and fear.",
    "Now a young pilgrim is needed. Someone brave. Someone curious. Someone like you."
   ],
   "de": [
    "Vor langer Zeit erzählte die große Schriftrolle des Lichts die ganze Geschichte von Gottes Liebe – vom allerersten Sonnenaufgang bis zum hellsten Morgen von allen.",
-   "Doch der Schatten des Zweifels schlich sich heran. Er zerriss die Schriftrolle in vierunddreißig Teile und versteckte sie in den Zeiten der Bibel.",
+   "Doch der Schatten des Zweifels schlich sich heran. Er zerriss die Schriftrolle in vierzig Teile und versteckte sie in den Zeiten der Bibel.",
    "Ohne die Schriftrolle breiteten sich Düsterlinge überall aus: Flüstern von Lügen, Sorgen, Hochmut und Angst.",
    "Jetzt wird ein junger Pilger gebraucht. Jemand Mutiges. Jemand Neugieriges. Jemand wie du."
   ]

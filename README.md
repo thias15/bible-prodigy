@@ -1,21 +1,22 @@
 # Scrolls of Light
 
 A browser game for kids ages 8–15, inspired by Prodigy, set in the stories of the Bible.
-Explore 34 Bible worlds, meet the people of the story, and battle Gloomlings (little shadows
+Explore 40 Bible worlds, meet the people of the story, and battle Gloomlings (little shadows
 of lies, worry, pride and fear) by answering questions. Every right answer powers your attack.
 
 **Play:** once GitHub Pages is on, the game lives at `https://thias15.github.io/bible-prodigy/`.
 
 ## What's in the game
 
-- **34 Bible worlds plus a hub town**, in Bible order and grouped into eras (Beginnings, Patriarchs,
+- **40 Bible worlds plus a hub town**, in Bible order and grouped into eras (Beginnings, Patriarchs,
   Exodus, Judges, Kings, Exile and Return, Jesus, the Early Church): Garden of Eden, Mountains of Ararat,
   Plains of Canaan (Abraham), Bethel (Jacob's ladder), Joseph's Journey, Mount Horeb (the burning bush), Land of Egypt, Wilderness of Sinai,
   Kadesh (the twelve spies), Jericho, Mount Tabor (Deborah), Oak of Ophrah (Gideon), Hills of Zorah (Samson), Fields of Ruth, Shiloh (Samuel), Valley of Elah, Solomon's Temple,
-  Mount Carmel (Elijah), Dothan (Elisha), Road to Nineveh (Jonah), Babylon, the Lions' Den, Palace of Susa (Esther),
-  Walls of Jerusalem (Nehemiah), Bethlehem (at night), River Jordan (baptism and temptation), Cana,
-  Sea of Galilee, Mount of Beatitudes, Road of Parables, Bethany (Lazarus), Jerusalem, Pentecost and Paul's Voyage — connected by the Gates of Remembrance in Pilgrim's Rest.
-- **A story to finish.** The Shadow of Doubt tore the Scroll of Light into thirty-four pieces.
+  Mount Carmel (Elijah), Dothan (Elisha), Road to Nineveh (Jonah), The Lost Scroll (Josiah), Babylon, the Lions' Den, Palace of Susa (Esther),
+  Walls of Jerusalem (Nehemiah), Bethlehem (at night), The Temple Courts (Jesus at twelve), River Jordan (baptism and temptation), Cana,
+  Sea of Galilee, Mount of Beatitudes, Road of Parables, Bethany (Lazarus), Jerusalem, Road to Emmaus, Pentecost, the Desert Road (Philip),
+  Damascus Road (Saul), Paul's Voyage and the Isle of Patmos (a new heaven and a new earth) — connected by the Gates of Remembrance in Pilgrim's Rest.
+- **A story to finish.** The Shadow of Doubt tore the Scroll of Light into forty pieces.
   Each world has a guide (Eve, Noah, Abraham, Joseph, Moses, Gideon, Ruth, David, Elijah,
   Jonah, Esther, Nehemiah, Peter, Paul...), a main quest, a boss, a helper quest and a memory verse.
   Every guide asks you a story choice ("Stay with Naomi or go home?") and tells you what
@@ -76,6 +77,7 @@ of lies, worry, pride and fear) by answering questions. Every right answer power
 - **Tower of the Watchman** (Habakkuk 2:1, opens after Jericho): an endless climb. Every floor is
   a battle, every 5th floor a boss, every 7th floor a day of rest (Genesis 2:2), foes get stronger as you go,
   your health carries over, and every 10 floors is a checkpoint with a trophy. Your highest floor shows on the friends leaderboard.
+- **Story quests:** in nine earlier worlds someone from a smaller Bible story waits once you have met the guide: Rebekah at the well, Rahab and the scarlet cord, Gideon's fleece, Hannah's little robe for Samuel, David dancing before the ark, Anna in the temple, Peter's breakfast on the beach, the upper room, and Rhoda who forgot to open the door. Hear the story and answer one question for shekels and XP.
 - **The New Quarter of Pilgrim's Rest** (opens after Shiloh): gather wood, stone, wool, fish and olive
   oil in the Land, on the islands and in the Tower, and build up a town: a well, bakery (daily bread),
   workshop (craft furniture for your house), animal pen (XP for animals not in your team), school
@@ -163,6 +165,8 @@ No build step, server or accounts needed. On GitHub Pages the game can be instal
 | `src/ext_str.js` | The Land, sea, islands, Tower, wild animals and team text (other languages in `src/lang/<l>/X.json`) |
 | `src/endgame.js` | The Land, the Great Sea, the islands and the Tower (inserted into `game.js` at `/*__EXT__*/`) |
 | `src/worlds4.js` | Worlds 23–28 (Bethel, Shiloh, Solomon's Temple, River Jordan, Cana, Bethany) in English and German |
+| `src/worlds6.js` | Worlds 35–40 (The Lost Scroll, Temple Courts, Road to Emmaus, Desert Road, Damascus Road, Isle of Patmos) in English and German |
+| `src/quests.js` | Story quests inside earlier worlds (Rebekah, Rahab, Gideon's fleece, Hannah, David and the ark, Anna, Peter's breakfast, the Last Supper, Rhoda), all four languages (inserted after `town.js`) |
 | `src/worlds5.js` | Worlds 29–34 (Mount Horeb, Kadesh, Mount Tabor, Dothan, the Lions' Den, Mount of Beatitudes) in English and German |
 | `src/town.js` | The New Quarter town (inserted right after `endgame.js`) |
 | `src/fb/` | Firebase config, security rules (`firestore.rules`) and the bundled SDK (`fb.js`, rebuilt with `npx esbuild entry.js --bundle --minify --format=iife --outfile=fb.js`) |

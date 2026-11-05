@@ -660,6 +660,72 @@
      "La casa sigue firme"
     ],
     "Mateo 7:24-25"
+   ],
+   [
+    35,
+    "Ordena la historia de Josías:",
+    [
+     "Josías se hace rey a los ocho años",
+     "Los obreros reparan el templo",
+     "Hilcías encuentra el Libro de la Ley",
+     "Josías se lo lee a todo el pueblo"
+    ],
+    "2 Reyes 22-23"
+   ],
+   [
+    36,
+    "Ordena esta historia:",
+    [
+     "La familia va a Jerusalén para la Pascua",
+     "María y José regresan sin Jesús",
+     "Lo buscan durante tres días",
+     "Encuentran a Jesús en el templo"
+    ],
+    "Lucas 2:41-46"
+   ],
+   [
+    37,
+    "Ordena el camino a Emaús:",
+    [
+     "Dos discípulos tristes salen de Jerusalén",
+     "Un desconocido les explica las Escrituras",
+     "Parte el pan y lo reconocen",
+     "Vuelven corriendo a Jerusalén"
+    ],
+    "Lucas 24:13-35"
+   ],
+   [
+    38,
+    "Ordena la historia de Felipe en el camino del desierto:",
+    [
+     "Un ángel envía a Felipe al camino del desierto",
+     "Felipe oye al hombre leer a Isaías",
+     "Felipe le cuenta la buena noticia de Jesús",
+     "El hombre se bautiza y sigue feliz su camino"
+    ],
+    "Hechos 8:26-39"
+   ],
+   [
+    39,
+    "Ordena la historia de Saulo:",
+    [
+     "Saulo sale hacia Damasco",
+     "Una luz del cielo brilla a su alrededor",
+     "Ananías ora por Saulo",
+     "Saulo predica que Jesús es el Hijo de Dios"
+    ],
+    "Hechos 9:1-20"
+   ],
+   [
+    40,
+    "Ordena la visión de Juan:",
+    [
+     "Juan oye una voz como de trompeta",
+     "Ve a Jesús brillando como el sol",
+     "Ve un cielo nuevo y una tierra nueva",
+     "Jesús dice: «Vengo pronto»"
+    ],
+    "Apocalipsis 1; 21-22"
    ]
   ],
   "who": [
@@ -1333,6 +1399,72 @@
      "Salomón"
     ],
     "Mateo 6:26"
+   ],
+   [
+    35,
+    "¡Encontré el Libro de la Ley en la casa del SEÑOR!",
+    "Hilcías",
+    [
+     "Safán",
+     "Hulda",
+     "Josías"
+    ],
+    "2 Reyes 22:8"
+   ],
+   [
+    36,
+    "¿Por qué me buscaban? ¿No sabían que yo tenía que estar en la casa de mi Padre?",
+    "Jesús",
+    [
+     "Samuel",
+     "José",
+     "Juan el Bautista"
+    ],
+    "Lucas 2:49"
+   ],
+   [
+    37,
+    "Quédate con nosotros, que ya es casi de noche.",
+    "Cleofas y su amigo",
+    [
+     "María y Marta",
+     "Pedro y Juan",
+     "Pablo y Silas"
+    ],
+    "Lucas 24:29"
+   ],
+   [
+    38,
+    "¿Cómo voy a entender si nadie me lo explica?",
+    "El funcionario etíope",
+    [
+     "Felipe",
+     "Cornelio",
+     "Timoteo"
+    ],
+    "Hechos 8:31"
+   ],
+   [
+    39,
+    "Hermano Saulo, el Señor Jesús me ha enviado para que vuelvas a ver.",
+    "Ananías",
+    [
+     "Bernabé",
+     "Pedro",
+     "Esteban"
+    ],
+    "Hechos 9:17"
+   ],
+   [
+    40,
+    "Miren, yo hago nuevas todas las cosas.",
+    "El que está sentado en el trono",
+    [
+     "Moisés",
+     "El rey David",
+     "Pablo"
+    ],
+    "Apocalipsis 21:5"
    ]
   ],
   "where": [
@@ -2456,6 +2588,102 @@
     ]
    ],
    "ref": "Mateo 6:25-34"
+  },
+  "35": {
+   "prompt": "En el ático encuentras una Biblia vieja y llena de polvo. Hace años que nadie la lee. ¿Qué haces?",
+   "options": [
+    "Abrirla y leerla",
+    "Guardarla otra vez en la caja"
+   ],
+   "replies": [
+    [
+     "¡Igual que el rey Josías! Cuando oyó la palabra de Dios, la tomó en serio y la compartió con todos."
+    ],
+    [
+     "Es fácil olvidarse de la palabra de Dios. Pero cuando el pueblo de Josías encontró el libro perdido, ¡cambió todo el país! Vale la pena abrirla."
+    ]
+   ],
+   "ref": "2 Reyes 22:8-13"
+  },
+  "36": {
+   "prompt": "Todos tienen prisa por irse, pero a ti te encantaría quedarte y aprender más de Dios. ¿Qué haces?",
+   "options": [
+    "Preguntar a mis padres si podemos quedarnos un rato",
+    "Salir corriendo con la multitud"
+   ],
+   "replies": [
+    [
+     "¡Qué bueno que te encante aprender de Dios! A Jesús le encantaba la casa de su Padre. Y aun así escuchaba a sus padres y los obedecía."
+    ],
+    [
+     "A veces hay que irse. Pero Jesús nos muestra que es bueno escuchar, hacer preguntas y crecer en sabiduría siempre que podamos."
+    ]
+   ],
+   "ref": "Lucas 2:46-52"
+  },
+  "37": {
+   "prompt": "Estás muy triste, y un desconocido amable te pregunta si puede caminar contigo. ¿Qué haces?",
+   "options": [
+    "Contarle lo que me pasa",
+    "Decirle: déjame en paz"
+   ],
+   "replies": [
+    [
+     "Cleofas le contó todo al desconocido, ¡y resultó ser Jesús! Compartir la tristeza con otros puede ayudar mucho."
+    ],
+    [
+     "Cuando estamos tristes, a veces queremos estar solos. Pero Jesús se acercó igual a los discípulos tristes, y su corazón empezó a arder de esperanza."
+    ]
+   ],
+   "ref": "Lucas 24:15-32"
+  },
+  "38": {
+   "prompt": "Estás leyendo una historia de la Biblia y no la entiendes. ¿Qué haces?",
+   "options": [
+    "Pedirle a alguien que me la explique",
+    "Rendirme porque es muy difícil"
+   ],
+   "replies": [
+    [
+     "¡Eso hizo el funcionario etíope! Preguntó: «¿Cómo voy a entender si nadie me lo explica?». Y Dios le envió a Felipe."
+    ],
+    [
+     "¡Algunas partes son difíciles! Pero no te rindas. El funcionario pidió ayuda, y Dios le envió a Felipe para explicarle la buena noticia."
+    ]
+   ],
+   "ref": "Hechos 8:30-35"
+  },
+  "39": {
+   "prompt": "Dios te pide que vayas a ayudar a alguien que ha sido muy malo. Tienes miedo. ¿Qué haces?",
+   "options": [
+    "Confiar en Dios e ir",
+    "Negarme a ir"
+   ],
+   "replies": [
+    [
+     "¡Como Ananías! Tenía miedo, pero fue y llamó a Saulo «hermano». Dios cambió por completo el corazón de Saulo."
+    ],
+    [
+     "¡Al principio Ananías sintió lo mismo! Le dijo a Dios que tenía miedo. Pero Dios le dijo: «Ve», y Ananías obedeció, y pasó algo maravilloso."
+    ]
+   ],
+   "ref": "Hechos 9:10-18"
+  },
+  "40": {
+   "prompt": "Alguien te pregunta: «¿Las cosas tristes del mundo durarán para siempre?». ¿Qué le dices?",
+   "options": [
+    "¡No! Dios hará nuevas todas las cosas",
+    "Supongo que sí"
+   ],
+   "replies": [
+    [
+     "¡Esa es la promesa de Dios! Un día secará toda lágrima, y ya no habrá llanto ni dolor."
+    ],
+    [
+     "A veces lo parece. Pero Juan vio la promesa de Dios: «¡Yo hago nuevas todas las cosas!». La tristeza no tendrá la última palabra."
+    ]
+   ],
+   "ref": "Apocalipsis 21:4-5"
   }
  },
  "PLACES": {

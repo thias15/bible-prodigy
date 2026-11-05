@@ -345,7 +345,7 @@ function drawFoe(c,cx,cy,r,col,t,shape){
   if(shape==='eye'){ c.fillStyle=gloomGrad(c,cx,y,r,col); c.beginPath(); c.arc(cx,y,r,0,Math.PI*2); c.fill(); c.fillStyle=shade(col,-.3); for(let i=0;i<3;i++) ell(c,cx+(i-1)*r*.6,y+r*.95+Math.sin(t*5+i)*r*.05,r*.16,r*.28,0,c.fillStyle); gloomEyes(c,cx,y,r,t,1); return; }
   gloomBody(c,cx,y,r,col,t); gloomEyes(c,cx,y,r,t);
 }
-const BOSS_LOOK={excuse:'mute',grumble:'giant',chariot:'storm',surround:'horde',denlion:'jealous',worry:'whirl',forgot:'scroll',hurry:'whirl',sadroad:'night',puzzled:'doubt',hardheart:'pride',lastshadow:'night',restless:'night',sleepy:'doubt',riddle:'scroll',tempter:'serpent',empty:'famine',grief:'night'};
+const BOSS_LOOK={excuse:'mute',grumble:'giant',chariot:'storm',surround:'horde',denlion:'jealous',worry:'whirl',forgot:'scroll',hurry:'whirl',sadroad:'night',puzzled:'doubt',hardheart:'mute',lastshadow:'night',restless:'night',sleepy:'doubt',riddle:'scroll',tempter:'serpent',empty:'famine',grief:'night'};
 function drawBoss(c,cx,cy,r,b,t,extra){
   const k=BOSS_LOOK[b.kind]||b.kind, col=b.c; const bob=Math.sin(t*2)*r*.05; cy+=bob;
   ell(c,cx,cy+r*1.2-bob,r*.9,r*.2,0,'rgba(0,0,0,.28)');
